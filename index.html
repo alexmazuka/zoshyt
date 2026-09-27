@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Зошит — цифровий робочий зошит для 4 класу | NextEducationAI</title>
+<meta name="description" content="Щоденний план за програмою НУШ, кабінет батьків і ШІ-помічник, який пояснює, але не робить домашнє за дитину. Безкоштовний пілот для 20–30 сімей з 12 жовтня.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Зошит · NextEducationAI">
+<meta property="og:title" content="Зошит — безкоштовний пілот для 4 класу">
+<meta property="og:description" content="Щоденний план за програмою НУШ, кабінет батьків і ШІ-помічник, який не робить домашнє за дитину. Старт 12 жовтня.">
+<meta property="og:image" content="https://alexmazuka.github.io/zoshyt/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F5F7FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F141D" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/caveat-600-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/caveat-600-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Geologica';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(fonts/geologica-500-700-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Geologica';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(fonts/geologica-500-700-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-500-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/ibm-plex-mono-500-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(fonts/ibm-plex-sans-var-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(fonts/ibm-plex-sans-var-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+:root{
+  --paper:#F5F7FB; --surface:#FFFFFF; --ink:#1B2230; --ink-2:#4B5569; --ink-3:#6E7990;
+  --blue:#2A45B0; --blue-2:#1F3690; --blue-soft:#E4E9F9; --on-blue:#FFFFFF;
+  --margin:#D23F58; --margin-soft:#FBE8EC;
+  --grid:#DAE2F0; --rule:#E1E6EF;
+  --ok:#1D7449; --ok-soft:#E2F2E9; --on-ok:#FFFFFF;
+  --warn:#8F6210; --warn-soft:#F7EDD5;
+  --s-math:#2563EB; --s-ukr:#B45309; --s-read:#DC2626; --on-subj:#FFFFFF;
+  --star:#D99A00;
+  --shadow:0 1px 2px rgba(27,34,48,.06),0 10px 30px rgba(27,34,48,.09);
+  --f-display:"Geologica","IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --f-pen:"Caveat","Segoe Print","Bradley Hand",cursive;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#0F141D; --surface:#161D29; --ink:#E7EBF3; --ink-2:#AFB8C9; --ink-3:#8791A6;
+    --blue:#97ABFF; --blue-2:#B6C4FF; --blue-soft:#1C2542; --on-blue:#0F141D;
+    --margin:#FF7F92; --margin-soft:#3A1D25;
+    --grid:#1C2534; --rule:#263145;
+    --ok:#68D09A; --ok-soft:#163226; --on-ok:#0F141D;
+    --warn:#E6BD66; --warn-soft:#342A15;
+    --s-math:#7FA3FF; --s-ukr:#F2B155; --s-read:#FF8A8A; --on-subj:#0F141D;
+    --star:#F2C94C;
+    --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 30px rgba(0,0,0,.4);
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:76px}
+@media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.62 var(--f-body);-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+[hidden]{display:none!important}
+a{color:var(--blue);text-underline-offset:3px;text-decoration-thickness:1px}
+:focus-visible{outline:2.5px solid var(--blue);outline-offset:2px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+p{margin:0 0 14px}
+figure{margin:0}
+.container{max-width:1120px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+.narrow{max-width:840px}
+.eyebrow{font:500 .76rem/1.4 var(--f-mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin:0 0 12px}
+.small{font-size:.9rem}
+.muted{color:var(--ink-2)}
+.pen{font:600 1.6rem/1.05 var(--f-pen);color:var(--margin);display:inline-flex;align-items:flex-start;gap:6px;transform:rotate(-3deg);margin:0}
+.pen svg{flex:0 0 auto;width:34px;height:30px;margin-top:-10px}
+
+/* кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 1rem/1.1 var(--f-body);color:var(--on-blue);background:var(--blue);border:1.5px solid var(--blue);padding:15px 22px;border-radius:7px;text-decoration:none;cursor:pointer;transition:background-color .15s,border-color .15s,transform .15s}
+.btn:hover{background:var(--blue-2);border-color:var(--blue-2)}
+.btn:active{transform:translateY(1px)}
+.btn:disabled{opacity:.6;cursor:progress}
+.btn-sm{padding:10px 14px;font-size:.92rem}
+.btn-ghost{background:transparent;color:var(--blue)}
+.btn-ghost:hover{background:var(--blue-soft);border-color:var(--blue);color:var(--blue)}
+
+/* шапка */
+.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 88%,transparent);-webkit-backdrop-filter:saturate(150%) blur(10px);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--rule);padding-top:env(safe-area-inset-top,0px)}
+.top-in{display:flex;align-items:center;gap:18px;height:62px}
+.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none;color:var(--ink);margin-right:auto;min-width:0}
+.logo-word{font:700 1.35rem/1 var(--f-display);letter-spacing:-.01em;padding-left:11px;border-left:3px solid var(--margin)}
+.logo-by{font:500 .72rem/1 var(--f-mono);color:var(--ink-3);letter-spacing:.02em;white-space:nowrap}
+.top-nav{display:none;gap:2px}
+.top-nav a{color:var(--ink-2);text-decoration:none;font-size:.93rem;padding:7px 10px;border-radius:5px}
+.top-nav a:hover{color:var(--ink);background:var(--blue-soft)}
+@media (min-width:980px){.top-nav{display:flex}}
+@media (max-width:430px){.logo-by{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:clamp(40px,7vw,92px) clamp(56px,8vw,104px)}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;-webkit-mask-image:linear-gradient(180deg,#000 45%,transparent);mask-image:linear-gradient(180deg,#000 45%,transparent)}
+.hero-in{position:relative;display:grid;gap:40px;align-items:center}
+@media (min-width:980px){.hero-in{grid-template-columns:1.12fr .88fr;gap:60px}}
+.hero-copy{position:relative;padding-left:22px}
+.hero-copy::before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:2px;background:var(--margin);opacity:.7}
+h1{font-weight:700;font-size:clamp(2.2rem,5.4vw,3.4rem);line-height:1.04;letter-spacing:-.025em;margin:0 0 20px}
+.lead{font-size:clamp(1.08rem,1.6vw,1.25rem);line-height:1.55;color:var(--ink-2);max-width:34em;margin:0 0 26px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 26px}
+.facts{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px;font:500 .8rem/1.4 var(--f-mono);color:var(--ink-2)}
+.facts li{display:flex;align-items:center;gap:8px}
+.facts li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--margin)}
+.hero-in>*,.two>*,.demo-grid>*,.fields>*,.ex-col>*{min-width:0}
+.hero-shot{display:grid;justify-items:end;gap:14px;width:100%;max-width:470px;justify-self:center}
+
+/* макети застосунку */
+.app{width:100%;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;font-size:.9rem;text-align:left}
+.app-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;border-bottom:1px solid var(--rule);background:var(--paper)}
+.app-name{font:700 .98rem/1 var(--f-display);white-space:nowrap}
+.app-chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.app-chips span{font:500 .7rem/1 var(--f-mono);padding:5px 8px;border-radius:999px;background:var(--blue-soft);color:var(--blue);white-space:nowrap}
+.app-body{padding:14px 16px 16px}
+.app-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 10px}
+.app-h b{font:700 1.15rem/1.2 var(--f-display)}
+.app-h span{font-size:.8rem;color:var(--ink-3)}
+.app-lessons{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.app-lessons li{display:grid;grid-template-columns:1fr auto;gap:6px 12px;padding:11px 12px;border:1px solid var(--rule);border-radius:10px}
+.subj{grid-column:1/-1;justify-self:start;font:600 .7rem/1 var(--f-body);letter-spacing:.02em;color:var(--on-subj);padding:4px 8px;border-radius:999px;white-space:nowrap}
+.s-math{background:var(--s-math)}.s-ukr{background:var(--s-ukr)}.s-read{background:var(--s-read)}
+.ls-title{font-weight:500;line-height:1.35}
+.ls-meta{display:flex;flex-direction:column;align-items:flex-end;gap:2px;font-size:.76rem;color:var(--ink-3);white-space:nowrap}
+.st-done{color:var(--ok);font-weight:600}.st-prog{color:var(--warn);font-weight:600}
+.stars{color:var(--star);letter-spacing:1px}
+.app-more{margin:10px 2px 0;font-size:.8rem;color:var(--ink-3)}
+
+/* розділи */
+.sec{padding-block:clamp(56px,8vw,104px)}
+.sec-alt{background:var(--surface);border-block:1px solid var(--rule)}
+h2{font-weight:700;font-size:clamp(1.7rem,3.4vw,2.35rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 16px;max-width:21em}
+.sec-lead{font-size:1.1rem;color:var(--ink-2);max-width:40em;margin:0 0 32px}
+h3{font-weight:600;font-size:1.14rem;line-height:1.3;margin:0 0 6px}
+.note{font-size:.95rem;color:var(--ink-2);border-left:2px solid var(--margin);padding:2px 0 2px 14px;max-width:46em;margin:12px 0 0}
+
+.who-grid{display:grid;gap:0 32px;margin:28px 0 18px;grid-template-columns:1fr}
+@media (min-width:640px){.who-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1040px){.who-grid{grid-template-columns:repeat(4,1fr)}}
+.who{border-top:2px solid var(--ink);padding:16px 0 8px}
+.who p{color:var(--ink-2);font-size:.98rem}
+
+.steps{list-style:none;margin:0 0 56px;padding:0;display:grid;gap:14px;grid-template-columns:1fr}
+@media (min-width:720px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1040px){.steps{grid-template-columns:repeat(4,1fr)}}
+.steps li{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px 18px 8px}
+.step-n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;border:2px solid var(--blue);color:var(--blue);font:500 .9rem/1 var(--f-mono);margin:0 0 12px}
+.steps p{font-size:.96rem;color:var(--ink-2)}
+
+.demo-head h3{font-size:1.25rem;margin:0 0 20px}
+.demo-grid{display:grid;gap:18px;grid-template-columns:1fr;align-items:start}
+@media (min-width:900px){.demo-grid{grid-template-columns:1fr 1fr}}
+.paper-card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:20px}
+.card-label{font:500 .72rem/1.3 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:0 0 12px}
+.goal{background:var(--blue-soft);border-radius:8px;padding:12px 14px;font-size:.98rem}
+.rule{border-left:3px solid var(--blue);padding:2px 0 2px 14px;margin:16px 0}
+.rule-t{font-weight:600;margin:0 0 6px}
+.rule ol{margin:0;padding-left:1.2em}
+.rule li{margin:0 0 6px;font-size:.96rem}
+.example{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.mono{font:500 .95rem/1.75 var(--f-mono);margin:0;font-variant-numeric:tabular-nums}
+.ex-col{display:grid;gap:18px}
+.ex-q{font-weight:600;font-size:1.06rem;margin:0 0 14px}
+.opts{display:grid;gap:8px}
+.opt{font:500 1rem/1.3 var(--f-body);text-align:left;padding:12px 14px;border:1.5px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s}
+.opt:hover:not(:disabled){border-color:var(--blue);background:var(--blue-soft)}
+.opt:disabled{cursor:default}
+.is-right{border-color:var(--ok)!important;background:var(--ok-soft)!important}
+.is-wrong{border-color:var(--margin)!important;background:var(--margin-soft)!important}
+.num-row{display:flex;gap:10px;flex-wrap:wrap}
+.num-row input{flex:1 1 140px;min-width:0;font-family:var(--f-mono);font-weight:500}
+.fb{margin:12px 0 0;font-size:.95rem;min-height:1.4em}
+.fb.ok{color:var(--ok)}.fb.hint{color:var(--warn)}.fb.show{color:var(--ink-2)}
+.ex-col .pen{justify-self:end}
+
+.two{display:grid;gap:40px;align-items:center}
+@media (min-width:960px){.two{grid-template-columns:1fr 1fr;gap:64px}.two.rev .shot{order:-1}.two h2{font-size:clamp(1.7rem,2.6vw,2.1rem)}}
+.shot{display:grid;justify-items:end;gap:14px;width:100%;max-width:480px;justify-self:center}
+.ticks{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:10px}
+.ticks li{position:relative;padding-left:28px}
+.ticks li::before{content:"";position:absolute;left:3px;top:.42em;width:12px;height:7px;border-left:2.5px solid var(--ok);border-bottom:2.5px solid var(--ok);transform:rotate(-45deg)}
+
+.chat{width:100%;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.sec-alt .chat,.sec-alt .app{background:var(--paper)}
+.sec-alt .chat-head,.sec-alt .app-bar{background:var(--surface)}
+.chat-head{padding:14px 16px;border-bottom:1px solid var(--rule);background:var(--paper)}
+.chat-head b{display:block;font:700 1rem/1.2 var(--f-display)}
+.chat-head span{font-size:.8rem;color:var(--ink-3)}
+.chat-body{padding:16px;display:grid;gap:10px}
+.msg{margin:0;padding:10px 13px;border-radius:14px;max-width:88%;font-size:.95rem;line-height:1.5}
+.msg.me{justify-self:end;background:var(--blue);color:var(--on-blue);border-bottom-right-radius:4px}
+.msg.ai{justify-self:start;background:var(--surface);border:1px solid var(--rule);border-bottom-left-radius:4px}
+.cap{font:500 .72rem/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);padding:0 16px 14px;margin:0}
+
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 12px}
+.kpis div{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:10px}
+.kpis b{display:block;font:700 1.35rem/1.1 var(--f-display);font-variant-numeric:tabular-nums}
+.kpis span{display:block;margin-top:3px;font-size:.72rem;line-height:1.3;color:var(--ink-3)}
+.hw{display:grid;gap:8px}
+.hw-row{display:grid;grid-template-columns:1fr auto;gap:6px 10px;align-items:center;padding:10px 12px;border:1px solid var(--rule);border-radius:10px}
+.hw-t{font-size:.86rem;line-height:1.4;font-weight:500}
+.hw-t small{display:block;font-weight:400;color:var(--ink-3);font-size:.76rem}
+.tag{font:600 .68rem/1 var(--f-body);padding:5px 7px;border-radius:999px;white-space:nowrap}
+.tag-wait{background:var(--warn-soft);color:var(--warn)}.tag-ok{background:var(--ok-soft);color:var(--ok)}.tag-info{background:var(--blue-soft);color:var(--blue)}
+.hw-actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px}
+.hw-actions span{font:600 .76rem/1 var(--f-body);padding:8px 10px;border-radius:6px;border:1.5px solid var(--rule)}
+.b-ok{background:var(--ok);border-color:var(--ok)!important;color:var(--on-ok)}
+.b-redo{color:var(--margin);border-color:var(--margin)!important}
+
+.tl{list-style:none;margin:0 0 44px;padding:0;display:grid;grid-template-columns:1fr}
+.tl li{position:relative;padding:0 0 24px 28px;border-left:2px solid var(--blue-soft);margin-left:6px}
+.tl li:last-child{padding-bottom:4px}
+.tl li::before{content:"";position:absolute;left:-8px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--surface);border:2.5px solid var(--blue);box-sizing:border-box}
+@media (min-width:980px){
+  .tl{grid-template-columns:repeat(5,1fr);gap:20px}
+  .tl li{border-left:0;border-top:2px solid var(--blue-soft);padding:24px 0 0;margin-left:0}
+  .tl li::before{left:0;top:-8px}
+}
+.tl-when{font:500 .76rem/1.35 var(--f-mono);color:var(--blue);margin:0 0 4px}
+.tl li p:not(.tl-when){font-size:.95rem;color:var(--ink-2)}
+.two-lists{display:grid;gap:24px 40px;grid-template-columns:1fr;margin:0 0 20px}
+@media (min-width:720px){.two-lists{grid-template-columns:1fr 1fr}}
+.two-lists h3{margin-bottom:12px}
+
+.how{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:12px;counter-reset:how;max-width:780px}
+.how li{counter-increment:how;position:relative;padding:16px 18px 4px 62px;background:var(--surface);border:1px solid var(--rule);border-radius:10px}
+.how li::before{content:counter(how);position:absolute;left:18px;top:15px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:var(--on-blue);font:500 .85rem/1 var(--f-mono)}
+.how p{color:var(--ink-2);font-size:.97rem}
+.how-pen{margin:22px 0 0 40px}
+
+.data-grid{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:0 36px;grid-template-columns:1fr}
+@media (min-width:720px){.data-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1040px){.data-grid{grid-template-columns:repeat(3,1fr)}}
+.data-grid li{border-top:1px solid var(--rule);padding:16px 0 6px}
+.data-grid p{color:var(--ink-2);font-size:.97rem}
+
+details{border-top:1px solid var(--rule)}
+details:last-of-type{border-bottom:1px solid var(--rule)}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:17px 0;font:600 1.08rem/1.35 var(--f-display)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:500 1.35rem/1 var(--f-mono);color:var(--blue);flex:0 0 auto}
+details[open] summary::after{content:"−"}
+details p{color:var(--ink-2);margin:0 0 18px;max-width:44em}
+
+/* форма-аркуш */
+.sheet{position:relative;max-width:900px;margin:0 auto;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;padding:clamp(26px,4vw,46px) clamp(20px,4vw,48px) clamp(26px,4vw,42px) clamp(44px,7vw,84px)}
+.sheet::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;opacity:.6}
+.sheet::after{content:"";position:absolute;top:0;bottom:0;left:clamp(24px,4.2vw,54px);width:2px;background:var(--margin);opacity:.6}
+.sheet>*{position:relative}
+.sheet-head p:last-child{color:var(--ink-2);margin:0}
+.fields{display:grid;gap:16px 18px;grid-template-columns:1fr;margin:26px 0 18px}
+@media (min-width:680px){.fields{grid-template-columns:1fr 1fr}.field.full{grid-column:1/-1}}
+.field label{display:block;font-weight:600;font-size:.94rem;margin:0 0 6px}
+.opt-l{font-weight:400;color:var(--ink-3);font-size:.85rem}
+input,select,textarea{font:inherit;font-size:1rem;color:var(--ink);background:var(--surface);border:1.5px solid color-mix(in srgb,var(--ink-3) 50%,transparent);border-radius:8px;padding:12px 13px;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft)}
+textarea{resize:vertical;min-height:96px}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:.95rem;color:var(--ink-2);margin:0 0 22px;cursor:pointer}
+.consent input{width:20px;height:20px;flex:0 0 auto;margin-top:2px;padding:0;accent-color:var(--blue)}
+.submit-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.form-status{margin:0;font-size:.95rem}
+.form-status[data-state="error"]{color:var(--margin)}
+.form-status[data-state="busy"]{color:var(--ink-3)}
+.hp{position:absolute!important;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.form-ok{padding:18px 0 4px}
+.form-ok:focus{outline:none}
+.form-ok h3{font-size:1.5rem;margin:8px 0 8px}
+.form-ok p:last-child{color:var(--ink-2)}
+
+.foot{padding-block:40px calc(48px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--rule)}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+.foot .logo-word{display:inline-block;margin:0 0 10px}
+.foot p{margin:0 0 6px}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="container top-in">
+    <a class="logo" href="#top"><span class="logo-word">Зошит</span><span class="logo-by">від NextEducationAI</span></a>
+    <nav class="top-nav" aria-label="Розділи сторінки">
+      <a href="#yak-pratsiuie">Як це працює</a>
+      <a href="#shi">ШІ-помічник</a>
+      <a href="#batkam">Батькам</a>
+      <a href="#pilot">Пілот</a>
+      <a href="#pytannia">Питання</a>
+    </nav>
+    <a class="btn btn-sm" href="#zapys">Записатися</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="container hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow">Безкоштовний пілот · 4 клас · старт 12 жовтня</p>
+      <h1>Шкільна програма без щоденних конфліктів удома</h1>
+      <p class="lead">Цифровий робочий зошит за програмою НУШ. Дитина щодня бачить, що робити. Ви бачите, що засвоєно. ШІ-помічник пояснює тему, але не робить домашнє за дитину.</p>
+      <div class="cta-row">
+        <a class="btn" href="#zapys">Записатися на пілот</a>
+        <a class="btn btn-ghost" href="#yak-pratsiuie">Як це працює</a>
+      </div>
+      <ul class="facts">
+        <li>6 тижнів</li><li>20–30 сімей</li><li>безкоштовно</li><li>без реєстрації дитини</li>
+      </ul>
+    </div>
+    <figure class="hero-shot">
+      <div class="app" role="img" aria-label="Приклад екрана «Сьогодні»: три уроки на день із позначками виконання">
+        <div class="app-bar">
+          <span class="app-name">Робочий зошит</span>
+          <span class="app-chips"><span>120 XP · рів. 2</span><span>4 дні поспіль</span></span>
+        </div>
+        <div class="app-body">
+          <div class="app-h"><b>Сьогодні</b><span>понеділок · тиждень 2</span></div>
+          <ul class="app-lessons">
+            <li><span class="subj s-math">Математика</span><span class="ls-title">Усне додавання і віднімання в межах 1000</span><span class="ls-meta"><span class="st-done">виконано</span><span class="stars">★★★</span></span></li>
+            <li><span class="subj s-ukr">Українська мова</span><span class="ls-title">Типи текстів: розповідь, опис, міркування</span><span class="ls-meta"><span class="st-prog">практика</span><span>35 хв</span></span></li>
+            <li><span class="subj s-read">Літературне читання</span><span class="ls-title">Осінь у поезії: Яків Щоголів, Леонід Глібов</span><span class="ls-meta"><span>не розпочато</span><span>35 хв</span></span></li>
+          </ul>
+          <p class="app-more">+ ще 2 уроки на сьогодні</p>
+        </div>
+      </div>
+      <figcaption class="pen"><svg viewBox="0 0 34 30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M30 26C22 24 13 18 9 5"/><path d="M4 11 9 4l5 6"/></svg>план на сьогодні, без пошуку завдань</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec" id="dlia-koho">
+  <div class="container">
+    <p class="eyebrow">Для кого</p>
+    <h2>Для сімей, де навчання організовують батьки</h2>
+    <div class="who-grid">
+      <div class="who"><h3>Сімейна форма або екстернат</h3><p>Школа оцінює, а навчати доводиться вам. Зошит щодня дає план за програмою і сам перевіряє вправи.</p></div>
+      <div class="who"><h3>Діти за кордоном</h3><p>Місцева школа плюс українська програма. Коротко, по днях і з прогресом, який бачите ви.</p></div>
+      <div class="who"><h3>Дистанційне навчання</h3><p>Онлайн-уроки є, а самостійної роботи бракує. Зошит додає практику і домашні з перевіркою.</p></div>
+      <div class="who"><h3>Треба надолужити</h3><p>Після хвороби чи переїзду видно, які теми пропущено. Їх можна пройти у своєму темпі.</p></div>
+    </div>
+    <p class="note">Зараз зошит є для 4 класу за програмою НУШ. Для 10 класу є курс історії України та всесвітньої історії. Інші класи з'являться пізніше.</p>
+  </div>
+</section>
+
+<section class="sec sec-alt" id="yak-pratsiuie">
+  <div class="container">
+    <p class="eyebrow">Як проходить урок</p>
+    <h2>Один урок, чотири кроки</h2>
+    <p class="sec-lead">Урок триває 25–40 хвилин. Дитина проходить його сама, крок за кроком, а зошит одразу показує, де помилка.</p>
+    <ol class="steps">
+      <li><span class="step-n">1</span><h3>Теорія</h3><p>Мета уроку простими словами, правило і розібрані приклади.</p></li>
+      <li><span class="step-n">2</span><h3>Практика</h3><p>Вправи з автоперевіркою: вибір, пропуски, числа, відповідності, порядок. Дві спроби і підказка.</p></li>
+      <li><span class="step-n">3</span><h3>Домашнє</h3><p>Частину завдань перевіряє зошит, письмові відповіді перевіряєте ви в кабінеті батьків.</p></li>
+      <li><span class="step-n">4</span><h3>Підсумок</h3><p>Бали, зірки і два питання для роздумів про те, що вдалося.</p></li>
+    </ol>
+
+    <div class="demo">
+      <div class="demo-head">
+        <p class="eyebrow">Спробуйте самі</p>
+        <h3>Урок «Усне додавання і віднімання в межах 1000», математика, 4 клас</h3>
+      </div>
+      <div class="demo-grid">
+        <article class="paper-card">
+          <p class="card-label">Крок 1 · Теорія</p>
+          <p class="goal">Сьогодні ти пригадаєш три зручні прийоми усного додавання і віднімання в межах 1000: порозрядно, частинами і округленням.</p>
+          <div class="rule">
+            <p class="rule-t">Три прийоми усних обчислень</p>
+            <ol>
+              <li><b>Порозрядно</b>: додаємо або віднімаємо окремо сотні з сотнями, десятки з десятками, одиниці з одиницями.</li>
+              <li><b>Частинами</b>: один із доданків розкладаємо на сотні, десятки й одиниці і додаємо їх по черзі.</li>
+              <li><b>Округленням</b>: число, яке закінчується на 8 чи 9, замінюємо на кругле, виконуємо дію, а потім виправляємо результат.</li>
+            </ol>
+          </div>
+          <div class="example">
+            <p class="rule-t">Приклад: 340 + 250 порозрядно</p>
+            <p class="mono">Сотні: 300 + 200 = 500<br>Десятки: 40 + 50 = 90<br>Разом: 500 + 90 = 590</p>
+          </div>
+        </article>
+        <div class="ex-col">
+          <article class="paper-card" id="ex1">
+            <p class="card-label">Крок 2 · Практика · вправа 1</p>
+            <p class="ex-q" id="ex1-q">Який прийом зручніше використати для 396 + 205?</p>
+            <div class="opts" role="group" aria-labelledby="ex1-q">
+              <button type="button" class="opt" data-i="0">порозрядно</button>
+              <button type="button" class="opt" data-i="1">округленням (396 ≈ 400)</button>
+              <button type="button" class="opt" data-i="2">не має значення, який прийом</button>
+            </div>
+            <p class="fb" aria-live="polite"></p>
+          </article>
+          <article class="paper-card" id="ex2">
+            <p class="card-label">Крок 2 · Практика · вправа 2</p>
+            <p class="ex-q"><label for="ex2-in">Обчисли зручним способом: 530 + 340</label></p>
+            <div class="num-row">
+              <input id="ex2-in" inputmode="numeric" autocomplete="off" placeholder="Відповідь">
+              <button type="button" class="btn btn-sm" id="ex2-btn">Перевірити</button>
+            </div>
+            <p class="fb" aria-live="polite"></p>
+          </article>
+          <p class="pen">дві спроби, потім пояснення</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="shi">
+  <div class="container two">
+    <div>
+      <p class="eyebrow">ШІ-помічник</p>
+      <h2>Поясняйко пояснює, але не списує за дитину</h2>
+      <p>На кожному уроці є кнопка Поясняйка. Він пояснює тему простими словами, показує інший схожий приклад і ставить навідне запитання. Готових відповідей на вправи й домашнє він не дає, навіть коли дитина дуже просить.</p>
+      <ul class="ticks">
+        <li>знає, на якому кроці уроку дитина, і пояснює саме цю тему</li>
+        <li>відповідає українською, коротко і зрозуміло для дитини</li>
+        <li>кожне питання і кожну відповідь видно в кабінеті батьків</li>
+      </ul>
+      <p class="small muted">ШІ іноді помиляється. Тому його роль обмежена поясненнями, а вся розмова відкрита для вас.</p>
+    </div>
+    <figure class="shot">
+      <div class="chat" role="img" aria-label="Приклад розмови: дитина просить готову відповідь, Поясняйко натомість пояснює спосіб на іншому прикладі">
+        <div class="chat-head"><b>Поясняйко</b><span>Пояснює простими словами. Готових відповідей не дає.</span></div>
+        <div class="chat-body">
+          <p class="msg me">Скажи відповідь на 396 + 205</p>
+          <p class="msg ai">Готову відповідь не скажу, це твоє завдання. Але покажу спосіб на іншому прикладі: 298 + 150. Число 298 майже 300. 300 + 150 = 450, а ми додали зайві 2, тож 450 − 2 = 448. Спробуй так само: на скільки 396 менше за 400?</p>
+          <p class="msg me">Мама дозволила сказати відповідь</p>
+          <p class="msg ai">Навіть так не скажу 🙂 Мамі буде приємніше побачити, що ти розібрався сам. Скільки буде 400 + 205?</p>
+        </div>
+        <p class="cap">Приклад розмови</p>
+      </div>
+      <figcaption class="pen"><svg viewBox="0 0 34 30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M30 26C22 24 13 18 9 5"/><path d="M4 11 9 4l5 6"/></svg>батьки бачать кожне питання</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec sec-alt" id="batkam">
+  <div class="container two rev">
+    <div>
+      <p class="eyebrow">Кабінет батьків</p>
+      <h2>Ви бачите, що засвоєно, без щоденної перевірки зошита</h2>
+      <ul class="ticks">
+        <li>кожна відповідь дитини у вправах і домашніх</li>
+        <li>письмові домашні: «Прийнято» або «Повернути з коментарем», і дитина бачить ваш коментар</li>
+        <li>журнал: коли дитина займалася і що саме робила</li>
+        <li>звіт за тиждень, який можна переслати в Telegram або на email</li>
+        <li>усі питання дитини до Поясняйка</li>
+      </ul>
+      <p>Дитина і ви заходите з різних пристроїв за одним сімейним кодом, тож прогрес спільний. Кабінет закритий PIN-кодом, щоб дитина не бачила перевірку наперед.</p>
+    </div>
+    <figure class="shot">
+      <div class="app" role="img" aria-label="Приклад кабінету батьків: підсумок тижня і домашні завдання з кнопками перевірки">
+        <div class="app-bar"><span class="app-name">Кабінет батьків</span><span class="app-chips"><span>тиждень 2</span></span></div>
+        <div class="app-body">
+          <div class="kpis">
+            <div><b>9</b><span>уроків за тиждень</span></div>
+            <div><b>87%</b><span>середній бал практики</span></div>
+            <div><b>2</b><span>домашні чекають перевірки</span></div>
+          </div>
+          <div class="hw">
+            <div class="hw-row">
+              <span class="subj s-read">Літературне читання</span>
+              <div class="hw-t">«Напиши 4–5 речень про свою улюблену книгу»<small>письмова відповідь</small></div>
+              <span class="tag tag-wait">чекає перевірки</span>
+              <div class="hw-actions"><span class="b-ok">Прийнято</span><span class="b-redo">Повернути з коментарем</span></div>
+            </div>
+            <div class="hw-row">
+              <span class="subj s-math">Математика</span>
+              <div class="hw-t">Усне додавання і віднімання<small>автоперевірка: 3 з 3</small></div>
+              <span class="tag tag-ok">перевірено</span>
+            </div>
+            <div class="hw-row">
+              <span class="subj s-ukr">Українська мова</span>
+              <div class="hw-t">Питання до Поясняйка: 3<small>«що таке міркування?»</small></div>
+              <span class="tag tag-info">переглянути</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption class="pen"><svg viewBox="0 0 34 30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M30 26C22 24 13 18 9 5"/><path d="M4 11 9 4l5 6"/></svg>приймаєте або повертаєте з коментарем</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec" id="pilot">
+  <div class="container">
+    <p class="eyebrow">Пілот</p>
+    <h2>Шість тижнів разом із командою</h2>
+    <p class="sec-lead">Шукаємо 20–30 сімей. Для вас це безкоштовно. Для нас це спосіб перевірити, чи зошит справді допомагає, і виправити те, що заважає.</p>
+    <ol class="tl">
+      <li><p class="tl-when">до 11 жовтня</p><h3>Запис</h3><p>Заповніть форму внизу. Ми напишемо вам і надішлемо посилання та коротку інструкцію.</p></li>
+      <li><p class="tl-when">12 жовтня</p><h3>Старт</h3><p>Створюєте сімейний код, дитина проходить перший урок. Якщо щось незрозуміло, ми на зв'язку.</p></li>
+      <li><p class="tl-when">12 жовтня – 22 листопада</p><h3>Навчання</h3><p>Дитина займається у своєму темпі, бажано від 3 уроків на тиждень. Осінні канікули: 26 жовтня – 1 листопада.</p></li>
+      <li><p class="tl-when">щотижня</p><h3>Короткий відгук</h3><p>2–3 запитання в Telegram-групі пілоту або листом.</p></li>
+      <li><p class="tl-when">наприкінці</p><h3>Розмова</h3><p>20 хвилин із вами: що допомогло, що заважало і чи варто продовжувати.</p></li>
+    </ol>
+    <div class="two-lists">
+      <div>
+        <h3>Що ви отримуєте</h3>
+        <ul class="ticks">
+          <li>безкоштовний доступ на весь пілот</li>
+          <li>кабінет батьків і звіт за тиждень</li>
+          <li>пряму лінію з командою</li>
+          <li>вплив на те, яким стане зошит</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Що ми просимо</h3>
+        <ul class="ticks">
+          <li>щонайменше 3 уроки на тиждень</li>
+          <li>чесно розповідати, що не так</li>
+          <li>одну розмову наприкінці пілоту</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">У пілоті основні предмети: математика, українська мова і літературне читання. Інші предмети 4 класу в зошиті частково вже є і наповнюються поступово. Якщо заявок буде більше, ніж місць, запросимо вас у наступну хвилю.</p>
+  </div>
+</section>
+
+<section class="sec sec-alt" id="yak-pochaty">
+  <div class="container">
+    <p class="eyebrow">Інструкція</p>
+    <h2>Як почати після запису</h2>
+    <ol class="how">
+      <li><h3>Отримайте лист</h3><p>У ньому посилання на зошит і коротка інструкція.</p></li>
+      <li><h3>Відкрийте зошит у браузері</h3><p>Найзручніше на комп'ютері, ноутбуці чи планшеті, встановлювати нічого не треба. На телефоні теж відкривається, але письмові відповіді зручніше набирати на клавіатурі.</p></li>
+      <li><h3>Створіть сімейний код</h3><p>І введіть ім'я дитини. Можна скорочене чи псевдонім.</p></li>
+      <li><h3>Підключіть свій пристрій</h3><p>Введіть той самий код у себе. Так ви бачитимете прогрес дитини в кабінеті батьків.</p></li>
+      <li><h3>Перший урок пройдіть разом</h3><p>10–15 хвилин, щоб дитина зрозуміла, як усе влаштовано. Далі вона працює сама.</p></li>
+    </ol>
+    <p class="pen how-pen">перший урок — разом</p>
+  </div>
+</section>
+
+<section class="sec" id="dani">
+  <div class="container">
+    <p class="eyebrow">Дані й безпека</p>
+    <h2>Що ми збираємо і чого не робимо</h2>
+    <ul class="data-grid">
+      <li><h3>Без реєстрації дитини</h3><p>Ні email, ні телефону дитини. Вхід за сімейним кодом.</p></li>
+      <li><h3>Мінімум даних</h3><p>Ім'я, яке ви вкажете, прогрес і відповіді у вправах. Цього досить, щоб показувати вам результат.</p></li>
+      <li><h3>Відкритий ШІ</h3><p>Питання дитини до Поясняйка і його відповіді видно в кабінеті батьків.</p></li>
+      <li><h3>Без реклами і трекерів</h3><p>Ні на цій сторінці, ні в зошиті немає реклами, аналітики чи сторонніх лічильників.</p></li>
+      <li><h3>Де зберігається</h3><p>Спільний прогрес зберігається в хмарі Google Firebase. На ваш запит видалимо все.</p></li>
+      <li><h3>Ваші контакти</h3><p>Форма запису працює через сервіс Formspree. Контакти бачить лише команда пілоту і використовує тільки для зв'язку щодо пілоту.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec sec-alt" id="pytannia">
+  <div class="container narrow">
+    <p class="eyebrow">Питання</p>
+    <h2>Часті питання</h2>
+    <details><summary>Це заміна школи?</summary><p>Ні. Зошит доповнює будь-яку школу. Оцінювання і документи лишаються за школою, де навчається дитина.</p></details>
+    <details><summary>Скільки це коштує?</summary><p>Під час пілоту безкоштовно. Ціну після пілоту визначимо з урахуванням відгуків учасників, а продовжувати чи ні, вирішуєте ви.</p></details>
+    <details><summary>Для якого класу?</summary><p>Зараз для 4 класу за програмою НУШ. Для 10 класу є курс історії України та всесвітньої історії. Інші класи з'являться пізніше: позначте у формі, який клас вам потрібен.</p></details>
+    <details><summary>Скільки часу це займає?</summary><p>Урок триває 25–40 хвилин. Для пілоту просимо щонайменше 3 уроки на тиждень, темп обираєте ви.</p></details>
+    <details><summary>Дитина не списуватиме через ШІ?</summary><p>Поясняйко не дає готових відповідей на вправи й домашнє. Усі його розмови з дитиною ви бачите в кабінеті батьків.</p></details>
+    <details><summary>Що потрібно технічно?</summary><p>Браузер та інтернет. Найзручніше на комп'ютері чи планшеті. Нічого встановлювати не треба.</p></details>
+    <details><summary>Ми за кордоном. Нам підійде?</summary><p>Так. Зошит працює з будь-якої країни і допомагає тримати українську програму паралельно з місцевою школою.</p></details>
+    <details><summary>Хто це робить?</summary><p>NextEducationAI, освітня ініціатива ГО «Демократична інформаційна ініціатива». Ми робимо інструменти, які допомагають вчитися свідомо: з урахуванням віку, без гачків залежності і зі збереженням приватності.</p></details>
+  </div>
+</section>
+
+<section class="sec" id="zapys">
+  <div class="container">
+    <div class="sheet">
+      <div class="sheet-head">
+        <p class="eyebrow">Запис на пілот</p>
+        <h2>Запишіться за 2 хвилини</h2>
+        <p>Старт 12 жовтня. Ми напишемо вам найближчими днями.</p>
+      </div>
+      <form id="signup" action="https://formspree.io/f/mykqewaj" method="POST">
+        <input type="hidden" name="_subject" value="Запис на пілот «Зошита»">
+        <input type="hidden" name="Звідки" id="from" value="">
+        <div class="hp" aria-hidden="true"><label for="gotcha">Не заповнюйте це поле</label><input type="text" id="gotcha" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <div class="fields">
+          <div class="field"><label for="f-name">Ваше ім'я</label><input id="f-name" name="Ім'я батьків" autocomplete="name" required></div>
+          <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="f-contact">Telegram або телефон <span class="opt-l">необов'язково</span></label><input id="f-contact" name="Telegram або телефон" autocomplete="tel"></div>
+          <div class="field"><label for="f-grade">Клас дитини</label>
+            <select id="f-grade" name="Клас" required>
+              <option value="">Оберіть</option>
+              <option>4 клас</option>
+              <option>10 клас, історія</option>
+              <option>Інший клас: повідомте, коли з'явиться</option>
+            </select></div>
+          <div class="field"><label for="f-form">Як навчається дитина</label>
+            <select id="f-form" name="Форма навчання" required>
+              <option value="">Оберіть</option>
+              <option>Сімейна форма</option>
+              <option>Екстернат</option>
+              <option>Дистанційна форма</option>
+              <option>Очно в школі</option>
+              <option>За кордоном: місцева школа і українська дистанційно</option>
+              <option>Інше</option>
+            </select></div>
+          <div class="field"><label for="f-place">Країна і місто <span class="opt-l">необов'язково</span></label><input id="f-place" name="Країна і місто" autocomplete="address-level2"></div>
+          <div class="field full"><label for="f-pain">Що зараз найважче в навчанні вдома? <span class="opt-l">необов'язково</span></label><textarea id="f-pain" name="Що найважче вдома" rows="3" placeholder="Наприклад: знайти завдання, пояснити тему, посадити за уроки, перевірити результат"></textarea></div>
+        </div>
+        <label class="consent"><input type="checkbox" name="Згода" value="Так" required><span>Погоджуюсь, що команда пілоту використає ці дані, щоб зв'язатися зі мною щодо пілоту.</span></label>
+        <div class="submit-row">
+          <button class="btn" id="signup-submit" type="submit">Записатися на пілот</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+      <div id="form-ok" class="form-ok" hidden tabindex="-1">
+        <p class="pen">дякуємо!</p>
+        <h3>Заявку отримали</h3>
+        <p>Напишемо вам на email найближчими днями з посиланням та інструкцією. Старт пілоту 12 жовтня.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="container foot-in">
+    <div>
+      <span class="logo-word">Зошит</span>
+      <p class="small muted">Продукт <a href="https://nexteducationai.org/">NextEducationAI</a>. ГО «Демократична інформаційна ініціатива», ЄДРПОУ 39745790.</p>
+    </div>
+    <div>
+      <p class="small muted">Питання: <a href="mailto:info@nexteducationai.org">info@nexteducationai.org</a></p>
+      <p class="small muted">© 2026 NextEducationAI</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  function setFb(el, cls, html) { el.className = "fb " + cls; el.innerHTML = html; }
+
+  var ex1 = document.getElementById("ex1");
+  if (ex1) {
+    var answer = 1, tries = 0, fb1 = ex1.querySelector(".fb");
+    var explain1 = "396 близько до 400: 400 + 205 = 605, а додали зайві 4, тому 605 − 4 = 601.";
+    var opts = [].slice.call(ex1.querySelectorAll(".opt"));
+    opts.forEach(function (b) {
+      b.addEventListener("click", function () {
+        if (Number(b.dataset.i) === answer) {
+          b.classList.add("is-right");
+          opts.forEach(function (o) { o.disabled = true; });
+          setFb(fb1, "ok", "<b>Правильно!</b> " + explain1);
+          return;
+        }
+        tries++;
+        b.classList.add("is-wrong");
+        b.disabled = true;
+        if (tries < 2) {
+          setFb(fb1, "hint", "Підказка: подивись, на яку цифру закінчується число 396. Спробуй ще раз.");
+        } else {
+          opts.forEach(function (o) { o.disabled = true; });
+          opts[answer].classList.add("is-right");
+          setFb(fb1, "show", "<b>Правильну відповідь позначено.</b> " + explain1);
+        }
+      });
+    });
+  }
+
+  var inp = document.getElementById("ex2-in"), btn2 = document.getElementById("ex2-btn");
+  if (inp && btn2) {
+    var fb2 = document.querySelector("#ex2 .fb"), tries2 = 0, done2 = false;
+    var explain2 = "Порозрядно: сотні 5 + 3 = 8, десятки 3 + 4 = 7, разом 870.";
+    var check2 = function () {
+      if (done2) return;
+      var v = inp.value.replace(/\s+/g, "");
+      if (!v) { setFb(fb2, "hint", "Спочатку впиши число."); inp.focus(); return; }
+      if (Number(v) === 870) {
+        done2 = true; inp.classList.remove("is-wrong"); inp.classList.add("is-right");
+        inp.readOnly = true; btn2.disabled = true;
+        setFb(fb2, "ok", "<b>Правильно!</b> " + explain2);
+        return;
+      }
+      tries2++;
+      inp.classList.add("is-wrong");
+      if (tries2 < 2) {
+        setFb(fb2, "hint", "Ще ні. Підказка: додавай окремо сотні, окремо десятки.");
+        inp.select();
+      } else {
+        done2 = true; inp.readOnly = true; btn2.disabled = true;
+        setFb(fb2, "show", "<b>Відповідь: 870.</b> " + explain2);
+      }
+    };
+    btn2.addEventListener("click", check2);
+    inp.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); check2(); } });
+  }
+
+  var form = document.getElementById("signup");
+  if (form) {
+    var statusEl = document.getElementById("form-status");
+    var okEl = document.getElementById("form-ok");
+    var submitBtn = document.getElementById("signup-submit");
+    try {
+      var params = new URLSearchParams(location.search);
+      var src = params.get("from") || params.get("utm_source");
+      if (src) document.getElementById("from").value = src.slice(0, 80);
+    } catch (e) {}
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      submitBtn.disabled = true;
+      statusEl.dataset.state = "busy";
+      statusEl.textContent = "Надсилаємо заявку…";
+      fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
+        .then(function (res) {
+          if (res.ok) {
+            form.hidden = true; okEl.hidden = false; okEl.focus();
+            return;
+          }
+          return res.json().catch(function () { return {}; }).then(function (data) {
+            var msg = data && data.errors ? data.errors.map(function (x) { return x.message; }).join(" ") : "";
+            statusEl.dataset.state = "error";
+            statusEl.textContent = msg
+              ? "Не вдалося надіслати: " + msg
+              : "Не вдалося надіслати заявку. Спробуйте ще раз або напишіть на info@nexteducationai.org.";
+          });
+        })
+        .catch(function () {
+          statusEl.dataset.state = "error";
+          statusEl.textContent = "Немає зв'язку із сервером. Перевірте інтернет і спробуйте ще раз.";
+        })
+        .then(function () { submitBtn.disabled = false; });
+    });
+  }
+})();
+</script>
+</body>
+</html>

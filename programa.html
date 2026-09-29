@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Програма — усі уроки за класами і предметами | Зошит</title>
+<meta name="description" content="Усі теми уроків «Зошита» за програмою МОН: 4 клас (I семестр, 10 предметів) та історія для 10 класу. Позначка «доступно» показує уроки, які вже можна проходити.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Зошит · NextEducationAI">
+<meta property="og:title" content="Програма «Зошита»: усі уроки за класами і предметами">
+<meta property="og:description" content="4 клас (I семестр, 10 предметів) та історія для 10 класу за програмою МОН.">
+<meta property="og:image" content="https://alexmazuka.github.io/zoshyt/og.png">
+<meta name="theme-color" content="#F5F7FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F141D" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="container top-in">
+    <a class="logo" href="index.html"><span class="logo-word">Зошит</span><span class="logo-by">від NextEducationAI</span></a>
+    <nav class="top-nav" aria-label="Розділи сайту">
+      <a href="index.html#vplyv">Можливості</a>
+      <a href="index.html#sprobuyte">Спробувати</a>
+      <a href="index.html#batkam">Батькам</a>
+      <a href="programa.html" aria-current="page">Програма</a>
+      <a href="index.html#pilot">Пілот</a>
+      <a href="index.html#pytannia">Питання</a>
+    </nav>
+    <a class="btn btn-sm" href="index.html#zapys">Записатися</a>
+  </div>
+</header>
+
+<main>
+  <section class="cat-hero">
+    <div class="container">
+      <p class="eyebrow">Програма</p>
+      <h1>Усі уроки за програмою МОН</h1>
+      <p class="lead">Оберіть клас і предмет, щоб побачити теми уроків. Позначка «доступно» означає, що урок уже можна проходити. Решта уроків з'являються за розкладом навчального року.</p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:28px">
+    <div class="container">
+      <div class="grade-row" id="grades" role="group" aria-label="Клас"></div>
+      <div id="cat-top">
+        <p class="cat-summary" id="cat-summary"></p>
+        <div class="subj-row" id="cat-subjects" role="group" aria-label="Предмет"></div>
+        <div class="cat-tools">
+          <input type="search" id="cat-q" placeholder="Пошук теми, наприклад «дроби»" aria-label="Пошук теми уроку" autocomplete="off">
+          <label><input type="checkbox" id="cat-ok"> лише доступні уроки</label>
+        </div>
+      </div>
+      <div id="cat-body"><p class="muted">Завантажуємо програму…</p></div>
+      <noscript><p class="cat-msg">Щоб переглянути програму, увімкніть JavaScript у браузері.</p></noscript>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="container foot-in">
+    <div>
+      <span class="logo-word">Зошит</span>
+      <p class="small muted">Продукт <a href="https://nexteducationai.org/">NextEducationAI</a>. ГО «Демократична інформаційна ініціатива», ЄДРПОУ 39745790.</p>
+    </div>
+    <div>
+      <p class="small muted">Питання: <a href="mailto:info@nexteducationai.org">info@nexteducationai.org</a></p>
+      <p class="small muted">© 2026 NextEducationAI</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var SOURCES = {
+    "4": { term: "I семестр 2026/27", base: "https://alexmazuka.github.io/zoshyt-4klas/" },
+    "10": { term: "2026/27 навчальний рік · історія", base: "https://alexmazuka.github.io/istoriya-10klas/" }
+  };
+  var MONTHS = ["січня", "лютого", "березня", "квітня", "травня", "червня", "липня", "серпня", "вересня", "жовтня", "листопада", "грудня"];
+  var state = { grade: "4", subject: null, q: "", onlyOk: false };
+  var cache = {};
+  var $ = function (id) { return document.getElementById(id); };
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" }[c]; });
+  }
+  function plural(n, one, few, many) {
+    var a = n % 10, b = n % 100;
+    if (a === 1 && b !== 11) return one;
+    if (a >= 2 && a <= 4 && (b < 12 || b > 14)) return few;
+    return many;
+  }
+  function getJSON(url) {
+    return fetch(url, { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+  }
+  function load(g) {
+    if (cache[g]) return Promise.resolve(cache[g]);
+    var b = SOURCES[g].base;
+    return Promise.all([getJSON(b + "data/plan.json"), getJSON(b + "data/subjects.json"), getJSON(b + "data/calendar.json").catch(function () { return null; })])
+      .then(function (r) {
+        var lessons = r[0].lessons || r[0];
+        var subj = Array.isArray(r[1]) ? r[1] : r[1].subjects;
+        var weeks = {};
+        if (r[2] && r[2].weeks) r[2].weeks.forEach(function (w) { weeks[w.week] = w.monday; });
+        var data = {
+          lessons: lessons,
+          subjects: subj.filter(function (s) { return lessons.some(function (l) { return l.subject === s.id; }); }),
+          weeks: weeks
+        };
+        cache[g] = data;
+        return data;
+      });
+  }
+  function dateOf(d, l) {
+    var mon = d.weeks[l.week];
+    if (!mon) return "тиждень " + l.week;
+    var p = mon.split("-").map(Number);
+    var dt = new Date(Date.UTC(p[0], p[1] - 1, p[2] + (l.day || 1) - 1));
+    return dt.getUTCDate() + " " + MONTHS[dt.getUTCMonth()];
+  }
+
+  function drawGrades() {
+    var html = "";
+    for (var g = 1; g <= 11; g++) {
+      var has = !!SOURCES[g];
+      html += `<button type="button" class="grade${has ? "" : " soon"}" data-g="${g}" aria-pressed="${String(state.grade) === String(g)}">${g}<small>${has ? (g === 10 ? "історія" : "клас") : "готуємо"}</small></button>`;
+    }
+    $("grades").innerHTML = html;
+  }
+
+  function row(d, l, showSubj) {
+    var s = d.subjects.filter(function (x) { return x.id === l.subject; })[0] || {};
+    var pill = showSubj ? `<span class="cat-pill" style="--c:${esc(s.color)}">${esc(s.name)}</span>` : "";
+    var st = l.exists ? `<span class="cat-st ok">доступно</span>` : `<span class="cat-st todo">${esc(dateOf(d, l))}</span>`;
+    return `<li class="${l.exists ? "ok" : "todo"}"><span class="cat-n">${esc(l.n)}</span><span class="cat-t">${pill}${esc(l.title)}${l.brief ? `<small>${esc(l.brief)}</small>` : ""}</span>${st}</li>`;
+  }
+
+  function draw(d) {
+    var total = d.lessons.length, ok = d.lessons.filter(function (l) { return l.exists; }).length;
+    $("cat-summary").innerHTML = `<b>${state.grade} клас</b> · ${esc(SOURCES[state.grade].term)} · <b>${total}</b> ${plural(total, "урок", "уроки", "уроків")} · <b>${d.subjects.length}</b> ${plural(d.subjects.length, "предмет", "предмети", "предметів")} · доступно зараз: <b>${ok}</b>`;
+    if (!state.subject || !d.subjects.some(function (s) { return s.id === state.subject; })) state.subject = d.subjects[0].id;
+
+    var q = state.q.trim().toLowerCase();
+    $("cat-subjects").innerHTML = d.subjects.map(function (s) {
+      var ls = d.lessons.filter(function (l) { return l.subject === s.id; });
+      var k = ls.filter(function (l) { return l.exists; }).length;
+      var on = !q && s.id === state.subject;
+      return `<button type="button" class="subj-chip${on ? " on" : ""}" data-s="${esc(s.id)}" style="--c:${esc(s.color)}" aria-pressed="${on}"><i></i>${esc(s.name)}<span>${k} / ${ls.length}</span></button>`;
+    }).join("");
+
+    var body = "";
+    if (q) {
+      var hits = d.lessons.filter(function (l) {
+        return (l.title + " " + (l.brief || "") + " " + (l.section || "")).toLowerCase().indexOf(q) !== -1 && (!state.onlyOk || l.exists);
+      });
+      body = hits.length
+        ? `<p class="muted">Знайдено: ${hits.length} ${plural(hits.length, "урок", "уроки", "уроків")}</p><ol class="cat-list">${hits.map(function (l) { return row(d, l, true); }).join("")}</ol>`
+        : `<div class="cat-msg"><p>Нічого не знайдено за запитом «${esc(state.q)}». Спробуйте інше слово.</p></div>`;
+    } else {
+      var s = d.subjects.filter(function (x) { return x.id === state.subject; })[0];
+      var ls = d.lessons.filter(function (l) { return l.subject === s.id; });
+      var shown = ls.filter(function (l) { return !state.onlyOk || l.exists; });
+      var sections = [];
+      shown.forEach(function (l) {
+        var last = sections[sections.length - 1];
+        if (!last || last.name !== l.section) { last = { name: l.section, items: [] }; sections.push(last); }
+        last.items.push(l);
+      });
+      var k = ls.filter(function (l) { return l.exists; }).length;
+      body = `<div class="cat-subject" style="--c:${esc(s.color)}"><h2><i></i>${esc(s.name)}</h2><p>${ls.length} ${plural(ls.length, "урок", "уроки", "уроків")} · доступно ${k}</p>` +
+        (sections.length
+          ? sections.map(function (sec) { return `<h3 class="cat-sec">${esc(sec.name || "Уроки")}</h3><ol class="cat-list">${sec.items.map(function (l) { return row(d, l, false); }).join("")}</ol>`; }).join("")
+          : `<div class="cat-msg"><p>Доступних уроків з цього предмета поки немає. Вони з'являться за розкладом.</p></div>`) +
+        `</div>`;
+    }
+    $("cat-body").innerHTML = body;
+  }
+
+  function render() {
+    drawGrades();
+    var src = SOURCES[state.grade];
+    if (!src) {
+      $("cat-top").hidden = true;
+      $("cat-body").innerHTML = `<div class="cat-msg"><h3>Програму для ${esc(state.grade)} класу готуємо</h3><p>Запишіться у список очікування, і ми напишемо, щойно уроки для цього класу з'являться.</p><p><a class="btn btn-sm" href="index.html#zapys">Записатися у список очікування</a></p></div>`;
+      return;
+    }
+    $("cat-top").hidden = false;
+    $("cat-body").innerHTML = `<p class="muted">Завантажуємо програму…</p>`;
+    load(state.grade).then(draw).catch(function () {
+      $("cat-body").innerHTML = `<div class="cat-msg"><p>Не вдалося завантажити програму. Перевірте інтернет і оновіть сторінку.</p></div>`;
+    });
+  }
+
+  $("grades").addEventListener("click", function (e) {
+    var b = e.target.closest(".grade");
+    if (!b) return;
+    state.grade = b.dataset.g; state.subject = null;
+    try { history.replaceState(null, "", "#klas-" + state.grade); } catch (err) {}
+    render();
+  });
+  $("cat-subjects").addEventListener("click", function (e) {
+    var b = e.target.closest(".subj-chip");
+    if (!b) return;
+    state.subject = b.dataset.s; state.q = ""; $("cat-q").value = "";
+    if (cache[state.grade]) draw(cache[state.grade]);
+  });
+  $("cat-q").addEventListener("input", function () {
+    state.q = this.value;
+    if (cache[state.grade]) draw(cache[state.grade]);
+  });
+  $("cat-ok").addEventListener("change", function () {
+    state.onlyOk = this.checked;
+    if (cache[state.grade]) draw(cache[state.grade]);
+  });
+
+  var m = /^#klas-(\d{1,2})$/.exec(location.hash);
+  if (m && Number(m[1]) >= 1 && Number(m[1]) <= 11) state.grade = m[1];
+  render();
+})();
+</script>
+</body>
+</html>

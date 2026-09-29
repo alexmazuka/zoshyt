@@ -14,4 +14,6 @@
 
 ## Структура
 
-`index.html` — уся сторінка (CSS і JS всередині) · `fonts/` — локальні шрифти, без Google Fonts і сторонніх запитів · `og.png` — картинка для прев'ю посилання · `favicon.svg`.
+`index.html` — лендинг (JS для демо-уроків і форми всередині) · `programa.html` — каталог усіх уроків за класами й предметами · `site.css` — спільні стилі · `fonts/` — локальні шрифти, без Google Fonts і сторонніх запитів · `og.png` — картинка для прев'ю посилання · `favicon.svg`.
+
+Каталог «Програма» читає `data/plan.json`, `data/subjects.json` і `data/calendar.json` прямо з сайтів [zoshyt-4klas](https://alexmazuka.github.io/zoshyt-4klas/) та [istoriya-10klas](https://alexmazuka.github.io/istoriya-10klas/), тож новий урок стає «доступно», щойно в репозиторії застосунку оновлено `plan.json` (`python3 tools/build_plan.py`). Щоб додати клас, допишіть його в `SOURCES` у `programa.html`.

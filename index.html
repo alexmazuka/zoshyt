@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Зошит — цифровий робочий зошит для 4 класу | NextEducationAI</title>
-<meta name="description" content="Щоденний план за програмою НУШ, кабінет батьків і ШІ-помічник, який пояснює, але не робить домашнє за дитину. Безкоштовний пілот для 20–30 сімей з 12 жовтня.">
+<title>Зошит — шкільна програма легко, впевнено, самостійно | NextEducationAI</title>
+<meta name="description" content="Зошит за програмою МОН: щоденний план для дитини, контроль успішності для батьків і ШІ-помічник, який пояснює, але не робить домашнє за дитину. Безкоштовний пілот з 12 жовтня.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="uk_UA">
 <meta property="og:site_name" content="Зошит · NextEducationAI">
-<meta property="og:title" content="Зошит — безкоштовний пілот для 4 класу">
-<meta property="og:description" content="Щоденний план за програмою НУШ, кабінет батьків і ШІ-помічник, який не робить домашнє за дитину. Старт 12 жовтня.">
+<meta property="og:title" content="Зошит — шкільна програма легко, впевнено, самостійно">
+<meta property="og:description" content="Щоденний план за програмою МОН, контроль успішності для батьків і ШІ-помічник, який не робить домашнє за дитину. Безкоштовний пілот з 12 жовтня.">
 <meta property="og:image" content="https://alexmazuka.github.io/zoshyt/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -17,325 +17,7 @@
 <meta name="theme-color" content="#F5F7FB" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0F141D" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<style>
-@font-face {
-  font-family: 'Caveat';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/caveat-600-cyrillic.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'Caveat';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(fonts/caveat-600-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Geologica';
-  font-style: normal;
-  font-weight: 500 700;
-  font-display: swap;
-  src: url(fonts/geologica-500-700-cyrillic.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'Geologica';
-  font-style: normal;
-  font-weight: 500 700;
-  font-display: swap;
-  src: url(fonts/geologica-500-700-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(fonts/ibm-plex-mono-500-cyrillic.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'IBM Plex Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(fonts/ibm-plex-mono-500-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(fonts/ibm-plex-sans-var-cyrillic.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400 600;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url(fonts/ibm-plex-sans-var-latin.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-:root{
-  --paper:#F5F7FB; --surface:#FFFFFF; --ink:#1B2230; --ink-2:#4B5569; --ink-3:#6E7990;
-  --blue:#2A45B0; --blue-2:#1F3690; --blue-soft:#E4E9F9; --on-blue:#FFFFFF;
-  --margin:#D23F58; --margin-soft:#FBE8EC;
-  --grid:#DAE2F0; --rule:#E1E6EF;
-  --ok:#1D7449; --ok-soft:#E2F2E9; --on-ok:#FFFFFF;
-  --warn:#8F6210; --warn-soft:#F7EDD5;
-  --s-math:#2563EB; --s-ukr:#B45309; --s-read:#DC2626; --on-subj:#FFFFFF;
-  --star:#D99A00;
-  --shadow:0 1px 2px rgba(27,34,48,.06),0 10px 30px rgba(27,34,48,.09);
-  --f-display:"Geologica","IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
-  --f-pen:"Caveat","Segoe Print","Bradley Hand",cursive;
-  color-scheme:light;
-}
-@media (prefers-color-scheme: dark){
-  :root{
-    --paper:#0F141D; --surface:#161D29; --ink:#E7EBF3; --ink-2:#AFB8C9; --ink-3:#8791A6;
-    --blue:#97ABFF; --blue-2:#B6C4FF; --blue-soft:#1C2542; --on-blue:#0F141D;
-    --margin:#FF7F92; --margin-soft:#3A1D25;
-    --grid:#1C2534; --rule:#263145;
-    --ok:#68D09A; --ok-soft:#163226; --on-ok:#0F141D;
-    --warn:#E6BD66; --warn-soft:#342A15;
-    --s-math:#7FA3FF; --s-ukr:#F2B155; --s-read:#FF8A8A; --on-subj:#0F141D;
-    --star:#F2C94C;
-    --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 30px rgba(0,0,0,.4);
-    color-scheme:dark;
-  }
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:76px}
-@media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.62 var(--f-body);-webkit-font-smoothing:antialiased}
-img,svg{max-width:100%}
-[hidden]{display:none!important}
-a{color:var(--blue);text-underline-offset:3px;text-decoration-thickness:1px}
-:focus-visible{outline:2.5px solid var(--blue);outline-offset:2px}
-h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
-p{margin:0 0 14px}
-figure{margin:0}
-.container{max-width:1120px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
-.narrow{max-width:840px}
-.eyebrow{font:500 .76rem/1.4 var(--f-mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin:0 0 12px}
-.small{font-size:.9rem}
-.muted{color:var(--ink-2)}
-.pen{font:600 1.6rem/1.05 var(--f-pen);color:var(--margin);display:inline-flex;align-items:flex-start;gap:6px;transform:rotate(-3deg);margin:0}
-.pen svg{flex:0 0 auto;width:34px;height:30px;margin-top:-10px}
-
-/* кнопки */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 1rem/1.1 var(--f-body);color:var(--on-blue);background:var(--blue);border:1.5px solid var(--blue);padding:15px 22px;border-radius:7px;text-decoration:none;cursor:pointer;transition:background-color .15s,border-color .15s,transform .15s}
-.btn:hover{background:var(--blue-2);border-color:var(--blue-2)}
-.btn:active{transform:translateY(1px)}
-.btn:disabled{opacity:.6;cursor:progress}
-.btn-sm{padding:10px 14px;font-size:.92rem}
-.btn-ghost{background:transparent;color:var(--blue)}
-.btn-ghost:hover{background:var(--blue-soft);border-color:var(--blue);color:var(--blue)}
-
-/* шапка */
-.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 88%,transparent);-webkit-backdrop-filter:saturate(150%) blur(10px);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--rule);padding-top:env(safe-area-inset-top,0px)}
-.top-in{display:flex;align-items:center;gap:18px;height:62px}
-.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none;color:var(--ink);margin-right:auto;min-width:0}
-.logo-word{font:700 1.35rem/1 var(--f-display);letter-spacing:-.01em;padding-left:11px;border-left:3px solid var(--margin)}
-.logo-by{font:500 .72rem/1 var(--f-mono);color:var(--ink-3);letter-spacing:.02em;white-space:nowrap}
-.top-nav{display:none;gap:2px}
-.top-nav a{color:var(--ink-2);text-decoration:none;font-size:.93rem;padding:7px 10px;border-radius:5px}
-.top-nav a:hover{color:var(--ink);background:var(--blue-soft)}
-@media (min-width:980px){.top-nav{display:flex}}
-@media (max-width:430px){.logo-by{display:none}}
-
-/* hero */
-.hero{position:relative;overflow:hidden;padding-block:clamp(40px,7vw,92px) clamp(56px,8vw,104px)}
-.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;-webkit-mask-image:linear-gradient(180deg,#000 45%,transparent);mask-image:linear-gradient(180deg,#000 45%,transparent)}
-.hero-in{position:relative;display:grid;gap:40px;align-items:center}
-@media (min-width:980px){.hero-in{grid-template-columns:1.12fr .88fr;gap:60px}}
-.hero-copy{position:relative;padding-left:22px}
-.hero-copy::before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:2px;background:var(--margin);opacity:.7}
-h1{font-weight:700;font-size:clamp(2.2rem,5.4vw,3.4rem);line-height:1.04;letter-spacing:-.025em;margin:0 0 20px}
-.lead{font-size:clamp(1.08rem,1.6vw,1.25rem);line-height:1.55;color:var(--ink-2);max-width:34em;margin:0 0 26px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 26px}
-.facts{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px;font:500 .8rem/1.4 var(--f-mono);color:var(--ink-2)}
-.facts li{display:flex;align-items:center;gap:8px}
-.facts li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--margin)}
-.hero-in>*,.two>*,.demo-grid>*,.fields>*,.ex-col>*{min-width:0}
-.hero-shot{display:grid;justify-items:end;gap:14px;width:100%;max-width:470px;justify-self:center}
-
-/* макети застосунку */
-.app{width:100%;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;font-size:.9rem;text-align:left}
-.app-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;border-bottom:1px solid var(--rule);background:var(--paper)}
-.app-name{font:700 .98rem/1 var(--f-display);white-space:nowrap}
-.app-chips{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
-.app-chips span{font:500 .7rem/1 var(--f-mono);padding:5px 8px;border-radius:999px;background:var(--blue-soft);color:var(--blue);white-space:nowrap}
-.app-body{padding:14px 16px 16px}
-.app-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 10px}
-.app-h b{font:700 1.15rem/1.2 var(--f-display)}
-.app-h span{font-size:.8rem;color:var(--ink-3)}
-.app-lessons{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.app-lessons li{display:grid;grid-template-columns:1fr auto;gap:6px 12px;padding:11px 12px;border:1px solid var(--rule);border-radius:10px}
-.subj{grid-column:1/-1;justify-self:start;font:600 .7rem/1 var(--f-body);letter-spacing:.02em;color:var(--on-subj);padding:4px 8px;border-radius:999px;white-space:nowrap}
-.s-math{background:var(--s-math)}.s-ukr{background:var(--s-ukr)}.s-read{background:var(--s-read)}
-.ls-title{font-weight:500;line-height:1.35}
-.ls-meta{display:flex;flex-direction:column;align-items:flex-end;gap:2px;font-size:.76rem;color:var(--ink-3);white-space:nowrap}
-.st-done{color:var(--ok);font-weight:600}.st-prog{color:var(--warn);font-weight:600}
-.stars{color:var(--star);letter-spacing:1px}
-.app-more{margin:10px 2px 0;font-size:.8rem;color:var(--ink-3)}
-
-/* розділи */
-.sec{padding-block:clamp(56px,8vw,104px)}
-.sec-alt{background:var(--surface);border-block:1px solid var(--rule)}
-h2{font-weight:700;font-size:clamp(1.7rem,3.4vw,2.35rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 16px;max-width:21em}
-.sec-lead{font-size:1.1rem;color:var(--ink-2);max-width:40em;margin:0 0 32px}
-h3{font-weight:600;font-size:1.14rem;line-height:1.3;margin:0 0 6px}
-.note{font-size:.95rem;color:var(--ink-2);border-left:2px solid var(--margin);padding:2px 0 2px 14px;max-width:46em;margin:12px 0 0}
-
-.who-grid{display:grid;gap:0 32px;margin:28px 0 18px;grid-template-columns:1fr}
-@media (min-width:640px){.who-grid{grid-template-columns:repeat(2,1fr)}}
-@media (min-width:1040px){.who-grid{grid-template-columns:repeat(4,1fr)}}
-.who{border-top:2px solid var(--ink);padding:16px 0 8px}
-.who p{color:var(--ink-2);font-size:.98rem}
-
-.steps{list-style:none;margin:0 0 56px;padding:0;display:grid;gap:14px;grid-template-columns:1fr}
-@media (min-width:720px){.steps{grid-template-columns:repeat(2,1fr)}}
-@media (min-width:1040px){.steps{grid-template-columns:repeat(4,1fr)}}
-.steps li{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px 18px 8px}
-.step-n{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;border:2px solid var(--blue);color:var(--blue);font:500 .9rem/1 var(--f-mono);margin:0 0 12px}
-.steps p{font-size:.96rem;color:var(--ink-2)}
-
-.demo-head h3{font-size:1.25rem;margin:0 0 20px}
-.demo-grid{display:grid;gap:18px;grid-template-columns:1fr;align-items:start}
-@media (min-width:900px){.demo-grid{grid-template-columns:1fr 1fr}}
-.paper-card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:20px}
-.card-label{font:500 .72rem/1.3 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:0 0 12px}
-.goal{background:var(--blue-soft);border-radius:8px;padding:12px 14px;font-size:.98rem}
-.rule{border-left:3px solid var(--blue);padding:2px 0 2px 14px;margin:16px 0}
-.rule-t{font-weight:600;margin:0 0 6px}
-.rule ol{margin:0;padding-left:1.2em}
-.rule li{margin:0 0 6px;font-size:.96rem}
-.example{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
-.mono{font:500 .95rem/1.75 var(--f-mono);margin:0;font-variant-numeric:tabular-nums}
-.ex-col{display:grid;gap:18px}
-.ex-q{font-weight:600;font-size:1.06rem;margin:0 0 14px}
-.opts{display:grid;gap:8px}
-.opt{font:500 1rem/1.3 var(--f-body);text-align:left;padding:12px 14px;border:1.5px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s}
-.opt:hover:not(:disabled){border-color:var(--blue);background:var(--blue-soft)}
-.opt:disabled{cursor:default}
-.is-right{border-color:var(--ok)!important;background:var(--ok-soft)!important}
-.is-wrong{border-color:var(--margin)!important;background:var(--margin-soft)!important}
-.num-row{display:flex;gap:10px;flex-wrap:wrap}
-.num-row input{flex:1 1 140px;min-width:0;font-family:var(--f-mono);font-weight:500}
-.fb{margin:12px 0 0;font-size:.95rem;min-height:1.4em}
-.fb.ok{color:var(--ok)}.fb.hint{color:var(--warn)}.fb.show{color:var(--ink-2)}
-.ex-col .pen{justify-self:end}
-
-.two{display:grid;gap:40px;align-items:center}
-@media (min-width:960px){.two{grid-template-columns:1fr 1fr;gap:64px}.two.rev .shot{order:-1}.two h2{font-size:clamp(1.7rem,2.6vw,2.1rem)}}
-.shot{display:grid;justify-items:end;gap:14px;width:100%;max-width:480px;justify-self:center}
-.ticks{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:10px}
-.ticks li{position:relative;padding-left:28px}
-.ticks li::before{content:"";position:absolute;left:3px;top:.42em;width:12px;height:7px;border-left:2.5px solid var(--ok);border-bottom:2.5px solid var(--ok);transform:rotate(-45deg)}
-
-.chat{width:100%;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
-.sec-alt .chat,.sec-alt .app{background:var(--paper)}
-.sec-alt .chat-head,.sec-alt .app-bar{background:var(--surface)}
-.chat-head{padding:14px 16px;border-bottom:1px solid var(--rule);background:var(--paper)}
-.chat-head b{display:block;font:700 1rem/1.2 var(--f-display)}
-.chat-head span{font-size:.8rem;color:var(--ink-3)}
-.chat-body{padding:16px;display:grid;gap:10px}
-.msg{margin:0;padding:10px 13px;border-radius:14px;max-width:88%;font-size:.95rem;line-height:1.5}
-.msg.me{justify-self:end;background:var(--blue);color:var(--on-blue);border-bottom-right-radius:4px}
-.msg.ai{justify-self:start;background:var(--surface);border:1px solid var(--rule);border-bottom-left-radius:4px}
-.cap{font:500 .72rem/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);padding:0 16px 14px;margin:0}
-
-.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 12px}
-.kpis div{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:10px}
-.kpis b{display:block;font:700 1.35rem/1.1 var(--f-display);font-variant-numeric:tabular-nums}
-.kpis span{display:block;margin-top:3px;font-size:.72rem;line-height:1.3;color:var(--ink-3)}
-.hw{display:grid;gap:8px}
-.hw-row{display:grid;grid-template-columns:1fr auto;gap:6px 10px;align-items:center;padding:10px 12px;border:1px solid var(--rule);border-radius:10px}
-.hw-t{font-size:.86rem;line-height:1.4;font-weight:500}
-.hw-t small{display:block;font-weight:400;color:var(--ink-3);font-size:.76rem}
-.tag{font:600 .68rem/1 var(--f-body);padding:5px 7px;border-radius:999px;white-space:nowrap}
-.tag-wait{background:var(--warn-soft);color:var(--warn)}.tag-ok{background:var(--ok-soft);color:var(--ok)}.tag-info{background:var(--blue-soft);color:var(--blue)}
-.hw-actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px}
-.hw-actions span{font:600 .76rem/1 var(--f-body);padding:8px 10px;border-radius:6px;border:1.5px solid var(--rule)}
-.b-ok{background:var(--ok);border-color:var(--ok)!important;color:var(--on-ok)}
-.b-redo{color:var(--margin);border-color:var(--margin)!important}
-
-.tl{list-style:none;margin:0 0 44px;padding:0;display:grid;grid-template-columns:1fr}
-.tl li{position:relative;padding:0 0 24px 28px;border-left:2px solid var(--blue-soft);margin-left:6px}
-.tl li:last-child{padding-bottom:4px}
-.tl li::before{content:"";position:absolute;left:-8px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--surface);border:2.5px solid var(--blue);box-sizing:border-box}
-@media (min-width:980px){
-  .tl{grid-template-columns:repeat(5,1fr);gap:20px}
-  .tl li{border-left:0;border-top:2px solid var(--blue-soft);padding:24px 0 0;margin-left:0}
-  .tl li::before{left:0;top:-8px}
-}
-.tl-when{font:500 .76rem/1.35 var(--f-mono);color:var(--blue);margin:0 0 4px}
-.tl li p:not(.tl-when){font-size:.95rem;color:var(--ink-2)}
-.two-lists{display:grid;gap:24px 40px;grid-template-columns:1fr;margin:0 0 20px}
-@media (min-width:720px){.two-lists{grid-template-columns:1fr 1fr}}
-.two-lists h3{margin-bottom:12px}
-
-.how{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:12px;counter-reset:how;max-width:780px}
-.how li{counter-increment:how;position:relative;padding:16px 18px 4px 62px;background:var(--surface);border:1px solid var(--rule);border-radius:10px}
-.how li::before{content:counter(how);position:absolute;left:18px;top:15px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:var(--on-blue);font:500 .85rem/1 var(--f-mono)}
-.how p{color:var(--ink-2);font-size:.97rem}
-.how-pen{margin:22px 0 0 40px}
-
-.data-grid{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:0 36px;grid-template-columns:1fr}
-@media (min-width:720px){.data-grid{grid-template-columns:repeat(2,1fr)}}
-@media (min-width:1040px){.data-grid{grid-template-columns:repeat(3,1fr)}}
-.data-grid li{border-top:1px solid var(--rule);padding:16px 0 6px}
-.data-grid p{color:var(--ink-2);font-size:.97rem}
-
-details{border-top:1px solid var(--rule)}
-details:last-of-type{border-bottom:1px solid var(--rule)}
-summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:17px 0;font:600 1.08rem/1.35 var(--f-display)}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font:500 1.35rem/1 var(--f-mono);color:var(--blue);flex:0 0 auto}
-details[open] summary::after{content:"−"}
-details p{color:var(--ink-2);margin:0 0 18px;max-width:44em}
-
-/* форма-аркуш */
-.sheet{position:relative;max-width:900px;margin:0 auto;background:var(--surface);border:1px solid var(--rule);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;padding:clamp(26px,4vw,46px) clamp(20px,4vw,48px) clamp(26px,4vw,42px) clamp(44px,7vw,84px)}
-.sheet::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;opacity:.6}
-.sheet::after{content:"";position:absolute;top:0;bottom:0;left:clamp(24px,4.2vw,54px);width:2px;background:var(--margin);opacity:.6}
-.sheet>*{position:relative}
-.sheet-head p:last-child{color:var(--ink-2);margin:0}
-.fields{display:grid;gap:16px 18px;grid-template-columns:1fr;margin:26px 0 18px}
-@media (min-width:680px){.fields{grid-template-columns:1fr 1fr}.field.full{grid-column:1/-1}}
-.field label{display:block;font-weight:600;font-size:.94rem;margin:0 0 6px}
-.opt-l{font-weight:400;color:var(--ink-3);font-size:.85rem}
-input,select,textarea{font:inherit;font-size:1rem;color:var(--ink);background:var(--surface);border:1.5px solid color-mix(in srgb,var(--ink-3) 50%,transparent);border-radius:8px;padding:12px 13px;width:100%}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft)}
-textarea{resize:vertical;min-height:96px}
-.consent{display:flex;gap:12px;align-items:flex-start;font-size:.95rem;color:var(--ink-2);margin:0 0 22px;cursor:pointer}
-.consent input{width:20px;height:20px;flex:0 0 auto;margin-top:2px;padding:0;accent-color:var(--blue)}
-.submit-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
-.form-status{margin:0;font-size:.95rem}
-.form-status[data-state="error"]{color:var(--margin)}
-.form-status[data-state="busy"]{color:var(--ink-3)}
-.hp{position:absolute!important;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
-.form-ok{padding:18px 0 4px}
-.form-ok:focus{outline:none}
-.form-ok h3{font-size:1.5rem;margin:8px 0 8px}
-.form-ok p:last-child{color:var(--ink-2)}
-
-.foot{padding-block:40px calc(48px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--rule)}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
-.foot .logo-word{display:inline-block;margin:0 0 10px}
-.foot p{margin:0 0 6px}
-</style>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
 
@@ -343,9 +25,10 @@ textarea{resize:vertical;min-height:96px}
   <div class="container top-in">
     <a class="logo" href="#top"><span class="logo-word">Зошит</span><span class="logo-by">від NextEducationAI</span></a>
     <nav class="top-nav" aria-label="Розділи сторінки">
-      <a href="#yak-pratsiuie">Як це працює</a>
-      <a href="#shi">ШІ-помічник</a>
+      <a href="#vplyv">Можливості</a>
+      <a href="#sprobuyte">Спробувати</a>
       <a href="#batkam">Батькам</a>
+      <a href="programa.html">Програма</a>
       <a href="#pilot">Пілот</a>
       <a href="#pytannia">Питання</a>
     </nav>
@@ -357,19 +40,20 @@ textarea{resize:vertical;min-height:96px}
 <section class="hero" id="top">
   <div class="container hero-in">
     <div class="hero-copy">
-      <p class="eyebrow">Безкоштовний пілот · 4 клас · старт 12 жовтня</p>
-      <h1>Шкільна програма без щоденних конфліктів удома</h1>
-      <p class="lead">Цифровий робочий зошит за програмою НУШ. Дитина щодня бачить, що робити. Ви бачите, що засвоєно. ШІ-помічник пояснює тему, але не робить домашнє за дитину.</p>
+      <p class="eyebrow">Безкоштовний пілот · старт 12 жовтня</p>
+      <h1>Шкільна програма — легко, впевнено, самостійно</h1>
+      <p class="lead">Зошит за програмою Міністерства освіти і науки України. Дитина щодня бачить, що робити. <b>Ви контролюєте успішність дитини.</b> ШІ-помічник пояснює тему, але не робить домашнє за дитину.</p>
       <div class="cta-row">
         <a class="btn" href="#zapys">Записатися на пілот</a>
-        <a class="btn btn-ghost" href="#yak-pratsiuie">Як це працює</a>
+        <a class="btn btn-ghost" href="#sprobuyte">Спробувати урок</a>
       </div>
       <ul class="facts">
         <li>6 тижнів</li><li>20–30 сімей</li><li>безкоштовно</li><li>без реєстрації дитини</li>
       </ul>
     </div>
     <figure class="hero-shot">
-      <div class="app" role="img" aria-label="Приклад екрана «Сьогодні»: три уроки на день із позначками виконання">
+      <p class="shot-tag">Приклад з кабінету дитини</p>
+      <div class="app" role="img" aria-label="Приклад екрана «Сьогодні» в кабінеті дитини: три уроки на день із позначками виконання">
         <div class="app-bar">
           <span class="app-name">Робочий зошит</span>
           <span class="app-chips"><span>120 XP · рів. 2</span><span>4 дні поспіль</span></span>
@@ -389,17 +73,99 @@ textarea{resize:vertical;min-height:96px}
   </div>
 </section>
 
-<section class="sec" id="dlia-koho">
+<section class="sec" id="vplyv">
   <div class="container">
-    <p class="eyebrow">Для кого</p>
-    <h2>Для сімей, де навчання організовують батьки</h2>
-    <div class="who-grid">
-      <div class="who"><h3>Сімейна форма або екстернат</h3><p>Школа оцінює, а навчати доводиться вам. Зошит щодня дає план за програмою і сам перевіряє вправи.</p></div>
-      <div class="who"><h3>Діти за кордоном</h3><p>Місцева школа плюс українська програма. Коротко, по днях і з прогресом, який бачите ви.</p></div>
-      <div class="who"><h3>Дистанційне навчання</h3><p>Онлайн-уроки є, а самостійної роботи бракує. Зошит додає практику і домашні з перевіркою.</p></div>
-      <div class="who"><h3>Треба надолужити</h3><p>Після хвороби чи переїзду видно, які теми пропущено. Їх можна пройти у своєму темпі.</p></div>
+    <p class="eyebrow">Методи впливу</p>
+    <h2>Як зошит впливає на дитину</h2>
+    <p class="sec-lead">Кожен інструмент працює на одну мету: дитина вчиться сама, регулярно і з розумінням, а ви бачите результат.</p>
+    <p class="legend"><span class="st-chip st-on">працює</span> уже є в зошиті <span class="st-chip st-soon">у розробці</span> додаємо протягом навчального року</p>
+
+    <div class="methods">
+      <article class="method">
+        <div class="m-ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 5l8 13 8-13"/><circle cx="24" cy="30" r="12"/><path d="M24 23.5l2.2 4.4 4.8.7-3.5 3.4.8 4.8-4.3-2.3-4.3 2.3.8-4.8-3.5-3.4 4.8-.7z"/></svg></div>
+        <h3>Мотивація та гейміфікація навчання</h3>
+        <p class="m-desc">Бажання повертатися до уроків без нагадувань і сварок.</p>
+        <ul class="m-list">
+          <li><span>Бали, рівні, серії днів і нагороди</span><span class="st-chip st-on">працює</span></li>
+          <li><span>Розділ «Мій прогрес»</span><span class="st-chip st-on">працює</span></li>
+          <li><span>Фокус-режим</span><span class="st-chip st-soon">у розробці</span></li>
+          <li><span>Розділ «Важливі події»</span><span class="st-chip st-soon">у розробці</span></li>
+          <li><span>Сповіщення та рекомендації</span><span class="st-chip st-soon">у розробці</span></li>
+          <li><span>Персоналізований інтерфейс</span><span class="st-chip st-soon">у розробці</span></li>
+          <li><span>Настільні ігри</span><span class="st-chip st-soon">у розробці</span></li>
+        </ul>
+      </article>
+      <article class="method">
+        <div class="m-ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 12l5 5M37 12l-5 5"/><path d="M10 25c0-8 6-13 14-13s14 5 14 13v5c0 8-6 13-14 13s-14-5-14-13z"/><circle cx="18" cy="26" r="4.5"/><circle cx="30" cy="26" r="4.5"/><path d="M22 32.5l2 2.5 2-2.5"/><circle cx="18" cy="26" r="1.3" fill="currentColor" stroke="none"/><circle cx="30" cy="26" r="1.3" fill="currentColor" stroke="none"/></svg></div>
+        <h3>ШІ-помічник Поясняйко</h3>
+        <p class="m-desc">Пояснює тему простими словами, показує інший схожий приклад і ставить навідне запитання. Готових відповідей на вправи й домашнє не дає, навіть коли дитина дуже просить.</p>
+        <ul class="m-list">
+          <li><span>Знає, на якому кроці уроку дитина</span><span class="st-chip st-on">працює</span></li>
+          <li><span>Відповідає українською, коротко і зрозуміло</span><span class="st-chip st-on">працює</span></li>
+          <li><span>Кожне питання і відповідь видно батькам</span><span class="st-chip st-on">працює</span></li>
+        </ul>
+      </article>
+      <article class="method">
+        <div class="m-ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="17" cy="16" r="6"/><circle cx="33" cy="18" r="5"/><path d="M5 40c0-7 5.4-12 12-12s12 5 12 12"/><path d="M28 31.5c1.4-.9 3.1-1.5 5-1.5 5.5 0 10 4.2 10 10"/></svg></div>
+        <h3>Соціалізація та взаємодія</h3>
+        <p class="m-desc">Спільні завдання з однолітками, щоб навчання вдома не було самотнім.</p>
+        <ul class="m-list">
+          <li><span>Групові проєкти (1–11 класи)</span><span class="st-chip st-soon">у розробці</span></li>
+        </ul>
+      </article>
+      <article class="method">
+        <div class="m-ico"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 41h36"/><path d="M12 41V29M21 41V21M30 41V25M39 41V14"/><path d="M11 18l9-6 8 5 11-9"/></svg></div>
+        <h3>Новий детальний формат звіту для батьків</h3>
+        <p class="m-desc">Ви бачите не лише оцінки, а й що за ними стоїть.</p>
+        <ul class="m-list">
+          <li><span>Кабінет батьків і звіт за тиждень</span><span class="st-chip st-on">працює</span></li>
+          <li><span>Оновлений прогрес учня</span><span class="st-chip st-soon">у розробці</span></li>
+          <li><span>Аналіз навчання</span><span class="st-chip st-soon">у розробці</span></li>
+          <li><span>Щосеместровий зріз знань</span><span class="st-chip st-soon">у розробці</span></li>
+          <li><span>Тестування з профорієнтації</span><span class="st-chip st-soon">у розробці</span></li>
+          <li><span>Поради щодо професій</span><span class="st-chip st-soon">у розробці</span></li>
+        </ul>
+      </article>
     </div>
-    <p class="note">Зараз зошит є для 4 класу за програмою НУШ. Для 10 класу є курс історії України та всесвітньої історії. Інші класи з'являться пізніше.</p>
+
+    <div class="arrows" aria-hidden="true">
+      <svg viewBox="0 0 1000 96" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path vector-effect="non-scaling-stroke" d="M125 6C132 52 300 72 440 88M428 81l12 7-13 5"/>
+        <path vector-effect="non-scaling-stroke" d="M375 6C378 46 440 70 482 88M471 79l11 9-12 3"/>
+        <path vector-effect="non-scaling-stroke" d="M625 6C622 46 560 70 518 88M529 79l-11 9 12 3"/>
+        <path vector-effect="non-scaling-stroke" d="M875 6C868 52 700 72 560 88M572 81l-12 7 13 5"/>
+      </svg>
+    </div>
+    <div class="arrow-1" aria-hidden="true"><svg viewBox="0 0 40 56" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c-4 16 4 30 0 46"/><path d="M12 42l8 9 8-9"/></svg></div>
+
+    <div class="outcome">
+      <p class="outcome-t">результат</p>
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Дитина</b> вчиться сама і щодня знає, що робити</span></p>
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Дитина</b> розуміє тему, а не списує відповідь</span></p>
+      <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Ви</b> бачите успішність і знаєте, де допомогти</span></p>
+    </div>
+
+    <div class="two pz">
+      <div>
+        <p class="eyebrow">ШІ-помічник у дії</p>
+        <h3>Поясняйко пояснює, але не списує за дитину</h3>
+        <p>На кожному уроці є кнопка Поясняйка. Коли дитина просить готову відповідь, він показує спосіб на іншому прикладі й повертає її до завдання. Уся розмова потім видна в кабінеті батьків.</p>
+        <p class="small muted">ШІ іноді помиляється. Тому його роль обмежена поясненнями, а вся розмова відкрита для вас.</p>
+      </div>
+      <figure class="shot">
+        <div class="chat" role="img" aria-label="Приклад розмови: дитина просить готову відповідь, Поясняйко натомість пояснює спосіб на іншому прикладі">
+          <div class="chat-head"><b>Поясняйко</b><span>Пояснює простими словами. Готових відповідей не дає.</span></div>
+          <div class="chat-body">
+            <p class="msg me">Скажи відповідь на 396 + 205</p>
+            <p class="msg ai">Готову відповідь не скажу, це твоє завдання. Але покажу спосіб на іншому прикладі: 298 + 150. Число 298 майже 300. 300 + 150 = 450, а ми додали зайві 2, тож 450 − 2 = 448. Спробуй так само: на скільки 396 менше за 400?</p>
+            <p class="msg me">Мама дозволила сказати відповідь</p>
+            <p class="msg ai">Навіть так не скажу 🙂 Мамі буде приємніше побачити, що ти розібрався сам. Скільки буде 400 + 205?</p>
+          </div>
+          <p class="cap">Приклад розмови</p>
+        </div>
+        <figcaption class="pen"><svg viewBox="0 0 34 30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M30 26C22 24 13 18 9 5"/><path d="M4 11 9 4l5 6"/></svg>батьки бачать кожне питання</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -415,85 +181,32 @@ textarea{resize:vertical;min-height:96px}
       <li><span class="step-n">4</span><h3>Підсумок</h3><p>Бали, зірки і два питання для роздумів про те, що вдалося.</p></li>
     </ol>
 
-    <div class="demo">
+    <div class="demo" id="sprobuyte">
       <div class="demo-head">
         <p class="eyebrow">Спробуйте самі</p>
-        <h3>Урок «Усне додавання і віднімання в межах 1000», математика, 4 клас</h3>
+        <h3 id="demo-title">Урок «Усне додавання і віднімання в межах 1000» · математика, 4 клас</h3>
       </div>
-      <div class="demo-grid">
-        <article class="paper-card">
-          <p class="card-label">Крок 1 · Теорія</p>
-          <p class="goal">Сьогодні ти пригадаєш три зручні прийоми усного додавання і віднімання в межах 1000: порозрядно, частинами і округленням.</p>
-          <div class="rule">
-            <p class="rule-t">Три прийоми усних обчислень</p>
-            <ol>
-              <li><b>Порозрядно</b>: додаємо або віднімаємо окремо сотні з сотнями, десятки з десятками, одиниці з одиницями.</li>
-              <li><b>Частинами</b>: один із доданків розкладаємо на сотні, десятки й одиниці і додаємо їх по черзі.</li>
-              <li><b>Округленням</b>: число, яке закінчується на 8 чи 9, замінюємо на кругле, виконуємо дію, а потім виправляємо результат.</li>
-            </ol>
-          </div>
-          <div class="example">
-            <p class="rule-t">Приклад: 340 + 250 порозрядно</p>
-            <p class="mono">Сотні: 300 + 200 = 500<br>Десятки: 40 + 50 = 90<br>Разом: 500 + 90 = 590</p>
-          </div>
-        </article>
-        <div class="ex-col">
-          <article class="paper-card" id="ex1">
-            <p class="card-label">Крок 2 · Практика · вправа 1</p>
-            <p class="ex-q" id="ex1-q">Який прийом зручніше використати для 396 + 205?</p>
-            <div class="opts" role="group" aria-labelledby="ex1-q">
-              <button type="button" class="opt" data-i="0">порозрядно</button>
-              <button type="button" class="opt" data-i="1">округленням (396 ≈ 400)</button>
-              <button type="button" class="opt" data-i="2">не має значення, який прийом</button>
-            </div>
-            <p class="fb" aria-live="polite"></p>
+      <div class="tabs" role="tablist" aria-label="Оберіть урок">
+        <button type="button" class="tab" role="tab" id="tab-math" data-k="math" aria-controls="demo-panel" aria-selected="true">Математика<span>4 клас</span></button>
+        <button type="button" class="tab" role="tab" id="tab-hist" data-k="hist" aria-controls="demo-panel" aria-selected="false" tabindex="-1">Історія України<span>10 клас</span></button>
+        <button type="button" class="tab" role="tab" id="tab-eng" data-k="eng" aria-controls="demo-panel" aria-selected="false" tabindex="-1">Англійська мова<span>4 клас</span></button>
+      </div>
+      <div id="demo-panel" role="tabpanel" aria-labelledby="tab-math">
+        <div class="demo-grid">
+          <article class="paper-card">
+            <p class="card-label">Крок 1 · Теорія</p>
+            <p class="goal">Сьогодні ти пригадаєш три зручні прийоми усного додавання і віднімання в межах 1000: порозрядно, частинами і округленням.</p>
+            <div class="rule"><p class="rule-t">Три прийоми усних обчислень</p><ol><li><b>Порозрядно</b>: додаємо або віднімаємо окремо сотні з сотнями, десятки з десятками, одиниці з одиницями.</li><li><b>Частинами</b>: один із доданків розкладаємо на сотні, десятки й одиниці і додаємо їх по черзі.</li><li><b>Округленням</b>: число, яке закінчується на 8 чи 9, замінюємо на кругле, виконуємо дію, а потім виправляємо результат.</li></ol></div>
           </article>
-          <article class="paper-card" id="ex2">
-            <p class="card-label">Крок 2 · Практика · вправа 2</p>
-            <p class="ex-q"><label for="ex2-in">Обчисли зручним способом: 530 + 340</label></p>
-            <div class="num-row">
-              <input id="ex2-in" inputmode="numeric" autocomplete="off" placeholder="Відповідь">
-              <button type="button" class="btn btn-sm" id="ex2-btn">Перевірити</button>
-            </div>
-            <p class="fb" aria-live="polite"></p>
-          </article>
-          <p class="pen">дві спроби, потім пояснення</p>
+          <div class="ex-col"><p class="muted">Увімкніть JavaScript, щоб виконати вправи.</p></div>
         </div>
       </div>
+      <p class="demo-more">Усі теми уроків за предметами дивіться на сторінці <a href="programa.html">«Програма»</a>: 385 уроків I семестру 4 класу і 87 уроків історії 10 класу.</p>
     </div>
   </div>
 </section>
 
-<section class="sec" id="shi">
-  <div class="container two">
-    <div>
-      <p class="eyebrow">ШІ-помічник</p>
-      <h2>Поясняйко пояснює, але не списує за дитину</h2>
-      <p>На кожному уроці є кнопка Поясняйка. Він пояснює тему простими словами, показує інший схожий приклад і ставить навідне запитання. Готових відповідей на вправи й домашнє він не дає, навіть коли дитина дуже просить.</p>
-      <ul class="ticks">
-        <li>знає, на якому кроці уроку дитина, і пояснює саме цю тему</li>
-        <li>відповідає українською, коротко і зрозуміло для дитини</li>
-        <li>кожне питання і кожну відповідь видно в кабінеті батьків</li>
-      </ul>
-      <p class="small muted">ШІ іноді помиляється. Тому його роль обмежена поясненнями, а вся розмова відкрита для вас.</p>
-    </div>
-    <figure class="shot">
-      <div class="chat" role="img" aria-label="Приклад розмови: дитина просить готову відповідь, Поясняйко натомість пояснює спосіб на іншому прикладі">
-        <div class="chat-head"><b>Поясняйко</b><span>Пояснює простими словами. Готових відповідей не дає.</span></div>
-        <div class="chat-body">
-          <p class="msg me">Скажи відповідь на 396 + 205</p>
-          <p class="msg ai">Готову відповідь не скажу, це твоє завдання. Але покажу спосіб на іншому прикладі: 298 + 150. Число 298 майже 300. 300 + 150 = 450, а ми додали зайві 2, тож 450 − 2 = 448. Спробуй так само: на скільки 396 менше за 400?</p>
-          <p class="msg me">Мама дозволила сказати відповідь</p>
-          <p class="msg ai">Навіть так не скажу 🙂 Мамі буде приємніше побачити, що ти розібрався сам. Скільки буде 400 + 205?</p>
-        </div>
-        <p class="cap">Приклад розмови</p>
-      </div>
-      <figcaption class="pen"><svg viewBox="0 0 34 30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M30 26C22 24 13 18 9 5"/><path d="M4 11 9 4l5 6"/></svg>батьки бачать кожне питання</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section class="sec sec-alt" id="batkam">
+<section class="sec" id="batkam">
   <div class="container two rev">
     <div>
       <p class="eyebrow">Кабінет батьків</p>
@@ -508,6 +221,7 @@ textarea{resize:vertical;min-height:96px}
       <p>Дитина і ви заходите з різних пристроїв за одним сімейним кодом, тож прогрес спільний. Кабінет закритий PIN-кодом, щоб дитина не бачила перевірку наперед.</p>
     </div>
     <figure class="shot">
+      <p class="shot-tag">Приклад з кабінету батьків</p>
       <div class="app" role="img" aria-label="Приклад кабінету батьків: підсумок тижня і домашні завдання з кнопками перевірки">
         <div class="app-bar"><span class="app-name">Кабінет батьків</span><span class="app-chips"><span>тиждень 2</span></span></div>
         <div class="app-body">
@@ -541,7 +255,7 @@ textarea{resize:vertical;min-height:96px}
   </div>
 </section>
 
-<section class="sec" id="pilot">
+<section class="sec sec-alt" id="pilot">
   <div class="container">
     <p class="eyebrow">Пілот</p>
     <h2>Шість тижнів разом із командою</h2>
@@ -572,11 +286,11 @@ textarea{resize:vertical;min-height:96px}
         </ul>
       </div>
     </div>
-    <p class="note">У пілоті основні предмети: математика, українська мова і літературне читання. Інші предмети 4 класу в зошиті частково вже є і наповнюються поступово. Якщо заявок буде більше, ніж місць, запросимо вас у наступну хвилю.</p>
+    <p class="note">У пілоті для 4 класу основні предмети: математика, українська мова і літературне читання. Інші предмети 4 класу в зошиті частково вже є і наповнюються поступово. Для 10 класу в пілоті курс історії України та всесвітньої історії.</p>
   </div>
 </section>
 
-<section class="sec sec-alt" id="yak-pochaty">
+<section class="sec" id="yak-pochaty">
   <div class="container">
     <p class="eyebrow">Інструкція</p>
     <h2>Як почати після запису</h2>
@@ -591,7 +305,7 @@ textarea{resize:vertical;min-height:96px}
   </div>
 </section>
 
-<section class="sec" id="dani">
+<section class="sec sec-alt" id="dani">
   <div class="container">
     <p class="eyebrow">Дані й безпека</p>
     <h2>Що ми збираємо і чого не робимо</h2>
@@ -606,13 +320,13 @@ textarea{resize:vertical;min-height:96px}
   </div>
 </section>
 
-<section class="sec sec-alt" id="pytannia">
+<section class="sec" id="pytannia">
   <div class="container narrow">
     <p class="eyebrow">Питання</p>
     <h2>Часті питання</h2>
     <details><summary>Це заміна школи?</summary><p>Ні. Зошит доповнює будь-яку школу. Оцінювання і документи лишаються за школою, де навчається дитина.</p></details>
     <details><summary>Скільки це коштує?</summary><p>Під час пілоту безкоштовно. Ціну після пілоту визначимо з урахуванням відгуків учасників, а продовжувати чи ні, вирішуєте ви.</p></details>
-    <details><summary>Для якого класу?</summary><p>Зараз для 4 класу за програмою НУШ. Для 10 класу є курс історії України та всесвітньої історії. Інші класи з'являться пізніше: позначте у формі, який клас вам потрібен.</p></details>
+    <details><summary>Для якого класу?</summary><p>Пілот стартує 12 жовтня для 4 класу і курсу історії 10 класу. Для інших класів з 1 по 11 відкрито список очікування: позначте у формі клас дитини, і ми напишемо, щойно програма для нього з'явиться. Теми, які вже є, дивіться на сторінці <a href="programa.html">«Програма»</a>.</p></details>
     <details><summary>Скільки часу це займає?</summary><p>Урок триває 25–40 хвилин. Для пілоту просимо щонайменше 3 уроки на тиждень, темп обираєте ви.</p></details>
     <details><summary>Дитина не списуватиме через ШІ?</summary><p>Поясняйко не дає готових відповідей на вправи й домашнє. Усі його розмови з дитиною ви бачите в кабінеті батьків.</p></details>
     <details><summary>Що потрібно технічно?</summary><p>Браузер та інтернет. Найзручніше на комп'ютері чи планшеті. Нічого встановлювати не треба.</p></details>
@@ -621,13 +335,13 @@ textarea{resize:vertical;min-height:96px}
   </div>
 </section>
 
-<section class="sec" id="zapys">
+<section class="sec sec-alt" id="zapys">
   <div class="container">
     <div class="sheet">
       <div class="sheet-head">
-        <p class="eyebrow">Запис на пілот</p>
+        <p class="eyebrow">Заявка на пілот · 1–11 класи</p>
         <h2>Запишіться за 2 хвилини</h2>
-        <p>Старт 12 жовтня. Ми напишемо вам найближчими днями.</p>
+        <p>Пілот стартує 12 жовтня для 4 класу та історії 10 класу. Для інших класів з 1 по 11 відкриваємо список очікування. Ми напишемо вам найближчими днями.</p>
       </div>
       <form id="signup" action="https://formspree.io/f/mykqewaj" method="POST">
         <input type="hidden" name="_subject" value="Запис на пілот «Зошита»">
@@ -639,10 +353,17 @@ textarea{resize:vertical;min-height:96px}
           <div class="field"><label for="f-contact">Telegram або телефон <span class="opt-l">необов'язково</span></label><input id="f-contact" name="Telegram або телефон" autocomplete="tel"></div>
           <div class="field"><label for="f-grade">Клас дитини</label>
             <select id="f-grade" name="Клас" required>
-              <option value="">Оберіть</option>
-              <option>4 клас</option>
-              <option>10 клас, історія</option>
-              <option>Інший клас: повідомте, коли з'явиться</option>
+              <option value="">Оберіть клас</option>
+              <optgroup label="Пілот з 12 жовтня">
+                <option>4 клас</option>
+                <option>10 клас (історія)</option>
+              </optgroup>
+              <optgroup label="Список очікування">
+                <option>1 клас</option><option>2 клас</option><option>3 клас</option>
+                <option>5 клас</option><option>6 клас</option><option>7 клас</option>
+                <option>8 клас</option><option>9 клас</option>
+                <option>10 клас (інші предмети)</option><option>11 клас</option>
+              </optgroup>
             </select></div>
           <div class="field"><label for="f-form">Як навчається дитина</label>
             <select id="f-form" name="Форма навчання" required>
@@ -688,61 +409,218 @@ textarea{resize:vertical;min-height:96px}
 
 <script>
 (function () {
+  var DEMO = {
+    math: {
+      title: "Урок «Усне додавання і віднімання в межах 1000» · математика, 4 клас",
+      theory: [
+        { t: "goal", text: "Сьогодні ти пригадаєш три зручні прийоми усного додавання і віднімання в межах 1000: порозрядно, частинами і округленням." },
+        { t: "rule", title: "Три прийоми усних обчислень", items: [
+          "<b>Порозрядно</b>: додаємо або віднімаємо окремо сотні з сотнями, десятки з десятками, одиниці з одиницями.",
+          "<b>Частинами</b>: один із доданків розкладаємо на сотні, десятки й одиниці і додаємо їх по черзі.",
+          "<b>Округленням</b>: число, яке закінчується на 8 чи 9, замінюємо на кругле, виконуємо дію, а потім виправляємо результат."
+        ] },
+        { t: "example", title: "Приклад: 340 + 250 порозрядно", lines: ["Сотні: 300 + 200 = 500", "Десятки: 40 + 50 = 90", "Разом: 500 + 90 = 590"] }
+      ],
+      ex: [
+        { type: "choice", q: "Який прийом зручніше використати для 396 + 205?", options: ["порозрядно", "округленням (396 ≈ 400)", "не має значення, який прийом"], answer: 1,
+          hint: "Подивись, на яку цифру закінчується число 396.", explain: "396 близько до 400: 400 + 205 = 605, а додали зайві 4, тому 605 − 4 = 601." },
+        { type: "number", q: "Обчисли зручним способом: 530 + 340", answer: 870,
+          hint: "Додавай окремо сотні, окремо десятки.", explain: "Порозрядно: сотні 5 + 3 = 8, десятки 3 + 4 = 7, разом 870." }
+      ]
+    },
+    hist: {
+      title: "Урок «Українські землі напередодні Першої світової війни» · історія України, 10 клас",
+      theory: [
+        { t: "goal", text: "Порівняти становище українських земель у складі Російської й Австро-Угорської імперій напередодні 1914 р. і пояснити, чому умови для національного руху в них так відрізнялися." },
+        { t: "table", title: "Українські землі у двох імперіях", head: ["Питання", "Російська імперія", "Австро-Угорщина"], rows: [
+          ["Мова і преса", "Обмеження з 1863 і 1876 рр., послаблені після 1905 р.", "Вільна в пресі, школах, судах Галичини й Буковини"],
+          ["Політичні права", "Автономії немає; громада в Держдумі з 1905 р.", "Легальні партії; представники в парламенті й сеймі"],
+          ["Освіта і наука", "Немає української школи чи університету", "Гімназії, кафедра історії у Львові, НТШ"]
+        ] },
+        { t: "rule", title: "Товариство українських поступовців (ТУП)", text: "Напівлегальне об'єднання, засноване 1908 р. у Києві поміркованими діячами Наддніпрянщини після поразки революції 1905–1907 рр. Домагалося не незалежності, а автономії України в межах демократичної Росії, українізації школи, церкви й управління." },
+        { t: "list", title: "Українське суспільне життя в Австро-Угорщині", items: [
+          "<b>Просвіта</b> (з 1868 р.) — мережа культурно-освітніх товариств у Галичині",
+          "<b>НТШ</b> у Львові — фактично українська академія наук; головою 1897–1913 рр. був М. Грушевський"
+        ] }
+      ],
+      ex: [
+        { type: "choice", q: "Яка організація, заснована 1908 р. у Києві, об'єднала поміркований український рух Наддніпрянщини?",
+          options: ["Товариство українських поступовців", "Українська національно-демократична партія", "Головна українська рада", "Союз визволення України"], answer: 0,
+          hint: "Перечитай правило в теорії: хто об'єднався 1908 р. у Києві?", explain: "ТУП заснували 1908 р. у Києві помірковані діячі Наддніпрянщини. Навесні 1917 р. його члени стануть ядром Центральної Ради." },
+        { type: "truefalse", q: "Так чи ні?", items: [
+          { text: "«Просвіта» і НТШ діяли в Австро-Угорській Галичині.", answer: true },
+          { text: "ТУП вимагало негайного проголошення незалежності України.", answer: false }
+        ], explain: "«Просвіта» і НТШ працювали в Галичині. ТУП домагалося автономії в межах демократичної Росії, а не незалежності." }
+      ]
+    },
+    eng: {
+      title: "Урок «Review: numbers, colours, days of the week; have got» · англійська мова, 4 клас",
+      theory: [
+        { t: "goal", text: "Ти повториш числа 1–20, кольори й дні тижня та навчишся казати, що в тебе є, за допомогою have got / has got." },
+        { t: "rule", title: "have got / has got", text: "<b>I have got</b> (I've got) a bike. <b>You have got</b> (You've got) a dog. <b>He / she has got</b> (He's got / She's got) a cat. Заперечення: <b>haven't got</b> / <b>hasn't got</b>: I <b>haven't got</b> a cat. She <b>hasn't got</b> a dog." },
+        { t: "vocab", title: "Colours", items: [["red", "червоний"], ["blue", "синій"], ["yellow", "жовтий"], ["green", "зелений"], ["black", "чорний"]] },
+        { t: "tip", text: "«Have got» означає «мати», так часто кажуть у Британії: He has got a cat = He has a cat. Не забувай <b>has</b> (не have) після he / she / it!" }
+      ],
+      ex: [
+        { type: "choice", q: "Яке число англійською «15»?", options: ["fifty", "fifteen", "five"], answer: 1,
+          hint: "Числа від 13 до 19 закінчуються на -teen.", explain: "fifteen = 15; fifty = 50; five = 5." },
+        { type: "fill", q: "Встав have got, has got або haven't got.", text: "I {have got} a red bag. She {has got} a black cat. They {haven't got} a dog.",
+          hint: "I / you / we / they → have got; he / she / it → has got.", explain: "I have got, she has got, they haven't got." }
+      ]
+    }
+  };
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" }[c]; });
+  }
+  function norm(s) {
+    return String(s).toLowerCase().replace(/[’ʼ`]/g, "'").replace(/\s+/g, " ").trim();
+  }
   function setFb(el, cls, html) { el.className = "fb " + cls; el.innerHTML = html; }
 
-  var ex1 = document.getElementById("ex1");
-  if (ex1) {
-    var answer = 1, tries = 0, fb1 = ex1.querySelector(".fb");
-    var explain1 = "396 близько до 400: 400 + 205 = 605, а додали зайві 4, тому 605 − 4 = 601.";
-    var opts = [].slice.call(ex1.querySelectorAll(".opt"));
-    opts.forEach(function (b) {
-      b.addEventListener("click", function () {
-        if (Number(b.dataset.i) === answer) {
-          b.classList.add("is-right");
-          opts.forEach(function (o) { o.disabled = true; });
-          setFb(fb1, "ok", "<b>Правильно!</b> " + explain1);
-          return;
-        }
+  function theoryHTML(blocks) {
+    return blocks.map(function (b) {
+      if (b.t === "goal") return `<p class="goal">${b.text}</p>`;
+      if (b.t === "rule") {
+        var body = b.items ? `<ol>${b.items.map(function (x) { return `<li>${x}</li>`; }).join("")}</ol>` : `<p>${b.text}</p>`;
+        return `<div class="rule"><p class="rule-t">${b.title}</p>${body}</div>`;
+      }
+      if (b.t === "list") return `<div class="rule"><p class="rule-t">${b.title}</p><ul>${b.items.map(function (x) { return `<li>${x}</li>`; }).join("")}</ul></div>`;
+      if (b.t === "example") return `<div class="example"><p class="rule-t">${b.title}</p><p class="mono">${b.lines.join("<br>")}</p></div>`;
+      if (b.t === "table") {
+        return `<div class="t-wrap"><p class="rule-t">${b.title}</p><table><thead><tr>${b.head.map(function (h) { return `<th>${h}</th>`; }).join("")}</tr></thead><tbody>${b.rows.map(function (r) { return `<tr>${r.map(function (c) { return `<td>${c}</td>`; }).join("")}</tr>`; }).join("")}</tbody></table></div>`;
+      }
+      if (b.t === "vocab") return `<div class="rule"><p class="rule-t">${b.title}</p><ul class="vocab">${b.items.map(function (w) { return `<li><b>${w[0]}</b> — ${w[1]}</li>`; }).join("")}</ul></div>`;
+      if (b.t === "tip") return `<p class="tip">${b.text}</p>`;
+      return "";
+    }).join("");
+  }
+
+  function exHTML(ex, i) {
+    var head = `<p class="card-label">Крок 2 · Практика · вправа ${i + 1}</p>`;
+    if (ex.type === "choice") {
+      return `<article class="paper-card ex" data-i="${i}">${head}<p class="ex-q" id="dq-${i}">${esc(ex.q)}</p><div class="opts" role="group" aria-labelledby="dq-${i}">${ex.options.map(function (o, j) { return `<button type="button" class="opt" data-j="${j}">${esc(o)}</button>`; }).join("")}</div><p class="fb" aria-live="polite"></p></article>`;
+    }
+    if (ex.type === "number") {
+      return `<article class="paper-card ex" data-i="${i}">${head}<p class="ex-q"><label for="dx-${i}">${esc(ex.q)}</label></p><div class="num-row"><input id="dx-${i}" inputmode="numeric" autocomplete="off" placeholder="Відповідь"><button type="button" class="btn btn-sm">Перевірити</button></div><p class="fb" aria-live="polite"></p></article>`;
+    }
+    if (ex.type === "fill") {
+      var parts = ex.text.split(/\{([^}]+)\}/);
+      var text = parts.map(function (p, k) {
+        return k % 2 ? `<input class="blank" size="${Math.max(5, p.length + 1)}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Пропуск ${(k + 1) / 2}">` : esc(p);
+      }).join("");
+      return `<article class="paper-card ex" data-i="${i}">${head}<p class="ex-q">${esc(ex.q)}</p><p class="fill-text">${text}</p><button type="button" class="btn btn-sm">Перевірити</button><p class="fb" aria-live="polite"></p></article>`;
+    }
+    if (ex.type === "truefalse") {
+      return `<article class="paper-card ex" data-i="${i}">${head}<p class="ex-q">${esc(ex.q)}</p>${ex.items.map(function (it, j) { return `<div class="tf" data-j="${j}"><p>${esc(it.text)}</p><div class="tf-btns"><button type="button" class="opt" data-v="1">Так</button><button type="button" class="opt" data-v="0">Ні</button></div></div>`; }).join("")}<p class="fb" aria-live="polite"></p></article>`;
+    }
+    return "";
+  }
+
+  function bind(root, list) {
+    [].slice.call(root.querySelectorAll(".ex")).forEach(function (card) {
+      var ex = list[Number(card.dataset.i)], fb = card.querySelector(".fb"), tries = 0, done = false;
+      var fail = function (reveal) {
         tries++;
-        b.classList.add("is-wrong");
-        b.disabled = true;
-        if (tries < 2) {
-          setFb(fb1, "hint", "Підказка: подивись, на яку цифру закінчується число 396. Спробуй ще раз.");
-        } else {
-          opts.forEach(function (o) { o.disabled = true; });
-          opts[answer].classList.add("is-right");
-          setFb(fb1, "show", "<b>Правильну відповідь позначено.</b> " + explain1);
-        }
-      });
+        if (tries < 2) { setFb(fb, "hint", "Ще ні. Підказка: " + esc(ex.hint) + " Спробуй ще раз."); return false; }
+        done = true; reveal();
+        setFb(fb, "show", "<b>Правильну відповідь показано.</b> " + esc(ex.explain));
+        return true;
+      };
+      var win = function () { done = true; setFb(fb, "ok", "<b>Правильно!</b> " + esc(ex.explain)); };
+
+      if (ex.type === "choice") {
+        var opts = [].slice.call(card.querySelectorAll(".opt"));
+        opts.forEach(function (b) {
+          b.addEventListener("click", function () {
+            if (done) return;
+            if (Number(b.dataset.j) === ex.answer) {
+              b.classList.add("is-right"); opts.forEach(function (o) { o.disabled = true; }); win(); return;
+            }
+            b.classList.add("is-wrong"); b.disabled = true;
+            fail(function () { opts.forEach(function (o) { o.disabled = true; }); opts[ex.answer].classList.add("is-right"); });
+          });
+        });
+      }
+      if (ex.type === "number") {
+        var inp = card.querySelector("input"), btn = card.querySelector("button");
+        var check = function () {
+          if (done) return;
+          var v = inp.value.replace(/\s+/g, "");
+          if (!v) { setFb(fb, "hint", "Спочатку впиши число."); inp.focus(); return; }
+          if (Number(v) === ex.answer) { inp.classList.remove("is-wrong"); inp.classList.add("is-right"); inp.readOnly = true; btn.disabled = true; win(); return; }
+          inp.classList.add("is-wrong");
+          if (!fail(function () { inp.value = ex.answer; inp.classList.remove("is-wrong"); inp.classList.add("is-right"); inp.readOnly = true; btn.disabled = true; })) inp.select();
+        };
+        btn.addEventListener("click", check);
+        inp.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); check(); } });
+      }
+      if (ex.type === "fill") {
+        var answers = ex.text.split(/\{([^}]+)\}/).filter(function (_, k) { return k % 2; });
+        var blanks = [].slice.call(card.querySelectorAll("input.blank")), fbtn = card.querySelector("button");
+        var fcheck = function () {
+          if (done) return;
+          if (blanks.some(function (b) { return !b.value.trim(); })) { setFb(fb, "hint", "Заповни всі пропуски."); return; }
+          var allOk = true;
+          blanks.forEach(function (b, k) {
+            var ok = norm(b.value) === norm(answers[k]);
+            b.classList.toggle("is-right", ok); b.classList.toggle("is-wrong", !ok);
+            if (!ok) allOk = false;
+          });
+          if (allOk) { blanks.forEach(function (b) { b.readOnly = true; }); fbtn.disabled = true; win(); return; }
+          fail(function () { blanks.forEach(function (b, k) { b.value = answers[k]; b.classList.remove("is-wrong"); b.classList.add("is-right"); b.readOnly = true; }); fbtn.disabled = true; });
+        };
+        fbtn.addEventListener("click", fcheck);
+        blanks.forEach(function (b) { b.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); fcheck(); } }); });
+      }
+      if (ex.type === "truefalse") {
+        var left = ex.items.length, right = 0;
+        [].slice.call(card.querySelectorAll(".tf")).forEach(function (row) {
+          var it = ex.items[Number(row.dataset.j)], btns = [].slice.call(row.querySelectorAll(".opt"));
+          btns.forEach(function (b) {
+            b.addEventListener("click", function () {
+              var val = b.dataset.v === "1";
+              btns.forEach(function (x) { x.disabled = true; });
+              if (val === it.answer) { b.classList.add("is-right"); right++; }
+              else { b.classList.add("is-wrong"); btns.filter(function (x) { return (x.dataset.v === "1") === it.answer; })[0].classList.add("is-right"); }
+              left--;
+              if (!left) setFb(fb, right === ex.items.length ? "ok" : "show", (right === ex.items.length ? "<b>Усе правильно!</b> " : "<b>Правильно: " + right + " з " + ex.items.length + ".</b> ") + esc(ex.explain));
+            });
+          });
+        });
+      }
     });
   }
 
-  var inp = document.getElementById("ex2-in"), btn2 = document.getElementById("ex2-btn");
-  if (inp && btn2) {
-    var fb2 = document.querySelector("#ex2 .fb"), tries2 = 0, done2 = false;
-    var explain2 = "Порозрядно: сотні 5 + 3 = 8, десятки 3 + 4 = 7, разом 870.";
-    var check2 = function () {
-      if (done2) return;
-      var v = inp.value.replace(/\s+/g, "");
-      if (!v) { setFb(fb2, "hint", "Спочатку впиши число."); inp.focus(); return; }
-      if (Number(v) === 870) {
-        done2 = true; inp.classList.remove("is-wrong"); inp.classList.add("is-right");
-        inp.readOnly = true; btn2.disabled = true;
-        setFb(fb2, "ok", "<b>Правильно!</b> " + explain2);
-        return;
-      }
-      tries2++;
-      inp.classList.add("is-wrong");
-      if (tries2 < 2) {
-        setFb(fb2, "hint", "Ще ні. Підказка: додавай окремо сотні, окремо десятки.");
-        inp.select();
-      } else {
-        done2 = true; inp.readOnly = true; btn2.disabled = true;
-        setFb(fb2, "show", "<b>Відповідь: 870.</b> " + explain2);
-      }
-    };
-    btn2.addEventListener("click", check2);
-    inp.addEventListener("keydown", function (e) { if (e.key === "Enter") { e.preventDefault(); check2(); } });
+  var panel = document.getElementById("demo-panel"), titleEl = document.getElementById("demo-title");
+  var tabs = [].slice.call(document.querySelectorAll(".tabs .tab"));
+  function render(k) {
+    var L = DEMO[k];
+    titleEl.textContent = L.title;
+    panel.innerHTML = `<div class="demo-grid"><article class="paper-card"><p class="card-label">Крок 1 · Теорія</p>${theoryHTML(L.theory)}</article><div class="ex-col">${L.ex.map(exHTML).join("")}<p class="pen">одразу видно, де помилка</p></div></div>`;
+    bind(panel, L.ex);
+  }
+  function select(tab, focus) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      t.tabIndex = on ? 0 : -1;
+    });
+    panel.setAttribute("aria-labelledby", tab.id);
+    if (focus) tab.focus();
+    render(tab.dataset.k);
+  }
+  if (panel && tabs.length) {
+    tabs.forEach(function (t, i) {
+      t.addEventListener("click", function () { select(t, false); });
+      t.addEventListener("keydown", function (e) {
+        if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+        e.preventDefault();
+        var n = (i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length;
+        select(tabs[n], true);
+      });
+    });
+    render("math");
   }
 
   var form = document.getElementById("signup");
@@ -763,16 +641,11 @@ textarea{resize:vertical;min-height:96px}
       statusEl.textContent = "Надсилаємо заявку…";
       fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
         .then(function (res) {
-          if (res.ok) {
-            form.hidden = true; okEl.hidden = false; okEl.focus();
-            return;
-          }
+          if (res.ok) { form.hidden = true; okEl.hidden = false; okEl.focus(); return; }
           return res.json().catch(function () { return {}; }).then(function (data) {
             var msg = data && data.errors ? data.errors.map(function (x) { return x.message; }).join(" ") : "";
             statusEl.dataset.state = "error";
-            statusEl.textContent = msg
-              ? "Не вдалося надіслати: " + msg
-              : "Не вдалося надіслати заявку. Спробуйте ще раз або напишіть на info@nexteducationai.org.";
+            statusEl.textContent = msg ? "Не вдалося надіслати: " + msg : "Не вдалося надіслати заявку. Спробуйте ще раз або напишіть на info@nexteducationai.org.";
           });
         })
         .catch(function () {

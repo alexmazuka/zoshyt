@@ -71,7 +71,7 @@
   --grid:#DAE2F0; --rule:#E1E6EF;
   --ok:#1D7449; --ok-soft:#E2F2E9; --on-ok:#FFFFFF;
   --warn:#8F6210; --warn-soft:#F7EDD5;
-  --s-math:#2563EB; --s-ukr:#B45309; --s-read:#DC2626; --on-subj:#FFFFFF;
+  --s-math:#2563EB; --s-ukr:#B45309; --s-read:#DC2626; --s-hist:#1E3A5F; --s-eng:#7C3AED; --on-subj:#FFFFFF;
   --star:#D99A00;
   --band-bg:#1B2230; --band-ink:#F5F7FB; --band-ok:#7BE0A8; --band-pen:#FF8FA0;
   --shadow:0 1px 2px rgba(27,34,48,.06),0 10px 30px rgba(27,34,48,.09);
@@ -89,7 +89,7 @@
     --grid:#1C2534; --rule:#263145;
     --ok:#68D09A; --ok-soft:#163226; --on-ok:#0F141D;
     --warn:#E6BD66; --warn-soft:#342A15;
-    --s-math:#7FA3FF; --s-ukr:#F2B155; --s-read:#FF8A8A; --on-subj:#0F141D;
+    --s-math:#7FA3FF; --s-ukr:#F2B155; --s-read:#FF8A8A; --s-hist:#8FB3E0; --s-eng:#B794F6; --on-subj:#0F141D;
     --star:#F2C94C;
     --band-bg:#E7EBF3; --band-ink:#0F141D; --band-ok:#1D7449; --band-pen:#C8324B;
     --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 30px rgba(0,0,0,.4);
@@ -141,7 +141,7 @@ figure{margin:0}
 .hero::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;-webkit-mask-image:linear-gradient(180deg,#000 45%,transparent);mask-image:linear-gradient(180deg,#000 45%,transparent)}
 .hero-in{position:relative;display:grid;gap:40px;align-items:center}
 @media (min-width:980px){.hero-in{grid-template-columns:1.12fr .88fr;gap:60px}}
-.hero-in>*,.two>*,.demo-grid>*,.fields>*,.ex-col>*,.methods>*{min-width:0}
+.hero-in>*,.two>*,.lesson-cards>*,.fields>*,.ex-col>*,.methods>*{min-width:0}
 .hero-copy{position:relative;padding-left:22px}
 .hero-copy::before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:2px;background:var(--margin);opacity:.7}
 h1{font-weight:700;font-size:clamp(2.2rem,5.4vw,3.4rem);line-height:1.05;letter-spacing:-.025em;margin:0 0 20px}
@@ -231,8 +231,6 @@ h3{font-weight:600;font-size:1.14rem;line-height:1.3;margin:0 0 6px}
 .tab:hover{border-color:var(--blue)}
 .tab[aria-selected="true"]{background:var(--blue);border-color:var(--blue);color:var(--on-blue)}
 .tab[aria-selected="true"] span{color:var(--on-blue);opacity:.8}
-.demo-grid{display:grid;gap:18px;grid-template-columns:1fr;align-items:start}
-@media (min-width:900px){.demo-grid{grid-template-columns:1fr 1fr}}
 .paper-card{background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:20px}
 .card-label{font:500 .72rem/1.3 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:0 0 12px}
 .goal{background:var(--blue-soft);border-radius:8px;padding:12px 14px;font-size:.98rem}
@@ -273,6 +271,54 @@ h3{font-weight:600;font-size:1.14rem;line-height:1.3;margin:0 0 6px}
 .fb.ok{color:var(--ok)}.fb.hint{color:var(--warn)}.fb.show{color:var(--ink-2)}
 .ex-col .pen{justify-self:end}
 .demo-more{margin:22px 0 0;font-size:1rem}
+.demo-head .muted{margin:-8px 0 18px}
+
+/* картки уроків */
+.lesson-cards{display:grid;gap:14px;grid-template-columns:1fr}
+@media (min-width:760px){.lesson-cards{grid-template-columns:repeat(3,1fr)}}
+.lcard{display:grid;gap:8px;align-content:start;text-decoration:none;color:var(--ink);background:var(--paper);border:1.5px solid var(--rule);border-radius:12px;padding:18px 18px 16px;transition:border-color .15s,transform .15s,box-shadow .15s}
+.lcard:hover{border-color:var(--c);transform:translateY(-2px);box-shadow:var(--shadow)}
+.lcard-subj{display:flex;align-items:center;gap:8px;font:500 .72rem/1.2 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.lcard-subj i{width:10px;height:10px;border-radius:50%;background:var(--c);flex:0 0 auto}
+.lcard-t{font:600 1.08rem/1.3 var(--f-display)}
+.lcard-meta{font-size:.86rem;color:var(--ink-3)}
+.lcard-go{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--blue);margin-top:4px}
+.lcard-go svg{width:18px;height:18px;transition:transform .15s}
+.lcard:hover .lcard-go svg{transform:translateX(3px)}
+
+/* панель уроку */
+html:has(dialog[open]){overflow:hidden}
+.drawer{position:fixed;inset:0 0 0 auto;margin:0;padding:0;border:0;width:min(640px,100%);height:100%;max-width:100%;max-height:100%;background:var(--surface);color:var(--ink);box-shadow:-24px 0 60px rgba(0,0,0,.28);overflow:hidden}
+.drawer::backdrop{background:rgba(10,14,22,.5)}
+@media (prefers-reduced-motion: no-preference){
+  .drawer[open]{animation:drawer-in .26s cubic-bezier(.2,.8,.2,1)}
+  .drawer[open]::backdrop{animation:fade-in .26s ease}
+}
+@keyframes drawer-in{from{transform:translateX(48px);opacity:0}to{transform:none;opacity:1}}
+@keyframes fade-in{from{opacity:0}to{opacity:1}}
+.drawer-in{display:flex;flex-direction:column;height:100%}
+.drawer-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:calc(18px + env(safe-area-inset-top,0px)) 22px 12px}
+.drawer-head .eyebrow{margin:0 0 6px}
+.drawer-head h2{font-size:1.3rem;line-height:1.2;margin:0;max-width:none}
+.dlg-x{flex:0 0 auto;width:40px;height:40px;border-radius:10px;border:1.5px solid var(--rule);background:var(--paper);color:var(--ink);display:grid;place-items:center;cursor:pointer}
+.dlg-x:hover{border-color:var(--blue);color:var(--blue)}
+.dlg-x svg{width:20px;height:20px}
+.drawer .tabs{padding:0 22px 14px;margin:0;border-bottom:1px solid var(--rule)}
+.drawer .tab{padding:8px 12px;font-size:.9rem}
+.drawer-body{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:18px 22px 24px;display:grid;gap:16px;align-content:start}
+.drawer .paper-card{background:var(--paper)}
+.drawer-foot{display:flex;flex-wrap:wrap;gap:10px;padding:14px 22px calc(14px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--rule);background:var(--surface)}
+@media (max-width:640px){
+  .drawer{width:100%;box-shadow:none}
+  .drawer-head,.drawer .tabs,.drawer-body,.drawer-foot{padding-left:16px;padding-right:16px}
+  .drawer-head{padding-bottom:10px}
+  .drawer-head h2{font-size:1.15rem}
+  .drawer .tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent);padding-right:40px}
+  .drawer .tabs::-webkit-scrollbar{display:none}
+  .drawer .tab{flex:0 0 auto}
+  .drawer-foot{flex-wrap:nowrap}
+  .drawer-foot .btn{flex:1 1 auto;padding:12px 10px;font-size:.9rem;white-space:nowrap}
+}
 
 /* дві колонки */
 .two{display:grid;gap:40px;align-items:center}

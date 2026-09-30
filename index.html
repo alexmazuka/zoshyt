@@ -45,7 +45,7 @@
       <p class="lead">Зошит за програмою Міністерства освіти і науки України. Дитина щодня бачить, що робити. <b>Ви контролюєте успішність дитини.</b> ШІ-помічник пояснює тему, але не робить домашнє за дитину.</p>
       <div class="cta-row">
         <a class="btn" href="#zapys">Записатися на пілот</a>
-        <a class="btn btn-ghost" href="#sprobuyte">Спробувати урок</a>
+        <a class="btn btn-ghost" href="#urok-math" data-open="math">Спробувати урок</a>
       </div>
       <ul class="facts">
         <li>6 тижнів</li><li>20–30 сімей</li><li>безкоштовно</li><li>без реєстрації дитини</li>
@@ -184,22 +184,28 @@
     <div class="demo" id="sprobuyte">
       <div class="demo-head">
         <p class="eyebrow">Спробуйте самі</p>
-        <h3 id="demo-title">Урок «Усне додавання і віднімання в межах 1000» · математика, 4 клас</h3>
+        <h3>Три справжні уроки із зошита</h3>
+        <p class="muted">Урок відкриється на панелі поверх сторінки: теорія і вправи з автоперевіркою, як у кабінеті дитини.</p>
       </div>
-      <div class="tabs" role="tablist" aria-label="Оберіть урок">
-        <button type="button" class="tab" role="tab" id="tab-math" data-k="math" aria-controls="demo-panel" aria-selected="true">Математика<span>4 клас</span></button>
-        <button type="button" class="tab" role="tab" id="tab-hist" data-k="hist" aria-controls="demo-panel" aria-selected="false" tabindex="-1">Історія України<span>10 клас</span></button>
-        <button type="button" class="tab" role="tab" id="tab-eng" data-k="eng" aria-controls="demo-panel" aria-selected="false" tabindex="-1">Англійська мова<span>4 клас</span></button>
-      </div>
-      <div id="demo-panel" role="tabpanel" aria-labelledby="tab-math">
-        <div class="demo-grid">
-          <article class="paper-card">
-            <p class="card-label">Крок 1 · Теорія</p>
-            <p class="goal">Сьогодні ти пригадаєш три зручні прийоми усного додавання і віднімання в межах 1000: порозрядно, частинами і округленням.</p>
-            <div class="rule"><p class="rule-t">Три прийоми усних обчислень</p><ol><li><b>Порозрядно</b>: додаємо або віднімаємо окремо сотні з сотнями, десятки з десятками, одиниці з одиницями.</li><li><b>Частинами</b>: один із доданків розкладаємо на сотні, десятки й одиниці і додаємо їх по черзі.</li><li><b>Округленням</b>: число, яке закінчується на 8 чи 9, замінюємо на кругле, виконуємо дію, а потім виправляємо результат.</li></ol></div>
-          </article>
-          <div class="ex-col"><p class="muted">Увімкніть JavaScript, щоб виконати вправи.</p></div>
-        </div>
+      <div class="lesson-cards">
+        <a class="lcard" href="#urok-math" data-open="math" style="--c:var(--s-math)">
+          <span class="lcard-subj"><i></i>Математика · 4 клас</span>
+          <span class="lcard-t">Усне додавання і віднімання в межах 1000</span>
+          <span class="lcard-meta">теорія · 2 вправи · близько 5 хвилин</span>
+          <span class="lcard-go">Відкрити урок<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="lcard" href="#urok-hist" data-open="hist" style="--c:var(--s-hist)">
+          <span class="lcard-subj"><i></i>Історія України · 10 клас</span>
+          <span class="lcard-t">Українські землі напередодні Першої світової війни</span>
+          <span class="lcard-meta">теорія · 2 вправи · близько 7 хвилин</span>
+          <span class="lcard-go">Відкрити урок<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <a class="lcard" href="#urok-eng" data-open="eng" style="--c:var(--s-eng)">
+          <span class="lcard-subj"><i></i>Англійська мова · 4 клас</span>
+          <span class="lcard-t">Review: numbers, colours, days of the week; have got</span>
+          <span class="lcard-meta">теорія · 2 вправи · близько 5 хвилин</span>
+          <span class="lcard-go">Відкрити урок<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
       </div>
       <p class="demo-more">Усі теми уроків за предметами дивіться на сторінці <a href="programa.html">«Програма»</a>: 385 уроків I семестру 4 класу і 87 уроків історії 10 класу.</p>
     </div>
@@ -407,11 +413,33 @@
   </div>
 </footer>
 
+<dialog id="lesson-dlg" class="drawer" aria-labelledby="dlg-title">
+  <div class="drawer-in">
+    <div class="drawer-head">
+      <div>
+        <p class="eyebrow" id="dlg-kicker">Спробуйте самі</p>
+        <h2 id="dlg-title">Урок</h2>
+      </div>
+      <button type="button" class="dlg-x" id="dlg-close" aria-label="Закрити урок"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Оберіть урок">
+      <button type="button" class="tab" role="tab" id="tab-math" data-k="math" aria-controls="demo-panel" aria-selected="true">Математика<span>4 клас</span></button>
+      <button type="button" class="tab" role="tab" id="tab-hist" data-k="hist" aria-controls="demo-panel" aria-selected="false" tabindex="-1">Історія України<span>10 клас</span></button>
+      <button type="button" class="tab" role="tab" id="tab-eng" data-k="eng" aria-controls="demo-panel" aria-selected="false" tabindex="-1">Англійська мова<span>4 клас</span></button>
+    </div>
+    <div class="drawer-body" id="demo-panel" role="tabpanel" aria-labelledby="tab-math"></div>
+    <div class="drawer-foot">
+      <a class="btn" href="#zapys" data-close>Записатися на пілот</a>
+      <a class="btn btn-ghost" href="programa.html">Уся програма</a>
+    </div>
+  </div>
+</dialog>
+
 <script>
 (function () {
   var DEMO = {
     math: {
-      title: "Урок «Усне додавання і віднімання в межах 1000» · математика, 4 клас",
+      name: "Усне додавання і віднімання в межах 1000", label: "математика · 4 клас",
       theory: [
         { t: "goal", text: "Сьогодні ти пригадаєш три зручні прийоми усного додавання і віднімання в межах 1000: порозрядно, частинами і округленням." },
         { t: "rule", title: "Три прийоми усних обчислень", items: [
@@ -429,7 +457,7 @@
       ]
     },
     hist: {
-      title: "Урок «Українські землі напередодні Першої світової війни» · історія України, 10 клас",
+      name: "Українські землі напередодні Першої світової війни", label: "історія України · 10 клас",
       theory: [
         { t: "goal", text: "Порівняти становище українських земель у складі Російської й Австро-Угорської імперій напередодні 1914 р. і пояснити, чому умови для національного руху в них так відрізнялися." },
         { t: "table", title: "Українські землі у двох імперіях", head: ["Питання", "Російська імперія", "Австро-Угорщина"], rows: [
@@ -454,7 +482,7 @@
       ]
     },
     eng: {
-      title: "Урок «Review: numbers, colours, days of the week; have got» · англійська мова, 4 клас",
+      name: "Review: numbers, colours, days of the week; have got", label: "англійська мова · 4 клас",
       theory: [
         { t: "goal", text: "Ти повториш числа 1–20, кольори й дні тижня та навчишся казати, що в тебе є, за допомогою have got / has got." },
         { t: "rule", title: "have got / has got", text: "<b>I have got</b> (I've got) a bike. <b>You have got</b> (You've got) a dog. <b>He / she has got</b> (He's got / She's got) a cat. Заперечення: <b>haven't got</b> / <b>hasn't got</b>: I <b>haven't got</b> a cat. She <b>hasn't got</b> a dog." },
@@ -592,12 +620,20 @@
     });
   }
 
-  var panel = document.getElementById("demo-panel"), titleEl = document.getElementById("demo-title");
-  var tabs = [].slice.call(document.querySelectorAll(".tabs .tab"));
+  var dlg = document.getElementById("lesson-dlg");
+  var panel = document.getElementById("demo-panel");
+  var titleEl = document.getElementById("dlg-title"), kickerEl = document.getElementById("dlg-kicker");
+  var tabs = [].slice.call(document.querySelectorAll("#lesson-dlg .tab"));
+  var opener = null, keepFocus = false;
+  function setHash(h) {
+    try { history.replaceState(null, "", h ? "#" + h : location.pathname + location.search); } catch (e) {}
+  }
   function render(k) {
     var L = DEMO[k];
-    titleEl.textContent = L.title;
-    panel.innerHTML = `<div class="demo-grid"><article class="paper-card"><p class="card-label">Крок 1 · Теорія</p>${theoryHTML(L.theory)}</article><div class="ex-col">${L.ex.map(exHTML).join("")}<p class="pen">одразу видно, де помилка</p></div></div>`;
+    titleEl.textContent = L.name;
+    kickerEl.textContent = "Спробуйте самі · " + L.label;
+    panel.innerHTML = `<article class="paper-card"><p class="card-label">Крок 1 · Теорія</p>${theoryHTML(L.theory)}</article><div class="ex-col">${L.ex.map(exHTML).join("")}<p class="pen">одразу видно, де помилка</p></div>`;
+    panel.scrollTop = 0;
     bind(panel, L.ex);
   }
   function select(tab, focus) {
@@ -609,8 +645,17 @@
     panel.setAttribute("aria-labelledby", tab.id);
     if (focus) tab.focus();
     render(tab.dataset.k);
+    setHash("urok-" + tab.dataset.k);
   }
-  if (panel && tabs.length) {
+  function openLesson(k, from) {
+    if (!DEMO[k]) return;
+    opener = from || null;
+    var tab = tabs.filter(function (t) { return t.dataset.k === k; })[0];
+    select(tab, false);
+    if (!dlg.open) { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", ""); }
+    tab.focus();
+  }
+  if (dlg && panel && tabs.length) {
     tabs.forEach(function (t, i) {
       t.addEventListener("click", function () { select(t, false); });
       t.addEventListener("keydown", function (e) {
@@ -620,7 +665,28 @@
         select(tabs[n], true);
       });
     });
-    render("math");
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest("[data-open]");
+      if (!a) return;
+      e.preventDefault();
+      openLesson(a.dataset.open, a);
+    });
+    document.getElementById("dlg-close").addEventListener("click", function () { dlg.close(); });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+    [].slice.call(dlg.querySelectorAll("[data-close]")).forEach(function (a) {
+      a.addEventListener("click", function () { keepFocus = true; dlg.close(); });
+    });
+    dlg.addEventListener("close", function () {
+      if (/^#urok-/.test(location.hash)) setHash("");
+      if (!keepFocus && opener && opener.focus) opener.focus({ preventScroll: true });
+      keepFocus = false;
+    });
+    var fromHash = function () {
+      var m = /^#urok-(math|hist|eng)$/.exec(location.hash);
+      if (m) openLesson(m[1], null);
+    };
+    window.addEventListener("hashchange", fromHash);
+    fromHash();
   }
 
   var form = document.getElementById("signup");

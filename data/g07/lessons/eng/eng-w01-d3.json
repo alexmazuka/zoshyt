@@ -1,0 +1,196 @@
+{
+ "id": "eng-w01-d3",
+ "subject": "eng",
+ "title": "Welcome back! Summer holidays",
+ "goal": "Дізнатися, що чекає на тебе в англійській цього семестру, повторити лексику про літо і розповісти про свої канікули в Past Simple.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Вітаємо в 7 класі! Цього семестру ти працюватимеш за такою схемою: **Unit 0** — повторення (канікули, часи Present і Past, діагностична робота), далі теми **Me and My Friends** (друзі, зовнішність, характер), **School Life** (школа, правила, Past Continuous) та інші розділи. У кожному розділі є слова, граматика, читання, говоріння і письмо, а в кінці — тест. На початку ми повторюємо те, що ти вже знаєш, щоб далі йти впевнено."
+  },
+  {
+   "type": "tip",
+   "text": "Інструкції в «Зошиті» українською, а матеріал — англійською. Незнайоме слово не лякає: дивись на контекст, потім у словник нижче. Говорити вголос щодня краще, ніж зубрити раз на тиждень."
+  },
+  {
+   "type": "vocab",
+   "title": "Summer holidays",
+   "items": [
+    {
+     "en": "go swimming",
+     "uk": "плавати, купатися",
+     "ex": "We went swimming every day."
+    },
+    {
+     "en": "visit relatives",
+     "uk": "відвідувати родичів",
+     "ex": "I visited my relatives in the village."
+    },
+    {
+     "en": "go camping",
+     "uk": "їхати в похід з наметом",
+     "ex": "They went camping in the mountains."
+    },
+    {
+     "en": "sunbathe",
+     "uk": "засмагати",
+     "ex": "My sister sunbathed on the beach."
+    },
+    {
+     "en": "ride a bike",
+     "uk": "їздити на велосипеді",
+     "ex": "I rode my bike to the lake."
+    },
+    {
+     "en": "stay at home",
+     "uk": "залишатися вдома",
+     "ex": "It rained, so we stayed at home."
+    },
+    {
+     "en": "take photos",
+     "uk": "фотографувати",
+     "ex": "I took a lot of photos."
+    },
+    {
+     "en": "travel",
+     "uk": "подорожувати",
+     "ex": "We travelled by train."
+    },
+    {
+     "en": "pick berries",
+     "uk": "збирати ягоди",
+     "ex": "Grandma and I picked berries."
+    },
+    {
+     "en": "make new friends",
+     "uk": "знайти нових друзів",
+     "ex": "She made new friends at camp."
+    }
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Past Simple — минулий простий час",
+   "text": "Розповідаємо про завершені дії в минулому (last summer, yesterday, two weeks ago).\n**Правильні дієслова:** + -ed: visit → visited, play → played, travel → travelled; якщо слово закінчується на -e, додаємо лише -d: like → liked.\n**Неправильні дієслова** мають особливі форми: go → went, see → saw, take → took, ride → rode, make → made, eat → ate."
+  },
+  {
+   "type": "reading",
+   "title": "My summer",
+   "text": "Last July I went to my grandparents' village. I rode my bike every morning and went swimming in the river with my cousin. In August we went camping in the mountains. I took a lot of photos and made two new friends. I did not stay at home — it was the best summer ever!",
+   "genre": "розповідь"
+  },
+  {
+   "type": "example",
+   "title": "Розбираємо текст",
+   "text": "went, rode, took, made — неправильні дієслова (2-га форма).\nI did not stay — заперечення: did not + початкова форма (без -ed).\nlast July, in August — маркери минулого часу."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай англійські вирази з перекладом.",
+   "pairs": [
+    [
+     "go camping",
+     "їхати в похід з наметом"
+    ],
+    [
+     "pick berries",
+     "збирати ягоди"
+    ],
+    [
+     "take photos",
+     "фотографувати"
+    ],
+    [
+     "stay at home",
+     "залишатися вдома"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Обери правильну форму: Last summer we ___ to the sea.",
+   "options": [
+    "go",
+    "went",
+    "goed"
+   ],
+   "answer": 1,
+   "explain": "go — неправильне дієслово, форма Past Simple — went."
+  },
+  {
+   "type": "fill",
+   "q": "Впиши дієслово в Past Simple.",
+   "text": "I {took} (take) many photos. She {visited} (visit) her aunt. They {rode} (ride) bikes."
+  },
+  {
+   "type": "truefalse",
+   "q": "За текстом «My summer»:",
+   "items": [
+    {
+     "text": "The writer went to the village in July.",
+     "answer": true
+    },
+    {
+     "text": "The writer stayed at home in August.",
+     "answer": false
+    },
+    {
+     "text": "The writer made two new friends.",
+     "answer": true
+    },
+    {
+     "text": "The writer rode a motorbike.",
+     "answer": false
+    }
+   ]
+  },
+  {
+   "type": "order",
+   "q": "Розстав слова в правильному порядку, щоб утворилося речення.",
+   "items": [
+    "We",
+    "went",
+    "swimming",
+    "last",
+    "summer"
+   ]
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос і перекажи своїми словами.",
+   "text": "Last summer I went camping with my family. We swam in the lake and took many photos.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "choice",
+   "q": "Яке речення правильне?",
+   "options": [
+    "I visit my grandma last week.",
+    "I visited my grandma last week.",
+    "I visiteded my grandma last week."
+   ],
+   "answer": 1,
+   "explain": "Last week — маркер минулого, тому visited."
+  },
+  {
+   "type": "fill",
+   "q": "Заповни пропуски.",
+   "text": "She {made} (make) new friends. We {travelled|traveled} (travel) by train. He {ate} (eat) berries."
+  },
+  {
+   "type": "text",
+   "q": "Напиши 5–6 речень англійською про свої літні канікули. Використай щонайменше три дієслова з Past Simple, з них одне неправильне.",
+   "sample": "Last summer I went to the village. I rode my bike every day. I visited my grandma and picked berries. I did not go to the sea. It was a good summer.",
+   "min": 150
+  }
+ ],
+ "reflection": [
+  "Які слова про літо ти запам'ятав найкраще?",
+  "Які неправильні дієслова ще потрібно повторити?"
+ ]
+}

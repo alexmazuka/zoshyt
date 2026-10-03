@@ -1,0 +1,275 @@
+{
+  "id": "eng-w01-d3",
+  "subject": "eng",
+  "title": "Back to school: my summer holidays",
+  "goal": "Розповісти англійською про своє літо, повторивши Present Simple, Past Simple і неправильні дієслова, та зрозуміти, що на тебе чекає в 8 класі.",
+  "minutes": 40,
+  "theory": [
+    {
+      "type": "p",
+      "text": "Привіт! Це перший урок англійської в 8 класі. У цьому семестрі ти пройдеш вступне повторення (Back to School), вхідний тест, а потім розділ **Unit 1. People and Relationships**: опис характеру й зовнішності людей, Present Simple і Present Continuous, читання про дружбу, поради другові та неформальний лист. Далі підуть Unit 2 про хобі (Present Perfect) і Unit 3 про спорт та здоровий спосіб життя. Щоб усе це вийшло, спершу пригадаємо базу: два часи і неправильні дієслова."
+    },
+    {
+      "type": "rule",
+      "title": "Present Simple — звички і факти",
+      "text": "Утворення: **I/you/we/they + дієслово**, **he/she/it + дієслово з -s/-es**.\nЗаперечення і питання: **do/does + (not) + дієслово**.\nМаркери: always, usually, often, sometimes, never, every day."
+    },
+    {
+      "type": "rule",
+      "title": "Past Simple — завершена дія в минулому",
+      "text": "Правильні дієслова: **дієслово + -ed** (walk — walked, study — studied).\nНеправильні дієслова мають свою форму (go — went).\nЗаперечення і питання: **did + (not) + початкова форма**: *I didn't go. Did you go?*\nМаркери: yesterday, last summer, in July, two weeks ago."
+    },
+    {
+      "type": "table",
+      "title": "Неправильні дієслова, які потрібні для розповіді про літо",
+      "head": [
+        "Infinitive",
+        "Past Simple",
+        "Переклад"
+      ],
+      "rows": [
+        [
+          "go",
+          "went",
+          "іти, їхати"
+        ],
+        [
+          "see",
+          "saw",
+          "бачити"
+        ],
+        [
+          "eat",
+          "ate",
+          "їсти"
+        ],
+        [
+          "swim",
+          "swam",
+          "плавати"
+        ],
+        [
+          "buy",
+          "bought",
+          "купувати"
+        ],
+        [
+          "meet",
+          "met",
+          "зустрічати"
+        ],
+        [
+          "take",
+          "took",
+          "брати"
+        ],
+        [
+          "have",
+          "had",
+          "мати"
+        ]
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Summer holiday words",
+      "items": [
+        {
+          "en": "holiday",
+          "uk": "відпустка, канікули",
+          "ex": "I had a great holiday."
+        },
+        {
+          "en": "seaside",
+          "uk": "узбережжя, море",
+          "ex": "We went to the seaside."
+        },
+        {
+          "en": "relatives",
+          "uk": "родичі",
+          "ex": "I visited my relatives."
+        },
+        {
+          "en": "village",
+          "uk": "село",
+          "ex": "My granny lives in a village."
+        },
+        {
+          "en": "volunteer",
+          "uk": "бути волонтером",
+          "ex": "I volunteered in July."
+        },
+        {
+          "en": "camp",
+          "uk": "табір",
+          "ex": "He went to a summer camp."
+        },
+        {
+          "en": "souvenir",
+          "uk": "сувенір",
+          "ex": "I bought a souvenir."
+        },
+        {
+          "en": "relax",
+          "uk": "відпочивати",
+          "ex": "We relaxed on the beach."
+        },
+        {
+          "en": "board game",
+          "uk": "настільна гра",
+          "ex": "We played board games."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Зразок розповіді",
+      "text": "Last summer I **went** to my granny's village. I **got up** early every day and **helped** her in the garden. In the evenings I **read** books and **played** with my cousin. I **didn't use** my phone much, and I **felt** really relaxed. Now I **live** in the city again and I **go** to school every morning."
+    },
+    {
+      "type": "tip",
+      "text": "Коли розповідаєш про літо, використовуй Past Simple. Коли описуєш, як ти живеш зараз або що робиш зазвичай, використовуй Present Simple."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "q": "З'єднай початкову форму неправильного дієслова з Past Simple.",
+      "pairs": [
+        [
+          "go",
+          "went"
+        ],
+        [
+          "see",
+          "saw"
+        ],
+        [
+          "eat",
+          "ate"
+        ],
+        [
+          "swim",
+          "swam"
+        ],
+        [
+          "buy",
+          "bought"
+        ]
+      ]
+    },
+    {
+      "type": "fill",
+      "q": "Впиши дієслово в Past Simple.",
+      "text": "Last July we {went} to the seaside. I {swam} every day and my brother {ate} a lot of ice cream. We {bought} some souvenirs.",
+      "hint": "Усі ці дієслова неправильні, дивись таблицю."
+    },
+    {
+      "type": "choice",
+      "q": "Обери правильне питання про минуле.",
+      "options": [
+        "Did you went to the camp?",
+        "Did you go to the camp?",
+        "Do you went to the camp?",
+        "Did you goed to the camp?"
+      ],
+      "answer": 1,
+      "explain": "Після did дієслово стоїть у початковій формі: Did you go...?"
+    },
+    {
+      "type": "truefalse",
+      "q": "Чи правильні речення?",
+      "items": [
+        {
+          "text": "She don't like spiders.",
+          "answer": false
+        },
+        {
+          "text": "He didn't see his friends in August.",
+          "answer": true
+        },
+        {
+          "text": "They goes to school by bus every day.",
+          "answer": false
+        },
+        {
+          "text": "We met a new friend at the camp.",
+          "answer": true
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "q": "Який час потрібен у реченні: «My cousin ___ in Lviv, so he often visits us»?",
+      "options": [
+        "lived",
+        "lives",
+        "is living in",
+        "did live"
+      ],
+      "answer": 1,
+      "explain": "Це постійний факт і звичка (often), тому Present Simple: lives."
+    },
+    {
+      "type": "order",
+      "q": "Розстав слова, щоб утворилося речення.",
+      "items": [
+        "Last",
+        "summer",
+        "I",
+        "visited",
+        "my",
+        "relatives"
+      ]
+    },
+    {
+      "type": "speak",
+      "text": "Last summer I went to the seaside. I swam in the sea and met new friends. I didn't read many books, but I had a great holiday.",
+      "lang": "en",
+      "q": "Прочитай уголос і постав правильний наголос."
+    }
+  ],
+  "homework": [
+    {
+      "type": "fill",
+      "q": "Впиши дієслова в потрібній формі (Present Simple або Past Simple).",
+      "text": "Every day I {get up} at seven. Yesterday I {got up} at nine. My sister usually {plays} chess, but last week she {played} football. We {didn't go} to the cinema last Sunday."
+    },
+    {
+      "type": "match",
+      "q": "З'єднай слова з перекладом.",
+      "pairs": [
+        [
+          "relatives",
+          "родичі"
+        ],
+        [
+          "souvenir",
+          "сувенір"
+        ],
+        [
+          "village",
+          "село"
+        ],
+        [
+          "relax",
+          "відпочивати"
+        ],
+        [
+          "camp",
+          "табір"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "q": "Напиши англійською 6–8 речень про своє літо: куди ти їздив(-ла), що бачив(-ла), що робив(-ла), що тобі сподобалося. Використай не менше п'яти неправильних дієслів.",
+      "sample": "Last summer I went to my grandparents' village. I saw a lot of animals and ate fresh fruit every day. I swam in the river with my friends. We met a boy from Kyiv and played football together. I didn't use my phone much. I had a wonderful time and I want to go there again.",
+      "min": 200
+    }
+  ],
+  "reflection": [
+    "Які неправильні дієслова я ще плутаю?",
+    "Що з плану на семестр мені здається найцікавішим?"
+  ]
+}

@@ -1,0 +1,208 @@
+{
+ "id": "eng-w01-d5",
+ "subject": "eng",
+ "title": "Friend Zone",
+ "goal": "Вивчити слова про друзів, стосунки й риси характеру, прочитати текст про дружбу та висловити свою думку.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Друзі — важлива частина життя підлітка. Сьогодні ти вивчиш слова, якими можна описати друга, дружбу й стосунки з людьми. Ці слова знадобляться в усьому розділі **All About Me**."
+  },
+  {
+   "type": "vocab",
+   "title": "Friends and Relationships",
+   "items": [
+    {
+     "en": "close friend",
+     "uk": "близький друг",
+     "ex": "Tom is my close friend."
+    },
+    {
+     "en": "to get on with",
+     "uk": "ладнати з кимось",
+     "ex": "I get on well with my classmates."
+    },
+    {
+     "en": "to trust",
+     "uk": "довіряти",
+     "ex": "I trust her with my secrets."
+    },
+    {
+     "en": "loyal",
+     "uk": "вірний, відданий",
+     "ex": "A loyal friend never lets you down."
+    },
+    {
+     "en": "honest",
+     "uk": "чесний",
+     "ex": "Be honest with your friends."
+    },
+    {
+     "en": "generous",
+     "uk": "щедрий",
+     "ex": "He is generous and shares everything."
+    },
+    {
+     "en": "shy",
+     "uk": "сором'язливий",
+     "ex": "She is shy with new people."
+    },
+    {
+     "en": "to argue",
+     "uk": "сперечатися, сваритися",
+     "ex": "We sometimes argue about music."
+    },
+    {
+     "en": "to make up",
+     "uk": "миритися",
+     "ex": "We argued, but then we made up."
+    },
+    {
+     "en": "to support",
+     "uk": "підтримувати",
+     "ex": "Friends support each other."
+    },
+    {
+     "en": "to have in common",
+     "uk": "мати спільне",
+     "ex": "We have a lot in common."
+    }
+   ]
+  },
+  {
+   "type": "reading",
+   "title": "What Is a Real Friend?",
+   "genre": "стаття",
+   "text": "A real friend is someone you can trust. Such a person listens to you, tells the truth and supports you when you have problems. Real friends do not have to be exactly like you. Often they are different, but they respect your opinion.\n\nIt is normal to argue sometimes. What matters is that good friends make up quickly. Many teenagers say they get on best with people who have something in common with them: the same hobbies, music or sense of humour."
+  },
+  {
+   "type": "rule",
+   "title": "Як описати друга",
+   "text": "Модель: *My friend is + прикметник*. Додаємо причину: *My friend is loyal because she never tells my secrets.*\nПорівнюємо: *He is more generous than me.* Спільне: *We both like football.*"
+  },
+  {
+   "type": "tip",
+   "text": "Прикметник стоїть після дієслова to be або перед іменником: *a loyal friend*, *my friend is loyal*. В англійській прикметник не змінюється за родом і числом."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай англійські слова з перекладом.",
+   "pairs": [
+    [
+     "loyal",
+     "вірний"
+    ],
+    [
+     "to trust",
+     "довіряти"
+    ],
+    [
+     "to make up",
+     "миритися"
+    ],
+    [
+     "generous",
+     "щедрий"
+    ],
+    [
+     "to argue",
+     "сперечатися"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Обери слово: A ... friend always tells the truth.",
+   "options": [
+    "shy",
+    "honest",
+    "generous",
+    "loyal"
+   ],
+   "answer": 1,
+   "explain": "Honest — чесний, той, хто каже правду."
+  },
+  {
+   "type": "truefalse",
+   "q": "За текстом, чи правильні твердження?",
+   "items": [
+    {
+     "text": "A real friend listens to you.",
+     "answer": true
+    },
+    {
+     "text": "Real friends must be exactly like you.",
+     "answer": false
+    },
+    {
+     "text": "It is normal to argue sometimes.",
+     "answer": true
+    },
+    {
+     "text": "Good friends never make up.",
+     "answer": false
+    }
+   ]
+  },
+  {
+   "type": "fill",
+   "q": "Встав слово зі словника.",
+   "text": "We have a lot in {common}. I {trust|support} my best friend. We argued, but we made {up}."
+  },
+  {
+   "type": "multi",
+   "q": "Які слова описують риси характеру?",
+   "options": [
+    "generous",
+    "timetable",
+    "shy",
+    "honest",
+    "argue"
+   ],
+   "answer": [
+    0,
+    2,
+    3
+   ],
+   "explain": "Generous, shy, honest — прикметники-риси характеру. Timetable — іменник, argue — дієслово."
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос і розкажи про свого друга цими реченнями.",
+   "text": "My friend is honest and loyal. We have a lot in common. I get on well with him.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "choice",
+   "q": "Що означає to get on with?",
+   "options": [
+    "ладнати",
+    "сваритися",
+    "мінятися",
+    "вирішувати"
+   ],
+   "answer": 0,
+   "explain": "To get on with somebody — мати добрі стосунки з кимось."
+  },
+  {
+   "type": "fill",
+   "q": "Переклади слова.",
+   "text": "вірний — {loyal}; чесний — {honest}; щедрий — {generous}"
+  },
+  {
+   "type": "text",
+   "q": "Напиши англійською 5–6 речень про свого близького друга: який він (вона), що у вас спільного і чому ти йому довіряєш.",
+   "sample": "My close friend is Olena. She is honest and generous. We have a lot in common: we both like music and drawing. I trust her because she never tells my secrets. We sometimes argue, but we make up quickly.",
+   "min": 150
+  }
+ ],
+ "reflection": [
+  "Які риси характеру для тебе найважливіші в друга?",
+  "Які нові слова ти зможеш використати вже сьогодні?"
+ ]
+}

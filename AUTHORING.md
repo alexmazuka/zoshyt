@@ -83,8 +83,8 @@ python3 tools/validate.py g07 --net data/g07/lessons/istu/*.json     # якщо 
 1. Знайди файл на commons.wikimedia.org (WebSearch «site:commons.wikimedia.org …» або WebFetch сторінки категорії).
 2. Відкрий сторінку файлу `https://commons.wikimedia.org/wiki/File:…` (WebFetch) і перевір ліцензію:
    **Public domain, CC0, CC BY, CC BY-SA** — так; усе інше — ні.
-3. `src` — пряме посилання на зменшену копію: `https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Name.jpg/640px-Name.jpg`
-   (для SVG-файлів: `.../thumb/.../Name.svg/640px-Name.svg.png`). Посилання бери зі сторінки файлу, не вигадуй.
+3. `src` — пряме посилання на зменшену копію шириною 960px: `https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Name.jpg/960px-Name.jpg`
+   (для SVG-файлів: `.../thumb/.../Name.svg/960px-Name.svg.png`; якщо оригінал вужчий за 960px — посилання на сам оригінал). Мініатюри 640px Wikimedia зараз не віддає (HTTP 400). Посилання бери зі сторінки файлу, не вигадуй.
 4. `credit` — автор (як на сторінці файлу), `license` — назва ліцензії, `page` — сторінка файлу, `caption` — що
    зображено і чому це важливо для теми, `alt` — опис для тих, хто не бачить зображення.
 5. Перевір `python3 tools/validate.py gXX --net <файл>` — зображення має відкриватися.

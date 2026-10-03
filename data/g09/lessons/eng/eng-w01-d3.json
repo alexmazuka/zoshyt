@@ -1,0 +1,275 @@
+{
+ "id": "eng-w01-d3",
+ "subject": "eng",
+ "title": "Starter. Revision: Back to School",
+ "goal": "Пригадати лексику й граматику 8 класу, розповісти англійською про літо і зрозуміти, що на тебе чекає в цьому семестрі.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Вітаю в 9 класі! Англійська цього семестру складається з двох розділів (units). **Unit 1. All About Me** — про тебе, твоїх друзів, характер і особисті дані: ти навчишся описувати людей, розповідати про себе, заповнювати анкету і писати автобіографію. **Unit 2. Fashion All the Way** — про одяг, моду та покупки. Крім того, ти повторюватимеш теперішні й минулі часи, а ще вивчиш герундій. Кожен урок має словник, теорію, вправи з автоперевіркою і письмове завдання."
+  },
+  {
+   "type": "p",
+   "text": "Перший урок — повторення. Пригадаємо, як розповідати про події минулого, про те, що відбувається зараз, і про плани. Це основа для всього, що буде далі."
+  },
+  {
+   "type": "table",
+   "title": "Основні часи, які ти вже знаєш",
+   "head": [
+    "Час",
+    "Коли вживаємо",
+    "Приклад"
+   ],
+   "rows": [
+    [
+     "Present Simple",
+     "звички, факти",
+     "I walk to school every day."
+    ],
+    [
+     "Present Continuous",
+     "дія зараз",
+     "I am reading a text now."
+    ],
+    [
+     "Past Simple",
+     "завершена дія в минулому",
+     "We went to the sea last July."
+    ],
+    [
+     "Present Perfect",
+     "результат або досвід",
+     "I have read three books this summer."
+    ],
+    [
+     "Future Simple",
+     "спонтанне рішення, прогноз",
+     "I will help you."
+    ]
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Слова-підказки",
+   "text": "Past Simple: yesterday, last week, in 2025, two days ago.\nPresent Perfect: ever, never, already, yet, just, this summer.\nPresent Continuous: now, at the moment, today."
+  },
+  {
+   "type": "vocab",
+   "title": "Back to School",
+   "items": [
+    {
+     "en": "holiday",
+     "uk": "канікули, відпустка",
+     "ex": "My summer holiday was great."
+    },
+    {
+     "en": "timetable",
+     "uk": "розклад",
+     "ex": "Our timetable has three English lessons."
+    },
+    {
+     "en": "subject",
+     "uk": "шкільний предмет",
+     "ex": "My favourite subject is biology."
+    },
+    {
+     "en": "classmate",
+     "uk": "однокласник",
+     "ex": "I met my classmates today."
+    },
+    {
+     "en": "homework",
+     "uk": "домашнє завдання",
+     "ex": "I do my homework after lunch."
+    },
+    {
+     "en": "to revise",
+     "uk": "повторювати",
+     "ex": "Let's revise the tenses."
+    },
+    {
+     "en": "to improve",
+     "uk": "покращувати",
+     "ex": "I want to improve my English."
+    },
+    {
+     "en": "textbook",
+     "uk": "підручник",
+     "ex": "Open your textbook."
+    },
+    {
+     "en": "to spend time",
+     "uk": "проводити час",
+     "ex": "I spent time with my family."
+    },
+    {
+     "en": "to look forward to",
+     "uk": "з нетерпінням чекати",
+     "ex": "I look forward to the new year."
+    }
+   ]
+  },
+  {
+   "type": "reading",
+   "title": "My Summer",
+   "genre": "розповідь",
+   "text": "Last summer I spent two weeks in the mountains with my cousin. We walked a lot and swam in a cold river. I have never seen such beautiful views before!\n\nNow I am at school again. I am sitting in the classroom and talking to my classmates. I am looking forward to this school year because I want to improve my English."
+  },
+  {
+   "type": "dialogue",
+   "title": "Back at school",
+   "lines": [
+    {
+     "who": "Anna",
+     "text": "Hi, Max! How was your summer?"
+    },
+    {
+     "who": "Max",
+     "text": "Great! I went to the sea. And you?"
+    },
+    {
+     "who": "Anna",
+     "text": "I stayed at home, but I have read a lot of books."
+    },
+    {
+     "who": "Max",
+     "text": "Nice! Are you ready for the new school year?"
+    }
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Розповідаючи про літо, починай з Past Simple (what happened), а завершуй Present Perfect або Future Simple (що вже зроблено і що плануєш)."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "choice",
+   "q": "Обери правильну форму: Last summer we ... to the mountains.",
+   "options": [
+    "go",
+    "went",
+    "have gone",
+    "are going"
+   ],
+   "answer": 1,
+   "explain": "Last summer — завершений час у минулому, тому Past Simple: went."
+  },
+  {
+   "type": "fill",
+   "q": "Встав дієслово в правильній формі.",
+   "text": "Right now I {am reading|'m reading} a book. Yesterday I {watched} a film. I {have|'ve} never been to London."
+  },
+  {
+   "type": "truefalse",
+   "q": "Чи правильні речення?",
+   "items": [
+    {
+     "text": "I have seen him yesterday.",
+     "answer": false
+    },
+    {
+     "text": "She is cooking dinner now.",
+     "answer": true
+    },
+    {
+     "text": "We went to the cinema last week.",
+     "answer": true
+    },
+    {
+     "text": "He walk to school every day.",
+     "answer": false
+    }
+   ],
+   "explain": "Yesterday вимагає Past Simple (I saw him). Після he/she/it у Present Simple потрібне -s: he walks."
+  },
+  {
+   "type": "match",
+   "q": "З'єднай слова з перекладом.",
+   "pairs": [
+    [
+     "timetable",
+     "розклад"
+    ],
+    [
+     "classmate",
+     "однокласник"
+    ],
+    [
+     "homework",
+     "домашнє завдання"
+    ],
+    [
+     "to revise",
+     "повторювати"
+    ],
+    [
+     "textbook",
+     "підручник"
+    ]
+   ]
+  },
+  {
+   "type": "order",
+   "q": "Розстав слова так, щоб вийшло речення.",
+   "items": [
+    "I",
+    "spent",
+    "two",
+    "weeks",
+    "in",
+    "the",
+    "mountains"
+   ],
+   "explain": "Порядок слів у англійському реченні: підмет — присудок — додатки."
+  },
+  {
+   "type": "choice",
+   "q": "З прочитаного тексту: де автор провів літо?",
+   "options": [
+    "На морі",
+    "У горах",
+    "У селі",
+    "Вдома"
+   ],
+   "answer": 1,
+   "explain": "У тексті: I spent two weeks in the mountains."
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос діалог Anna і Max, по черзі за обох героїв.",
+   "text": "Hi, Max! How was your summer? Great! I went to the sea. And you? I stayed at home, but I have read a lot of books.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "fill",
+   "q": "Заповни пропуски.",
+   "text": "Last week I {visited} my friend. We {are|were} good friends. Now we {are playing|'re playing} chess."
+  },
+  {
+   "type": "choice",
+   "q": "Яке слово-підказка вказує на Present Perfect?",
+   "options": [
+    "yesterday",
+    "ago",
+    "never",
+    "last year"
+   ],
+   "answer": 2,
+   "explain": "Never (ніколи) вживаємо з Present Perfect: I have never seen it."
+  },
+  {
+   "type": "text",
+   "q": "Напиши англійською 5–6 речень про своє літо: де був, що робив, що тобі сподобалося, чого чекаєш від нового навчального року.",
+   "sample": "Last summer I visited my grandmother in the village. I helped her in the garden and rode a bike every day. I have read three interesting books. I liked the summer because it was warm and quiet. Now I am looking forward to the new school year.",
+   "min": 150
+  }
+ ],
+ "reflection": [
+  "Які часи ти пригадав легко, а які викликали труднощі?",
+  "Яку мету для англійської ти ставиш на цей семестр?"
+ ]
+}

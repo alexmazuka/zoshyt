@@ -1,0 +1,244 @@
+{
+ "id": "eng-w02-d1",
+ "subject": "eng",
+ "title": "Learning English: my goals and strategies",
+ "goal": "Вивчити лексику теми навчання мови, повторити Present Perfect і Past Simple та розповісти про свій досвід вивчення англійської.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Минулого уроку ми говорили, чому англійська важлива. Сьогодні — про **твої цілі** та **способи навчання**. Чітка мета й стратегія допомагають навчатися швидше, а ще — розповісти про свій досвід англійською, що часто потрібно на співбесіді та усному іспиті."
+  },
+  {
+   "type": "vocab",
+   "title": "Key vocabulary",
+   "items": [
+    {
+     "en": "qualification",
+     "uk": "кваліфікація, документ про освіту",
+     "ex": "A language certificate is a useful qualification."
+    },
+    {
+     "en": "fluency",
+     "uk": "вільне володіння мовою",
+     "ex": "Fluency comes with practice."
+    },
+    {
+     "en": "leisure",
+     "uk": "дозвілля",
+     "ex": "In my leisure time I watch films in English."
+    },
+    {
+     "en": "goal",
+     "uk": "мета",
+     "ex": "My main goal is to study abroad."
+    },
+    {
+     "en": "strategy",
+     "uk": "стратегія, спосіб",
+     "ex": "Good learners use different strategies."
+    },
+    {
+     "en": "vocabulary",
+     "uk": "словниковий запас",
+     "ex": "I want to improve my vocabulary."
+    },
+    {
+     "en": "to improve",
+     "uk": "покращувати",
+     "ex": "Reading helps me improve my writing."
+    },
+    {
+     "en": "to practise",
+     "uk": "практикуватися",
+     "ex": "I practise speaking with my friend."
+    },
+    {
+     "en": "mistake",
+     "uk": "помилка",
+     "ex": "Don't be afraid of making mistakes."
+    },
+    {
+     "en": "progress",
+     "uk": "прогрес",
+     "ex": "She has made great progress this year."
+    }
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "What are your goals?",
+   "lines": [
+    {
+     "who": "Olena",
+     "text": "Have you ever thought about your goals in English?"
+    },
+    {
+     "who": "Max",
+     "text": "Yes. I want to get a good qualification, because I'd like to study abroad."
+    },
+    {
+     "who": "Olena",
+     "text": "How have you been preparing so far?"
+    },
+    {
+     "who": "Max",
+     "text": "I have watched a lot of videos and I have read several short books. Last month I started a speaking club."
+    },
+    {
+     "who": "Olena",
+     "text": "Great! I have never joined a club, but I practised with an online partner last week."
+    }
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Present Perfect",
+   "text": "**Present Perfect** = have/has + третя форма дієслова (V3). Вживаємо, коли важливий **результат** або **досвід** до теперішнього моменту, а час дії не названо: *I have read three books. She has never been to London.*\nМаркери: ever, never, already, yet, just, so far, since, for, this week/month.\nПитання: *Have you ever ...? — Yes, I have. / No, I haven't.*"
+  },
+  {
+   "type": "rule",
+   "title": "Present Perfect чи Past Simple?",
+   "text": "**Past Simple** — коли названо або мається на увазі **конкретний завершений час**: yesterday, last week, in 2023, two days ago.\n*I have visited Kyiv.* (досвід, коли — неважливо)\n*I visited Kyiv last summer.* (названо час)"
+  },
+  {
+   "type": "table",
+   "title": "Порівняння",
+   "head": [
+    "Present Perfect",
+    "Past Simple"
+   ],
+   "rows": [
+    [
+     "I have finished my project. (результат зараз)",
+     "I finished my project yesterday. (конкретний час)"
+    ],
+    [
+     "She has learnt 50 words this week. (тиждень ще триває)",
+     "She learnt 50 words last week. (тиждень завершився)"
+    ],
+    [
+     "Have you ever spoken to a native speaker?",
+     "When did you speak to a native speaker?"
+    ]
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Розповідь про досвід зазвичай починають Present Perfect (*I have studied English for ten years*), а подробиці продовжують у Past Simple (*I started at school when I was seven*)."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай слова з перекладом.",
+   "pairs": [
+    [
+     "qualification",
+     "кваліфікація"
+    ],
+    [
+     "fluency",
+     "вільне володіння мовою"
+    ],
+    [
+     "leisure",
+     "дозвілля"
+    ],
+    [
+     "strategy",
+     "стратегія"
+    ],
+    [
+     "progress",
+     "прогрес"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Що Макс сказав про свою підготовку у діалозі?",
+   "options": [
+    "He has never practised English.",
+    "He has watched videos and read short books.",
+    "He joined a club two years ago.",
+    "He doesn't want to study abroad."
+   ],
+   "answer": 1
+  },
+  {
+   "type": "fill",
+   "q": "Встав дієслово в Present Perfect.",
+   "text": "I {have read} two books in English this month. She {has never} visited Britain. (read; never)"
+  },
+  {
+   "type": "fill",
+   "q": "Встав дієслово в Past Simple.",
+   "text": "We {started} the project last Monday and {finished} it on Friday. (start, finish)"
+  },
+  {
+   "type": "choice",
+   "q": "Обери правильне речення.",
+   "options": [
+    "I have seen this film yesterday.",
+    "I saw this film yesterday.",
+    "I have saw this film yesterday.",
+    "I see this film yesterday."
+   ],
+   "answer": 1,
+   "explain": "Є конкретний час yesterday, тому потрібен Past Simple: saw."
+  },
+  {
+   "type": "sort",
+   "q": "Розподіли речення за часом, який у них потрібен.",
+   "groups": {
+    "Present Perfect": [
+     "I have just finished my homework.",
+     "Have you ever been abroad?",
+     "She has lived here since 2020."
+    ],
+    "Past Simple": [
+     "I finished my homework an hour ago.",
+     "Did you go abroad last summer?",
+     "She moved here in 2020."
+    ]
+   }
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос діалог з Олею (Olena) разом із вигаданим партнером, звертаючи увагу на інтонацію питань.",
+   "text": "Have you ever thought about your goals in English? Yes. I want to get a good qualification, because I'd like to study abroad.",
+   "lang": "en-US"
+  }
+ ],
+ "homework": [
+  {
+   "type": "fill",
+   "q": "Поставте дієслова в потрібну форму: Present Perfect або Past Simple.",
+   "text": "I {have studied} English for six years. I {started} learning it when I was eight. (study, start)"
+  },
+  {
+   "type": "choice",
+   "q": "Який вираз належить до Present Perfect?",
+   "options": [
+    "last year",
+    "two days ago",
+    "so far",
+    "in 2019"
+   ],
+   "answer": 2,
+   "explain": "So far (поки що) вказує на період, який триває до теперішнього моменту."
+  },
+  {
+   "type": "text",
+   "q": "Write 6–8 sentences about your English learning: What are your goals? What strategies have you tried? What have you already achieved? Use Present Perfect and Past Simple, and at least four words from the vocabulary.",
+   "sample": "My main goal is to get a good qualification in English. I have been learning it for eight years. Last year I started watching films without subtitles, and it has improved my vocabulary a lot. I have also practised speaking with my friends. So far I have made good progress, but I still make mistakes in grammar.",
+   "min": 250
+  }
+ ],
+ "reflection": [
+  "Яка моя головна ціль у вивченні англійської?",
+  "Яка стратегія допомагає мені найбільше?",
+  "Чи відрізняю я Present Perfect від Past Simple?"
+ ]
+}

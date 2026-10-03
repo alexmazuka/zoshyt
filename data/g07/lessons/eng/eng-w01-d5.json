@@ -1,0 +1,190 @@
+{
+ "id": "eng-w01-d5",
+ "subject": "eng",
+ "title": "Revision: Present Simple and Present Continuous",
+ "goal": "Повторити, коли вживаємо Present Simple, а коли Present Continuous, і правильно будувати речення, питання й заперечення в обох часах.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Ці два часи ти вже знаєш із попередніх класів. Різниця проста: Present Simple розповідає про те, що відбувається **регулярно** або є **фактом**, а Present Continuous — про те, що відбувається **просто зараз** або навколо цього моменту."
+  },
+  {
+   "type": "table",
+   "title": "Порівняння",
+   "head": [
+    "",
+    "Present Simple",
+    "Present Continuous"
+   ],
+   "rows": [
+    [
+     "Коли?",
+     "звички, розклад, факти",
+     "дія зараз, тимчасова ситуація"
+    ],
+    [
+     "Форма",
+     "I/you/we/they work; he/she/it works",
+     "am/is/are + working"
+    ],
+    [
+     "Питання",
+     "Do you work? Does she work?",
+     "Are you working? Is she working?"
+    ],
+    [
+     "Заперечення",
+     "don't / doesn't work",
+     "am not / isn't / aren't working"
+    ],
+    [
+     "Маркери",
+     "every day, usually, often, never",
+     "now, at the moment, today, look!"
+    ]
+   ]
+  },
+  {
+   "type": "example",
+   "text": "I get up at seven every day. (звичка)\nI am doing my homework now. (зараз)\nWater boils at 100 degrees. (факт)\nShe is staying with us this week. (тимчасово)"
+  },
+  {
+   "type": "rule",
+   "title": "Дієслова стану",
+   "text": "Дієслова, що виражають стан, а не дію (know, like, love, want, need, understand, have = мати), зазвичай **не вживаються в Continuous**. Кажемо: I know the answer, а не I am knowing."
+  },
+  {
+   "type": "tip",
+   "text": "У Present Simple в 3-й особі однини (he, she, it) додаємо -s або -es: plays, watches, goes. У Continuous зверни увагу на правопис: run → running, make → making."
+  },
+  {
+   "type": "dialogue",
+   "title": "A phone call",
+   "lines": [
+    {
+     "who": "Anna",
+     "text": "Hi, Max! What are you doing?"
+    },
+    {
+     "who": "Max",
+     "text": "I'm watching a film. What about you?"
+    },
+    {
+     "who": "Anna",
+     "text": "I'm walking my dog. I usually walk him in the evening, but today it's sunny."
+    },
+    {
+     "who": "Max",
+     "text": "Do you walk him every day?"
+    },
+    {
+     "who": "Anna",
+     "text": "Yes, I do. He loves it!"
+    }
+   ],
+   "lang": "en"
+  }
+ ],
+ "exercises": [
+  {
+   "type": "choice",
+   "q": "Look! The cat ___ on the sofa.",
+   "options": [
+    "sleeps",
+    "is sleeping",
+    "sleep"
+   ],
+   "answer": 1,
+   "explain": "Look! вказує на дію в момент мовлення — Present Continuous."
+  },
+  {
+   "type": "choice",
+   "q": "My brother ___ football every Saturday.",
+   "options": [
+    "is playing",
+    "plays",
+    "play"
+   ],
+   "answer": 1,
+   "explain": "every Saturday — звичка; he + play → plays."
+  },
+  {
+   "type": "fill",
+   "q": "Впиши дієслово в потрібній формі.",
+   "text": "She {goes} (go) to school by bus. Now they {are playing} (play) in the yard. I {don't know|do not know} (not know) this word."
+  },
+  {
+   "type": "sort",
+   "q": "Розклади маркери часу за групами.",
+   "groups": {
+    "Present Simple": [
+     "every day",
+     "usually",
+     "never"
+    ],
+    "Present Continuous": [
+     "now",
+     "at the moment",
+     "look!"
+    ]
+   }
+  },
+  {
+   "type": "truefalse",
+   "q": "Чи правильні речення?",
+   "items": [
+    {
+     "text": "I am knowing the answer.",
+     "answer": false
+    },
+    {
+     "text": "Does he like pizza?",
+     "answer": true
+    },
+    {
+     "text": "She is go to school now.",
+     "answer": false
+    },
+    {
+     "text": "We aren't watching cartoons at the moment.",
+     "answer": true
+    }
+   ]
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос два речення і придумай ще два про себе: одне про звичку, одне про те, що ти робиш зараз.",
+   "text": "I usually read in the evening. Right now I am doing an English exercise.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "choice",
+   "q": "Обери правильне питання.",
+   "options": [
+    "Does she is reading now?",
+    "Is she reading now?",
+    "Does she reading now?"
+   ],
+   "answer": 1,
+   "explain": "Present Continuous: Is + підмет + дієслово з -ing."
+  },
+  {
+   "type": "fill",
+   "q": "Заповни пропуски.",
+   "text": "He {watches} (watch) cartoons on Sundays. They {are running} (run) in the park now. {Do} you like music?"
+  },
+  {
+   "type": "text",
+   "q": "Напиши 5 речень: про свій звичайний день (Present Simple) і про те, що роблять зараз члени твоєї родини (Present Continuous).",
+   "sample": "I get up at seven. I go to school by bus. Now my mum is cooking dinner. My dad is reading a newspaper. My sister is doing her homework.",
+   "min": 150
+  }
+ ],
+ "reflection": [
+  "Як ти розрізняєш звичку і дію зараз?",
+  "Яке правило з уроку було найскладнішим?"
+ ]
+}

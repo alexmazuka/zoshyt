@@ -1,0 +1,217 @@
+{
+  "id": "eng-w01-d5",
+  "subject": "eng",
+  "title": "Diagnostic test",
+  "goal": "Перевірити, що ти пам'ятаєш із 7 класу: лексику, граматику, читання й письмо, щоб знати, що варто повторити.",
+  "minutes": 45,
+  "theory": [
+    {
+      "type": "p",
+      "text": "Це вхідний тест. Оцінка тут не головне: він показує, які теми з 7 класу в тебе вже міцні, а які варто підтягнути. Виконуй завдання самостійно, без словника й підказок, а потім уважно прочитай пояснення до помилок."
+    },
+    {
+      "type": "list",
+      "title": "Що перевіряємо",
+      "items": [
+        "лексика: сім'я, школа, їжа, подорожі, хобі",
+        "граматика: Present Simple, Present Continuous, Past Simple, порівняння прикметників, can/must/should",
+        "читання: коротка розповідь і запитання до неї",
+        "письмо: невеликий текст про себе"
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Швидка пам'ятка",
+      "head": [
+        "Тема",
+        "Форма",
+        "Приклад"
+      ],
+      "rows": [
+        [
+          "Present Simple",
+          "V / V+s",
+          "She plays tennis."
+        ],
+        [
+          "Present Continuous",
+          "am/is/are + V-ing",
+          "They are playing now."
+        ],
+        [
+          "Past Simple",
+          "V-ed / 2-га форма",
+          "We watched a film."
+        ],
+        [
+          "Порівняння",
+          "-er / more + adj",
+          "taller, more interesting"
+        ],
+        [
+          "Модальні",
+          "can, must, should + V",
+          "You should rest."
+        ]
+      ]
+    },
+    {
+      "type": "reading",
+      "title": "Reading: Mia's first day",
+      "text": "Mia is thirteen. Yesterday was her first day at a new school. She woke up early because she was nervous. At school she met a friendly girl called Anna. Anna showed her the library and the canteen. In the afternoon Mia had a music lesson, and she played the guitar for the class. Now she is sitting at home and writing a message to her old friend. She thinks the new school is better than she expected.",
+      "genre": "розповідь"
+    },
+    {
+      "type": "tip",
+      "text": "Прочитай текст про Мію один раз повністю, потім відповідай на запитання, повертаючись до тексту."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choice",
+      "q": "Mia ___ to a new school yesterday.",
+      "options": [
+        "goes",
+        "went",
+        "is going",
+        "has gone"
+      ],
+      "answer": 1,
+      "explain": "Yesterday вказує на Past Simple: went."
+    },
+    {
+      "type": "fill",
+      "q": "Впиши дієслова у правильній формі.",
+      "text": "Look! The children {are playing} in the yard. My dad usually {drives} to work, but today he {is walking}. They {didn't watch} TV last night."
+    },
+    {
+      "type": "choice",
+      "q": "Why did Mia wake up early?",
+      "options": [
+        "She was nervous.",
+        "She had a music lesson.",
+        "She was ill.",
+        "Her friend called her."
+      ],
+      "answer": 0,
+      "explain": "У тексті: she woke up early because she was nervous."
+    },
+    {
+      "type": "truefalse",
+      "q": "Чи відповідає текст про Мію змісту?",
+      "items": [
+        {
+          "text": "Mia is fifteen.",
+          "answer": false
+        },
+        {
+          "text": "Anna showed Mia the library.",
+          "answer": true
+        },
+        {
+          "text": "Mia played the piano in class.",
+          "answer": false
+        },
+        {
+          "text": "Mia thinks the school is better than she expected.",
+          "answer": true
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "q": "Mount Hoverla is ___ mountain in Ukraine.",
+      "options": [
+        "high",
+        "higher",
+        "the highest",
+        "the most high"
+      ],
+      "answer": 2,
+      "explain": "Найвищий у країні: the highest."
+    },
+    {
+      "type": "match",
+      "q": "З'єднай слово з перекладом.",
+      "pairs": [
+        [
+          "library",
+          "бібліотека"
+        ],
+        [
+          "canteen",
+          "їдальня"
+        ],
+        [
+          "nervous",
+          "знервований"
+        ],
+        [
+          "friendly",
+          "доброзичливий"
+        ],
+        [
+          "expect",
+          "очікувати"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "q": "You ___ drink more water. It is good for your health.",
+      "options": [
+        "must to",
+        "should",
+        "can to",
+        "should to"
+      ],
+      "answer": 1,
+      "explain": "Після should дієслово йде без to: should drink."
+    },
+    {
+      "type": "input",
+      "q": "Впиши Past Simple від дієслова «buy» (одне слово).",
+      "answer": [
+        "bought"
+      ]
+    },
+    {
+      "type": "speak",
+      "q": "Прочитай уголос.",
+      "text": "Yesterday I met a friendly girl at my new school. She showed me the library.",
+      "lang": "en"
+    }
+  ],
+  "homework": [
+    {
+      "type": "fill",
+      "q": "Доповни речення потрібною формою дієслова.",
+      "text": "My friend {lives} in Odesa. Yesterday we {met} at the station. Now we {are travelling} to the seaside. She {doesn't like} cold water."
+    },
+    {
+      "type": "multi",
+      "q": "Познач усі правильні речення.",
+      "options": [
+        "He is taller than his brother.",
+        "This book is more interesting than that one.",
+        "She is more taller than me.",
+        "It was the worse day of my life."
+      ],
+      "answer": [
+        0,
+        1
+      ],
+      "explain": "Короткі прикметники: taller; довгі: more interesting. Правильно: more taller і the worse — ні (the worst)."
+    },
+    {
+      "type": "text",
+      "q": "Напиши англійською 6–8 речень про себе: ім'я, вік, родина, що ти любиш робити у вільний час, що робив(-ла) вчора.",
+      "sample": "My name is Oleh and I am thirteen. I live in Kharkiv with my parents and my little sister. I like football and computer games. Every day I go to school by bus. Yesterday I played football with my friends and did my homework. In the evening I watched a film. I want to learn English well.",
+      "min": 200
+    }
+  ],
+  "reflection": [
+    "Які завдання тесту були найлегшими?",
+    "Які теми мені треба повторити в першу чергу?"
+  ]
+}

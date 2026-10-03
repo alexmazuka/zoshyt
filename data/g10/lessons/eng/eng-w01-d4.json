@@ -1,0 +1,264 @@
+{
+ "id": "eng-w01-d4",
+ "subject": "eng",
+ "title": "Back to school. Present Simple vs Present Continuous",
+ "goal": "Пригадати два основні теперішні часи, навчитися розповідати англійською про себе і шкільне життя та зрозуміти, що на тебе чекає в курсі англійської цього семестру.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Вітаємо в 10 класі! У цьому семестрі ти пройдеш **Starter** (повторення й діагностика) та перші розділи курсу: **Unit 1. Personality and relationships** (характер, дружба, сім'я) і **Unit 2. Leisure and the arts** (дозвілля, музика, кіно, театр). У кожному розділі будуть лексика, граматика, читання, говоріння і письмо — зокрема неформальний лист та рецензія на фільм чи книжку."
+  },
+  {
+   "type": "list",
+   "title": "Що буде в курсі",
+   "items": [
+    "граматика: Present Perfect, Past Simple, Past Continuous, Past Perfect, used to / would, герундій та інфінітив;",
+    "говоріння: висловлювати думку, погоджуватися й сперечатися, пропонувати плани;",
+    "письмо: неформальний лист, рецензія;",
+    "кожен розділ закінчується контрольною роботою."
+   ]
+  },
+  {
+   "type": "p",
+   "text": "Сьогодні — повторення двох часів, на яких тримається вся розмова про сьогодення. Це **Present Simple** і **Present Continuous**."
+  },
+  {
+   "type": "rule",
+   "title": "Present Simple",
+   "text": "Розповідає про **звички, регулярні дії, факти і розклад**.\nУтворення: дієслово в початковій формі; у 3-й особі однини (he, she, it) додаємо **-s / -es**.\nЗапитання і заперечення: **do / does** + дієслово, **don't / doesn't** + дієслово.\nСлова-маркери: always, usually, often, sometimes, never, every day, on Mondays."
+  },
+  {
+   "type": "rule",
+   "title": "Present Continuous",
+   "text": "Розповідає про **дію, що відбувається саме зараз**, про **тимчасову ситуацію** і про **заплановане найближче майбутнє**.\nУтворення: **am / is / are + дієслово з -ing**.\nСлова-маркери: now, at the moment, today, this week, these days, look!"
+  },
+  {
+   "type": "table",
+   "title": "Порівняння",
+   "head": [
+    "",
+    "Present Simple",
+    "Present Continuous"
+   ],
+   "rows": [
+    [
+     "Приклад",
+     "She walks to school every day.",
+     "She is walking to school now."
+    ],
+    [
+     "Значення",
+     "звичка, факт",
+     "дія зараз, тимчасова ситуація"
+    ],
+    [
+     "Заперечення",
+     "He doesn't like maths.",
+     "He isn't studying maths now."
+    ],
+    [
+     "Запитання",
+     "Do you live in Kyiv?",
+     "Are you living in Kyiv this year?"
+    ]
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Дієслова стану (like, love, want, know, understand, need, believe) зазвичай **не вживаються в Continuous**: кажемо *I know the answer*, а не *I am knowing the answer*."
+  },
+  {
+   "type": "example",
+   "title": "Порівняй значення",
+   "text": "My brother **plays** football on Saturdays. (звичка)\nMy brother **is playing** football in the yard now. (зараз)\nI usually **walk** to school, but today I **am taking** the bus because it is raining. (звичка й виняток)"
+  },
+  {
+   "type": "vocab",
+   "title": "Back to school",
+   "items": [
+    {
+     "en": "timetable",
+     "uk": "розклад",
+     "ex": "Our timetable has five lessons a day."
+    },
+    {
+     "en": "subject",
+     "uk": "предмет",
+     "ex": "My favourite subject is biology."
+    },
+    {
+     "en": "classmate",
+     "uk": "однокласник",
+     "ex": "My classmates are friendly."
+    },
+    {
+     "en": "homework",
+     "uk": "домашнє завдання",
+     "ex": "I do my homework after dinner."
+    },
+    {
+     "en": "break",
+     "uk": "перерва",
+     "ex": "We have lunch at the long break."
+    },
+    {
+     "en": "get on well with",
+     "uk": "добре ладнати з",
+     "ex": "I get on well with my deskmate."
+    },
+    {
+     "en": "revise",
+     "uk": "повторювати (матеріал)",
+     "ex": "We are revising grammar this week."
+    },
+    {
+     "en": "take notes",
+     "uk": "робити нотатки",
+     "ex": "I take notes in every lesson."
+    },
+    {
+     "en": "look forward to",
+     "uk": "з нетерпінням чекати",
+     "ex": "I'm looking forward to the new term."
+    },
+    {
+     "en": "be good at",
+     "uk": "добре вміти",
+     "ex": "She is good at languages."
+    }
+   ]
+  }
+ ],
+ "exercises": [
+  {
+   "type": "choice",
+   "q": "Оберіть правильну форму: My mother ___ at a hospital. She is a doctor.",
+   "options": [
+    "works",
+    "is working",
+    "work"
+   ],
+   "answer": 0,
+   "explain": "Робота — постійний факт, тому Present Simple; у 3-й особі додаємо -s."
+  },
+  {
+   "type": "choice",
+   "q": "Оберіть правильну форму: Be quiet! The baby ___.",
+   "options": [
+    "sleeps",
+    "is sleeping",
+    "sleep"
+   ],
+   "answer": 1,
+   "explain": "Дія відбувається зараз — Present Continuous."
+  },
+  {
+   "type": "fill",
+   "q": "Поставте дієслово у правильну форму (Present Simple або Present Continuous).",
+   "text": "We usually {have} lunch at school, but today we {are having|'re having} a picnic in the park."
+  },
+  {
+   "type": "fill",
+   "q": "Вставте допоміжне дієслово.",
+   "text": "{Does} your sister go to this school? — No, she {doesn't|does not}. She {is|'s} studying at a college now."
+  },
+  {
+   "type": "truefalse",
+   "q": "Чи правильне речення?",
+   "items": [
+    {
+     "text": "I am knowing the answer.",
+     "answer": false
+    },
+    {
+     "text": "She often visits her grandparents.",
+     "answer": true
+    },
+    {
+     "text": "They are play chess at the moment.",
+     "answer": false
+    },
+    {
+     "text": "Does he like pizza?",
+     "answer": true
+    }
+   ]
+  },
+  {
+   "type": "match",
+   "q": "З'єднайте слово з перекладом.",
+   "pairs": [
+    [
+     "timetable",
+     "розклад"
+    ],
+    [
+     "homework",
+     "домашнє завдання"
+    ],
+    [
+     "classmate",
+     "однокласник"
+    ],
+    [
+     "revise",
+     "повторювати"
+    ],
+    [
+     "break",
+     "перерва"
+    ]
+   ]
+  },
+  {
+   "type": "order",
+   "q": "Складіть речення в правильному порядку.",
+   "items": [
+    "I",
+    "am",
+    "looking",
+    "forward",
+    "to",
+    "the",
+    "new",
+    "term"
+   ]
+  },
+  {
+   "type": "speak",
+   "text": "Hello! My name is ... I am in the tenth grade. I usually get up at seven o'clock and walk to school. At the moment I am studying English, and I am looking forward to the new term.",
+   "lang": "en",
+   "q": "Прочитайте вголос і розкажіть про себе подібним чином."
+  }
+ ],
+ "homework": [
+  {
+   "type": "fill",
+   "q": "Поставте дієслова у дужках у правильну форму.",
+   "text": "Every morning my friend {goes} to school by bus. Today he {is walking} because the bus {isn't|is not} running."
+  },
+  {
+   "type": "choice",
+   "q": "Яке речення про звичку?",
+   "options": [
+    "I am reading a book now.",
+    "I read a book every evening.",
+    "I am reading a lot this week."
+   ],
+   "answer": 1,
+   "explain": "Every evening — маркер регулярної дії, Present Simple."
+  },
+  {
+   "type": "text",
+   "q": "Напишіть англійською 6–8 речень про себе і свій шкільний день. Використайте і Present Simple (звички), і Present Continuous (що робите зараз і що вивчаєте цього тижня).",
+   "sample": "My name is Anna. I usually get up at seven and walk to school. My favourite subject is biology. I get on well with my classmates. Now I am sitting at my desk and writing this text. This week we are revising English grammar. I am looking forward to the new term.",
+   "min": 200
+  }
+ ],
+ "reflection": [
+  "Чим відрізняються Present Simple і Present Continuous своїми словами?",
+  "Які слова-маркери допомагають обрати час?",
+  "Що з курсу цього семестру тобі цікаво вивчати найбільше?"
+ ]
+}

@@ -1,0 +1,252 @@
+{
+  "id": "eng-w02-d1",
+  "subject": "eng",
+  "title": "Personality adjectives",
+  "goal": "Навчитися описувати характер людини англійською і утворювати протилежні за значенням прикметники за допомогою префіксів un-, im-, dis-.",
+  "minutes": 40,
+  "theory": [
+    {
+      "type": "p",
+      "text": "Розпочинаємо Unit 1 «People and Relationships». Щоб розповідати про друзів, родину й однокласників, потрібні слова для опису характеру. Сьогодні вивчимо дванадцять таких прикметників і правило створення протилежних слів."
+    },
+    {
+      "type": "vocab",
+      "title": "Personality adjectives",
+      "items": [
+        {
+          "en": "reliable",
+          "uk": "надійний",
+          "ex": "Tom is reliable: he always keeps his promises."
+        },
+        {
+          "en": "generous",
+          "uk": "щедрий",
+          "ex": "She is generous and shares her lunch."
+        },
+        {
+          "en": "shy",
+          "uk": "сором'язливий",
+          "ex": "He is shy with new people."
+        },
+        {
+          "en": "friendly",
+          "uk": "доброзичливий",
+          "ex": "Our neighbour is very friendly."
+        },
+        {
+          "en": "honest",
+          "uk": "чесний",
+          "ex": "An honest person tells the truth."
+        },
+        {
+          "en": "polite",
+          "uk": "ввічливий",
+          "ex": "Be polite to everyone."
+        },
+        {
+          "en": "patient",
+          "uk": "терплячий",
+          "ex": "A good teacher is patient."
+        },
+        {
+          "en": "lazy",
+          "uk": "лінивий",
+          "ex": "I feel lazy on Sundays."
+        },
+        {
+          "en": "selfish",
+          "uk": "егоїстичний",
+          "ex": "A selfish person thinks only about himself."
+        },
+        {
+          "en": "brave",
+          "uk": "сміливий",
+          "ex": "The firefighter was brave."
+        },
+        {
+          "en": "creative",
+          "uk": "творчий",
+          "ex": "She is creative and draws well."
+        },
+        {
+          "en": "cheerful",
+          "uk": "життєрадісний",
+          "ex": "He is always cheerful."
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Протилежні прикметники з префіксами",
+      "text": "Префікс змінює значення на протилежне, а написання слова не змінюється.\n**un-**: friendly — unfriendly, kind — unkind, happy — unhappy, reliable — unreliable\n**im-** (перед p, m): patient — impatient, polite — impolite, possible — impossible\n**dis-**: honest — dishonest, loyal — disloyal, obedient — disobedient"
+    },
+    {
+      "type": "table",
+      "title": "Приклади",
+      "head": [
+        "Прикметник",
+        "Протилежний",
+        "Переклад"
+      ],
+      "rows": [
+        [
+          "reliable",
+          "unreliable",
+          "ненадійний"
+        ],
+        [
+          "patient",
+          "impatient",
+          "нетерплячий"
+        ],
+        [
+          "polite",
+          "impolite",
+          "нечемний"
+        ],
+        [
+          "honest",
+          "dishonest",
+          "нечесний"
+        ],
+        [
+          "friendly",
+          "unfriendly",
+          "недоброзичливий"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Як це звучить у мові",
+      "text": "My best friend is **reliable** and **honest**. She is never **selfish**, and she is very **generous** with her time. My brother is the opposite: he is often **impatient** and a bit **impolite**."
+    },
+    {
+      "type": "tip",
+      "text": "Префікси не підбирай навмання: їх треба запам'ятовувати разом зі словом. Якщо сумніваєшся, перевір у словнику."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "q": "З'єднай прикметник із перекладом.",
+      "pairs": [
+        [
+          "reliable",
+          "надійний"
+        ],
+        [
+          "generous",
+          "щедрий"
+        ],
+        [
+          "shy",
+          "сором'язливий"
+        ],
+        [
+          "brave",
+          "сміливий"
+        ],
+        [
+          "selfish",
+          "егоїстичний"
+        ]
+      ]
+    },
+    {
+      "type": "fill",
+      "q": "Утвори протилежний прикметник за допомогою префікса un-, im- або dis-.",
+      "text": "polite — {impolite}; honest — {dishonest}; friendly — {unfriendly}; patient — {impatient}; reliable — {unreliable}"
+    },
+    {
+      "type": "choice",
+      "q": "Which word describes a person who tells the truth?",
+      "options": [
+        "honest",
+        "lazy",
+        "shy",
+        "selfish"
+      ],
+      "answer": 0,
+      "explain": "honest — чесний, той, хто каже правду."
+    },
+    {
+      "type": "sort",
+      "q": "Розклади прикметники на ті, що описують позитивні й негативні риси.",
+      "groups": {
+        "Positive": [
+          "generous",
+          "brave",
+          "cheerful"
+        ],
+        "Negative": [
+          "lazy",
+          "selfish",
+          "impolite"
+        ]
+      }
+    },
+    {
+      "type": "fill",
+      "q": "Впиши потрібне слово: reliable, shy, generous, creative.",
+      "text": "Olga is {creative}: she writes songs and paints. Max is {shy}: he doesn't like speaking in front of the class. Ivan is {generous}: he gives presents to everyone. Dad is {reliable}: he always arrives on time."
+    },
+    {
+      "type": "truefalse",
+      "q": "Чи правильно утворено слово?",
+      "items": [
+        {
+          "text": "impatient",
+          "answer": true
+        },
+        {
+          "text": "unpolite",
+          "answer": false
+        },
+        {
+          "text": "dishonest",
+          "answer": true
+        },
+        {
+          "text": "imfriendly",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "type": "speak",
+      "text": "My friend is reliable and generous. She is never selfish, and she is always cheerful.",
+      "lang": "en",
+      "q": "Прочитай уголос і постав правильний наголос."
+    }
+  ],
+  "homework": [
+    {
+      "type": "choice",
+      "q": "My brother never helps anyone and thinks only about himself. He is ___.",
+      "options": [
+        "generous",
+        "selfish",
+        "brave",
+        "cheerful"
+      ],
+      "answer": 1,
+      "explain": "selfish — егоїстичний, думає лише про себе."
+    },
+    {
+      "type": "fill",
+      "q": "Доповни речення протилежним прикметником.",
+      "text": "She is very patient, but her sister is {impatient}. He is honest, but his friend is {dishonest}. The girl is friendly, but her neighbour is {unfriendly}."
+    },
+    {
+      "type": "text",
+      "q": "Опиши англійською 5–6 реченнями двох людей, яких ти знаєш (друг, член родини). Використай не менше шести прикметників із уроку і одну пару протилежних слів.",
+      "sample": "My friend Sasha is reliable and honest. He is also very creative: he draws comics. My cousin is different. He is lazy and sometimes selfish, but he is cheerful. Sasha is patient, but my cousin is impatient when he waits. I like both of them.",
+      "min": 200
+    }
+  ],
+  "reflection": [
+    "Які прикметники найкраще описують мене?",
+    "Які префікси я ще плутаю?"
+  ]
+}

@@ -1,0 +1,219 @@
+{
+ "subject": "eng",
+ "sections": [
+  {
+   "name": "Unit 0. Back to School",
+   "lessons": [
+    {
+     "t": "Welcome back! Summer holidays",
+     "b": "лексика про літо, Past Simple, розповідь про канікули"
+    },
+    {
+     "t": "Revision: Present Simple and Present Continuous",
+     "b": "повторення часів, щоденні дії і дії в момент мовлення"
+    },
+    {
+     "t": "Revision: Past Simple",
+     "b": "правильні й неправильні дієслова, питання і заперечення"
+    },
+    {
+     "t": "Diagnostic test",
+     "b": "діагностувальна робота: граматика, лексика, читання"
+    }
+   ]
+  },
+  {
+   "name": "Unit 1. Me and My Friends",
+   "lessons": [
+    {
+     "t": "Personality adjectives",
+     "b": "прикметники характеру: friendly, shy, reliable; опис друга"
+    },
+    {
+     "t": "Appearance",
+     "b": "опис зовнішності: height, build, hair; порядок прикметників"
+    },
+    {
+     "t": "Friendship: reading",
+     "b": "текст про дружбу, пошук деталей, обговорення"
+    },
+    {
+     "t": "Present Simple vs Present Continuous",
+     "b": "stative verbs, маркери часу, вправи"
+    },
+    {
+     "t": "Listening and speaking: making friends",
+     "b": "діалоги знайомства, запрошення, ввічливі фрази"
+    },
+    {
+     "t": "Writing: a description of a friend",
+     "b": "лист або есе з описом друга, сполучники"
+    },
+    {
+     "t": "Unit 1 test",
+     "b": "тематична контрольна робота: лексика і граматика розділу"
+    }
+   ]
+  },
+  {
+   "name": "Unit 2. School Life",
+   "lessons": [
+    {
+     "t": "School subjects and timetable",
+     "b": "предмети, розклад, улюблені уроки; have to / don't have to"
+    },
+    {
+     "t": "School rules",
+     "b": "must, mustn't, should; правила в школі"
+    },
+    {
+     "t": "Schools around the world: reading",
+     "b": "порівняння шкіл різних країн, читання з розумінням"
+    },
+    {
+     "t": "Past Continuous",
+     "b": "was/were + -ing, дії в процесі в минулому"
+    },
+    {
+     "t": "Past Simple vs Past Continuous",
+     "b": "when, while; розповідь про подію в школі"
+    },
+    {
+     "t": "Speaking: talking about school",
+     "b": "діалоги про шкільне життя, висловлення думки"
+    },
+    {
+     "t": "Writing: an email about my school",
+     "b": "структура неформального листа"
+    },
+    {
+     "t": "Unit 2 test",
+     "b": "тематична контрольна робота"
+    }
+   ]
+  },
+  {
+   "name": "Unit 3. Free Time and Hobbies",
+   "lessons": [
+    {
+     "t": "Hobbies and leisure activities",
+     "b": "лексика захоплень, like/love/hate + -ing"
+    },
+    {
+     "t": "Sports and games",
+     "b": "види спорту, play/go/do, спортивне обладнання"
+    },
+    {
+     "t": "Teen hobbies: reading",
+     "b": "текст про захоплення підлітків, нові слова"
+    },
+    {
+     "t": "Present Perfect: introduction",
+     "b": "have/has + V3, ever/never, досвід"
+    },
+    {
+     "t": "Present Perfect: just, already, yet",
+     "b": "маркери часу, вправи"
+    },
+    {
+     "t": "Present Perfect vs Past Simple",
+     "b": "порівняння часів, вибір форми"
+    },
+    {
+     "t": "Listening: a sports event",
+     "b": "аудіювання, вибір відповіді"
+    },
+    {
+     "t": "Speaking: invitations and arrangements",
+     "b": "запрошення, погодження, відмова"
+    },
+    {
+     "t": "Writing: a blog post about my hobby",
+     "b": "структура блог-посту, прикметники"
+    },
+    {
+     "t": "Unit 3 test",
+     "b": "тематична контрольна робота"
+    }
+   ]
+  },
+  {
+   "name": "Unit 4. Food and Health",
+   "lessons": [
+    {
+     "t": "Food and drinks",
+     "b": "лексика їжі, countable / uncountable nouns"
+    },
+    {
+     "t": "Quantifiers: some, any, much, many, a lot of",
+     "b": "вживання з обчислюваними і необчислюваними іменниками"
+    },
+    {
+     "t": "Healthy eating: reading",
+     "b": "здорове харчування, текст і запитання"
+    },
+    {
+     "t": "Recipes and cooking",
+     "b": "дієслова приготування, інструкція, imperative"
+    },
+    {
+     "t": "At a café: ordering food",
+     "b": "діалоги в кафе, ввічливі прохання would like"
+    },
+    {
+     "t": "Ukrainian and British cuisine",
+     "b": "традиційні страви, порівняння"
+    },
+    {
+     "t": "Comparatives and superlatives",
+     "b": "ступені порівняння прикметників, винятки"
+    },
+    {
+     "t": "Writing: a recipe or a menu",
+     "b": "опис рецепту, послідовність дій"
+    },
+    {
+     "t": "Unit 4 test",
+     "b": "тематична контрольна робота"
+    }
+   ]
+  },
+  {
+   "name": "Unit 5. Holidays and Celebrations",
+   "lessons": [
+    {
+     "t": "Holidays in Ukraine and Great Britain",
+     "b": "Halloween, Christmas, День Незалежності; традиції"
+    },
+    {
+     "t": "Future forms: will and be going to",
+     "b": "прогнози, плани, рішення"
+    },
+    {
+     "t": "Christmas traditions: reading",
+     "b": "текст про святкування Різдва, лексика"
+    },
+    {
+     "t": "Speaking: planning a celebration",
+     "b": "обговорення планів на свята"
+    },
+    {
+     "t": "Writing: a greeting card / invitation",
+     "b": "привітання, запрошення на свято"
+    },
+    {
+     "t": "Revision for the semester test",
+     "b": "повторення граматики і лексики семестру"
+    },
+    {
+     "t": "Semester test",
+     "b": "семестрова контрольна робота: читання, граматика, письмо"
+    },
+    {
+     "t": "Christmas project and test analysis",
+     "b": "аналіз помилок, презентація святкового проєкту"
+    }
+   ]
+  }
+ ]
+}

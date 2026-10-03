@@ -1,0 +1,62 @@
+{"subject":"eng","sections":[
+{"name":"Вступ. Back to School","lessons":[
+{"t": "Back to school: my summer holidays", "b": "розповідь про літо; повторення Present Simple і Past Simple, неправильні дієслова"},
+{"t": "Diagnostic test", "b": "вхідний тест: лексика і граматика 7 класу, читання, аудіювання"}
+]},
+{"name":"Unit 1. People and Relationships","lessons":[
+{"t": "Personality adjectives", "b": "прикметники для опису характеру: reliable, generous, shy; префікси un-, im-, dis-"},
+{"t": "Describing people: appearance and character", "b": "опис зовнішності й характеру, порядок прикметників"},
+{"t": "Present Simple vs Present Continuous. Stative verbs", "b": "вживання часів, дієслова стану: like, know, believe"},
+{"t": "Reading: true friendship", "b": "читання статті про дружбу, пошук деталей, нові слова"},
+{"t": "Listening and speaking: giving advice", "b": "should/shouldn't, ought to; поради другові в складній ситуації"},
+{"t": "Family and generation gap", "b": "стосунки в родині, обов'язки, обговорення конфліктів"},
+{"t": "Writing: an email to a pen friend", "b": "структура неформального листа, вступ і закінчення, linking words"},
+{"t": "Unit 1 test", "b": "контроль лексики й граматики розділу, читання, письмо"}
+]},
+{"name":"Unit 2. Free Time and Hobbies","lessons":[
+{"t": "Hobbies and leisure activities", "b": "лексика хобі: collecting, gaming, volunteering; дієслова do/play/go"},
+{"t": "Present Perfect: ever, never, already, yet, just", "b": "утворення і вживання, третя форма дієслова"},
+{"t": "Present Perfect vs Past Simple", "b": "for/since; досвід і конкретний час у минулому"},
+{"t": "Gerund and infinitive after verbs", "b": "like/enjoy/hate + -ing, want/decide + to-infinitive"},
+{"t": "Reading: unusual hobbies around the world", "b": "читання з вибором правильної відповіді, обговорення"},
+{"t": "Listening: weekend plans", "b": "аудіювання діалогів, запрошення і відповіді на них"},
+{"t": "Speaking: inviting, accepting and refusing", "b": "фрази запрошення, ввічлива відмова, рольова гра"},
+{"t": "Writing: a blog post about my hobby", "b": "структура допису, абзаци, особисті приклади"},
+{"t": "Unit 2 test", "b": "контроль лексики й граматики розділу, аудіювання, письмо"}
+]},
+{"name":"Unit 3. Sport and Healthy Lifestyle","lessons":[
+{"t": "Sports and sports equipment", "b": "види спорту, спорядження, місця для занять спортом"},
+{"t": "Past Simple vs Past Continuous", "b": "when/while; розповідь про подію в минулому"},
+{"t": "Healthy habits: food, sleep, activity", "b": "лексика здорового способу життя, порівняння звичок"},
+{"t": "Countable and uncountable nouns. Quantifiers", "b": "some, any, much, many, a lot of, a few, a little"},
+{"t": "Reading: famous Ukrainian athletes", "b": "читання біографічного тексту, Паралімпійці, Ігри Нескорених"},
+{"t": "Listening: a sports commentary", "b": "аудіювання, розуміння основного змісту і деталей"},
+{"t": "Speaking: talking about sports experience", "b": "розповідь про змагання, вираження емоцій"},
+{"t": "Writing: a story about a sports event", "b": "структура оповідання, часові слова: first, then, finally"},
+{"t": "Unit 3 test", "b": "контроль лексики й граматики розділу, читання, говоріння"}
+]},
+{"name":"Unit 4. Shopping and Money","lessons":[
+{"t": "Shops and shopping", "b": "види магазинів, покупки онлайн, лексика: receipt, refund, discount"},
+{"t": "Comparatives and superlatives", "b": "ступені порівняння прикметників, as...as, not as...as"},
+{"t": "Too and enough", "b": "too expensive, big enough; порівняння товарів"},
+{"t": "Pocket money and budgeting", "b": "кишенькові гроші, заощадження, фінансова грамотність"},
+{"t": "Reading: consumer rights", "b": "читання тексту про права покупця, повернення товару"},
+{"t": "Speaking: at the shop — buying and returning things", "b": "діалог продавця і покупця, ввічливі прохання"},
+{"t": "Writing: a product review", "b": "структура відгуку, переваги й недоліки, рекомендація"},
+{"t": "Unit 4 test", "b": "контроль лексики й граматики розділу, аудіювання, письмо"}
+]},
+{"name":"Unit 5. Science and Technology","lessons":[
+{"t": "Gadgets and inventions", "b": "лексика техніки й винаходів, видатні винахідники"},
+{"t": "Future forms: will, be going to, Present Continuous for future", "b": "плани, прогнози, домовленості"},
+{"t": "First Conditional", "b": "if + Present Simple, will; наслідки дій"},
+{"t": "Reading: Ukrainian inventors and tech start-ups", "b": "читання про українських винахідників і стартапи, нова лексика, обговорення"},
+{"t": "Reading: technology in our life", "b": "читання статті, переваги й ризики технологій, безпека онлайн"},
+{"t": "Listening and speaking: debating pros and cons", "b": "аргументи за і проти, фрази згоди і незгоди"},
+{"t": "Writing: an opinion essay", "b": "структура есе-думки, вступ, аргументи, висновок"},
+{"t": "Unit 5 test", "b": "контроль лексики й граматики розділу, читання, говоріння"}
+]},
+{"name":"Підсумки семестру","lessons":[
+{"t": "Revision: grammar and vocabulary of the semester", "b": "повторення часів, ступенів порівняння, умовних речень"},
+{"t": "Semester test", "b": "семестрова контрольна робота: читання, аудіювання, лексика, граматика, письмо"}
+]}
+]}

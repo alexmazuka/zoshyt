@@ -1,0 +1,201 @@
+{
+ "id": "eng-w02-d1",
+ "subject": "eng",
+ "title": "Personality Types",
+ "goal": "Вивчити прикметники для опису характеру, дізнатися про типи особистості й заповнити тест-опитувальник про себе.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Усі люди різні: одні люблять компанії, інші — тишу. Сьогодні ти навчишся описувати характер англійською і дізнаєшся про два популярних типи особистості — **extrovert** і **introvert**."
+  },
+  {
+   "type": "vocab",
+   "title": "Personality Adjectives",
+   "items": [
+    {
+     "en": "outgoing",
+     "uk": "комунікабельний",
+     "ex": "She is outgoing and loves parties."
+    },
+    {
+     "en": "reserved",
+     "uk": "стриманий",
+     "ex": "He is reserved and speaks little."
+    },
+    {
+     "en": "creative",
+     "uk": "творчий",
+     "ex": "My sister is creative and paints."
+    },
+    {
+     "en": "reliable",
+     "uk": "надійний",
+     "ex": "A reliable person keeps promises."
+    },
+    {
+     "en": "curious",
+     "uk": "допитливий",
+     "ex": "Children are curious."
+    },
+    {
+     "en": "patient",
+     "uk": "терплячий",
+     "ex": "A good teacher is patient."
+    },
+    {
+     "en": "ambitious",
+     "uk": "цілеспрямований",
+     "ex": "He is ambitious and wants to win."
+    },
+    {
+     "en": "lazy",
+     "uk": "ледачий",
+     "ex": "I feel lazy on Sunday."
+    },
+    {
+     "en": "cheerful",
+     "uk": "життєрадісний",
+     "ex": "Her cheerful smile helps everyone."
+    },
+    {
+     "en": "stubborn",
+     "uk": "впертий",
+     "ex": "My brother is stubborn."
+    }
+   ]
+  },
+  {
+   "type": "reading",
+   "title": "Extroverts and Introverts",
+   "genre": "стаття",
+   "text": "Psychologists often divide people into two main types. Extroverts are outgoing and cheerful. They get energy from being with other people and enjoy big parties.\n\nIntroverts are usually more reserved. They get energy from being alone and prefer to spend time with one or two close friends. Neither type is better. Most people are a mix of both."
+  },
+  {
+   "type": "rule",
+   "title": "Як описувати характер",
+   "text": "*I am / He is / She is + прикметник.* Для уточнення: *very, quite, a bit, not very.*\nНаприклад: *I am quite creative, but a bit shy.*"
+  },
+  {
+   "type": "tip",
+   "text": "Протилежні за значенням слова легше запам'ятовувати парами: outgoing — reserved, lazy — ambitious, cheerful — stubborn."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай слово з перекладом.",
+   "pairs": [
+    [
+     "outgoing",
+     "комунікабельний"
+    ],
+    [
+     "reserved",
+     "стриманий"
+    ],
+    [
+     "curious",
+     "допитливий"
+    ],
+    [
+     "stubborn",
+     "впертий"
+    ],
+    [
+     "reliable",
+     "надійний"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Хто отримує енергію від спілкування з іншими?",
+   "options": [
+    "introvert",
+    "extrovert",
+    "обидва типи однаково",
+    "жоден"
+   ],
+   "answer": 1,
+   "explain": "За текстом, extroverts get energy from being with other people."
+  },
+  {
+   "type": "sort",
+   "q": "Розклади прикметники за типом.",
+   "groups": {
+    "Скоріше extrovert": [
+     "outgoing",
+     "cheerful"
+    ],
+    "Скоріше introvert": [
+     "reserved",
+     "quiet"
+    ]
+   }
+  },
+  {
+   "type": "fill",
+   "q": "Встав слово.",
+   "text": "A person who loves parties is {outgoing}. A person who keeps promises is {reliable}. A person who asks many questions is {curious}."
+  },
+  {
+   "type": "truefalse",
+   "q": "За текстом, чи правильні твердження?",
+   "items": [
+    {
+     "text": "Introverts prefer to spend time with a few close friends.",
+     "answer": true
+    },
+    {
+     "text": "Extroverts are always lazy.",
+     "answer": false
+    },
+    {
+     "text": "Most people are a mix of both types.",
+     "answer": true
+    }
+   ]
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос і розкажи про себе.",
+   "text": "I am quite creative and a bit shy. I think I am more of an introvert.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "choice",
+   "q": "Обери найближчий за значенням до cheerful:",
+   "options": [
+    "sad",
+    "happy",
+    "angry",
+    "tired"
+   ],
+   "answer": 1,
+   "explain": "Cheerful — життєрадісний, веселий, тобто happy."
+  },
+  {
+   "type": "checklist",
+   "q": "Міні-тест. Познач те, що про тебе правда.",
+   "items": [
+    "I enjoy big parties.",
+    "I like to spend time alone.",
+    "I make friends easily.",
+    "I prefer one or two close friends."
+   ]
+  },
+  {
+   "type": "text",
+   "q": "За результатами міні-тесту напиши 5–6 речень англійською: ти більше extrovert чи introvert? Назви 3 свої риси характеру і наведи приклади.",
+   "sample": "I think I am more of an introvert. I am reserved, but I am also creative and reliable. For example, I like to draw alone. I prefer to spend time with one or two close friends. I am sometimes a bit stubborn.",
+   "min": 150
+  }
+ ],
+ "reflection": [
+  "Які 2–3 слова найкраще описують твій характер?",
+  "Чим introvert відрізняється від extrovert?"
+ ]
+}

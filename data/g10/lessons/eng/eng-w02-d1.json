@@ -1,0 +1,208 @@
+{
+ "id": "eng-w02-d1",
+ "subject": "eng",
+ "title": "Діагностувальна робота",
+ "goal": "Перевірити, що ти пам'ятаєш із курсу 9 класу: лексику, граматику і читання, щоб зрозуміти, що варто повторити перед Unit 1.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Сьогодні — діагностувальна робота. Вона не для оцінки, а щоб побачити, які теми вже тверді, а які варто підтягнути. Роби самостійно, без підказок і перекладача. Після кожної вправи прочитай пояснення, особливо якщо помилився."
+  },
+  {
+   "type": "rule",
+   "title": "Що перевіряємо",
+   "text": "1) Часи: Present Simple, Present Continuous, Past Simple, Future (will / going to).\n2) Лексика шкільного життя і повсякдення.\n3) Читання короткого тексту й пошук деталей."
+  },
+  {
+   "type": "table",
+   "title": "Нагадування: основні часи",
+   "head": [
+    "Час",
+    "Форма",
+    "Приклад"
+   ],
+   "rows": [
+    [
+     "Present Simple",
+     "V / V-s",
+     "I study English every day."
+    ],
+    [
+     "Present Continuous",
+     "am/is/are + V-ing",
+     "I am studying now."
+    ],
+    [
+     "Past Simple",
+     "V-ed / 2-га форма",
+     "I studied yesterday."
+    ],
+    [
+     "Future (plan)",
+     "am/is/are going to + V",
+     "I am going to study tonight."
+    ],
+    [
+     "Future (decision)",
+     "will + V",
+     "I will help you."
+    ]
+   ]
+  },
+  {
+   "type": "reading",
+   "title": "A day at school",
+   "text": "Max is sixteen and lives in Lviv. Every weekday he gets up at 6:45 and goes to school by tram. He has five lessons a day. His favourite subject is physics because the teacher shows interesting experiments.\n\nYesterday Max stayed after lessons and worked in the library for an hour. Tomorrow he is going to take part in a school quiz, so this week he is revising a lot. Max hopes his team will win."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "choice",
+   "q": "Прочитайте текст A day at school. Як Max їздить до школи?",
+   "options": [
+    "by bus",
+    "by tram",
+    "on foot",
+    "by bike"
+   ],
+   "answer": 1,
+   "explain": "У тексті: goes to school by tram."
+  },
+  {
+   "type": "truefalse",
+   "q": "За текстом чи правильні твердження?",
+   "items": [
+    {
+     "text": "Max lives in Kyiv.",
+     "answer": false
+    },
+    {
+     "text": "Physics is Max's favourite subject.",
+     "answer": true
+    },
+    {
+     "text": "Yesterday Max went home right after lessons.",
+     "answer": false
+    },
+    {
+     "text": "Max is going to take part in a quiz.",
+     "answer": true
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "She ___ to music every evening.",
+   "options": [
+    "listen",
+    "listens",
+    "is listen",
+    "listening"
+   ],
+   "answer": 1,
+   "explain": "Звичка, 3-тя особа однини: listens."
+  },
+  {
+   "type": "fill",
+   "q": "Поставте дієслово в Past Simple.",
+   "text": "Last summer we {went} to the Carpathians and {saw} a lot of beautiful places."
+  },
+  {
+   "type": "fill",
+   "q": "Оберіть відповідну форму майбутнього.",
+   "text": "Look at those clouds! It {is going to} rain. — The phone is ringing. I {will|'ll} answer it."
+  },
+  {
+   "type": "match",
+   "q": "З'єднайте англійське слово з перекладом.",
+   "pairs": [
+    [
+     "homework",
+     "домашнє завдання"
+    ],
+    [
+     "experiment",
+     "дослід"
+    ],
+    [
+     "library",
+     "бібліотека"
+    ],
+    [
+     "team",
+     "команда"
+    ],
+    [
+     "quiz",
+     "вікторина"
+    ]
+   ]
+  },
+  {
+   "type": "sort",
+   "q": "Розкладіть слова за часом, до якого вони належать.",
+   "groups": {
+    "Past Simple": [
+     "yesterday",
+     "last year",
+     "two days ago"
+    ],
+    "Present Continuous": [
+     "now",
+     "at the moment",
+     "look!"
+    ]
+   }
+  },
+  {
+   "type": "order",
+   "q": "Складіть речення.",
+   "items": [
+    "We",
+    "are",
+    "going",
+    "to",
+    "visit",
+    "our",
+    "grandparents",
+    "tomorrow"
+   ]
+  },
+  {
+   "type": "speak",
+   "q": "Прочитайте вголос текст A day at school, а потім перекажіть його своїми словами.",
+   "text": "Max is sixteen and lives in Lviv. Every weekday he gets up at 6:45 and goes to school by tram.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "fill",
+   "q": "Вставте слово.",
+   "text": "Tom {doesn't|does not} like coffee. He {is drinking|'s drinking} tea now. He {drank} juice yesterday."
+  },
+  {
+   "type": "choice",
+   "q": "Яке речення правильне?",
+   "options": [
+    "He go to school yesterday.",
+    "He went to school yesterday.",
+    "He goes to school yesterday."
+   ],
+   "answer": 1,
+   "explain": "Yesterday — Past Simple, go має неправильну форму went."
+  },
+  {
+   "type": "text",
+   "q": "Напишіть 5–6 речень англійською про те, що ви робили минулих вихідних і що плануєте цих вихідних. Використайте Past Simple і going to. Зверніть увагу на теми, у яких помилялися в діагностиці.",
+   "sample": "Last weekend I visited my grandmother and helped her in the garden. On Sunday I watched a film with my friends. This weekend I am going to go hiking with my family. We are going to take sandwiches and tea. I hope the weather will be good.",
+   "min": 150
+  }
+ ],
+ "reflection": [
+  "Які завдання були найлегшими, а які викликали труднощі?",
+  "Яку тему з граматики варто повторити перед Unit 1?",
+  "Скільки слів із лексики ти впевнено пам'ятаєш?"
+ ]
+}

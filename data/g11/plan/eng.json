@@ -1,0 +1,150 @@
+{
+ "subject": "eng",
+ "sections": [
+  {
+   "name": "Introduction. Revision",
+   "lessons": [
+    {
+     "t": "Вступ. Повторення: English as a global language",
+     "b": "мова міжнародного спілкування, mother tongue; повторення часів Present і Past"
+    },
+    {
+     "t": "Learning English: my goals and strategies",
+     "b": "лексика: qualification, fluency, leisure; Present Perfect vs Past Simple; розповідь про досвід"
+    },
+    {
+     "t": "Personality and leisure activities. Revision of grammar",
+     "b": "лексика: personality traits, hobbies; Future forms; діалог-знайомство"
+    }
+   ]
+  },
+  {
+   "name": "Unit 1. Being a Student",
+   "lessons": [
+    {
+     "t": "Learner autonomy: how to study effectively",
+     "b": "лексика: resource, strategy, autonomous; Conditionals I і II"
+    },
+    {
+     "t": "Preparing for exams",
+     "b": "if, even if, unless, provided that; поради щодо підготовки до іспитів"
+    },
+    {
+     "t": "A foreign language is a language for life",
+     "b": "лексика: assessment, distraction, exhausted; читання статті, обговорення"
+    },
+    {
+     "t": "What will I become? Speaking",
+     "b": "розповідь про плани на майбутнє, вирази для висловлення думки"
+    },
+    {
+     "t": "Writing: making notes",
+     "b": "notes, paragraph, flowchart; конспектування тексту і лекції"
+    },
+    {
+     "t": "Revision: Unit 1",
+     "b": "лексика й граматика розділу; умовні речення I–II типу; аудіювання"
+    },
+    {
+     "t": "Тематична контрольна робота № 1 (Unit 1)",
+     "b": "читання, аудіювання, граматика (Conditionals), лексика розділу"
+    }
+   ]
+  },
+  {
+   "name": "Unit 2. Make Up Your Mind",
+   "lessons": [
+    {
+     "t": "Professional skills and abilities",
+     "b": "лексика: confidence, employer, volunteer; Reported Speech, Future-in-the-Past"
+    },
+    {
+     "t": "What employers want",
+     "b": "Reported Speech: statements, questions, commands; узгодження часів"
+    },
+    {
+     "t": "Choosing a future career",
+     "b": "лексика: diversity, graduate, appealing; обговорення професій"
+    },
+    {
+     "t": "Studying after school and abroad",
+     "b": "лексика: definite, suited, stressful, shift work; університети, гранти"
+    },
+    {
+     "t": "Writing: a formal letter (application letter)",
+     "b": "структура формального листа, formal greetings, cover letter"
+    },
+    {
+     "t": "My choice. Use your skills",
+     "b": "проєкт-презентація обраної професії; узагальнення Reported Speech"
+    },
+    {
+     "t": "Тематична контрольна робота № 2 (Unit 2)",
+     "b": "читання, аудіювання, непряма мова, формальний лист"
+    }
+   ]
+  },
+  {
+   "name": "Unit 3. Family Relationships",
+   "lessons": [
+    {
+     "t": "Psychologists about family relationships",
+     "b": "лексика: adolescent, blame, rebellious; Conditional III"
+    },
+    {
+     "t": "Generation gap",
+     "b": "Conditional III, mixed conditionals; I wish / If only"
+    },
+    {
+     "t": "A happy family",
+     "b": "лексика: approach, generation, annoy, bring up; фразові дієслова"
+    },
+    {
+     "t": "Family support",
+     "b": "лексика: community, overcome, avoid; читання історій, обговорення"
+    },
+    {
+     "t": "Writing: a letter to the editor",
+     "b": "структура листа до редакції, висловлення думки й аргументів"
+    },
+    {
+     "t": "My views on family. Use your skills",
+     "b": "монолог і дискусія про сімейні цінності; повторення розділу"
+    },
+    {
+     "t": "Тематична контрольна робота № 3 (Unit 3)",
+     "b": "читання, аудіювання, умовні речення III типу, лист до редакції"
+    }
+   ]
+  },
+  {
+   "name": "Unit 4. Eating Out",
+   "lessons": [
+    {
+     "t": "Eating out in Kyiv",
+     "b": "лексика: fixed price, abundant, distinctive, vegetarian; заклади харчування"
+    },
+    {
+     "t": "Catering services. Reported questions",
+     "b": "непрямі запитання; лексика: bistro, reservation, sophisticated"
+    },
+    {
+     "t": "Ordering food in a café",
+     "b": "діалоги в ресторані, customer, nutritious; читання меню, відгуків"
+    },
+    {
+     "t": "Writing: an assessment report",
+     "b": "assessment, proposal, survey report; структура звіту"
+    },
+    {
+     "t": "Revision: Units 1–4. Тематична контрольна робота № 4",
+     "b": "лексика й граматика розділів, звіт про заклад харчування"
+    },
+    {
+     "t": "Семестрова контрольна робота",
+     "b": "аудіювання, читання, письмо, говоріння за темами I семестру"
+    }
+   ]
+  }
+ ]
+}

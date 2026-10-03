@@ -1,0 +1,232 @@
+{
+ "id": "eng-w02-d1",
+ "subject": "eng",
+ "title": "Revision: Past Simple",
+ "goal": "Повторити правильні й неправильні дієслова в Past Simple та навчитися будувати питання і заперечення в минулому часі.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Past Simple розповідає про завершені дії в минулому: yesterday, last week, in 2020, two days ago. Сьогодні ми повторюємо три речі: форми дієслів, заперечення і питання."
+  },
+  {
+   "type": "rule",
+   "title": "Ствердження",
+   "text": "**Правильні дієслова:** + -ed (walk → walked); після -e лише -d (live → lived); приголосна + y → -ied (study → studied); коротке слово з однією голосною і приголосною — подвоєння (stop → stopped).\n**Неправильні дієслова** треба вчити: go – went, see – saw, have – had, buy – bought, write – wrote, come – came."
+  },
+  {
+   "type": "table",
+   "title": "Часті неправильні дієслова",
+   "head": [
+    "Початкова форма",
+    "Past Simple",
+    "Переклад"
+   ],
+   "rows": [
+    [
+     "go",
+     "went",
+     "йти, їхати"
+    ],
+    [
+     "see",
+     "saw",
+     "бачити"
+    ],
+    [
+     "have",
+     "had",
+     "мати"
+    ],
+    [
+     "buy",
+     "bought",
+     "купувати"
+    ],
+    [
+     "write",
+     "wrote",
+     "писати"
+    ],
+    [
+     "come",
+     "came",
+     "приходити"
+    ],
+    [
+     "eat",
+     "ate",
+     "їсти"
+    ],
+    [
+     "give",
+     "gave",
+     "давати"
+    ]
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Заперечення і питання",
+   "text": "Заперечення: **did not (didn't) + початкова форма**: I didn't go. She didn't see him.\nПитання: **Did + підмет + початкова форма?**: Did you go? Did she see him?\nКоротка відповідь: Yes, I did. / No, I didn't.\nУ реченні з did дієслово вже **без закінчення -ed і без другої форми**: Did you go (не went)."
+  },
+  {
+   "type": "example",
+   "title": "Три типи речень",
+   "text": "He watched a film yesterday.\nHe didn't watch a film yesterday.\nDid he watch a film yesterday? — Yes, he did.\n\nWe bought a cake.\nWe didn't buy a cake.\nDid we buy a cake? — No, we didn't."
+  },
+  {
+   "type": "vocab",
+   "title": "Time expressions",
+   "items": [
+    {
+     "en": "yesterday",
+     "uk": "вчора"
+    },
+    {
+     "en": "last week",
+     "uk": "минулого тижня"
+    },
+    {
+     "en": "two days ago",
+     "uk": "два дні тому"
+    },
+    {
+     "en": "in 2024",
+     "uk": "у 2024 році"
+    },
+    {
+     "en": "when I was ten",
+     "uk": "коли мені було десять"
+    },
+    {
+     "en": "then",
+     "uk": "тоді, потім"
+    }
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Правило-страж: після did дієслово завжди в початковій формі. Якщо хочеш написати Did you went — зупинися і прибери закінчення."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "choice",
+   "q": "Yesterday I ___ a new book.",
+   "options": [
+    "buy",
+    "buyed",
+    "bought"
+   ],
+   "answer": 2,
+   "explain": "buy — неправильне дієслово: bought."
+  },
+  {
+   "type": "choice",
+   "q": "Обери правильне заперечення: She ___ her homework.",
+   "options": [
+    "didn't did",
+    "didn't do",
+    "not did"
+   ],
+   "answer": 1,
+   "explain": "Після didn't — початкова форма: do."
+  },
+  {
+   "type": "fill",
+   "q": "Впиши Past Simple.",
+   "text": "We {studied} (study) hard. He {stopped} (stop) at the corner. They {came} (come) late. I {wrote} (write) a letter."
+  },
+  {
+   "type": "match",
+   "q": "З'єднай початкову форму з Past Simple.",
+   "pairs": [
+    [
+     "see",
+     "saw"
+    ],
+    [
+     "eat",
+     "ate"
+    ],
+    [
+     "give",
+     "gave"
+    ],
+    [
+     "have",
+     "had"
+    ]
+   ]
+  },
+  {
+   "type": "order",
+   "q": "Склади питання.",
+   "items": [
+    "Did",
+    "you",
+    "see",
+    "the",
+    "film",
+    "yesterday"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "q": "Чи правильні речення?",
+   "items": [
+    {
+     "text": "Did she went to school?",
+     "answer": false
+    },
+    {
+     "text": "I didn't see him.",
+     "answer": true
+    },
+    {
+     "text": "They visited us last week.",
+     "answer": true
+    },
+    {
+     "text": "He didn't bought a bike.",
+     "answer": false
+    }
+   ]
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос і дай свою відповідь на питання.",
+   "text": "Did you go to school yesterday? What did you eat for breakfast?",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "choice",
+   "q": "Яке питання правильне?",
+   "options": [
+    "Did he came late?",
+    "Did he come late?",
+    "Does he came late?"
+   ],
+   "answer": 1,
+   "explain": "Did + початкова форма: come."
+  },
+  {
+   "type": "fill",
+   "q": "Утвори заперечення.",
+   "text": "I {didn't|did not} see the match. She {didn't|did not} have a dog. We {didn't|did not} go out."
+  },
+  {
+   "type": "text",
+   "q": "Напиши про свій вчорашній день: 3 ствердних речення, 1 заперечення і 1 питання до друга (усе в Past Simple).",
+   "sample": "Yesterday I went to school. I did my homework. I played football. I didn't watch cartoons. Did you play football yesterday?",
+   "min": 150
+  }
+ ],
+ "reflection": [
+  "Чи ти пам'ятаєш, що після did дієслово стоїть у початковій формі?",
+  "Які неправильні дієслова варто вивчити ще?"
+ ]
+}

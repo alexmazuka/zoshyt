@@ -1,0 +1,155 @@
+{
+ "subject": "eng",
+ "sections": [
+  {
+   "name": "Starter",
+   "lessons": [
+    {
+     "t": "Back to school. Present Simple vs Present Continuous",
+     "b": "повторення: теперішні часи, розповідь про себе, шкільне життя"
+    },
+    {
+     "t": "Діагностувальна робота",
+     "b": "тест: лексика й граматика курсу 9 класу, читання"
+    }
+   ]
+  },
+  {
+   "name": "Unit 1. Personality and relationships",
+   "lessons": [
+    {
+     "t": "Describing personality",
+     "b": "прикметники для опису характеру, протилежності, префікси un-, in-, dis-"
+    },
+    {
+     "t": "Grammar: Present Perfect vs Past Simple",
+     "b": "for, since, already, yet; досвід і завершені події"
+    },
+    {
+     "t": "Reading: true friendship",
+     "b": "читання статті, пошук деталей, лексика про дружбу"
+    },
+    {
+     "t": "Family relationships. Used to / would",
+     "b": "сімейні стосунки, минулі звички, покоління"
+    },
+    {
+     "t": "Speaking: giving opinions, agreeing and disagreeing",
+     "b": "I think, In my view, I see your point, but…"
+    },
+    {
+     "t": "Writing: an informal email",
+     "b": "структура листа другові, неформальні фрази, лінкери"
+    },
+    {
+     "t": "Тематична контрольна робота",
+     "b": "Unit 1: лексика, граматика, читання, лист"
+    }
+   ]
+  },
+  {
+   "name": "Unit 2. Leisure and the arts",
+   "lessons": [
+    {
+     "t": "Free time activities. Gerund and infinitive",
+     "b": "хобі, like/enjoy + -ing, want/decide + to"
+    },
+    {
+     "t": "Music, cinema and theatre",
+     "b": "жанри, лексика мистецтва, опис улюбленого фільму"
+    },
+    {
+     "t": "Grammar: Past Continuous and Past Perfect",
+     "b": "розповідь про події в минулому, when/while/before"
+    },
+    {
+     "t": "Reading: an interview with an artist",
+     "b": "читання інтерв'ю, питання true/false, мистецтво в Україні"
+    },
+    {
+     "t": "Speaking: making suggestions and plans",
+     "b": "Why don't we…?, How about…?, Let's…"
+    },
+    {
+     "t": "Writing: a film or book review",
+     "b": "структура рецензії, оцінні прикметники"
+    },
+    {
+     "t": "Тематична контрольна робота",
+     "b": "Unit 2: лексика, граматика, аудіювання, рецензія"
+    }
+   ]
+  },
+  {
+   "name": "Unit 3. Travelling",
+   "lessons": [
+    {
+     "t": "Travel and transport",
+     "b": "види подорожей, транспорт, аеропорт, вокзал"
+    },
+    {
+     "t": "Grammar: future forms",
+     "b": "will, be going to, Present Continuous для планів"
+    },
+    {
+     "t": "Reading: places to visit in Ukraine",
+     "b": "міста і пам'ятки України, туризм"
+    },
+    {
+     "t": "Listening: at the airport and hotel",
+     "b": "діалоги, бронювання, інструкції"
+    },
+    {
+     "t": "Speaking: describing a place",
+     "b": "опис міста, порівняння, ступені порівняння прикметників"
+    },
+    {
+     "t": "Writing: an article about your town",
+     "b": "заголовок, абзаци, звернення до читача"
+    },
+    {
+     "t": "Тематична контрольна робота",
+     "b": "Unit 3: лексика, майбутні часи, читання, стаття"
+    }
+   ]
+  },
+  {
+   "name": "Unit 4. Science, technology and environment",
+   "lessons": [
+    {
+     "t": "Gadgets and technology",
+     "b": "пристрої, інтернет, цифрове життя, переваги і ризики"
+    },
+    {
+     "t": "Grammar: modal verbs",
+     "b": "must, have to, should, can, may, might"
+    },
+    {
+     "t": "Environmental problems",
+     "b": "забруднення, клімат, переробка, лексика екології"
+    },
+    {
+     "t": "Grammar: the Passive Voice",
+     "b": "Present і Past Simple Passive, вживання в наукових текстах"
+    },
+    {
+     "t": "Project: How can young people protect the environment?",
+     "b": "презентація проєкту, мовлення, аргументація"
+    }
+   ]
+  },
+  {
+   "name": "Revision",
+   "lessons": [
+    {
+     "t": "Семестрова контрольна робота",
+     "b": "лексика і граматика I семестру, читання, аудіювання, письмо"
+    },
+    {
+     "t": "Revision and reflection",
+     "b": "аналіз роботи, повторення, підсумки семестру"
+    }
+   ]
+  }
+ ]
+}

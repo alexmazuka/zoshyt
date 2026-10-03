@@ -1,0 +1,238 @@
+{
+ "id": "eng-w01-d4",
+ "subject": "eng",
+ "title": "Вступ. Повторення: English as a global language",
+ "goal": "Дізнатися, чому англійська стала мовою міжнародного спілкування, засвоїти ключову лексику теми і повторити часи Present та Past.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Ласкаво просимо до курсу англійської мови для 11 класу. У цьому семестрі ми почнемо з вступного блоку **Introduction. Revision**: повторимо основні часи, поговоримо про себе, цілі навчання та дозвілля. Далі підемо до першого розділу — **Unit 1. Being a Student** (навчання, підготовка до іспитів, умовні речення). Кожен урок має словник, граматику, вправи з автоперевіркою і письмове завдання. Мета — підготуватися до випускного рівня: впевнено читати, слухати, говорити й писати."
+  },
+  {
+   "type": "p",
+   "text": "Почнемо з великого питання: **навіщо взагалі вчити англійську?** Нею розмовляє близько 380 мільйонів людей як рідною, але ще понад мільярд використовує її як другу чи іноземну. Тому англійська — це мова, якою між собою говорять, скажімо, українець і японець, німкеня і бразилець."
+  },
+  {
+   "type": "vocab",
+   "title": "Key vocabulary",
+   "items": [
+    {
+     "en": "global language",
+     "uk": "мова світового значення",
+     "ex": "English is a global language."
+    },
+    {
+     "en": "mother tongue",
+     "uk": "рідна мова",
+     "ex": "Ukrainian is my mother tongue."
+    },
+    {
+     "en": "native speaker",
+     "uk": "носій мови",
+     "ex": "She is a native speaker of English."
+    },
+    {
+     "en": "official language",
+     "uk": "офіційна мова",
+     "ex": "English is an official language in many countries."
+    },
+    {
+     "en": "to spread",
+     "uk": "поширюватися",
+     "ex": "The language spread across the world."
+    },
+    {
+     "en": "widely spoken",
+     "uk": "широко вживаний",
+     "ex": "English is widely spoken in business."
+    },
+    {
+     "en": "fluent",
+     "uk": "вільно володіючи мовою",
+     "ex": "He is fluent in three languages."
+    },
+    {
+     "en": "to communicate",
+     "uk": "спілкуватися",
+     "ex": "We communicate online every day."
+    },
+    {
+     "en": "to borrow",
+     "uk": "запозичувати",
+     "ex": "Ukrainian has borrowed many English words."
+    },
+    {
+     "en": "access",
+     "uk": "доступ",
+     "ex": "English gives access to information."
+    }
+   ]
+  },
+  {
+   "type": "reading",
+   "title": "Why English?",
+   "text": "English began as the language of a few tribes in Britain. It spread across the world for two main reasons. First, the British Empire took it to many countries in Asia, Africa and America. Later, the United States became a leader in science, business and entertainment, so English became even more important.\n\nToday most scientific articles are published in English, pilots and air traffic controllers use it to talk to each other, and a large part of the internet is written in it. People often choose English as a common language when nobody in the group speaks the other person's mother tongue.\n\nHowever, being a global language does not mean that other languages are less valuable. Millions of people are bilingual: they use their mother tongue at home and English at work or at university."
+  },
+  {
+   "type": "rule",
+   "title": "Present: Simple і Continuous",
+   "text": "**Present Simple** — звички, факти, розклад: *I study English every day. The sun rises in the east.*\nУтворення: дієслово (+ s для he/she/it); заперечення — do/does not; питання — Do/Does ...?\n**Present Continuous** — дія зараз або тимчасова ситуація: *I am reading an article now.*\nУтворення: am/is/are + дієслово з -ing."
+  },
+  {
+   "type": "rule",
+   "title": "Past: Simple і Continuous",
+   "text": "**Past Simple** — завершена дія в минулому: *English spread quickly. We visited London last year.* Правильні дієслова: -ed; неправильні вчимо (go — went, speak — spoke); заперечення і питання — did.\n**Past Continuous** — тривала дія в певний момент минулого або тло для іншої дії: *I was reading when the phone rang.*\nУтворення: was/were + дієслово з -ing."
+  },
+  {
+   "type": "table",
+   "title": "Маркери часів",
+   "head": [
+    "Час",
+    "Типові слова-маркери"
+   ],
+   "rows": [
+    [
+     "Present Simple",
+     "always, usually, every day, often, never"
+    ],
+    [
+     "Present Continuous",
+     "now, at the moment, today, these days"
+    ],
+    [
+     "Past Simple",
+     "yesterday, last year, in 2020, ago"
+    ],
+    [
+     "Past Continuous",
+     "at 5 o'clock yesterday, while, when"
+    ]
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Дієслова стану (know, like, want, understand) зазвичай не вживаються в Continuous: кажемо *I know the answer*, а не *I am knowing*."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай англійські слова з українськими відповідниками.",
+   "pairs": [
+    [
+     "mother tongue",
+     "рідна мова"
+    ],
+    [
+     "native speaker",
+     "носій мови"
+    ],
+    [
+     "to spread",
+     "поширюватися"
+    ],
+    [
+     "fluent",
+     "той, хто вільно володіє мовою"
+    ],
+    [
+     "to borrow",
+     "запозичувати"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Що з переліченого **не** є причиною поширення англійської за текстом уроку?",
+   "options": [
+    "Британська імперія",
+    "Роль Сполучених Штатів у науці, бізнесі та розвагах",
+    "Те, що це найлегша мова у світі",
+    "Використання в авіації та науці"
+   ],
+   "answer": 2,
+   "explain": "У тексті немає твердження, що англійська найлегша; названо історичні та економічні причини."
+  },
+  {
+   "type": "truefalse",
+   "q": "Познач, чи відповідає твердження тексту «Why English?».",
+   "items": [
+    {
+     "text": "Most scientific articles are published in English.",
+     "answer": true
+    },
+    {
+     "text": "Being a global language means that other languages are less valuable.",
+     "answer": false
+    },
+    {
+     "text": "Bilingual people use two languages.",
+     "answer": true
+    },
+    {
+     "text": "English began as the language of the whole world.",
+     "answer": false
+    }
+   ]
+  },
+  {
+   "type": "fill",
+   "q": "Встав дієслово в Present Simple або Present Continuous.",
+   "text": "My brother usually {plays} football on Sunday, but today he {is studying} for a test. (play, study)"
+  },
+  {
+   "type": "fill",
+   "q": "Встав дієслово в Past Simple.",
+   "text": "Last summer we {went} to Lviv, {visited} a museum and {spoke} English with tourists. (go, visit, speak)"
+  },
+  {
+   "type": "choice",
+   "q": "Обери правильний варіант: «I ___ TV when the lights went out.»",
+   "options": [
+    "watched",
+    "was watching",
+    "am watching",
+    "watch"
+   ],
+   "answer": 1,
+   "explain": "Тривала дія в минулому, яку перервала інша, — Past Continuous: was watching."
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос перший абзац тексту «Why English?» і зверни увагу на вимову слів language, empire, scientific.",
+   "text": "English began as the language of a few tribes in Britain. It spread across the world for two main reasons.",
+   "lang": "en-US"
+  }
+ ],
+ "homework": [
+  {
+   "type": "fill",
+   "q": "Встав слова з рамки: official, fluent, access, mother tongue.",
+   "text": "Ukrainian is my {mother tongue}. English gives me {access} to a lot of information. Canada has two {official} languages. My cousin is {fluent} in Spanish."
+  },
+  {
+   "type": "choice",
+   "q": "Яке речення правильне?",
+   "options": [
+    "She is knowing the answer.",
+    "She knows the answer.",
+    "She know the answer.",
+    "She is know the answer."
+   ],
+   "answer": 1,
+   "explain": "Know — дієслово стану, вживається в Present Simple; для he/she/it додаємо -s."
+  },
+  {
+   "type": "text",
+   "q": "Write 5–6 sentences in English: Why do you want to learn English? Use at least four words from the vocabulary and both Present and Past tenses.",
+   "sample": "English is a global language, so I want to speak it fluently. Last year I watched many videos in English and understood more than before. Now I am preparing for exams. Ukrainian is my mother tongue, but English will give me access to universities abroad.",
+   "min": 200
+  }
+ ],
+ "reflection": [
+  "Які нові слова з теми я запам'ятав(-ла)?",
+  "Який із чотирьох часів мені ще викликає труднощі?",
+  "Для чого особисто мені потрібна англійська?"
+ ]
+}

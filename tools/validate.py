@@ -17,8 +17,9 @@ PRACTICAL = {"pe", "art", "design", "music"}
 MATH = {"math", "alg", "geom"}
 LICENSE_OK = re.compile(r"(public domain|суспільне надбання|cc0|cc[ -]by(?:[ -]sa)?[ -]?\d)", re.I)
 CYR_ABBR = re.compile(r"(?<![А-ЯҐЄІЇа-яґєії'’A-Za-z])([А-ЯҐЄІЇ]{2,7})(?![А-ЯҐЄІЇа-яґєії'’A-Za-z])")
-LAT_ABBR = re.compile(r"(?<![A-Za-z])([A-Z]{2,7})(?![A-Za-z])")
+LAT_ABBR = re.compile(r"(?<![A-Za-z0-9])([A-Z]{2,7}[0-9]{0,2})(?![A-Za-z0-9])")
 ROMAN = re.compile(r"^[IVXLCDM]+$")
+CHEM_FORMULA = re.compile(r"^(?=.*\d)(?:[HBCNOFPSKVYIWU]\d{0,2})+$")  # CO2, NH3, HNO3 — формули, а не скорочення
 CYR_ROMAN = re.compile(r"^[ХІVLСDМ]+$")
 
 OPS = {'·': '*', '×': '*', '*': '*', ':': '/', '÷': '/', '+': '+', '−': '-', '–': '-', '-': '-'}
@@ -250,7 +251,7 @@ def check_abbr(d, errs, warns):
     if d.get("subject") != "eng":
         for m in LAT_ABBR.finditer(blob):
             tok = m.group(1)
-            if ROMAN.match(tok) or tok in terms or tok in caps or tok in seen_l:
+            if ROMAN.match(tok) or CHEM_FORMULA.match(tok) or tok in terms or tok in caps or tok in seen_l:
                 continue
             seen_l.add(tok)
             warns.append(f"латинське скорочення «{tok}» без розшифровки в terms")

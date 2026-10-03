@@ -59,7 +59,30 @@
   }
 
   function notAllowedView(u) {
-    shell(`<div class="card auth"><h1>Доступ ще не активовано</h1><p>Ви увійшли як <b>${Z.esc(u.email)}</b>, але цей акаунт ще не додано до пілоту.</p><p class="muted">Напишіть нам: <a href="mailto:info@nexteducationai.org">info@nexteducationai.org</a>.</p><p><button class="btn ghost" id="out">Вийти</button></p></div>`);
+    /* адмін бачить відмову бази лише тоді, коли в Firebase ще старі правила: показуємо, що зробити */
+    if (Z.DB.isAdmin()) {
+      shell(`<div class="card auth"><p class="eyebrow">Адміністратор</p><h1>База ще закрита для платформи</h1>
+        <p>Ви увійшли як <b>${Z.esc(u.email)}</b>. Акаунт адміністратора працює, але у Firebase ще діють старі правила доступу, тож застосунок не може читати дані.</p>
+        <ol class="howto"><li>Натисніть «Скопіювати правила».</li><li>Відкрийте правила у Firebase, клацніть у редакторі, виділіть усе (⌘A) і вставте (⌘V).</li><li>Натисніть <b>Publish</b>, зачекайте хвилину і натисніть «Перевірити ще раз».</li></ol>
+        <p class="err" id="err" role="alert"></p>
+        <p class="row-btns"><button class="btn" id="copyRules" type="button">Скопіювати правила</button><a class="btn sec" href="https://console.firebase.google.com/project/zoshyt-4klas/firestore/databases/-default-/security/rules" target="_blank" rel="noopener">Відкрити правила у Firebase ↗</a></p>
+        <p class="row-btns"><button class="btn ghost" id="retry" type="button">Перевірити ще раз</button><button class="btn ghost" id="out" type="button">Вийти</button></p></div>`);
+      let rules = null;
+      fetch("../sync/firestore.rules", { cache: "no-cache" }).then(r => r.ok ? r.text() : null).then(t => { rules = t; }).catch(() => {});
+      const showText = () => {
+        const err = document.getElementById("err");
+        if (!rules) { err.textContent = "Файл правил не завантажився. Візьміть його з репозиторію alexmazuka/zoshyt: sync/firestore.rules."; return; }
+        err.innerHTML = `Скопіюйте текст нижче вручну (⌘C):<textarea class="mono-area" rows="10" readonly>${Z.esc(rules)}</textarea>`;
+        const ta = err.querySelector("textarea"); ta.focus(); ta.select();
+      };
+      document.getElementById("copyRules").onclick = () => {
+        if (!rules || !navigator.clipboard) return showText();
+        navigator.clipboard.writeText(rules).then(() => Z.toast("Правила скопійовано — вставте їх у Firebase", "ok"), showText);
+      };
+    } else {
+      shell(`<div class="card auth"><h1>Доступ ще не активовано</h1><p>Ви увійшли як <b>${Z.esc(u.email)}</b>, але цей акаунт ще не додано до пілоту.</p><p class="muted">Напишіть нам: <a href="mailto:info@nexteducationai.org">info@nexteducationai.org</a>.</p><p class="row-btns"><button class="btn ghost" id="retry" type="button">Перевірити ще раз</button><button class="btn ghost" id="out" type="button">Вийти</button></p></div>`);
+    }
+    document.getElementById("retry").onclick = render;
     document.getElementById("out").onclick = async () => { await Z.DB.signOut(); render(); };
   }
 

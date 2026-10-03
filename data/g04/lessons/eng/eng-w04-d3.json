@@ -1,0 +1,49 @@
+{
+  "id": "eng-w04-d3",
+  "subject": "eng",
+  "title": "Sports clubs: I go to a sports club",
+  "goal": "Ти вивчиш назви видів спорту та навчишся розповідати, до якого спортивного клубу ти ходиш і коли.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Багато дітей ходять до спортивних клубів. Сьогодні ти вивчиш назви видів спорту і навчишся розповідати, яким спортом займаєшся і коли."},
+    {"type": "vocab", "title": "Sports", "items": [
+      {"en": "football", "uk": "футбол", "ex": "I go to a football club."},
+      {"en": "swimming", "uk": "плавання", "ex": "I go to a swimming club."},
+      {"en": "karate", "uk": "карате", "ex": "I do karate on Saturdays."},
+      {"en": "gymnastics", "uk": "гімнастика", "ex": "She goes to a gymnastics club."},
+      {"en": "tennis", "uk": "теніс", "ex": "I play tennis with my dad."},
+      {"en": "sports club", "uk": "спортивний клуб", "ex": "I go to a sports club on Mondays."},
+      {"en": "basketball", "uk": "баскетбол", "ex": "He plays basketball every week."},
+      {"en": "volleyball", "uk": "волейбол", "ex": "We play volleyball at school."},
+      {"en": "judo", "uk": "дзюдо", "ex": "My friend does judo."}
+    ]},
+    {"type": "rule", "title": "Where do you go? When?", "text": "Питаємо: **Where do you go?** — Куди ти ходиш? **When do you go?** — Коли ти ходиш? Відповідаємо з прийменником **to**: I **go to** a football club. Дні тижня у множині з **on**: I play football **on Mondays** (по понеділках)."},
+    {"type": "table", "title": "on + дні тижня", "head": ["Фраза", "Приклад"], "rows": [["on Mondays", "I play football on Mondays."], ["on Wednesdays", "I go swimming on Wednesdays."], ["on Saturdays", "I do karate on Saturdays."]]},
+    {"type": "dialogue", "title": "Sports clubs", "lang": "en", "lines": [
+      {"who": "Olia", "text": "Where do you go on Mondays, Andriy?"},
+      {"who": "Andriy", "text": "I go to a football club on Mondays. I play football with my friends."},
+      {"who": "Olia", "text": "Do you do any other sport?"},
+      {"who": "Andriy", "text": "Yes, I go to a swimming club on Wednesdays. What about you?"},
+      {"who": "Olia", "text": "I go to a gymnastics club on Tuesdays and Thursdays. I also do karate on Saturdays."},
+      {"who": "Andriy", "text": "Wow, you are very sporty! Do you like tennis too?"},
+      {"who": "Olia", "text": "Yes, but I don't go to a tennis club. I only play tennis with my dad."}
+    ]},
+    {"type": "tip", "text": "Дні тижня в множині з on: on Mondays = по понеділках (щотижня), а не тільки в один конкретний понеділок."}
+  ],
+  "exercises": [
+    {"type": "match", "q": "З'єднай вид спорту з перекладом.", "pairs": [["football", "футбол"], ["swimming", "плавання"], ["karate", "карате"], ["gymnastics", "гімнастика"], ["tennis", "теніс"]]},
+    {"type": "fill", "q": "Встав правильний прийменник (to/on).", "text": "I go {to} a football club. I play football {on} Mondays."},
+    {"type": "choice", "q": "Як запитати «Куди ти ходиш?»", "options": ["Where do you go?", "What do you do?", "When do you go?"], "answer": 0},
+    {"type": "order", "q": "Склади речення.", "items": ["I", "go", "to", "a", "football", "club", "on", "Mondays", "."]},
+    {"type": "truefalse", "q": "Прочитай діалог ще раз. Так чи ні?", "items": [{"text": "Andriy: \"I go to a football club on Mondays.\"", "answer": true}, {"text": "Olia: \"I do karate on Saturdays.\"", "answer": true}, {"text": "Olia goes to a tennis club.", "answer": false}, {"text": "Andriy goes to a swimming club on Tuesdays.", "answer": false}]},
+    {"type": "sort", "q": "Розклади види спорту за групами.", "groups": {"Командний спорт": ["football", "basketball", "volleyball"], "Індивідуальний спорт": ["swimming", "karate", "gymnastics"]}},
+    {"type": "speak", "q": "Прочитай речення вголос.", "text": "I go to a football club on Mondays. I go to a swimming club on Wednesdays. I like sport!", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни речення.", "text": "I go {to} a tennis club. I play tennis {on} Saturdays."},
+    {"type": "choice", "q": "Як запитати «Коли ти ходиш?»", "options": ["Where do you go?", "When do you go?", "What do you go?"], "answer": 1},
+    {"type": "text", "q": "Напиши 4-5 речень: до якого спортивного клубу ти ходиш (або хотів би ходити) і коли.", "sample": "I go to a football club. I play football on Mondays and Wednesdays. I also like swimming. I go to a swimming club on Saturdays. My friend does karate.", "min": 60},
+    {"type": "speak", "q": "Прочитай свої речення вголос дорослому.", "text": "I go to a sports club. I play football on Mondays. I like sport very much.", "lang": "en"}
+  ],
+  "reflection": ["Яким спортом ти займаєшся або хотів би займатися?"]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "eng-w05-d3",
+  "subject": "eng",
+  "title": "Present Continuous: I am reading now. am / is / are + -ing",
+  "goal": "Ти вивчиш новий час — Present Continuous, щоб розповідати, що відбувається зараз: I am reading now.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Досі ти розповідав, що робиш ЗАЗВИЧАЙ (Present Simple: I play football on Mondays). Сьогодні навчишся розповідати, що відбувається ЗАРАЗ, цієї миті — це новий час, Present Continuous."},
+    {"type": "vocab", "title": "Now!", "items": [
+      {"en": "now", "uk": "зараз", "ex": "I am reading now."},
+      {"en": "at the moment", "uk": "у цю мить", "ex": "She is cooking at the moment."},
+      {"en": "right now", "uk": "просто зараз", "ex": "They are playing football right now."},
+      {"en": "Look!", "uk": "Дивись!", "ex": "Look! It's raining!"},
+      {"en": "writing a letter", "uk": "написання листа", "ex": "He is writing a letter."},
+      {"en": "making a cake", "uk": "приготування торта", "ex": "Mum is making a cake."},
+      {"en": "having a shower", "uk": "прийняття душу", "ex": "He is having a shower."},
+      {"en": "watching a film", "uk": "перегляд фільму", "ex": "We are watching a film."},
+      {"en": "cooking dinner", "uk": "приготування вечері", "ex": "She is cooking dinner."}
+    ]},
+    {"type": "rule", "title": "am / is / are + -ing", "text": "Present Continuous: **am/is/are + дієслово-ing**. **I am reading** now. (Я зараз читаю.) **She is cooking** dinner at the moment. **They are playing** football right now. Заперечення: am/is/are + **not**: She **isn't cooking** now. Питання: **Is she cooking?** — Yes, she is. / No, she isn't."},
+    {"type": "table", "title": "Форма -ing", "head": ["Дієслово", "Форма -ing", "Правило"], "rows": [["read", "reading", "просто +ing"], ["write", "writing", "прибираємо -e"], ["run", "running", "подвоюємо приголосну"], ["make", "making", "прибираємо -e"], ["sit", "sitting", "подвоюємо приголосну"]]},
+    {"type": "dialogue", "title": "What are you doing now?", "lang": "en", "lines": [
+      {"who": "Kate", "text": "Hi, Sam! What are you doing now?"},
+      {"who": "Sam", "text": "Hi, Kate! I am doing my homework at the moment."},
+      {"who": "Kate", "text": "Oh! Is Andriy doing his homework too?"},
+      {"who": "Sam", "text": "No, he isn't. He is playing football in the garden right now."},
+      {"who": "Kate", "text": "And what is your mum doing?"},
+      {"who": "Sam", "text": "She is cooking dinner. Look, it smells great!"}
+    ]},
+    {"type": "tip", "text": "Не плутай Present Simple (I play football every day — зазвичай) і Present Continuous (I am playing football now — саме зараз). Слова-підказки для Present Continuous: now, at the moment, right now, Look!"}
+  ],
+  "exercises": [
+    {"type": "fill", "q": "Встав am, is або are + дієслово-ing.", "text": "I {am reading} a book now. She {is cooking} dinner at the moment. They {are playing} football right now.", "hint": "I → am; he/she/it → is; you/we/they → are."},
+    {"type": "choice", "q": "Яке речення в Present Continuous?", "options": ["I play football on Mondays.", "I am playing football now.", "I like football."], "answer": 1, "explain": "Present Continuous = am/is/are + -ing, а слово now вказує на дію зараз."},
+    {"type": "match", "q": "З'єднай дієслово з правильною формою -ing.", "pairs": [["write", "writing"], ["run", "running"], ["make", "making"], ["read", "reading"], ["sit", "sitting"]]},
+    {"type": "truefalse", "q": "Прочитай діалог ще раз. Так чи ні?", "items": [{"text": "Sam is doing his homework at the moment.", "answer": true}, {"text": "Andriy is doing his homework too.", "answer": false}, {"text": "Andriy is playing football in the garden.", "answer": true}, {"text": "Sam's mum is cooking dinner.", "answer": true}]},
+    {"type": "order", "q": "Склади речення.", "items": ["She", "is", "cooking", "dinner", "now", "."]},
+    {"type": "sort", "q": "Розклади дієслова за правилом утворення -ing.", "groups": {"Просто +ing": ["read", "cook", "play"], "Прибираємо -e": ["write", "make"]}},
+    {"type": "speak", "q": "Прочитай речення вголос.", "text": "I am reading now. She is cooking dinner at the moment. They are playing football.", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни речення.", "text": "He {is writing} a letter now. We {are watching} a film at the moment."},
+    {"type": "choice", "q": "Яка форма -ing у дієслова sit?", "options": ["siting", "sitting", "sitinng"], "answer": 1, "explain": "sit — короткий голосний + приголосна, тому подвоюємо: sitting."},
+    {"type": "text", "q": "Напиши 4-5 речень про те, що зараз роблять члени твоєї родини (Present Continuous: am/is/are + -ing).", "sample": "I am doing my homework now. My mum is cooking dinner at the moment. My dad is reading a newspaper. My sister is watching a film. My dog is sleeping.", "min": 60},
+    {"type": "speak", "q": "Прочитай свої речення вголос дорослому.", "text": "I am doing my homework now. My mum is cooking dinner. We are having a good day.", "lang": "en"}
+  ],
+  "reflection": ["Яка різниця між I play football (зазвичай) і I am playing football (зараз)?"]
+}

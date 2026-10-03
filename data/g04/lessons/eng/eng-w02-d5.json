@@ -1,0 +1,48 @@
+{
+  "id": "eng-w02-d5",
+  "subject": "eng",
+  "title": "Our favourite games: we / our, they / their",
+  "goal": "Ти вивчиш назви ігор і навчишся використовувати займенники we / our, they / their, розповідаючи про улюблені ігри.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Сьогодні ти дізнаєшся назви ігор і навчишся казати не тільки «мій» чи «твій», а й «наш» (our) та «їхній» (their) — коли говориш про групу людей."},
+    {"type": "vocab", "title": "Games", "items": [
+      {"en": "board game", "uk": "настільна гра", "ex": "We play a board game every Sunday."},
+      {"en": "video game", "uk": "відеогра", "ex": "They like video games."},
+      {"en": "hide-and-seek", "uk": "хованки", "ex": "We play hide-and-seek in the garden."},
+      {"en": "chess", "uk": "шахи", "ex": "My favourite game is chess."},
+      {"en": "cards", "uk": "карти", "ex": "Let's play cards!"},
+      {"en": "puzzle", "uk": "пазл", "ex": "I like doing a puzzle."},
+      {"en": "dice", "uk": "кубик (гральний)", "ex": "We need a dice for this game."},
+      {"en": "team", "uk": "команда", "ex": "Our team is the best!"},
+      {"en": "player", "uk": "гравець", "ex": "He is a good player."}
+    ]},
+    {"type": "rule", "title": "our, their", "text": "Присвійні займенники показують, кому щось належить: **my** (мій), **your** (твій), **his** (його), **her** (її), **our** (наш), **their** (їхній). We play chess. **Our** favourite game is chess. They like hide-and-seek. **Their** favourite game is hide-and-seek."},
+    {"type": "table", "title": "Займенник і присвійна форма", "head": ["Займенник", "Присвійний", "Приклад"], "rows": [["I", "my", "my ball"], ["you", "your", "your dice"], ["he", "his", "his team"], ["she", "her", "her puzzle"], ["we", "our", "our board game"], ["they", "their", "their cards"]]},
+    {"type": "dialogue", "title": "Favourite games", "lang": "en", "lines": [
+      {"who": "Kate", "text": "What's your favourite game, Olia?"},
+      {"who": "Olia", "text": "My favourite game is chess. What about you and Sam?"},
+      {"who": "Kate", "text": "Our favourite game is hide-and-seek! We play it every day."},
+      {"who": "Olia", "text": "What about Andriy and Max? What's their favourite game?"},
+      {"who": "Kate", "text": "Their favourite game is video games. They play together every evening."},
+      {"who": "Olia", "text": "I like board games too. Let's play cards!"}
+    ]},
+    {"type": "tip", "text": "Не плутай **our** (наш) і **their** (їхній): our — коли говоримо про себе (ми), their — коли говоримо про інших (вони)."}
+  ],
+  "exercises": [
+    {"type": "match", "q": "З'єднай гру з перекладом.", "pairs": [["board game", "настільна гра"], ["video game", "відеогра"], ["hide-and-seek", "хованки"], ["chess", "шахи"], ["cards", "карти"]]},
+    {"type": "fill", "q": "Встав our або their.", "text": "We like chess. {Our} favourite game is chess. They like video games. {Their} favourite game is video games."},
+    {"type": "choice", "q": "Як сказати «їхня улюблена гра»?", "options": ["our favourite game", "their favourite game", "his favourite game"], "answer": 1},
+    {"type": "sort", "q": "Розклади займенники за групами.", "groups": {"Ми": ["we", "our"], "Вони": ["they", "their"]}},
+    {"type": "order", "q": "Склади речення.", "items": ["Our", "favourite", "game", "is", "chess", "."]},
+    {"type": "truefalse", "q": "Прочитай діалог ще раз. Так чи ні?", "items": [{"text": "Olia: \"My favourite game is chess.\"", "answer": true}, {"text": "Kate: \"Our favourite game is hide-and-seek!\"", "answer": true}, {"text": "Kate: \"Their favourite game is board games.\"", "answer": false}, {"text": "Olia: \"Let's play cards!\"", "answer": true}]},
+    {"type": "speak", "q": "Прочитай речення вголос.", "text": "Our favourite game is chess. Their favourite game is hide-and-seek. We play it every day.", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни речення.", "text": "Sam and Kate like hide-and-seek. {Their} favourite game is hide-and-seek. We like puzzles. {Our} favourite game is puzzles."},
+    {"type": "choice", "q": "Обери правильний варіант: «Наша команда грає в шахи».", "options": ["Our team plays chess.", "Their team plays chess.", "We team plays chess."], "answer": 0},
+    {"type": "text", "q": "Напиши 4-5 речень про улюблені ігри твоєї родини або друзів, використай our/their.", "sample": "Our favourite game is chess. My brother and I play it every evening. My friends like video games. Their favourite game is a football game. We also like board games.", "min": 60},
+    {"type": "speak", "q": "Прочитай свої речення вголос дорослому.", "text": "Our favourite game is chess. My friends like video games. Their favourite game is fun.", "lang": "en"}
+  ],
+  "reflection": ["У яку гру любить грати твоя родина?"]
+}

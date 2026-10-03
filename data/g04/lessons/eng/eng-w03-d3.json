@@ -1,0 +1,48 @@
+{
+  "id": "eng-w03-d3",
+  "subject": "eng",
+  "title": "Adverbs of frequency: always, usually, often, sometimes, never",
+  "goal": "Ти навчишся вживати слова always, usually, often, sometimes, never, щоб розповісти, як часто ти щось робиш.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Минулого уроку ти розповідав про свій розпорядок дня. Сьогодні додаси нові слова, які показують, ЯК ЧАСТО ти щось робиш: always, usually, often, sometimes, never."},
+    {"type": "vocab", "title": "How often?", "items": [
+      {"en": "always", "uk": "завжди", "ex": "I always get up at seven o'clock."},
+      {"en": "usually", "uk": "зазвичай", "ex": "I usually have breakfast at eight."},
+      {"en": "often", "uk": "часто", "ex": "I often play football after school."},
+      {"en": "sometimes", "uk": "іноді", "ex": "I sometimes watch TV in the evening."},
+      {"en": "never", "uk": "ніколи", "ex": "I never go to bed after ten o'clock."},
+      {"en": "every day", "uk": "щодня", "ex": "I brush my teeth every day."},
+      {"en": "every morning", "uk": "щоранку", "ex": "I wash my face every morning."},
+      {"en": "at the weekend", "uk": "у вихідні", "ex": "I play with my friends at the weekend."},
+      {"en": "at night", "uk": "вночі", "ex": "I sleep at night."}
+    ]},
+    {"type": "rule", "title": "Порядок слів", "text": "Прислівники частотності стоять **перед основним дієсловом**: I **always** get up at seven. I **usually** have breakfast at eight. Шкала частоти: always (100%) → usually → often → sometimes → never (0%)."},
+    {"type": "table", "title": "Шкала частоти", "head": ["Слово", "Частота", "Приклад"], "rows": [["always", "завжди (100%)", "I always get up at 7."], ["usually", "зазвичай", "I usually have breakfast."], ["often", "часто", "I often play football."], ["sometimes", "іноді", "I sometimes watch TV."], ["never", "ніколи (0%)", "I never go to bed late."]]},
+    {"type": "dialogue", "title": "Kate and Andriy talk about habits", "lang": "en", "lines": [
+      {"who": "Kate", "text": "Do you always get up early, Andriy?"},
+      {"who": "Andriy", "text": "Yes, I always get up at seven o'clock. I usually have breakfast at half past seven."},
+      {"who": "Kate", "text": "I often get up late! I sometimes have breakfast at nine o'clock."},
+      {"who": "Andriy", "text": "Do you always do your homework in the morning?"},
+      {"who": "Kate", "text": "No, I never do my homework in the morning. I usually do it in the evening."},
+      {"who": "Andriy", "text": "I often do my homework in the morning, but I sometimes do it after lunch."}
+    ]},
+    {"type": "tip", "text": "Не став always/never в кінці речення, як в українській («я встаю завжди о сьомій»). В англійській — перед дієсловом: I always get up... (не I get up always)."}
+  ],
+  "exercises": [
+    {"type": "order", "q": "Склади речення в правильному порядку.", "items": ["I", "always", "get", "up", "at", "seven", "."]},
+    {"type": "match", "q": "З'єднай слово з перекладом.", "pairs": [["always", "завжди"], ["usually", "зазвичай"], ["often", "часто"], ["sometimes", "іноді"], ["never", "ніколи"]]},
+    {"type": "fill", "q": "Встав потрібний прислівник частотності.", "text": "I {always} brush my teeth in the morning. I {usually} have breakfast at eight o'clock. I {never} go to bed after ten o'clock.", "hint": "Подумай, наскільки часто це буває: 100%, зазвичай чи 0%."},
+    {"type": "choice", "q": "Яке слово означає «іноді»?", "options": ["always", "sometimes", "never"], "answer": 1},
+    {"type": "sort", "q": "Розклади слова за частотою.", "groups": {"Часто (usually/often)": ["usually", "often"], "Рідко чи ніколи (sometimes/never)": ["sometimes", "never"]}},
+    {"type": "truefalse", "q": "Прочитай діалог ще раз. Так чи ні?", "items": [{"text": "Andriy: \"I always get up at seven o'clock.\"", "answer": true}, {"text": "Kate: \"I always get up early.\"", "answer": false}, {"text": "Andriy: \"I never do my homework in the morning.\"", "answer": false}, {"text": "Kate: \"I usually do my homework in the evening.\"", "answer": true}]},
+    {"type": "speak", "q": "Прочитай речення вголос.", "text": "I always get up at seven o'clock. I usually have breakfast at home. I never go to bed late.", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни речення.", "text": "I {usually} get up at seven o'clock. I {sometimes} watch TV in the evening. I {never} eat breakfast at school."},
+    {"type": "choice", "q": "Де стоїть always у реченні «I always get up at seven»?", "options": ["Перед дієсловом get up", "Після дієслова get up", "У кінці речення"], "answer": 0, "explain": "Прислівники частотності стоять перед основним дієсловом."},
+    {"type": "text", "q": "Напиши 4-5 речень про те, як часто ти щось робиш (always/usually/often/sometimes/never).", "sample": "I always brush my teeth in the morning. I usually have breakfast at eight o'clock. I often play football after school. I sometimes watch cartoons in the evening. I never go to bed after ten o'clock.", "min": 60},
+    {"type": "speak", "q": "Прочитай свої речення вголос дорослому.", "text": "I always get up early. I often play with my friends. I never go to bed late.", "lang": "en"}
+  ],
+  "reflection": ["Що ти робиш завжди, а що — тільки іноді?"]
+}

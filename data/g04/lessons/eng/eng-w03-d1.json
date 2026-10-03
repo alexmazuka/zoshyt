@@ -1,0 +1,50 @@
+{
+  "id": "eng-w03-d1",
+  "subject": "eng",
+  "title": "My daily routine: What time do you get up?",
+  "goal": "Ти навчишся розповідати про свій розпорядок дня і називати час англійською (o'clock, half past).",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Кожен день ти щось робиш у певний час: встаєш, снідаєш, вчишся. Сьогодні навчишся розповідати про свій розпорядок дня англійською і називати час."},
+    {"type": "vocab", "title": "Daily routine", "items": [
+      {"en": "get up", "uk": "вставати", "ex": "I get up at seven o'clock."},
+      {"en": "wash my face", "uk": "вмивати обличчя", "ex": "I wash my face every morning."},
+      {"en": "have breakfast", "uk": "снідати", "ex": "I have breakfast at eight o'clock."},
+      {"en": "go to school", "uk": "йти до школи", "ex": "I go to school in the morning."},
+      {"en": "do homework", "uk": "робити домашнє завдання", "ex": "I do my homework in the afternoon."},
+      {"en": "go to bed", "uk": "лягати спати", "ex": "I go to bed at nine o'clock."},
+      {"en": "have lunch", "uk": "обідати", "ex": "I have lunch at one o'clock."},
+      {"en": "have dinner", "uk": "вечеряти", "ex": "I have dinner at six o'clock."},
+      {"en": "brush my teeth", "uk": "чистити зуби", "ex": "I brush my teeth twice a day."}
+    ]},
+    {"type": "rule", "title": "Час: o'clock, half past", "text": "Дивимось на годинник: **o'clock** — рівна година (7:00 — seven o'clock), **half past** — 30 хвилин по годині (7:30 — half past seven). Питаємо: **What time is it?** (Котра година?) **What time do you get up?** (О котрій годині ти встаєш?) Відповідаємо: **I get up at seven o'clock.**"},
+    {"type": "table", "title": "Час", "head": ["Час", "Англійською"], "rows": [["7:00", "seven o'clock"], ["7:30", "half past seven"], ["8:00", "eight o'clock"], ["8:30", "half past eight"], ["9:00", "nine o'clock"]]},
+    {"type": "dialogue", "title": "Andriy and Sam talk about their day", "lang": "en", "lines": [
+      {"who": "Sam", "text": "What time do you get up, Andriy?"},
+      {"who": "Andriy", "text": "I get up at seven o'clock. Then I wash my face and have breakfast."},
+      {"who": "Sam", "text": "What time do you go to school?"},
+      {"who": "Andriy", "text": "I don't go to school — I study at home! I do my homework at half past nine."},
+      {"who": "Sam", "text": "I get up at half past seven and go to school at eight o'clock."},
+      {"who": "Andriy", "text": "What time do you go to bed?"},
+      {"who": "Sam", "text": "I go to bed at half past eight. And you?"},
+      {"who": "Andriy", "text": "I go to bed at nine o'clock."}
+    ]},
+    {"type": "tip", "text": "«Half past seven» (7:30) українською — «пів на восьму», а не «пів на сьому»: в англійській називають годину, яка ВЖЕ минула (seven), а в українській — ту, що наближається (восьма)."}
+  ],
+  "exercises": [
+    {"type": "match", "q": "З'єднай час із фразою.", "pairs": [["7:00", "seven o'clock"], ["7:30", "half past seven"], ["8:00", "eight o'clock"], ["8:30", "half past eight"], ["9:00", "nine o'clock"]]},
+    {"type": "fill", "q": "Встав пропущені слова про розпорядок дня.", "text": "I {get up} at seven o'clock. Then I {have breakfast}. In the evening I {do my homework}.", "hint": "Подивись на слова уроку: get up, have breakfast, do my homework."},
+    {"type": "choice", "q": "Як запитати «Котра година?»", "options": ["What time is it?", "What time do you get up?", "How are you?"], "answer": 0},
+    {"type": "number", "q": "«Half past» означає 30 хвилин по годині. Скільки це хвилин? Напиши цифрою.", "answer": 30},
+    {"type": "order", "q": "Розстав дії за порядком дня — з ранку до вечора.", "items": ["I get up.", "I wash my face.", "I have breakfast.", "I do my homework.", "I go to bed."]},
+    {"type": "truefalse", "q": "Прочитай діалог ще раз. Так чи ні?", "items": [{"text": "Andriy: \"I get up at seven o'clock.\"", "answer": true}, {"text": "Andriy: \"I go to school every morning.\"", "answer": false}, {"text": "Sam: \"I go to bed at half past eight.\"", "answer": true}, {"text": "Andriy: \"I go to bed at eight o'clock.\"", "answer": false}]},
+    {"type": "speak", "q": "Прочитай про свій день вголос.", "text": "I get up at seven o'clock. I have breakfast. I do my homework at half past nine. I go to bed at nine o'clock.", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни речення.", "text": "I {get up} at eight o'clock. I {wash} my face and {have} breakfast."},
+    {"type": "choice", "q": "«Half past seven» — котра це година?", "options": ["7:00", "7:30", "8:00"], "answer": 1, "explain": "Half past seven = 7:30."},
+    {"type": "text", "q": "Опиши свій день 4-5 реченнями: коли встаєш, снідаєш, робиш уроки, лягаєш спати.", "sample": "I get up at seven o'clock. I wash my face and have breakfast. I do my homework at ten o'clock. I have dinner at six o'clock. I go to bed at nine o'clock.", "min": 60},
+    {"type": "speak", "q": "Прочитай свій розпорядок дня вголос дорослому.", "text": "I get up at seven o'clock. I have breakfast at half past seven. I go to bed at nine o'clock.", "lang": "en"}
+  ],
+  "reflection": ["Що в твоєму розпорядку дня найважче назвати англійською?"]
+}

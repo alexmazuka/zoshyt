@@ -1,0 +1,49 @@
+{
+  "id": "eng-w02-d3",
+  "subject": "eng",
+  "title": "Our preferences: I like / I don't like + -ing",
+  "goal": "Ти навчишся розповідати, що тобі подобається і не подобається робити, використовуючи like / don't like + дієслово з -ing.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Починається новий розділ «It's my life» («Моє життя»). Тепер ти розповідатимеш про себе — що любиш робити, а що ні. Головна конструкція сьогодні: **like / don't like + дієслово-ing**."},
+    {"type": "vocab", "title": "Activities", "items": [
+      {"en": "swimming", "uk": "плавання", "ex": "I like swimming."},
+      {"en": "reading", "uk": "читання", "ex": "I like reading books."},
+      {"en": "dancing", "uk": "танці", "ex": "I don't like dancing."},
+      {"en": "drawing", "uk": "малювання", "ex": "I like drawing."},
+      {"en": "playing football", "uk": "гра у футбол", "ex": "I like playing football."},
+      {"en": "singing", "uk": "співи", "ex": "I don't like singing."},
+      {"en": "riding a bike", "uk": "їзда на велосипеді", "ex": "I like riding a bike."},
+      {"en": "watching TV", "uk": "перегляд телевізора", "ex": "I like watching TV."},
+      {"en": "playing computer games", "uk": "гра в комп'ютерні ігри", "ex": "I like playing computer games."},
+      {"en": "listening to music", "uk": "слухання музики", "ex": "I like listening to music."}
+    ]},
+    {"type": "rule", "title": "like / don't like + -ing", "text": "Коли говоримо, що подобається робити, після **like** або **don't like** дієслово має закінчення **-ing**: **I like swimming.** (Мені подобається плавати.) **I don't like dancing.** (Мені не подобається танцювати.) Не кажи «I like swim» — потрібно **swimming**!"},
+    {"type": "table", "title": "Як утворити -ing", "head": ["Дієслово", "Форма -ing", "Правило"], "rows": [["swim", "swimming", "подвоюємо приголосну після короткого голосного"], ["dance", "dancing", "прибираємо -e"], ["ride", "riding", "прибираємо -e"], ["play", "playing", "просто +ing"]]},
+    {"type": "dialogue", "title": "Sam and Andriy talk about hobbies", "lang": "en", "lines": [
+      {"who": "Sam", "text": "Do you like swimming, Andriy?"},
+      {"who": "Andriy", "text": "Yes, I do! I like swimming very much. And I like playing football too."},
+      {"who": "Sam", "text": "I like playing football too! But I don't like dancing."},
+      {"who": "Andriy", "text": "Me too! I don't like dancing. I like drawing and reading."},
+      {"who": "Sam", "text": "I like reading too. What about singing?"},
+      {"who": "Andriy", "text": "I don't like singing, but I like listening to music."}
+    ]},
+    {"type": "tip", "text": "Не забувай -ing після like/don't like: не «I like swim», а **I like swimming**."}
+  ],
+  "exercises": [
+    {"type": "match", "q": "З'єднай слово з перекладом.", "pairs": [["swimming", "плавання"], ["reading", "читання"], ["dancing", "танці"], ["drawing", "малювання"], ["singing", "співи"]]},
+    {"type": "fill", "q": "Встав дієслово з -ing.", "text": "I like {swimming}. We like {reading} books. They like {playing} football.", "hint": "Додай -ing до дієслова після like."},
+    {"type": "choice", "q": "Як правильно сказати «Мені подобається малювати»?", "options": ["I like draw.", "I like drawing.", "I likes drawing."], "answer": 1, "explain": "Після like дієслово має закінчення -ing: I like drawing."},
+    {"type": "multi", "q": "Обери, що подобається Андрію (за діалогом).", "options": ["swimming", "dancing", "playing football", "singing", "drawing"], "answer": [0, 2, 4], "explain": "Андрій каже: 'I like swimming', 'I like playing football', 'I like drawing'. А dancing і singing він не любить."},
+    {"type": "order", "q": "Склади речення.", "items": ["I", "like", "playing", "football", "."]},
+    {"type": "truefalse", "q": "Прочитай діалог ще раз. Так чи ні?", "items": [{"text": "Andriy: \"I like swimming very much.\"", "answer": true}, {"text": "Andriy: \"I like dancing.\"", "answer": false}, {"text": "Sam: \"I like playing football.\"", "answer": true}, {"text": "Andriy: \"I like singing.\"", "answer": false}]},
+    {"type": "speak", "q": "Прочитай речення вголос.", "text": "I like swimming. I don't like dancing. I like playing football and reading.", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни речення.", "text": "I like {reading} books. I don't like {dancing}. We like {playing} football."},
+    {"type": "choice", "q": "Як буде заперечення «Я не люблю співати»?", "options": ["I don't like sing.", "I don't like singing.", "I not like singing."], "answer": 1, "explain": "don't like + V-ing: I don't like singing."},
+    {"type": "text", "q": "Напиши 4-5 речень про те, що тобі подобається і не подобається робити (like / don't like + -ing).", "sample": "I like playing football. I like reading books. I don't like dancing. I like drawing. I don't like singing, but I like listening to music.", "min": 60},
+    {"type": "speak", "q": "Прочитай свій текст вголос дорослому.", "text": "I like swimming and playing football. I don't like dancing.", "lang": "en"}
+  ],
+  "reflection": ["Яке заняття тобі подобається найбільше?"]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "eng-w04-d1",
+  "subject": "eng",
+  "title": "Questions in Present Simple: Does he…? Yes, he does. / No, he doesn't.",
+  "goal": "Ти навчишся ставити запитання зі словом does і давати короткі відповіді: Yes, he does. / No, he doesn't.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Минулого уроку ти вчився казати he likes / she doesn't like. Сьогодні навчишся ЗАПИТУВАТИ про вподобання інших людей і коротко відповідати."},
+    {"type": "vocab", "title": "Activities (review)", "items": [
+      {"en": "swimming", "uk": "плавання", "ex": "Does he like swimming?"},
+      {"en": "playing football", "uk": "гра у футбол", "ex": "Does she like playing football?"},
+      {"en": "reading", "uk": "читання", "ex": "Does he like reading?"},
+      {"en": "dancing", "uk": "танці", "ex": "Does she like dancing?"},
+      {"en": "drawing", "uk": "малювання", "ex": "Does he like drawing?"},
+      {"en": "singing", "uk": "співи", "ex": "Does she like singing?"},
+      {"en": "watching TV", "uk": "перегляд телевізора", "ex": "Does he like watching TV?"},
+      {"en": "riding a bike", "uk": "їзда на велосипеді", "ex": "Does she like riding a bike?"}
+    ]},
+    {"type": "rule", "title": "Does...? Yes, he does. / No, he doesn't.", "text": "Питання в Present Simple з he/she/it утворюємо за допомогою **does**: **Does he like** football? **Does she play** chess? Дієслово після does — БЕЗ -s (базова форма)! Коротка відповідь: **Yes, he does.** / **No, he doesn't.**"},
+    {"type": "table", "title": "Запитання й короткі відповіді", "head": ["Запитання", "Так", "Ні"], "rows": [["Does he like football?", "Yes, he does.", "No, he doesn't."], ["Does she play chess?", "Yes, she does.", "No, she doesn't."], ["Does it work?", "Yes, it does.", "No, it doesn't."]]},
+    {"type": "dialogue", "title": "Kate asks about Andriy", "lang": "en", "lines": [
+      {"who": "Kate", "text": "Does Andriy like football, Sam?"},
+      {"who": "Sam", "text": "Yes, he does. He likes football very much."},
+      {"who": "Kate", "text": "Does he like dancing?"},
+      {"who": "Sam", "text": "No, he doesn't. He doesn't like dancing at all."},
+      {"who": "Kate", "text": "Does he play chess?"},
+      {"who": "Sam", "text": "Yes, he does! He often plays chess with his dad."}
+    ]},
+    {"type": "tip", "text": "Не додавай -s до дієслова у питанні: не «Does he likes...», а Does he **like**...? (-s уже «використане» у слові does)."}
+  ],
+  "exercises": [
+    {"type": "choice", "q": "Яке питання правильне?", "options": ["Does he likes football?", "Does he like football?", "Do he like football?"], "answer": 1, "explain": "Does + he/she/it + базова форма дієслова без -s."},
+    {"type": "truefalse", "q": "Прочитай діалог ще раз. Так чи ні?", "items": [{"text": "Andriy likes football.", "answer": true}, {"text": "Andriy likes dancing.", "answer": false}, {"text": "Andriy plays chess with his dad.", "answer": true}, {"text": "Andriy doesn't like chess.", "answer": false}]},
+    {"type": "match", "q": "З'єднай запитання з правильною короткою відповіддю (уяви, що відповідь — так).", "pairs": [["Does he like football?", "Yes, he does."], ["Does she play chess?", "Yes, she does."], ["Does it rain a lot in London?", "Yes, it does."], ["Do you like reading?", "Yes, I do."]]},
+    {"type": "fill", "q": "Доповни короткі відповіді.", "text": "Does he like swimming? — Yes, he {does}.\nDoes she play chess? — No, she {doesn't}.\nDoes it work? — Yes, it {does}."},
+    {"type": "order", "q": "Склади питання.", "items": ["Does", "she", "like", "dancing", "?"]},
+    {"type": "input", "q": "Як коротко відповісти «ні», якщо питання про he? (Does he...?)", "answer": ["No, he doesn't.", "No, he doesn't"]},
+    {"type": "speak", "q": "Прочитай запитання і відповіді вголос.", "text": "Does he like football? Yes, he does. Does she like dancing? No, she doesn't.", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни короткі відповіді.", "text": "Does he play chess? — Yes, he {does}.\nDoes she like football? — No, she {doesn't}."},
+    {"type": "choice", "q": "Обери правильну коротку відповідь на «Does she like reading?» (так)", "options": ["Yes, she does.", "Yes, she like.", "Yes, she is."], "answer": 0},
+    {"type": "text", "q": "Напиши 4 питання й відповіді про вподобання друга або члена родини (Does he/she...? Yes.../No...).", "sample": "Does he like football? Yes, he does. Does he like reading? No, he doesn't. Does she like dancing? Yes, she does. Does she like swimming? No, she doesn't.", "min": 60},
+    {"type": "speak", "q": "Прочитай свої питання й відповіді вголос дорослому.", "text": "Does he like swimming? Yes, he does. Does she like dancing? No, she doesn't.", "lang": "en"}
+  ],
+  "reflection": ["Яке коротке запитання про друга ти можеш скласти сам?"]
+}

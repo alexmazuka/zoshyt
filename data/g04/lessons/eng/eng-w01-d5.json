@@ -1,0 +1,53 @@
+{
+  "id": "eng-w01-d5",
+  "subject": "eng",
+  "title": "Classroom language and the alphabet",
+  "goal": "Ти повториш алфавіт, навчишся диктувати літери свого імені і розумітимеш прості команди англійською на уроці.",
+  "minutes": 30,
+  "theory": [
+    {"type": "p", "text": "Починається новий навчальний рік з англійської! У відеоуроках, іграх і завданнях учителька часто дає команди англійською — важливо їх розуміти без перекладу. Сьогодні ти повториш ці слова та англійський алфавіт: він знадобиться, щоб диктувати літери свого імені або шукати слово в словнику."},
+    {"type": "vocab", "title": "Classroom words", "items": [
+      {"en": "listen", "uk": "слухати", "ex": "Listen and repeat, please."},
+      {"en": "read", "uk": "читати", "ex": "Read the word aloud."},
+      {"en": "repeat", "uk": "повторювати", "ex": "Repeat after me."},
+      {"en": "open", "uk": "відкривати", "ex": "Open your book at page five."},
+      {"en": "shut", "uk": "закривати", "ex": "Shut the door, please."},
+      {"en": "cut", "uk": "різати, вирізати", "ex": "Cut the paper carefully."},
+      {"en": "take", "uk": "брати", "ex": "Take a pencil, please."},
+      {"en": "sing", "uk": "співати", "ex": "Let's sing a song!"},
+      {"en": "play", "uk": "грати", "ex": "Play the game with me."},
+      {"en": "copy", "uk": "списувати, копіювати", "ex": "Copy the words into your notebook."},
+      {"en": "draw", "uk": "малювати", "ex": "Draw a big sun."}
+    ]},
+    {"type": "dialogue", "title": "First lesson with Miss Green", "lang": "en", "lines": [
+      {"who": "Miss Green", "text": "Good morning, children! Open your books at page one, please."},
+      {"who": "Sam", "text": "Good morning, Miss Green!"},
+      {"who": "Miss Green", "text": "Listen and repeat: A, B, C, D..."},
+      {"who": "Andriy", "text": "A, B, C, D, E, F, G!"},
+      {"who": "Miss Green", "text": "Well done! Now take a pencil and draw a big letter A."},
+      {"who": "Kate", "text": "I can draw it!"},
+      {"who": "Miss Green", "text": "Great! Andriy, how do you spell your name?"},
+      {"who": "Andriy", "text": "A-N-D-R-I-Y."},
+      {"who": "Miss Green", "text": "Perfect! Now close your books. See you next lesson!"}
+    ]},
+    {"type": "rule", "title": "Накази й прохання (Imperative)", "text": "Коли даємо команду чи просимо щось зробити, дієслово ставимо на перше місце — без підмета (без «you»): **Listen!** (Слухай!) **Open** your book. (Відкрий книжку.) Щоб попросити ввічливо, додай **please**: Open your book, **please**. Заперечення утворюємо словом **Don't**: **Don't shut** the book yet. (Ще не закривай книжку.)"},
+    {"type": "table", "title": "Літери, які звучать не так, як пишуться", "head": ["Літера", "Як звучить (укр.)"], "rows": [["G", "«джі»"], ["J", "«джей»"], ["Q", "«к'ю»"], ["W", "«дабл-ю»"], ["Y", "«вай»"], ["R", "«ар»"]]},
+    {"type": "tip", "text": "Не плутай **G** [джі] і **J** [джей] — на слух вони схожі. А літеру **W** називають «дабл-ю» (подвійне U), а не «дабл-ві»."}
+  ],
+  "exercises": [
+    {"type": "match", "q": "З'єднай команду з перекладом.", "pairs": [["Listen", "Слухати"], ["Open", "Відкривати"], ["Shut", "Закривати"], ["Take", "Брати"], ["Draw", "Малювати"]]},
+    {"type": "fill", "q": "Устав пропущені літери алфавіту.", "text": "A, B, {C}, D, {E}, F, {G}", "hint": "Пригадай алфавіт по порядку: A, B, C, D, E, F, G."},
+    {"type": "choice", "q": "Як буде англійською «Закрий книжку, будь ласка»?", "options": ["Open your book, please.", "Shut your book, please.", "Take your book, please."], "answer": 1, "explain": "Shut (= close) означає «закрити»."},
+    {"type": "order", "q": "Розстав літери, щоб отримати ім'я хлопчика з нашого діалогу.", "items": ["A", "N", "D", "R", "I", "Y"], "explain": "Разом літери утворюють ім'я ANDRIY."},
+    {"type": "truefalse", "q": "Прочитай діалог із теорії ще раз. Так чи ні?", "items": [{"text": "Miss Green: \"Open your books at page one, please.\"", "answer": true}, {"text": "Andriy: \"I can't spell my name.\"", "answer": false}, {"text": "Kate: \"I can draw it!\"", "answer": true}, {"text": "Miss Green: \"See you next lesson!\"", "answer": true}]},
+    {"type": "input", "q": "Як англійською сказати «Повтори»?", "answer": ["Repeat", "repeat"]},
+    {"type": "speak", "q": "Прочитай команди вголос, наче справжня вчителька.", "text": "Listen! Open your book. Repeat after me. Take a pencil and draw a cat.", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни команди словами з уроку.", "text": "{Open} the window, please.\n{Take} your pencil.\n{Sing} a song with me."},
+    {"type": "choice", "q": "Обери правильний варіант: як запитати «Як пишеться твоє ім'я?»", "options": ["What's your name?", "How do you spell your name?", "How are you?"], "answer": 1, "explain": "spell — писати слово по літерах."},
+    {"type": "text", "q": "Напиши 4-5 команд англійською, які може давати вчителька на уроці, і переклади їх українською.", "sample": "Listen to me, please. Open your book at page two. Take a red pencil. Draw a house. Sing a song with me.", "min": 60},
+    {"type": "speak", "q": "Спочатку продиктуй дорослому своє ім'я по літерах англійською (наприклад: M-A-X). Потім прочитай ці слова вголос.", "text": "Listen. Open your book. Take a pencil. Draw a cat. Sing a song.", "lang": "en"}
+  ],
+  "reflection": ["Які літери алфавіту звучать не так, як в українській мові?"]
+}

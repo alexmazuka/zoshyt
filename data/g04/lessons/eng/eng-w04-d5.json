@@ -1,0 +1,48 @@
+{
+  "id": "eng-w04-d5",
+  "subject": "eng",
+  "title": "My hobby",
+  "goal": "Ти навчишся розповідати про своє хобі англійською, використовуючи структуру My hobby is + -ing.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Пам'ятаєш -ing після like (I like swimming)? Сьогодні ти використаєш ту саму форму -ing, щоб розповісти про своє хобі: My hobby is..."},
+    {"type": "vocab", "title": "Hobbies", "items": [
+      {"en": "collecting stamps", "uk": "колекціонування марок", "ex": "My hobby is collecting stamps."},
+      {"en": "collecting stickers", "uk": "колекціонування наліпок", "ex": "My hobby is collecting stickers."},
+      {"en": "cooking", "uk": "кулінарія", "ex": "My hobby is cooking."},
+      {"en": "painting", "uk": "малювання фарбами", "ex": "My hobby is painting."},
+      {"en": "playing the piano", "uk": "гра на піаніно", "ex": "My hobby is playing the piano."},
+      {"en": "playing chess", "uk": "гра в шахи", "ex": "My hobby is playing chess."},
+      {"en": "taking photos", "uk": "фотографування", "ex": "My hobby is taking photos."},
+      {"en": "making things", "uk": "майструвати", "ex": "My hobby is making things."},
+      {"en": "gardening", "uk": "садівництво", "ex": "My hobby is gardening."}
+    ]},
+    {"type": "rule", "title": "My hobby is + -ing", "text": "Про хобі кажемо: **My hobby is** + дієслово-ing. **My hobby is painting.** (Моє хобі — малювання фарбами.) **His hobby is collecting stamps.** Можна також сказати простіше: **I like** + -ing (як ти вже знаєш): I like cooking."},
+    {"type": "table", "title": "painting чи drawing?", "head": ["Слово", "Переклад", "Різниця"], "rows": [["painting", "малювання фарбами", "малюють пензлем і фарбами"], ["drawing", "малювання олівцем", "малюють олівцем чи ручкою"]]},
+    {"type": "dialogue", "title": "Sam and Kate talk about hobbies", "lang": "en", "lines": [
+      {"who": "Sam", "text": "What's your hobby, Kate?"},
+      {"who": "Kate", "text": "My hobby is painting. I paint pictures of animals. What's your hobby, Sam?"},
+      {"who": "Sam", "text": "My hobby is collecting stickers. I have got two hundred stickers!"},
+      {"who": "Kate", "text": "Wow! Does Andriy have a hobby?"},
+      {"who": "Sam", "text": "Yes, his hobby is playing the piano. He practises every day."},
+      {"who": "Kate", "text": "That's great! I also like cooking with my mum at the weekend."}
+    ]},
+    {"type": "tip", "text": "Painting — малювати ФАРБАМИ (пензлем), а drawing — малювати ОЛІВЦЕМ чи ручкою. My hobby is painting ≠ My hobby is drawing."}
+  ],
+  "exercises": [
+    {"type": "match", "q": "З'єднай хобі з перекладом.", "pairs": [["cooking", "кулінарія"], ["painting", "малювання фарбами"], ["collecting stamps", "колекціонування марок"], ["playing the piano", "гра на піаніно"], ["gardening", "садівництво"]]},
+    {"type": "fill", "q": "Встав правильну форму (my hobby is + -ing).", "text": "My hobby is {cooking}. Her hobby is {painting}. His hobby is {playing} the piano."},
+    {"type": "choice", "q": "Як сказати «Моє хобі — колекціонування марок»?", "options": ["My hobby is collect stamps.", "My hobby is collecting stamps.", "My hobby collecting stamps."], "answer": 1},
+    {"type": "truefalse", "q": "Прочитай діалог ще раз. Так чи ні?", "items": [{"text": "Kate's hobby is painting.", "answer": true}, {"text": "Sam collects stamps.", "answer": false}, {"text": "Andriy's hobby is playing the piano.", "answer": true}, {"text": "Kate doesn't like cooking.", "answer": false}]},
+    {"type": "order", "q": "Склади речення.", "items": ["My", "hobby", "is", "painting", "."]},
+    {"type": "input", "q": "Як буде англійською «Моє хобі — гра на піаніно»?", "answer": ["My hobby is playing the piano.", "My hobby is playing the piano"]},
+    {"type": "speak", "q": "Прочитай речення вголос.", "text": "My hobby is painting. Her hobby is cooking. His hobby is playing the piano.", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни речення.", "text": "My hobby is {reading}. My brother's hobby is {collecting} toy cars."},
+    {"type": "choice", "q": "Обери правильний варіант: «Її хобі — садівництво».", "options": ["Her hobby is gardening.", "Her hobby is garden.", "She hobby is gardening."], "answer": 0},
+    {"type": "text", "q": "Напиши 4-5 речень про своє хобі та хобі когось із родини (My hobby is.../His-her hobby is...).", "sample": "My hobby is drawing. I draw animals and cars. My sister's hobby is collecting stickers. She has got a big album. My dad's hobby is cooking.", "min": 60},
+    {"type": "speak", "q": "Прочитай свої речення вголос дорослому.", "text": "My hobby is drawing. My hobby is fun. I draw every day.", "lang": "en"}
+  ],
+  "reflection": ["Яке твоє справжнє хобі і як воно буде англійською?"]
+}

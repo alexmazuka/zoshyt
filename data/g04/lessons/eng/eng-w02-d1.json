@@ -1,0 +1,49 @@
+{
+  "id": "eng-w02-d1",
+  "subject": "eng",
+  "title": "Review: numbers 1–20, colours, days of the week; to be / have got",
+  "goal": "Ти повториш числа 1–20, кольори й дні тижня та навчишся казати, що в тебе є, за допомогою have got / has got.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Сьогодні повторення: числа, кольори й дні тижня, які ти вже знаєш. А ще — нова корисна фраза **have got** (мати), якою розповідають, що в когось є."},
+    {"type": "vocab", "title": "Colours", "items": [
+      {"en": "red", "uk": "червоний", "ex": "I have got a red bag."},
+      {"en": "blue", "uk": "синій", "ex": "She has got a blue pencil case."},
+      {"en": "yellow", "uk": "жовтий", "ex": "He has got a yellow ball."},
+      {"en": "green", "uk": "зелений", "ex": "I have got a green bag."},
+      {"en": "black", "uk": "чорний", "ex": "She has got a black cat."},
+      {"en": "white", "uk": "білий", "ex": "I have got a white T-shirt."},
+      {"en": "orange", "uk": "оранжевий", "ex": "He has got an orange kite."},
+      {"en": "pink", "uk": "рожевий", "ex": "She has got a pink bag."},
+      {"en": "purple", "uk": "фіолетовий", "ex": "My bag is purple."},
+      {"en": "brown", "uk": "коричневий", "ex": "I have got a brown dog."}
+    ]},
+    {"type": "table", "title": "Числа 11–20", "head": ["Число", "Англійською"], "rows": [["11", "eleven"], ["12", "twelve"], ["13", "thirteen"], ["14", "fourteen"], ["15", "fifteen"], ["16", "sixteen"], ["17", "seventeen"], ["18", "eighteen"], ["19", "nineteen"], ["20", "twenty"]]},
+    {"type": "rule", "title": "have got / has got", "text": "**I have got** (I've got) a bike. **You have got** (You've got) a dog. **He / she has got** (He's got / She's got) a cat. Заперечення: **haven't got** / **hasn't got**: I **haven't got** a cat. She **hasn't got** a dog."},
+    {"type": "dialogue", "title": "Kate and Olia", "lang": "en", "lines": [
+      {"who": "Kate", "text": "Hi, Olia! What colour is your bag?"},
+      {"who": "Olia", "text": "My bag is purple. I have got a blue pencil case too."},
+      {"who": "Kate", "text": "I have got a green bag and ten pencils! I have got a small dog too."},
+      {"who": "Olia", "text": "I haven't got a dog, but I have got two cats."},
+      {"who": "Kate", "text": "See you on Monday, Olia!"},
+      {"who": "Olia", "text": "Bye, Kate! See you on Monday!"}
+    ]},
+    {"type": "tip", "text": "«Have got» означає «мати» — так часто кажуть у Британії: He has got a cat = He has a cat. Не забувай **has** (не have) після he/she/it!"}
+  ],
+  "exercises": [
+    {"type": "order", "q": "Розстав дні тижня по порядку, починаючи з понеділка.", "items": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]},
+    {"type": "match", "q": "З'єднай колір з перекладом.", "pairs": [["red", "червоний"], ["blue", "синій"], ["yellow", "жовтий"], ["green", "зелений"], ["black", "чорний"]]},
+    {"type": "fill", "q": "Встав have got, has got або haven't got.", "text": "I {have got} a red bag. She {has got} a black cat. They {haven't got} a dog.", "hint": "I/you/we/they → have got; he/she/it → has got."},
+    {"type": "choice", "q": "Яке число англійською «15»?", "options": ["fifty", "fifteen", "five"], "answer": 1, "explain": "fifteen = 15; fifty = 50; five = 5."},
+    {"type": "number", "q": "Скільки днів у тижні? Напиши цифрою.", "answer": 7},
+    {"type": "truefalse", "q": "Прочитай діалог ще раз. Так чи ні?", "items": [{"text": "Olia: \"My bag is purple.\"", "answer": true}, {"text": "Kate: \"I have got a small dog too.\"", "answer": true}, {"text": "Olia: \"I have got a dog too.\"", "answer": false}, {"text": "Kate: \"I have got ten pencils!\"", "answer": true}]},
+    {"type": "speak", "q": "Прочитай речення вголос.", "text": "I have got a green bag. She has got a black cat. He hasn't got a dog.", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни речення.", "text": "After Monday comes {Tuesday}. After Friday comes {Saturday}. The number after fourteen is {fifteen}."},
+    {"type": "choice", "q": "Як сказати «У нього є собака»?", "options": ["He have got a dog.", "He has got a dog.", "He haves got a dog."], "answer": 1, "explain": "He/she/it + has got (не have got)."},
+    {"type": "text", "q": "Напиши 4-5 речень англійською: яке твоє улюблене число, який твій улюблений колір і що в тебе є (have got).", "sample": "My favourite number is seven. My favourite colour is blue. I have got a blue bike. I have got two books. I haven't got a cat.", "min": 60},
+    {"type": "speak", "q": "Прочитай ці речення вголос дорослому.", "text": "My favourite colour is green. I have got a dog. Today is Monday.", "lang": "en"}
+  ],
+  "reflection": ["Які кольори та числа ти вже добре знав, а що довелося пригадати?"]
+}

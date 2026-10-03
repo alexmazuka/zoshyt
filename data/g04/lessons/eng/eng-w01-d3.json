@@ -1,0 +1,50 @@
+{
+  "id": "eng-w01-d3",
+  "subject": "eng",
+  "title": "Hello again! Greetings and introducing yourself",
+  "goal": "Ти пригадаєш, як вітатися англійською, розповідати про себе (ім'я, вік, країна) і ставити прості запитання новому другові.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Hello again! Починаємо новий навчальний рік з англійської. Спочатку пригадаймо, як **привітатися** і **розповісти про себе**. Натискай 🔊, слухай і повторюй уголос — так ти тренуєш вимову."},
+    {"type": "vocab", "title": "Words and phrases", "items": [
+      {"en": "Hello! / Hi!", "uk": "Привіт!", "ex": "Hello, Tom!"},
+      {"en": "Good morning", "uk": "Доброго ранку", "ex": "Good morning, Miss Green."},
+      {"en": "How are you?", "uk": "Як справи?", "ex": "How are you? — I'm fine, thanks."},
+      {"en": "My name is…", "uk": "Мене звати…", "ex": "My name is Andriy."},
+      {"en": "I am … years old", "uk": "Мені … років", "ex": "I am nine years old."},
+      {"en": "I am from Ukraine", "uk": "Я з України", "ex": "I am from Kyiv, Ukraine."},
+      {"en": "Nice to meet you", "uk": "Приємно познайомитися", "ex": "Nice to meet you, Sam!"},
+      {"en": "This is my friend", "uk": "Це мій друг / моя подруга", "ex": "This is my friend Olia."},
+      {"en": "Goodbye! / Bye!", "uk": "До побачення! / Бувай!", "ex": "Bye, see you tomorrow!"},
+      {"en": "See you", "uk": "Побачимось", "ex": "See you on Monday."}
+    ]},
+    {"type": "dialogue", "title": "Sam meets a new friend", "lang": "en", "lines": [
+      {"who": "Sam", "text": "Hello! My name is Sam. What's your name?"},
+      {"who": "Andriy", "text": "Hi, Sam! I'm Andriy. Nice to meet you!"},
+      {"who": "Sam", "text": "Nice to meet you too. Where are you from?"},
+      {"who": "Andriy", "text": "I'm from Ukraine. I'm nine years old. And you?"},
+      {"who": "Sam", "text": "I'm from London. I'm ten. This is my friend Kate."},
+      {"who": "Kate", "text": "Hello, Andriy! How are you?"},
+      {"who": "Andriy", "text": "I'm fine, thank you. Bye, see you tomorrow!"}
+    ]},
+    {"type": "rule", "title": "Grammar: to be (бути)", "text": "**I am** (I'm) — я є; **you are** (you're) — ти є; **he / she is** (he's / she's) — він / вона є.\nI **am** nine. She **is** from Ukraine. You **are** my friend.\nЗапитання: **Are you** from Kyiv? — Yes, I am. / No, I'm not.  **Is he** ten? — Yes, he is."},
+    {"type": "table", "title": "Скорочені форми", "head": ["Повна форма", "Скорочена", "Переклад"], "rows": [["I am", "I'm", "я є"], ["you are", "you're", "ти є / ви є"], ["he is", "he's", "він є"], ["she is", "she's", "вона є"], ["what is", "what's", "що є / який є"]]},
+    {"type": "tip", "text": "«How are you?» — це вітання-запитання. Відповідай коротко: «I'm fine, thanks. And you?»"}
+  ],
+  "exercises": [
+    {"type": "match", "q": "З'єднай фразу з перекладом.", "pairs": [["Nice to meet you", "Приємно познайомитися"], ["How are you?", "Як справи?"], ["See you", "Побачимось"], ["I am from Ukraine", "Я з України"], ["Good morning", "Доброго ранку"]]},
+    {"type": "fill", "q": "Встав am, is або are.", "text": "I {am} Andriy. She {is} from London. You {are} my friend. He {is} ten years old.", "hint": "I → am; he, she → is; you → are."},
+    {"type": "choice", "q": "Як відповісти на запитання «What's your name?»", "options": ["I'm fine, thanks.", "My name is Denys.", "I'm from Kyiv."], "answer": 1},
+    {"type": "order", "q": "Розстав репліки діалогу по порядку.", "items": ["Hello! What's your name?", "Hi! My name is Max. And you?", "I'm Kate. Where are you from, Max?", "I'm from Ukraine. Nice to meet you!", "Nice to meet you too!"]},
+    {"type": "truefalse", "q": "Прочитай діалог у теорії ще раз. Так чи ні?", "items": [{"text": "Sam is from Ukraine.", "answer": false}, {"text": "Andriy is nine years old.", "answer": true}, {"text": "Kate is Sam's friend.", "answer": true}, {"text": "Sam is nine.", "answer": false}]},
+    {"type": "input", "q": "Напиши скорочену форму: «She is» → ?", "answer": ["She's", "she's"]},
+    {"type": "speak", "q": "Прочитай уголос, наслідуючи вимову (натисни 🔊).", "text": "Hello! My name is Andriy. I am nine years old. I am from Ukraine. Nice to meet you!", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни діалог.", "text": "— Hello! {How} are you?\n— I'm {fine}, thank you.\n— Where are you {from}?\n— I'm from Ukraine. {Nice} to meet you!"},
+    {"type": "multi", "q": "Обери фрази, якими можна попрощатися.", "options": ["Goodbye!", "Good morning!", "See you!", "Bye!", "Nice to meet you!"], "answer": [0, 2, 3]},
+    {"type": "text", "q": "Напиши про себе 5 речень англійською за зразком: ім'я, вік, звідки ти, як звати твого друга, привітання.", "sample": "Hello! My name is Andriy. I am nine years old. I am from Kyiv, Ukraine. This is my friend Olia. Nice to meet you!", "min": 60},
+    {"type": "speak", "q": "Прочитай свій текст про себе уголос дорослому або запиши на диктофон.", "text": "Hello! My name is … I am … years old. I am from Ukraine.", "lang": "en"}
+  ],
+  "reflection": ["Які слова з уроку ти вже знав, а які нові?"]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "eng-w03-d5",
+  "subject": "eng",
+  "title": "What does your friend like? Present Simple: he/she likes, doesn't like",
+  "goal": "Ти навчишся розповідати про вподобання інших людей — he likes / she doesn't like — і правильно додавати -s до дієслова.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Пам'ятаєш, як розповідати, що подобається тобі (I like swimming)? Сьогодні навчишся розповідати про друга чи подругу: he likes, she doesn't like. Головне — не забувати -s!"},
+    {"type": "vocab", "title": "Activities (review + new)", "items": [
+      {"en": "swimming", "uk": "плавання", "ex": "He likes swimming."},
+      {"en": "playing football", "uk": "гра у футбол", "ex": "He likes playing football."},
+      {"en": "reading", "uk": "читання", "ex": "She likes reading."},
+      {"en": "dancing", "uk": "танці", "ex": "She likes dancing."},
+      {"en": "drawing", "uk": "малювання", "ex": "She likes drawing."},
+      {"en": "singing", "uk": "співи", "ex": "She doesn't like singing."},
+      {"en": "watching TV", "uk": "перегляд телевізора", "ex": "She watches TV every evening."},
+      {"en": "riding a bike", "uk": "їзда на велосипеді", "ex": "He likes riding a bike."},
+      {"en": "playing computer games", "uk": "гра в комп'ютерні ігри", "ex": "He doesn't like playing computer games."}
+    ]},
+    {"type": "rule", "title": "he/she + дієслово-s", "text": "У Present Simple з he/she/it додаємо **-s** до дієслова: **He likes** football. **She watches** TV. Більшість дієслів: просто **+s** (likes, plays, reads). Дієслова на -sh, -ch, -ss, -x, -o: **+es** (watches, does). Приголосна+y → **y змінюється на ies** (study → studies). Заперечення: **doesn't** + дієслово БЕЗ -s: He **doesn't like** dancing. She **doesn't watch** TV."},
+    {"type": "table", "title": "Дієслово + s", "head": ["Дієслово", "he/she + s"], "rows": [["like", "likes"], ["play", "plays"], ["read", "reads"], ["watch", "watches"], ["do", "does"], ["study", "studies"]]},
+    {"type": "dialogue", "title": "What does Olia like?", "lang": "en", "lines": [
+      {"who": "Sam", "text": "What does Olia like, Andriy?"},
+      {"who": "Andriy", "text": "She likes reading and drawing. She doesn't like football."},
+      {"who": "Sam", "text": "What about dancing?"},
+      {"who": "Andriy", "text": "She likes dancing too! She often dances with Kate. And she likes singing."},
+      {"who": "Sam", "text": "What does Max like?"},
+      {"who": "Andriy", "text": "He likes swimming and playing football, but he doesn't like reading."}
+    ]},
+    {"type": "tip", "text": "Не забувай -s: не «He like football», а He **likes** football. У запереченні -s зникає: He **doesn't like**, а не He doesn't likes."}
+  ],
+  "exercises": [
+    {"type": "fill", "q": "Встав дієслово у правильній формі (he/she + s, або doesn't + дієслово).", "text": "She {likes} reading. He {doesn't like} football. She {watches} TV every evening.", "hint": "he/she + дієслово+s; але doesn't + дієслово без -s."},
+    {"type": "choice", "q": "Яка форма правильна: «Вона дивиться телевізор»?", "options": ["She watch TV.", "She watches TV.", "She watching TV."], "answer": 1, "explain": "watch закінчується на -ch, тому +es: watches."},
+    {"type": "match", "q": "З'єднай дієслово з формою для he/she.", "pairs": [["like", "likes"], ["play", "plays"], ["read", "reads"], ["watch", "watches"], ["study", "studies"]]},
+    {"type": "multi", "q": "Обери, що подобається Максу (за діалогом).", "options": ["swimming", "reading", "playing football", "dancing"], "answer": [0, 2], "explain": "Андрій каже: 'He likes swimming and playing football, but he doesn't like reading.' Про танці Макса не згадано."},
+    {"type": "truefalse", "q": "Прочитай діалог ще раз. Так чи ні?", "items": [{"text": "Olia likes reading and drawing.", "answer": true}, {"text": "Olia likes football.", "answer": false}, {"text": "Max doesn't like reading.", "answer": true}, {"text": "Max doesn't like swimming.", "answer": false}]},
+    {"type": "order", "q": "Склади речення.", "items": ["She", "doesn't", "like", "football", "."]},
+    {"type": "speak", "q": "Прочитай речення вголос.", "text": "She likes reading. He doesn't like football. She watches TV every evening.", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни речення.", "text": "He {likes} swimming. She {doesn't like} dancing. My friend {plays} chess every day."},
+    {"type": "choice", "q": "Яке закінчення додаємо до watch у формі he/she?", "options": ["-s", "-es", "-ies"], "answer": 1, "explain": "watch закінчується на -ch, тому +es → watches."},
+    {"type": "text", "q": "Напиши 4-5 речень про вподобання свого друга або члена родини (he/she likes / doesn't like).", "sample": "My friend Max likes playing football. He likes swimming too. He doesn't like reading. My sister likes drawing. She doesn't like football.", "min": 60},
+    {"type": "speak", "q": "Прочитай свої речення вголос дорослому.", "text": "My friend likes playing football. He doesn't like dancing. She likes reading books.", "lang": "en"}
+  ],
+  "reflection": ["Чи легко тобі було додавати -s до дієслів?"]
+}

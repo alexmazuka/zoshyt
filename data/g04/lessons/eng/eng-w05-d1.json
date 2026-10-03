@@ -1,0 +1,47 @@
+{
+  "id": "eng-w05-d1",
+  "subject": "eng",
+  "title": "My collections: Have you got…? How many…?",
+  "goal": "Ти навчишся запитувати Have you got…? і How many…?, а також утворювати множину іменників.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Пам'ятаєш have got / has got? Сьогодні навчишся запитувати: Have you got...? і How many...? А ще — розповіси про свою колекцію, якщо вона в тебе є."},
+    {"type": "vocab", "title": "Collections", "items": [
+      {"en": "stamp", "uk": "марка", "ex": "I have got twenty stamps."},
+      {"en": "sticker", "uk": "наліпка", "ex": "She has got fifty stickers."},
+      {"en": "coin", "uk": "монета", "ex": "He has got some coins."},
+      {"en": "toy car", "uk": "іграшкова машинка", "ex": "I have got fifteen toy cars."},
+      {"en": "collection", "uk": "колекція", "ex": "This is my collection."},
+      {"en": "album", "uk": "альбом", "ex": "I keep my stickers in an album."},
+      {"en": "box", "uk": "коробка", "ex": "I keep my coins in a box."},
+      {"en": "shell", "uk": "мушля", "ex": "I have got some shells from the sea."}
+    ]},
+    {"type": "rule", "title": "Множина і Have you got…?", "text": "Множина іменників: більшість +**s** (stamp → stamp**s**, coin → coin**s**). Після шиплячих (-s, -sh, -ch, -x) +**es** (box → box**es**). Приголосна+y → **ies** (a story → stories), але голосна+y просто +s (a toy → toys). Питання: **Have you got** any stamps? — Yes, I have. / No, I haven't. **How many** stamps have you got? — I have got twenty stamps."},
+    {"type": "table", "title": "Однина і множина", "head": ["Однина", "Множина"], "rows": [["stamp", "stamps"], ["coin", "coins"], ["box", "boxes"], ["toy", "toys"], ["story", "stories"]]},
+    {"type": "dialogue", "title": "Collections", "lang": "en", "lines": [
+      {"who": "Olia", "text": "Have you got a collection, Andriy?"},
+      {"who": "Andriy", "text": "Yes, I have. I collect toy cars. I have got fifteen toy cars."},
+      {"who": "Olia", "text": "Wow! Have you got any stamps?"},
+      {"who": "Andriy", "text": "No, I haven't. But I have got some coins. How many stickers have you got?"},
+      {"who": "Olia", "text": "I have got about fifty stickers! I keep them in a big album."},
+      {"who": "Andriy", "text": "Fifty? That's a lot!"}
+    ]},
+    {"type": "tip", "text": "У запитаннях і запереченнях з have got часто вживаємо **any**: Have you got **any** stamps? I haven't got **any** coins. А в стверджувальних реченнях — **some**: I have got **some** coins."}
+  ],
+  "exercises": [
+    {"type": "match", "q": "З'єднай однину з множиною.", "pairs": [["stamp", "stamps"], ["coin", "coins"], ["box", "boxes"], ["toy", "toys"], ["story", "stories"]]},
+    {"type": "fill", "q": "Встав множину іменника.", "text": "I have got twenty {stamps}. She has got two {boxes} of stickers. We have got five {toys}.", "hint": "stamp→stamps, box→boxes (після -x), toy→toys."},
+    {"type": "choice", "q": "Як запитати «Скільки марок у тебе є?»", "options": ["How much stamps have you got?", "How many stamps have you got?", "How many stamp have you got?"], "answer": 1, "explain": "stamps — злічуваний іменник у множині, тому How many (не How much) і stamps (не stamp)."},
+    {"type": "number", "q": "Скільки іграшкових машинок є в Андрія (за діалогом)? Напиши цифрою.", "answer": 15},
+    {"type": "truefalse", "q": "Прочитай діалог ще раз. Так чи ні?", "items": [{"text": "Andriy: \"I collect toy cars.\"", "answer": true}, {"text": "Andriy: \"I have got a lot of stamps.\"", "answer": false}, {"text": "Olia: \"I have got about fifty stickers!\"", "answer": true}, {"text": "Andriy: \"I haven't got any coins.\"", "answer": false}]},
+    {"type": "sort", "q": "Розклади іменники за способом утворення множини.", "groups": {"Просто +s": ["stamp", "coin", "toy"], "+es (після x, s, sh, ch)": ["box"]}},
+    {"type": "speak", "q": "Прочитай речення вголос.", "text": "Have you got any stamps? I have got twenty coins. How many toy cars have you got?", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Доповни речення.", "text": "I have got ten {stickers}. He has got three {boxes} of coins."},
+    {"type": "choice", "q": "Як відповісти «Так» на «Have you got a collection?»", "options": ["Yes, I have.", "Yes, I do.", "Yes, I got."], "answer": 0, "explain": "Have got: коротка відповідь — Yes, I have. / No, I haven't."},
+    {"type": "text", "q": "Напиши 4-5 речень про свою колекцію (або яку колекцію ти хотів би мати): що і скільки в тебе є.", "sample": "I have got a small collection. I have got twelve toy cars. I have got some coins too. I haven't got any stamps. I keep my collection in a box.", "min": 60},
+    {"type": "speak", "q": "Прочитай свої речення вголос дорослому.", "text": "I have got a collection. I have got ten toy cars. How many have you got?", "lang": "en"}
+  ],
+  "reflection": ["Яку колекцію ти маєш або хотів би почати збирати?"]
+}

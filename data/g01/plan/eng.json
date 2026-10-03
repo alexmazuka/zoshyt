@@ -1,0 +1,159 @@
+{
+ "subject": "eng",
+ "sections": [
+  {
+   "name": "Starter. Hello!",
+   "lessons": [
+    {
+     "t": "Hello! Greetings",
+     "b": "Hello, Hi, Goodbye; знайомство з підручником і героєм Sam"
+    },
+    {
+     "t": "What's your name? I'm…",
+     "b": "запит і повідомлення імені, діалог знайомства, пісня Hello"
+    },
+    {
+     "t": "How are you? I'm fine",
+     "b": "запитання про справи, ввічливі відповіді, рольова гра"
+    },
+    {
+     "t": "Classroom commands",
+     "b": "Stand up, sit down, open, close, listen, look — TPR-ігри"
+    }
+   ]
+  },
+  {
+   "name": "Unit 1. My School",
+   "lessons": [
+    {
+     "t": "School things: pen, pencil, book, bag",
+     "b": "назви шкільного приладдя, What's this? It's a…"
+    },
+    {
+     "t": "School things: ruler, rubber, pencil case",
+     "b": "нова лексика, гра What's missing?, вказівки Show me…"
+    },
+    {
+     "t": "It's a… / It isn't a…",
+     "b": "впізнавання предметів, короткі відповіді, гра «Чарівна торбинка»"
+    },
+    {
+     "t": "Revision: My School",
+     "b": "лексика теми, пісня, міні-діалоги про шкільне приладдя"
+    }
+   ]
+  },
+  {
+   "name": "Unit 2. Colours",
+   "lessons": [
+    {
+     "t": "Colours: red, blue, yellow, green",
+     "b": "назви кольорів, What colour is it? It's red"
+    },
+    {
+     "t": "Colours: orange, pink, black, white, brown",
+     "b": "нові кольори, розфарбовування за інструкцією"
+    },
+    {
+     "t": "A red pen, a blue bag",
+     "b": "колір + предмет, опис шкільних речей"
+    },
+    {
+     "t": "Rainbow colours. Song",
+     "b": "кольори веселки, пісня про кольори, гра Touch something blue"
+    },
+    {
+     "t": "Revision: Colours",
+     "b": "кольори і шкільні речі, самоперевірка"
+    }
+   ]
+  },
+  {
+   "name": "Unit 3. Numbers",
+   "lessons": [
+    {
+     "t": "Numbers 1–5",
+     "b": "лічба 1–5, How many? пісня про числа"
+    },
+    {
+     "t": "Numbers 6–10",
+     "b": "лічба 6–10, впізнавання чисел на слух"
+    },
+    {
+     "t": "How many pens? Counting",
+     "b": "How many…? Three pens; множина іменників -s"
+    },
+    {
+     "t": "How old are you? I'm six",
+     "b": "запит про вік, діалог, число свічок на торті"
+    },
+    {
+     "t": "Revision: Numbers and colours",
+     "b": "числа 1–10, кольори, гра Bingo"
+    }
+   ]
+  },
+  {
+   "name": "Unit 4. My Toys",
+   "lessons": [
+    {
+     "t": "Toys: ball, doll, car, teddy bear",
+     "b": "назви іграшок, This is my…"
+    },
+    {
+     "t": "Toys: kite, robot, train, plane",
+     "b": "нова лексика, гра Guess the toy"
+    },
+    {
+     "t": "I've got a… Have you got a…?",
+     "b": "наявність іграшок, короткі відповіді Yes, I have / No, I haven't"
+    },
+    {
+     "t": "My favourite toy",
+     "b": "колір і назва іграшки, опис з 2–3 речень за зразком"
+    },
+    {
+     "t": "Where's my ball? In, on, under",
+     "b": "прийменники місця, пошук іграшок, гра Hide and seek"
+    },
+    {
+     "t": "Revision: My Toys",
+     "b": "лексика теми, пісня, рольова гра «Магазин іграшок»"
+    }
+   ]
+  },
+  {
+   "name": "Unit 5. My Family",
+   "lessons": [
+    {
+     "t": "Family: mum, dad, sister, brother",
+     "b": "члени родини, This is my mum"
+    },
+    {
+     "t": "Family: grandma, grandpa, baby",
+     "b": "нова лексика, родинне фото, Who's this?"
+    },
+    {
+     "t": "How many brothers and sisters?",
+     "b": "розповідь про родину з числами, I've got one sister"
+    },
+    {
+     "t": "I love my family. Song and poem",
+     "b": "пісня про родину, вірш, малюнок і підпис My family"
+    },
+    {
+     "t": "Merry Christmas! Happy New Year!",
+     "b": "святкова лексика, листівка, пісня We Wish You a Merry Christmas"
+    },
+    {
+     "t": "Семестрова діагностувальна робота",
+     "b": "аудіювання і говоріння: привітання, шкільні речі, кольори, числа, іграшки, родина"
+    },
+    {
+     "t": "Підсумковий урок. Our English Show",
+     "b": "пісні, вірші, міні-діалоги семестру; самооцінювання"
+    }
+   ]
+  }
+ ]
+}

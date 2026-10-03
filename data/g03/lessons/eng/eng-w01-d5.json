@@ -1,0 +1,228 @@
+{
+ "id": "eng-w01-d5",
+ "subject": "eng",
+ "title": "Can you swim? Дії і звуки",
+ "goal": "Навчитися казати, що вмієш і не вмієш робити (can / can't), і читати слова зі звуками a_e, o, th, sh, ee, ea.",
+ "minutes": 35,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Щоб розповісти, що ти вмієш, англійською використовуємо слово **can**. Воно не змінюється за особами й після нього дієслово стоїть без змін."
+  },
+  {
+   "type": "rule",
+   "title": "can / can't",
+   "text": "I can swim. — Я вмію плавати.\nI can't swim. — Я не вмію плавати.\nCan you swim? — Ти вмієш плавати?\nYes, I can. / No, I can't."
+  },
+  {
+   "type": "vocab",
+   "title": "Дії",
+   "items": [
+    {
+     "en": "swim",
+     "uk": "плавати"
+    },
+    {
+     "en": "run",
+     "uk": "бігати"
+    },
+    {
+     "en": "jump",
+     "uk": "стрибати"
+    },
+    {
+     "en": "dance",
+     "uk": "танцювати"
+    },
+    {
+     "en": "sing",
+     "uk": "співати"
+    },
+    {
+     "en": "draw",
+     "uk": "малювати"
+    },
+    {
+     "en": "read",
+     "uk": "читати"
+    },
+    {
+     "en": "write",
+     "uk": "писати"
+    }
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Звуки й букви",
+   "head": [
+    "Читання",
+    "Приклади"
+   ],
+   "rows": [
+    [
+     "a_e (звук ейй)",
+     "cake, name, make"
+    ],
+    [
+     "o (звук о)",
+     "dog, box, top"
+    ],
+    [
+     "th",
+     "this, three, thank"
+    ],
+    [
+     "sh",
+     "ship, fish, shop"
+    ],
+    [
+     "ee",
+     "tree, bee, see"
+    ],
+    [
+     "ea",
+     "read, sea, eat"
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "Can you swim?",
+   "lines": [
+    {
+     "who": "Tom",
+     "text": "Can you swim, Kate?"
+    },
+    {
+     "who": "Kate",
+     "text": "Yes, I can. I can swim and dance."
+    },
+    {
+     "who": "Tom",
+     "text": "I can't swim, but I can run and jump."
+    }
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Після can дієслово завжди без закінчення: I can run, не I can runs."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай дію з перекладом.",
+   "pairs": [
+    [
+     "swim",
+     "плавати"
+    ],
+    [
+     "jump",
+     "стрибати"
+    ],
+    [
+     "sing",
+     "співати"
+    ],
+    [
+     "draw",
+     "малювати"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Як сказати «Я вмію танцювати»?",
+   "options": [
+    "I can dance.",
+    "I can't dance.",
+    "Can you dance?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "choice",
+   "q": "Яке речення означає «Я не вмію співати»?",
+   "options": [
+    "I can sing.",
+    "I can't sing.",
+    "Can you sing?"
+   ],
+   "answer": 1
+  },
+  {
+   "type": "fill",
+   "q": "Встав слово.",
+   "text": "Can you jump? Yes, I {can}. Can you fly? No, I {can't}."
+  },
+  {
+   "type": "sort",
+   "q": "Розклади слова за звуком.",
+   "groups": {
+    "sh": [
+     "ship",
+     "fish",
+     "shop"
+    ],
+    "ee": [
+     "tree",
+     "bee",
+     "see"
+    ]
+   }
+  },
+  {
+   "type": "order",
+   "q": "Склади речення.",
+   "items": [
+    "I",
+    "can",
+    "swim"
+   ]
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос.",
+   "text": "I can swim. I can't fly. This ship is big.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "truefalse",
+   "q": "Правильно чи ні?",
+   "items": [
+    {
+     "text": "I can run — Я вмію бігати",
+     "answer": true
+    },
+    {
+     "text": "I can't read — Я вмію читати",
+     "answer": false
+    },
+    {
+     "text": "Yes, I can — Так, я вмію",
+     "answer": true
+    }
+   ]
+  },
+  {
+   "type": "fill",
+   "q": "Допиши слова.",
+   "text": "I can {draw}. I can't {sing}.",
+   "hint": "Підстав слова draw і sing за змістом."
+  },
+  {
+   "type": "text",
+   "q": "Напиши 3 речення про себе: що ти вмієш і що не вмієш. Наприклад: I can run. I can't swim.",
+   "sample": "I can run. I can draw. I can't sing.",
+   "min": 40
+  }
+ ],
+ "reflection": [
+  "Що ти вмієш робити, а що ні? Скажи англійською.",
+  "Які звуки було складно прочитати?"
+ ]
+}

@@ -1,0 +1,201 @@
+{
+ "id": "eng-w02-d1",
+ "subject": "eng",
+ "title": "Look, he swims! Їжа, тварини, дії",
+ "goal": "Повторити слова про їжу й тварин, навчитися казати I like… і some, і додавати -s до дієслова, коли мова про «він» чи «вона».",
+ "minutes": 35,
+ "theory": [
+  {
+   "type": "vocab",
+   "title": "Їжа і тварини",
+   "items": [
+    {
+     "en": "apple",
+     "uk": "яблуко"
+    },
+    {
+     "en": "milk",
+     "uk": "молоко"
+    },
+    {
+     "en": "bread",
+     "uk": "хліб"
+    },
+    {
+     "en": "cheese",
+     "uk": "сир"
+    },
+    {
+     "en": "cat",
+     "uk": "кіт"
+    },
+    {
+     "en": "dog",
+     "uk": "собака"
+    },
+    {
+     "en": "fish",
+     "uk": "риба"
+    },
+    {
+     "en": "bird",
+     "uk": "птах"
+    }
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "I like… і some",
+   "text": "I like apples. — Я люблю яблука.\nI like milk. — Я люблю молоко.\nI don't like fish. — Я не люблю рибу.\nDo you like cheese? — Ти любиш сир?\n**some** — трохи, декілька: some milk, some apples."
+  },
+  {
+   "type": "rule",
+   "title": "Він, вона + дієслово з -s",
+   "text": "I swim. You swim. — але: **He swims. She swims.**\nI run. — He runs.\nI like. — She likes.\nПро одного «він» чи «вона» до дієслова додаємо -s."
+  },
+  {
+   "type": "example",
+   "title": "Приклади",
+   "text": "Look! The dog runs.\nShe likes milk.\nHe swims in the sea.\nThe cat eats fish."
+  },
+  {
+   "type": "dialogue",
+   "title": "At the table",
+   "lines": [
+    {
+     "who": "Mum",
+     "text": "Do you like cheese, Ben?"
+    },
+    {
+     "who": "Ben",
+     "text": "Yes, I do. I like cheese and some milk."
+    },
+    {
+     "who": "Mum",
+     "text": "Look! Our dog likes bread!"
+    }
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Запам'ятай: -s з'являється тільки для he, she, it — коли ми говоримо про одного."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай слово з перекладом.",
+   "pairs": [
+    [
+     "apple",
+     "яблуко"
+    ],
+    [
+     "bread",
+     "хліб"
+    ],
+    [
+     "cheese",
+     "сир"
+    ],
+    [
+     "milk",
+     "молоко"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Обери правильне речення.",
+   "options": [
+    "He swim.",
+    "He swims.",
+    "He swimms."
+   ],
+   "answer": 1
+  },
+  {
+   "type": "fill",
+   "q": "Встав дієслово з -s.",
+   "text": "She {runs} fast. The dog {jumps} high.",
+   "hint": "Додай -s до run і jump."
+  },
+  {
+   "type": "choice",
+   "q": "Як сказати «Я люблю яблука»?",
+   "options": [
+    "I like apples.",
+    "I likes apples.",
+    "He likes apples."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "sort",
+   "q": "Розклади слова.",
+   "groups": {
+    "Їжа": [
+     "milk",
+     "bread",
+     "cheese"
+    ],
+    "Тварини": [
+     "cat",
+     "dog",
+     "bird"
+    ]
+   }
+  },
+  {
+   "type": "order",
+   "q": "Склади речення.",
+   "items": [
+    "She",
+    "likes",
+    "some",
+    "milk"
+   ]
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос.",
+   "text": "I like apples. She likes milk. He swims.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "truefalse",
+   "q": "Правильно чи ні?",
+   "items": [
+    {
+     "text": "He runs. — правильно",
+     "answer": true
+    },
+    {
+     "text": "She like milk. — правильно",
+     "answer": false
+    },
+    {
+     "text": "I like bread. — правильно",
+     "answer": true
+    }
+   ]
+  },
+  {
+   "type": "fill",
+   "q": "Допиши.",
+   "text": "I like {cheese}. My cat {likes} fish."
+  },
+  {
+   "type": "text",
+   "q": "Напиши 3 речення: що ти любиш їсти і що любить твоя тварина (або друг). Наприклад: I like apples. My cat likes fish.",
+   "sample": "I like apples. I like some milk. My cat likes fish.",
+   "min": 40
+  }
+ ],
+ "reflection": [
+  "Коли до дієслова додаємо -s?",
+  "Які слова про їжу ти вже вмієш писати?"
+ ]
+}

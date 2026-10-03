@@ -1,0 +1,68 @@
+/* Правила безпеки Firestore для проєкту zoshyt-4klas — спільні для трьох застосунків:
+     • families     — старий «Зошит 4 клас» (alexmazuka/zoshyt-4klas), доступ за кодом сім'ї;
+     • h10families  — «Історія 10 клас» (alexmazuka/istoriya-10klas), доступ за кодом;
+     • решта        — платформа «Зошит» 1–11 (alexmazuka/zoshyt/app), вхід за email і паролем.
+   Оригінал редагується у Firebase Console → Firestore Database → Rules: вставити цей файл повністю → Publish.
+   Перші два правила скопійовані без змін — працюючі зошити не зачіпаються. */
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---------- старі зошити: без змін ----------
+    match /families/{familyCode} { allow read, write: if familyCode.size() >= 8; }
+    match /h10families/{code} { allow read, write: if code.size() >= 8; }
+
+    // ---------- платформа «Зошит» 1–11 ----------
+    function signedIn() { return request.auth != null && request.auth.token.email is string; }
+    function email() { return request.auth.token.email.lower(); }
+    // Адмін — власник проєкту. Акаунт адміна створюється в Authentication ДО публікації цих правил,
+    // тож зареєструвати цю адресу ще раз ніхто не зможе.
+    function isAdmin() { return signedIn() && email() == 'alex.mazuka@gmail.com'; }
+    // Учасник пілоту — адресу додано в allowlist (робить адмін в адмін-панелі).
+    function member() { return signedIn() && (isAdmin() || exists(/databases/$(database)/documents/allowlist/$(email()))); }
+
+    // Список доступів: людина бачить лише свій запис, керує списком адмін.
+    match /allowlist/{addr} {
+      allow read: if isAdmin() || (signedIn() && email() == addr);
+      allow write: if isAdmin();
+    }
+
+    // Профіль сім'ї: діти, хеш PIN кабінету батьків. Лише власник; адмін — читання.
+    match /users/{uid} {
+      allow read: if (member() && request.auth.uid == uid) || isAdmin();
+      allow create, update: if member() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['email', 'children', 'parentPinHash', 'createdAt'])
+        && (!('children' in request.resource.data) || request.resource.data.children.size() <= 10);
+      allow delete: if isAdmin();
+    }
+
+    // Прогрес дитини: документ {uid}__{childId}. Пише лише власник, адмін читає зведення.
+    match /progress/{docId} {
+      allow read: if (member() && docId.matches(request.auth.uid + '__[A-Za-z0-9_-]+')) || isAdmin();
+      allow create, update: if member() && docId.matches(request.auth.uid + '__[A-Za-z0-9_-]+')
+        && request.resource.data.progressJson is string && request.resource.data.progressJson.size() < 900000;
+      allow delete: if isAdmin();
+    }
+
+    // Повідомлення про помилки: учасник лише створює своє, читає і змінює статус адмін.
+    match /reports/{id} {
+      allow create: if member() && request.resource.data.uid == request.auth.uid
+        && request.resource.data.text is string && request.resource.data.text.size() <= 2000
+        && request.resource.data.status == 'new';
+      allow read, update, delete: if isAdmin();
+    }
+
+    // Сигнал «потрібні нові уроки»: {клас}__{предмет} → до якого номера уроку мають бути готові файли.
+    // Особистих даних немає, тому читати можна без входу (щоб щоденна рутина бачила, що писати).
+    // Учасник може лише збільшувати maxN у межах плану.
+    match /demand/{key} {
+      allow read: if true;
+      allow create, update: if isAdmin() || (member()
+        && key.matches('g(0[1-9]|1[01])__[a-z0-9]+')
+        && request.resource.data.keys().hasOnly(['grade', 'subject', 'maxN', 'updatedAt'])
+        && request.resource.data.maxN is int && request.resource.data.maxN > 0 && request.resource.data.maxN <= 200
+        && (resource == null || request.resource.data.maxN >= resource.data.maxN));
+      allow delete: if isAdmin();
+    }
+  }
+}

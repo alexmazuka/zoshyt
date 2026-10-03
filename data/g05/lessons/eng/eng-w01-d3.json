@@ -1,0 +1,66 @@
+{
+  "id": "eng-w01-d3",
+  "subject": "eng",
+  "title": "Hello again! Знайомство і повторення",
+  "goal": "Дізнатися, що буде на уроках англійської в 5 класі, і пригадати привітання, уявлення про себе, алфавіт та вирази для класу.",
+  "minutes": 35,
+  "terms": {},
+  "theory": [
+    {"type": "p", "text": "Привіт, п'ятикласнику! Ти вже вивчав англійську в початковій школі, тож сьогодні ми не починаємо з нуля, а **пригадуємо** те, що ти знаєш, і готуємося до нового."},
+    {"type": "list", "title": "Що буде в цьому семестрі", "items": ["**Starter** — повторення: привітання, шкільні речі, числа, кольори, вхідна діагностувальна робота.", "**Unit 1. Me and My Friends** — розповідаємо про себе і друзів: вік, країна, зовнішність, характер; дієслово to be і have got.", "**Unit 2. Family and Home** — родина, кімнати, меблі, There is / There are, прийменники місця.", "У кожному уроці: нові слова, коротке правило, вправи на читання, письмо і говоріння вголос.", "Щодня тренуй **говоріння**: читай слова і речення вголос — так мова запам'ятовується найкраще."]},
+    {"type": "vocab", "title": "Greetings and introductions — привітання і знайомство", "items": [
+      {"en": "Hello! / Hi!", "uk": "Привіт!", "ex": "Hi, Anna!"},
+      {"en": "Good morning", "uk": "Доброго ранку", "ex": "Good morning, Mr Brown."},
+      {"en": "Good afternoon", "uk": "Добрий день", "ex": "Good afternoon, class!"},
+      {"en": "Good evening", "uk": "Добрий вечір", "ex": "Good evening, Mum."},
+      {"en": "How are you?", "uk": "Як справи?", "ex": "How are you, Tom?"},
+      {"en": "I'm fine, thanks.", "uk": "У мене все добре, дякую.", "ex": "I'm fine, thanks. And you?"},
+      {"en": "Nice to meet you.", "uk": "Приємно познайомитися.", "ex": "Nice to meet you, Kate."},
+      {"en": "What's your name?", "uk": "Як тебе звати?", "ex": "What's your name?"},
+      {"en": "My name is …", "uk": "Мене звати …", "ex": "My name is Oleh."},
+      {"en": "Goodbye! / Bye!", "uk": "До побачення!", "ex": "Bye, see you tomorrow!"}
+    ]},
+    {"type": "dialogue", "title": "Meeting a new classmate", "lang": "en", "lines": [
+      {"who": "Anna", "text": "Hello! I'm Anna. What's your name?"},
+      {"who": "Max", "text": "Hi, Anna! My name is Max. Nice to meet you."},
+      {"who": "Anna", "text": "Nice to meet you, too. How are you?"},
+      {"who": "Max", "text": "I'm fine, thanks. And you?"},
+      {"who": "Anna", "text": "I'm great! How do you spell your name?"},
+      {"who": "Max", "text": "M-A-X."}
+    ]},
+    {"type": "rule", "title": "Alphabet and spelling — алфавіт і спелінг", "text": "В англійському алфавіті **26 літер**: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z.\nЩоб продиктувати ім'я по літерах, питають: **How do you spell it?** — Як це пишеться?\nВідповідь: літери по одній, наприклад: Anna — A, N, N, A."},
+    {"type": "table", "title": "Назви літер (як вони звучать)", "head": ["Літери", "Читаються приблизно як"], "rows": [["A, H, J, K", "ей, ейч, джей, кей"], ["B, C, D, E, G, P, T, V", "бі, сі, ді, і, джі, пі, ті, ві"], ["F, L, M, N, S, X, Z", "еф, ел, ем, ен, ес, екс, зед"], ["I, Y", "ай, вай"], ["O, Q, U, W, R", "оу, k'ю, ю, дабл'ю, а"]]},
+    {"type": "vocab", "title": "Classroom language — вирази для уроку", "items": [
+      {"en": "Open your book.", "uk": "Відкрий книжку.", "ex": "Open your book, please."},
+      {"en": "Close your book.", "uk": "Закрий книжку.", "ex": "Close your book."},
+      {"en": "Listen.", "uk": "Слухай.", "ex": "Listen and repeat."},
+      {"en": "Repeat, please.", "uk": "Повтори, будь ласка.", "ex": "Can you repeat, please?"},
+      {"en": "I don't understand.", "uk": "Я не розумію.", "ex": "Sorry, I don't understand."},
+      {"en": "May I come in?", "uk": "Можна зайти?", "ex": "May I come in, please?"},
+      {"en": "Sit down. / Stand up.", "uk": "Сідай. / Встань.", "ex": "Stand up, please."},
+      {"en": "Thank you.", "uk": "Дякую.", "ex": "Thank you very much."}
+    ]},
+    {"type": "tip", "text": "Слова **Please** (будь ласка, коли просиш) і **Thank you** (дякую) роблять мову ввічливою. Додавай їх до прохань — це завжди звучить добре."}
+  ],
+  "exercises": [
+    {"type": "speak", "q": "Прочитай діалог вголос двічі: спершу за Anna, потім за Max.", "text": "Hello! I'm Anna. What's your name? My name is Max. Nice to meet you. How are you? I'm fine, thanks.", "lang": "en"},
+    {"type": "match", "q": "З'єднай англійський вираз з перекладом.", "pairs": [["What's your name?", "Як тебе звати?"], ["How are you?", "Як справи?"], ["Nice to meet you.", "Приємно познайомитися."], ["Goodbye!", "До побачення!"], ["I don't understand.", "Я не розумію."]]},
+    {"type": "choice", "q": "Ти заходиш до класу вранці. Що скажеш учителеві?", "options": ["Good morning!", "Good evening!", "Goodbye!", "Good night!"], "answer": 0, "explain": "Вранці кажуть Good morning."},
+    {"type": "choice", "q": "Ти не почув слова вчителя. Що скажеш?", "options": ["Repeat, please.", "Stand up, please.", "Nice to meet you.", "I'm fine, thanks."], "answer": 0, "explain": "Repeat, please — «повтори, будь ласка»."},
+    {"type": "fill", "q": "Допиши слова в діалозі.", "text": "— Hello! What's your {name}? — My name {is} Kate. How {are} you? — I'm {fine}, thanks."},
+    {"type": "order", "q": "Розстав репліки діалогу в правильному порядку.", "items": ["Hi! I'm Tom.", "Hello, Tom! I'm Lily.", "Nice to meet you, Lily.", "Nice to meet you, too.", "Bye, Tom!"]},
+    {"type": "input", "q": "Скільки літер в англійському алфавіті? Напиши число.", "answer": ["26", "twenty-six", "twenty six"], "explain": "В англійському алфавіті 26 літер."},
+    {"type": "fill", "q": "Продиктуй ім'я Anna по літерах: допиши пропущену.", "text": "A - N - {N} - A"}
+  ],
+  "homework": [
+    {"type": "truefalse", "q": "Так чи ні?", "items": [
+      {"text": "Good evening кажуть, коли зустрічаються ввечері.", "answer": true},
+      {"text": "Фраза How are you? означає «Як тебе звати?».", "answer": false},
+      {"text": "В англійському алфавіті 26 літер.", "answer": true},
+      {"text": "Thank you означає «будь ласка, повтори».", "answer": false}
+    ]},
+    {"type": "speak", "q": "Скажи вголос англійською: привітайся, назви своє ім'я, запитай «Як справи?» та попрощайся.", "text": "Hello! My name is … How are you? Bye!", "lang": "en"},
+    {"type": "text", "q": "Напиши короткий діалог (4–6 реплік) між двома дітьми, які знайомляться: привітання, імена, How are you?, прощання. Англійською.", "sample": "— Hello! I'm Olya. What's your name? — Hi, Olya! My name is Dan. Nice to meet you. — Nice to meet you, too. How are you? — I'm fine, thanks. Bye! — Bye, Dan!", "min": 60}
+  ],
+  "reflection": ["Які привітання і вирази ти пам'ятав одразу?", "Що з повторення було складним?", "Що ти хочеш навчитися казати англійською цього семестру?"]
+}

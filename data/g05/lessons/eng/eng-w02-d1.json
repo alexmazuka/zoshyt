@@ -1,0 +1,35 @@
+{
+  "id": "eng-w02-d1",
+  "subject": "eng",
+  "title": "Діагностувальна робота (вхідна)",
+  "goal": "Перевірити, що ти пам'ятаєш з англійської початкової школи: читання, лексику і граматику, щоб далі вчитися без прогалин.",
+  "minutes": 35,
+  "terms": {},
+  "theory": [
+    {"type": "p", "text": "Це **вхідна діагностувальна робота**. Вона не для оцінки, а щоб побачити, що ти вже вмієш, а що варто повторити. Працюй самостійно, без підказок і словника."},
+    {"type": "rule", "title": "Що треба пам'ятати перед роботою", "text": "Скорочена форма: I am = I'm, He is = He's, It is = It's, do not = don't.\nДієслово **to be**: I **am**, he/she/it **is**, we/you/they **are**.\nМножина: pen — pens, box — boxes.\nПитання про предмет: **What is this?** Про кількість: **How many …?**"},
+    {"type": "reading", "title": "My new school", "genre": "Короткий текст", "text": "Hi! My name is Dan. I'm eleven. I'm from Lviv. This is my new school. It's big and beautiful. My classroom is on the second floor. There are twenty desks, a board and two windows. My best friend is Mia. She's twelve. She likes English and music. We have English on Monday, Wednesday and Friday. I like my school!"},
+    {"type": "tip", "text": "Спочатку прочитай текст двічі, а потім відповідай на питання. Якщо слово незнайоме, спробуй здогадатися за змістом."}
+  ],
+  "exercises": [
+    {"type": "choice", "q": "Читання. How old is Dan?", "options": ["Ten", "Eleven", "Twelve", "Thirteen"], "answer": 1, "explain": "Dan каже: I'm eleven."},
+    {"type": "choice", "q": "Читання. Where is Dan's classroom?", "options": ["On the first floor", "On the second floor", "On the third floor", "In the garden"], "answer": 1, "explain": "У тексті: My classroom is on the second floor."},
+    {"type": "number", "q": "Читання. How many desks are there in the classroom? Запиши цифрами.", "answer": 20},
+    {"type": "truefalse", "q": "Читання. Так чи ні?", "items": [
+      {"text": "Dan is from Lviv.", "answer": true},
+      {"text": "Mia is eleven.", "answer": false},
+      {"text": "They have English on Monday, Wednesday and Friday.", "answer": true},
+      {"text": "Dan doesn't like his school.", "answer": false}
+    ]},
+    {"type": "match", "q": "Лексика. З'єднай слово з перекладом.", "pairs": [["window", "вікно"], ["floor", "поверх"], ["friend", "друг"], ["desk", "парта"], ["board", "дошка"]]},
+    {"type": "fill", "q": "Граматика. Допиши am, is або are.", "text": "I {am} a student. She {is} twelve. We {are} friends. They {are} in the classroom."},
+    {"type": "choice", "q": "Граматика. Яка форма множини слова box?", "options": ["boxs", "boxes", "boxies", "box"], "answer": 1, "explain": "Після x додаємо -es: boxes."},
+    {"type": "speak", "q": "Говоріння. Прочитай вголос текст про Dan і Mia повільно й чітко.", "text": "Hi! My name is Dan. I'm eleven. I'm from Lviv. My best friend is Mia. She likes English and music.", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Допиши числа та кольори.", "text": "12 — {twelve}; 30 — {thirty}; червоний — {red}; зелений — {green}"},
+    {"type": "choice", "q": "Вибери правильне речення.", "options": ["These is my pen.", "These are my pens.", "This are my pens.", "Those is my pen."], "answer": 1, "explain": "These + are + множина: These are my pens."},
+    {"type": "text", "q": "Напиши англійською 5 речень про себе: ім'я, вік, місто, улюблений предмет, найкращий друг або подруга.", "sample": "My name is Ira. I'm eleven. I'm from Kyiv. I like English. My best friend is Sofia.", "min": 70}
+  ],
+  "reflection": ["Які завдання були легкими?", "Що саме треба повторити: слова, граматику чи читання?", "Яку оцінку роботі ти поставив би собі сам?"]
+}

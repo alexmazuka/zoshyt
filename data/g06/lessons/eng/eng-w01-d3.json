@@ -1,0 +1,61 @@
+{
+  "id": "eng-w01-d3",
+  "subject": "eng",
+  "title": "Hello again! Talking about the summer holidays",
+  "goal": "Привітатися англійською після канікул, розповісти, куди ти їздив(-ла), представити друга і повторити дієслово to be.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "Вітаємо в англійській для 6 класу! У цьому семестрі ти повторюєш усе, що знаєш із 5 класу (дієслова **to be**, **have got**, **can**, теперішні часи), а потім вивчаєш теми: родина і друзі, мій дім, а далі — минулий час (Past Simple), розповіді про події, читання та листи. На кожному уроці буде новий словник, коротке правило, вправи з перевіркою і домашнє завдання. Кожен урок — це слова + граматика + говоріння вголос + трохи письма. Читай вголос — так мова запам'ятовується краще."},
+    {"type": "p", "text": "Сьогодні — перший урок. Після канікул люди зазвичай питають одне одного, як справи і де вони були. Розберемо, як це робити англійською."},
+    {"type": "vocab", "title": "Words for talking about holidays", "items": [
+      {"en": "holiday", "uk": "канікули, відпустка", "ex": "I had a great holiday."},
+      {"en": "summer", "uk": "літо", "ex": "Summer is my favourite season."},
+      {"en": "visit", "uk": "відвідувати", "ex": "I visited my grandma."},
+      {"en": "sea", "uk": "море", "ex": "We swam in the sea."},
+      {"en": "mountains", "uk": "гори", "ex": "They went to the mountains."},
+      {"en": "village", "uk": "село", "ex": "My cousin lives in a village."},
+      {"en": "friend", "uk": "друг, подруга", "ex": "This is my friend Max."},
+      {"en": "relax", "uk": "відпочивати", "ex": "I relaxed at home."},
+      {"en": "stay", "uk": "залишатися, зупинятися", "ex": "We stayed at home."},
+      {"en": "great", "uk": "чудовий", "ex": "It was great!"}
+    ]},
+    {"type": "dialogue", "title": "Meeting after the holidays", "lines": [
+      {"who": "Anna", "text": "Hi, Tom! Nice to see you again. How are you?"},
+      {"who": "Tom", "text": "Hello, Anna! I'm fine, thanks. And you?"},
+      {"who": "Anna", "text": "I'm great. Where were you in summer?"},
+      {"who": "Tom", "text": "I was in the mountains with my family. And you?"},
+      {"who": "Anna", "text": "I visited my grandparents in a village. It was really quiet."},
+      {"who": "Tom", "text": "Sounds nice! Do you know Kate? She is my new friend."},
+      {"who": "Anna", "text": "Hi, Kate! I'm Anna. Nice to meet you."}
+    ]},
+    {"type": "tip", "text": "Дієслово **visit** у минулому часі має закінчення -ed: **visited**. Поки що запам'ятай цю форму як готову фразу: *I visited my grandma.* Детально минулий час ми вивчатимемо пізніше."},
+    {"type": "rule", "title": "To be (бути) у теперішньому часі", "text": "I **am** (I'm) · he / she / it **is** (he's, she's, it's) · we / you / they **are** (we're, you're, they're).\nЗаперечення: I'm not, he **isn't**, we **aren't**.\nПитання: **Are** you ready? — Yes, I **am**. / No, I'm not."},
+    {"type": "table", "title": "Introducing people", "head": ["Ситуація", "Що сказати"], "rows": [
+      ["Привітатися", "Hello! / Hi! / Good morning!"],
+      ["Запитати, як справи", "How are you? — I'm fine, thanks."],
+      ["Представитися", "I'm Anna. / My name is Anna."],
+      ["Представити друга", "This is my friend Kate."],
+      ["Познайомитися", "Nice to meet you."]
+    ]}
+  ],
+  "exercises": [
+    {"type": "match", "q": "З'єднай англійські слова з перекладом.", "pairs": [["holiday", "канікули"], ["sea", "море"], ["village", "село"], ["mountains", "гори"], ["relax", "відпочивати"]]},
+    {"type": "fill", "q": "Встав правильну форму to be (am, is, are).", "text": "I {am} from Ukraine. She {is} my friend. We {are} in class 6. They {are} at school."},
+    {"type": "choice", "q": "Як представити подругу Катю?", "options": ["This is my friend Kate.", "Where is my friend Kate?", "Kate are my friend."], "answer": 0, "explain": "Фраза This is… використовується, щоб представити людину."},
+    {"type": "choice", "q": "Яка відповідь підходить до питання «How are you?»", "options": ["I'm fine, thanks.", "I'm twelve.", "It's a book."], "answer": 0, "explain": "How are you? — це питання про самопочуття, відповідь: I'm fine / I'm great."},
+    {"type": "truefalse", "q": "Познач, чи правильні речення.", "items": [
+      {"text": "He are my friend.", "answer": false},
+      {"text": "They are in the mountains.", "answer": true},
+      {"text": "I is happy.", "answer": false},
+      {"text": "It is a great holiday.", "answer": true}
+    ]},
+    {"type": "order", "q": "Розстав слова так, щоб вийшло питання.", "items": ["Where", "were", "you", "in summer?"], "explain": "Було: Where were you in summer? — «Де ти був(-ла) влітку?»"},
+    {"type": "speak", "q": "Прочитай уголос і запиши себе або перевір вимову.", "text": "Hello! My name is … I visited my grandparents in summer. It was great. This is my friend …", "lang": "en-US"}
+  ],
+  "homework": [
+    {"type": "input", "q": "Напиши англійською слово «море».", "answer": ["sea"]},
+    {"type": "fill", "q": "Встав am, is або are.", "text": "My friends {are} funny. I {am} happy to see you. Kate {is} in the garden."},
+    {"type": "text", "q": "Напиши 4–5 речень англійською про свої літні канікули: де ти був(-ла), що робив(-ла), як тобі було. Використай слова visit, sea, village, great.", "sample": "I had a great holiday. I visited my grandma in a village. We swam in the river. It was quiet and nice. I'm happy to be back at school.", "min": 80}
+  ],
+  "reflection": ["Які нові слова про канікули ти запам'ятав(-ла)?", "Чи зміг(-ла) ти представити друга англійською?"]
+}

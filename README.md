@@ -1,19 +1,37 @@
-# Зошит — сторінка пілоту
+# «Зошит» — платформа 1–11 класів від NextEducationAI
 
-Лендинг із записом на безкоштовний пілот цифрового робочого зошита для 4 класу від NextEducationAI.
-
-- Сторінка: https://alexmazuka.github.io/zoshyt/ (надалі — https://zoshyt.nexteducationai.org)
-- Заявки збирає Formspree, форма `mykqewaj`: https://formspree.io/forms/mykqewaj/submissions
-- Щоб бачити, звідки прийшла заявка, додавайте до посилання `?from=назва-каналу`, наприклад `?from=fb-simeyna-forma`. Значення потрапить у поле «Звідки».
-
-## Субдомен zoshyt.nexteducationai.org
-
-1. У DNS домену (NS: pid1.srv53.net / pid2.srv53.org) додати запис `zoshyt  CNAME  alexmazuka.github.io.`
-2. Коли запис почне резолвитися: Settings → Pages → Custom domain = `zoshyt.nexteducationai.org`, увімкнути Enforce HTTPS.
-3. Замінити в `index.html` адресу `og:image` на `https://zoshyt.nexteducationai.org/og.png`.
+- Сайт: https://zoshyt.online/ (GitHub Pages, репозиторій alexmazuka/zoshyt)
+- Вхід у зошит для сімей пілоту: https://zoshyt.online/app/ (логін і пароль видає команда)
+- Адмін-панель команди: https://zoshyt.online/app/admin.html
+- Заявки на пілот збирає Formspree, форма `mykqewaj`: https://formspree.io/forms/mykqewaj/submissions. Щоб бачити джерело заявки, додавайте до посилання `?from=назва-каналу`.
 
 ## Структура
 
-`index.html` — лендинг (JS для демо-уроків і форми всередині) · `programa.html` — каталог усіх уроків за класами й предметами · `site.css` — спільні стилі · `fonts/` — локальні шрифти, без Google Fonts і сторонніх запитів · `og.png` — картинка для прев'ю посилання · `favicon.svg`.
+| Шлях | Що це |
+|---|---|
+| `index.html`, `programa.html`, `site.css`, `fonts/`, `og.png` | лендинг і каталог «Програма» усіх уроків 1–11 класів |
+| `app/` | застосунок: вхід, «Мій шлях», предмети, урок, кабінет батьків, адмін-панель |
+| `data/calendar.json` | навчальні тижні I семестру 2026/27 |
+| `data/gXX/` | клас XX: `subjects.json` (предмети і розклад), `plan/*.json` (теми), `plan.json` (зібраний план), `lessons/{предмет}/*.json` (уроки) |
+| `tools/` | `build_plan.py` (збирає plan.json), `validate.py` (перевіряє уроки), `migrate_g10_history.py` |
+| `AUTHORING.md`, `GRADES.md` | правила написання уроків і планів |
+| `sync/firestore.rules` | правила доступу до бази Firebase (вставляються в консоль) |
 
-Каталог «Програма» читає `data/plan.json`, `data/subjects.json` і `data/calendar.json` прямо з сайтів [zoshyt-4klas](https://alexmazuka.github.io/zoshyt-4klas/) та [istoriya-10klas](https://alexmazuka.github.io/istoriya-10klas/), тож новий урок стає «доступно», щойно в репозиторії застосунку оновлено `plan.json` (`python3 tools/build_plan.py`). Щоб додати клас, допишіть його в `SOURCES` у `programa.html`.
+## Як працює відкриття уроків
+
+Уроки кожного предмета відкриваються по черзі: наступний — після практики і домашнього попереднього. Спочатку написано лише стартові уроки. Коли дитина підходить до уроку, файлу якого ще немає (із запасом у 2 уроки), застосунок записує сигнал у `demand/{клас}__{предмет}`. Ці сигнали видно в адмін-панелі на вкладці «Потрібні уроки»: кнопка «Завдання» копіює готове завдання для Claude. Після запису уроків:
+
+```
+python3 tools/validate.py gXX
+python3 tools/build_plan.py gXX
+```
+
+потім коміт і пуш — урок стає доступним одразу.
+
+## База і доступи
+
+Firebase-проєкт `zoshyt-4klas` (спільний зі старими зошитами 4 і 10 класу). Колекції платформи: `allowlist` (хто має доступ), `users` (сім'я: діти, хеш PIN), `progress` (прогрес дитини), `reports` (повідомлення про помилки), `demand` (потрібні уроки). Доступ видає адмін на вкладці «Доступи»: акаунт із випадковим паролем і готове повідомлення для надсилання.
+
+## Тестовий режим
+
+Локально: `python3 -m http.server` у корені і відкрити `http://localhost:8000/app/?mock=1` (адмін — `?mock=admin`). Дані тестового режиму живуть лише в браузері.

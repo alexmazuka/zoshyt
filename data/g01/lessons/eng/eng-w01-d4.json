@@ -1,0 +1,51 @@
+{
+  "id": "eng-w01-d4",
+  "subject": "eng",
+  "title": "What's your name? I'm…",
+  "goal": "Навчитися запитувати, як звати, і називати своє ім'я англійською: What's your name? I'm …",
+  "minutes": 20,
+  "terms": {},
+  "theory": [
+    {"type": "p", "text": "Дорослий читає: Минулого разу ми вітались із Sam. Тепер познайомимось: навчимось питати ім'я і казати своє."},
+    {"type": "image", "emoji": "👦❓👧", "caption": "Sam питає дівчинку, як її звати."},
+    {"type": "vocab", "title": "Нові слова", "items": [
+      {"en": "What's your name?", "uk": "Як тебе звати?", "ex": "Hello! What's your name?"},
+      {"en": "I'm …", "uk": "Я … (називаю своє ім'я)", "ex": "I'm Sam."},
+      {"en": "My name is …", "uk": "Моє ім'я …", "ex": "My name is Anna."},
+      {"en": "nice to meet you", "uk": "приємно познайомитись", "ex": "Nice to meet you!"},
+      {"en": "boy", "uk": "хлопчик", "ex": "Sam is a boy."},
+      {"en": "girl", "uk": "дівчинка", "ex": "Anna is a girl."},
+      {"en": "yes", "uk": "так", "ex": "Yes!"},
+      {"en": "hello", "uk": "привіт", "ex": "Hello!"}
+    ]},
+    {"type": "rule", "title": "Запам'ятай", "text": "Питаємо: **What's your name?**\nВідповідаємо: **I'm Sam.** або **My name is Sam.**\nНа місці Sam кажи своє ім'я."},
+    {"type": "dialogue", "title": "Sam і Anna знайомляться", "lang": "en", "lines": [
+      {"who": "Sam", "text": "Hello! What's your name?"},
+      {"who": "Anna", "text": "Hi! I'm Anna. What's your name?"},
+      {"who": "Sam", "text": "I'm Sam."},
+      {"who": "Anna", "text": "Nice to meet you, Sam!"},
+      {"who": "Sam", "text": "Nice to meet you, Anna!"}
+    ]},
+    {"type": "tip", "text": "Пісенька Hello: «Hello, hello, what's your name? Hello, hello, I'm Sam!» Заспівай її з дорослим і підстав своє ім'я. Можна плескати в долоні."},
+    {"type": "image", "emoji": "🎵👋🎶", "caption": "Співаємо пісеньку Hello і махаємо рукою."}
+  ],
+  "exercises": [
+    {"type": "speak", "q": "Дорослий читає: Скажи вголос, підстав своє ім'я замість Sam.", "text": "Hello! I'm Sam. What's your name?", "lang": "en"},
+    {"type": "match", "q": "З'єднай англійське з українським.", "pairs": [["What's your name?", "Як тебе звати?"], ["I'm Sam.", "Я Сем."], ["nice to meet you", "приємно познайомитись"], ["boy", "хлопчик"], ["girl", "дівчинка"]]},
+    {"type": "choice", "q": "Як спитати ім'я англійською?", "options": ["What's your name?", "Goodbye!", "Nice to meet you!"], "answer": 0, "explain": "What's your name? означає «Як тебе звати?»."},
+    {"type": "choice", "q": "Тебе питають: What's your name? Що можна відповісти?", "options": ["Bye!", "I'm Anna.", "Good night!"], "answer": 1, "explain": "I'm Anna — це «Я Анна», так називаємо своє ім'я."},
+    {"type": "order", "q": "Розстав репліки діалогу в правильному порядку.", "items": ["Hello!", "What's your name?", "I'm Sam.", "Nice to meet you!"]},
+    {"type": "fill", "q": "Допиши слова з діалогу.", "text": "Hello! What's your {name}? I'm {Sam}. Nice to {meet} you!"},
+    {"type": "truefalse", "q": "Так чи ні?", "items": [
+      {"text": "What's your name? означає «Як тебе звати?».", "answer": true},
+      {"text": "I'm Sam означає «до побачення».", "answer": false},
+      {"text": "Girl означає «дівчинка».", "answer": true}
+    ]}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Допиши слово.", "text": "What's your {name}? I'm Anna."},
+    {"type": "choice", "q": "Що кажемо, коли знайомимось?", "options": ["Nice to meet you!", "Good night!", "Goodbye!"], "answer": 0, "explain": "Nice to meet you — «приємно познайомитись»."},
+    {"type": "speak", "q": "Познайомся англійською з дорослим або з іграшкою, а потім заспівай пісеньку Hello.", "text": "Hello! What's your name? I'm … Nice to meet you!", "lang": "en"}
+  ],
+  "reflection": ["Як ти скажеш англійською своє ім'я?", "Що було найцікавіше — діалог чи пісенька?"]
+}

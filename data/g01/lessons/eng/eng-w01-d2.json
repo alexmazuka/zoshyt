@@ -1,0 +1,53 @@
+{
+  "id": "eng-w01-d2",
+  "subject": "eng",
+  "title": "Hello! Greetings",
+  "goal": "Познайомитися з англійською мовою і героєм Sam, навчитися вітатися і прощатися: Hello, Hi, Goodbye.",
+  "minutes": 20,
+  "terms": {},
+  "theory": [
+    {"type": "p", "text": "Дорослий читає: Привіт! Сьогодні ми починаємо вивчати **англійську мову**. Це мова, якою говорять у Лондоні, Нью-Йорку та в багатьох інших країнах."},
+    {"type": "image", "emoji": "🧒🌍🇬🇧", "caption": "Англійською розмовляють люди в різних країнах."},
+    {"type": "list", "title": "Що буде в цьому семестрі", "items": ["Ти будеш вітатися і знайомитися: Hello! I'm …", "Вивчиш назви шкільних речей, кольорів і чисел до десяти.", "Познайомишся з іграшками і будеш рахувати їх.", "Співатимеш пісеньки і гратимеш в ігри.", "Говоритимеш вголос — це найголовніше!"]},
+    {"type": "p", "text": "Тебе вестиме друг — хлопчик **Sam** (читається «Сем»). Він любить вітатися з усіма."},
+    {"type": "image", "emoji": "👦👋", "caption": "Sam каже: Hello!"},
+    {"type": "vocab", "title": "Нові слова", "items": [
+      {"en": "hello", "uk": "привіт, добрий день", "ex": "Hello, Sam!"},
+      {"en": "hi", "uk": "привіт (коротко, для друзів)", "ex": "Hi!"},
+      {"en": "goodbye", "uk": "до побачення", "ex": "Goodbye, Sam!"},
+      {"en": "bye", "uk": "бувай (коротко)", "ex": "Bye!"},
+      {"en": "good morning", "uk": "доброго ранку", "ex": "Good morning!"},
+      {"en": "good night", "uk": "на добраніч", "ex": "Good night!"},
+      {"en": "friend", "uk": "друг, подруга", "ex": "Sam is my friend."},
+      {"en": "Sam", "uk": "Сем (ім'я хлопчика)", "ex": "Hello, Sam!"}
+    ]},
+    {"type": "rule", "title": "Запам'ятай", "text": "**Hello** і **Hi** — коли зустрічаємось.\n**Goodbye** і **Bye** — коли прощаємось.\nКажи їх з усмішкою і махай рукою!"},
+    {"type": "dialogue", "title": "Sam і Anna", "lang": "en", "lines": [
+      {"who": "Sam", "text": "Hello!"},
+      {"who": "Anna", "text": "Hi, Sam!"},
+      {"who": "Sam", "text": "Goodbye, Anna!"},
+      {"who": "Anna", "text": "Bye, Sam!"}
+    ]},
+    {"type": "tip", "text": "Слово hello читається «гело́у», hi — «хай», goodbye — «гудба́й». Повторюй за дорослим уголос."}
+  ],
+  "exercises": [
+    {"type": "speak", "q": "Дорослий читає: Скажи вголос і помахай рукою.", "text": "Hello! Hi! Goodbye! Bye!", "lang": "en"},
+    {"type": "match", "q": "З'єднай англійське слово з перекладом.", "pairs": [["hello", "привіт"], ["goodbye", "до побачення"], ["good morning", "доброго ранку"], ["good night", "на добраніч"], ["friend", "друг"]]},
+    {"type": "choice", "q": "Ти зустрів Sam. Що скажеш?", "options": ["Hello!", "Goodbye!", "Good night!"], "answer": 0, "explain": "Hello — це привітання при зустрічі."},
+    {"type": "choice", "q": "Ти йдеш додому. Що скажеш Sam?", "options": ["Hi!", "Bye!", "Hello!"], "answer": 1, "explain": "Bye — це «бувай», так прощаються."},
+    {"type": "sort", "q": "Розклади слова: коли вітаємось, а коли прощаємось?", "groups": {"Вітаємось": ["hello", "hi", "good morning"], "Прощаємось": ["goodbye", "bye", "good night"]}},
+    {"type": "truefalse", "q": "Так чи ні?", "items": [
+      {"text": "Hello означає «привіт».", "answer": true},
+      {"text": "Goodbye означає «доброго ранку».", "answer": false},
+      {"text": "Sam — це ім'я хлопчика.", "answer": true},
+      {"text": "Bye означає «до побачення».", "answer": true}
+    ]},
+    {"type": "fill", "q": "Допиши слово.", "text": "Sam каже: Hello! Anna каже: {Hi}! Sam каже: {Goodbye}!"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Допиши слова: привітання і прощання.", "text": "привіт = {hello|hi}; до побачення = {goodbye|bye}"},
+    {"type": "speak", "q": "Привітайся англійською з усіма вдома і попрощайся з ними ввечері.", "text": "Hello! Hi! Goodbye! Bye! Good night!", "lang": "en"},
+    {"type": "checklist", "q": "Перевір себе.", "items": ["Я можу сказати Hello і Hi.", "Я можу сказати Goodbye і Bye.", "Я знаю, хто такий Sam."]}
+  ],
+  "reflection": ["Яке нове слово тобі сподобалося найбільше?", "З ким ти сьогодні привітався англійською?"]
+}

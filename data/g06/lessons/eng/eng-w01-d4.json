@@ -1,0 +1,53 @@
+{
+  "id": "eng-w01-d4",
+  "subject": "eng",
+  "title": "My school and school subjects",
+  "goal": "Назвати шкільні предмети, розповісти про розклад і улюблені предмети, описати клас за допомогою There is / There are і прийменників місця.",
+  "minutes": 35,
+  "theory": [
+    {"type": "vocab", "title": "School subjects and things", "items": [
+      {"en": "subject", "uk": "предмет", "ex": "My favourite subject is Art."},
+      {"en": "timetable", "uk": "розклад", "ex": "Look at the timetable."},
+      {"en": "Maths", "uk": "математика", "ex": "We have Maths on Monday."},
+      {"en": "History", "uk": "історія", "ex": "History is interesting."},
+      {"en": "Geography", "uk": "географія", "ex": "I like Geography."},
+      {"en": "Music", "uk": "музика", "ex": "We sing in Music."},
+      {"en": "Art", "uk": "образотворче мистецтво", "ex": "I draw in Art."},
+      {"en": "classroom", "uk": "клас, кабінет", "ex": "Our classroom is big."},
+      {"en": "desk", "uk": "парта, стіл", "ex": "My bag is under the desk."},
+      {"en": "board", "uk": "дошка", "ex": "The teacher writes on the board."},
+      {"en": "favourite", "uk": "улюблений", "ex": "What is your favourite subject?"}
+    ]},
+    {"type": "dialogue", "title": "Talking about the timetable", "lines": [
+      {"who": "Ben", "text": "What lessons do we have on Tuesday?"},
+      {"who": "Mia", "text": "We have Maths, English and Music."},
+      {"who": "Ben", "text": "What is your favourite subject?"},
+      {"who": "Mia", "text": "I like Music. And you?"},
+      {"who": "Ben", "text": "I like Geography. I love maps!"}
+    ]},
+    {"type": "rule", "title": "There is / There are", "text": "Кажемо, що щось **є** (існує) у певному місці.\n**There is** + один предмет: There is a board in the classroom.\n**There are** + кілька предметів: There are twenty desks in the classroom.\nЗаперечення: There **isn't** a map. / There **aren't** any computers.\nПитання: **Is there** a map? — Yes, there is. / **Are there** any books? — No, there aren't."},
+    {"type": "rule", "title": "Прийменники місця", "text": "**in** — у, всередині · **on** — на (поверхні) · **under** — під · **next to** — поряд з · **between** — між · **in front of** — перед · **behind** — позаду"},
+    {"type": "figure", "alt": "Схема: м'яч у різних місцях відносно коробки: на коробці, у коробці, під коробкою, поряд з коробкою", "caption": "Where is the ball? Прийменники місця на схемі.", "svg": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\"><g font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\"><rect x=\"20\" y=\"80\" width=\"60\" height=\"50\" fill=\"#E4E9F9\" stroke=\"currentColor\"/><circle cx=\"50\" cy=\"68\" r=\"12\" fill=\"#D23F58\"/><text x=\"20\" y=\"148\">on the box</text><rect x=\"120\" y=\"80\" width=\"60\" height=\"50\" fill=\"#E4E9F9\" stroke=\"currentColor\"/><circle cx=\"150\" cy=\"105\" r=\"12\" fill=\"#D23F58\"/><text x=\"122\" y=\"148\">in the box</text><rect x=\"220\" y=\"80\" width=\"60\" height=\"30\" fill=\"#E4E9F9\" stroke=\"currentColor\"/><circle cx=\"250\" cy=\"128\" r=\"12\" fill=\"#D23F58\"/><text x=\"220\" y=\"156\">under the table</text><text x=\"20\" y=\"30\" fill=\"#2A45B0\">There is a ball. Where is it?</text></g></svg>"},
+    {"type": "tip", "text": "Назви шкільних предметів Maths, History, Geography, Music, Art пишуться з великої літери — так заведено в англійській."}
+  ],
+  "exercises": [
+    {"type": "match", "q": "З'єднай предмет із перекладом.", "pairs": [["Maths", "математика"], ["History", "історія"], ["Geography", "географія"], ["Music", "музика"], ["Art", "образотворче мистецтво"]]},
+    {"type": "fill", "q": "Встав there is або there are.", "text": "{There is} a board in our classroom. {There are} thirty desks. {There is} a map on the wall. {There are} two windows."},
+    {"type": "choice", "q": "Оберіть правильний прийменник: The bag is ___ the desk. (сумка під партою)", "options": ["under", "on", "between"], "answer": 0, "explain": "under означає «під»."},
+    {"type": "choice", "q": "Як спитати, чи є карта в класі?", "options": ["Is there a map in the classroom?", "Are there a map in the classroom?", "There is a map in the classroom?"], "answer": 0, "explain": "Для одного предмета: Is there a …?"},
+    {"type": "truefalse", "q": "Познач, чи правильні речення.", "items": [
+      {"text": "There are a book on the desk.", "answer": false},
+      {"text": "There is a teacher in the classroom.", "answer": true},
+      {"text": "There are three pens on my desk.", "answer": true},
+      {"text": "The cat is in front of the door.", "answer": true}
+    ]},
+    {"type": "sort", "q": "Розклади слова на дві групи.", "groups": {"School subjects": ["Maths", "History", "Music"], "Classroom things": ["desk", "board", "chair"]}},
+    {"type": "speak", "q": "Прочитай уголос і запиши себе або перевір вимову.", "text": "My favourite subject is Art. We have Art on Friday. There are twenty desks in my classroom.", "lang": "en-US"}
+  ],
+  "homework": [
+    {"type": "input", "q": "Напиши англійською слово «розклад».", "answer": ["timetable"]},
+    {"type": "choice", "q": "Оберіть правильну фразу: ___ two windows in the room.", "options": ["There are", "There is", "There am"], "answer": 0, "explain": "two windows — множина, тому There are."},
+    {"type": "text", "q": "Напиши 5 речень англійською про свій улюблений предмет і свій клас. Використай My favourite subject is…, There is…, There are…", "sample": "My favourite subject is Geography. We have it on Wednesday. There is a big map in our classroom. There are two windows. My desk is next to the window.", "min": 80}
+  ],
+  "reflection": ["Чи вмієш ти тепер назвати свої шкільні предмети англійською?", "Коли вживаємо there is, а коли there are?"]
+}

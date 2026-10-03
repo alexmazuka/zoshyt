@@ -1,0 +1,224 @@
+{
+ "subject": "eng",
+ "sections": [
+  {
+   "name": "Starter. Back to School",
+   "lessons": [
+    {
+     "t": "Hello again! Знайомство і повторення",
+     "b": "greetings, introducing yourself, alphabet, spelling names, classroom language"
+    },
+    {
+     "t": "My school things. Повторення лексики",
+     "b": "school objects, colours, numbers 1–100, this/that, these/those, plurals"
+    },
+    {
+     "t": "Діагностувальна робота (вхідна)",
+     "b": "listening, reading, vocabulary and grammar of primary school"
+    }
+   ]
+  },
+  {
+   "name": "Unit 1. Me and My Friends",
+   "lessons": [
+    {
+     "t": "All about me. Дієслово to be",
+     "b": "personal information, age, country, nationality; am / is / are"
+    },
+    {
+     "t": "My friends. Питання і заперечення з to be",
+     "b": "describing friends, questions and short answers, wh-questions"
+    },
+    {
+     "t": "Appearance. Зовнішність",
+     "b": "hair, eyes, height; adjectives order, have got / has got"
+    },
+    {
+     "t": "Character. Риси характеру",
+     "b": "kind, friendly, clever, funny; describing a friend, linking words and, but"
+    },
+    {
+     "t": "Reading: a profile of a pen pal",
+     "b": "reading for specific information, writing about yourself"
+    },
+    {
+     "t": "Writing: an email to a new friend",
+     "b": "email structure, greetings, informal language, personal information"
+    },
+    {
+     "t": "Узагальнення. Тематичний контроль: Unit 1",
+     "b": "vocabulary and grammar test, to be, have got, appearance and character"
+    }
+   ]
+  },
+  {
+   "name": "Unit 2. Family and Home",
+   "lessons": [
+    {
+     "t": "My family. Члени родини",
+     "b": "family members, possessive case 's, family tree"
+    },
+    {
+     "t": "Possessive adjectives. Присвійні займенники",
+     "b": "my, your, his, her, its, our, their; whose"
+    },
+    {
+     "t": "My home. Кімнати і меблі",
+     "b": "rooms, furniture, describing a house or a flat"
+    },
+    {
+     "t": "There is / There are. Prepositions of place",
+     "b": "in, on, under, next to, behind, between; describing a room"
+    },
+    {
+     "t": "Reading: homes around the world",
+     "b": "unusual houses, reading for gist and detail, new vocabulary"
+    },
+    {
+     "t": "Speaking: describing my room",
+     "b": "asking and answering about rooms, giving a short presentation"
+    },
+    {
+     "t": "Writing: my dream house",
+     "b": "planning a description, adjectives, there is / there are"
+    },
+    {
+     "t": "Узагальнення. Тематичний контроль: Unit 2",
+     "b": "family, home, possessives, there is / are, prepositions"
+    }
+   ]
+  },
+  {
+   "name": "Unit 3. My Day",
+   "lessons": [
+    {
+     "t": "Daily routines. Щоденні справи",
+     "b": "get up, have breakfast, go to school; telling the time"
+    },
+    {
+     "t": "Present Simple: affirmative",
+     "b": "he / she / it -s, spelling rules, daily routines"
+    },
+    {
+     "t": "Present Simple: negatives and questions",
+     "b": "do / does, don't / doesn't, short answers"
+    },
+    {
+     "t": "Adverbs of frequency",
+     "b": "always, usually, often, sometimes, never; word order"
+    },
+    {
+     "t": "School subjects and timetable",
+     "b": "school subjects, days of the week, favourite subject, why"
+    },
+    {
+     "t": "Reading: a day in the life of a teenager",
+     "b": "reading for detail, comparing routines in different countries"
+    },
+    {
+     "t": "Listening and speaking: my weekend",
+     "b": "free-time routines, interviewing a classmate, prepositions of time in, on, at"
+    },
+    {
+     "t": "Writing: my school day",
+     "b": "paragraph about routine, sequencing words first, then, after that"
+    },
+    {
+     "t": "Узагальнення. Тематичний контроль: Unit 3",
+     "b": "Present Simple, adverbs of frequency, routines, school subjects"
+    }
+   ]
+  },
+  {
+   "name": "Unit 4. Free Time and Hobbies",
+   "lessons": [
+    {
+     "t": "Hobbies and free-time activities",
+     "b": "playing chess, drawing, reading; like / love / hate + -ing"
+    },
+    {
+     "t": "Sports. Can / can't for ability",
+     "b": "sports vocabulary, play / go / do, asking about abilities"
+    },
+    {
+     "t": "Present Continuous: affirmative",
+     "b": "am / is / are + -ing, spelling rules, actions now"
+    },
+    {
+     "t": "Present Continuous: negatives and questions",
+     "b": "what are you doing? describing a picture"
+    },
+    {
+     "t": "Present Simple vs Present Continuous",
+     "b": "time expressions: every day, now, at the moment; contrast exercises"
+    },
+    {
+     "t": "Reading: clubs and after-school activities",
+     "b": "reading adverts for clubs, choosing a club, giving reasons"
+    },
+    {
+     "t": "Writing: a blog post about my hobby",
+     "b": "blog structure, describing a hobby, reasons and feelings"
+    },
+    {
+     "t": "Узагальнення. Тематичний контроль: Unit 4",
+     "b": "hobbies, sports, can, Present Continuous vs Present Simple"
+    }
+   ]
+  },
+  {
+   "name": "Unit 5. Food and Celebrations",
+   "lessons": [
+    {
+     "t": "Food and drinks. Countable and uncountable nouns",
+     "b": "food vocabulary, a / an / some, healthy eating"
+    },
+    {
+     "t": "Some / any. How much / how many",
+     "b": "quantities, shopping list, questions about food"
+    },
+    {
+     "t": "At the café. Ordering food",
+     "b": "menu, I'd like…, Can I have…? polite requests, role-play"
+    },
+    {
+     "t": "Winter holidays and celebrations in Ukraine and the UK",
+     "b": "St Nicholas Day, Christmas, New Year traditions, greetings cards"
+    },
+    {
+     "t": "Writing: a greeting card / invitation",
+     "b": "structure of invitation, date, time, place, wishes"
+    },
+    {
+     "t": "Узагальнення. Тематичний контроль: Unit 5",
+     "b": "food, countable / uncountable nouns, some / any, celebrations"
+    }
+   ]
+  },
+  {
+   "name": "Підсумки семестру",
+   "lessons": [
+    {
+     "t": "Повторення: граматика і лексика I семестру",
+     "b": "to be, have got, Present Simple, Present Continuous, there is / are"
+    },
+    {
+     "t": "Семестрова контрольна робота: аудіювання і читання",
+     "b": "listening and reading tasks on semester topics"
+    },
+    {
+     "t": "Семестрова контрольна робота: письмо і граматика",
+     "b": "grammar test and a short email or description"
+    },
+    {
+     "t": "Семестрова контрольна робота: говоріння",
+     "b": "talking about yourself, family, day, hobbies"
+    },
+    {
+     "t": "Аналіз семестрових робіт. Project presentation",
+     "b": "error correction, mini-project 'All about me' presentations"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "subject": "eng",
+ "sections": [
+  {
+   "name": "Starter. Hello again!",
+   "lessons": [
+    {
+     "t": "Hello again! Greetings and introductions",
+     "b": "Hello! What's your name? My name is...; How are you? I'm fine"
+    },
+    {
+     "t": "Classroom objects",
+     "b": "pen, pencil, book, bag, ruler, rubber; What's this? It's a..."
+    },
+    {
+     "t": "Colours and numbers 1–10 (revision)",
+     "b": "red, blue, green, yellow...; counting objects; What colour is it?"
+    },
+    {
+     "t": "Numbers 11–20",
+     "b": "eleven ... twenty; How many...? counting games"
+    },
+    {
+     "t": "The English alphabet: Aa–Mm",
+     "b": "letter names and sounds; alphabet song; words for each letter"
+    },
+    {
+     "t": "The English alphabet: Nn–Zz. Spelling names",
+     "b": "letter names Nn–Zz; How do you spell...?"
+    }
+   ]
+  },
+  {
+   "name": "Unit 1. Here's my family!",
+   "lessons": [
+    {
+     "t": "Family members",
+     "b": "mum, dad, sister, brother, grandma, grandpa; This is my..."
+    },
+    {
+     "t": "My family tree",
+     "b": "aunt, uncle, cousin; family tree; Who's this?"
+    },
+    {
+     "t": "He's my... / She's my...",
+     "b": "personal pronouns he, she; introducing family members"
+    },
+    {
+     "t": "Jobs",
+     "b": "doctor, vet, teacher, photographer, driver; He's a vet"
+    },
+    {
+     "t": "What does he do?",
+     "b": "asking about jobs; Is she a doctor? Yes, she is / No, she isn't"
+    },
+    {
+     "t": "How old are you?",
+     "b": "ages; I'm seven. He's ten; numbers in questions"
+    },
+    {
+     "t": "Possessive 's",
+     "b": "Sam's sister, Ann's dad; whose family member is it"
+    },
+    {
+     "t": "I've got a brother",
+     "b": "have got for family; Have you got a sister? Yes, I have / No, I haven't"
+    },
+    {
+     "t": "Story time: Here's my home",
+     "b": "listening and reading a short story; acting it out"
+    },
+    {
+     "t": "Song and phonics: letters a, e",
+     "b": "short sounds /æ/, /e/: cat, bed; family song"
+    },
+    {
+     "t": "Project: Family portrait",
+     "b": "draw and present your family: This is my mum. She's a teacher"
+    },
+    {
+     "t": "Review and test: Unit 1",
+     "b": "family words, jobs, have got; listening and vocabulary tasks"
+    }
+   ]
+  },
+  {
+   "name": "Unit 2. My friends",
+   "lessons": [
+    {
+     "t": "My best friend",
+     "b": "friend, best friend; His/Her name is...; He's/She's eight"
+    },
+    {
+     "t": "Appearance: tall, short, big, small",
+     "b": "describing people; adjectives of size"
+    },
+    {
+     "t": "Hair and eyes",
+     "b": "long/short hair, curly hair, blue/brown eyes"
+    },
+    {
+     "t": "He's got... / She's got...",
+     "b": "has got for appearance; She's got long hair"
+    },
+    {
+     "t": "Character: kind, funny, good, clever",
+     "b": "describing character; My friend is kind"
+    },
+    {
+     "t": "What can your friend do?",
+     "b": "can / can't: run, jump, swim, sing, dance, ride a bike"
+    },
+    {
+     "t": "I like... / He likes...",
+     "b": "likes and dislikes; Do you like...? Yes, I do / No, I don't"
+    },
+    {
+     "t": "Toys my friend likes",
+     "b": "ball, doll, car, kite, robot, teddy bear"
+    },
+    {
+     "t": "Story time: My new friend",
+     "b": "listening to a short story; answering questions"
+    },
+    {
+     "t": "Song and phonics: letters i, o",
+     "b": "short sounds /ɪ/, /ɒ/: pig, dog; friendship song"
+    },
+    {
+     "t": "Project: My friend",
+     "b": "describe a friend: name, age, appearance, what he/she can do"
+    },
+    {
+     "t": "Review and test: Unit 2",
+     "b": "appearance, character, can, likes; reading and speaking tasks"
+    }
+   ]
+  },
+  {
+   "name": "Unit 3. My home",
+   "lessons": [
+    {
+     "t": "Rooms",
+     "b": "kitchen, bathroom, bedroom, living room, hall"
+    },
+    {
+     "t": "Where is mum? She's in the kitchen",
+     "b": "questions with where; in + room"
+    },
+    {
+     "t": "Furniture",
+     "b": "bed, table, chair, sofa, wardrobe, lamp"
+    },
+    {
+     "t": "Prepositions: in, on, under",
+     "b": "The ball is under the bed; position of objects"
+    },
+    {
+     "t": "Where's the cat?",
+     "b": "asking and answering about location; picture games"
+    },
+    {
+     "t": "There is / There are",
+     "b": "There is a sofa. There are two chairs; counting furniture"
+    },
+    {
+     "t": "My room",
+     "b": "describing your room with there is/are and prepositions"
+    },
+    {
+     "t": "Story time: Where is my teddy?",
+     "b": "short story about looking for a toy at home"
+    },
+    {
+     "t": "Song and phonics: letter u",
+     "b": "short sound /ʌ/: bus, sun, cup"
+    },
+    {
+     "t": "Project: My dream house",
+     "b": "draw and describe a dream house"
+    },
+    {
+     "t": "Review and test: Unit 3",
+     "b": "rooms, furniture, prepositions, there is/are"
+    }
+   ]
+  },
+  {
+   "name": "Winter holidays",
+   "lessons": [
+    {
+     "t": "Winter",
+     "b": "snow, snowman, cold, skate, ski, sledge; It's cold"
+    },
+    {
+     "t": "Winter clothes",
+     "b": "hat, scarf, gloves, coat, boots; I'm wearing..."
+    },
+    {
+     "t": "Christmas and New Year",
+     "b": "Christmas tree, present, Santa Claus; Merry Christmas! Happy New Year!"
+    },
+    {
+     "t": "Semester test",
+     "b": "listening, reading and vocabulary tasks: family, friends, home"
+    },
+    {
+     "t": "Revision: games and songs",
+     "b": "vocabulary games, songs and rhymes of the semester"
+    }
+   ]
+  }
+ ]
+}

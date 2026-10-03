@@ -1,0 +1,45 @@
+{
+  "id": "eng-w02-d1",
+  "subject": "eng",
+  "title": "Review: Present Simple and Present Continuous",
+  "goal": "Повторити, коли вживати Present Simple (звички, розклад), а коли Present Continuous (те, що відбувається зараз), і розпізнавати слова-сигнали.",
+  "minutes": 35,
+  "theory": [
+    {"type": "p", "text": "В англійській є два теперішні часи, які ми часто плутаємо. **Present Simple** розповідає про те, що відбувається **регулярно**. **Present Continuous** — про те, що відбувається **просто зараз**."},
+    {"type": "rule", "title": "Present Simple: звички і факти", "text": "Стверджувальне: I / you / we / they **play**; he / she / it **plays** (додаємо -s).\nЗаперечення: I **don't** play; he **doesn't** play.\nПитання: **Do** you play? **Does** he play?\nСлова-сигнали: **always, usually, often, sometimes, never, every day**."},
+    {"type": "rule", "title": "Present Continuous: те, що відбувається зараз", "text": "Будуємо: **am / is / are + дієслово з -ing**.\nI **am reading**. She **is playing**. They **are running**.\nЗаперечення: He **isn't** sleeping. Питання: **Are** you watching?\nСлова-сигнали: **now, at the moment, today, look!, listen!**"},
+    {"type": "table", "title": "Порівняймо", "head": ["Present Simple", "Present Continuous"], "rows": [
+      ["I usually walk to school.", "I'm walking to school now."],
+      ["She always drinks tea.", "She is drinking tea at the moment."],
+      ["We play football on Sundays.", "We are playing football now."]
+    ]},
+    {"type": "tip", "text": "Правопис -ing: **read → reading**; **run → running** (подвоюємо останню приголосну); **write → writing** (відкидаємо e); **play → playing**."},
+    {"type": "example", "title": "Який час обрати?", "text": "Мама **завжди готує** сніданок о сьомій → Present Simple (регулярно): *Mum always cooks breakfast at seven.*\nЗараз мама **готує** сніданок → Present Continuous (зараз): *Mum is cooking breakfast now.*"},
+    {"type": "dialogue", "title": "A phone call", "lines": [
+      {"who": "Dan", "text": "Hi, Olga! What are you doing at the moment?"},
+      {"who": "Olga", "text": "I'm doing my homework. What about you?"},
+      {"who": "Dan", "text": "I'm watching a film. I usually watch films on Saturdays."},
+      {"who": "Olga", "text": "Me too! I often watch them with my brother."}
+    ]}
+  ],
+  "exercises": [
+    {"type": "choice", "q": "Оберіть правильну форму: She ___ to school every day.", "options": ["goes", "is going", "go"], "answer": 0, "explain": "every day — звичка, тому Present Simple, а для she додаємо -es: goes."},
+    {"type": "choice", "q": "Оберіть правильну форму: Look! The dog ___ in the garden.", "options": ["is running", "runs", "run"], "answer": 0, "explain": "Look! — сигнал Present Continuous: is running."},
+    {"type": "fill", "q": "Встав дієслово в дужках у правильній формі (play).", "text": "My brother usually {plays} football. Now he {is playing} computer games."},
+    {"type": "fill", "q": "Встав дієслово read у правильній формі.", "text": "I {read} books every evening. At the moment I {am reading} a book about space."},
+    {"type": "sort", "q": "Розклади слова-сигнали за часами.", "groups": {"Present Simple": ["always", "usually", "every day"], "Present Continuous": ["now", "at the moment", "look!"]}},
+    {"type": "truefalse", "q": "Познач, чи правильні речення.", "items": [
+      {"text": "He is play tennis now.", "answer": false},
+      {"text": "They usually go to school by bus.", "answer": true},
+      {"text": "I am writing a letter at the moment.", "answer": true},
+      {"text": "She don't like milk.", "answer": false}
+    ]},
+    {"type": "speak", "q": "Прочитай уголос і запиши себе або перевір вимову.", "text": "I usually get up at seven. Now I am reading an English text. My mum is working at the moment.", "lang": "en-US"}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Встав дієслово cook у правильній формі.", "text": "Dad always {cooks} dinner. Look! He {is cooking} soup now."},
+    {"type": "choice", "q": "Яке слово — сигнал Present Continuous?", "options": ["at the moment", "usually", "never"], "answer": 0, "explain": "at the moment означає «зараз, у цей момент»."},
+    {"type": "text", "q": "Напиши 3 речення про те, що ти зазвичай робиш після школи (Present Simple), і 3 речення про те, що ти робиш зараз (Present Continuous).", "sample": "I usually do my homework at four. I often play with my dog. I sometimes read a book. Now I am writing English sentences. I am sitting at my desk. My cat is sleeping next to me.", "min": 100}
+  ],
+  "reflection": ["Чим відрізняється Present Simple від Present Continuous?", "Які слова-сигнали ти запам'ятав(-ла)?"]
+}

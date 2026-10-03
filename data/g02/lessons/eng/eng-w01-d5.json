@@ -1,0 +1,43 @@
+{
+  "id": "eng-w01-d5",
+  "subject": "eng",
+  "title": "Classroom objects",
+  "goal": "Назвати англійською речі в класі і спитати «Що це?».",
+  "minutes": 25,
+  "theory": [
+    {"type": "p", "text": "Дорослий читає: сьогодні вивчаємо слова для речей, які є в портфелі та в класі. Ще навчимося питати: «Що це?» і відповідати."},
+    {"type": "vocab", "title": "Речі в класі", "items": [
+      {"en": "pen", "uk": "ручка", "ex": "It's a pen."},
+      {"en": "pencil", "uk": "олівець", "ex": "It's a pencil."},
+      {"en": "book", "uk": "книжка", "ex": "It's a book."},
+      {"en": "bag", "uk": "сумка, портфель", "ex": "It's a bag."},
+      {"en": "ruler", "uk": "лінійка", "ex": "It's a ruler."},
+      {"en": "rubber", "uk": "гумка", "ex": "It's a rubber."},
+      {"en": "desk", "uk": "парта", "ex": "It's a desk."},
+      {"en": "chair", "uk": "стілець", "ex": "It's a chair."}
+    ]},
+    {"type": "image", "emoji": "🖊️✏️📕🎒📏", "caption": "ручка, олівець, книжка, портфель, лінійка"},
+    {"type": "dialogue", "title": "What's this?", "lang": "en", "lines": [
+      {"who": "Ann", "text": "What's this?"},
+      {"who": "Tom", "text": "It's a pencil."},
+      {"who": "Ann", "text": "What's this?"},
+      {"who": "Tom", "text": "It's a book."}
+    ]},
+    {"type": "rule", "title": "Запам'ятай", "text": "**What's this?** — Що це?\n**It's a ...** — Це ...\nПеред назвою речі кажемо **a**: a pen, a book, a bag."},
+    {"type": "tip", "text": "Візьми в руки свою ручку і спитай: What's this? Відповідь: It's a pen."}
+  ],
+  "exercises": [
+    {"type": "match", "q": "З'єднай слово з перекладом.", "pairs": [["pen", "ручка"], ["book", "книжка"], ["bag", "сумка"], ["ruler", "лінійка"], ["rubber", "гумка"]]},
+    {"type": "choice", "q": "Що означає слово pencil?", "options": ["ручка", "олівець", "гумка"], "answer": 1},
+    {"type": "choice", "q": "Як відповісти на питання «What's this?», якщо це книжка?", "options": ["It's a book.", "I'm fine.", "My name is Book."], "answer": 0, "explain": "Відповідаємо: It's a book."},
+    {"type": "fill", "q": "Встав слово.", "text": "What's {this}? It's a {pen}."},
+    {"type": "sort", "q": "Розклади слова: що можна покласти в портфель, а що стоїть у класі?", "groups": {"У портфелі": ["pen", "pencil", "rubber"], "У класі": ["desk", "chair"]}},
+    {"type": "speak", "q": "Покажи на предмети навколо і назви їх уголос.", "text": "It's a pen. It's a book. It's a bag.", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "input", "q": "Як англійською «гумка»?", "answer": ["rubber"]},
+    {"type": "fill", "q": "Допиши слова.", "text": "It's a {ruler}. It's a {desk}."},
+    {"type": "checklist", "q": "Практична робота вдома.", "items": ["Я знайшов 5 речей зі свого портфеля", "Я спитав «What's this?» і відповів «It's a ...» про кожну річ", "Я назвав їх уголос англійською"]}
+  ],
+  "reflection": ["Які слова ти запам'ятав найлегше?", "Які слова треба ще повторити?"]
+}

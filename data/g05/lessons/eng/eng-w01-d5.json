@@ -1,0 +1,50 @@
+{
+  "id": "eng-w01-d5",
+  "subject": "eng",
+  "title": "My school things. Повторення лексики",
+  "goal": "Повторити назви шкільних речей, кольорів і чисел до 100, вживання this/that, these/those і множину іменників.",
+  "minutes": 35,
+  "terms": {},
+  "theory": [
+    {"type": "p", "text": "Сьогодні повторюємо слова, які потрібні щодня: що лежить у твоєму пеналі та рюкзаку, якого це кольору і скільки там речей."},
+    {"type": "vocab", "title": "School things — шкільні речі", "items": [
+      {"en": "book", "uk": "книжка", "ex": "This is my book."},
+      {"en": "notebook", "uk": "зошит", "ex": "I have a blue notebook."},
+      {"en": "pen", "uk": "ручка", "ex": "That is a red pen."},
+      {"en": "pencil", "uk": "олівець", "ex": "Two pencils, please."},
+      {"en": "ruler", "uk": "лінійка", "ex": "The ruler is green."},
+      {"en": "rubber", "uk": "гумка", "ex": "This is a rubber."},
+      {"en": "bag", "uk": "рюкзак, сумка", "ex": "My bag is black."},
+      {"en": "pencil case", "uk": "пенал", "ex": "These are in my pencil case."},
+      {"en": "desk", "uk": "парта", "ex": "The book is on the desk."},
+      {"en": "board", "uk": "дошка", "ex": "Look at the board."}
+    ]},
+    {"type": "table", "title": "Colours — кольори", "head": ["English", "Українською"], "rows": [["red", "червоний"], ["blue", "синій"], ["green", "зелений"], ["yellow", "жовтий"], ["black", "чорний"], ["white", "білий"], ["orange", "помаранчевий"], ["pink", "рожевий"], ["brown", "коричневий"], ["grey", "сірий"]]},
+    {"type": "table", "title": "Numbers — числа", "head": ["Числа", "Як пишемо"], "rows": [["1–10", "one, two, three, four, five, six, seven, eight, nine, ten"], ["11–19", "eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen"], ["20, 30, 40, 50", "twenty, thirty, forty, fifty"], ["60, 70, 80, 90", "sixty, seventy, eighty, ninety"], ["21, 45, 99", "twenty-one, forty-five, ninety-nine (через дефіс)"], ["100", "one hundred"]]},
+    {"type": "rule", "title": "This / that, these / those", "text": "**This** (цей, ця) — один предмет **поруч** з тобою: This is a pen.\n**That** (той, та) — один предмет **далеко**: That is a bag.\n**These** (ці) — кілька предметів поруч: These are pens.\n**Those** (ті) — кілька предметів далеко: Those are bags."},
+    {"type": "rule", "title": "Plurals — множина іменників", "text": "Звичайно додаємо **-s**: pen — pens, book — books.\nПісля s, x, ch, sh додаємо **-es**: box — boxes, watch — watches.\nПісля приголосної + y: y → **-ies**: country — countries.\nНеправильні: child — children, man — men, woman — women, foot — feet."},
+    {"type": "example", "title": "Приклад", "text": "— What's this? — It's a ruler. It's yellow.\n— What are those? — They are pencils. There are twelve pencils."},
+    {"type": "tip", "text": "Перед словами, що починаються з голосного звуку, ставимо **an**: an orange pen, an apple. Перед іншими — **a**: a red pen."}
+  ],
+  "exercises": [
+    {"type": "speak", "q": "Прочитай вголос і торкайся до речей, які називаєш.", "text": "This is a pen. That is a book. These are pencils. Those are rulers.", "lang": "en"},
+    {"type": "match", "q": "З'єднай слово з перекладом.", "pairs": [["ruler", "лінійка"], ["rubber", "гумка"], ["pencil case", "пенал"], ["desk", "парта"], ["notebook", "зошит"]]},
+    {"type": "choice", "q": "Вибери правильне слово: ___ is my pen. (ручка в твоїй руці)", "options": ["This", "These", "Those", "They"], "answer": 0, "explain": "Один предмет поруч — this."},
+    {"type": "choice", "q": "Вибери правильне слово: ___ are my books. (дві книжки далеко на полиці)", "options": ["Those", "That", "This", "It"], "answer": 0, "explain": "Кілька предметів далеко — those."},
+    {"type": "fill", "q": "Запиши множину.", "text": "one book — two {books}; one box — two {boxes}; one child — two {children}; one watch — two {watches}"},
+    {"type": "number", "q": "Запиши цифрами: seventy-three.", "answer": 73},
+    {"type": "sort", "q": "Розклади слова на дві групи.", "groups": {"Кольори": ["red", "green", "pink", "brown"], "Шкільні речі": ["ruler", "pen", "desk", "bag"]}},
+    {"type": "input", "q": "Напиши англійською число 15.", "answer": ["fifteen"], "explain": "11–19 закінчуються на -teen: fifteen."}
+  ],
+  "homework": [
+    {"type": "fill", "q": "Допиши слово: this, that, these або those.", "text": "(поруч, один предмет) {this} is a pencil. (далеко, багато) {those} are bags."},
+    {"type": "truefalse", "q": "Так чи ні?", "items": [
+      {"text": "Plural від pencil case — pencil cases.", "answer": true},
+      {"text": "Plural від box — boxs.", "answer": false},
+      {"text": "These означає «ті» (далеко).", "answer": false},
+      {"text": "Forty-four — це 44.", "answer": true}
+    ]},
+    {"type": "text", "q": "Опиши англійською вміст свого рюкзака: 4–5 речень. Використай this/that/these/those, кольори і числа.", "sample": "This is my bag. It is black. There are three notebooks. These are my pens, they are blue. That is my pencil case.", "min": 80}
+  ],
+  "reflection": ["Які слова ти пам'ятав одразу?", "Чим this відрізняється від that?", "Які числа було важко писати?"]
+}

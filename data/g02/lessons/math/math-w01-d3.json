@@ -1,0 +1,192 @@
+{
+ "id": "math-w01-d3",
+ "subject": "math",
+ "title": "Порівнюємо числа",
+ "goal": "Навчитися порівнювати двоцифрові числа за десятками й одиницями і правильно ставити знаки більше, менше, дорівнює.",
+ "minutes": 25,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Дорослий читає: Коли ми порівнюємо числа, ми з'ясовуємо, яке більше, яке менше чи вони однакові. Порівняємо 47 і 52."
+  },
+  {
+   "type": "figure",
+   "svg": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"14\"><rect x=\"5\" y=\"10\" width=\"10\" height=\"70\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><rect x=\"19\" y=\"10\" width=\"10\" height=\"70\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><rect x=\"33\" y=\"10\" width=\"10\" height=\"70\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><rect x=\"47\" y=\"10\" width=\"10\" height=\"70\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><rect x=\"65\" y=\"10\" width=\"9\" height=\"9\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><rect x=\"76\" y=\"10\" width=\"9\" height=\"9\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><rect x=\"87\" y=\"10\" width=\"9\" height=\"9\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><rect x=\"98\" y=\"10\" width=\"9\" height=\"9\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><rect x=\"109\" y=\"10\" width=\"9\" height=\"9\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><rect x=\"65\" y=\"21\" width=\"9\" height=\"9\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><rect x=\"76\" y=\"21\" width=\"9\" height=\"9\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"5\" y=\"105\" fill=\"currentColor\">47 = 4 дес. і 7 од.</text><rect x=\"165\" y=\"10\" width=\"10\" height=\"70\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><rect x=\"179\" y=\"10\" width=\"10\" height=\"70\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><rect x=\"193\" y=\"10\" width=\"10\" height=\"70\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><rect x=\"207\" y=\"10\" width=\"10\" height=\"70\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><rect x=\"221\" y=\"10\" width=\"10\" height=\"70\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><rect x=\"239\" y=\"10\" width=\"9\" height=\"9\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><rect x=\"250\" y=\"10\" width=\"9\" height=\"9\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"165\" y=\"105\" fill=\"currentColor\">52 = 5 дес. і 2 од.</text></svg>",
+   "caption": "47 — це 4 десятки і 7 одиниць. 52 — це 5 десятків і 2 одиниці. Десятків більше у 52.",
+   "alt": "Чотири стовпчики і сім квадратиків поруч із п'ятьма стовпчиками і двома квадратиками"
+  },
+  {
+   "type": "rule",
+   "title": "Як порівнювати двоцифрові числа",
+   "text": "1) Спершу порівняй **десятки**: де їх більше, те число більше.\n2) Якщо десятків порівну — порівняй **одиниці**.\n3) Якщо і десятки, і одиниці однакові — числа **рівні**."
+  },
+  {
+   "type": "table",
+   "title": "Знаки порівняння",
+   "head": [
+    "Знак",
+    "Як читається",
+    "Приклад"
+   ],
+   "rows": [
+    [
+     ">",
+     "більше",
+     "52 > 47"
+    ],
+    [
+     "<",
+     "менше",
+     "47 < 52"
+    ],
+    [
+     "=",
+     "дорівнює",
+     "30 = 30"
+    ]
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Знак схожий на дзьобик пташки або пащу: він завжди «відкритий» до більшого числа і «гострий» до меншого."
+  },
+  {
+   "type": "example",
+   "title": "Порівнюємо",
+   "text": "63 і 58: десятків 6 і 5, 6 > 5, тому 63 > 58.\n34 і 39: десятків порівну (3 і 3), одиниць 4 і 9, 4 < 9, тому 34 < 39.\n70 і 70: все однакове, тому 70 = 70."
+  },
+  {
+   "type": "figure",
+   "svg": "<svg viewBox=\"0 0 320 80\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"10\" y1=\"40\" x2=\"310\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"15.0\" y1=\"34\" x2=\"15.0\" y2=\"46\" stroke=\"currentColor\"/><text x=\"15.0\" y=\"64\" text-anchor=\"middle\" fill=\"currentColor\">40</text><line x1=\"44.0\" y1=\"34\" x2=\"44.0\" y2=\"46\" stroke=\"currentColor\"/><text x=\"44.0\" y=\"64\" text-anchor=\"middle\" fill=\"currentColor\">41</text><line x1=\"73.0\" y1=\"34\" x2=\"73.0\" y2=\"46\" stroke=\"currentColor\"/><text x=\"73.0\" y=\"64\" text-anchor=\"middle\" fill=\"currentColor\">42</text><line x1=\"102.0\" y1=\"34\" x2=\"102.0\" y2=\"46\" stroke=\"currentColor\"/><text x=\"102.0\" y=\"64\" text-anchor=\"middle\" fill=\"#D23F58\">43</text><line x1=\"131.0\" y1=\"34\" x2=\"131.0\" y2=\"46\" stroke=\"currentColor\"/><text x=\"131.0\" y=\"64\" text-anchor=\"middle\" fill=\"currentColor\">44</text><line x1=\"160.0\" y1=\"34\" x2=\"160.0\" y2=\"46\" stroke=\"currentColor\"/><text x=\"160.0\" y=\"64\" text-anchor=\"middle\" fill=\"currentColor\">45</text><line x1=\"189.0\" y1=\"34\" x2=\"189.0\" y2=\"46\" stroke=\"currentColor\"/><text x=\"189.0\" y=\"64\" text-anchor=\"middle\" fill=\"currentColor\">46</text><line x1=\"218.0\" y1=\"34\" x2=\"218.0\" y2=\"46\" stroke=\"currentColor\"/><text x=\"218.0\" y=\"64\" text-anchor=\"middle\" fill=\"#D23F58\">47</text><line x1=\"247.0\" y1=\"34\" x2=\"247.0\" y2=\"46\" stroke=\"currentColor\"/><text x=\"247.0\" y=\"64\" text-anchor=\"middle\" fill=\"currentColor\">48</text><line x1=\"276.0\" y1=\"34\" x2=\"276.0\" y2=\"46\" stroke=\"currentColor\"/><text x=\"276.0\" y=\"64\" text-anchor=\"middle\" fill=\"currentColor\">49</text><line x1=\"305.0\" y1=\"34\" x2=\"305.0\" y2=\"46\" stroke=\"currentColor\"/><text x=\"305.0\" y=\"64\" text-anchor=\"middle\" fill=\"currentColor\">50</text></svg>",
+   "caption": "На числовому промені число, що стоїть правіше, більше: 47 > 43.",
+   "alt": "Числовий промінь від 40 до 50 з виділеними 43 і 47"
+  }
+ ],
+ "exercises": [
+  {
+   "type": "choice",
+   "q": "Постав знак: 58 ... 63",
+   "options": [
+    ">",
+    "<",
+    "="
+   ],
+   "answer": 1,
+   "explain": "5 десятків менше, ніж 6 десятків, тому 58 < 63."
+  },
+  {
+   "type": "fill",
+   "q": "Постав знак (>, < або =).",
+   "text": "34 {<} 39; 71 {>} 17; 45 {=} 45; 90 {>} 89",
+   "hint": "Спочатку порівняй десятки."
+  },
+  {
+   "type": "number",
+   "q": "Яке з чисел більше: 76 чи 67? Запиши це число.",
+   "answer": 76,
+   "explain": "7 десятків більше, ніж 6 десятків."
+  },
+  {
+   "type": "order",
+   "q": "Розстав числа від найбільшого до найменшого.",
+   "items": [
+    "92",
+    "85",
+    "58",
+    "49",
+    "15"
+   ],
+   "explain": "Дивимося на десятки: 9, 8, 5, 4, 1."
+  },
+  {
+   "type": "match",
+   "q": "З'єднай числа з правильним знаком.",
+   "pairs": [
+    [
+     "27 і 72",
+     "27 < 72"
+    ],
+    [
+     "64 і 46",
+     "64 > 46"
+    ],
+    [
+     "50 і 50",
+     "50 = 50"
+    ],
+    [
+     "38 і 83",
+     "38 < 83"
+    ]
+   ]
+  },
+  {
+   "type": "truefalse",
+   "q": "Так чи ні?",
+   "items": [
+    {
+     "text": "41 < 14",
+     "answer": false
+    },
+    {
+     "text": "29 < 30",
+     "answer": true
+    },
+    {
+     "text": "88 > 80",
+     "answer": true
+    },
+    {
+     "text": "55 = 5 + 5",
+     "answer": false
+    }
+   ],
+   "explain": "41 > 14. 55 — це 5 десятків і 5 одиниць, а 5 + 5 = 10."
+  },
+  {
+   "type": "choice",
+   "q": "Яке число можна поставити замість пропуску: 54 > ...?",
+   "options": [
+    "49",
+    "54",
+    "61"
+   ],
+   "answer": 0,
+   "explain": "Число має бути меншим за 54. Підходить 49."
+  }
+ ],
+ "homework": [
+  {
+   "type": "fill",
+   "q": "Постав знак (>, < або =).",
+   "text": "26 {<} 62; 79 {>} 78; 40 {=} 40"
+  },
+  {
+   "type": "choice",
+   "q": "Яке число найбільше?",
+   "options": [
+    "38",
+    "83",
+    "79",
+    "80"
+   ],
+   "answer": 1,
+   "explain": "Найбільше десятків (8) у 83 і 80, але 83 має більше одиниць."
+  },
+  {
+   "type": "number",
+   "q": "Запиши найбільше двоцифрове число.",
+   "answer": 99,
+   "explain": "9 десятків і 9 одиниць."
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос.",
+   "text": "Прочитай дорослому вголос: 45 більше за 39; 27 менше за 72; 60 дорівнює 60."
+  }
+ ],
+ "reflection": [
+  "Що ти порівнюєш першим: десятки чи одиниці?",
+  "Який знак тобі було важче запам'ятати?"
+ ]
+}

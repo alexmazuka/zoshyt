@@ -1,0 +1,43 @@
+{
+  "id": "eng-w02-d1",
+  "subject": "eng",
+  "title": "Colours and numbers 1–10 (revision)",
+  "goal": "Пригадати кольори і числа від 1 до 10 та навчитися питати «Який це колір?».",
+  "minutes": 25,
+  "theory": [
+    {"type": "p", "text": "Дорослий читає: пригадаємо кольори та лічбу до десяти. Ці слова потрібні майже на кожному уроці англійської."},
+    {"type": "vocab", "title": "Кольори", "items": [
+      {"en": "red", "uk": "червоний", "ex": "It's red."},
+      {"en": "blue", "uk": "синій, блакитний", "ex": "It's blue."},
+      {"en": "green", "uk": "зелений", "ex": "It's green."},
+      {"en": "yellow", "uk": "жовтий", "ex": "It's yellow."},
+      {"en": "orange", "uk": "помаранчевий", "ex": "It's orange."},
+      {"en": "black", "uk": "чорний", "ex": "It's black."},
+      {"en": "white", "uk": "білий", "ex": "It's white."}
+    ]},
+    {"type": "figure", "alt": "Сім кольорових кружечків: червоний, синій, зелений, жовтий, помаранчевий, чорний, білий", "caption": "Кольори: red, blue, green, yellow, orange, black, white", "svg": "<svg viewBox=\"0 0 350 70\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"25\" cy=\"30\" r=\"18\" fill=\"#D23F58\"/><circle cx=\"75\" cy=\"30\" r=\"18\" fill=\"#2A45B0\"/><circle cx=\"125\" cy=\"30\" r=\"18\" fill=\"#1D7449\"/><circle cx=\"175\" cy=\"30\" r=\"18\" fill=\"#F2C200\"/><circle cx=\"225\" cy=\"30\" r=\"18\" fill=\"#F28C00\"/><circle cx=\"275\" cy=\"30\" r=\"18\" fill=\"#222222\"/><circle cx=\"325\" cy=\"30\" r=\"18\" fill=\"#FFFFFF\" stroke=\"currentColor\"/><g font-family=\"sans-serif\" font-size=\"12\" fill=\"currentColor\" text-anchor=\"middle\"><text x=\"25\" y=\"64\">red</text><text x=\"75\" y=\"64\">blue</text><text x=\"125\" y=\"64\">green</text><text x=\"175\" y=\"64\">yellow</text><text x=\"225\" y=\"64\">orange</text><text x=\"275\" y=\"64\">black</text><text x=\"325\" y=\"64\">white</text></g></svg>"},
+    {"type": "table", "title": "Числа 1–10", "head": ["Цифра", "Слово"], "rows": [["1", "one"], ["2", "two"], ["3", "three"], ["4", "four"], ["5", "five"], ["6", "six"], ["7", "seven"], ["8", "eight"], ["9", "nine"], ["10", "ten"]]},
+    {"type": "dialogue", "title": "What colour is it?", "lang": "en", "lines": [
+      {"who": "Ann", "text": "What colour is it?"},
+      {"who": "Tom", "text": "It's red."},
+      {"who": "Ann", "text": "How many pens?"},
+      {"who": "Tom", "text": "Three pens."}
+    ]},
+    {"type": "rule", "title": "Запам'ятай", "text": "**What colour is it?** — Якого це кольору?\n**It's green.** — Це зелений.\n**How many?** — Скільки?"}
+  ],
+  "exercises": [
+    {"type": "match", "q": "З'єднай колір з перекладом.", "pairs": [["red", "червоний"], ["blue", "синій"], ["green", "зелений"], ["yellow", "жовтий"]]},
+    {"type": "match", "q": "З'єднай слово з цифрою.", "pairs": [["three", "3"], ["five", "5"], ["seven", "7"], ["ten", "10"]]},
+    {"type": "number", "q": "Скільки яблук? Порахуй і запиши цифрою: 🍎🍎🍎🍎🍎🍎", "answer": 6},
+    {"type": "choice", "q": "Яке слово означає «жовтий»?", "options": ["yellow", "green", "black"], "answer": 0},
+    {"type": "order", "q": "Розстав числа від меншого до більшого.", "items": ["two", "four", "six", "nine"]},
+    {"type": "fill", "q": "Встав слова.", "text": "What {colour} is it? It's {blue}. How {many} pens? {Two} pens."},
+    {"type": "speak", "q": "Порахуй уголос від одного до десяти.", "text": "one, two, three, four, five, six, seven, eight, nine, ten", "lang": "en"}
+  ],
+  "homework": [
+    {"type": "input", "q": "Напиши англійською число 8 (словом).", "answer": ["eight"]},
+    {"type": "fill", "q": "Допиши слова.", "text": "Grass is {green}. Snow is {white}."},
+    {"type": "checklist", "q": "Вдома.", "items": ["Я знайшов 3 предмети різних кольорів і назвав кольори англійською", "Я порахував 10 іграшок або речей англійською"]}
+  ],
+  "reflection": ["Які кольори і числа ти пам'ятаєш добре?", "Що ще треба повторити?"]
+}

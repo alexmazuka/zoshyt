@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Програма — усі уроки за класами і предметами | Зошит</title>
-<meta name="description" content="Усі теми уроків «Зошита» за програмою МОН: 4 клас (I семестр, 10 предметів) та історія для 10 класу. Позначка «доступно» показує уроки, які вже можна проходити.">
+<meta name="description" content="Усі теми уроків «Зошита» за програмою МОН для 1–11 класів, I семестр 2026/27. Позначка «готовий» показує уроки, які вже можна проходити.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="uk_UA">
 <meta property="og:site_name" content="Зошит · NextEducationAI">
 <meta property="og:title" content="Програма «Зошита»: усі уроки за класами і предметами">
-<meta property="og:description" content="4 клас (I семестр, 10 предметів) та історія для 10 класу за програмою МОН.">
-<meta property="og:image" content="https://alexmazuka.github.io/zoshyt/og.png">
+<meta property="og:description" content="Теми уроків I семестру для 1–11 класів за програмою МОН.">
+<meta property="og:image" content="https://zoshyt.online/og.png">
+<link rel="canonical" href="https://zoshyt.online/programa.html">
 <meta name="theme-color" content="#F5F7FB" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0F141D" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -29,6 +30,7 @@
       <a href="index.html#pilot">Пілот</a>
       <a href="index.html#pytannia">Питання</a>
     </nav>
+    <a class="btn btn-sm btn-ghost" href="app/">Увійти</a>
     <a class="btn btn-sm" href="index.html#zapys">Записатися</a>
   </div>
 </header>
@@ -38,7 +40,7 @@
     <div class="container">
       <p class="eyebrow">Програма</p>
       <h1>Усі уроки за програмою МОН</h1>
-      <p class="lead">Оберіть клас і предмет, щоб побачити теми уроків. Позначка «доступно» означає, що урок уже можна проходити. Решта уроків з'являються за розкладом навчального року.</p>
+      <p class="lead">Оберіть клас і предмет, щоб побачити теми уроків I семестру. Позначка «готовий» означає, що урок уже можна проходити. Уроки кожного предмета відкриваються по черзі: наступні з'являються, щойно учні проходять попередні.</p>
     </div>
   </section>
 
@@ -50,7 +52,7 @@
         <div class="subj-row" id="cat-subjects" role="group" aria-label="Предмет"></div>
         <div class="cat-tools">
           <input type="search" id="cat-q" placeholder="Пошук теми, наприклад «дроби»" aria-label="Пошук теми уроку" autocomplete="off">
-          <label><input type="checkbox" id="cat-ok"> лише доступні уроки</label>
+          <label><input type="checkbox" id="cat-ok"> лише готові уроки</label>
         </div>
       </div>
       <div id="cat-body"><p class="muted">Завантажуємо програму…</p></div>
@@ -74,10 +76,9 @@
 
 <script>
 (function () {
-  var SOURCES = {
-    "4": { term: "I семестр 2026/27", base: "https://alexmazuka.github.io/zoshyt-4klas/" },
-    "10": { term: "2026/27 навчальний рік · історія", base: "https://alexmazuka.github.io/istoriya-10klas/" }
-  };
+  /* програма всіх класів лежить у цьому ж репозиторії: data/g01 … data/g11 */
+  var TERM = "I семестр 2026/27";
+  function base(g) { return "data/g" + (Number(g) < 10 ? "0" : "") + Number(g) + "/"; }
   var MONTHS = ["січня", "лютого", "березня", "квітня", "травня", "червня", "липня", "серпня", "вересня", "жовтня", "листопада", "грудня"];
   var state = { grade: "4", subject: null, q: "", onlyOk: false };
   var cache = {};
@@ -97,8 +98,8 @@
   }
   function load(g) {
     if (cache[g]) return Promise.resolve(cache[g]);
-    var b = SOURCES[g].base;
-    return Promise.all([getJSON(b + "data/plan.json"), getJSON(b + "data/subjects.json"), getJSON(b + "data/calendar.json").catch(function () { return null; })])
+    var b = base(g);
+    return Promise.all([getJSON(b + "plan.json"), getJSON(b + "subjects.json"), getJSON("data/calendar.json").catch(function () { return null; })])
       .then(function (r) {
         var lessons = r[0].lessons || r[0];
         var subj = Array.isArray(r[1]) ? r[1] : r[1].subjects;
@@ -124,8 +125,7 @@
   function drawGrades() {
     var html = "";
     for (var g = 1; g <= 11; g++) {
-      var has = !!SOURCES[g];
-      html += `<button type="button" class="grade${has ? "" : " soon"}" data-g="${g}" aria-pressed="${String(state.grade) === String(g)}">${g}<small>${has ? (g === 10 ? "історія" : "клас") : "готуємо"}</small></button>`;
+      html += `<button type="button" class="grade" data-g="${g}" aria-pressed="${String(state.grade) === String(g)}">${g}<small>клас</small></button>`;
     }
     $("grades").innerHTML = html;
   }
@@ -133,13 +133,13 @@
   function row(d, l, showSubj) {
     var s = d.subjects.filter(function (x) { return x.id === l.subject; })[0] || {};
     var pill = showSubj ? `<span class="cat-pill" style="--c:${esc(s.color)}">${esc(s.name)}</span>` : "";
-    var st = l.exists ? `<span class="cat-st ok">доступно</span>` : `<span class="cat-st todo">${esc(dateOf(d, l))}</span>`;
+    var st = l.exists ? `<span class="cat-st ok">готовий</span>` : `<span class="cat-st todo">${esc(dateOf(d, l))}</span>`;
     return `<li class="${l.exists ? "ok" : "todo"}"><span class="cat-n">${esc(l.n)}</span><span class="cat-t">${pill}${esc(l.title)}${l.brief ? `<small>${esc(l.brief)}</small>` : ""}</span>${st}</li>`;
   }
 
   function draw(d) {
     var total = d.lessons.length, ok = d.lessons.filter(function (l) { return l.exists; }).length;
-    $("cat-summary").innerHTML = `<b>${state.grade} клас</b> · ${esc(SOURCES[state.grade].term)} · <b>${total}</b> ${plural(total, "урок", "уроки", "уроків")} · <b>${d.subjects.length}</b> ${plural(d.subjects.length, "предмет", "предмети", "предметів")} · доступно зараз: <b>${ok}</b>`;
+    $("cat-summary").innerHTML = `<b>${state.grade} клас</b> · ${esc(TERM)} · <b>${total}</b> ${plural(total, "урок", "уроки", "уроків")} · <b>${d.subjects.length}</b> ${plural(d.subjects.length, "предмет", "предмети", "предметів")} · готові зараз: <b>${ok}</b>`;
     if (!state.subject || !d.subjects.some(function (s) { return s.id === state.subject; })) state.subject = d.subjects[0].id;
 
     var q = state.q.trim().toLowerCase();
@@ -169,10 +169,10 @@
         last.items.push(l);
       });
       var k = ls.filter(function (l) { return l.exists; }).length;
-      body = `<div class="cat-subject" style="--c:${esc(s.color)}"><h2><i></i>${esc(s.name)}</h2><p>${ls.length} ${plural(ls.length, "урок", "уроки", "уроків")} · доступно ${k}</p>` +
+      body = `<div class="cat-subject" style="--c:${esc(s.color)}"><h2><i></i>${esc(s.name)}</h2><p>${ls.length} ${plural(ls.length, "урок", "уроки", "уроків")} · готові ${k}</p>` +
         (sections.length
           ? sections.map(function (sec) { return `<h3 class="cat-sec">${esc(sec.name || "Уроки")}</h3><ol class="cat-list">${sec.items.map(function (l) { return row(d, l, false); }).join("")}</ol>`; }).join("")
-          : `<div class="cat-msg"><p>Доступних уроків з цього предмета поки немає. Вони з'являться за розкладом.</p></div>`) +
+          : `<div class="cat-msg"><p>Готових уроків з цього предмета поки немає. Уроки відкриваються по черзі: наступні з'являються, щойно учні проходять попередні.</p></div>`) +
         `</div>`;
     }
     $("cat-body").innerHTML = body;
@@ -180,16 +180,11 @@
 
   function render() {
     drawGrades();
-    var src = SOURCES[state.grade];
-    if (!src) {
-      $("cat-top").hidden = true;
-      $("cat-body").innerHTML = `<div class="cat-msg"><h3>Програму для ${esc(state.grade)} класу готуємо</h3><p>Запишіться у список очікування, і ми напишемо, щойно уроки для цього класу з'являться.</p><p><a class="btn btn-sm" href="index.html#zapys">Записатися у список очікування</a></p></div>`;
-      return;
-    }
     $("cat-top").hidden = false;
     $("cat-body").innerHTML = `<p class="muted">Завантажуємо програму…</p>`;
     load(state.grade).then(draw).catch(function () {
-      $("cat-body").innerHTML = `<div class="cat-msg"><p>Не вдалося завантажити програму. Перевірте інтернет і оновіть сторінку.</p></div>`;
+      $("cat-top").hidden = true;
+      $("cat-body").innerHTML = `<div class="cat-msg"><h3>Програму для ${esc(state.grade)} класу готуємо</h3><p>Запишіться у список очікування, і ми напишемо, щойно уроки для цього класу з'являться.</p><p><a class="btn btn-sm" href="index.html#zapys">Записатися у список очікування</a></p></div>`;
     });
   }
 

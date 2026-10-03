@@ -1,0 +1,202 @@
+{
+  "id": "eng-w06-d5",
+  "subject": "eng",
+  "title": "Unit 1 revision and test",
+  "goal": "Ти повториш все з Unit 1 (уподобання, розпорядок дня, Present Simple і Present Continuous) і перевіриш себе в тесті.",
+  "minutes": 40,
+  "theory": [
+    {
+      "type": "p",
+      "text": "Це повторення розділу Unit 1. Пройдися по короткій пам'ятці, а потім виконай тест — він покаже, що вже добре, а що ще треба потренувати."
+    },
+    {
+      "type": "rule",
+      "title": "Present Simple",
+      "text": "Звички і факти: I **play**, she **plays**. Заперечення: I **don't** play, she **doesn't** play. Питання: **Do** you play? **Does** she play?\nПідказки: every day, always, usually, often, sometimes, never."
+    },
+    {
+      "type": "rule",
+      "title": "Present Continuous",
+      "text": "Дія зараз: **am / is / are + -ing**. She **is reading**. Заперечення: **isn't reading**. Питання: **Is** she reading?\nПідказки: now, at the moment, right now."
+    },
+    {
+      "type": "rule",
+      "title": "I like + -ing",
+      "text": "I like **swimming**. She doesn't like **drawing**. Do you like **dancing**?"
+    },
+    {
+      "type": "vocab",
+      "title": "Слова розділу",
+      "items": [
+        {
+          "en": "get up",
+          "uk": "вставати",
+          "ex": "I get up at seven."
+        },
+        {
+          "en": "have breakfast",
+          "uk": "снідати",
+          "ex": "I have breakfast at eight."
+        },
+        {
+          "en": "go to school",
+          "uk": "іти до школи",
+          "ex": "We go to school by bus."
+        },
+        {
+          "en": "do homework",
+          "uk": "робити домашнє завдання",
+          "ex": "He does homework after lunch."
+        },
+        {
+          "en": "go to bed",
+          "uk": "лягати спати",
+          "ex": "I go to bed at nine."
+        },
+        {
+          "en": "half past seven",
+          "uk": "пів на восьму (7:30)",
+          "ex": "I get up at half past seven."
+        },
+        {
+          "en": "hobby",
+          "uk": "хобі",
+          "ex": "My hobby is reading."
+        },
+        {
+          "en": "always / never",
+          "uk": "завжди / ніколи",
+          "ex": "She always smiles."
+        }
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "Перед тестом: у третій особі однини додавай -s (he plays), після doesn't дієслово без -s (he doesn't play)."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choice",
+      "q": "She ___ to school every day.",
+      "options": [
+        "go",
+        "goes",
+        "is going"
+      ],
+      "answer": 1,
+      "explain": "every day — Present Simple, he/she/it + -s."
+    },
+    {
+      "type": "choice",
+      "q": "Look! The boy ___ a kite.",
+      "options": [
+        "flies",
+        "is flying",
+        "fly"
+      ],
+      "answer": 1,
+      "explain": "Look! — дія зараз."
+    },
+    {
+      "type": "fill",
+      "q": "Заповни пропуски.",
+      "text": "I {don't} like swimming. He {doesn't} play chess. {Does} she get up at 7? {Are} you reading now?"
+    },
+    {
+      "type": "match",
+      "q": "З'єднай підказку з часом.",
+      "pairs": [
+        [
+          "every day",
+          "Present Simple"
+        ],
+        [
+          "at the moment",
+          "Present Continuous"
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "q": "Склади речення.",
+      "items": [
+        "She",
+        "usually",
+        "gets up",
+        "at",
+        "seven."
+      ]
+    },
+    {
+      "type": "truefalse",
+      "q": "Правильно чи ні?",
+      "items": [
+        {
+          "text": "He don't like football.",
+          "answer": false
+        },
+        {
+          "text": "Is she sleeping now? — No, she isn't.",
+          "answer": true
+        },
+        {
+          "text": "I am go to school every day.",
+          "answer": false
+        },
+        {
+          "text": "They are playing in the park now.",
+          "answer": true
+        }
+      ]
+    },
+    {
+      "type": "speak",
+      "q": "Прочитай вголос.",
+      "text": "I get up at seven o'clock every day. Now I am reading a book.",
+      "lang": "en"
+    },
+    {
+      "type": "sort",
+      "q": "Розклади за часом.",
+      "groups": {
+        "Present Simple": [
+          "I go to bed at nine.",
+          "She never eats fish."
+        ],
+        "Present Continuous": [
+          "He is running now.",
+          "We are eating at the moment."
+        ]
+      }
+    }
+  ],
+  "homework": [
+    {
+      "type": "choice",
+      "q": "What ___ you doing now?",
+      "options": [
+        "do",
+        "are",
+        "is"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "q": "Встав дієслово.",
+      "text": "My brother {plays} chess every day. He {is playing} chess now. I {don't} like running.",
+      "hint": "Подивись на слова every day і now."
+    },
+    {
+      "type": "text",
+      "q": "Напиши 4 речення про свій день (що робиш щодня) і про те, що робиш зараз.",
+      "sample": "I get up at 7 every day. I go to school by bus. I usually do homework at 3. Now I am writing.",
+      "min": 40
+    }
+  ],
+  "reflection": [
+    "Що в Unit 1 було найлегшим?",
+    "Яку тему ще треба потренувати?"
+  ]
+}

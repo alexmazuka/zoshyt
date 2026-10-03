@@ -1,0 +1,245 @@
+{
+  "id": "eng-w06-d1",
+  "subject": "eng",
+  "title": "Present Simple vs Present Continuous: every day / now",
+  "goal": "Ти навчишся розрізняти Present Simple (щодня, зазвичай) і Present Continuous (саме зараз) за словами-підказками.",
+  "minutes": 35,
+  "theory": [
+    {
+      "type": "p",
+      "text": "Порівняй: **I play** football on Sundays. — **I am playing** football now. В українській ми кажемо однаково «граю», а в англійській час обираємо за змістом: це звичка чи дія, що відбувається в цю мить?"
+    },
+    {
+      "type": "table",
+      "title": "Два часи поруч",
+      "head": [
+        "",
+        "Present Simple",
+        "Present Continuous"
+      ],
+      "rows": [
+        [
+          "Коли?",
+          "щодня, зазвичай, регулярно",
+          "саме зараз, у цю мить"
+        ],
+        [
+          "Форма",
+          "play / plays",
+          "am / is / are + playing"
+        ],
+        [
+          "Слова-підказки",
+          "every day, always, usually, often, sometimes, never, on Mondays",
+          "now, at the moment, right now, Look!"
+        ],
+        [
+          "Приклад",
+          "She gets up at 7.",
+          "She is getting up now."
+        ]
+      ]
+    },
+    {
+      "type": "vocab",
+      "title": "Слова-підказки",
+      "items": [
+        {
+          "en": "every day",
+          "uk": "щодня",
+          "ex": "I walk to school every day."
+        },
+        {
+          "en": "always",
+          "uk": "завжди",
+          "ex": "He always brushes his teeth."
+        },
+        {
+          "en": "usually",
+          "uk": "зазвичай",
+          "ex": "We usually have lunch at 1."
+        },
+        {
+          "en": "sometimes",
+          "uk": "іноді",
+          "ex": "I sometimes watch a film."
+        },
+        {
+          "en": "never",
+          "uk": "ніколи",
+          "ex": "She never eats fish."
+        },
+        {
+          "en": "now",
+          "uk": "зараз",
+          "ex": "I am eating now."
+        },
+        {
+          "en": "at the moment",
+          "uk": "у цю мить",
+          "ex": "Mum is cooking at the moment."
+        },
+        {
+          "en": "right now",
+          "uk": "просто зараз",
+          "ex": "They are running right now."
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Один хлопчик, два часи",
+      "text": "Sam usually **plays** football after school. (звичка)\nBut today it is raining, so he **is playing** a computer game now. (дія зараз)"
+    },
+    {
+      "type": "dialogue",
+      "title": "A phone call",
+      "lang": "en",
+      "lines": [
+        {
+          "who": "Kate",
+          "text": "Hi, Sam! Do you play tennis every day?"
+        },
+        {
+          "who": "Sam",
+          "text": "No, I play tennis on Mondays. What are you doing now?"
+        },
+        {
+          "who": "Kate",
+          "text": "I am drawing a picture."
+        },
+        {
+          "who": "Sam",
+          "text": "Do you usually draw?"
+        },
+        {
+          "who": "Kate",
+          "text": "Yes, I draw every evening."
+        }
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "Дивись на слово-підказку: every day, usually, always — Present Simple. Now, at the moment, Look! — Present Continuous."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choice",
+      "q": "Який час у реченні: He usually goes to school at 8?",
+      "options": [
+        "Present Simple",
+        "Present Continuous"
+      ],
+      "answer": 0,
+      "explain": "Слово usually — зазвичай, тому Present Simple."
+    },
+    {
+      "type": "sort",
+      "q": "Розклади речення за часом.",
+      "groups": {
+        "Present Simple": [
+          "I get up at 7 every day.",
+          "She always drinks milk.",
+          "We never watch television in the morning."
+        ],
+        "Present Continuous": [
+          "I am eating now.",
+          "They are playing at the moment.",
+          "Look! He is running!"
+        ]
+      }
+    },
+    {
+      "type": "fill",
+      "q": "Встав дієслово в потрібній формі.",
+      "text": "I {play} football every day. I {am playing} football now. She {is reading} at the moment.",
+      "hint": "Подивись на слова every day / now / at the moment."
+    },
+    {
+      "type": "match",
+      "q": "З'єднай слово-підказку з перекладом.",
+      "pairs": [
+        [
+          "always",
+          "завжди"
+        ],
+        [
+          "right now",
+          "просто зараз"
+        ],
+        [
+          "sometimes",
+          "іноді"
+        ],
+        [
+          "at the moment",
+          "у цю мить"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "q": "Обери правильне речення.",
+      "options": [
+        "She is going to school every day.",
+        "She goes to school every day.",
+        "She go to school now."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "speak",
+      "q": "Прочитай вголос.",
+      "text": "I usually get up at seven. But today I am sleeping at the moment.",
+      "lang": "en"
+    },
+    {
+      "type": "truefalse",
+      "q": "Правильно чи ні?",
+      "items": [
+        {
+          "text": "I am doing my homework every day.",
+          "answer": false
+        },
+        {
+          "text": "My dad works in the office on weekdays.",
+          "answer": true
+        },
+        {
+          "text": "Look! The cat is sleeping.",
+          "answer": true
+        }
+      ]
+    }
+  ],
+  "homework": [
+    {
+      "type": "fill",
+      "q": "Встав дієслово.",
+      "text": "He usually {plays} chess. Now he {is playing} a game. We {go} to the park on Sundays.",
+      "hint": "Present Simple чи Continuous?"
+    },
+    {
+      "type": "choice",
+      "q": "Яке слово підходить до Present Continuous?",
+      "options": [
+        "usually",
+        "at the moment",
+        "every day",
+        "never"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "text",
+      "q": "Напиши 2 речення про те, що ти робиш щодня, і 2 — про те, що робиш зараз.",
+      "sample": "I get up at 7 every day. I usually have breakfast at 7:30. Now I am writing. I am sitting at my desk.",
+      "min": 30
+    }
+  ],
+  "reflection": [
+    "Які слова допомагають обрати Present Simple?",
+    "А які — Present Continuous?"
+  ]
+}

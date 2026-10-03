@@ -1,0 +1,193 @@
+{
+  "id": "eng-w06-d3",
+  "subject": "eng",
+  "title": "Reading and writing: a letter about my life",
+  "goal": "Ти прочитаєш лист хлопчика і напишеш короткий лист про себе: ім'я, вік, розпорядок дня, хобі.",
+  "minutes": 35,
+  "theory": [
+    {
+      "type": "p",
+      "text": "Лист другові — це чудовий спосіб розповісти про себе. У листі ми вітаємося, розповідаємо про себе і прощаємося. Прочитай приклад."
+    },
+    {
+      "type": "reading",
+      "title": "A letter from Oleh",
+      "genre": "letter",
+      "text": "Hello, Emma!\n\nMy name is Oleh. I am ten years old. I live in Kharkiv, in Ukraine. I have got a sister and a brother.\n\nI get up at seven o'clock every day. I have breakfast and go to school. After school I usually do my homework. In the evening I play chess with my dad.\n\nMy hobby is drawing. I like drawing animals. Look, I am drawing a cat now!\n\nWhat about you? What is your hobby?\n\nBest wishes,\nOleh"
+    },
+    {
+      "type": "vocab",
+      "title": "Корисні слова для листа",
+      "items": [
+        {
+          "en": "Hello / Hi",
+          "uk": "Привіт",
+          "ex": "Hello, Emma!"
+        },
+        {
+          "en": "My name is…",
+          "uk": "Мене звати…",
+          "ex": "My name is Oleh."
+        },
+        {
+          "en": "I am … years old",
+          "uk": "Мені … років",
+          "ex": "I am ten years old."
+        },
+        {
+          "en": "I live in…",
+          "uk": "Я живу в…",
+          "ex": "I live in Kharkiv."
+        },
+        {
+          "en": "I get up at…",
+          "uk": "Я встаю о…",
+          "ex": "I get up at seven."
+        },
+        {
+          "en": "My hobby is…",
+          "uk": "Моє хобі — …",
+          "ex": "My hobby is drawing."
+        },
+        {
+          "en": "What about you?",
+          "uk": "А ти?",
+          "ex": "What about you?"
+        },
+        {
+          "en": "Best wishes",
+          "uk": "З найкращими побажаннями",
+          "ex": "Best wishes, Oleh"
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "План листа",
+      "items": [
+        "Привітайся: Hello, … !",
+        "Розкажи про себе: ім'я, вік, де живеш.",
+        "Розкажи про розпорядок дня (Present Simple).",
+        "Розкажи про хобі і що робиш зараз (Present Continuous).",
+        "Постав запитання другові: What about you?",
+        "Попрощайся: Best wishes, …"
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "Речення пиши з великої літери, в кінці став крапку. Ім'я, місто і країну завжди пиши з великої: Oleh, Kharkiv, Ukraine."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "choice",
+      "q": "Скільки років Олегові?",
+      "options": [
+        "9",
+        "10",
+        "11"
+      ],
+      "answer": 1,
+      "explain": "I am ten years old."
+    },
+    {
+      "type": "truefalse",
+      "q": "Прочитай лист. Правильно чи ні?",
+      "items": [
+        {
+          "text": "Oleh lives in Kyiv.",
+          "answer": false
+        },
+        {
+          "text": "Oleh has got a sister and a brother.",
+          "answer": true
+        },
+        {
+          "text": "Oleh plays chess with his dad in the evening.",
+          "answer": true
+        },
+        {
+          "text": "His hobby is swimming.",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "q": "Розташуй частини листа у правильному порядку.",
+      "items": [
+        "Hello, Emma!",
+        "I am ten years old.",
+        "My hobby is drawing.",
+        "What about you?",
+        "Best wishes, Oleh"
+      ]
+    },
+    {
+      "type": "fill",
+      "q": "Заповни пропуски за листом.",
+      "text": "I {get up} at seven o'clock. My hobby is {drawing}. I am drawing a cat {now}."
+    },
+    {
+      "type": "match",
+      "q": "З'єднай англійське речення з перекладом.",
+      "pairs": [
+        [
+          "I live in Ukraine.",
+          "Я живу в Україні."
+        ],
+        [
+          "I am ten years old.",
+          "Мені десять років."
+        ],
+        [
+          "What about you?",
+          "А ти?"
+        ],
+        [
+          "Best wishes",
+          "З найкращими побажаннями"
+        ]
+      ]
+    },
+    {
+      "type": "speak",
+      "q": "Прочитай вголос початок листа.",
+      "text": "Hello, Emma! My name is Oleh. I am ten years old. I live in Kharkiv, in Ukraine.",
+      "lang": "en"
+    },
+    {
+      "type": "text",
+      "q": "Напиши лист другові про себе (5–7 речень) за планом.",
+      "sample": "Hello, Alex! My name is Anna. I am ten years old. I live in Lviv. I get up at 7 every day. My hobby is dancing. What about you? Best wishes, Anna",
+      "min": 60
+    }
+  ],
+  "homework": [
+    {
+      "type": "choice",
+      "q": "Як почати лист другові?",
+      "options": [
+        "Hello, Emma!",
+        "Goodbye, Emma!",
+        "What about you?"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "fill",
+      "q": "Встав слово.",
+      "text": "My {name} is Anna. I {live} in Lviv. My {hobby} is dancing."
+    },
+    {
+      "type": "text",
+      "q": "Перепиши свій лист начисто, перевір великі літери і крапки, додай ще 2 речення про сім'ю чи улюблену їжу.",
+      "sample": "Hello, Alex! My name is Anna. I have got a brother. I like pizza. Best wishes, Anna",
+      "min": 70
+    }
+  ],
+  "reflection": [
+    "Що ти додав би про себе в листі?",
+    "Які слова допомагають розпочати і закінчити лист?"
+  ]
+}

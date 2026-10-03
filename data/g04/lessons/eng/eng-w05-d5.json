@@ -1,0 +1,203 @@
+{
+  "id": "eng-w05-d5",
+  "subject": "eng",
+  "title": "Present Continuous: questions and negatives. What are you doing?",
+  "goal": "Ти навчишся ставити запитання і робити заперечення в Present Continuous: Is he sleeping? No, he isn't.",
+  "minutes": 35,
+  "theory": [
+    {
+      "type": "p",
+      "text": "Минулого уроку ти навчився розповідати, що відбувається зараз: She is cooking. Сьогодні навчимося питати й заперечувати. Це легко: допоміжне слово **am / is / are** просто переходить на інше місце або отримує **not**."
+    },
+    {
+      "type": "rule",
+      "title": "Заперечення: am / is / are + not",
+      "text": "I **am not** reading. (I'm not reading.)\nHe / She / It **is not** sleeping. (**isn't**)\nWe / You / They **are not** playing. (**aren't**)"
+    },
+    {
+      "type": "rule",
+      "title": "Запитання: am / is / are на перше місце",
+      "text": "**Is** he sleeping? — Yes, he **is**. / No, he **isn't**.\n**Are** they playing? — Yes, they **are**. / No, they **aren't**.\n**Am** I singing? — Yes, you are. / No, you aren't."
+    },
+    {
+      "type": "rule",
+      "title": "Спеціальні запитання: What are you doing?",
+      "text": "Питальне слово + am/is/are + підмет + -ing:\n**What** are you doing? — I am drawing.\n**Where** is Sam running? — He is running in the park."
+    },
+    {
+      "type": "table",
+      "title": "Було твердження — стало запитання",
+      "head": [
+        "Твердження",
+        "Запитання",
+        "Коротка відповідь"
+      ],
+      "rows": [
+        [
+          "She is reading.",
+          "Is she reading?",
+          "Yes, she is. / No, she isn't."
+        ],
+        [
+          "They are swimming.",
+          "Are they swimming?",
+          "Yes, they are. / No, they aren't."
+        ],
+        [
+          "You are dancing.",
+          "Are you dancing?",
+          "Yes, I am. / No, I'm not."
+        ]
+      ]
+    },
+    {
+      "type": "dialogue",
+      "title": "What are you doing?",
+      "lang": "en",
+      "lines": [
+        {
+          "who": "Mum",
+          "text": "Sam, what are you doing?"
+        },
+        {
+          "who": "Sam",
+          "text": "I am playing a game."
+        },
+        {
+          "who": "Mum",
+          "text": "Are you doing your homework?"
+        },
+        {
+          "who": "Sam",
+          "text": "No, I'm not. I am not doing my homework now."
+        },
+        {
+          "who": "Mum",
+          "text": "Is your sister helping you?"
+        },
+        {
+          "who": "Sam",
+          "text": "No, she isn't. She is sleeping."
+        }
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "У короткій відповіді Yes ніколи не скорочуємо: Yes, she is. (не «Yes, she's»). А ось у No можна: No, she isn't."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "q": "Встав not або допоміжне слово.",
+      "text": "He is {not|n't} sleeping. They {are} not playing. I {am} not reading.",
+      "hint": "Після he/she/it — is, після they — are, після I — am."
+    },
+    {
+      "type": "choice",
+      "q": "Яке запитання правильне?",
+      "options": [
+        "She is dancing?",
+        "Is she dancing?",
+        "Does she dancing?"
+      ],
+      "answer": 1,
+      "explain": "Допоміжне слово is іде перед підметом.",
+      "hint": "Постав is на перше місце."
+    },
+    {
+      "type": "match",
+      "q": "З'єднай запитання з короткою відповіддю (картинка: хлопчик спить, діти грають).",
+      "pairs": [
+        [
+          "Is he sleeping? (так)",
+          "Yes, he is."
+        ],
+        [
+          "Are they playing? (ні)",
+          "No, they aren't."
+        ],
+        [
+          "Is she running? (ні)",
+          "No, she isn't."
+        ],
+        [
+          "Are you reading? (так)",
+          "Yes, I am."
+        ]
+      ]
+    },
+    {
+      "type": "order",
+      "q": "Склади запитання.",
+      "items": [
+        "What",
+        "are",
+        "you",
+        "doing",
+        "now?"
+      ]
+    },
+    {
+      "type": "truefalse",
+      "q": "Правильно чи ні?",
+      "items": [
+        {
+          "text": "Is he sleeping? — No, he isn't. He is reading.",
+          "answer": true
+        },
+        {
+          "text": "Are you swimming? — Yes, you are.",
+          "answer": false
+        },
+        {
+          "text": "They aren't playing football = They are not playing football.",
+          "answer": true
+        },
+        {
+          "text": "Is they running? — правильне запитання.",
+          "answer": false
+        }
+      ]
+    },
+    {
+      "type": "speak",
+      "q": "Прочитай вголос запитання і відповідь.",
+      "text": "What are you doing? I am reading a book. Are you watching a film? No, I'm not.",
+      "lang": "en"
+    },
+    {
+      "type": "fill",
+      "q": "Склади запитання.",
+      "text": "{Is} she cooking? {Are} you listening? {What} is he doing?",
+      "hint": "Для she і he — is, для you — are."
+    }
+  ],
+  "homework": [
+    {
+      "type": "choice",
+      "q": "Як поставити запитання до: They are eating?",
+      "options": [
+        "Are they eating?",
+        "Is they eating?",
+        "They eating are?"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "fill",
+      "q": "Заповни пропуски.",
+      "text": "I {am not|'m not} sleeping. Is Kate singing? No, she {isn't|is not}. {Are} you listening?"
+    },
+    {
+      "type": "text",
+      "q": "Напиши 3 запитання про те, що зараз роблять твої друзі чи родина, і відповіді на них.",
+      "sample": "Is Mum cooking? Yes, she is. Is Dad watching a film? No, he isn't. Are you reading? Yes, I am.",
+      "min": 30
+    }
+  ],
+  "reflection": [
+    "Чим запитання відрізняється від твердження в Present Continuous?",
+    "Які короткі відповіді ти запам'ятав?"
+  ]
+}

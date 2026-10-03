@@ -2,7 +2,7 @@
 "grade": "g04",
 "generated": "2026-10-03",
 "total": 385,
-"written": 143,
+"written": 149,
 "lessons": [
 {
 "id": "math-w01-d2",
@@ -1536,7 +1536,7 @@
 "title": "Present Continuous: questions and negatives. What are you doing?",
 "brief": "Is he sleeping? No, he isn't.",
 "file": "data/g04/lessons/eng/eng-w05-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "yds-w05-d5",
@@ -1614,7 +1614,7 @@
 "title": "Present Simple vs Present Continuous: every day / now",
 "brief": "contrast with time markers",
 "file": "data/g04/lessons/eng/eng-w06-d1.json",
-"exists": false
+"exists": true
 },
 {
 "id": "pe-w06-d1",
@@ -1679,7 +1679,7 @@
 "title": "Критичне оцінювання інформації. Правда чи фейк?",
 "brief": "джерело, автор, дата, перевірка в кількох джерелах",
 "file": "data/g04/lessons/inf/inf-w06-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "music-w06-d2",
@@ -1731,7 +1731,7 @@
 "title": "Reading and writing: a letter about my life",
 "brief": "short paragraph: name, age, routine, hobby",
 "file": "data/g04/lessons/eng/eng-w06-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "yds-w06-d3",
@@ -1861,7 +1861,7 @@
 "title": "Unit 1 revision and test",
 "brief": "vocabulary + grammar test",
 "file": "data/g04/lessons/eng/eng-w06-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "yds-w06-d5",
@@ -2004,7 +2004,7 @@
 "title": "Навчання в Інтернеті: онлайн-ресурси, безпечні сайти для дітей",
 "brief": "освітні платформи, правила безпечного навчання онлайн",
 "file": "data/g04/lessons/inf/inf-w07-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "music-w07-d2",

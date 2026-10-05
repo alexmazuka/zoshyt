@@ -219,12 +219,30 @@ window.Z = (function () {
   function redoParts(r) { return isRedo(r) ? (r.homework.review.parts || ["homework"]) : []; }
   function hwStatusName(s) { return { none: "не здано", submitted: "здано, чекає перевірки", ok: "перевірено ✓", redo: "повернуто на доопрацювання" }[s]; }
 
-  /* послідовне відкриття: урок доступний, якщо попередній урок предмета виконано */
+  /* послідовне відкриття: урок доступний, коли попередній урок предмета виконано І його домашнє прийнято.
+     Хто приймає — залежить від режиму, який обрали батьки для дитини:
+     "parent" — «Перевіряю я»: наступний урок відкривається після перевірки батьків;
+     "ai" — «Дитина вчиться сама»: домашнє одразу перевіряє Поясняйко (check.js) і сам відкриває наступний урок. */
+  const CHECK_MODES = { parent: "👨‍👩‍👧 Перевіряю я", ai: "🦉 Дитина вчиться сама" };
+  function checkMode(child) { const c = child || state.child; return c && c.checkMode === "parent" ? "parent" : "ai"; }
   function prevInSubject(l) { const list = state.bySubject[l.subject] || []; const i = list.indexOf(l); return i > 0 ? list[i - 1] : null; }
+  function passed(l) { return statusOf(l.id) === "done" && hwStatus(progress.get(l.id)) === "ok"; }
+  function lockInfo(l) {
+    const prev = prevInSubject(l); if (!prev || passed(prev)) return null;
+    if (statusOf(prev.id) !== "done") return { why: isRedo(progress.get(prev.id)) ? "redo" : "prev", prev };
+    return { why: checkMode(), prev };
+  }
+  function lockText(info) {
+    if (!info) return "";
+    const t = "«" + info.prev.title + "»";
+    return info.why === "parent" ? "Відкриється, коли батьки перевірять домашнє уроку " + t + "."
+      : info.why === "ai" ? "Відкриється, коли Поясняйко перевірить домашнє уроку " + t + "."
+      : info.why === "redo" ? "Спершу треба доробити повернутий урок " + t + "."
+      : "Відкриється після уроку " + t + ": практика і домашнє завдання.";
+  }
   function avail(l) {
     if (statusOf(l.id) === "done") return "done";
-    const prev = prevInSubject(l);
-    if (prev && statusOf(prev.id) !== "done") return "locked";
+    if (lockInfo(l)) return "locked";
     return l.exists ? "open" : "soon";
   }
   function availIcon(a) { return { done: "✓", open: "▶", locked: "🔒", soon: "⏳" }[a]; }
@@ -346,7 +364,7 @@ window.Z = (function () {
   }
   function lessonRow(l) {
     const a = avail(l); const r = progress.get(l.id);
-    const inner = `<span class="av av-${a}" title="${availName(a)}">${availIcon(a)}</span><span class="t"><b>${esc(l.title)}</b><small>${esc(state.subjMap[l.subject] ? state.subjMap[l.subject].name : "")} · урок ${l.n}</small></span>${r && r.practice.best != null ? starsHTML(r.practice.best) : ""}`;
+    const inner = `<span class="av av-${a}" title="${esc(a === "locked" ? lockText(lockInfo(l)) : availName(a))}">${availIcon(a)}</span><span class="t"><b>${esc(l.title)}</b><small>${esc(state.subjMap[l.subject] ? state.subjMap[l.subject].name : "")} · урок ${l.n}</small></span>${r && r.practice.best != null ? starsHTML(r.practice.best) : ""}`;
     return a === "open" || a === "done" ? `<a class="lesson-row ${a}" href="${link("lesson.html", { id: l.id })}">${inner}</a>` : `<div class="lesson-row ${a}">${inner}</div>`;
   }
   function header(active) {
@@ -366,7 +384,7 @@ window.Z = (function () {
     loadJSON, loadGrade, gradeAvailable, gradeLabel, band,
     parseDate, isoDate, fmt, weekInfo, dateOf, today, schoolDays,
     progress, statusOf, statusName, starsOf, starsHTML, hwStatus, hwStatusName, isRedo, redoParts,
-    avail, availIcon, availName, prevInSubject, frontier, ensureDemand,
+    avail, availIcon, availName, prevInSubject, frontier, ensureDemand, CHECK_MODES, checkMode, passed, lockInfo, lockText,
     summary, xp, level, streak, badges, sha256Hex, checkPin, setPin, boot, link,
     esc, md, abbrify, hash, shuffle, fmtTime, fmtDT, qs, subjTag, speak, lessonRow, unfinishedCard, header, wireHeader, footer, toast, modal,
   };

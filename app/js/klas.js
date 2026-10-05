@@ -18,13 +18,18 @@
       if (!fr) action = `<span class="pill-ok">✓ Усі уроки семестру виконано</span>`;
       else {
         const a = Z.avail(fr); const started = Z.progress.get(fr.id);
-        action = a === "open" ? `<a class="btn sm" href="${Z.link("lesson.html", { id: fr.id })}">${started ? "Продовжити" : "Почати"} ▶</a>` : `<span class="soon">⏳ Урок готується</span>`;
+        const info = a === "locked" ? Z.lockInfo(fr) : null;
+        action = a === "open" ? `<a class="btn sm" href="${Z.link("lesson.html", { id: fr.id })}">${started ? "Продовжити" : "Почати"} ▶</a>`
+          : a === "soon" ? `<span class="soon">⏳ Урок готується</span>`
+          : info && info.why === "parent" ? `<span class="soon" title="${Z.esc(Z.lockText(info))}">📬 Чекає перевірки батьків</span>`
+          : info && info.why === "ai" ? `<span class="soon" title="${Z.esc(Z.lockText(info))}">🦉 Поясняйко перевіряє…</span>`
+          : info ? `<a class="btn sm sec" href="${Z.link("lesson.html", { id: info.prev.id })}">↩️ Доробити попередній</a>` : "";
       }
       return `<div class="card next" style="--c:${sub.color}"><div class="next-head"><span class="dot"></span><b>${Z.esc(sub.name)}</b><small class="muted">${S.done} з ${list.length}</small></div>
         ${fr ? `<p class="next-t">Урок ${fr.n}. ${Z.esc(fr.title)}</p>` : ""}<div class="bar"><i style="width:${S.pct}%;background:${sub.color}"></i></div><div class="next-act">${action}<a class="muted small" href="${Z.link("subject.html", { s: sub.id })}">усі уроки</a></div></div>`;
     }).join("");
     const bd = Z.badges(); const earned = bd.filter(b => b.earned);
-    root.innerHTML = `<div class="card hello"><div><p class="eyebrow">${Z.gradeLabel(ch.grade)}</p><h1>${greet}, ${Z.esc(ch.name)}!</h1><p class="muted">Обери предмет і продовжуй з того місця, де зупинився. Кожен наступний урок відкривається, коли виконаєш попередній.</p></div>
+    root.innerHTML = `<div class="card hello"><div><p class="eyebrow">${Z.gradeLabel(ch.grade)}</p><h1>${greet}, ${Z.esc(ch.name)}!</h1><p class="muted">Обери предмет і продовжуй з того місця, де зупинився. ${Z.checkMode() === "parent" ? "Наступний урок відкривається, коли батьки перевірять домашнє попереднього." : "Домашнє перевіряє Поясняйко 🦉 і сам відкриває наступний урок."}</p></div>
         <div class="stats"><div><b>${A.done}</b><small>уроків виконано</small></div><div><b>${x}</b><small>XP · рівень ${Z.level(x)}</small></div><div><b>${Z.streak()}</b><small>днів поспіль</small></div><div><b>${A.stars}</b><small>зірок</small></div></div></div>
       ${Z.unfinishedCard()}
       <h2>Продовжити навчання</h2><div class="grid c3">${cards}</div>
@@ -33,4 +38,5 @@
   }
   window.addEventListener("z-remote-update", render);
   render();
+  if (Z.checkMode() === "ai" && window.Check) Check.runPending(3).then(n => { if (n) render(); });
 })();

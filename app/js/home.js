@@ -92,13 +92,18 @@
       <p class="muted">Ім'я бачитимуть лише ваша сім'я і команда пілоту. Можна скорочене.</p>
       <form id="cf"><div class="field"><label for="nm">Ім'я дитини</label><input id="nm" maxlength="30" required></div>
       <div class="field"><label for="gr">Клас</label><select id="gr" required><option value="">Оберіть клас</option>${GRADES.map((g, i) => `<option value="${g}" ${avail[i] ? "" : "disabled"}>${Z.gradeLabel(g)}${avail[i] ? "" : " — готуємо"}</option>`).join("")}</select></div>
+      <div class="field"><b>Як перевіряти домашні?</b>
+        <label class="mode-opt"><input type="radio" name="cm" value="ai" checked><span><b>🦉 Дитина вчиться сама</b><br><small class="muted">Домашнє перевіряє Поясняйко і сам відкриває наступні уроки. Ви бачите все в кабінеті батьків.</small></span></label>
+        <label class="mode-opt"><input type="radio" name="cm" value="parent"><span><b>👨‍👩‍👧 Перевіряю я</b><br><small class="muted">Наступний урок відкривається після вашої перевірки домашнього.</small></span></label>
+        <small class="muted">Режим можна змінити будь-коли в кабінеті батьків.</small></div>
       <p class="row-btns">${first ? "" : '<button type="button" class="btn ghost" id="back">Назад</button>'}<button class="btn" type="submit">Далі</button></p></form></div>`);
     const back = document.getElementById("back"); if (back) back.onclick = render;
     document.getElementById("cf").onsubmit = async e => {
       e.preventDefault();
       const name = document.getElementById("nm").value.trim(), grade = document.getElementById("gr").value;
       if (!name || !grade) { Z.toast("Вкажіть ім'я і клас", "bad"); return; }
-      const children = (Z.state.profile.children || []).concat([{ id: "c" + Date.now().toString(36), name, grade }]);
+      const checkMode = (document.querySelector("input[name=cm]:checked") || {}).value === "parent" ? "parent" : "ai";
+      const children = (Z.state.profile.children || []).concat([{ id: "c" + Date.now().toString(36), name, grade, checkMode }]);
       await Z.DB.set("users", Z.state.user.uid, { children }, true);
       Z.state.profile.children = children; render();
     };
@@ -122,7 +127,7 @@
     const kids = profile.children || [];
     root.innerHTML = `<header class="top"><a class="brand" href="index.html"><span class="logo-word">Зошит</span><small>${Z.esc(profile.email || Z.state.user.email)}</small></a><nav></nav><div class="me">${Z.DB.isAdmin() ? '<a class="chip" href="admin.html">Адмін-панель</a>' : ""}<button class="chip btn-link" id="out" type="button">Вийти</button></div></header>
       <main class="wrap"><h1 class="hi">Хто зараз вчиться?</h1>
-      <div class="kids">${kids.map(c => `<div class="kid card"><div class="kid-ava" aria-hidden="true">${Z.esc((c.name || "?").slice(0, 1).toUpperCase())}</div><h2>${Z.esc(c.name)}</h2><p class="muted">${Z.gradeLabel(c.grade)}</p>
+      <div class="kids">${kids.map(c => `<div class="kid card"><div class="kid-ava" aria-hidden="true">${Z.esc((c.name || "?").slice(0, 1).toUpperCase())}</div><h2>${Z.esc(c.name)}</h2><p class="muted">${Z.gradeLabel(c.grade)}<br><small>${Z.CHECK_MODES[Z.checkMode(c)]}</small></p>
         <p class="row-btns"><a class="btn" href="klas.html?c=${encodeURIComponent(c.id)}">Відкрити зошит</a><a class="btn ghost sm" href="parent.html?c=${encodeURIComponent(c.id)}">Кабінет батьків</a></p></div>`).join("")}
         <button class="kid card add" id="add" type="button"><span class="kid-ava">+</span><b>Додати дитину</b></button></div>
       <p class="muted small">Помітили помилку в уроці? У кожному уроці є кнопка «⚑ Помилка?» — повідомлення одразу бачить команда.</p></main>`;

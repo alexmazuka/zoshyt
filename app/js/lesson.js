@@ -15,8 +15,14 @@
 
   const av = Z.avail(meta);
   if (av === "locked") {
-    const prev = Z.prevInSubject(meta);
-    root.innerHTML = `<div class="card lock-card"><div class="big">🔒</div><h1>${Z.esc(meta.title)}</h1><p>${Z.subjTag(meta.subject)} Урок ${meta.n} з ${subjList.length}</p><p>Цей урок відкриється, коли ти виконаєш попередній: <b>«${Z.esc(prev.title)}»</b> — практику і домашнє завдання.</p><p><a class="btn" href="${Z.link("lesson.html", { id: prev.id })}">До попереднього уроку</a> <a class="btn ghost" href="${Z.link("subject.html", { s: meta.subject })}">Усі уроки предмета</a></p></div>`;
+    const info = Z.lockInfo(meta); const prev = info.prev;
+    const icon = info.why === "parent" ? "📬" : info.why === "ai" ? "🦉" : info.why === "redo" ? "↩️" : "🔒";
+    root.innerHTML = `<div class="card lock-card"><div class="big">${icon}</div><h1>${Z.esc(meta.title)}</h1><p>${Z.subjTag(meta.subject)} Урок ${meta.n} з ${subjList.length}</p><p>${Z.esc(Z.lockText(info))}</p><p id="lockAct"></p>
+      <p class="row-btns">${info.why === "parent" ? "" : `<a class="btn" href="${Z.link("lesson.html", { id: prev.id })}">До уроку «${Z.esc(prev.title)}»</a>`}<a class="btn ghost" href="${Z.link("klas.html")}">До мого шляху</a></p></div>`;
+    if (info.why === "ai" && window.Check && Check.pending(Z.progress.get(prev.id))) {
+      document.getElementById("lockAct").innerHTML = '<span class="notice">🦉 Поясняйко перевіряє домашнє… Зачекай кілька секунд.</span>';
+      Check.run(prev, Z.progress.get(prev.id)).then(() => location.reload(), () => { document.getElementById("lockAct").textContent = "Не вдалося перевірити — спробуй оновити сторінку трохи згодом."; });
+    }
     return;
   }
   if (av === "soon") {
@@ -38,7 +44,17 @@
   const seed = Z.hash(id);
   if (!rec.theory && !rec.practice.done) Z.progress.log({ type: "open", id });
 
-  let tick = 0;
+  let tick = 0; let checking = false;
+  /* перевірка домашнього Поясняйком (режим «Дитина вчиться сама») */
+  function runCheck() {
+    if (checking || !Check.pending(rec)) return;
+    checking = true; if (step === "summary") render();
+    Check.run(meta, rec).then(rv => {
+      checking = false;
+      if (rv && rv.status === "redo") { Z.toast("Поясняйко просить доробити домашнє", "bad"); go("homework"); }
+      else { if (rv) Z.toast("Поясняйко перевірив: зараховано ✅", "ok"); render(); }
+    }, () => { checking = false; render(); });
+  }
   setInterval(() => { if (document.visibilityState === "visible") { rec.time = (rec.time || 0) + 1; if (++tick % 15 === 0) Z.progress.set(id, rec); } }, 1000);
   document.addEventListener("visibilitychange", () => Z.progress.set(id, rec));
   window.addEventListener("beforeunload", () => Z.progress.set(id, rec));
@@ -54,7 +70,8 @@
   function partDone(p) { return p === "theory" ? !!rec.theory : p === "practice" ? !!rec.practice.done : !!rec.homework.submitted; }
   function redoNotice() {
     const parts = Z.redoParts(rec); if (!parts.length) return ""; const rv = rec.homework.review;
-    return `<div class="notice">↩️ <b>Батьки повернули урок на доопрацювання.</b> Треба ще раз: ${parts.map(p => PART_TODO[p] + (partDone(p) ? " ✓" : "")).join(", ")}.${rv.comment ? `<br>Коментар: ${Z.esc(rv.comment)}` : ""}</div>`;
+    const who = rv.by === "ai" || rv.by === "auto" ? "Поясняйко просить доробити урок." : "Батьки повернули урок на доопрацювання.";
+    return `<div class="notice">↩️ <b>${who}</b> Треба ще раз: ${parts.map(p => PART_TODO[p] + (partDone(p) ? " ✓" : "")).join(", ")}.${rv.comment ? `<br>Коментар: ${Z.esc(rv.comment)}` : ""}</div>`;
   }
   function finishRedo() { const parts = Z.redoParts(rec); if (parts.length && parts.every(partDone)) { rec.homework.review = null; Z.progress.log({ type: "redo_done", id }); } }
   function head() {
@@ -198,6 +215,7 @@
     Z.progress.set(id, rec); Z.progress.log({ type: "homework", id, score: rec.homework.score, texts, time: rec.time });
     Z.ensureDemand(meta.subject);
     Z.toast("Домашнє завдання здано! 📬", "ok"); go("summary");
+    if (Z.checkMode() === "ai" && window.Check) runCheck();
   }
   function celebrate(sc) {
     if (sc < Z.PASS || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -206,6 +224,14 @@
   }
 
   /* ---------- підсумок ---------- */
+  function checkHTML() {
+    const done = Z.statusOf(id) === "done"; const rv = rec.homework.review;
+    if (!done) return '<p class="notice">Щоб урок зарахувався, потрібно завершити практику і здати домашнє завдання.</p>';
+    if (Z.hwStatus(rec) === "ok") { const who = rv.by === "parent" ? "Батьки перевірили домашнє" : rv.by === "ai" ? "Поясняйко перевірив домашнє" : "Домашнє зараховано"; return `<p class="notice okn">✅ <b>${who}.</b> ${Z.esc(rv.comment || "")}</p>`; }
+    if (checking) return '<p class="notice">🦉 Поясняйко перевіряє домашнє… Зачекай кілька секунд.</p>';
+    if (Z.checkMode() === "parent") return '<p class="notice">📬 Урок виконано, домашнє здано. Наступний урок відкриється, коли батьки його перевірять.</p>';
+    return '<p class="notice">📬 Домашнє здано і чекає перевірки Поясняйка. <button class="btn sm" id="checkNow" type="button">Перевірити зараз</button></p>';
+  }
   function summaryView() {
     const done = Z.statusOf(id) === "done"; const sc = rec.practice.best;
     const refl = L.reflection && L.reflection.length ? `<h3>🪞 Подумай</h3>${L.reflection.map((q, i) => `<div class="field"><label>${MD(q)}</label><textarea data-refl="${i}" rows="2">${Z.esc((rec.reflection || {})[i] || "")}</textarea></div>`).join("")}` : "";
@@ -214,13 +240,13 @@
       const a = Z.avail(nextL);
       nextHTML = a === "open" ? `<a class="btn" href="${Z.link("lesson.html", { id: nextL.id })}">Наступний урок: ${Z.esc(nextL.title)} ▶</a>`
         : a === "soon" ? `<span class="notice">⏳ Наступний урок «${Z.esc(nextL.title)}» готується — ми вже отримали сигнал, що ти до нього дійшов.</span>`
-        : `<span class="muted">Наступний урок відкриється, коли цей буде виконано повністю.</span>`;
+        : `<span class="muted">${Z.esc(Z.lockText(Z.lockInfo(nextL)))}</span>`;
     }
     return `<div class="card"><h2 style="margin-top:0">🏁 Підсумок уроку</h2>
       <div class="grid c3"><div class="card mini"><small class="muted">Практика</small><div class="num-big">${sc != null ? sc + "%" : "—"}</div>${Z.starsHTML(sc)}${rec.practice.attempts > 1 ? `<small class="muted">спроб: ${rec.practice.attempts}</small>` : ""}</div>
       <div class="card mini"><small class="muted">Домашнє завдання</small><div class="num-mid">${Z.hwStatusName(Z.hwStatus(rec))}</div>${rec.homework.score != null ? `<small>автоперевірка: ${rec.homework.score}%</small>` : ""}</div>
       <div class="card mini"><small class="muted">Час на уроці</small><div class="num-mid">${Z.fmtTime(rec.time)}</div><small class="muted">рекомендовано ~${L.minutes} хв</small></div></div>
-      ${done ? '<p class="notice okn">✅ Урок виконано повністю. Так тримати!</p>' : '<p class="notice">Щоб урок зарахувався, потрібно завершити практику і здати домашнє завдання.</p>'}
+      ${checkHTML()}
       ${refl}
       <p class="row-btns">${prevL ? `<a class="btn ghost" href="${Z.link("lesson.html", { id: prevL.id })}">◀ Попередній</a>` : ""}<a class="btn sec" href="${Z.link("subject.html", { s: meta.subject })}">Усі уроки: ${Z.esc(S.name)}</a>${done ? nextHTML : ""}</p></div>`;
   }
@@ -252,7 +278,9 @@
     root.querySelectorAll("button[data-go]").forEach(b => b.onclick = () => go(b.dataset.go));
     const td = document.getElementById("theoryDone"); if (td) td.onclick = () => { if (!rec.theory) { rec.theory = Date.now(); finishRedo(); Z.progress.set(id, rec); } go("practice"); };
     if (step === "practice" || step === "homework") afterRender(step);
+    const cn = document.getElementById("checkNow"); if (cn) cn.onclick = runCheck;
     root.querySelectorAll("textarea[data-refl]").forEach(t => t.addEventListener("input", () => { rec.reflection ||= {}; rec.reflection[t.dataset.refl] = t.value; Z.progress.set(id, rec); }));
   }
   render();
+  if (Z.checkMode() === "ai" && window.Check && Check.pending(rec)) runCheck();
 })();

@@ -74,7 +74,7 @@
     return `<div class="notice">↩️ <b>${who}</b> Треба ще раз: ${parts.map(p => PART_TODO[p] + (partDone(p) ? " ✓" : "")).join(", ")}.${rv.comment ? `<br>Коментар: ${Z.esc(rv.comment)}` : ""}</div>`;
   }
   function finishRedo() { const parts = Z.redoParts(rec); if (parts.length && parts.every(partDone)) { rec.homework.review = null; Z.progress.log({ type: "redo_done", id }); } }
-  /* кнопки кроків уроку — однакові вгорі (у шапці) і внизу кожного кроку, щоб не гортати вгору */
+  /* кнопки кроків уроку в шапці */
   function stepButtons() { return STEPS.map(([k, n]) => `<button data-step="${k}" class="${step === k ? "on" : ""} ${stepState(k)}">${stepState(k) === "done" ? "✓ " : ""}${n}</button>`).join(""); }
   function head() {
     return `<div class="card"><div class="lesson-head"><div style="flex:1;min-width:240px">${Z.subjTag(meta.subject)} <span class="chip">Урок ${meta.n} з ${subjList.length}</span> <span class="chip">⏱ ~${L.minutes} хв</span>
@@ -132,7 +132,7 @@
     if (kind === "practice") foot = rec.practice.done ? resultBanner() : `<p style="margin-top:18px"><button class="btn ok" id="finish" disabled>Завершити практику</button> <small class="muted" id="finishHint">Спочатку перевір усі вправи.</small></p>`;
     else foot = rec.homework.submitted
       ? `<div class="result-banner"><div class="big">📬</div><b>Домашнє завдання здано ${Z.fmtDT(rec.homework.submitted)}</b>${rec.homework.score != null ? `<p>Завдання з автоперевіркою: <b>${rec.homework.score}%</b> ${Z.starsHTML(rec.homework.score)}</p>` : ""}<p class="muted">${Z.hwStatus(rec) === "ok" ? "Батьки вже перевірили. Молодець!" : "Батьки побачать твої відповіді у своєму кабінеті."}</p><p><button class="btn" data-go="summary">До підсумку ▶</button></p></div>`
-      : `<p style="margin-top:18px"><button class="btn ok" id="submitHW" disabled>Здати домашнє завдання</button> <small class="muted" id="finishHint">Спочатку перевір усі завдання.</small></p>`;
+      : `<p style="margin-top:18px"><button class="btn ok" id="submitHW" disabled>Здати домашнє завдання</button> <button class="btn ghost" data-go="summary" type="button">4. Підсумок ▶</button> <small class="muted" id="finishHint">Спочатку перевір усі завдання.</small></p>`;
     return `<div class="card" id="exwrap" data-kind="${kind}">${intro}${review}${cards}${foot}</div>`;
   }
   function resultBanner() {
@@ -274,7 +274,7 @@
   function go(s) { step = s; render(); window.scrollTo({ top: 0, behavior: "smooth" }); }
   function render() {
     const body = step === "theory" ? theoryView() : step === "practice" ? exercisesView("practice") : step === "homework" ? exercisesView("homework") : summaryView();
-    root.innerHTML = head() + body + `<div class="card steps-bottom"><small class="muted">Перейти до кроку уроку:</small><div class="steps">${stepButtons()}</div></div>`;
+    root.innerHTML = head() + body;
     if (window.AiHelp) window.AiHelp.setContext(aiContext());
     root.querySelectorAll("button[data-step]").forEach(b => b.onclick = () => go(b.dataset.step));
     root.querySelectorAll("button[data-go]").forEach(b => b.onclick = () => go(b.dataset.go));

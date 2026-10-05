@@ -59,7 +59,7 @@
   document.addEventListener("visibilitychange", () => Z.progress.set(id, rec));
   window.addEventListener("beforeunload", () => Z.progress.set(id, rec));
 
-  const pos = subjList.indexOf(meta); const nextL = subjList[pos + 1] || null; const prevL = subjList[pos - 1] || null;
+  const pos = subjList.indexOf(meta); const nextL = subjList[pos + 1] || null;
   const STEPS = [["theory", "1. Теорія"], ["practice", "2. Практика"], ["homework", "3. Домашнє"], ["summary", "4. Підсумок"]];
   let step = !rec.theory ? "theory" : !rec.practice.done ? "practice" : !rec.homework.submitted ? "homework" : "summary";
   if (Z.qs("step")) step = Z.qs("step");
@@ -250,7 +250,7 @@
       <div class="card mini"><small class="muted">Час на уроці</small><div class="num-mid">${Z.fmtTime(rec.time)}</div><small class="muted">рекомендовано ~${L.minutes} хв</small></div></div>
       ${checkHTML()}
       ${refl}
-      <p class="row-btns">${prevL ? `<a class="btn ghost" href="${Z.link("lesson.html", { id: prevL.id })}">◀ Попередній</a>` : ""}<a class="btn sec" href="${Z.link("subject.html", { s: meta.subject })}">Усі уроки: ${Z.esc(S.name)}</a>${done ? nextHTML : ""}</p></div>`;
+      <p class="row-btns">${done ? nextHTML : ""}<a class="btn sec" href="${Z.link("klas.html")}">📚 До уроків</a><a class="btn ghost" href="${Z.link("subject.html", { s: meta.subject })}">Усі уроки: ${Z.esc(S.name)}</a></p></div>`;
   }
 
   /* ---------- контекст для Поясняйка ---------- */

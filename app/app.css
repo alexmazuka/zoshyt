@@ -378,3 +378,6 @@ details.prev summary{cursor:pointer;font-weight:700}
 .mode-opt{display:flex!important;gap:10px;align-items:flex-start;padding:10px 12px;margin:8px 0;border:2px solid var(--rule);border-radius:12px;cursor:pointer;font-weight:400!important}
 .mode-opt:has(input:checked){border-color:var(--blue);background:var(--blue-soft)}
 .mode-opt input{margin-top:4px}
+/* нижня панель кроків уроку */
+.steps-bottom .steps{margin:6px 0 0}
+@media print{.steps-bottom{display:none!important}}

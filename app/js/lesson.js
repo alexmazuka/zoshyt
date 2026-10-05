@@ -74,10 +74,12 @@
     return `<div class="notice">↩️ <b>${who}</b> Треба ще раз: ${parts.map(p => PART_TODO[p] + (partDone(p) ? " ✓" : "")).join(", ")}.${rv.comment ? `<br>Коментар: ${Z.esc(rv.comment)}` : ""}</div>`;
   }
   function finishRedo() { const parts = Z.redoParts(rec); if (parts.length && parts.every(partDone)) { rec.homework.review = null; Z.progress.log({ type: "redo_done", id }); } }
+  /* кнопки кроків уроку — однакові вгорі (у шапці) і внизу кожного кроку, щоб не гортати вгору */
+  function stepButtons() { return STEPS.map(([k, n]) => `<button data-step="${k}" class="${step === k ? "on" : ""} ${stepState(k)}">${stepState(k) === "done" ? "✓ " : ""}${n}</button>`).join(""); }
   function head() {
     return `<div class="card"><div class="lesson-head"><div style="flex:1;min-width:240px">${Z.subjTag(meta.subject)} <span class="chip">Урок ${meta.n} з ${subjList.length}</span> <span class="chip">⏱ ~${L.minutes} хв</span>
       <h1>${Z.esc(L.title)}</h1><small class="muted">${Z.esc(meta.section)}</small><div class="goal">🎯 ${MD(L.goal)}</div>${redoNotice()}</div></div>
-      <div class="steps">${STEPS.map(([k, n]) => `<button data-step="${k}" class="${step === k ? "on" : ""} ${stepState(k)}">${stepState(k) === "done" ? "✓ " : ""}${n}</button>`).join("")}</div></div>`;
+      <div class="steps">${stepButtons()}</div></div>`;
   }
 
   /* ---------- теорія ---------- */
@@ -272,7 +274,7 @@
   function go(s) { step = s; render(); window.scrollTo({ top: 0, behavior: "smooth" }); }
   function render() {
     const body = step === "theory" ? theoryView() : step === "practice" ? exercisesView("practice") : step === "homework" ? exercisesView("homework") : summaryView();
-    root.innerHTML = head() + body;
+    root.innerHTML = head() + body + `<div class="card steps-bottom"><small class="muted">Перейти до кроку уроку:</small><div class="steps">${stepButtons()}</div></div>`;
     if (window.AiHelp) window.AiHelp.setContext(aiContext());
     root.querySelectorAll("button[data-step]").forEach(b => b.onclick = () => go(b.dataset.step));
     root.querySelectorAll("button[data-go]").forEach(b => b.onclick = () => go(b.dataset.go));

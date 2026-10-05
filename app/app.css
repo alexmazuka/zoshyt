@@ -378,3 +378,16 @@ details.prev summary{cursor:pointer;font-weight:700}
 .mode-opt{display:flex!important;gap:10px;align-items:flex-start;padding:10px 12px;margin:8px 0;border:2px solid var(--rule);border-radius:12px;cursor:pointer;font-weight:400!important}
 .mode-opt:has(input:checked){border-color:var(--blue);background:var(--blue-soft)}
 .mode-opt input{margin-top:4px}
+
+/* розклад тижня */
+.wk-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.wk-sum{display:flex;flex-direction:column;align-items:flex-end;text-align:right}
+.wk-sum b{font:700 1.3rem/1.1 var(--f-display)}
+.wk-nav{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0 6px}
+.wk{min-width:38px;height:36px;padding:0 8px;border-radius:10px;border:2px solid var(--rule);background:var(--surface);color:var(--ink);font:600 .92rem/1 var(--f-body);cursor:pointer}
+.wk.full{border-color:var(--ok);color:var(--ok)}
+.wk.on{border-color:var(--blue);background:var(--blue-soft);color:var(--blue)}
+.grid.days{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card.day{margin:0}
+.card.day h3{margin:0 0 2px}
+.card.day.today{outline:3px solid var(--blue);outline-offset:-1px}

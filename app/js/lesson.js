@@ -240,7 +240,7 @@
     let nextHTML = "";
     if (nextL) {
       const a = Z.avail(nextL);
-      nextHTML = a === "open" ? `<a class="btn" href="${Z.link("lesson.html", { id: nextL.id })}">Наступний урок: ${Z.esc(nextL.title)} ▶</a>`
+      nextHTML = a === "open" ? `<a class="btn" href="${Z.link("lesson.html", { id: nextL.id })}">Наступний урок: ${Z.esc(S.name)} ▶</a>`
         : a === "soon" ? `<span class="notice">⏳ Наступний урок «${Z.esc(nextL.title)}» готується — ми вже отримали сигнал, що ти до нього дійшов.</span>`
         : `<span class="muted">${Z.esc(Z.lockText(Z.lockInfo(nextL)))}</span>`;
     }
@@ -250,7 +250,7 @@
       <div class="card mini"><small class="muted">Час на уроці</small><div class="num-mid">${Z.fmtTime(rec.time)}</div><small class="muted">рекомендовано ~${L.minutes} хв</small></div></div>
       ${checkHTML()}
       ${refl}
-      <p class="row-btns">${done ? nextHTML : ""}<a class="btn sec" href="${Z.link("klas.html")}">📚 До уроків</a><a class="btn ghost" href="${Z.link("subject.html", { s: meta.subject })}">Усі уроки: ${Z.esc(S.name)}</a></p></div>`;
+      <p class="row-btns">${done ? nextHTML : ""}<a class="btn sec" href="${Z.link("subject.html", { s: meta.subject })}">Усі уроки: ${Z.esc(S.name)}</a><a class="btn sec" href="${Z.link("klas.html")}">📚 До всіх уроків</a><a class="btn ghost" href="${Z.link("week.html", { w: meta.week })}">📅 Розклад тижня</a></p></div>`;
   }
 
   /* ---------- контекст для Поясняйка ---------- */

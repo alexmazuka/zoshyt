@@ -157,6 +157,10 @@ window.Z = (function () {
   function weekInfo(week) { return state.cal.weeks.find(w => w.week === week); }
   function dateOf(week, day) { const w = weekInfo(week); const d = parseDate(w.monday); d.setDate(d.getDate() + day - 1); return d; }
   function today() { const t = new Date(); t.setHours(0, 0, 0, 0); return t; }
+  /* поточний навчальний тиждень: останній, що почався (до старту — перший, після кінця — останній) */
+  function currentWeek() { const iso = isoDate(today()); let cur = state.cal.weeks[0].week; state.cal.weeks.forEach(w => { if (w.monday <= iso) cur = w.week; }); return cur; }
+  function quarterOf(week) { return (state.cal.quarters || []).find(q => week >= q.weeks[0] && week <= q.weeks[1]) || { name: "" }; }
+  function lessonsOn(week, day) { return (state.byWeek[week] || []).filter(l => l.day === day).sort((a, b) => (a.pos || 0) - (b.pos || 0)); }
   function schoolDays() { const out = []; state.cal.weeks.forEach(w => w.days.forEach(day => out.push({ week: w.week, day, iso: isoDate(dateOf(w.week, day)) }))); return out; }
 
   /* ---------------- прогрес дитини ---------------- */
@@ -369,7 +373,7 @@ window.Z = (function () {
   }
   function header(active) {
     const x = xp(); const ch = state.child;
-    const nav = [["klas.html", "Мій шлях", "home"], ["subject.html", "Предмети", "subject"], ["parent.html", "Батькам", "parent"]];
+    const nav = [["klas.html", "Мій шлях", "home"], ["week.html", "Розклад", "week"], ["subject.html", "Предмети", "subject"], ["parent.html", "Батькам", "parent"]];
     return `<header class="top"><a class="brand" href="index.html"><span class="logo-word">Зошит</span><small>${ch ? esc(ch.name) + " · " + gradeLabel(ch.grade) : ""}</small></a>
       <nav>${nav.map(n => `<a href="${link(n[0])}" class="${active === n[2] ? "on" : ""}">${n[1]}</a>`).join("")}</nav>
       <div class="me"><span class="chip" title="Очки досвіду">⚡ ${x} XP · рів. ${level(x)}</span><span class="chip" title="Днів навчання поспіль">🔥 ${streak()}</span><button class="chip btn-link" id="hdr-report" type="button">⚑ Помилка?</button></div></header>`;
@@ -382,7 +386,7 @@ window.Z = (function () {
   return {
     DB, state, DAYS, DAYS_SHORT, PASS, BUFFER, ADMIN_EMAILS,
     loadJSON, loadGrade, gradeAvailable, gradeLabel, band,
-    parseDate, isoDate, fmt, weekInfo, dateOf, today, schoolDays,
+    parseDate, isoDate, fmt, weekInfo, dateOf, today, schoolDays, currentWeek, quarterOf, lessonsOn,
     progress, statusOf, statusName, starsOf, starsHTML, hwStatus, hwStatusName, isRedo, redoParts,
     avail, availIcon, availName, prevInSubject, frontier, ensureDemand, CHECK_MODES, checkMode, passed, lockInfo, lockText,
     summary, xp, level, streak, badges, sha256Hex, checkPin, setPin, boot, link,

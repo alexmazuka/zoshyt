@@ -209,11 +209,14 @@ window.Z = (function () {
   };
 
   const PASS = 70;
-  function statusOf(id) { const r = progress.get(id); if (!r) return "new"; if (r.practice.done && r.homework.submitted) return "done"; if (r.practice.done) return "practice"; return "started"; }
+  function statusOf(id) { const r = progress.get(id); if (!r) return "new"; if (isRedo(r)) return "started"; if (r.practice.done && r.homework.submitted) return "done"; if (r.practice.done) return "practice"; return "started"; }
   function statusName(st) { return { new: "не розпочато", started: "розпочато", practice: "практику виконано, домашнє не здано", done: "виконано" }[st]; }
   function starsOf(score) { if (score == null) return 0; if (score >= 90) return 3; if (score >= 70) return 2; if (score >= 50) return 1; return 0; }
   function starsHTML(score) { const n = starsOf(score); return `<span class="stars" title="${score == null ? "" : score + "%"}">${"★".repeat(n)}${"☆".repeat(3 - n)}</span>`; }
-  function hwStatus(r) { if (!r || !r.homework.submitted) return r && r.homework.review && r.homework.review.status === "redo" ? "redo" : "none"; if (r.homework.review && r.homework.review.status === "ok") return "ok"; return "submitted"; }
+  function hwStatus(r) { if (!r) return "none"; if (isRedo(r)) return "redo"; if (!r.homework.submitted) return "none"; if (r.homework.review && r.homework.review.status === "ok") return "ok"; return "submitted"; }
+  /* повернення на доопрацювання: батьки позначають, що саме переробити (теорію, практику, домашнє) */
+  function isRedo(r) { return !!(r && r.homework && r.homework.review && r.homework.review.status === "redo"); }
+  function redoParts(r) { return isRedo(r) ? (r.homework.review.parts || ["homework"]) : []; }
   function hwStatusName(s) { return { none: "не здано", submitted: "здано, чекає перевірки", ok: "перевірено ✓", redo: "повернуто на доопрацювання" }[s]; }
 
   /* послідовне відкриття: урок доступний, якщо попередній урок предмета виконано */
@@ -326,6 +329,21 @@ window.Z = (function () {
     const pick = () => { const vs = speechSynthesis.getVoices(); const pref = lang === "en" ? ["en-GB", "en-US", "en"] : ["uk-UA", "uk"]; for (const p of pref) { const v = vs.find(v => v.lang.replace("_", "-").toLowerCase().startsWith(p.toLowerCase())); if (v) { u.voice = v; break; } } speechSynthesis.speak(u); };
     if (speechSynthesis.getVoices().length) pick(); else speechSynthesis.onvoiceschanged = () => { speechSynthesis.onvoiceschanged = null; pick(); };
   }
+  /* «Незавершені уроки»: що вже зроблено в кожному розпочатому уроці і що лишилося; повернуті батьками — першими */
+  function unfinishedCard(limit) {
+    const all = state.plan.map(l => ({ l, r: progress.get(l.id) })).filter(x => x.r && statusOf(x.l.id) !== "done");
+    if (!all.length) return "";
+    all.sort((a, b) => (isRedo(b.r) - isRedo(a.r)) || ((b.r.last || 0) - (a.r.last || 0)));
+    const list = all.slice(0, limit || 8);
+    const stg = (ok, label, extra) => `<span class="stg ${ok ? "ok" : ""}">${ok ? "✓" : "○"} ${label}${extra || ""}</span>`;
+    const rows = list.map(({ l, r }) => {
+      const redo = isRedo(r); const rv = r.homework.review; const next = !r.theory ? "теорія" : !r.practice.done ? "практика" : "домашнє";
+      return `<div class="unf${redo ? " redo" : ""}"><div class="unf-t">${subjTag(l.subject)} <b>${esc(l.title)}</b>${redo ? ' <span class="chip warn">↩️ повернули батьки</span>' : ""}</div>
+        <div class="stgs">${stg(!!r.theory, "Теорія")}${stg(!!r.practice.done, "Практика", r.practice.done && r.practice.score != null ? " · " + r.practice.score + "%" : "")}${stg(!!r.homework.submitted, "Домашнє")}</div>
+        ${redo && rv.comment ? `<small class="muted">Коментар батьків: ${esc(rv.comment)}</small><br>` : ""}<a class="btn sm" href="${link("lesson.html", { id: l.id })}">Продовжити: ${next} ▶</a></div>`;
+    }).join("");
+    return `<div class="card unf-card"><h2 style="margin-top:0">🧩 Незавершені уроки: ${all.length}</h2><p class="muted">Уроки, які ти почав, але ще не пройшов до кінця. ✓ — етап зроблено, ○ — ще треба.</p>${rows}${all.length > list.length ? `<p class="muted">…і ще ${all.length - list.length}.</p>` : ""}</div>`;
+  }
   function lessonRow(l) {
     const a = avail(l); const r = progress.get(l.id);
     const inner = `<span class="av av-${a}" title="${availName(a)}">${availIcon(a)}</span><span class="t"><b>${esc(l.title)}</b><small>${esc(state.subjMap[l.subject] ? state.subjMap[l.subject].name : "")} · урок ${l.n}</small></span>${r && r.practice.best != null ? starsHTML(r.practice.best) : ""}`;
@@ -347,9 +365,9 @@ window.Z = (function () {
     DB, state, DAYS, DAYS_SHORT, PASS, BUFFER, ADMIN_EMAILS,
     loadJSON, loadGrade, gradeAvailable, gradeLabel, band,
     parseDate, isoDate, fmt, weekInfo, dateOf, today, schoolDays,
-    progress, statusOf, statusName, starsOf, starsHTML, hwStatus, hwStatusName,
+    progress, statusOf, statusName, starsOf, starsHTML, hwStatus, hwStatusName, isRedo, redoParts,
     avail, availIcon, availName, prevInSubject, frontier, ensureDemand,
     summary, xp, level, streak, badges, sha256Hex, checkPin, setPin, boot, link,
-    esc, md, abbrify, hash, shuffle, fmtTime, fmtDT, qs, subjTag, speak, lessonRow, header, wireHeader, footer, toast, modal,
+    esc, md, abbrify, hash, shuffle, fmtTime, fmtDT, qs, subjTag, speak, lessonRow, unfinishedCard, header, wireHeader, footer, toast, modal,
   };
 })();

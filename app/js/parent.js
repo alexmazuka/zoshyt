@@ -25,7 +25,7 @@
   }
 
   const TABS = [["overview", "Огляд"], ["lessons", "Уроки і домашні"], ["journal", "Журнал"], ["report", "Звіт"], ["settings", "Налаштування"]];
-  let tab = Z.qs("tab") || "overview"; let subjFilter = ""; let onlyHW = false; let openId = Z.qs("id") || null;
+  let tab = Z.qs("tab") || "overview"; let subjFilter = ""; let onlyHW = false; let openId = Z.qs("id") || null; let flash = null;
   const ch = Z.state.child;
 
   function overview() {
@@ -54,6 +54,19 @@
       <div class="table-wrap"><table><thead><tr><th>Предмет</th><th>Урок</th><th>Практика</th><th>Домашнє</th><th>Час</th><th></th></tr></thead><tbody>${rows || '<tr><td colspan="6" class="muted">Ще немає уроків, які дитина відкривала.</td></tr>'}</tbody></table></div></div><div id="detail"></div>`;
   }
 
+  /* повернення на доопрацювання: що саме повернути; попередня спроба зберігається для батьків */
+  const PARTS = [["theory", "📖 Теорію — прочитати ще раз"], ["practice", "✏️ Практику — виконати заново"], ["homework", "🏠 Домашнє — зробити заново"]];
+  const PART_SHORT = { theory: "теорія", practice: "практика", homework: "домашнє" };
+  function partsHTML(rv) { const redo = rv && rv.status === "redo"; const cur = redo ? (rv.parts || ["homework"]) : null; return `<div class="field rv-parts" ${redo ? "" : "hidden"}><b>Що повернути:</b>${PARTS.map(([k, n]) => `<label><input type="checkbox" name="rvp" value="${k}" ${!cur || cur.includes(k) ? "checked" : ""}> ${n}</label>`).join("")}</div>`; }
+  function returnLesson(r, parts, comment) {
+    const snap = { at: Date.now(), comment, parts };
+    if (parts.includes("practice")) snap.practice = { answers: r.practice.answers, results: r.practice.results, score: r.practice.score };
+    if (parts.includes("homework")) snap.homework = { answers: r.homework.answers, results: r.homework.results, score: r.homework.score, submitted: r.homework.submitted };
+    r.returned = (r.returned || []).concat([snap]).slice(-5);
+    if (parts.includes("theory")) r.theory = null;
+    if (parts.includes("practice")) Object.assign(r.practice, { answers: {}, results: {}, score: null, done: null });
+    if (parts.includes("homework")) Object.assign(r.homework, { answers: {}, results: {}, score: null, submitted: null });
+  }
   async function detail(id) {
     const box = document.getElementById("detail"); const meta = Z.state.byId[id]; const r = Z.progress.get(id); const L = await lessonFile(id);
     if (!L) { box.innerHTML = '<div class="card">Файл уроку недоступний.</div>'; return; }
@@ -71,16 +84,23 @@
       <h3>Практика ${r.practice.done ? `— ${r.practice.score}% (найкращий ${r.practice.best}%, спроб ${r.practice.attempts})` : "— не завершено"}</h3>${block(L.exercises, r.practice)}
       <h3>Домашнє завдання — ${Z.hwStatusName(Z.hwStatus(r))}${r.homework.submitted ? ", здано " + Z.fmtDT(r.homework.submitted) : ""}</h3>${block(L.homework, r.homework)}
       ${r.homework.submitted || rv ? `<div class="card soft"><h3 style="margin-top:0">Ваша перевірка</h3>${rv ? `<p class="muted">Зараз: <b>${rv.status === "ok" ? "прийнято" : "повернуто"}</b> ${Z.fmtDT(rv.at)}${rv.comment ? " — " + Z.esc(rv.comment) : ""}</p>` : ""}
-        <div class="field"><label><input type="radio" name="rv" value="ok" ${!rv || rv.status === "ok" ? "checked" : ""}> ✅ Прийнято</label><label><input type="radio" name="rv" value="redo" ${rv && rv.status === "redo" ? "checked" : ""}> ↩️ Повернути на доопрацювання</label></div>
+        <div class="field"><label><input type="radio" name="rv" value="ok" ${!rv || rv.status === "ok" ? "checked" : ""}> ✅ Прийнято</label><label><input type="radio" name="rv" value="redo" ${rv && rv.status === "redo" ? "checked" : ""}> ↩️ Повернути на доопрацювання</label></div>${partsHTML(rv)}
         <div class="field"><label for="rvc">Коментар для дитини</label><textarea id="rvc" rows="3">${Z.esc(rv ? rv.comment || "" : "")}</textarea></div><button class="btn ok" id="saveRv">Зберегти перевірку</button></div>` : ""}
+      ${(r && r.returned || []).length ? `<details class="prev"><summary>Попередні спроби (${r.returned.length})</summary>${r.returned.slice().reverse().map(s => `<div class="prev-item"><p class="muted">Повернуто ${Z.fmtDT(s.at)}: ${(s.parts || ["homework"]).map(p => PART_SHORT[p]).join(", ")}${s.comment ? " — «" + Z.esc(s.comment) + "»" : ""}</p>${s.practice ? `<h4>Практика${s.practice.score != null ? " — " + s.practice.score + "%" : ""}</h4>${block(L.exercises, s.practice)}` : ""}${s.homework ? `<h4>Домашнє</h4>${block(L.homework, s.homework)}` : ""}</div>`).join("")}</details>` : ""}
       ${ai}`}</div>`;
     box.scrollIntoView({ behavior: "smooth", block: "start" });
+    box.querySelectorAll("input[name=rv]").forEach(i => i.onchange = () => { const p = box.querySelector(".rv-parts"); if (p) p.hidden = box.querySelector("input[name=rv]:checked").value !== "redo"; });
     const sv = document.getElementById("saveRv");
     if (sv) sv.onclick = () => {
       const status = box.querySelector("input[name=rv]:checked").value; const comment = document.getElementById("rvc").value.trim();
-      r.homework.review = { status, comment, at: Date.now() };
-      if (status === "redo") { r.homework.submitted = null; r.homework.results = {}; }
-      Z.progress.set(id, r); Z.progress.log({ type: "review", id, status, comment }); Z.toast("Перевірку збережено", "ok"); render(); detail(id);
+      const parts = status === "redo" ? [...box.querySelectorAll("input[name=rvp]:checked")].map(i => i.value) : [];
+      if (status === "redo" && !parts.length) { Z.toast("Позначте, що саме повернути: теорію, практику чи домашнє", "bad"); return; }
+      if (status === "redo") returnLesson(r, parts, comment);
+      r.homework.review = status === "redo" ? { status, comment, at: Date.now(), parts } : { status, comment, at: Date.now() };
+     
+      Z.progress.set(id, r); Z.progress.log({ type: "review", id, status, comment, parts }); openId = null; const u = new URL(location.href); if (u.searchParams.has("id")) { u.searchParams.delete("id"); history.replaceState(null, "", u.pathname + u.search); }
+      flash = status === "redo" ? { cls: "", html: `↩️ <b>«${Z.esc(L.title)}»</b>: повернуто дитині на доопрацювання — ${parts.map(p => PART_SHORT[p]).join(", ")}.${comment ? " Ваш коментар буде видно в уроці." : ""}` } : { cls: "okn", html: `✅ <b>«${Z.esc(L.title)}»</b>: домашнє прийнято.` };
+      render(); window.scrollTo({ top: 0, behavior: "smooth" });
     };
   }
 
@@ -108,9 +128,11 @@
       <div class="card"><h2 style="margin-top:0">PIN кабінету батьків</h2><div class="field"><label for="p1">Новий PIN (4–8 цифр)</label><input id="p1" type="password" inputmode="numeric" autocomplete="new-password"></div><div class="field"><label for="p2">Повторіть</label><input id="p2" type="password" inputmode="numeric" autocomplete="new-password"></div><button class="btn" id="savePin">Змінити PIN</button></div>`;
   }
 
+  /* одноразова плашка з результатом дії (напр. після перевірки домашнього) */
+  function flashHTML() { if (!flash) return ""; const f = flash; flash = null; return `<div class="notice ${f.cls}" role="status">${f.html}</div>`; }
   function render() {
     root.innerHTML = `<h1 class="page-h">Кабінет батьків · ${Z.esc(ch.name)}</h1><div class="tabs">${TABS.map(([k, n]) => `<button data-tab="${k}" class="${tab === k ? "on" : ""}">${n}</button>`).join("")}<button class="btn sm ghost" id="exit" style="margin-left:auto">Вийти з кабінету</button></div>`
-      + (tab === "overview" ? overview() : tab === "lessons" ? lessonsTab() : tab === "journal" ? journal() : tab === "report" ? report() : settingsTab());
+      + flashHTML() + (tab === "overview" ? overview() : tab === "lessons" ? lessonsTab() : tab === "journal" ? journal() : tab === "report" ? report() : settingsTab());
     root.querySelectorAll("button[data-tab]").forEach(b => b.onclick = () => { tab = b.dataset.tab; openId = null; render(); });
     document.getElementById("exit").onclick = () => { sessionStorage.removeItem(KEY); location.href = Z.link("klas.html"); };
     const th = document.getElementById("toHW"); if (th) th.onclick = e => { e.preventDefault(); tab = "lessons"; onlyHW = true; render(); };

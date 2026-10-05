@@ -360,3 +360,16 @@ abbr[title]{text-decoration:underline dotted;text-underline-offset:3px;cursor:he
   #z4-ai-panel{right:12px;left:12px;width:auto;bottom:78px}
 }
 @media print{.top,.steps,.btn,.check,.ex-flag,#z4-ai-help{display:none!important}.card,.ex{box-shadow:none;border:1px solid #ccc}}
+/* повернення уроку на доопрацювання */
+.rv-parts label{font-weight:500}
+details.prev{margin:12px 0;padding:8px 12px;border:1px dashed var(--rule-2);border-radius:10px}
+details.prev summary{cursor:pointer;font-weight:700}
+.prev-item{border-top:1px dashed var(--rule-2);margin-top:8px;padding-top:6px}
+
+/* «Незавершені уроки» */
+.unf{padding:10px 0;border-bottom:1px dashed var(--rule)}
+.unf:last-child{border-bottom:0}
+.unf-t{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.stgs{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
+.stg{font-size:.85rem;padding:2px 10px;border-radius:999px;background:var(--surface-2);color:var(--ink-3)}
+.stg.ok{background:var(--ok-soft);color:var(--ok)}

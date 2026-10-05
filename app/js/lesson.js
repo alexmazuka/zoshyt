@@ -33,6 +33,8 @@
   const MD = s => Z.abbrify(Z.md(s), terms);
   if (window.AiHelp) window.AiHelp.mount();
   const rec = Z.progress.ensure(id); Z.progress.save();
+  /* батьки повернули урок з іншого пристрою, поки він відкритий, — перезавантажити, щоб почати з потрібного кроку */
+  window.addEventListener("z-remote-update", () => { const cur = Z.progress.get(id); if (cur && cur !== rec && JSON.stringify(cur.homework.review || null) !== JSON.stringify(rec.homework.review || null)) location.reload(); });
   const seed = Z.hash(id);
   if (!rec.theory && !rec.practice.done) Z.progress.log({ type: "open", id });
 
@@ -47,9 +49,17 @@
   if (Z.qs("step")) step = Z.qs("step");
 
   function stepState(s) { if (s === "theory") return rec.theory ? "done" : ""; if (s === "practice") return rec.practice.done ? "done" : ""; if (s === "homework") return rec.homework.submitted ? "done" : ""; return ""; }
+  /* повернутий урок: що саме треба переробити і чи вже зроблено */
+  const PART_TODO = { theory: "прочитати теорію", practice: "виконати практику", homework: "зробити домашнє" };
+  function partDone(p) { return p === "theory" ? !!rec.theory : p === "practice" ? !!rec.practice.done : !!rec.homework.submitted; }
+  function redoNotice() {
+    const parts = Z.redoParts(rec); if (!parts.length) return ""; const rv = rec.homework.review;
+    return `<div class="notice">↩️ <b>Батьки повернули урок на доопрацювання.</b> Треба ще раз: ${parts.map(p => PART_TODO[p] + (partDone(p) ? " ✓" : "")).join(", ")}.${rv.comment ? `<br>Коментар: ${Z.esc(rv.comment)}` : ""}</div>`;
+  }
+  function finishRedo() { const parts = Z.redoParts(rec); if (parts.length && parts.every(partDone)) { rec.homework.review = null; Z.progress.log({ type: "redo_done", id }); } }
   function head() {
     return `<div class="card"><div class="lesson-head"><div style="flex:1;min-width:240px">${Z.subjTag(meta.subject)} <span class="chip">Урок ${meta.n} з ${subjList.length}</span> <span class="chip">⏱ ~${L.minutes} хв</span>
-      <h1>${Z.esc(L.title)}</h1><small class="muted">${Z.esc(meta.section)}</small><div class="goal">🎯 ${MD(L.goal)}</div></div></div>
+      <h1>${Z.esc(L.title)}</h1><small class="muted">${Z.esc(meta.section)}</small><div class="goal">🎯 ${MD(L.goal)}</div>${redoNotice()}</div></div>
       <div class="steps">${STEPS.map(([k, n]) => `<button data-step="${k}" class="${step === k ? "on" : ""} ${stepState(k)}">${stepState(k) === "done" ? "✓ " : ""}${n}</button>`).join("")}</div></div>`;
   }
 
@@ -179,11 +189,11 @@
   function scoreOf(kind) { const list = exSet(kind), B = bucket(kind); const auto = list.map((ex, i) => [ex, B.results[i]]).filter(([ex]) => EX.isAuto(ex.type)); if (!auto.length) return 100; return Math.round(100 * auto.reduce((s, [, R]) => s + (R ? R.score : 0), 0) / auto.length); }
   function finishPractice() {
     const sc = scoreOf("practice"); rec.practice.score = sc; rec.practice.done = Date.now(); rec.practice.attempts = (rec.practice.attempts || 0) + 1; rec.practice.best = Math.max(rec.practice.best ?? 0, sc);
-    Z.progress.set(id, rec); Z.progress.log({ type: "practice", id, score: sc, attempt: rec.practice.attempts, time: rec.time }); celebrate(sc); go("practice");
+    finishRedo(); Z.progress.set(id, rec); Z.progress.log({ type: "practice", id, score: sc, attempt: rec.practice.attempts, time: rec.time }); celebrate(sc); go("practice");
   }
   function submitHomework() {
     const list = L.homework, B = rec.homework; const hasAuto = list.some(ex => EX.isAuto(ex.type));
-    rec.homework.score = hasAuto ? scoreOf("homework") : null; rec.homework.submitted = Date.now(); if (rec.homework.review && rec.homework.review.status === "redo") rec.homework.review = null;
+    rec.homework.score = hasAuto ? scoreOf("homework") : null; rec.homework.submitted = Date.now(); finishRedo();
     const texts = list.map((ex, i) => ex.type === "text" ? { q: ex.q, a: B.answers[i] } : null).filter(Boolean);
     Z.progress.set(id, rec); Z.progress.log({ type: "homework", id, score: rec.homework.score, texts, time: rec.time });
     Z.ensureDemand(meta.subject);
@@ -240,7 +250,7 @@
     if (window.AiHelp) window.AiHelp.setContext(aiContext());
     root.querySelectorAll("button[data-step]").forEach(b => b.onclick = () => go(b.dataset.step));
     root.querySelectorAll("button[data-go]").forEach(b => b.onclick = () => go(b.dataset.go));
-    const td = document.getElementById("theoryDone"); if (td) td.onclick = () => { if (!rec.theory) { rec.theory = Date.now(); Z.progress.set(id, rec); } go("practice"); };
+    const td = document.getElementById("theoryDone"); if (td) td.onclick = () => { if (!rec.theory) { rec.theory = Date.now(); finishRedo(); Z.progress.set(id, rec); } go("practice"); };
     if (step === "practice" || step === "homework") afterRender(step);
     root.querySelectorAll("textarea[data-refl]").forEach(t => t.addEventListener("input", () => { rec.reflection ||= {}; rec.reflection[t.dataset.refl] = t.value; Z.progress.set(id, rec); }));
   }

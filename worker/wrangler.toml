@@ -1,0 +1,7 @@
+name = "zoshyt-4klas-ai"          # назва лишається, щоб адреса https://zoshyt-4klas-ai.alex-f53.workers.dev/ не змінилась
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+MODEL = "claude-haiku-5-5"
+# ANTHROPIC_API_KEY — секрет: npx wrangler secret put ANTHROPIC_API_KEY (у репозиторій не потрапляє)

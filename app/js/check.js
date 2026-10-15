@@ -22,7 +22,7 @@ window.Check = (function () {
     const user = `Урок: «${L.title}».\n\n` + items.map((x, k) => `Завдання ${k + 1}: ${x.ex.q}\nЗразок відповіді (лише для тебе): ${x.ex.sample || "—"}\nВідповідь учня: ${x.a || "(порожньо)"}`).join("\n\n");
     const ctrl = new AbortController(); const to = setTimeout(() => ctrl.abort(), 30000);
     try {
-      const res = await fetch(PROXY, { method: "POST", signal: ctrl.signal, headers: { "Content-Type": "application/json" }, body: JSON.stringify({ system, messages: [{ role: "user", content: user }] }) });
+      const res = await fetch(PROXY, { method: "POST", signal: ctrl.signal, headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kind: "review", system, messages: [{ role: "user", content: user }] }) });
       const data = await res.json().catch(() => ({}));
       if (!res.ok || !data.text) throw new Error(data.error || "HTTP " + res.status);
       const m = String(data.text).match(/\{[\s\S]*\}/); if (!m) throw new Error("no json");

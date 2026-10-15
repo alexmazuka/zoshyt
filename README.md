@@ -3,7 +3,7 @@
 - Сайт: https://zoshyt.online/ (GitHub Pages, репозиторій alexmazuka/zoshyt)
 - Вхід у зошит для сімей пілоту: https://zoshyt.online/app/ (логін і пароль видає команда)
 - Адмін-панель команди: https://zoshyt.online/app/admin.html
-- Заявки на пілот збирає Formspree, форма `mykqewaj`: https://formspree.io/forms/mykqewaj/submissions. Щоб бачити джерело заявки, додавайте до посилання `?from=назва-каналу`.
+- Заявки на пілот збирає Formspree, форма `xnpjodjp`: https://formspree.io/forms/xnpjodjp/submissions. Щоб бачити джерело заявки, додавайте до посилання `?from=назва-каналу`.
 
 ## Структура
 

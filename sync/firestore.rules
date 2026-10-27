@@ -15,9 +15,9 @@ service cloud.firestore {
     // ---------- платформа «Зошит» 1–11 ----------
     function signedIn() { return request.auth != null && request.auth.token.email is string; }
     function email() { return request.auth.token.email.lower(); }
-    // Адмін — власник проєкту. Акаунт адміна створюється в Authentication ДО публікації цих правил,
+    // Адміни — власник проєкту і менеджер запуску (Гліб). Акаунт адміна створюється в Authentication ДО публікації цих правил,
     // тож зареєструвати цю адресу ще раз ніхто не зможе.
-    function isAdmin() { return signedIn() && email() == 'alex.mazuka@gmail.com'; }
+    function isAdmin() { return signedIn() && email() in ['alex.mazuka@gmail.com', 'gleb@nexteducationai.org']; }
     // Учасник пілоту — адресу додано в allowlist (робить адмін в адмін-панелі).
     function member() { return signedIn() && (isAdmin() || exists(/databases/$(database)/documents/allowlist/$(email()))); }
 

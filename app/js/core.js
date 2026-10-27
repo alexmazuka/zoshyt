@@ -11,7 +11,7 @@ window.Z = (function () {
     messagingSenderId: "182774037902",
     appId: "1:182774037902:web:b5d3a9b33b0743317a38df",
   };
-  const ADMIN_EMAILS = ["alex.mazuka@gmail.com"];
+  const ADMIN_EMAILS = ["alex.mazuka@gmail.com", "gleb@nexteducationai.org"];
   const BUFFER = 2; // скільки уроків наперед має бути готово для кожної дитини
   const DATA = "../data/";
   const DAYS = ["", "Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота", "Неділя"];

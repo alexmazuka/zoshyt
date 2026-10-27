@@ -41,7 +41,8 @@ service cloud.firestore {
       allow read: if (member() && docId.matches(request.auth.uid + '__[A-Za-z0-9_-]+')) || isAdmin();
       allow create, update: if member() && docId.matches(request.auth.uid + '__[A-Za-z0-9_-]+')
         && request.resource.data.progressJson is string && request.resource.data.progressJson.size() < 900000;
-      allow delete: if isAdmin();
+      // Батько може видалити профіль своєї дитини (документ {uid}__{childId}); адмін теж.
+      allow delete: if isAdmin() || (signedIn() && docId.matches(request.auth.uid + '__[A-Za-z0-9_-]+'));
     }
 
     // Повідомлення про помилки: учасник лише створює своє, читає і змінює статус адмін.

@@ -141,7 +141,8 @@
       <label class="mode-opt"><input type="radio" name="cm" value="ai" ${mode === "ai" ? "checked" : ""}><span><b>🦉 Дитина вчиться сама</b><br><small class="muted">Домашнє одразу перевіряє Поясняйко: зараховує і відкриває наступний урок або повертає з підказкою, що доробити. Ви бачите всі перевірки тут і можете повернути будь-який урок.</small></span></label>
       <button class="btn" id="saveMode">Зберегти режим</button></div>
       <div class="card"><h2 style="margin-top:0">Дитина</h2><div class="field"><label for="nm">Ім'я</label><input id="nm" value="${Z.esc(ch.name)}" maxlength="30"></div><button class="btn" id="saveName">Зберегти ім'я</button></div>
-      <div class="card"><h2 style="margin-top:0">PIN кабінету батьків</h2><div class="field"><label for="p1">Новий PIN (4–8 цифр)</label><input id="p1" type="password" inputmode="numeric" autocomplete="new-password"></div><div class="field"><label for="p2">Повторіть</label><input id="p2" type="password" inputmode="numeric" autocomplete="new-password"></div><button class="btn" id="savePin">Змінити PIN</button></div>`;
+      <div class="card"><h2 style="margin-top:0">PIN кабінету батьків</h2><div class="field"><label for="p1">Новий PIN (4–8 цифр)</label><input id="p1" type="password" inputmode="numeric" autocomplete="new-password"></div><div class="field"><label for="p2">Повторіть</label><input id="p2" type="password" inputmode="numeric" autocomplete="new-password"></div><button class="btn" id="savePin">Змінити PIN</button></div>
+      <div class="card danger-zone"><h2 style="margin-top:0">Видалити профіль дитини</h2><p class="muted">Буде остаточно видалено профіль «${Z.esc(ch.name)}» разом із прогресом, відповідями, оцінками й журналом. Відновити це не можна. Інші діти й ваш акаунт не зачіпаються.</p><button class="btn danger" id="delChild" type="button">Видалити профіль…</button></div>`;
   }
 
   /* одноразова плашка з результатом дії (напр. після перевірки домашнього) */
@@ -175,6 +176,28 @@
         const nm = document.getElementById("nm").value.trim(); if (!nm) return;
         const kids = Z.state.profile.children.map(c => c.id === ch.id ? Object.assign({}, c, { name: nm }) : c);
         await Z.DB.set("users", Z.state.user.uid, { children: kids }, true); ch.name = nm; Z.toast("Збережено", "ok"); document.getElementById("hdr").innerHTML = Z.header("parent"); Z.wireHeader(() => ({ page: "Кабінет батьків" })); render();
+      };
+      document.getElementById("delChild").onclick = () => {
+        const m = Z.modal(`<h2>Видалити профіль «${Z.esc(ch.name)}»?</h2>
+          <p>Прогрес, відповіді, оцінки й журнал цієї дитини буде видалено назавжди. Відновити їх неможливо.</p>
+          <p class="muted small">Повідомлення про помилки, які ви раніше надсилали з цього профілю, лишаються в команді. Якщо їх теж треба прибрати, напишіть на info@nexteducationai.org.</p>
+          <div class="field"><label for="delnm">Щоб підтвердити, введіть ім'я дитини: <b>${Z.esc(ch.name)}</b></label><input id="delnm" autocomplete="off"></div>
+          <p class="err" id="delerr" role="alert"></p>
+          <p class="row-btns"><button class="btn danger" id="delgo" type="button" disabled>Видалити назавжди</button><button class="btn ghost" id="delno" type="button">Скасувати</button></p>`);
+        const inp = m.querySelector("#delnm"), go = m.querySelector("#delgo");
+        inp.oninput = () => { go.disabled = inp.value.trim().toLowerCase() !== String(ch.name).trim().toLowerCase(); };
+        m.querySelector("#delno").onclick = () => m.remove();
+        go.onclick = async () => {
+          go.disabled = true; m.querySelector("#delerr").textContent = "";
+          try {
+            await Z.deleteChild(ch.id);
+            m.remove(); Z.toast("Профіль видалено", "ok");
+            setTimeout(() => { location.href = "index.html"; }, 600);
+          } catch (e) {
+            m.querySelector("#delerr").textContent = "Не вдалося видалити: " + (e && e.message ? e.message : e) + ". Нічого не змінено, спробуйте ще раз.";
+            go.disabled = false;
+          }
+        };
       };
       document.getElementById("savePin").onclick = async () => {
         const p1 = document.getElementById("p1").value.trim(), p2 = document.getElementById("p2").value.trim();

@@ -198,6 +198,8 @@ window.Z = (function () {
         if (data && data.progressJson) { const n = this.merge(data.progressJson); if (n) window.dispatchEvent(new CustomEvent("z-remote-update", { detail: { n } })); }
       });
     },
+    /* зупинити синхронізацію (перед видаленням профілю), щоб документ не відновився */
+    detach() { clearTimeout(this._timer); if (this._unsub) { this._unsub(); this._unsub = null; } this._docId = null; this._key = null; },
     pushSoon() { if (!this._docId) return; clearTimeout(this._timer); this._timer = setTimeout(() => this.push(), 1500); },
     async push() {
       if (!this._docId) return;
@@ -211,6 +213,23 @@ window.Z = (function () {
       } catch (e) { console.warn("progress push", e); }
     },
   };
+
+  /* Видалення профілю дитини самим батьком: спершу прогрес (документ progress/{uid}__{childId}), потім запис у users.children.
+     Якщо видалення прогресу не вдалось (немає прав чи мережі), профіль НЕ чіпаємо: помилку бачить батько й може повторити. */
+  async function deleteChild(cid) {
+    const uid = state.user.uid, docId = uid + "__" + cid;
+    progress.detach();
+    await DB.remove("progress", docId);
+    const kids = (state.profile.children || []).filter(c => c.id !== cid);
+    await DB.set("users", uid, { children: kids }, true);
+    state.profile.children = kids;
+    try {
+      Object.keys(localStorage).filter(k => k.includes(cid)).forEach(k => localStorage.removeItem(k));
+      if (localStorage.getItem("zchild." + uid) === cid) localStorage.removeItem("zchild." + uid);
+      sessionStorage.removeItem("zparent." + uid);
+    } catch (e) { /* ignore */ }
+    return kids.length;
+  }
 
   const PASS = 70;
   function statusOf(id) { const r = progress.get(id); if (!r) return "new"; if (isRedo(r)) return "started"; if (r.practice.done && r.homework.submitted) return "done"; if (r.practice.done) return "practice"; return "started"; }
@@ -389,7 +408,7 @@ window.Z = (function () {
     parseDate, isoDate, fmt, weekInfo, dateOf, today, schoolDays, currentWeek, quarterOf, lessonsOn,
     progress, statusOf, statusName, starsOf, starsHTML, hwStatus, hwStatusName, isRedo, redoParts,
     avail, availIcon, availName, prevInSubject, frontier, ensureDemand, CHECK_MODES, checkMode, passed, lockInfo, lockText,
-    summary, xp, level, streak, badges, sha256Hex, checkPin, setPin, boot, link,
+    summary, xp, level, streak, badges, sha256Hex, checkPin, setPin, boot, link, deleteChild,
     esc, md, abbrify, hash, shuffle, fmtTime, fmtDT, qs, subjTag, speak, lessonRow, unfinishedCard, header, wireHeader, footer, toast, modal,
   };
 })();

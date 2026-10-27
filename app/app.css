@@ -391,3 +391,4 @@ details.prev summary{cursor:pointer;font-weight:700}
 .card.day{margin:0}
 .card.day h3{margin:0 0 2px}
 .card.day.today{outline:3px solid var(--blue);outline-offset:-1px}
+.danger-zone{border:1px solid var(--bad)}

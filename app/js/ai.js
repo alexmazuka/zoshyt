@@ -24,7 +24,7 @@ window.AiHelp = (function () {
   };
   function gradeNum() { return Number(String((ctx && ctx.grade) || Z.state.grade || 'g04').replace('g', '')); }
   function band() { return Z.band((ctx && ctx.grade) || Z.state.grade || 'g04'); }
-  const STEP_NAMES = { theory: 'теорія (пояснення нової теми)', practice: 'практика (вправи із самоперевіркою)', homework: 'домашнє завдання', summary: 'підсумок уроку' };
+  const STEP_NAMES = { theory: 'теорія (пояснення нової теми)', practice: 'практика (вправи із самоперевіркою)', homework: 'домашнє завдання', summary: 'підсумок уроку', topic: 'розбір теми, яку учень сам знайшов у пошуку, бо не зрозумів її в школі (повного уроку перед ним може не бути — поясни тему з нуля за змістом програми, крок за кроком)' };
 
   function sysPrompt() {
     const L = [
@@ -73,11 +73,14 @@ window.AiHelp = (function () {
     practice: ['Поясни, як міркувати (без відповіді)', 'Що означає це слово?', 'Дай підказку'],
     homework: ['Поясни, як міркувати (без відповіді)', 'Що означає це слово?', 'Дай підказку'],
     summary: ['Про що був цей урок?', 'Що було найважливіше?', 'Поясни ще раз головне'],
+    topic: ['Поясни цю тему з нуля', 'Наведи приклад з життя', 'Що тут найважливіше запам\'ятати?'],
   };
   function bubble(cls, html) { const d = document.createElement('div'); d.className = 'z4ai-msg ' + cls; d.innerHTML = html; msgsEl.appendChild(d); msgsEl.scrollTop = msgsEl.scrollHeight; return d; }
   function greet() {
     if (greeted) return; greeted = true;
-    bubble('ai hint', Z.md(`Привіт! Я ${NAME} 🦉. Поясню будь-що з цього уроку простими словами — а відповіді на вправи ти шукаєш сам 😉 Що незрозуміло?`));
+    bubble('ai hint', Z.md(ctx && ctx.step === 'topic'
+      ? `Привіт! Я ${NAME} 🦉. Розберемо тему «${ctx.title}» разом. Що саме в ній незрозуміло?`
+      : `Привіт! Я ${NAME} 🦉. Поясню будь-що з цього уроку простими словами — а відповіді на вправи ти шукаєш сам 😉 Що незрозуміло?`));
     const list = (ctx && SUGGESTIONS[ctx.step]) || SUGGESTIONS.theory;
     const chips = document.createElement('div'); chips.className = 'z4ai-suggest';
     chips.innerHTML = list.map(s => `<button type="button">${Z.esc(s)}</button>`).join('');
@@ -100,7 +103,7 @@ window.AiHelp = (function () {
       const answer = await ask(text);
       history.push({ role: 'ai', text: answer });
       bubble('ai', Z.md(answer));
-      Z.progress.log({ type: 'ai_ask', id: ctx && ctx.id, step: ctx && ctx.step, q: text, a: answer });
+      Z.progress.log({ type: 'ai_ask', id: ctx && ctx.id, title: ctx && ctx.title, step: ctx && ctx.step, q: text, a: answer });
     } catch (e) {
       const friendly = e && e.status === 429
         ? `${NAME} зараз перевантажений — стільки хочуть учитися! Спробуй ще раз за хвилинку 🙂`
@@ -113,7 +116,7 @@ window.AiHelp = (function () {
   function autoSize() { inputEl.style.height = 'auto'; inputEl.style.height = Math.min(80, inputEl.scrollHeight) + 'px'; sendBtn.disabled = busy || !inputEl.value.trim(); }
   function openPanel(v) {
     opened = v; panel.hidden = !v; toggleBtn.setAttribute('aria-expanded', String(v));
-    if (v) { greet(); inputEl.focus(); Z.progress.log({ type: 'ai_open', id: ctx && ctx.id, step: ctx && ctx.step }); }
+    if (v) { greet(); inputEl.focus(); Z.progress.log({ type: 'ai_open', id: ctx && ctx.id, title: ctx && ctx.title, step: ctx && ctx.step }); }
   }
 
   function mount() {
@@ -141,6 +144,12 @@ window.AiHelp = (function () {
   }
 
   function setContext(c) { ctx = c || null; }
+  /* відкрити Поясняйка на іншу тему (сторінка пошуку): нова розмова з новим контекстом */
+  function open(c) {
+    mount();
+    if (!ctx || !c || ctx.title !== c.title) { history = []; greeted = false; msgsEl.innerHTML = ''; }
+    setContext(c); openPanel(true);
+  }
 
-  return { mount, setContext };
+  return { mount, setContext, open };
 })();

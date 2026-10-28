@@ -41,7 +41,21 @@
       <div class="notice ${mode === "parent" ? "" : "okn"}">Режим: <b>${Z.CHECK_MODES[mode]}</b> — ${mode === "parent" ? "наступний урок відкривається після вашої перевірки домашнього." : "домашнє перевіряє Поясняйко і сам відкриває наступні уроки; ви бачите все тут і можете повернути будь-який урок."} <a href="#" id="toMode">Змінити</a></div>
       ${waiting.length ? `<div class="notice">📬 Домашніх на перевірку: <b>${waiting.length}</b>.${mode === "parent" ? " Поки ви не перевірите, наступні уроки цих предметів закриті." : ""} <a href="#" id="toHW">Перевірити →</a></div>` : ""}
       ${flagged.length ? `<div class="notice">⚑ Поясняйко позначив для вас: <b>${flagged.length}</b> — варто переглянути. <a href="#" id="toFlag">Показати →</a></div>` : ""}
+      ${topicsCard()}
       <div class="card"><h2 style="margin-top:0">За предметами</h2><div class="table-wrap"><table><thead><tr><th>Предмет</th><th>Уроки</th><th>Зараз на уроці</th><th>Сер. бал</th><th>ДЗ перевірено</th><th>Час</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
+  }
+
+  /* теми, які дитина сама знайшла в пошуку і розбирала (search.js, lesson.html?mode=review) */
+  function topicsCard() {
+    const since = Date.now() - 14 * 864e5; const by = new Map();
+    Z.progress.load().log.filter(e => e.t >= since && e.title && (/^topic_/.test(e.type) || (e.type === "ai_ask" && e.step === "topic"))).forEach(e => {
+      const k = (e.g || "") + "|" + e.title; const x = by.get(k) || { title: e.title, g: e.g, q: "", score: null, asks: 0, req: false, t: 0 };
+      if (e.q && e.type !== "ai_ask") x.q = e.q; if (e.type === "topic_practice") x.score = e.score; if (e.type === "ai_ask") x.asks++; if (e.type === "topic_request") x.req = true;
+      x.t = Math.max(x.t, e.t); by.set(k, x);
+    });
+    const list = [...by.values()].sort((a, b) => b.t - a.t).slice(0, 10); if (!list.length) return "";
+    return `<div class="card"><h2 style="margin-top:0">🔍 Сам розбирав теми <small class="muted">за 14 днів</small></h2><p class="muted small">Теми, які дитина знайшла в пошуку, бо не зрозуміла їх у школі. Такий розбір не зараховується в маршрут — але підказує, що варто обговорити.</p>
+      <ul>${list.map(x => `<li><b>${Z.esc(x.title)}</b>${x.g && x.g !== Z.state.grade ? ` <small class="muted">(${Z.gradeLabel(x.g)})</small>` : ""}${x.q ? ` <small class="muted">— шукав «${Z.esc(x.q)}»</small>` : ""}${x.score != null ? ` · практика ${x.score}%` : ""}${x.asks ? ` · питань Поясняйку: ${x.asks}` : ""}${x.req ? " · попросив написати урок" : ""} <small class="muted">${Z.fmtDT(x.t)}</small></li>`).join("")}</ul></div>`;
   }
 
   function lessonsTab() {
@@ -117,8 +131,8 @@
 
   function journal() {
     const log = Z.progress.load().log.slice().reverse().slice(0, 300);
-    const name = t => ({ open: "відкрив урок", practice: "завершив практику", homework: "здав домашнє", retry: "повторює практику", review: "перевірка батьків", ai_open: "відкрив Поясняйка", ai_ask: "запитав Поясняйка" }[t] || t);
-    return `<div class="card"><h2 style="margin-top:0">Журнал подій</h2><div class="table-wrap"><table><thead><tr><th>Коли</th><th>Подія</th><th>Урок</th><th>Результат</th></tr></thead><tbody>${log.map(e => { const l = e.id ? Z.state.byId[e.id] : null; return `<tr><td>${Z.fmtDT(e.t)}</td><td>${name(e.type)}</td><td>${l ? Z.subjTag(l.subject) + " " + Z.esc(l.title) : ""}</td><td>${e.score != null ? e.score + "%" : ""}${e.status ? (e.status === "ok" ? "прийнято" : "повернуто") + (e.comment ? ": " + Z.esc(e.comment) : "") : ""}</td></tr>`; }).join("") || '<tr><td colspan="4" class="muted">Подій ще немає</td></tr>'}</tbody></table></div></div>`;
+    const name = t => ({ open: "відкрив урок", practice: "завершив практику", homework: "здав домашнє", retry: "повторює практику", review: "перевірка батьків", ai_open: "відкрив Поясняйка", ai_ask: "запитав Поясняйка", topic_pick: "шукав тему", topic_request: "попросив написати урок", topic_open: "розбирає тему", topic_practice: "розбір теми: практика", topic_retry: "розбір теми: повторює практику" }[t] || t);
+    return `<div class="card"><h2 style="margin-top:0">Журнал подій</h2><div class="table-wrap"><table><thead><tr><th>Коли</th><th>Подія</th><th>Урок</th><th>Результат</th></tr></thead><tbody>${log.map(e => { const l = e.id && (!e.g || e.g === Z.state.grade) ? Z.state.byId[e.id] : null; return `<tr><td>${Z.fmtDT(e.t)}</td><td>${name(e.type)}${e.q ? ` <small class="muted">«${Z.esc(e.q)}»</small>` : ""}</td><td>${l ? Z.subjTag(l.subject) + " " + Z.esc(l.title) : Z.esc(e.title || "")}${e.g && e.g !== Z.state.grade ? ` <small class="muted">(${Z.gradeLabel(e.g)})</small>` : ""}</td><td>${e.score != null ? e.score + "%" : ""}${e.status ? (e.status === "ok" ? "прийнято" : "повернуто") + (e.comment ? ": " + Z.esc(e.comment) : "") : ""}</td></tr>`; }).join("") || '<tr><td colspan="4" class="muted">Подій ще немає</td></tr>'}</tbody></table></div></div>`;
   }
 
   function reportText() {

@@ -299,7 +299,7 @@ window.Z = (function () {
   function xp() { let x = 0; Object.values(progress.load().lessons).forEach(r => { if (r.practice.done) { x += 10 + Math.round((r.practice.best || 0) / 10); if ((r.practice.best || 0) >= 90) x += 5; } if (r.homework.submitted) x += 10; if (r.homework.review && r.homework.review.status === "ok") x += 5; }); return x; }
   function level(x) { return Math.floor(x / 100) + 1; }
   function streak() {
-    const days = new Set(); progress.load().log.forEach(e => { if (e.type === "practice" || e.type === "homework") days.add(isoDate(new Date(e.t))); });
+    const days = new Set(); progress.load().log.forEach(e => { if (e.type === "practice" || e.type === "homework" || e.type === "topic_practice") days.add(isoDate(new Date(e.t))); });
     let n = 0; const d = today(); if (!days.has(isoDate(d))) d.setDate(d.getDate() - 1);
     while (days.has(isoDate(d))) { n++; d.setDate(d.getDate() - 1); if (d.getDay() === 0) d.setDate(d.getDate() - 2); }
     return n;

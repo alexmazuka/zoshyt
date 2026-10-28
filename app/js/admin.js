@@ -36,7 +36,9 @@
     reports.sort((a, b) => Z.DB.tsToMs(b.createdAt) - Z.DB.tsToMs(a.createdAt));
     progress.sort((a, b) => ((b.summary || {}).last || 0) - ((a.summary || {}).last || 0));
     allow.sort((a, b) => Z.DB.tsToMs(b.createdAt) - Z.DB.tsToMs(a.createdAt));
-    D = { demand: demand.map(needOf).filter(Boolean), reports, progress, allow };
+    /* запити учнів «Потрібен цей урок» із пошуку тем (search.js) лежать у reports, але показуються в «Потрібні уроки» */
+    const isTopic = r => r.kind === TOPIC_KIND;
+    D = { demand: demand.map(needOf).filter(Boolean), reports: reports.filter(r => !isTopic(r)), topics: reports.filter(isTopic), progress, allow };
   }
   /* що саме треба дописати за сигналом demand: уроки з номером ≤ maxN, файлів яких ще немає */
   function needOf(d) {
@@ -57,6 +59,7 @@
   function copy(text) { navigator.clipboard.writeText(text).then(() => Z.toast("Скопійовано", "ok"), () => Z.toast("Не вдалося скопіювати", "bad")); }
 
   /* ---------- вкладки ---------- */
+  const TOPIC_KIND = "Потрібен урок (пошук теми)";
   const TABS = [["news", "Що нового"], ["demand", "Потрібні уроки"], ["reports", "Помилки"], ["students", "Учні"], ["access", "Доступи"]];
   let tab = Z.qs("tab") || "news"; let repFilter = "open"; let openStudent = null; let lastCreated = [];
 
@@ -70,6 +73,7 @@
       [D.progress.length, "дітей у пілоті"],
       [D.reports.filter(r => r.status === "new").length, "нових повідомлень про помилки"],
       [D.demand.reduce((s, d) => s + d.missing.length, 0), "уроків чекають на написання"],
+      [D.topics.filter(r => r.status === "new").length, "запитів тем від учнів"],
       [D.allow.length, "доступів видано"],
     ];
     const prog = active.slice(0, 30).map(p => { const S = p.summary || {}; return `<li><b>${Z.esc(p.childName || "—")}</b> (${Z.gradeLabel(p.grade || "g00")}) — виконано ${S.done || 0} з ${S.total || 0}${S.avg != null ? ", сер. бал " + S.avg + "%" : ""} · ${Z.fmtDT(S.last)}</li>`; }).join("");
@@ -77,16 +81,33 @@
       <div class="card"><h2 style="margin-top:0">З вашого останнього візиту ${seenBefore ? `<small class="muted">(${Z.fmtDT(seenBefore)})</small>` : ""}</h2>
         ${!newReports.length && !newDemand.length && !active.length ? '<p class="muted">Нічого нового.</p>' : ""}
         ${newDemand.length ? `<h3>⏳ Учні дійшли до уроків, яких ще немає</h3><ul>${newDemand.map(d => `<li>${Z.gradeLabel(d.grade)} · <b>${Z.esc(d.subjName)}</b>: потрібно ${d.missing.length} (${d.missing.map(l => "урок " + l.n).join(", ")})</li>`).join("")}</ul><p><button class="btn sm" id="copyNewDemand">Скопіювати завдання на написання</button></p>` : ""}
+        ${D.topics.some(r => r.status === "new" && isNew(r.createdAt)) ? `<h3>🙋 Учні просять уроки за темою</h3><ul>${D.topics.filter(r => r.status === "new" && isNew(r.createdAt)).map(r => `<li>${Z.gradeLabel(r.grade)} · <b>${Z.esc(r.title)}</b> <small class="muted">${Z.esc(r.childName || "")}</small></li>`).join("")}</ul>` : ""}
         ${newReports.length ? `<h3>⚑ Нові повідомлення про помилки: ${newReports.length}</h3><ul>${newReports.slice(0, 15).map(r => `<li>${Z.esc(r.kind)} — ${Z.esc(r.title || r.page || "")} <small class="muted">${Z.esc((r.text || "").slice(0, 120))}</small></li>`).join("")}</ul>` : ""}
         ${active.length ? `<h3>📈 Хто займався</h3><ul>${prog}</ul>` : ""}
         <p class="row-btns"><button class="btn ghost sm" id="markSeen">Позначити все переглянутим</button></p></div>`;
   }
 
+  /* учні знайшли тему в пошуку, а уроку ще немає — просять написати; написано = файл уроку вже є */
+  function topicsCard() {
+    const open = D.topics.filter(r => r.status === "new" || r.status === "work");
+    if (!D.topics.length) return "";
+    const rows = open.map(r => {
+      const G = grades[r.grade]; const l = G && G.byId[r.lessonId];
+      return `<tr><td>${Z.gradeLabel(r.grade)}</td><td>${Z.esc(G && G.subjMap[r.subject] ? G.subjMap[r.subject].name : r.subject)}</td><td><b>${l ? l.n + ". " : ""}${Z.esc(r.title)}</b>${l && l.exists ? ' <span class="pill-ok">файл уже є</span>' : ""}<br><small class="muted">${Z.esc(r.text)}</small></td><td>${Z.esc(r.childName || "")}<br><small class="muted">${ago(r.createdAt)}</small></td>
+        <td class="row-btns"><button class="btn sm sec" data-topic-copy="${r.id}">Завдання</button><button class="btn sm ok" data-rep="${r.id}" data-st="fixed">Написано</button><button class="btn sm ghost" data-rep="${r.id}" data-st="rejected">Відхилити</button></td></tr>`;
+    }).join("");
+    return `<div class="card"><h2 style="margin-top:0">🙋 Учні просять уроки за темою</h2><p class="muted">Дитина шукала тему в «Зошиті», уроку ще немає, і вона натиснула «Потрібен цей урок».</p>
+      ${open.length ? `<div class="table-wrap"><table><thead><tr><th>Клас</th><th>Предмет</th><th>Урок</th><th>Хто</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>` : '<p class="pill-ok">Усі запити закрито.</p>'}</div>`;
+  }
+  function topicTask(r) {
+    const G = grades[r.grade]; const l = G && G.byId[r.lessonId];
+    return `Допиши урок «Зошита» (репо alexmazuka/zoshyt) за правилами AUTHORING.md — лише цей файл:\n\n${Z.gradeLabel(r.grade)} (${r.grade}/${r.subject}): ${r.lessonId} — ${r.title}${l ? "\nФайл: " + l.file : ""}\n\nПісля запису: python3 tools/validate.py ${r.grade} → python3 tools/build_plan.py ${r.grade} → коміт і пуш.`;
+  }
   function demandTab() {
     const open = D.demand.filter(d => d.missing.length).sort((a, b) => b.missing.length - a.missing.length || Z.DB.tsToMs(b.updatedAt) - Z.DB.tsToMs(a.updatedAt));
     const closed = D.demand.filter(d => !d.missing.length);
     const cov = GRADES.map(g => grades[g]).filter(Boolean).map(G => { const w = G.plan.filter(l => l.exists).length; return `<tr><td>${Z.gradeLabel(G.g)}</td><td>${G.plan.length}</td><td>${w}</td><td><div class="bar"><i style="width:${Math.round(100 * w / G.plan.length)}%"></i></div></td><td>${G.subjects.map(s => { const list = G.bySubject[s.id] || []; return `<span class="subj-tag sm" style="--c:${s.color}" title="${Z.esc(s.name)}">${Z.esc(s.short || s.name)} ${list.filter(l => l.exists).length}/${list.length}</span>`; }).join(" ")}</td></tr>`; }).join("");
-    return `<div class="card"><h2 style="margin-top:0">Чекають на написання</h2>
+    return topicsCard() + `<div class="card"><h2 style="margin-top:0">Чекають на написання</h2>
         <p class="muted">Кожен предмет відкривається по черзі. Коли дитина підходить до уроку, файлу якого ще немає (з запасом ${Z.BUFFER} уроки наперед), з'являється рядок нижче. Скопіюйте завдання і вставте його в сесію Claude — він допише саме ці уроки.</p>
         ${open.length ? `<div class="table-wrap"><table><thead><tr><th>Клас</th><th>Предмет</th><th>Потрібно до уроку</th><th>Немає файлів</th><th>Сигнал</th><th></th></tr></thead><tbody>${open.map((d, i) => `<tr><td>${Z.gradeLabel(d.grade)}</td><td><b>${Z.esc(d.subjName)}</b><br><small class="muted">написано ${d.written} з ${d.total}</small></td><td>${d.maxN}</td><td>${d.missing.map(l => `<div><small>${l.n}. ${Z.esc(l.title)}</small></div>`).join("")}</td><td>${ago(d.updatedAt)}${isNew(d.updatedAt) ? ' <span class="pill-warn">нове</span>' : ""}</td><td><button class="btn sm sec" data-copy-demand="${i}">Завдання</button></td></tr>`).join("")}</tbody></table></div>
           <p class="row-btns"><button class="btn" id="copyAllDemand">Скопіювати все одним завданням (${open.reduce((s, d) => s + d.missing.length, 0)} уроків)</button></p>` : '<p class="pill-ok">Усі потрібні уроки написано.</p>'}
@@ -173,7 +194,7 @@
 
   /* ---------- рендер ---------- */
   function render() {
-    const nNew = D.reports.filter(r => r.status === "new").length; const nNeed = D.demand.reduce((s, d) => s + d.missing.length, 0);
+    const nNew = D.reports.filter(r => r.status === "new").length; const nNeed = D.demand.reduce((s, d) => s + d.missing.length, 0) + D.topics.filter(r => r.status === "new").length;
     const badge = k => k === "reports" && nNew ? ` <span class="cnt">${nNew}</span>` : k === "demand" && nNeed ? ` <span class="cnt">${nNeed}</span>` : "";
     root.innerHTML = `<h1 class="page-h">Адмін-панель</h1><div class="tabs">${TABS.map(([k, n]) => `<button data-tab="${k}" class="${tab === k ? "on" : ""}">${n}${badge(k)}</button>`).join("")}<button class="btn sm ghost" id="reload" style="margin-left:auto">↻ Оновити</button></div>`
       + (tab === "news" ? news() : tab === "demand" ? demandTab() : tab === "reports" ? reportsTab() : tab === "students" ? studentsTab() : accessTab());
@@ -186,9 +207,10 @@
     const cad = document.getElementById("copyAllDemand"); if (cad) cad.onclick = () => copy(taskText(openD));
     root.querySelectorAll("button[data-rf]").forEach(b => b.onclick = () => { repFilter = b.dataset.rf; render(); });
     root.querySelectorAll("button[data-rep]").forEach(b => b.onclick = async () => {
-      try { await Z.DB.set("reports", b.dataset.rep, { status: b.dataset.st, statusAt: Z.DB.now() }, true); const r = D.reports.find(x => x.id === b.dataset.rep); if (r) r.status = b.dataset.st; render(); }
+      try { await Z.DB.set("reports", b.dataset.rep, { status: b.dataset.st, statusAt: Z.DB.now() }, true); const r = D.reports.concat(D.topics).find(x => x.id === b.dataset.rep); if (r) r.status = b.dataset.st; render(); }
       catch (e) { Z.toast("Не вдалося: " + e.message, "bad"); }
     });
+    root.querySelectorAll("button[data-topic-copy]").forEach(b => b.onclick = () => copy(topicTask(D.topics.find(x => x.id === b.dataset.topicCopy))));
     root.querySelectorAll("button[data-rep-copy]").forEach(b => b.onclick = () => copy(reportTask(D.reports.find(x => x.id === b.dataset.repCopy))));
     root.querySelectorAll("button[data-stu]").forEach(b => b.onclick = () => { openStudent = b.dataset.stu; render(); studentDetail(openStudent); });
     if (tab === "students" && openStudent) studentDetail(openStudent);

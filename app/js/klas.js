@@ -8,6 +8,8 @@
   document.getElementById("ftr").innerHTML = Z.footer();
   Z.wireHeader(() => ({ page: "Мій шлях" }));
   Z.state.subjects.forEach(s => Z.ensureDemand(s.id));
+  /* пошук теми живе поза перемальовуванням сторінки, щоб не губити введений запит */
+  const topicsEl = document.createElement("div"); if (window.Topics) Topics.mount(topicsEl);
 
   function render() {
     const ch = Z.state.child; const A = Z.summary(); const x = Z.xp();
@@ -31,10 +33,12 @@
     const bd = Z.badges(); const earned = bd.filter(b => b.earned);
     root.innerHTML = `<div class="card hello"><div><p class="eyebrow">${Z.gradeLabel(ch.grade)}</p><h1>${greet}, ${Z.esc(ch.name)}!</h1><p class="muted">Обери предмет і продовжуй з того місця, де зупинився. ${Z.checkMode() === "parent" ? "Наступний урок відкривається, коли батьки перевірять домашнє попереднього." : "Домашнє перевіряє Поясняйко 🦉 і сам відкриває наступний урок."}</p></div>
         <div class="stats"><div><b>${A.done}</b><small>уроків виконано</small></div><div><b>${x}</b><small>XP · рівень ${Z.level(x)}</small></div><div><b>${Z.streak()}</b><small>днів поспіль</small></div><div><b>${A.stars}</b><small>зірок</small></div></div></div>
+      <div id="topicsSlot"></div>
       ${Z.unfinishedCard()}
       <h2>Продовжити навчання</h2><div class="grid c3">${cards}</div>
       <h2>Нагороди <small class="muted">${earned.length} з ${bd.length}</small></h2>
       <div class="grid c4">${bd.map(b => `<div class="badge ${b.earned ? "earned" : ""}"><span class="ic">${b.icon}</span><div><b>${b.name}</b><br><small class="muted">${b.desc}</small></div></div>`).join("")}</div>`;
+    root.querySelector("#topicsSlot").replaceWith(topicsEl);
   }
   window.addEventListener("z-remote-update", render);
   render();

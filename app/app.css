@@ -392,3 +392,11 @@ details.prev summary{cursor:pointer;font-weight:700}
 .card.day h3{margin:0 0 2px}
 .card.day.today{outline:3px solid var(--blue);outline-offset:-1px}
 .danger-zone{border:1px solid var(--bad)}
+/* пошук теми (search.js) */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.topic-card .field input{max-width:none}
+.topic-card h3{margin:16px 0 4px;font-size:1rem}
+.topic-hit{padding:10px 0;border-bottom:1px solid var(--rule)}
+.topic-hit:last-child{border-bottom:0}
+.topic-t{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:2px}
+.topic-hit .row-btns{margin:6px 0 0}

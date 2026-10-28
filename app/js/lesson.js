@@ -4,20 +4,30 @@
   let st;
   try { st = await Z.boot(); } catch (e) { root.innerHTML = `<div class="card">Не вдалося завантажити дані: ${Z.esc(e.message)}</div>`; return; }
   if (!st) return;
-  const id = Z.qs("id"); const meta = Z.state.byId[id];
+  const id = Z.qs("id"); let meta = Z.state.byId[id]; let S, subjList;
   document.getElementById("hdr").innerHTML = Z.header("");
   document.getElementById("ftr").innerHTML = Z.footer();
+  /* тема з молодшого класу, знайдена в пошуку (search.js): план і предмети того класу */
+  const og = Z.qs("g") && Z.qs("g") !== Z.state.grade && /^g(0[1-9]|1[01])$/.test(Z.qs("g")) ? Z.qs("g") : null;
+  if (og) {
+    try {
+      const [p, sj] = await Promise.all([Z.loadJSON("../data/" + og + "/plan.json"), Z.loadJSON("../data/" + og + "/subjects.json")]);
+      meta = p.lessons.find(l => l.id === id);
+      if (meta) { S = sj.subjects.find(x => x.id === meta.subject); Z.state.subjMap[meta.subject] ||= S; subjList = p.lessons.filter(l => l.subject === meta.subject).sort((a, b) => a.n - b.n); }
+    } catch (e) { meta = null; }
+  } else if (meta) { S = Z.state.subjMap[meta.subject]; subjList = Z.state.bySubject[meta.subject]; }
   if (!meta) { root.innerHTML = `<div class="card"><h1>Урок не знайдено</h1><a class="btn" href="${Z.link("klas.html")}">До мого шляху</a></div>`; return; }
-  const S = Z.state.subjMap[meta.subject];
-  const subjList = Z.state.bySubject[meta.subject];
   const reportCtx = (extra) => Object.assign({ lessonId: id, subject: meta.subject, title: meta.title }, extra || {});
   Z.wireHeader(() => reportCtx({ step }));
 
-  const av = Z.avail(meta);
-  if (av === "locked") {
+  const av = og ? (meta.exists ? "open" : "soon") : Z.avail(meta);
+  /* розбір теми: урок ще попереду в маршруті (або з молодшого класу) — теорія і практика без зарахування в маршрут */
+  const review = !!meta.exists && (!!og || (Z.qs("mode") === "review" && av === "locked"));
+  const where = og ? Z.gradeLabel(og) + " · урок " + meta.n : "Урок " + meta.n + " з " + subjList.length;
+  if (av === "locked" && !review) {
     const info = Z.lockInfo(meta); const prev = info.prev;
     const icon = info.why === "parent" ? "📬" : info.why === "ai" ? "🦉" : info.why === "redo" ? "↩️" : "🔒";
-    root.innerHTML = `<div class="card lock-card"><div class="big">${icon}</div><h1>${Z.esc(meta.title)}</h1><p>${Z.subjTag(meta.subject)} Урок ${meta.n} з ${subjList.length}</p><p>${Z.esc(Z.lockText(info))}</p><p id="lockAct"></p>
+    root.innerHTML = `<div class="card lock-card"><div class="big">${icon}</div><h1>${Z.esc(meta.title)}</h1><p>${Z.subjTag(meta.subject)} ${where}</p><p>${Z.esc(Z.lockText(info))}</p><p id="lockAct"></p>${meta.exists ? `<div class="notice">🔍 Не зрозумів цю тему в школі? Її можна розібрати вже зараз: теорія і практика, без зарахування в маршрут. <a href="${Z.link("lesson.html", { id, mode: "review" })}">Розібрати тему →</a></div>` : ""}
       <p class="row-btns">${info.why === "parent" ? "" : `<a class="btn" href="${Z.link("lesson.html", { id: prev.id })}">До уроку «${Z.esc(prev.title)}»</a>`}<a class="btn ghost" href="${Z.link("klas.html")}">До мого шляху</a></p></div>`;
     if (info.why === "ai" && window.Check && Check.pending(Z.progress.get(prev.id))) {
       document.getElementById("lockAct").innerHTML = '<span class="notice">🦉 Поясняйко перевіряє домашнє… Зачекай кілька секунд.</span>';
@@ -26,8 +36,8 @@
     return;
   }
   if (av === "soon") {
-    Z.ensureDemand(meta.subject);
-    root.innerHTML = `<div class="card lock-card"><div class="big">⏳</div><h1>${Z.esc(meta.title)}</h1><p>${Z.subjTag(meta.subject)} Урок ${meta.n} з ${subjList.length}</p><p>Ти дійшов до уроку, який ми саме готуємо. Команда вже отримала сигнал — урок з'явиться найближчим часом. А поки можна позайматися іншими предметами.</p><p><a class="btn" href="${Z.link("klas.html")}">До мого шляху</a></p></div>`;
+    if (!og) Z.ensureDemand(meta.subject);
+    root.innerHTML = `<div class="card lock-card"><div class="big">⏳</div><h1>${Z.esc(meta.title)}</h1><p>${Z.subjTag(meta.subject)} ${where}</p><p>Ти дійшов до уроку, який ми саме готуємо. Команда вже отримала сигнал — урок з'явиться найближчим часом. А поки можна позайматися іншими предметами.</p><p><a class="btn" href="${Z.link("klas.html")}">До мого шляху</a></p></div>`;
     return;
   }
 
@@ -38,11 +48,14 @@
   const terms = L.terms || {};
   const MD = s => Z.abbrify(Z.md(s), terms);
   if (window.AiHelp) window.AiHelp.mount();
-  const rec = Z.progress.ensure(id); Z.progress.save();
+  /* прогрес розбору — окремий запис, щоб урок у маршруті лишився непройденим і порядок відкриття не зламався */
+  const pid = review ? "rz:" + (og || Z.state.grade) + ":" + id : id;
+  const rec = Z.progress.ensure(pid); Z.progress.save();
+  const logEv = ev => Z.progress.log(review ? Object.assign(ev, { type: "topic_" + ev.type, g: og || Z.state.grade, title: meta.title }) : ev);
   /* батьки повернули урок з іншого пристрою, поки він відкритий, — перезавантажити, щоб почати з потрібного кроку */
-  window.addEventListener("z-remote-update", () => { const cur = Z.progress.get(id); if (cur && cur !== rec && JSON.stringify(cur.homework.review || null) !== JSON.stringify(rec.homework.review || null)) location.reload(); });
+  window.addEventListener("z-remote-update", () => { const cur = Z.progress.get(pid); if (cur && cur !== rec && JSON.stringify(cur.homework.review || null) !== JSON.stringify(rec.homework.review || null)) location.reload(); });
   const seed = Z.hash(id);
-  if (!rec.theory && !rec.practice.done) Z.progress.log({ type: "open", id });
+  if (!rec.theory && !rec.practice.done) logEv({ type: "open", id });
 
   let tick = 0; let checking = false;
   /* перевірка домашнього Поясняйком (режим «Дитина вчиться сама») */
@@ -55,14 +68,15 @@
       else { if (rv) Z.toast("Поясняйко перевірив: зараховано ✅", "ok"); render(); }
     }, () => { checking = false; render(); });
   }
-  setInterval(() => { if (document.visibilityState === "visible") { rec.time = (rec.time || 0) + 1; if (++tick % 15 === 0) Z.progress.set(id, rec); } }, 1000);
-  document.addEventListener("visibilitychange", () => Z.progress.set(id, rec));
-  window.addEventListener("beforeunload", () => Z.progress.set(id, rec));
+  setInterval(() => { if (document.visibilityState === "visible") { rec.time = (rec.time || 0) + 1; if (++tick % 15 === 0) Z.progress.set(pid, rec); } }, 1000);
+  document.addEventListener("visibilitychange", () => Z.progress.set(pid, rec));
+  window.addEventListener("beforeunload", () => Z.progress.set(pid, rec));
 
   const pos = subjList.indexOf(meta); const nextL = subjList[pos + 1] || null;
-  const STEPS = [["theory", "1. Теорія"], ["practice", "2. Практика"], ["homework", "3. Домашнє"], ["summary", "4. Підсумок"]];
-  let step = !rec.theory ? "theory" : !rec.practice.done ? "practice" : !rec.homework.submitted ? "homework" : "summary";
-  if (Z.qs("step")) step = Z.qs("step");
+  const STEPS = review ? [["theory", "1. Теорія"], ["practice", "2. Практика"], ["summary", "3. Підсумок"]]
+    : [["theory", "1. Теорія"], ["practice", "2. Практика"], ["homework", "3. Домашнє"], ["summary", "4. Підсумок"]];
+  let step = !rec.theory ? "theory" : !rec.practice.done ? "practice" : !review && !rec.homework.submitted ? "homework" : "summary";
+  if (STEPS.some(([k]) => k === Z.qs("step"))) step = Z.qs("step");
 
   function stepState(s) { if (s === "theory") return rec.theory ? "done" : ""; if (s === "practice") return rec.practice.done ? "done" : ""; if (s === "homework") return rec.homework.submitted ? "done" : ""; return ""; }
   /* повернутий урок: що саме треба переробити і чи вже зроблено */
@@ -73,12 +87,12 @@
     const who = rv.by === "ai" || rv.by === "auto" ? "Поясняйко просить доробити урок." : "Батьки повернули урок на доопрацювання.";
     return `<div class="notice">↩️ <b>${who}</b> Треба ще раз: ${parts.map(p => PART_TODO[p] + (partDone(p) ? " ✓" : "")).join(", ")}.${rv.comment ? `<br>Коментар: ${Z.esc(rv.comment)}` : ""}</div>`;
   }
-  function finishRedo() { const parts = Z.redoParts(rec); if (parts.length && parts.every(partDone)) { rec.homework.review = null; Z.progress.log({ type: "redo_done", id }); } }
+  function finishRedo() { const parts = Z.redoParts(rec); if (parts.length && parts.every(partDone)) { rec.homework.review = null; logEv({ type: "redo_done", id }); } }
   /* кнопки кроків уроку в шапці */
   function stepButtons() { return STEPS.map(([k, n]) => `<button data-step="${k}" class="${step === k ? "on" : ""} ${stepState(k)}">${stepState(k) === "done" ? "✓ " : ""}${n}</button>`).join(""); }
   function head() {
-    return `<div class="card"><div class="lesson-head"><div style="flex:1;min-width:240px">${Z.subjTag(meta.subject)} <span class="chip">Урок ${meta.n} з ${subjList.length}</span> <span class="chip">⏱ ~${L.minutes} хв</span>
-      <h1>${Z.esc(L.title)}</h1><small class="muted">${Z.esc(meta.section)}</small><div class="goal">🎯 ${MD(L.goal)}</div>${redoNotice()}</div></div>
+    return `<div class="card"><div class="lesson-head"><div style="flex:1;min-width:240px">${Z.subjTag(meta.subject)} <span class="chip">${where}</span> <span class="chip">⏱ ~${L.minutes} хв</span>
+      <h1>${Z.esc(L.title)}</h1><small class="muted">${Z.esc(meta.section)}</small><div class="goal">🎯 ${MD(L.goal)}</div>${redoNotice()}${review ? `<div class="notice">🔍 <b>Розбір теми.</b> Читай теорію і тренуйся скільки треба. У маршрут це не зараховується: ${og ? "це тема з програми " + Number(og.slice(1)) + "-го класу, щоб повторити основу." : "коли дійдеш до цього уроку по порядку, пройдеш його повністю, з домашнім."}</div>` : ""}</div></div>
       <div class="steps">${stepButtons()}</div></div>`;
   }
 
@@ -139,7 +153,7 @@
     const sc = rec.practice.score, best = rec.practice.best; const stars = Z.starsOf(sc);
     const msg = sc >= 90 ? "Чудово! Ти впорався блискуче." : sc >= Z.PASS ? "Добре! Тему засвоєно." : sc >= 50 ? "Непогано, але варто повторити теорію і спробувати ще раз." : "Ця тема поки складна. Перечитай теорію і виконай практику знову.";
     return `<div class="result-banner"><div class="big">${["😕", "🙂", "😃", "🤩"][stars]}</div><h2 style="margin:4px 0">Результат: ${sc}% ${Z.starsHTML(sc)}</h2><p>${msg}${rec.practice.attempts > 1 ? ` <small class="muted">Спроба ${rec.practice.attempts}, найкращий результат ${best}%.</small>` : ""}</p>
-      <p><button class="btn ghost" id="retry">↻ Повторити практику</button> <button class="btn" data-go="homework">Далі: домашнє завдання ▶</button></p></div>`;
+      <p><button class="btn ghost" id="retry">↻ Повторити практику</button> ${review ? '<button class="btn" data-go="summary">Далі: підсумок ▶</button>' : '<button class="btn" data-go="homework">Далі: домашнє завдання ▶</button>'}</p></div>`;
   }
   function afterRender(kind) {
     const wrap = document.getElementById("exwrap"); if (!wrap) return;
@@ -148,8 +162,8 @@
       const el = wrap.querySelector(`.ex[data-idx="${i}"]`); const R = B.results[i];
       if (R && R.final) showFinal(ex, el, R, kind);
       else if (!ro) { el.querySelector(".check").innerHTML = `<button class="btn sm" data-check="${i}">${EX.isManual(ex.type) ? "Готово ✓" : "Перевірити"}</button>${R && R.tries ? '<span class="chip warn">друга спроба</span>' : ""}`; }
-      el.addEventListener("change", () => { if (locked(kind)) return; B.answers[i] = EX.collect(ex, el); Z.progress.set(id, rec); });
-      el.addEventListener("input", () => { if (locked(kind)) return; B.answers[i] = EX.collect(ex, el); if (++tick % 5 === 0) Z.progress.set(id, rec); });
+      el.addEventListener("change", () => { if (locked(kind)) return; B.answers[i] = EX.collect(ex, el); Z.progress.set(pid, rec); });
+      el.addEventListener("input", () => { if (locked(kind)) return; B.answers[i] = EX.collect(ex, el); if (++tick % 5 === 0) Z.progress.set(pid, rec); });
     });
     wrap.querySelectorAll("button[data-check]").forEach(b => b.onclick = () => check(kind, Number(b.dataset.check)));
     wrap.querySelectorAll("button[data-flag]").forEach(b => b.onclick = () => window.Report && window.Report.open(reportCtx({ step: kind, exercise: Number(b.dataset.flag) + 1 })));
@@ -160,7 +174,7 @@
     if (rt) rt.onclick = () => {
       const m = Z.modal(`<h2>Почати практику знову?</h2><p>Попередні відповіді очистяться, найкращий результат збережеться.</p><p class="row-btns"><button class="btn ghost" data-x>Скасувати</button><button class="btn" data-y>Почати знову</button></p>`);
       m.querySelector("[data-x]").onclick = () => m.remove();
-      m.querySelector("[data-y]").onclick = () => { m.remove(); rec.practice.answers = {}; rec.practice.results = {}; rec.practice.done = null; rec.practice.score = null; Z.progress.set(id, rec); Z.progress.log({ type: "retry", id }); go("practice"); };
+      m.querySelector("[data-y]").onclick = () => { m.remove(); rec.practice.answers = {}; rec.practice.results = {}; rec.practice.done = null; rec.practice.score = null; Z.progress.set(pid, rec); logEv({ type: "retry", id }); go("practice"); };
     };
   }
   function showFinal(ex, el, R, kind) {
@@ -189,9 +203,9 @@
       EX.feedback(el, "part", `🤔 Не зовсім. Спробуй ще раз — залишилась одна спроба.${ex.hint ? `<span class="ans">Підказка: ${MD(ex.hint)}</span>` : ""}`);
       el.querySelector(".check").innerHTML = `<button class="btn sm" data-check="${i}">Перевірити ще раз</button><span class="chip warn">друга спроба</span>`;
       el.querySelector("button[data-check]").onclick = () => check(kind, i);
-      B.results[i] = R; Z.progress.set(id, rec); return;
+      B.results[i] = R; Z.progress.set(pid, rec); return;
     }
-    R.res = { score: res.score, detail: res.detail }; B.results[i] = R; Z.progress.set(id, rec); showFinal(ex, el, R, kind); updateFinish(kind);
+    R.res = { score: res.score, detail: res.detail }; B.results[i] = R; Z.progress.set(pid, rec); showFinal(ex, el, R, kind); updateFinish(kind);
   }
   /* набір випадкових літер замість відповіді: мало голосних або довгі повтори без пробілів */
   function looksLikeGibberish(t) {
@@ -208,13 +222,13 @@
   function scoreOf(kind) { const list = exSet(kind), B = bucket(kind); const auto = list.map((ex, i) => [ex, B.results[i]]).filter(([ex]) => EX.isAuto(ex.type)); if (!auto.length) return 100; return Math.round(100 * auto.reduce((s, [, R]) => s + (R ? R.score : 0), 0) / auto.length); }
   function finishPractice() {
     const sc = scoreOf("practice"); rec.practice.score = sc; rec.practice.done = Date.now(); rec.practice.attempts = (rec.practice.attempts || 0) + 1; rec.practice.best = Math.max(rec.practice.best ?? 0, sc);
-    finishRedo(); Z.progress.set(id, rec); Z.progress.log({ type: "practice", id, score: sc, attempt: rec.practice.attempts, time: rec.time }); celebrate(sc); go("practice");
+    finishRedo(); Z.progress.set(pid, rec); logEv({ type: "practice", id, score: sc, attempt: rec.practice.attempts, time: rec.time }); celebrate(sc); go("practice");
   }
   function submitHomework() {
     const list = L.homework, B = rec.homework; const hasAuto = list.some(ex => EX.isAuto(ex.type));
     rec.homework.score = hasAuto ? scoreOf("homework") : null; rec.homework.submitted = Date.now(); finishRedo();
     const texts = list.map((ex, i) => ex.type === "text" ? { q: ex.q, a: B.answers[i] } : null).filter(Boolean);
-    Z.progress.set(id, rec); Z.progress.log({ type: "homework", id, score: rec.homework.score, texts, time: rec.time });
+    Z.progress.set(pid, rec); logEv({ type: "homework", id, score: rec.homework.score, texts, time: rec.time });
     Z.ensureDemand(meta.subject);
     Z.toast("Домашнє завдання здано! 📬", "ok"); go("summary");
     if (Z.checkMode() === "ai" && window.Check) runCheck();
@@ -234,7 +248,16 @@
     if (Z.checkMode() === "parent") return '<p class="notice">📬 Урок виконано, домашнє здано. Наступний урок відкриється, коли батьки його перевірять.</p>';
     return '<p class="notice">📬 Домашнє здано і чекає перевірки Поясняйка. <button class="btn sm" id="checkNow" type="button">Перевірити зараз</button></p>';
   }
+  function reviewSummary() {
+    const sc = rec.practice.best;
+    const msg = sc == null ? "Спробуй практику — так тема запам'ятається краще." : sc >= Z.PASS ? "Тему розібрано! Якщо щось лишилося незрозумілим — запитай Поясняйка 🦉." : "Тема ще не до кінця зрозуміла. Перечитай теорію, запитай Поясняйка 🦉 і спробуй практику ще раз.";
+    return `<div class="card"><h2 style="margin-top:0">🏁 Підсумок розбору</h2>
+      <div class="grid c3"><div class="card mini"><small class="muted">Практика</small><div class="num-big">${sc != null ? sc + "%" : "—"}</div>${Z.starsHTML(sc)}</div>
+      <div class="card mini"><small class="muted">Час на розборі</small><div class="num-mid">${Z.fmtTime(rec.time)}</div></div></div>
+      <p>${msg}</p><p class="row-btns"><a class="btn" href="${Z.link("klas.html")}#poshuk">🔍 Знайти іншу тему</a><a class="btn sec" href="${Z.link("klas.html")}">📚 До мого шляху</a></p></div>`;
+  }
   function summaryView() {
+    if (review) return reviewSummary();
     const done = Z.statusOf(id) === "done"; const sc = rec.practice.best;
     const refl = L.reflection && L.reflection.length ? `<h3>🪞 Подумай</h3>${L.reflection.map((q, i) => `<div class="field"><label>${MD(q)}</label><textarea data-refl="${i}" rows="2">${Z.esc((rec.reflection || {})[i] || "")}</textarea></div>`).join("")}` : "";
     let nextHTML = "";
@@ -278,11 +301,11 @@
     if (window.AiHelp) window.AiHelp.setContext(aiContext());
     root.querySelectorAll("button[data-step]").forEach(b => b.onclick = () => go(b.dataset.step));
     root.querySelectorAll("button[data-go]").forEach(b => b.onclick = () => go(b.dataset.go));
-    const td = document.getElementById("theoryDone"); if (td) td.onclick = () => { if (!rec.theory) { rec.theory = Date.now(); finishRedo(); Z.progress.set(id, rec); } go("practice"); };
+    const td = document.getElementById("theoryDone"); if (td) td.onclick = () => { if (!rec.theory) { rec.theory = Date.now(); finishRedo(); Z.progress.set(pid, rec); } go("practice"); };
     if (step === "practice" || step === "homework") afterRender(step);
     const cn = document.getElementById("checkNow"); if (cn) cn.onclick = runCheck;
-    root.querySelectorAll("textarea[data-refl]").forEach(t => t.addEventListener("input", () => { rec.reflection ||= {}; rec.reflection[t.dataset.refl] = t.value; Z.progress.set(id, rec); }));
+    root.querySelectorAll("textarea[data-refl]").forEach(t => t.addEventListener("input", () => { rec.reflection ||= {}; rec.reflection[t.dataset.refl] = t.value; Z.progress.set(pid, rec); }));
   }
   render();
-  if (Z.checkMode() === "ai" && window.Check && Check.pending(rec)) runCheck();
+  if (!review && Z.checkMode() === "ai" && window.Check && Check.pending(rec)) runCheck();
 })();

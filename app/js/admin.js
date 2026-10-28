@@ -144,10 +144,15 @@
       <p class="err" id="aerr" role="alert"></p><button class="btn" type="submit" id="agrant">Створити акаунти і відкрити доступ</button></form></div>
       ${created}
       <div class="card"><h2 style="margin-top:0">Мають доступ <small class="muted">${D.allow.length}</small></h2>
-      <div class="table-wrap"><table><thead><tr><th>Email</th><th>Примітка</th><th>Видано</th><th></th></tr></thead><tbody>${D.allow.map(a => `<tr><td>${Z.esc(a.id)}</td><td>${Z.esc(a.note || "")}</td><td>${ago(a.createdAt)}</td><td class="row-btns"><button class="btn sm ghost" data-reset="${Z.esc(a.id)}">Лист для зміни пароля</button><button class="btn sm ghost danger-t" data-revoke="${Z.esc(a.id)}">Закрити доступ</button></td></tr>`).join("") || '<tr><td colspan="4" class="muted">Нікого</td></tr>'}</tbody></table></div></div>`;
+      <p class="muted">Кнопка «Запрошення» у кожному рядку відкриває готове повідомлення з логіном — його можна скопіювати хоч завтра. Для акаунтів, створених у цій панелі, у повідомленні буде і початковий пароль (він зберігається в базі, бачать лише адміни та сама родина). Якщо родина вже змінила пароль, це повідомлення застаріло — надішліть «Лист для зміни пароля».</p>
+      <div class="table-wrap"><table><thead><tr><th>Email</th><th>Примітка</th><th>Видано</th><th></th></tr></thead><tbody>${D.allow.map(a => `<tr><td>${Z.esc(a.id)}</td><td>${Z.esc(a.note || "")}</td><td>${ago(a.createdAt)}</td><td class="row-btns"><button class="btn sm" data-inv="${Z.esc(a.id)}">Запрошення</button><button class="btn sm ghost" data-reset="${Z.esc(a.id)}">Лист для зміни пароля</button><button class="btn sm ghost danger-t" data-revoke="${Z.esc(a.id)}">Закрити доступ</button></td></tr>`).join("") || '<tr><td colspan="4" class="muted">Нікого</td></tr>'}</tbody></table></div></div>`;
   }
   function genPass() { const A = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789"; const b = new Uint32Array(10); crypto.getRandomValues(b); return [...b].map(x => A[x % A.length]).join(""); }
   function credMsg(email, pass) { return `Вітаємо! Доступ до «Зошита» (пілот NextEducationAI) відкрито.\n\nВхід: ${APP_URL}\nЛогін: ${email}\nПароль: ${pass}\n\nПісля входу додайте дитину, оберіть клас і створіть PIN для кабінету батьків. Пароль можна змінити кнопкою «Забули пароль?» на сторінці входу. Помітили помилку — кнопка «⚑ Помилка?» є на кожній сторінці.`; }
+  function inviteMsg(a) {
+    if (a.pass) return credMsg(a.id, a.pass);
+    return `Вітаємо! Доступ до «Зошита» (пілот NextEducationAI) відкрито.\n\nВхід: ${APP_URL}\nЛогін: ${a.id}\nПароль: створіть свій. На сторінці входу натисніть «Забули пароль?», вкажіть цей email, і вам прийде лист (перевірте «Спам») з посиланням, де ви задасте пароль.\n\nПісля входу додайте дитину, оберіть клас і створіть PIN для кабінету батьків. Помітили помилку — кнопка «⚑ Помилка?» є на кожній сторінці.`;
+  }
   async function grant(e) {
     e.preventDefault(); const err = document.getElementById("aerr"); err.textContent = "";
     const emails = [...new Set(document.getElementById("emails").value.split(/[\s,;]+/).map(s => s.trim().toLowerCase()).filter(Boolean))];
@@ -159,7 +164,7 @@
     for (const email of emails) {
       try {
         const pass = genPass(); const r = await Z.DB.createAccount(email, pass);
-        await Z.DB.set("allowlist", email, { note, createdAt: Z.DB.now(), by: u.email }, true);
+        await Z.DB.set("allowlist", email, r.created ? { note, createdAt: Z.DB.now(), by: u.email, pass } : { note, createdAt: Z.DB.now(), by: u.email }, true);
         out.push({ email, exists: !r.created, msg: r.created ? credMsg(email, pass) : "" });
       } catch (ex) { out.push({ email, error: ex.code || ex.message || "помилка", msg: "" }); }
     }
@@ -191,6 +196,11 @@
     root.querySelectorAll("button[data-cc]").forEach(b => b.onclick = () => copy(lastCreated[Number(b.dataset.cc)].msg));
     const cac = document.getElementById("copyAllCreds"); if (cac) cac.onclick = () => copy(lastCreated.filter(c => c.msg).map(c => c.msg).join("\n\n———\n\n"));
     root.querySelectorAll("button[data-reset]").forEach(b => b.onclick = async () => { try { await Z.DB.resetPassword(b.dataset.reset); Z.toast("Лист надіслано на " + b.dataset.reset, "ok"); } catch (e) { Z.toast(e.code || e.message, "bad"); } });
+    root.querySelectorAll("button[data-inv]").forEach(b => b.onclick = () => {
+      const a = D.allow.find(x => x.id === b.dataset.inv); if (!a) return;
+      const m = Z.modal(`<h2>Запрошення для ${Z.esc(a.id)}</h2><textarea class="mono-area" rows="10" readonly>${Z.esc(inviteMsg(a))}</textarea><p class="muted">${a.pass ? "Початковий пароль із моменту створення акаунта." : "Пароль для цього акаунта не збережено — людина задає його сама через «Забули пароль?»."}</p><p class="row-btns"><button class="btn" data-c>Скопіювати</button><button class="btn ghost" data-x>Закрити</button></p>`);
+      m.querySelector("[data-c]").onclick = () => copy(inviteMsg(a)); m.querySelector("[data-x]").onclick = () => m.remove();
+    });
     root.querySelectorAll("button[data-revoke]").forEach(b => b.onclick = () => {
       const m = Z.modal(`<h2>Закрити доступ?</h2><p><b>${Z.esc(b.dataset.revoke)}</b> більше не зможе відкривати уроки. Прогрес дитини збережеться — доступ можна повернути.</p><p class="row-btns"><button class="btn ghost" data-x>Скасувати</button><button class="btn danger" data-y>Закрити доступ</button></p>`);
       m.querySelector("[data-x]").onclick = () => m.remove();

@@ -1,0 +1,275 @@
+{
+ "id": "eng-w02-d5",
+ "subject": "eng",
+ "title": "Present Simple vs Present Continuous. Stative verbs",
+ "goal": "Розрізняти вживання Present Simple і Present Continuous, правильно утворювати обидва часи та знати дієслова стану (stative verbs), які зазвичай не вживаються в Continuous.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Описуючи людей (як ми робили минулого уроку), ми кажемо і про те, що вони роблять **зазвичай**, і про те, що вони роблять **саме зараз**. В англійській для цього є два різні часи. Сьогодні навчимося не плутати їх і дізнаємося про дієслова, які «не люблять» закінчення -ing."
+  },
+  {
+   "type": "table",
+   "title": "Два теперішні часи",
+   "head": [
+    "",
+    "Present Simple",
+    "Present Continuous"
+   ],
+   "rows": [
+    [
+     "Коли вживаємо",
+     "звички, регулярні дії, факти, розклад",
+     "дія відбувається зараз; тимчасова ситуація"
+    ],
+    [
+     "Форма",
+     "I/you/we/they **play**; he/she/it **plays**",
+     "I **am playing**; he/she/it **is playing**; we/you/they **are playing**"
+    ],
+    [
+     "Заперечення",
+     "I **don't** play; she **doesn't** play",
+     "I'**m not** playing; she **isn't** playing"
+    ],
+    [
+     "Питання",
+     "**Do** you play? **Does** she play?",
+     "**Are** you playing? **Is** she playing?"
+    ],
+    [
+     "Маркери",
+     "always, usually, often, sometimes, never, every day, on Mondays",
+     "now, right now, at the moment, today, this week, these days, Look! Listen!"
+    ]
+   ]
+  },
+  {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Girl_playing_a_violin_%281882%29%2C_by_Raffaello_Sorbi.jpg/960px-Girl_playing_a_violin_%281882%29%2C_by_Raffaello_Sorbi.jpg",
+   "alt": "Картина: дівчина в синій сукні грає на скрипці на тлі хмарного неба",
+   "caption": "Раффаелло Сорбі «Дівчина, що грає на скрипці» (1882 р.). Look! The girl **is playing** the violin (зараз, на картині). She **plays** it every evening (звичка — так ми можемо уявити її історію).",
+   "credit": "Раффаелло Сорбі",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Girl_playing_a_violin_(1882),_by_Raffaello_Sorbi.jpg"
+  },
+  {
+   "type": "example",
+   "title": "Порівняй",
+   "text": "Oksana usually **walks** to school, but today she **is taking** the bus because it's raining.\nMy dad **works** in a hospital. This month he **is working** at night.\nWater **boils** at 100 °C. Look! The water **is boiling**."
+  },
+  {
+   "type": "rule",
+   "title": "Дієслова стану (stative verbs)",
+   "text": "Деякі дієслова означають не дію, а **стан**: почуття, думку, бажання, належність. Їх зазвичай **не вживаємо** в Continuous, навіть коли йдеться про «зараз»:\n✔ *I **know** the answer now.* ✘ *I am knowing…*\n✔ *She **wants** a new phone.* ✘ *She is wanting…*"
+  },
+  {
+   "type": "vocab",
+   "title": "Stative verbs",
+   "items": [
+    {
+     "en": "like / love / hate",
+     "uk": "подобатися / любити / ненавидіти",
+     "ex": "I love music, but I hate noise."
+    },
+    {
+     "en": "want / need",
+     "uk": "хотіти / потребувати",
+     "ex": "We need more time."
+    },
+    {
+     "en": "prefer",
+     "uk": "надавати перевагу",
+     "ex": "She prefers tea to coffee."
+    },
+    {
+     "en": "know",
+     "uk": "знати",
+     "ex": "Do you know his name?"
+    },
+    {
+     "en": "understand",
+     "uk": "розуміти",
+     "ex": "I don't understand this word."
+    },
+    {
+     "en": "believe",
+     "uk": "вірити",
+     "ex": "I believe you."
+    },
+    {
+     "en": "remember",
+     "uk": "пам'ятати",
+     "ex": "He remembers my birthday."
+    },
+    {
+     "en": "belong",
+     "uk": "належати",
+     "ex": "This bag belongs to Ira."
+    },
+    {
+     "en": "seem",
+     "uk": "здаватися",
+     "ex": "You seem tired."
+    },
+    {
+     "en": "own",
+     "uk": "володіти",
+     "ex": "My uncle owns a small shop."
+    }
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Дієслова з двома значеннями",
+   "text": "**think**: *I think he is honest* (думаю = вважаю, стан) — *I am thinking about the test* (обмірковую зараз, дія).\n**have**: *She has a dog* (має, стан) — *She is having lunch* (обідає, дія).\n**see**: *I see what you mean* (розумію) — *I am seeing my friend tonight* (зустрічаюся, домовленість)."
+  },
+  {
+   "type": "tip",
+   "text": "Перевір себе: чи можна в цьому реченні сказати українською «саме зараз робить»? Якщо так — Continuous. Якщо йдеться про звичку, факт або стан (знаю, люблю, хочу) — Simple."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "choice",
+   "q": "Look! She … the violin.",
+   "options": [
+    "is playing",
+    "plays",
+    "play",
+    "are playing"
+   ],
+   "answer": 0,
+   "explain": "Look! показує дію, що відбувається зараз: Present Continuous, she → is playing."
+  },
+  {
+   "type": "fill",
+   "q": "Постав дієслова в Present Simple або Present Continuous.",
+   "text": "My brother usually {walks} (walk) to school, but today he {is taking|'s taking} (take) a bus. We {don't watch|do not watch} (not watch) TV in the mornings. Listen! Somebody {is singing|'s singing} (sing).",
+   "explain": "usually → Simple; today, Listen! → Continuous; звичка в запереченні → don't watch."
+  },
+  {
+   "type": "sort",
+   "q": "Розподіли дієслова: дієслова стану чи дієслова дії?",
+   "groups": {
+    "Stative": [
+     "know",
+     "believe",
+     "belong",
+     "prefer",
+     "understand"
+    ],
+    "Action": [
+     "run",
+     "write",
+     "cook",
+     "swim",
+     "build"
+    ]
+   }
+  },
+  {
+   "type": "truefalse",
+   "q": "Чи правильно побудоване речення?",
+   "items": [
+    {
+     "text": "I am knowing the answer.",
+     "answer": false
+    },
+    {
+     "text": "She is having breakfast now.",
+     "answer": true
+    },
+    {
+     "text": "This book is belonging to me.",
+     "answer": false
+    },
+    {
+     "text": "They usually go to the park on Sundays.",
+     "answer": true
+    },
+    {
+     "text": "I am thinking about my summer plans.",
+     "answer": true
+    }
+   ],
+   "explain": "know і belong — дієслова стану: I know, This book belongs to me. Have (снідати) і think (обмірковувати) у значенні дії можна вживати в Continuous."
+  },
+  {
+   "type": "match",
+   "q": "З'єднай речення з тим, як перекласти в ньому дієслово think або have.",
+   "pairs": [
+    [
+     "I think he is nice.",
+     "вважаю"
+    ],
+    [
+     "I'm thinking about the test.",
+     "обмірковую"
+    ],
+    [
+     "She has a cat.",
+     "має"
+    ],
+    [
+     "She is having dinner.",
+     "вечеряє"
+    ]
+   ],
+   "explain": "think і have у значенні стану (вважати, мати) — Present Simple; у значенні дії (обмірковувати, їсти) — можна Continuous."
+  },
+  {
+   "type": "choice",
+   "q": "Обери правильний варіант: «I … you are right.»",
+   "options": [
+    "think",
+    "am thinking",
+    "thinks",
+    "are thinking"
+   ],
+   "answer": 0,
+   "explain": "think = вважаю (думка, стан) → Present Simple."
+  },
+  {
+   "type": "fill",
+   "q": "Виправ помилку: впиши правильну форму.",
+   "text": "She is wanting a new bike. → She {wants} a new bike. Do you understanding me? → Do you {understand} me?"
+  },
+  {
+   "type": "speak",
+   "q": "Розкажи вголос про свій звичайний день і про те, що ти робиш саме зараз (5–6 речень).",
+   "text": "I usually get up at seven. I go to school by bus and I have six lessons a day. In the evenings I often read or play football. But right now I am sitting at my desk and I am doing my English homework. My cat is sleeping next to me.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "fill",
+   "q": "Постав дієслова в правильній формі.",
+   "text": "Ira {likes} (like) chocolate. At the moment she {is eating|'s eating} (eat) a chocolate bar. She {doesn't know|does not know} (not know) that it {contains} (contain) nuts."
+  },
+  {
+   "type": "choice",
+   "q": "Яке речення правильне?",
+   "options": [
+    "My parents own a small café, and this week they are painting it.",
+    "My parents are owning a small café, and this week they paint it.",
+    "My parents owns a small café, and this week they are paint it.",
+    "My parents is owning a café."
+   ],
+   "answer": 0,
+   "explain": "own — дієслово стану (Simple); фарбують цього тижня — тимчасова дія (Continuous)."
+  },
+  {
+   "type": "text",
+   "q": "Напиши англійською повідомлення другові (60–80 слів): що ти зазвичай робиш у вихідні і що робиш просто зараз. Використай щонайменше три дієслова стану (like, want, know, need…).",
+   "sample": "Hi Max! It's Saturday, and I am writing to you from my granny's kitchen. She is baking an apple pie, and I am helping her. I usually spend my weekends at home: I sleep late, play computer games and go for a walk with my dog. I like quiet weekends, but today is different. I want to try the pie right now! I know it will be delicious. Do you need the recipe? Write back soon!",
+   "min": 250
+  }
+ ],
+ "reflection": [
+  "Як ти вирішуєш, Simple чи Continuous?",
+  "Які дієслова стану ти запам'ятав найкраще?"
+ ]
+}

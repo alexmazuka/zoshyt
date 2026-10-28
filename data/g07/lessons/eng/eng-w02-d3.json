@@ -1,0 +1,152 @@
+{
+ "id": "eng-w02-d3",
+ "subject": "eng",
+ "title": "Diagnostic test",
+ "goal": "Перевірити, як ти пам'ятаєш граматику (Present Simple, Present Continuous, Past Simple), лексику про канікули й школу та чи вмієш розуміти короткий текст англійською.",
+ "minutes": 45,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Сьогодні — **діагностувальна робота**. Це не контрольна на оцінку, а «знімок» твоїх знань після літа: що ти пам'ятаєш добре, а що варто повторити. Виконуй завдання самостійно, без підказок і словника. Помилки — це нормально: вони покажуть, над чим попрацювати в Unit 1."
+  },
+  {
+   "type": "steps",
+   "title": "Як виконувати роботу",
+   "items": [
+    "Спершу повтори коротку пам'ятку з граматики нижче.",
+    "Прочитай текст «Back to school» двічі: спочатку загалом, потім уважно.",
+    "Виконай вправи по черзі; якщо вагаєшся — обери варіант і йди далі.",
+    "Наприкінці подивись, де помилився, і запиши ці теми в зошит."
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Пам'ятка: три часи",
+   "head": ["Час", "Коли вживаємо", "Приклад"],
+   "rows": [
+    ["Present Simple", "звички, факти, розклад (every day, usually, often)", "I get up at seven every day."],
+    ["Present Continuous", "дія відбувається зараз (now, at the moment, look!)", "I am reading a book now."],
+    ["Past Simple", "завершена дія в минулому (yesterday, last summer, ago)", "I visited my aunt last summer."]
+   ]
+  },
+  {
+   "type": "vocab",
+   "title": "School things",
+   "items": [
+    {"en": "notebook", "uk": "зошит", "ex": "Write the new words in your notebook."},
+    {"en": "pencil", "uk": "олівець", "ex": "Can I borrow your pencil?"},
+    {"en": "pen", "uk": "ручка", "ex": "I write with a blue pen."},
+    {"en": "coloured pencils", "uk": "кольорові олівці", "ex": "She draws maps with coloured pencils."},
+    {"en": "glue", "uk": "клей", "ex": "We need glue for this project."},
+    {"en": "scissors", "uk": "ножиці", "ex": "Be careful with the scissors."},
+    {"en": "timetable", "uk": "розклад уроків", "ex": "We have English on Monday — look at the timetable."},
+    {"en": "subject", "uk": "шкільний предмет", "ex": "My favourite subject is geography."},
+    {"en": "test", "uk": "тест, перевірна робота", "ex": "We had a test last Friday."}
+   ]
+  },
+  {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/School_Supplies.jpg/960px-School_Supplies.jpg",
+   "alt": "Шкільне приладдя на столі: зошит, олівці, ручки, коробка кольорових олівців, клей і червоні ножиці",
+   "caption": "Шкільне приладдя: notebook, pencils, pens, coloured pencils, glue, scissors. Спробуй назвати англійською кожен предмет на фото.",
+   "credit": "TheUltimateGrass",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:School_Supplies.jpg"
+  },
+  {
+   "type": "reading",
+   "title": "Back to school",
+   "genre": "розповідь",
+   "text": "My name is Olha. I am thirteen and I live in Lviv. Last summer I visited my aunt in Odesa. We swam in the sea every day, and I took a lot of photos.\n\nNow it is September, and I am back at school. Every morning I get up at seven o'clock and walk to school with my friend Taras. We usually have six lessons a day. My favourite subject is geography because I want to travel.\n\nRight now I am sitting in the school library. I am reading a book about the Carpathian Mountains. Taras isn't reading — he is drawing a map with his coloured pencils!"
+  }
+ ],
+ "exercises": [
+  {
+   "type": "truefalse",
+   "q": "Прочитай текст «Back to school». Правда (true) чи ні (false)?",
+   "items": [
+    {"text": "Olha lives in Odesa.", "answer": false},
+    {"text": "Olha visited her aunt last summer.", "answer": true},
+    {"text": "Olha goes to school by bus.", "answer": false},
+    {"text": "At the moment Olha is reading a book.", "answer": true},
+    {"text": "Taras is reading too.", "answer": false}
+   ],
+   "explain": "Ольга живе у Львові, а в Одесі гостювала в тітки. До школи вона ходить пішки (walk to school). Тарас зараз малює мапу."
+  },
+  {
+   "type": "choice",
+   "q": "Why is geography Olha's favourite subject?",
+   "options": ["because it is easy", "because she wants to travel", "because Taras likes it", "because she has it every day"],
+   "answer": 1,
+   "explain": "У тексті: «My favourite subject is geography because I want to travel»."
+  },
+  {
+   "type": "choice",
+   "q": "Обери правильну форму: Look! The children ___ football in the yard.",
+   "options": ["play", "are playing", "played", "plays"],
+   "answer": 1,
+   "explain": "Look! — дія відбувається зараз, тому Present Continuous: are playing."
+  },
+  {
+   "type": "choice",
+   "q": "Обери правильну форму: My brother ___ to music every evening.",
+   "options": ["listen", "is listening", "listens", "listened"],
+   "answer": 2,
+   "explain": "every evening — звичка, Present Simple; he/she/it + -s: listens."
+  },
+  {
+   "type": "fill",
+   "q": "Постав дієслова в Past Simple.",
+   "text": "Last summer we {went} (go) to the Carpathians. I {saw} (see) a waterfall and {climbed} (climb) Hoverla. We {didn't stay|did not stay} (not stay) at home.",
+   "explain": "go — went, see — saw (неправильні), climb — climbed (правильне); заперечення: didn't + початкова форма."
+  },
+  {
+   "type": "match",
+   "q": "З'єднай англійське слово з перекладом.",
+   "pairs": [
+    ["timetable", "розклад уроків"],
+    ["scissors", "ножиці"],
+    ["subject", "шкільний предмет"],
+    ["relatives", "родичі"],
+    ["notebook", "зошит"]
+   ]
+  },
+  {
+   "type": "order",
+   "q": "Склади питання з поданих слів.",
+   "items": ["Did", "you", "take", "any", "photos", "last", "summer"],
+   "explain": "Питання в Past Simple: Did + підмет + початкова форма дієслова."
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай питання вголос і дай на кожне повну відповідь англійською.",
+   "text": "What did you do last summer? What is your favourite subject? What are you doing right now?",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "choice",
+   "q": "Яке речення правильне?",
+   "options": ["She don't like tests.", "She doesn't likes tests.", "She doesn't like tests.", "She not like tests."],
+   "answer": 2,
+   "explain": "Заперечення в Present Simple для he/she/it: doesn't + початкова форма (like)."
+  },
+  {
+   "type": "fill",
+   "q": "Впиши дієслово в правильній формі (Present Simple, Present Continuous або Past Simple).",
+   "text": "Yesterday I {watched} (watch) a film. Now my sister {is doing} (do) her homework. We usually {have} (have) English on Mondays.",
+   "explain": "yesterday — Past Simple; now — Present Continuous; usually — Present Simple."
+  },
+  {
+   "type": "text",
+   "q": "Напиши англійською 6–7 речень «Back to school» про себе: що ти робив улітку (Past Simple), що робиш зазвичай у шкільні дні (Present Simple) і що робиш саме зараз (Present Continuous).",
+   "sample": "Last summer I visited my grandparents in Poltava. I rode my bike and picked berries. Now I am back at school. I get up at half past seven every day. I usually have six lessons. My favourite subject is maths. Right now I am writing this text, and my cat is sleeping on the sofa.",
+   "min": 200
+  }
+ ],
+ "reflection": [
+  "Які завдання здалися найлегшими, а в яких ти помилився?",
+  "Яку тему з граматики тобі варто повторити першою?"
+ ]
+}

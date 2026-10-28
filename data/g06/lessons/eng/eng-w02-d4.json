@@ -1,0 +1,255 @@
+{
+ "id": "eng-w02-d4",
+ "subject": "eng",
+ "title": "Family members and relatives",
+ "goal": "Вивчити назви членів родини і родичів англійською та навчитися вживати присвійну форму 's (Tom's sister), щоб розповідати про свою родину.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Починаємо **Unit 1. Me, my family and friends**. Перша тема — родина. Англійською є окремі слова для всіх родичів, а щоб сказати, **чий** це родич, використовують коротеньке закінчення **'s**."
+  },
+  {
+   "type": "vocab",
+   "title": "Family words",
+   "items": [
+    {
+     "en": "parents",
+     "uk": "батьки",
+     "ex": "My parents are teachers."
+    },
+    {
+     "en": "grandparents",
+     "uk": "бабуся і дідусь",
+     "ex": "My grandparents live in a village."
+    },
+    {
+     "en": "grandmother (grandma)",
+     "uk": "бабуся",
+     "ex": "My grandma bakes great pies."
+    },
+    {
+     "en": "grandfather (grandpa)",
+     "uk": "дідусь",
+     "ex": "My grandpa has got a garden."
+    },
+    {
+     "en": "aunt",
+     "uk": "тітка",
+     "ex": "My aunt is a doctor."
+    },
+    {
+     "en": "uncle",
+     "uk": "дядько",
+     "ex": "My uncle lives in Odesa."
+    },
+    {
+     "en": "cousin",
+     "uk": "двоюрідний брат / двоюрідна сестра",
+     "ex": "My cousin Sam is ten."
+    },
+    {
+     "en": "son",
+     "uk": "син",
+     "ex": "Tom is Peter's son."
+    },
+    {
+     "en": "daughter",
+     "uk": "донька",
+     "ex": "Kate is Anna's daughter."
+    },
+    {
+     "en": "nephew",
+     "uk": "племінник",
+     "ex": "Tom is Helen's nephew."
+    },
+    {
+     "en": "niece",
+     "uk": "племінниця",
+     "ex": "Kate is Mark's niece."
+    },
+    {
+     "en": "only child",
+     "uk": "єдина дитина в сім'ї",
+     "ex": "Sam is an only child."
+    }
+   ]
+  },
+  {
+   "type": "figure",
+   "svg": "<svg viewBox=\"0 0 420 236\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"14\"><line x1=\"182\" y1=\"31\" x2=\"238\" y2=\"31\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"112\" y1=\"121\" x2=\"138\" y2=\"121\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"302\" y1=\"121\" x2=\"328\" y2=\"121\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"210\" y1=\"31\" x2=\"210\" y2=\"74\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"80\" y1=\"74\" x2=\"270\" y2=\"74\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"80\" y1=\"74\" x2=\"80\" y2=\"104\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"270\" y1=\"74\" x2=\"270\" y2=\"104\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"125\" y1=\"121\" x2=\"125\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"80\" y1=\"164\" x2=\"170\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"80\" y1=\"164\" x2=\"80\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"164\" x2=\"170\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"315\" y1=\"121\" x2=\"315\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"118\" y=\"14\" width=\"64\" height=\"34\" rx=\"7\" fill=\"#E4E9F9\" stroke=\"#2A45B0\" stroke-width=\"1\"/><text x=\"150\" y=\"29\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\" font-weight=\"bold\">George</text><text x=\"150\" y=\"43\" text-anchor=\"middle\" fill=\"#2A45B0\" font-size=\"10\">grandfather</text><rect x=\"238\" y=\"14\" width=\"64\" height=\"34\" rx=\"7\" fill=\"#FBE3E7\" stroke=\"#D23F58\" stroke-width=\"1\"/><text x=\"270\" y=\"29\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\" font-weight=\"bold\">Mary</text><text x=\"270\" y=\"43\" text-anchor=\"middle\" fill=\"#D23F58\" font-size=\"10\">grandmother</text><rect x=\"48\" y=\"104\" width=\"64\" height=\"34\" rx=\"7\" fill=\"#E4E9F9\" stroke=\"#2A45B0\" stroke-width=\"1\"/><text x=\"80\" y=\"119\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\" font-weight=\"bold\">Peter</text><text x=\"80\" y=\"133\" text-anchor=\"middle\" fill=\"#2A45B0\" font-size=\"10\">father</text><rect x=\"138\" y=\"104\" width=\"64\" height=\"34\" rx=\"7\" fill=\"#FBE3E7\" stroke=\"#D23F58\" stroke-width=\"1\"/><text x=\"170\" y=\"119\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\" font-weight=\"bold\">Anna</text><text x=\"170\" y=\"133\" text-anchor=\"middle\" fill=\"#D23F58\" font-size=\"10\">mother</text><rect x=\"238\" y=\"104\" width=\"64\" height=\"34\" rx=\"7\" fill=\"#FBE3E7\" stroke=\"#D23F58\" stroke-width=\"1\"/><text x=\"270\" y=\"119\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\" font-weight=\"bold\">Helen</text><text x=\"270\" y=\"133\" text-anchor=\"middle\" fill=\"#D23F58\" font-size=\"10\">aunt</text><rect x=\"328\" y=\"104\" width=\"64\" height=\"34\" rx=\"7\" fill=\"#E4E9F9\" stroke=\"#2A45B0\" stroke-width=\"1\"/><text x=\"360\" y=\"119\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\" font-weight=\"bold\">Mark</text><text x=\"360\" y=\"133\" text-anchor=\"middle\" fill=\"#2A45B0\" font-size=\"10\">uncle</text><rect x=\"48\" y=\"194\" width=\"64\" height=\"34\" rx=\"7\" fill=\"#E4E9F9\" stroke=\"#2A45B0\" stroke-width=\"2.5\"/><text x=\"80\" y=\"209\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\" font-weight=\"bold\">Tom</text><text x=\"80\" y=\"223\" text-anchor=\"middle\" fill=\"#2A45B0\" font-size=\"10\">me</text><rect x=\"138\" y=\"194\" width=\"64\" height=\"34\" rx=\"7\" fill=\"#FBE3E7\" stroke=\"#D23F58\" stroke-width=\"1\"/><text x=\"170\" y=\"209\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\" font-weight=\"bold\">Kate</text><text x=\"170\" y=\"223\" text-anchor=\"middle\" fill=\"#D23F58\" font-size=\"10\">sister</text><rect x=\"283\" y=\"194\" width=\"64\" height=\"34\" rx=\"7\" fill=\"#E4E9F9\" stroke=\"#2A45B0\" stroke-width=\"1\"/><text x=\"315\" y=\"209\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\" font-weight=\"bold\">Sam</text><text x=\"315\" y=\"223\" text-anchor=\"middle\" fill=\"#2A45B0\" font-size=\"10\">cousin</text></svg>",
+   "caption": "Родинне дерево Тома (Tom). Синім позначено чоловіків, червоним — жінок. Під кожним ім'ям написано, ким ця людина доводиться Томові.",
+   "alt": "Родинне дерево з трьох поколінь: угорі George і Mary; посередині їхні діти Peter (з дружиною Anna) і Helen (з чоловіком Mark); унизу Tom і Kate — діти Пітера й Анни, та Sam — син Гелен і Марка."
+  },
+  {
+   "type": "rule",
+   "title": "Присвійна форма 's",
+   "text": "Щоб сказати, кому щось належить або ким людина комусь доводиться, додаємо до імені чи іменника **'s**:\n*Tom's sister* — сестра Тома; *my mum's car* — мамина машина.\nЯкщо іменник у множині вже закінчується на -s, додаємо лише апостроф: *my parents' house* — будинок моїх батьків.\nЯкщо множина без -s, додаємо 's: *the children's toys* — іграшки дітей.\nПитання: **Whose** bag is it? — It's **Kate's**. (Чия це сумка? — Кейт.)"
+  },
+  {
+   "type": "tip",
+   "text": "Не плутай: **'s** буває скороченням від **is**. *Tom's tall.* = Tom is tall. А *Tom's dog* — собака Тома. Підказка: якщо після 's стоїть іменник, це присвійна форма."
+  },
+  {
+   "type": "dialogue",
+   "title": "Who is that?",
+   "lines": [
+    {
+     "who": "Kate",
+     "text": "Look at this photo. This is my grandparents' house."
+    },
+    {
+     "who": "Lily",
+     "text": "Who's the man with the dog?"
+    },
+    {
+     "who": "Kate",
+     "text": "That's my uncle Mark. He's my aunt Helen's husband."
+    },
+    {
+     "who": "Lily",
+     "text": "And the boy?"
+    },
+    {
+     "who": "Kate",
+     "text": "That's Sam, my cousin. He's an only child, so he often plays with me and my brother Tom."
+    }
+   ]
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай англійське слово з перекладом.",
+   "pairs": [
+    [
+     "aunt",
+     "тітка"
+    ],
+    [
+     "uncle",
+     "дядько"
+    ],
+    [
+     "cousin",
+     "двоюрідний брат / сестра"
+    ],
+    [
+     "nephew",
+     "племінник"
+    ],
+    [
+     "niece",
+     "племінниця"
+    ],
+    [
+     "grandparents",
+     "бабуся і дідусь"
+    ]
+   ],
+   "explain": "Nephew — син брата чи сестри, niece — їхня донька."
+  },
+  {
+   "type": "fill",
+   "q": "Подивись на родинне дерево і встав слово.",
+   "text": "Helen is Tom's {aunt}. Sam is Kate's {cousin}. George is Sam's {grandfather|grandpa}. Kate is Helen's {niece}. Tom is Mark's {nephew}. Peter and Anna are Kate's {parents}.",
+   "explain": "Гелен — сестра Томового тата, тобто тітка; Сем — син тітки, тобто двоюрідний брат."
+  },
+  {
+   "type": "truefalse",
+   "q": "Правда чи ні (за родинним деревом)?",
+   "items": [
+    {
+     "text": "Anna is Tom's mother.",
+     "answer": true
+    },
+    {
+     "text": "Mark is Kate's father.",
+     "answer": false
+    },
+    {
+     "text": "Sam has got two cousins.",
+     "answer": true
+    },
+    {
+     "text": "Mary is Helen's sister.",
+     "answer": false
+    }
+   ],
+   "explain": "Mark — дядько Кейт. У Сема двоє двоюрідних: Tom і Kate. Mary — мама Гелен."
+  },
+  {
+   "type": "choice",
+   "q": "Як сказати «велосипед мого брата»?",
+   "options": [
+    "my brother's bike",
+    "my brothers bike",
+    "my bike brother's",
+    "my brother is bike"
+   ],
+   "answer": 0,
+   "explain": "Присвійна форма: brother + 's + те, що належить."
+  },
+  {
+   "type": "choice",
+   "q": "Як правильно сказати «кімната моїх батьків»?",
+   "options": [
+    "my parents' room",
+    "my parent's room",
+    "my parents's room",
+    "my parents room's"
+   ],
+   "answer": 0,
+   "explain": "Parents — множина із закінченням -s, тому додаємо лише апостроф: parents'."
+  },
+  {
+   "type": "sort",
+   "q": "Що означає 's у реченні: «is» чи «чий»?",
+   "groups": {
+    "'s = is": [
+     "She's my aunt.",
+     "It's cold today.",
+     "Tom's eleven."
+    ],
+    "'s = чий (присвійна форма)": [
+     "Tom's sister is ten.",
+     "Kate's cat is black.",
+     "This is my uncle's car."
+    ]
+   },
+   "explain": "Якщо після 's іде іменник (sister, cat, car), це присвійна форма."
+  },
+  {
+   "type": "speak",
+   "q": "Розкажи вголос про свою родину. Можеш використати зразок і змінити його.",
+   "text": "There are four people in my family: my mum, my dad, my sister and me. My mum's name is Olha. My dad's name is Ivan. I've got an aunt and an uncle. My cousin's name is Dmytro. My grandparents live in Vinnytsia.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "input",
+   "q": "Напиши англійською одним словом: донька твого брата чи сестри — це твоя …",
+   "answer": [
+    "niece"
+   ],
+   "explain": "Niece — племінниця, nephew — племінник."
+  },
+  {
+   "type": "fill",
+   "q": "Запиши в пропуск слово в присвійній формі: з 's або лише з апострофом (').",
+   "text": "This is {Ann's|Ann’s} bag (сумка Ані). These are the {boys'|boys’} bikes (велосипеди хлопців). Where are the {children's|children’s} books (книжки дітей)?",
+   "explain": "Ann's — одна особа; boys' — множина на -s; children's — множина без -s."
+  },
+  {
+   "type": "text",
+   "q": "Намалюй своє родинне дерево (хоча б три покоління) і напиши англійською 6–8 речень про своїх родичів. Використай нові слова і форму 's.",
+   "sample": "My name is Ostap. My parents are Natalia and Serhii. My dad's sister is my aunt Iryna. Her husband is my uncle Oleh. Their son Maksym is my cousin. My mum's parents are my grandma Halyna and my grandpa Petro. I'm their only grandson. My aunt's house is next to my grandparents' house.",
+   "min": 150
+  }
+ ],
+ "reflection": [
+  "Які слова про родину ти запам'ятав(-ла) найлегше, а які плутаєш?",
+  "Як ти відрізняєш 's = is від присвійної форми?"
+ ]
+}

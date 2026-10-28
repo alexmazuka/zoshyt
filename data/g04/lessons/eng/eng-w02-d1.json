@@ -18,6 +18,7 @@
       {"en": "purple", "uk": "фіолетовий", "ex": "My bag is purple."},
       {"en": "brown", "uk": "коричневий", "ex": "I have got a brown dog."}
     ]},
+    {"type": "image", "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Colored_pencils_chevre.jpg/960px-Colored_pencils_chevre.jpg", "alt": "Різнокольорові олівці викладені колом гостриками до центру: рожеві, фіолетові, сині, зелені, жовті, оранжеві, коричневий.", "caption": "Назви англійською кольори олівців: pink, purple, blue, green, yellow, orange, brown. Який колір тобі подобається найбільше?", "credit": "Chevre", "license": "CC BY-SA 3.0", "page": "https://commons.wikimedia.org/wiki/File:Colored_pencils_chevre.jpg"},
     {"type": "table", "title": "Числа 11–20", "head": ["Число", "Англійською"], "rows": [["11", "eleven"], ["12", "twelve"], ["13", "thirteen"], ["14", "fourteen"], ["15", "fifteen"], ["16", "sixteen"], ["17", "seventeen"], ["18", "eighteen"], ["19", "nineteen"], ["20", "twenty"]]},
     {"type": "rule", "title": "have got / has got", "text": "**I have got** (I've got) a bike. **You have got** (You've got) a dog. **He / she has got** (He's got / She's got) a cat. Заперечення: **haven't got** / **hasn't got**: I **haven't got** a cat. She **hasn't got** a dog."},
     {"type": "dialogue", "title": "Kate and Olia", "lang": "en", "lines": [

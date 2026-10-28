@@ -1,0 +1,287 @@
+{
+ "id": "eng-w02-d3",
+ "subject": "eng",
+ "title": "Describing people: appearance and character",
+ "goal": "Описувати зовнішність і характер людини англійською, розрізняти запитання What does she look like? і What is she like? та ставити кілька прикметників у правильному порядку.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Минулого уроку ти вивчив прикметники для опису характеру (reliable, generous, shy…). Сьогодні додамо слова про **зовнішність** і навчимося поєднувати все разом в один опис людини."
+  },
+  {
+   "type": "vocab",
+   "title": "Appearance",
+   "items": [
+    {
+     "en": "tall / short",
+     "uk": "високий / низький",
+     "ex": "My dad is tall, but my mum is short."
+    },
+    {
+     "en": "of medium height",
+     "uk": "середнього зросту",
+     "ex": "Anna is of medium height."
+    },
+    {
+     "en": "slim",
+     "uk": "стрункий",
+     "ex": "He is slim and sporty."
+    },
+    {
+     "en": "well-built",
+     "uk": "кремезний, міцної статури",
+     "ex": "The goalkeeper is well-built."
+    },
+    {
+     "en": "straight / wavy / curly hair",
+     "uk": "пряме / хвилясте / кучеряве волосся",
+     "ex": "She has got curly hair."
+    },
+    {
+     "en": "fair / dark hair",
+     "uk": "світле / темне волосся",
+     "ex": "My brother has fair hair."
+    },
+    {
+     "en": "freckles",
+     "uk": "веснянки",
+     "ex": "Tom has freckles on his nose."
+    },
+    {
+     "en": "a beard / a moustache",
+     "uk": "борода / вуса",
+     "ex": "My grandad has a grey beard."
+    },
+    {
+     "en": "good-looking",
+     "uk": "гарний, привабливий",
+     "ex": "The actor is very good-looking."
+    },
+    {
+     "en": "in his/her teens",
+     "uk": "підліткового віку (13–19 років)",
+     "ex": "My cousin is in her teens."
+    }
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Три схожі запитання",
+   "text": "**What does she look like?** — Як вона виглядає? (зовнішність) → *She is tall and has got long dark hair.*\n**What is she like?** — Яка вона (за характером)? → *She is friendly and reliable.*\n**What does she like?** — Що їй подобається? → *She likes music and cats.*"
+  },
+  {
+   "type": "rule",
+   "title": "be чи have got?",
+   "text": "Зріст, статуру, вік, загальне враження описуємо з **be**: *He is tall. She is slim. They are in their teens.*\nВолосся, очі, бороду, веснянки — з **have got / has got**: *She has got blue eyes. He has got a beard.*\nОкуляри й одяг — з **wear**: *He wears glasses.*"
+  },
+  {
+   "type": "table",
+   "title": "Порядок прикметників перед іменником",
+   "head": [
+    "Думка",
+    "Розмір / довжина",
+    "Вік",
+    "Форма / тип",
+    "Колір",
+    "Походження",
+    "Матеріал",
+    "Іменник"
+   ],
+   "rows": [
+    [
+     "nice",
+     "long",
+     "",
+     "straight",
+     "dark",
+     "",
+     "",
+     "hair"
+    ],
+    [
+     "beautiful",
+     "big",
+     "",
+     "",
+     "blue",
+     "",
+     "",
+     "eyes"
+    ],
+    [
+     "lovely",
+     "small",
+     "old",
+     "",
+     "",
+     "Ukrainian",
+     "wooden",
+     "house"
+    ]
+   ]
+  },
+  {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/960px-1665_Girl_with_a_Pearl_Earring.jpg",
+   "alt": "Картина: молода дівчина обертається через плече; на голові синьо-жовтий тюрбан, у вусі велика перлина",
+   "caption": "«Дівчина з перловою сережкою» Яна Вермеєра (близько 1665 р.). Опиши її: *She is young. She has got big eyes and a pale face. She is wearing a blue and yellow turban and a big pearl earring.*",
+   "credit": "Ян Вермеєр",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg"
+  },
+  {
+   "type": "example",
+   "title": "Зразок опису",
+   "text": "My best friend Oksana is fourteen. She is **of medium height** and **slim**. She has got **long wavy fair hair** and **big green eyes**, and she has some **freckles**. She usually wears jeans and trainers. Oksana is **friendly** and **generous**, but sometimes she is a bit **impatient**. I like her because she is very **reliable**."
+  },
+  {
+   "type": "tip",
+   "text": "Для волосся запам'ятай коротку формулу: **довжина → тип → колір**: *short curly black hair, long straight fair hair*. Не став більше трьох прикметників поспіль — краще розбий опис на два речення."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай запитання з перекладом.",
+   "pairs": [
+    [
+     "What does she look like?",
+     "Як вона виглядає?"
+    ],
+    [
+     "What is she like?",
+     "Яка вона за характером?"
+    ],
+    [
+     "What does she like?",
+     "Що їй подобається?"
+    ],
+    [
+     "How tall is she?",
+     "Якого вона зросту?"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Обери правильний порядок слів: She has got … hair.",
+   "options": [
+    "long straight black",
+    "black long straight",
+    "straight black long",
+    "long black straight"
+   ],
+   "answer": 0,
+   "explain": "Порядок для волосся: довжина → тип → колір."
+  },
+  {
+   "type": "sort",
+   "q": "Розподіли слова: зовнішність чи характер?",
+   "groups": {
+    "Appearance": [
+     "tall",
+     "curly",
+     "slim",
+     "well-built",
+     "freckled"
+    ],
+    "Character": [
+     "honest",
+     "generous",
+     "shy",
+     "reliable"
+    ]
+   }
+  },
+  {
+   "type": "fill",
+   "q": "Встав is, are або has.",
+   "text": "My uncle {is} tall and well-built. He {has} got a short beard. My cousins {are} in their teens. My sister {has} got wavy hair.",
+   "explain": "Зріст, статура, вік — з be; волосся і борода — з have got (he/she → has got)."
+  },
+  {
+   "type": "choice",
+   "q": "— What is your brother like? — …",
+   "options": [
+    "He's friendly and funny.",
+    "He's tall with dark hair.",
+    "He likes football.",
+    "He's fine, thanks."
+   ],
+   "answer": 0,
+   "explain": "What is he like? питає про характер."
+  },
+  {
+   "type": "order",
+   "q": "Склади словосполучення в правильному порядку.",
+   "items": [
+    "a",
+    "lovely",
+    "small",
+    "old",
+    "wooden",
+    "house"
+   ],
+   "explain": "думка (lovely) → розмір (small) → вік (old) → матеріал (wooden) → іменник."
+  },
+  {
+   "type": "truefalse",
+   "q": "Подивись на картину Вермеєра в теорії. True or false?",
+   "items": [
+    {
+     "text": "The girl has got a pearl earring.",
+     "answer": true
+    },
+    {
+     "text": "She is wearing a red hat.",
+     "answer": false
+    },
+    {
+     "text": "She has got big eyes.",
+     "answer": true
+    },
+    {
+     "text": "She has got a moustache.",
+     "answer": false
+    }
+   ],
+   "explain": "На дівчині синьо-жовтий тюрбан (turban), а не червоний капелюх."
+  },
+  {
+   "type": "speak",
+   "q": "Опиши вголос когось із родини: 4–5 речень про зовнішність і 2 — про характер.",
+   "text": "My mum is of medium height and slim. She has got short wavy dark hair and brown eyes. She wears glasses. She is kind and patient, and she is very generous.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "fill",
+   "q": "Розстав прикметники в правильному порядку (впиши словосполучення).",
+   "text": "(curly / short / red) hair → {short curly red} hair; (blue / beautiful / big) eyes → {beautiful big blue} eyes",
+   "explain": "Думка → розмір/довжина → тип → колір."
+  },
+  {
+   "type": "choice",
+   "q": "Яке речення правильне?",
+   "options": [
+    "He has got a beard and he is well-built.",
+    "He is got a beard and he has well-built.",
+    "He has a beard and he have well-built.",
+    "He is a beard and well-built."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "text",
+   "q": "Напиши англійською опис свого друга або подруги (60–80 слів): вік, зріст, статура, волосся, очі, одяг і 2–3 риси характеру. Використай хоча б одне словосполучення з трьома прикметниками.",
+   "sample": "My friend Maksym is thirteen. He is tall and slim. He has got short straight fair hair and big grey eyes. He usually wears a hoodie and jeans. Maksym is honest and reliable: he always keeps his promises. He is a bit shy with new people, but he is very funny with friends. I like spending time with him.",
+   "min": 250
+  }
+ ],
+ "reflection": [
+  "Чим відрізняються запитання What does she look like? і What is she like?",
+  "Які нові слова про зовнішність ти вже можеш використати про себе?"
+ ]
+}

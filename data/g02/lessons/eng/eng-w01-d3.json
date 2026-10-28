@@ -1,48 +1,208 @@
 {
-  "id": "eng-w01-d3",
-  "subject": "eng",
-  "title": "Hello again! Greetings and introductions",
-  "goal": "Пригадати, як привітатися, назвати своє ім'я і спитати, як справи.",
-  "minutes": 25,
-  "theory": [
-    {"type": "p", "text": "Привіт! Це твій перший урок англійської у 2 класі. Дорослий читає: цього семестру ми повторимо слова з 1 класу: привітання, предмети в класі, кольори й числа. Далі вивчимо англійську абетку, а потім розповідемо про свою родину, друзів і домашніх улюбленців. На кожному уроці є слова, вправи й завдання вголос."},
-    {"type": "image", "emoji": "👋", "caption": "Hello! Так англійською вітаються і друзі, і дорослі."},
-    {"type": "vocab", "title": "Слова для знайомства", "items": [
-      {"en": "hello", "uk": "привіт", "ex": "Hello, Sam!"},
-      {"en": "hi", "uk": "привіт (коротко)", "ex": "Hi, Ann!"},
-      {"en": "goodbye", "uk": "до побачення", "ex": "Goodbye, Mum!"},
-      {"en": "bye", "uk": "бувай", "ex": "Bye, Tom!"},
-      {"en": "name", "uk": "ім'я", "ex": "My name is Kate."},
-      {"en": "fine", "uk": "добре", "ex": "I'm fine."},
-      {"en": "thank you", "uk": "дякую", "ex": "I'm fine, thank you."},
-      {"en": "good morning", "uk": "доброго ранку", "ex": "Good morning, teacher!"}
-    ]},
-    {"type": "dialogue", "title": "Знайомство", "lang": "en", "lines": [
-      {"who": "Sam", "text": "Hello! What's your name?"},
-      {"who": "Kate", "text": "Hi! My name is Kate. What's your name?"},
-      {"who": "Sam", "text": "My name is Sam. How are you?"},
-      {"who": "Kate", "text": "I'm fine, thank you. Goodbye, Sam!"},
-      {"who": "Sam", "text": "Bye, Kate!"}
-    ]},
-    {"type": "rule", "title": "Запам'ятай", "text": "**What's your name?** — Як тебе звати?\n**My name is ...** — Мене звати ...\n**How are you?** — Як справи?\n**I'm fine, thank you.** — У мене все добре, дякую."},
-    {"type": "tip", "text": "Скажи діалог уголос двічі: спочатку за Сема, потім за Кейт. Використай своє ім'я!"}
-  ],
-  "exercises": [
-    {"type": "match", "q": "З'єднай англійське слово з перекладом.", "pairs": [["hello", "привіт"], ["goodbye", "до побачення"], ["name", "ім'я"], ["fine", "добре"]]},
-    {"type": "choice", "q": "Як спитати «Як тебе звати?» англійською?", "options": ["How are you?", "What's your name?", "Goodbye!"], "answer": 1, "explain": "What's your name? — Як тебе звати?"},
-    {"type": "choice", "q": "Що відповісти на питання «How are you?»", "options": ["My name is Sam.", "I'm fine, thank you.", "Goodbye!"], "answer": 1, "explain": "На питання про справи відповідаємо: I'm fine, thank you."},
-    {"type": "fill", "q": "Встав пропущене слово.", "text": "Hello! My {name} is Kate.\nHow are {you}? I'm {fine}, thank you."},
-    {"type": "order", "q": "Розстав репліки діалогу в правильному порядку.", "items": ["Hello! What's your name?", "My name is Tom.", "How are you?", "I'm fine, thank you."]},
-    {"type": "speak", "q": "Прочитай уголос і скажи про себе.", "text": "Hello! My name is ... I'm fine, thank you. Goodbye!", "lang": "en"}
-  ],
-  "homework": [
-    {"type": "truefalse", "q": "Так чи ні?", "items": [
-      {"text": "Hi означає «привіт».", "answer": true},
-      {"text": "Bye означає «дякую».", "answer": false},
-      {"text": "I'm fine означає «У мене все добре».", "answer": true}
-    ]},
-    {"type": "fill", "q": "Допиши слова: ввічливі відповіді.", "text": "I'm fine, thank {you}. Good {morning}!"},
-    {"type": "speak", "q": "Привітайся англійською з мамою, татом або іграшкою і спитай, як справи.", "text": "Hello! How are you?", "lang": "en"}
-  ],
-  "reflection": ["Які нові або знайомі слова ти пригадав?", "Що було складно сказати англійською?"]
+ "id": "eng-w01-d3",
+ "subject": "eng",
+ "title": "Hello again! Greetings and introductions",
+ "goal": "Пригадати, як привітатися, назвати своє ім'я і спитати, як справи.",
+ "minutes": 25,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Привіт! Це твій перший урок англійської у 2 класі. Дорослий читає: цього семестру ми повторимо слова з 1 класу: привітання, предмети в класі, кольори й числа. Далі вивчимо англійську абетку, а потім розповідемо про свою родину, друзів і домашніх улюбленців. На кожному уроці є слова, вправи й завдання вголос."
+  },
+  {
+   "type": "image",
+   "emoji": "👋",
+   "caption": "Hello! Так англійською вітаються і друзі, і дорослі."
+  },
+  {
+   "type": "figure",
+   "svg": "<svg viewBox=\"0 0 340 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"10\" y=\"8\" width=\"150\" height=\"54\" rx=\"12\" fill=\"#E4E9F9\" stroke=\"#2A45B0\" stroke-width=\"2\"/><polygon points=\"58,61 80,61 66,82\" fill=\"#E4E9F9\" stroke=\"#2A45B0\" stroke-width=\"2\"/><line x1=\"60\" y1=\"61\" x2=\"78\" y2=\"61\" stroke=\"#E4E9F9\" stroke-width=\"3\"/><text x=\"85\" y=\"31\" text-anchor=\"middle\" font-size=\"14\" fill=\"#2A45B0\">Hello! What's</text><text x=\"85\" y=\"50\" text-anchor=\"middle\" font-size=\"14\" fill=\"#2A45B0\">your name?</text><rect x=\"180\" y=\"8\" width=\"150\" height=\"54\" rx=\"12\" fill=\"#FBE3E7\" stroke=\"#D23F58\" stroke-width=\"2\"/><polygon points=\"262,61 284,61 274,82\" fill=\"#FBE3E7\" stroke=\"#D23F58\" stroke-width=\"2\"/><line x1=\"264\" y1=\"61\" x2=\"282\" y2=\"61\" stroke=\"#FBE3E7\" stroke-width=\"3\"/><text x=\"255\" y=\"31\" text-anchor=\"middle\" font-size=\"14\" fill=\"#D23F58\">Hi! My name</text><text x=\"255\" y=\"50\" text-anchor=\"middle\" font-size=\"14\" fill=\"#D23F58\">is Kate.</text><g stroke=\"#2A45B0\" stroke-width=\"3\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"70\" cy=\"104\" r=\"16\"/><line x1=\"70\" y1=\"120\" x2=\"70\" y2=\"155\"/><line x1=\"70\" y1=\"130\" x2=\"52\" y2=\"146\"/><line x1=\"70\" y1=\"130\" x2=\"90\" y2=\"114\"/><line x1=\"70\" y1=\"155\" x2=\"58\" y2=\"182\"/><line x1=\"70\" y1=\"155\" x2=\"82\" y2=\"182\"/></g><g stroke=\"#D23F58\" stroke-width=\"3\" stroke-linecap=\"round\" fill=\"none\"><circle cx=\"270\" cy=\"104\" r=\"16\"/><line x1=\"270\" y1=\"120\" x2=\"270\" y2=\"155\"/><line x1=\"270\" y1=\"130\" x2=\"288\" y2=\"146\"/><line x1=\"270\" y1=\"130\" x2=\"250\" y2=\"114\"/><line x1=\"270\" y1=\"155\" x2=\"258\" y2=\"182\"/><line x1=\"270\" y1=\"155\" x2=\"282\" y2=\"182\"/></g><text x=\"110\" y=\"160\" font-size=\"15\" fill=\"#2A45B0\">Sam</text><text x=\"200\" y=\"160\" font-size=\"15\" fill=\"#D23F58\">Kate</text></svg>",
+   "caption": "Сем і Кейт знайомляться. Сем: «Hello! What's your name?» (Привіт! Як тебе звати?). Кейт: «Hi! My name is Kate.» (Привіт! Мене звати Кейт.)",
+   "alt": "Два чоловічки махають рукою. Сем питає: Hello! What's your name? Кейт відповідає: Hi! My name is Kate."
+  },
+  {
+   "type": "vocab",
+   "title": "Слова для знайомства",
+   "items": [
+    {
+     "en": "hello",
+     "uk": "привіт",
+     "ex": "Hello, Sam!"
+    },
+    {
+     "en": "hi",
+     "uk": "привіт (коротко)",
+     "ex": "Hi, Ann!"
+    },
+    {
+     "en": "goodbye",
+     "uk": "до побачення",
+     "ex": "Goodbye, Mum!"
+    },
+    {
+     "en": "bye",
+     "uk": "бувай",
+     "ex": "Bye, Tom!"
+    },
+    {
+     "en": "name",
+     "uk": "ім'я",
+     "ex": "My name is Kate."
+    },
+    {
+     "en": "fine",
+     "uk": "добре",
+     "ex": "I'm fine."
+    },
+    {
+     "en": "thank you",
+     "uk": "дякую",
+     "ex": "I'm fine, thank you."
+    },
+    {
+     "en": "good morning",
+     "uk": "доброго ранку",
+     "ex": "Good morning, teacher!"
+    }
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "Знайомство",
+   "lang": "en",
+   "lines": [
+    {
+     "who": "Sam",
+     "text": "Hello! What's your name?"
+    },
+    {
+     "who": "Kate",
+     "text": "Hi! My name is Kate. What's your name?"
+    },
+    {
+     "who": "Sam",
+     "text": "My name is Sam. How are you?"
+    },
+    {
+     "who": "Kate",
+     "text": "I'm fine, thank you. Goodbye, Sam!"
+    },
+    {
+     "who": "Sam",
+     "text": "Bye, Kate!"
+    }
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Запам'ятай",
+   "text": "**What's your name?** — Як тебе звати?\n**My name is ...** — Мене звати ...\n**How are you?** — Як справи?\n**I'm fine, thank you.** — У мене все добре, дякую."
+  },
+  {
+   "type": "tip",
+   "text": "Скажи діалог уголос двічі: спочатку за Сема, потім за Кейт. Використай своє ім'я!"
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай англійське слово з перекладом.",
+   "pairs": [
+    [
+     "hello",
+     "привіт"
+    ],
+    [
+     "goodbye",
+     "до побачення"
+    ],
+    [
+     "name",
+     "ім'я"
+    ],
+    [
+     "fine",
+     "добре"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Як спитати «Як тебе звати?» англійською?",
+   "options": [
+    "How are you?",
+    "What's your name?",
+    "Goodbye!"
+   ],
+   "answer": 1,
+   "explain": "What's your name? — Як тебе звати?"
+  },
+  {
+   "type": "choice",
+   "q": "Що відповісти на питання «How are you?»",
+   "options": [
+    "My name is Sam.",
+    "I'm fine, thank you.",
+    "Goodbye!"
+   ],
+   "answer": 1,
+   "explain": "На питання про справи відповідаємо: I'm fine, thank you."
+  },
+  {
+   "type": "fill",
+   "q": "Встав пропущене слово.",
+   "text": "Hello! My {name} is Kate.\nHow are {you}? I'm {fine}, thank you."
+  },
+  {
+   "type": "order",
+   "q": "Розстав репліки діалогу в правильному порядку.",
+   "items": [
+    "Hello! What's your name?",
+    "My name is Tom.",
+    "How are you?",
+    "I'm fine, thank you."
+   ]
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай уголос і скажи про себе.",
+   "text": "Hello! My name is ... I'm fine, thank you. Goodbye!",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "truefalse",
+   "q": "Так чи ні?",
+   "items": [
+    {
+     "text": "Hi означає «привіт».",
+     "answer": true
+    },
+    {
+     "text": "Bye означає «дякую».",
+     "answer": false
+    },
+    {
+     "text": "I'm fine означає «У мене все добре».",
+     "answer": true
+    }
+   ]
+  },
+  {
+   "type": "fill",
+   "q": "Допиши слова: ввічливі відповіді.",
+   "text": "I'm fine, thank {you}. Good {morning}!"
+  },
+  {
+   "type": "speak",
+   "q": "Привітайся англійською з мамою, татом або іграшкою і спитай, як справи.",
+   "text": "Hello! How are you?",
+   "lang": "en"
+  }
+ ],
+ "reflection": [
+  "Які нові або знайомі слова ти пригадав?",
+  "Що було складно сказати англійською?"
+ ]
 }

@@ -1,0 +1,144 @@
+{
+ "id": "eng-w02-d5",
+ "subject": "eng",
+ "title": "Personality adjectives",
+ "goal": "Вивчити прикметники для опису характеру (friendly, shy, reliable тощо), розрізняти питання «What is he like?» і «What does he look like?» та описати свого друга англійською.",
+ "minutes": 45,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Починаємо **Unit 1. Me and My Friends**. Після діагностувальної роботи ти знаєш, що вже вмієш, — тепер розширимо словник. Сьогодні вчимося говорити не про зовнішність, а про **характер**: яка людина, на кого можна покластися, з ким весело, хто соромиться."
+  },
+  {
+   "type": "vocab",
+   "title": "Personality adjectives",
+   "items": [
+    {"en": "friendly", "uk": "привітний, дружній", "ex": "Our new classmate is very friendly — she talks to everyone."},
+    {"en": "shy", "uk": "сором'язливий", "ex": "He is shy and doesn't like speaking in front of the class."},
+    {"en": "reliable", "uk": "надійний", "ex": "Taras is reliable: he always does what he promises."},
+    {"en": "honest", "uk": "чесний", "ex": "An honest person tells the truth."},
+    {"en": "kind", "uk": "добрий", "ex": "My grandma is kind to everyone."},
+    {"en": "funny", "uk": "кумедний, веселий", "ex": "Ivan is funny — his jokes make us laugh."},
+    {"en": "generous", "uk": "щедрий", "ex": "She is generous and always shares her snacks."},
+    {"en": "patient", "uk": "терплячий", "ex": "A good teacher is patient."},
+    {"en": "hard-working", "uk": "працьовитий", "ex": "My sister is hard-working: she studies every evening."},
+    {"en": "lazy", "uk": "лінивий", "ex": "Don't be lazy — do your homework!"},
+    {"en": "talkative", "uk": "балакучий", "ex": "Olha is talkative; she can talk for hours."},
+    {"en": "selfish", "uk": "егоїстичний", "ex": "A selfish person thinks only about himself."}
+   ]
+  },
+  {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/New_Friends_%2819123375094%29.jpg/960px-New_Friends_%2819123375094%29.jpg",
+   "alt": "Дві усміхнені дівчинки за столом приміряють паперові капелюшки, складені з паперу",
+   "caption": "Нові друзі разом складають паперові капелюшки. Які прикметники підходять до них? Можливо, friendly і funny.",
+   "credit": "Georgia National Guard from United States",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:New_Friends_(19123375094).jpg"
+  },
+  {
+   "type": "rule",
+   "title": "What is she like? чи What does she look like?",
+   "text": "**What is she like?** — Яка вона (за характером)? → She is friendly and funny.\n**What does she look like?** — Як вона виглядає? → She is tall and has long dark hair.\nПорядок у реченні: **be + adjective** (He is reliable) або **adjective + noun** (He is a reliable friend). Підсилити можна словами *very, really, quite*: She is really kind."
+  },
+  {
+   "type": "rule",
+   "title": "Протилежні значення",
+   "text": "Деякі антоніми утворюються префіксами **un-**, **dis-**: friendly → **un**friendly, kind → **un**kind, reliable → **un**reliable, honest → **dis**honest. Інші — окремими словами: hard-working ↔ lazy, generous ↔ selfish, shy ↔ talkative."
+  },
+  {
+   "type": "reading",
+   "title": "My best friend",
+   "genre": "опис",
+   "text": "My best friend is Maksym. We have been friends since the first year at school. What is he like? He is friendly and very funny — his jokes always make me laugh. He is also reliable: if he says he will help, he helps.\n\nMaksym isn't shy at all. He is quite talkative, especially when we talk about football. Sometimes he is a bit lazy in the mornings, but he is hard-working when we have tests. I think a good friend must be honest and kind, and Maksym is both."
+  },
+  {
+   "type": "tip",
+   "text": "Описуючи друга, доводь прикметник прикладом: не лише «He is generous», а «He is generous — he always shares his pens with me». Так розповідь звучить живо і переконливо."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай англійський прикметник з перекладом.",
+   "pairs": [
+    ["reliable", "надійний"],
+    ["shy", "сором'язливий"],
+    ["generous", "щедрий"],
+    ["patient", "терплячий"],
+    ["talkative", "балакучий"],
+    ["selfish", "егоїстичний"]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Anna always tells the truth. She is…",
+   "options": ["lazy", "honest", "shy", "selfish"],
+   "answer": 1,
+   "explain": "honest — чесний: людина, яка завжди каже правду."
+  },
+  {
+   "type": "choice",
+   "q": "Обери правильну відповідь на питання «What is your brother like?»",
+   "options": ["He is tall and has blue eyes.", "He is kind and hard-working.", "He likes pizza.", "He is fourteen."],
+   "answer": 1,
+   "explain": "«What is he like?» — питання про характер, тож відповідаємо прикметниками характеру."
+  },
+  {
+   "type": "sort",
+   "q": "Розклади риси характеру: позитивні й негативні.",
+   "groups": {
+    "Positive": ["reliable", "generous", "patient", "hard-working"],
+    "Negative": ["lazy", "selfish", "dishonest", "unkind"]
+   }
+  },
+  {
+   "type": "fill",
+   "q": "Утвори протилежні прикметники.",
+   "text": "friendly — {unfriendly}; honest — {dishonest}; reliable — {unreliable}; hard-working — {lazy}",
+   "explain": "un- і dis- означають «не-»; до hard-working протилежне — окреме слово lazy."
+  },
+  {
+   "type": "truefalse",
+   "q": "Прочитай текст «My best friend». Правда чи ні?",
+   "items": [
+    {"text": "Maksym is shy.", "answer": false},
+    {"text": "Maksym's jokes make the author laugh.", "answer": true},
+    {"text": "Maksym is reliable.", "answer": true},
+    {"text": "Maksym is lazy when they have tests.", "answer": false}
+   ],
+   "explain": "Максим зовсім не сором'язливий; лінивий він хіба зранку, а перед тестами — працьовитий."
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос і доповни речення про себе та свого друга.",
+   "text": "I think I am friendly and a bit shy. My best friend is reliable and funny. A good friend must be honest and kind.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "choice",
+   "q": "He never shares his things with anybody. He is…",
+   "options": ["generous", "selfish", "patient", "friendly"],
+   "answer": 1,
+   "explain": "Той, хто нічим не ділиться, — selfish (егоїстичний)."
+  },
+  {
+   "type": "fill",
+   "q": "Впиши прикметник з уроку.",
+   "text": "My teacher never gets angry; she is very {patient}. Mark doesn't like speaking to new people; he is {shy}. Kate does all her work on time; she is {hard-working|reliable}.",
+   "explain": "patient — терплячий, shy — сором'язливий, hard-working — працьовитий."
+  },
+  {
+   "type": "text",
+   "q": "Напиши англійською 6–8 речень про свого найкращого друга чи подругу: як його звати, які риси характеру має (щонайменше 4 прикметники з уроку) і приклад до кожної риси.",
+   "sample": "My best friend is Sofiia. She is very friendly — she talks to everyone in our class. She is generous: she always shares her sweets with me. Sofiia is also reliable, because she never forgets her promises. Sometimes she is a bit shy when she meets new people. She is hard-working and gets good marks in maths. I think she is a great friend because she is honest and kind.",
+   "min": 200
+  }
+ ],
+ "reflection": [
+  "Які три прикметники найкраще описують тебе?",
+  "Яке нове слово з уроку ти вже точно запам'ятав?"
+ ]
+}

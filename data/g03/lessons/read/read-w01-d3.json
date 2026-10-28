@@ -15,6 +15,15 @@
    "caption": "Підручник читання — твій помічник на весь семестр"
   },
   {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Children_book_meadow.jpg/960px-Children_book_meadow.jpg",
+   "alt": "Двоє хлопчиків у капелюхах сидять на траві й разом читають книжку",
+   "caption": "Читати можна не лише в класі: улітку книжка — найкращий друг на прогулянці.",
+   "credit": "Viktoria Borodinova",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Children_book_meadow.jpg"
+  },
+  {
    "type": "list",
    "title": "Що буде в семестрі",
    "items": [

@@ -1,0 +1,279 @@
+{
+ "id": "eng-w02-d3",
+ "subject": "eng",
+ "title": "Read a book. Читаємо і пишемо",
+ "goal": "Вивчити слова-дії (read, write, draw, cook…), навчитися читати буквосполучення u_e, ch, th, oo, ey, ay і складати короткі речення.",
+ "minutes": 35,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Сьогодні ми повторимо слова, що називають **дії**, і навчимося читати нові буквосполучення. Ти вже знаєш: коли ми просимо щось зробити, речення починається з дії — **Read a book!** (Читай книжку!) — а коли говоримо про «він» чи «вона», додаємо **-s**: **He reads a book.**"
+  },
+  {
+   "type": "vocab",
+   "title": "Actions — дії",
+   "items": [
+    {
+     "en": "read",
+     "uk": "читати",
+     "ex": "I read a book."
+    },
+    {
+     "en": "write",
+     "uk": "писати",
+     "ex": "Write a letter!"
+    },
+    {
+     "en": "draw",
+     "uk": "малювати",
+     "ex": "She draws a cat."
+    },
+    {
+     "en": "play",
+     "uk": "гратися, грати",
+     "ex": "We play a game."
+    },
+    {
+     "en": "ride a bike",
+     "uk": "їздити на велосипеді",
+     "ex": "He rides a bike."
+    },
+    {
+     "en": "cook",
+     "uk": "готувати їжу",
+     "ex": "Mum cooks lunch."
+    },
+    {
+     "en": "clean",
+     "uk": "прибирати",
+     "ex": "I clean my room."
+    },
+    {
+     "en": "wash",
+     "uk": "мити",
+     "ex": "Wash your hands!"
+    },
+    {
+     "en": "look",
+     "uk": "дивитися",
+     "ex": "Look at the moon!"
+    },
+    {
+     "en": "listen",
+     "uk": "слухати",
+     "ex": "Listen to the song!"
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Boy_comfortably_reading_a_book.jpg/960px-Boy_comfortably_reading_a_book.jpg",
+   "alt": "Хлопчик зручно вмостився у шкіряному кріслі, закинув ноги на бильце і читає книжку",
+   "caption": "He reads a book. — Він читає книжку.",
+   "credit": "Javier Perez Montes",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Boy_comfortably_reading_a_book.jpg"
+  },
+  {
+   "type": "table",
+   "title": "Читаємо буквосполучення",
+   "head": [
+    "Букви",
+    "Як звучить",
+    "Приклади"
+   ],
+   "rows": [
+    [
+     "u_e",
+     "довге «ю:»",
+     "cube, tube, cute"
+    ],
+    [
+     "ch",
+     "«ч»",
+     "chair, cheese, lunch"
+    ],
+    [
+     "th",
+     "кінчик язика між зубами",
+     "thank, three, this, mother"
+    ],
+    [
+     "oo",
+     "довге «у:»",
+     "moon, food, school"
+    ],
+    [
+     "ay",
+     "«ей»",
+     "play, day, say"
+    ],
+    [
+     "ey",
+     "«ей» у словах they, grey; «і» у словах key, monkey",
+     "they, grey, key"
+    ]
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Наказ і розповідь",
+   "text": "**Read a book!** — Читай книжку! (просимо зробити)\n**I read a book.** — Я читаю книжку.\n**He reads a book. She draws a cat.** — про одного «він/вона» додаємо -s."
+  },
+  {
+   "type": "dialogue",
+   "title": "After school",
+   "lines": [
+    {
+     "who": "Kate",
+     "text": "What do you do after school, Max?"
+    },
+    {
+     "who": "Max",
+     "text": "I read books and play games."
+    },
+    {
+     "who": "Kate",
+     "text": "I draw pictures. My mum cooks lunch."
+    },
+    {
+     "who": "Max",
+     "text": "Look! The moon! Let's play a game!"
+    }
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Читаючи нове слово, спершу знайди в ньому знайоме буквосполучення: m-**oo**-n, **ch**-air, pl-**ay**. Так читати легше."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай слово з перекладом.",
+   "pairs": [
+    [
+     "read",
+     "читати"
+    ],
+    [
+     "write",
+     "писати"
+    ],
+    [
+     "draw",
+     "малювати"
+    ],
+    [
+     "cook",
+     "готувати їжу"
+    ],
+    [
+     "wash",
+     "мити"
+    ]
+   ]
+  },
+  {
+   "type": "sort",
+   "q": "Розклади слова за звуком.",
+   "groups": {
+    "«ей»: ay": [
+     "play",
+     "day",
+     "say"
+    ],
+    "«у:»: oo": [
+     "moon",
+     "food",
+     "school"
+    ],
+    "«ч»: ch": [
+     "chair",
+     "lunch",
+     "cheese"
+    ]
+   }
+  },
+  {
+   "type": "choice",
+   "q": "Яке слово читається з тим самим звуком, що й cube?",
+   "options": [
+    "tube",
+    "cut",
+    "bus"
+   ],
+   "answer": 0,
+   "explain": "У словах cube і tube є буквосполучення u_e — звук «ю:»."
+  },
+  {
+   "type": "fill",
+   "q": "Встав дію.",
+   "text": "I {read} a book. She {draws} a picture. We {play} a game.",
+   "hint": "read, draws, play"
+  },
+  {
+   "type": "order",
+   "q": "Склади речення.",
+   "items": [
+    "He",
+    "rides",
+    "a",
+    "bike"
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "What does «clean» mean?",
+   "options": [
+    "прибирати",
+    "готувати їжу",
+    "слухати"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай уголос. Слідкуй за звуками ch, oo, ay, th.",
+   "text": "Read a book! Look at the moon! I play with my friend. Thank you, Mum, for lunch!",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "truefalse",
+   "q": "Так чи ні?",
+   "items": [
+    {
+     "text": "chair — читаємо з «ч».",
+     "answer": true
+    },
+    {
+     "text": "moon — читаємо з довгим «у:».",
+     "answer": true
+    },
+    {
+     "text": "play — читаємо з «а».",
+     "answer": false
+    }
+   ],
+   "explain": "ay у слові play читаємо як «ей»."
+  },
+  {
+   "type": "fill",
+   "q": "Допиши -s, де треба.",
+   "text": "She {reads} a book every day. We {play} games after school.",
+   "hint": "Про одну «вона» — з -s, про «ми» — без -s."
+  },
+  {
+   "type": "text",
+   "q": "Напиши англійською 3 речення: що ти робиш після школи. Наприклад: I read books.",
+   "sample": "I read books. I play games with my friend. I help my mum and clean my room.",
+   "min": 40
+  }
+ ],
+ "reflection": [
+  "Які буквосполучення ти вже читаєш упевнено?",
+  "Яку дію англійською ти робиш найчастіше?"
+ ]
+}

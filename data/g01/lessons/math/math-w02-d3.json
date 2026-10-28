@@ -1,0 +1,216 @@
+{
+  "id": "math-w02-d3",
+  "subject": "math",
+  "title": "Лічба предметів. Кількісна і порядкова лічба",
+  "goal": "Навчишся відповідати на питання «скільки?» і «котрий?» та лічити предмети зліва направо.",
+  "minutes": 20,
+  "theory": [
+    {
+      "type": "p",
+      "text": "Дорослий читає: ти вже вмієш лічити предмети по одному: один, два, три… Сьогодні дізнаєшся, що лічити можна двома способами — щоб сказати, **скільки** предметів, і щоб сказати, **котрий** предмет за порядком."
+    },
+    {
+      "type": "rule",
+      "title": "Запам'ятай",
+      "text": "**Скільки?** — один, два, три, чотири, п'ять… Це **кількісна** лічба.\n**Котрий?** — перший, другий, третій, четвертий, п'ятий… Це **порядкова** лічба.\nЛічимо **зліва направо**, показуючи на кожен предмет пальцем."
+    },
+    {
+      "type": "figure",
+      "svg": "<svg viewBox='0 0 400 170' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='10' y1='96' x2='390' y2='96' stroke='currentColor' stroke-width='2'/><rect x='20' y='40' width='64' height='42' rx='5' fill='#D23F58'/><rect x='30' y='48' width='18' height='14' fill='#FFFFFF' fill-opacity='0.8'/><rect x='56' y='48' width='18' height='14' fill='#FFFFFF' fill-opacity='0.8'/><circle cx='35' cy='88' r='7' fill='currentColor'/><circle cx='69' cy='88' r='7' fill='currentColor'/><line x1='84' y1='72' x2='94' y2='72' stroke='currentColor' stroke-width='3'/><text x='52' y='30' text-anchor='middle' font-size='16' fill='currentColor'>1</text><text x='52' y='120' text-anchor='middle' font-size='12' fill='currentColor'>перший</text><rect x='94' y='40' width='64' height='42' rx='5' fill='#2A45B0'/><rect x='104' y='48' width='18' height='14' fill='#FFFFFF' fill-opacity='0.8'/><rect x='130' y='48' width='18' height='14' fill='#FFFFFF' fill-opacity='0.8'/><circle cx='109' cy='88' r='7' fill='currentColor'/><circle cx='143' cy='88' r='7' fill='currentColor'/><line x1='158' y1='72' x2='168' y2='72' stroke='currentColor' stroke-width='3'/><text x='126' y='30' text-anchor='middle' font-size='16' fill='currentColor'>2</text><text x='126' y='120' text-anchor='middle' font-size='12' fill='currentColor'>другий</text><rect x='168' y='40' width='64' height='42' rx='5' fill='#1D7449'/><rect x='178' y='48' width='18' height='14' fill='#FFFFFF' fill-opacity='0.8'/><rect x='204' y='48' width='18' height='14' fill='#FFFFFF' fill-opacity='0.8'/><circle cx='183' cy='88' r='7' fill='currentColor'/><circle cx='217' cy='88' r='7' fill='currentColor'/><line x1='232' y1='72' x2='242' y2='72' stroke='currentColor' stroke-width='3'/><text x='200' y='30' text-anchor='middle' font-size='16' fill='currentColor'>3</text><text x='200' y='120' text-anchor='middle' font-size='12' fill='currentColor'>третій</text><rect x='242' y='40' width='64' height='42' rx='5' fill='#E8C32F'/><rect x='252' y='48' width='18' height='14' fill='#FFFFFF' fill-opacity='0.8'/><rect x='278' y='48' width='18' height='14' fill='#FFFFFF' fill-opacity='0.8'/><circle cx='257' cy='88' r='7' fill='currentColor'/><circle cx='291' cy='88' r='7' fill='currentColor'/><line x1='306' y1='72' x2='316' y2='72' stroke='currentColor' stroke-width='3'/><text x='274' y='30' text-anchor='middle' font-size='16' fill='currentColor'>4</text><text x='274' y='120' text-anchor='middle' font-size='12' fill='currentColor'>четвертий</text><rect x='316' y='40' width='64' height='42' rx='5' fill='#2A45B0'/><rect x='326' y='48' width='18' height='14' fill='#FFFFFF' fill-opacity='0.8'/><rect x='352' y='48' width='18' height='14' fill='#FFFFFF' fill-opacity='0.8'/><circle cx='331' cy='88' r='7' fill='currentColor'/><circle cx='365' cy='88' r='7' fill='currentColor'/><text x='348' y='30' text-anchor='middle' font-size='16' fill='currentColor'>5</text><text x='348' y='120' text-anchor='middle' font-size='12' fill='currentColor'>п'ятий</text><text x='346' y='136' text-anchor='middle' font-size='12' fill='#D23F58'>(останній)</text><line x1='175' y1='155' x2='330' y2='155' stroke='#2A45B0' stroke-width='2'/><polygon points='340,155 328,149 328,161' fill='#2A45B0'/><text x='20' y='159' font-size='12' fill='#2A45B0'>лічимо зліва направо</text></svg>",
+      "caption": "Скільки вагонів? — П'ять. Котрий вагон зелений? — Третій. Перший вагон — червоний, а останній, п'ятий, — синій.",
+      "alt": "Поїзд із п'яти вагонів: червоний, синій, зелений, жовтий, синій. Над вагонами числа від 1 до 5, під ними слова: перший, другий, третій, четвертий, п'ятий (останній). Унизу стрілка вправо."
+    },
+    {
+      "type": "table",
+      "title": "Скільки? і Котрий?",
+      "head": [
+        "Число",
+        "Скільки?",
+        "Котрий?"
+      ],
+      "rows": [
+        [
+          "1",
+          "один",
+          "перший"
+        ],
+        [
+          "2",
+          "два",
+          "другий"
+        ],
+        [
+          "3",
+          "три",
+          "третій"
+        ],
+        [
+          "4",
+          "чотири",
+          "четвертий"
+        ],
+        [
+          "5",
+          "п'ять",
+          "п'ятий"
+        ],
+        [
+          "6",
+          "шість",
+          "шостий"
+        ],
+        [
+          "7",
+          "сім",
+          "сьомий"
+        ],
+        [
+          "8",
+          "вісім",
+          "восьмий"
+        ],
+        [
+          "9",
+          "дев'ять",
+          "дев'ятий"
+        ],
+        [
+          "10",
+          "десять",
+          "десятий"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Лічимо фрукти",
+      "text": "🍎 🍐 🍎 🍋 🍎\nСкільки всього фруктів? — **П'ять**.\nКотра за порядком груша? — **Друга**.\nКотрий лимон? — **Четвертий**.\nЯблуко стоїть **першим** і **останнім**."
+    },
+    {
+      "type": "tip",
+      "text": "**Перший** — той, з якого починаємо лічбу. **Останній** — той, на якому лічба закінчується. Останнє число каже, скільки всього предметів."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "number",
+      "q": "Подивись на поїзд у теорії. Скільки в ньому вагонів?",
+      "answer": 5,
+      "explain": "Один, два, три, чотири, п'ять — п'ять вагонів."
+    },
+    {
+      "type": "choice",
+      "q": "Якого кольору третій вагон?",
+      "options": [
+        "зелений",
+        "червоний",
+        "жовтий"
+      ],
+      "answer": 0,
+      "explain": "Лічимо зліва: перший — червоний, другий — синій, третій — зелений."
+    },
+    {
+      "type": "choice",
+      "q": "Котрий за порядком жовтий вагон?",
+      "options": [
+        "другий",
+        "четвертий",
+        "п'ятий"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "q": "З'єднай число зі словом «котрий?».",
+      "pairs": [
+        [
+          "1",
+          "перший"
+        ],
+        [
+          "2",
+          "другий"
+        ],
+        [
+          "3",
+          "третій"
+        ],
+        [
+          "5",
+          "п'ятий"
+        ]
+      ]
+    },
+    {
+      "type": "sort",
+      "q": "Розклади слова: на яке питання вони відповідають?",
+      "groups": {
+        "Скільки?": [
+          "три",
+          "сім",
+          "десять"
+        ],
+        "Котрий?": [
+          "третій",
+          "сьомий",
+          "десятий"
+        ]
+      }
+    },
+    {
+      "type": "order",
+      "q": "Розстав слова по порядку.",
+      "items": [
+        "перший",
+        "другий",
+        "третій",
+        "четвертий",
+        "п'ятий"
+      ]
+    },
+    {
+      "type": "fill",
+      "q": "Допиши слово або число.",
+      "text": "Перед Олею в черзі стоїть лише одна дитина. Оля в черзі {друга|2}. На полиці 6 книжок, остання книжка — {шоста|6}."
+    },
+    {
+      "type": "truefalse",
+      "q": "Так чи ні?",
+      "items": [
+        {
+          "text": "Слово «три» відповідає на питання «скільки?».",
+          "answer": true
+        },
+        {
+          "text": "Слово «третій» відповідає на питання «скільки?».",
+          "answer": false
+        },
+        {
+          "text": "Предмети лічимо зліва направо.",
+          "answer": true
+        }
+      ]
+    }
+  ],
+  "homework": [
+    {
+      "type": "number",
+      "q": "👧 👦 👧 👦 👧 👦 👧 — діти стоять у ряд. Скільки дітей?",
+      "answer": 7,
+      "explain": "Лічимо по одному: один, два, три, чотири, п'ять, шість, сім."
+    },
+    {
+      "type": "checklist",
+      "q": "Дорослий читає: полічи вдома.",
+      "items": [
+        "Я поставив(-ла) іграшки в ряд і полічив(-ла), скільки їх.",
+        "Я назвав(-ла), котра іграшка перша, третя і остання.",
+        "Я полічив(-ла) ложки на столі: скільки їх?"
+      ]
+    }
+  ],
+  "reflection": [
+    "Чим відрізняються питання «скільки?» і «котрий?»?",
+    "Котрим ти стоїш у черзі, коли перед тобою двоє?"
+  ]
+}

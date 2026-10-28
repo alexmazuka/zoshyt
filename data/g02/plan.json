@@ -1,8 +1,8 @@
 {
 "grade": "g02",
-"generated": "2026-10-03",
+"generated": "2026-10-28",
 "total": 278,
-"written": 19,
+"written": 32,
 "lessons": [
 {
 "id": "math-w01-d2",
@@ -249,7 +249,7 @@
 "title": "Узагальнюємо прийоми додавання і віднімання в межах 10",
 "brief": "склад чисел першого десятка; таблиці додавання і віднімання",
 "file": "data/g02/lessons/math/math-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d2",
@@ -262,7 +262,7 @@
 "title": "Текст. Заголовок і тема тексту",
 "brief": "відрізняємо текст від набору речень; добираємо заголовок до тексту",
 "file": "data/g02/lessons/ukr/ukr-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "yds-w02-d2",
@@ -275,7 +275,7 @@
 "title": "Правила дорожнього руху: світлофор, пішохідний перехід",
 "brief": "сигнали світлофора, дорожні знаки для пішоходів, світловідбивачі",
 "file": "data/g02/lessons/yds/yds-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "inf-w02-d2",
@@ -301,7 +301,7 @@
 "title": "Досліджуємо задачі: умова, запитання, розв'язання, відповідь",
 "brief": "будова задачі; прості задачі на знаходження суми і остачі",
 "file": "data/g02/lessons/math/math-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "read-w02-d3",
@@ -314,7 +314,7 @@
 "title": "Олена Полянська «Є у кожного талант»",
 "brief": "кожен має свої здібності; повага до однокласників",
 "file": "data/g02/lessons/read/read-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d3",
@@ -327,7 +327,7 @@
 "title": "Numbers 11–20",
 "brief": "eleven ... twenty; How many...? counting games",
 "file": "data/g02/lessons/eng/eng-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "yds-w02-d3",
@@ -340,7 +340,7 @@
 "title": "Моя родина. Родинне дерево. Обов'язки в сім'ї",
 "brief": "покоління родини; родинні традиції; як я допомагаю вдома",
 "file": "data/g02/lessons/yds/yds-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "math-w02-d4",
@@ -353,7 +353,7 @@
 "title": "Досліджуємо задачі на збільшення і зменшення на кілька одиниць",
 "brief": "«на 3 більше», «на 2 менше»; схематичний малюнок до задачі",
 "file": "data/g02/lessons/math/math-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d4",
@@ -366,7 +366,7 @@
 "title": "Діагностувальна робота: списування тексту (перевірка вмінь за 1 клас)",
 "brief": "каліграфічне безпомилкове списування короткого тексту з друкованого зразка",
 "file": "data/g02/lessons/ukr/ukr-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "read-w02-d4",
@@ -379,7 +379,7 @@
 "title": "Йосип Шелепець «Зажурився кіт»",
 "brief": "гумористичний вірш; рима, інтонація, читання напам'ять",
 "file": "data/g02/lessons/read/read-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "read-w02-d5",
@@ -392,7 +392,7 @@
 "title": "Узагальнення розділу «Добридень, школо!»",
 "brief": "вікторина за творами розділу; улюблений твір і чому",
 "file": "data/g02/lessons/read/read-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d5",
@@ -405,7 +405,7 @@
 "title": "The English alphabet: Aa–Mm",
 "brief": "letter names and sounds; alphabet song; words for each letter",
 "file": "data/g02/lessons/eng/eng-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "yds-w02-d5",
@@ -418,7 +418,7 @@
 "title": "Здорові звички. Режим дня",
 "brief": "сон, відпочинок, навчання, прогулянки; складаємо власний режим дня",
 "file": "data/g02/lessons/yds/yds-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "math-w03-d1",

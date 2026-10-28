@@ -1,0 +1,270 @@
+{
+ "id": "eng-w02-d3",
+ "subject": "eng",
+ "title": "All about me. Дієслово to be",
+ "goal": "Навчитися розповідати про себе англійською (ім'я, вік, країна, національність) і правильно вживати форми am, is, are.",
+ "minutes": 35,
+ "terms": {
+  "США": "Сполучені Штати Америки"
+ },
+ "theory": [
+  {
+   "type": "p",
+   "text": "Починаємо **Unit 1. Me and My Friends**. Перше, що роблять, коли знайомляться, — розповідають про себе: як тебе звати, скільки тобі років, звідки ти. Для цього в англійській мові потрібне дієслово **to be** (бути)."
+  },
+  {
+   "type": "vocab",
+   "title": "All about me — про себе",
+   "items": [
+    {
+     "en": "name",
+     "uk": "ім'я",
+     "ex": "My name is Taras."
+    },
+    {
+     "en": "surname",
+     "uk": "прізвище",
+     "ex": "My surname is Melnyk."
+    },
+    {
+     "en": "age",
+     "uk": "вік",
+     "ex": "What's your age?"
+    },
+    {
+     "en": "… years old",
+     "uk": "… років",
+     "ex": "I'm eleven years old."
+    },
+    {
+     "en": "country",
+     "uk": "країна",
+     "ex": "Ukraine is my country."
+    },
+    {
+     "en": "nationality",
+     "uk": "національність",
+     "ex": "My nationality is Ukrainian."
+    },
+    {
+     "en": "to be from",
+     "uk": "бути родом з, походити з",
+     "ex": "I'm from Ukraine."
+    },
+    {
+     "en": "to live in",
+     "uk": "жити в",
+     "ex": "I live in Poltava."
+    },
+    {
+     "en": "pen friend",
+     "uk": "друг по листуванню",
+     "ex": "My pen friend is from Canada."
+    },
+    {
+     "en": "favourite",
+     "uk": "улюблений",
+     "ex": "My favourite subject is English."
+    }
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Дієслово to be у теперішньому часі",
+   "text": "I **am** = I'm\nHe / She / It **is** = He's / She's / It's\nWe / You / They **are** = We're / You're / They're\nЗ to be кажемо про ім'я, вік, країну і національність:\n*I'm Sofia. I'm eleven. I'm from Ukraine. I'm Ukrainian.*\nУ розмові частіше вживають скорочені форми: I'm, he's, they're."
+  },
+  {
+   "type": "table",
+   "title": "Country — nationality (країна — національність)",
+   "head": [
+    "Country",
+    "Nationality",
+    "Переклад"
+   ],
+   "rows": [
+    [
+     "Ukraine",
+     "Ukrainian",
+     "Україна — українець, українка"
+    ],
+    [
+     "Poland",
+     "Polish",
+     "Польща — поляк, полька"
+    ],
+    [
+     "Great Britain",
+     "British",
+     "Велика Британія — британець, британка"
+    ],
+    [
+     "the USA",
+     "American",
+     "Сполучені Штати Америки (США) — американець, американка"
+    ],
+    [
+     "Canada",
+     "Canadian",
+     "Канада — канадієць, канадійка"
+    ],
+    [
+     "France",
+     "French",
+     "Франція — француз, француженка"
+    ],
+    [
+     "Germany",
+     "German",
+     "Німеччина — німець, німкеня"
+    ]
+   ]
+  },
+  {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/960px-Flag_of_Ukraine.svg.png",
+   "alt": "Прапор України: верхня смуга синя, нижня жовта.",
+   "caption": "Прапор України. Так кажуть про себе англійською: «I'm from Ukraine. I'm Ukrainian.»",
+   "credit": "Уряд України",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Flag_of_Ukraine.svg"
+  },
+  {
+   "type": "reading",
+   "title": "Hi, I'm Sofia!",
+   "genre": "Короткий текст",
+   "text": "Hello! My name is Sofia Melnyk. I'm eleven years old. I'm from Ukraine. I'm Ukrainian. I live in Poltava with my mum, dad and little brother.\n\nMy favourite subject is English. I have a pen friend. His name is Oliver. He is twelve. He is from Great Britain, so he is British. He lives in York.\n\nWe write e-mails to each other every week. We are good friends!"
+  },
+  {
+   "type": "tip",
+   "text": "В англійській мові з **великої літери** пишемо назви країн, національностей і мов (Ukraine, Ukrainian, English), а також займенник **I** (я) — завжди, навіть посеред речення."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "speak",
+   "q": "Прочитай текст про Софію вголос двічі: спершу повільно, потім трохи швидше.",
+   "text": "Hello! My name is Sofia Melnyk. I'm eleven years old. I'm from Ukraine. I'm Ukrainian. I live in Poltava. My pen friend is Oliver. He is twelve. He is British.",
+   "lang": "en"
+  },
+  {
+   "type": "fill",
+   "q": "Допиши am, is або are.",
+   "text": "I {am} from Kharkiv. My sister {is} nine. We {are} Ukrainian. Oliver {is} British. You {are} my friend."
+  },
+  {
+   "type": "match",
+   "q": "З'єднай країну з національністю.",
+   "pairs": [
+    [
+     "Ukraine",
+     "Ukrainian"
+    ],
+    [
+     "Poland",
+     "Polish"
+    ],
+    [
+     "Great Britain",
+     "British"
+    ],
+    [
+     "the USA",
+     "American"
+    ],
+    [
+     "Canada",
+     "Canadian"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Подивися на прапор. Олівер — з цієї країни. Яка в нього національність?",
+   "image": {
+    "type": "image",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/960px-Flag_of_the_United_Kingdom_%283-5%29.svg.png",
+    "alt": "Прапор Великої Британії: червоні й білі хрести на синьому тлі.",
+    "caption": "Прапор Великої Британії.",
+    "credit": "Acts of Union 1800; векторизація — Yaddah",
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Flag_of_the_United_Kingdom_(3-5).svg"
+   },
+   "options": [
+    "British",
+    "American",
+    "Polish",
+    "Canadian"
+   ],
+   "answer": 0,
+   "explain": "Це прапор Великої Британії: Oliver is from Great Britain. He is British."
+  },
+  {
+   "type": "truefalse",
+   "q": "Читання. Так чи ні?",
+   "items": [
+    {
+     "text": "Sofia is twelve.",
+     "answer": false
+    },
+    {
+     "text": "Sofia is from Ukraine.",
+     "answer": true
+    },
+    {
+     "text": "Oliver is British.",
+     "answer": true
+    },
+    {
+     "text": "Sofia lives in Lviv.",
+     "answer": false
+    }
+   ],
+   "explain": "Софії одинадцять років, і вона живе в Полтаві."
+  },
+  {
+   "type": "input",
+   "q": "Напиши скорочену форму: She is.",
+   "answer": [
+    "She's",
+    "she's",
+    "She’s"
+   ],
+   "explain": "She is = She's."
+  },
+  {
+   "type": "choice",
+   "q": "Max and I ___ eleven. Яке слово пропущено?",
+   "options": [
+    "are",
+    "is",
+    "am",
+    "be"
+   ],
+   "answer": 0,
+   "explain": "Max and I = we, тому are."
+  }
+ ],
+ "homework": [
+  {
+   "type": "fill",
+   "q": "Допиши правильну форму to be.",
+   "text": "Taras {is} from Ukraine. He {is} Ukrainian. Emma and Jack {are} from Canada. They {are} Canadian. I {am} eleven."
+  },
+  {
+   "type": "speak",
+   "q": "Розкажи про себе вголос англійською за зразком.",
+   "text": "Hello! My name is … I'm … years old. I'm from Ukraine. I'm Ukrainian. I live in … My favourite subject is …",
+   "lang": "en"
+  },
+  {
+   "type": "text",
+   "q": "Напиши англійською 5–6 речень про себе і свого друга або родича: ім'я, вік, країна, національність, місто.",
+   "sample": "My name is Ira. I'm eleven years old. I'm from Ukraine. I'm Ukrainian. I live in Dnipro. My cousin is Mark. He is fourteen. He is from Ukraine too. He lives in Kyiv.",
+   "min": 90
+  }
+ ],
+ "reflection": [
+  "Яку форму to be вживаємо з I, з he/she/it і з we/you/they?",
+  "Чи зможеш ти тепер розповісти про себе англійською без підказки?"
+ ]
+}

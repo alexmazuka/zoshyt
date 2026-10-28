@@ -75,6 +75,7 @@
         }
       ]
     },
+    {"type": "image", "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Children_volunteers_helping.jpg/960px-Children_volunteers_helping.jpg", "alt": "Діти-волонтери в однакових жовтих футболках несуть вазони з землею, щоб висадити рослини", "caption": "Children volunteers: діти-волонтери висаджують сад. Які прикметники підходять до них? *helpful, generous, friendly, reliable*.", "credit": "Chuck Lafferty, U.S. Fish and Wildlife Service", "license": "Public domain", "page": "https://commons.wikimedia.org/wiki/File:Children_volunteers_helping.jpg"},
     {
       "type": "rule",
       "title": "Протилежні прикметники з префіксами",

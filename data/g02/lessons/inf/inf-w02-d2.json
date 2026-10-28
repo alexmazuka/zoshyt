@@ -20,6 +20,15 @@
    "caption": "Людина отримує інформацію за допомогою органів чуття."
   },
   {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Precious_Child_little_girl_with_flower.jpg/960px-Precious_Child_little_girl_with_flower.jpg",
+   "alt": "Чорно-біле фото: дівчинка стоїть біля дерев'яної стіни й нюхає жовту квітку.",
+   "caption": "Дівчинка нюхає квітку. Носом, через нюх, вона отримує інформацію: як пахне квітка.",
+   "credit": "Kelley Conkling",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Precious_Child_little_girl_with_flower.jpg"
+  },
+  {
    "type": "table",
    "title": "Органи чуття",
    "head": [

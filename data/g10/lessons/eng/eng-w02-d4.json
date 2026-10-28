@@ -1,0 +1,56 @@
+{
+ "id": "eng-w02-d4",
+ "subject": "eng",
+ "title": "Describing personality",
+ "goal": "Вивчити прикметники для опису характеру, навчитися утворювати протилежні за значенням слова за допомогою префіксів un-, in- (im-, ir-, il-), dis- і тактовно описувати себе та інших англійською.",
+ "minutes": 45,
+ "theory": [
+  {"type": "p", "text": "Починаємо **Unit 1. Personality and relationships**. Перш ніж говорити про дружбу й родину, потрібні слова, якими можна описати людину: не лише *nice* і *good*, а точніше — надійна, щедра, вперта, сором'язлива. Сьогодні — 12 корисних прикметників і спосіб швидко подвоїти словниковий запас за допомогою префіксів."},
+  {"type": "vocab", "title": "Personality adjectives", "items": [
+   {"en": "reliable", "uk": "надійний", "ex": "Mark is reliable: he always does what he promises."},
+   {"en": "honest", "uk": "чесний", "ex": "She is honest and never tells lies."},
+   {"en": "patient", "uk": "терплячий", "ex": "My grandad is very patient with little kids."},
+   {"en": "generous", "uk": "щедрий", "ex": "It was generous of you to share your lunch."},
+   {"en": "selfish", "uk": "егоїстичний", "ex": "Don't be selfish — let others choose too."},
+   {"en": "shy", "uk": "сором'язливий", "ex": "He is shy and rarely speaks in class."},
+   {"en": "outgoing", "uk": "товариський, комунікабельний", "ex": "My sister is outgoing and makes friends easily."},
+   {"en": "easy-going", "uk": "легкий у спілкуванні, невимушений", "ex": "Our coach is easy-going and rarely gets angry."},
+   {"en": "ambitious", "uk": "цілеспрямований, амбітний", "ex": "Olha is ambitious: she wants to become a surgeon."},
+   {"en": "stubborn", "uk": "упертий", "ex": "My brother is so stubborn — he never changes his mind."},
+   {"en": "considerate", "uk": "уважний до інших, тактовний", "ex": "It was considerate of him to call when he was late."},
+   {"en": "confident", "uk": "упевнений у собі", "ex": "She felt confident before the exam."}
+  ]},
+  {"type": "rule", "title": "Префікси із заперечним значенням", "text": "Протилежне значення часто утворюють префіксом:\n**un-** — найпоширеніший: friendly → **un**friendly, kind → **un**kind, reliable → **un**reliable, selfish → **un**selfish.\n**in-** — переважно зі словами латинського походження: considerate → **in**considerate, sensitive → **in**sensitive, tolerant → **in**tolerant. Перед **p** і **m** він стає **im-**: **im**patient, **im**polite, **im**mature; перед **r** — **ir-**: **ir**responsible; перед **l** — **il-**: **il**logical.\n**dis-**: honest → **dis**honest, loyal → **dis**loyal, organised → **dis**organised, respectful → **dis**respectful.\nЯкий префікс потрібен, перевіряй за словником — універсального правила немає."},
+  {"type": "figure", "svg": "<svg viewBox='0 0 560 170' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif' font-size='14'><rect x='10' y='20' width='170' height='130' rx='10' fill='#E4E9F9' stroke='#2A45B0'/><text x='95' y='46' text-anchor='middle' fill='#2A45B0' font-weight='bold' font-size='18'>un-</text><text x='95' y='74' text-anchor='middle' fill='#1a1a1a'>unfriendly</text><text x='95' y='96' text-anchor='middle' fill='#1a1a1a'>unreliable</text><text x='95' y='118' text-anchor='middle' fill='#1a1a1a'>unselfish</text><rect x='195' y='20' width='170' height='130' rx='10' fill='#DDF0E5' stroke='#1D7449'/><text x='280' y='46' text-anchor='middle' fill='#1D7449' font-weight='bold' font-size='18'>in- / im- / ir-</text><text x='280' y='74' text-anchor='middle' fill='#1a1a1a'>inconsiderate</text><text x='280' y='96' text-anchor='middle' fill='#1a1a1a'>impatient</text><text x='280' y='118' text-anchor='middle' fill='#1a1a1a'>irresponsible</text><rect x='380' y='20' width='170' height='130' rx='10' fill='#F7E3E7' stroke='#D23F58'/><text x='465' y='46' text-anchor='middle' fill='#D23F58' font-weight='bold' font-size='18'>dis-</text><text x='465' y='74' text-anchor='middle' fill='#1a1a1a'>dishonest</text><text x='465' y='96' text-anchor='middle' fill='#1a1a1a'>disloyal</text><text x='465' y='118' text-anchor='middle' fill='#1a1a1a'>disorganised</text></svg>", "alt": "Три блоки з префіксами: un- (unfriendly, unreliable, unselfish), in-, im-, ir- (inconsiderate, impatient, irresponsible), dis- (dishonest, disloyal, disorganised)", "caption": "Три групи заперечних префіксів. Зверни увагу: im- і ir- — це той самий префікс in-, що «підлаштувався» під першу літеру слова."},
+  {"type": "table", "title": "Антоніми без префіксів", "head": ["Прикметник", "Протилежність", "Переклад пари"], "rows": [
+   ["generous", "mean", "щедрий — скупий"],
+   ["outgoing", "shy", "товариський — сором'язливий"],
+   ["confident", "insecure", "упевнений — невпевнений"],
+   ["hard-working", "lazy", "працьовитий — лінивий"],
+   ["easy-going", "moody", "легкий у спілкуванні — з мінливим настроєм"]
+  ]},
+  {"type": "tip", "text": "Як описати недолік тактовно. Англійці рідко кажуть прямо *He is lazy*. Частіше: *He can be a bit lazy sometimes*, *She tends to be stubborn*, або заперечення з позитивним словом: *He isn't very patient* (м'якше, ніж *He is impatient*)."},
+  {"type": "example", "title": "Зразок опису", "text": "My best friend Danylo is outgoing and easy-going, so everybody likes him. He is very reliable: if he says he will help, he always does. He is also generous — he often lends me his books. But he can be a bit stubborn sometimes, and he isn't very patient when he plays video games!"}
+ ],
+ "exercises": [
+  {"type": "match", "q": "З'єднай прикметник з перекладом.", "pairs": [["reliable", "надійний"], ["stubborn", "упертий"], ["generous", "щедрий"], ["shy", "сором'язливий"], ["considerate", "уважний до інших"], ["confident", "упевнений у собі"]]},
+  {"type": "sort", "q": "Розподіли слова за префіксом, який утворює їхній антонім.", "groups": {"un-": ["friendly", "reliable", "kind"], "im-": ["patient", "polite", "mature"], "dis-": ["honest", "loyal", "respectful"]}},
+  {"type": "fill", "q": "Утвори протилежне слово, додавши префікс, і впиши його.", "text": "1) He never thinks about other people's feelings. He is {inconsiderate}.\n2) She often tells lies. She is {dishonest}.\n3) You can't count on him. He is {unreliable}.\n4) He can't wait for anything. He is {impatient}.\n5) She never does what she should. She is {irresponsible}."},
+  {"type": "choice", "q": "Choose the best word: Ira always shares her snacks and helps everyone with homework. She is very ___.", "options": ["selfish", "generous", "stubborn", "moody"], "answer": 1, "explain": "Generous — щедрий, готовий ділитися. Selfish — протилежність."},
+  {"type": "choice", "q": "Яке речення звучить найтактовніше?", "options": ["Your brother is lazy.", "Your brother can be a bit lazy sometimes.", "Your brother is the laziest person ever.", "Your brother is so lazy and selfish."], "answer": 1, "explain": "Вирази can be, a bit, sometimes пом'якшують критику."},
+  {"type": "truefalse", "q": "Чи правильно утворено антонім?", "items": [
+   {"text": "patient → unpatient", "answer": false},
+   {"text": "honest → dishonest", "answer": true},
+   {"text": "responsible → irresponsible", "answer": true},
+   {"text": "friendly → disfriendly", "answer": false},
+   {"text": "selfish → unselfish", "answer": true}
+  ]},
+  {"type": "speak", "q": "Подивися на фото. Уяви, що це твої знайомі волонтерки. Опиши кожну 2–3 реченнями англійською, використавши прикметники з уроку. Потім прочитай уголос зразок нижче.", "image": {"src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Youth_Conservation_Education_Project_at_Crescent_Moon_Ranch_%2825270261177%29.jpg/960px-Youth_Conservation_Education_Project_at_Crescent_Moon_Ranch_%2825270261177%29.jpg", "alt": "Дві усміхнені дівчини-підлітки стоять поруч біля сітчастої огорожі городу", "caption": "Учениці старшої школи в штаті Аризона — волонтерки, що допомагали розчистити канаву для зрошення громадського городу.", "credit": "Coconino National Forest", "license": "Public domain", "page": "https://commons.wikimedia.org/wiki/File:Youth_Conservation_Education_Project_at_Crescent_Moon_Ranch_(25270261177).jpg"}, "text": "The girl on the left looks confident and outgoing. I think she is also reliable, because volunteers must be hard-working. The girl on the right seems a bit shy, but she looks kind and considerate.", "lang": "en"}
+ ],
+ "homework": [
+  {"type": "fill", "q": "Впиши антонім (з префіксом або без).", "text": "1) generous — {mean|stingy}\n2) loyal — {disloyal}\n3) polite — {impolite}\n4) confident — {insecure|unconfident}\n5) organised — {disorganised|disorganized}"},
+  {"type": "choice", "q": "Choose the correct word: My dad never gets angry or nervous. He is very ___.", "options": ["moody", "easy-going", "impatient", "ambitious"], "answer": 1},
+  {"type": "text", "q": "Напиши англійською опис (80–100 слів) свого друга, подруги або члена родини. Використай щонайменше 6 прикметників з уроку, 2 слова з префіксами і хоча б одну тактовну фразу про недолік (can be a bit…, tends to…, isn't very…).", "sample": "My cousin Sofia is sixteen. She is outgoing and confident, so she easily talks to new people. She is also very reliable: when she promises to help, she always does. Sofia is generous and considerate — she remembers everyone's birthday. She is ambitious and wants to study medicine. However, she can be a bit stubborn, and she isn't very patient when she has to wait. She is never dishonest or unkind, and I am happy she is my cousin.", "min": 300}
+ ],
+ "reflection": ["Які три прикметники найкраще описують тебе?", "Який префікс тобі найважче запам'ятати і чому?"]
+}

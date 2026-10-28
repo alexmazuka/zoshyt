@@ -1,0 +1,242 @@
+{
+ "id": "eng-w02-d3",
+ "subject": "eng",
+ "title": "Numbers 11–20",
+ "goal": "Навчитися рахувати англійською від 11 до 20 і питати «How many…?» (Скільки…?).",
+ "minutes": 25,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Дорослий читає: ми вже вміємо рахувати англійською до десяти. Сьогодні вивчимо числа від 11 до 20 і будемо рахувати предмети."
+  },
+  {
+   "type": "vocab",
+   "title": "Числа 11–20",
+   "items": [
+    {
+     "en": "eleven",
+     "uk": "одинадцять (11)",
+     "ex": "Eleven pens."
+    },
+    {
+     "en": "twelve",
+     "uk": "дванадцять (12)",
+     "ex": "Twelve pens."
+    },
+    {
+     "en": "thirteen",
+     "uk": "тринадцять (13)",
+     "ex": "Thirteen pens."
+    },
+    {
+     "en": "fourteen",
+     "uk": "чотирнадцять (14)",
+     "ex": "Fourteen pens."
+    },
+    {
+     "en": "fifteen",
+     "uk": "п'ятнадцять (15)",
+     "ex": "Fifteen pens."
+    },
+    {
+     "en": "sixteen",
+     "uk": "шістнадцять (16)",
+     "ex": "Sixteen pens."
+    },
+    {
+     "en": "seventeen",
+     "uk": "сімнадцять (17)",
+     "ex": "Seventeen pens."
+    },
+    {
+     "en": "eighteen",
+     "uk": "вісімнадцять (18)",
+     "ex": "Eighteen pens."
+    },
+    {
+     "en": "nineteen",
+     "uk": "дев'ятнадцять (19)",
+     "ex": "Nineteen pens."
+    },
+    {
+     "en": "twenty",
+     "uk": "двадцять (20)",
+     "ex": "Twenty pens."
+    }
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Запам'ятай",
+   "text": "Числа від 13 до 19 закінчуються на **-teen**: thir**teen**, four**teen**, fif**teen**, six**teen**, seven**teen**, eigh**teen**, nine**teen**.\nСлова **eleven**, **twelve** і **twenty** особливі — їх треба просто запам'ятати."
+  },
+  {
+   "type": "table",
+   "title": "Порівняй",
+   "head": [
+    "1–10",
+    "11–20"
+   ],
+   "rows": [
+    [
+     "four — 4",
+     "fourteen — 14"
+    ],
+    [
+     "six — 6",
+     "sixteen — 16"
+    ],
+    [
+     "seven — 7",
+     "seventeen — 17"
+    ],
+    [
+     "nine — 9",
+     "nineteen — 19"
+    ]
+   ]
+  },
+  {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/2020-05-05_19_27_12_An_open_carton_of_a_dozen_Large_Grade_A_Chicken_Eggs_from_Egg-land%27s_Best_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-thumbnail.jpg",
+   "alt": "Відкрита картонна коробка з дванадцятьма білими яйцями у два ряди по шість.",
+   "caption": "How many eggs? — Twelve eggs. Скільки яєць? Дванадцять: два ряди по шість.",
+   "credit": "Famartin",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2020-05-05_19_27_12_An_open_carton_of_a_dozen_Large_Grade_A_Chicken_Eggs_from_Egg-land%27s_Best_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg"
+  },
+  {
+   "type": "dialogue",
+   "title": "How many?",
+   "lang": "en",
+   "lines": [
+    {
+     "who": "Ann",
+     "text": "How many eggs?"
+    },
+    {
+     "who": "Tom",
+     "text": "Twelve eggs."
+    },
+    {
+     "who": "Ann",
+     "text": "How many pencils?"
+    },
+    {
+     "who": "Tom",
+     "text": "Fifteen pencils."
+    }
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Гра вдома: підкидай м'ячик і щоразу називай наступне число англійською: eleven, twelve, thirteen… аж до twenty."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай слово з числом.",
+   "pairs": [
+    [
+     "eleven",
+     "11"
+    ],
+    [
+     "twelve",
+     "12"
+    ],
+    [
+     "fifteen",
+     "15"
+    ],
+    [
+     "twenty",
+     "20"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Яке число — thirteen?",
+   "options": [
+    "13",
+    "30",
+    "3"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "number",
+   "q": "How many apples? Порахуй і запиши цифрою: 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎",
+   "answer": 14
+  },
+  {
+   "type": "order",
+   "q": "Розстав числа від меншого до більшого.",
+   "items": [
+    "eleven",
+    "thirteen",
+    "sixteen",
+    "eighteen",
+    "twenty"
+   ]
+  },
+  {
+   "type": "fill",
+   "q": "Допиши пропущені числа словами.",
+   "text": "ten, {eleven}, twelve, thirteen, {fourteen}, fifteen"
+  },
+  {
+   "type": "input",
+   "q": "Напиши англійською число 19 (словом).",
+   "answer": [
+    "nineteen"
+   ]
+  },
+  {
+   "type": "speak",
+   "q": "Порахуй уголос від одинадцяти до двадцяти.",
+   "text": "eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "match",
+   "q": "З'єднай слово з числом.",
+   "pairs": [
+    [
+     "seventeen",
+     "17"
+    ],
+    [
+     "sixteen",
+     "16"
+    ],
+    [
+     "eighteen",
+     "18"
+    ]
+   ]
+  },
+  {
+   "type": "fill",
+   "q": "Запиши цифрами.",
+   "text": "Twelve eggs — це {12} яєць. Twenty pens — це {20} ручок."
+  },
+  {
+   "type": "checklist",
+   "q": "Вдома.",
+   "items": [
+    "Я порахував(ла) англійською 20 предметів (ложки, олівці, іграшки).",
+    "Я запитав(ла) дорослого «How many…?» і сам(а) відповів(ла).",
+    "Я тричі повторив(ла) числа від 11 до 20."
+   ]
+  }
+ ],
+ "reflection": [
+  "Яке число від 11 до 20 найважче вимовити?",
+  "Що спільного в словах fourteen, sixteen, nineteen?"
+ ]
+}

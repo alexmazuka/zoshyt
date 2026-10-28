@@ -1,8 +1,8 @@
 {
 "grade": "g03",
-"generated": "2026-10-03",
+"generated": "2026-10-28",
 "total": 293,
-"written": 20,
+"written": 34,
 "lessons": [
 {
 "id": "math-w01-d2",
@@ -262,7 +262,7 @@
 "title": "Додаємо і віднімаємо числа порозрядно",
 "brief": "порозрядне додавання і віднімання двоцифрових чисел: 45 + 32, 78 − 25",
 "file": "data/g03/lessons/math/math-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d2",
@@ -275,7 +275,7 @@
 "title": "Стилі мовлення. Я спілкуюся",
 "brief": "розмовне і книжне мовлення, вибір слів залежно від ситуації",
 "file": "data/g03/lessons/ukr/ukr-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "yds-w02-d2",
@@ -288,7 +288,7 @@
 "title": "Які в дітей права та обов'язки",
 "brief": "Конвенція ООН про права дитини, права і обов'язки школяра",
 "file": "data/g03/lessons/yds/yds-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "inf-w02-d2",
@@ -314,7 +314,7 @@
 "title": "Досліджуємо задачі на знаходження різниці",
 "brief": "прості задачі на віднімання, схема, коротка умова",
 "file": "data/g03/lessons/math/math-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "read-w02-d3",
@@ -327,7 +327,7 @@
 "title": "«Як у Німеччині святкують початок навчального року»",
 "brief": "пізнавальний текст про шкільну традицію, порівняння зі своєю школою",
 "file": "data/g03/lessons/read/read-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d3",
@@ -340,7 +340,7 @@
 "title": "Read a book. Читаємо і пишемо",
 "brief": "actions; phonics: u_e, ch, th, oo, ey, ay; читання слів",
 "file": "data/g03/lessons/eng/eng-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "yds-w02-d3",
@@ -353,7 +353,7 @@
 "title": "Чи всі люди рівні. Що таке справедливість",
 "brief": "рівність, повага до відмінностей, справедливі рішення",
 "file": "data/g03/lessons/yds/yds-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "math-w02-d4",
@@ -366,7 +366,7 @@
 "title": "Досліджуємо задачі на знаходження суми",
 "brief": "прості задачі на додавання, графічна модель, запитання задачі",
 "file": "data/g03/lessons/math/math-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d4",
@@ -379,7 +379,7 @@
 "title": "Культура мовлення. Слова-паразити. Редагування діалогу",
 "brief": "чисте мовлення без зайвих слів, виправлення діалогу",
 "file": "data/g03/lessons/ukr/ukr-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "read-w02-d4",
@@ -392,7 +392,7 @@
 "title": "Робота з дитячою книжкою «Наче вулик наша школа»",
 "brief": "вибір книжки про школу, обкладинка, автор, анотація",
 "file": "data/g03/lessons/read/read-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "yds-w02-d4",
@@ -405,7 +405,7 @@
 "title": "Чому людині потрібен особистий простір",
 "brief": "особисті межі, право сказати «ні», повага до інших",
 "file": "data/g03/lessons/yds/yds-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "math-w02-d5",
@@ -418,7 +418,7 @@
 "title": "Додаємо і віднімаємо, використовуючи прийом округлення",
 "brief": "округлення до десятка: 46 + 19 = 46 + 20 − 1",
 "file": "data/g03/lessons/math/math-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "read-w02-d5",
@@ -431,7 +431,7 @@
 "title": "Алла Коваль «Знайомі незнайомці»",
 "brief": "пізнавальна стаття, нові факти, запитання до тексту",
 "file": "data/g03/lessons/read/read-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d5",
@@ -444,7 +444,7 @@
 "title": "What's your name? Знайомство",
 "brief": "personal information: What's your name? How old are you? I'm…",
 "file": "data/g03/lessons/eng/eng-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "math-w03-d1",

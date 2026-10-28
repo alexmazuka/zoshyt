@@ -1,0 +1,297 @@
+{
+  "id": "eng-w02-d4",
+  "subject": "eng",
+  "title": "Personality and leisure activities. Revision of grammar",
+  "goal": "Вивчити лексику на тему рис характеру й дозвілля, повторити способи вираження майбутнього (will, be going to, Present Continuous, Present Simple) і навчитися вести діалог-знайомство.",
+  "minutes": 40,
+  "theory": [
+    {
+      "type": "p",
+      "text": "Минулого уроку ми говорили про цілі й стратегії вивчення англійської. Сьогодні — про **тебе**: який ти, що любиш робити у вільний час і які маєш плани. Це найчастіша тема першої розмови з новими людьми — у таборі, на співбесіді, на усному іспиті. А щоб розповісти про плани, повторимо способи вираження майбутнього."
+    },
+    {
+      "type": "vocab",
+      "title": "Key vocabulary: personality and hobbies",
+      "items": [
+        {
+          "en": "outgoing",
+          "uk": "товариський, комунікабельний",
+          "ex": "She is outgoing and makes friends easily."
+        },
+        {
+          "en": "shy",
+          "uk": "сором'язливий",
+          "ex": "He was shy at first, but then he relaxed."
+        },
+        {
+          "en": "easy-going",
+          "uk": "невимушений, легкий у спілкуванні",
+          "ex": "My brother is easy-going and never gets angry."
+        },
+        {
+          "en": "reliable",
+          "uk": "надійний",
+          "ex": "You can count on Iryna — she is very reliable."
+        },
+        {
+          "en": "hard-working",
+          "uk": "працьовитий",
+          "ex": "Hard-working students usually do well in exams."
+        },
+        {
+          "en": "creative",
+          "uk": "творчий",
+          "ex": "He is creative: he draws and writes songs."
+        },
+        {
+          "en": "curious",
+          "uk": "допитливий",
+          "ex": "Curious people ask a lot of questions."
+        },
+        {
+          "en": "patient",
+          "uk": "терплячий",
+          "ex": "You need to be patient to play chess well."
+        },
+        {
+          "en": "to be into something",
+          "uk": "захоплюватися чимось",
+          "ex": "I'm really into hiking."
+        },
+        {
+          "en": "to take up",
+          "uk": "почати займатися (хобі, спортом)",
+          "ex": "I'm going to take up photography."
+        },
+        {
+          "en": "spare time",
+          "uk": "вільний час",
+          "ex": "What do you do in your spare time?"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Chess_players_in_park%2C_kiev.JPG/960px-Chess_players_in_park%2C_kiev.JPG",
+      "alt": "Чорно-біле фото: четверо літніх чоловіків у парку зосереджено грають у шахи за кам'яним столиком із шаховим годинником.",
+      "caption": "Шахісти в київському парку. Шахи — популярне дозвілля для терплячих (patient) і допитливих (curious) людей. Опиши фото англійською: What are the people doing? What kind of people are they?",
+      "credit": "Robert Broadie",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Chess_players_in_park,_kiev.JPG"
+    },
+    {
+      "type": "dialogue",
+      "title": "Nice to meet you!",
+      "lang": "en",
+      "lines": [
+        {
+          "who": "Daryna",
+          "text": "Hi, I'm Daryna. Are you new here?"
+        },
+        {
+          "who": "Andrii",
+          "text": "Yes, I'm Andrii. Nice to meet you! I moved here from Poltava last month."
+        },
+        {
+          "who": "Daryna",
+          "text": "Welcome! What are you into?"
+        },
+        {
+          "who": "Andrii",
+          "text": "I'm really into hiking. I'm a bit shy, but in the mountains I feel free. What about you?"
+        },
+        {
+          "who": "Daryna",
+          "text": "I'm quite outgoing, so I love team sports. Our volleyball team is playing on Saturday at 10. Will you come?"
+        },
+        {
+          "who": "Andrii",
+          "text": "Sure, I'll come! And next summer I'm going to hike in the Carpathians. Maybe you'll join me?"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Як говорити про майбутнє",
+      "head": [
+        "Форма",
+        "Коли вживаємо",
+        "Приклад"
+      ],
+      "rows": [
+        [
+          "will + V",
+          "спонтанне рішення, обіцянка, прогноз-думка",
+          "I'll come! I think it will rain."
+        ],
+        [
+          "be going to + V",
+          "заздалегідь обдуманий план; прогноз за ознаками",
+          "I'm going to take up photography. Look at the clouds — it's going to rain."
+        ],
+        [
+          "Present Continuous",
+          "домовленість на певний час",
+          "Our team is playing on Saturday at 10."
+        ],
+        [
+          "Present Simple",
+          "розклад, графік",
+          "The train leaves at 7:15."
+        ]
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "will чи be going to?",
+      "text": "Головне питання: **коли ти вирішив?**\nЯкщо щойно, у момент мовлення — **will**: *The phone is ringing. — I'll answer it.*\nЯкщо раніше, це вже план — **be going to**: *I'm going to study medicine. I've already chosen a university.*\nЗаперечення: will not = **won't**; *I'm not going to give up.*"
+    },
+    {
+      "type": "image",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Siarhei_Besarab_hiking_Carpathians_Ukraine_2012.jpg/960px-Siarhei_Besarab_hiking_Carpathians_Ukraine_2012.jpg",
+      "alt": "Турист у панамі з великим рюкзаком стоїть на гірському схилі серед ялин, позаду — зелені гори.",
+      "caption": "Похід хребтом Чорногора в Українських Карпатах. Hiking — улюблене хобі Андрія з діалогу. Склади речення: Next summer I'm going to…",
+      "credit": "Henadz Besarab",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Siarhei_Besarab_hiking_Carpathians_Ukraine_2012.jpg"
+    },
+    {
+      "type": "tip",
+      "text": "Описуючи характер, підкріплюй прикметник прикладом: не лише *I'm reliable*, а *I'm reliable — I always keep my promises*. Так відповідь звучить переконливо і на іспиті, і на співбесіді."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "q": "З'єднай прикметник з українським відповідником.",
+      "pairs": [
+        [
+          "outgoing",
+          "товариський"
+        ],
+        [
+          "shy",
+          "сором'язливий"
+        ],
+        [
+          "reliable",
+          "надійний"
+        ],
+        [
+          "patient",
+          "терплячий"
+        ],
+        [
+          "curious",
+          "допитливий"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "q": "Обери слово: «Mariia never gets nervous and always waits calmly for her turn. She is very ___.»",
+      "options": [
+        "patient",
+        "shy",
+        "ambitious",
+        "outgoing"
+      ],
+      "answer": 0,
+      "explain": "Patient — терплячий: людина спокійно чекає."
+    },
+    {
+      "type": "truefalse",
+      "q": "Визнач, чи відповідає твердження діалогу «Nice to meet you!».",
+      "items": [
+        {
+          "text": "Andrii moved from Poltava last month.",
+          "answer": true
+        },
+        {
+          "text": "Andrii says he is very outgoing.",
+          "answer": false
+        },
+        {
+          "text": "Daryna's volleyball team is playing on Saturday.",
+          "answer": true
+        },
+        {
+          "text": "Andrii is going to hike in the Carpathians next summer.",
+          "answer": true
+        }
+      ]
+    },
+    {
+      "type": "fill",
+      "q": "Встав will або be going to у правильній формі.",
+      "text": "— It's cold in here. — Wait, I {will|'ll} close the window. My sister has bought a guitar: she {is going to} take up music. Look at those dark clouds! It {is going to} rain.",
+      "explain": "Спонтанне рішення — will; план — be going to; прогноз за ознаками — be going to."
+    },
+    {
+      "type": "sort",
+      "q": "Розподіли речення за формою майбутнього, яка в них ужита.",
+      "groups": {
+        "Plan or arrangement": [
+          "I'm meeting my friends at 6 tonight.",
+          "We're going to visit Lviv next week."
+        ],
+        "Spontaneous decision or promise": [
+          "I'll help you with your bag.",
+          "Don't worry, I won't tell anyone."
+        ],
+        "Timetable": [
+          "The film starts at 8 p.m.",
+          "Our bus leaves at 7:30."
+        ]
+      }
+    },
+    {
+      "type": "choice",
+      "q": "Обери правильне речення.",
+      "options": [
+        "I meeting Olena at 5 o'clock tomorrow.",
+        "I'm meeting Olena at 5 o'clock tomorrow — we arranged it yesterday.",
+        "I meet Olena at 5 o'clock tomorrow, we arranged it yesterday.",
+        "I am meet Olena at 5 o'clock tomorrow."
+      ],
+      "answer": 1,
+      "explain": "Домовленість на конкретний час — Present Continuous."
+    },
+    {
+      "type": "speak",
+      "q": "Розіграй діалог «Nice to meet you!» вголос (за обидві ролі або з партнером), потім заміни репліки Андрія на свої: розкажи про свій характер і хобі.",
+      "text": "Hi, I'm Daryna. Are you new here? — Yes, I'm Andrii. Nice to meet you! What are you into? — I'm really into hiking.",
+      "lang": "en-US"
+    }
+  ],
+  "homework": [
+    {
+      "type": "fill",
+      "q": "Доповни речення словами: into, spare, take up, easy-going.",
+      "text": "In my {spare} time I play the guitar. I'm really {into} music. Next year I want to {take up} singing. My friends say I'm {easy-going} because I never argue.",
+      "explain": "spare time — вільний час; to be into — захоплюватися; take up — почати займатися; easy-going — легкий у спілкуванні."
+    },
+    {
+      "type": "choice",
+      "q": "Як сказати англійською «Я збираюся вступати до університету» (план уже ухвалено)?",
+      "options": [
+        "I will apply to university, I think.",
+        "I'm going to apply to university.",
+        "I apply to university.",
+        "I'm apply to university."
+      ],
+      "answer": 1,
+      "explain": "Обдуманий план — be going to."
+    },
+    {
+      "type": "text",
+      "q": "Write 7–9 sentences about yourself for a new pen friend: describe your personality (at least three adjectives from the lesson with examples), your hobbies and your plans for the next weekend and the next summer. Use will, be going to and Present Continuous.",
+      "sample": "Hi! My name is Taras and I'm 16. I'm quite outgoing — I like meeting new people. I'm also hard-working: I always finish my projects on time. My friends say I'm creative because I make short videos. In my spare time I'm into football and photography. This Saturday I'm playing in a school football match. Next summer I'm going to take up hiking with my dad. I'm sure it will be great! Write back soon.",
+      "min": 300
+    }
+  ],
+  "reflection": [
+    "Які три слова з уроку найкраще описують мене?",
+    "Чи впевнено я розрізняю will і be going to?"
+  ]
+}

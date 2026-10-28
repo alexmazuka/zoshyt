@@ -31,6 +31,7 @@
       {"who": "Miss Green", "text": "Perfect! Now close your books. See you next lesson!"}
     ]},
     {"type": "rule", "title": "Накази й прохання (Imperative)", "text": "Коли даємо команду чи просимо щось зробити, дієслово ставимо на перше місце — без підмета (без «you»): **Listen!** (Слухай!) **Open** your book. (Відкрий книжку.) Щоб попросити ввічливо, додай **please**: Open your book, **please**. Заперечення утворюємо словом **Don't**: **Don't shut** the book yet. (Ще не закривай книжку.)"},
+    {"type": "image", "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Alphabet_Blocks.jpg/960px-Alphabet_Blocks.jpg", "alt": "Купка дерев’яних кубиків із вирізаними й розфарбованими англійськими літерами, цифрами та малюнками тварин і рослин; унизу ряд кубиків з літерами B, O, C, S.", "caption": "Кубики з англійськими літерами й цифрами. Знайди на фото літери B, O, C, P, S і назви їх уголос англійською, а потім полічи цифри від one до six.", "credit": "Mary Mark Ockerbloom", "license": "CC BY-SA 4.0", "page": "https://commons.wikimedia.org/wiki/File:Alphabet_Blocks.jpg"},
     {"type": "table", "title": "Літери, які звучать не так, як пишуться", "head": ["Літера", "Як звучить (укр.)"], "rows": [["G", "«джі»"], ["J", "«джей»"], ["Q", "«к'ю»"], ["W", "«дабл-ю»"], ["Y", "«вай»"], ["R", "«ар»"]]},
     {"type": "tip", "text": "Не плутай **G** [джі] і **J** [джей] — на слух вони схожі. А літеру **W** називають «дабл-ю» (подвійне U), а не «дабл-ві»."}
   ],

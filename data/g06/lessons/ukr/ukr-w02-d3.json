@@ -1,0 +1,211 @@
+{
+ "id": "ukr-w02-d3",
+ "subject": "ukr",
+ "title": "Фонетика. Орфоепія. Орфографія",
+ "goal": "Пригадати, чим звуки відрізняються від букв, як правильно наголошувати слова, які бувають чергування звуків і коли пишемо апостроф та м'який знак.",
+ "minutes": 40,
+ "terms": {},
+ "theory": [
+  {
+   "type": "p",
+   "text": "Мова звучить, а на письмі ми передаємо звучання буквами. Три розділи науки про мову допомагають робити це правильно: **фонетика** вивчає звуки, **орфоепія** — правильну вимову і наголос, **орфографія** — правильне написання слів."
+  },
+  {
+   "type": "rule",
+   "title": "Звуки і букви",
+   "text": "Звуки ми **чуємо і вимовляємо**, букви — **бачимо і пишемо**. В українській мові **33 букви** і **38 звуків**: 6 голосних ([а], [о], [у], [е], [и], [і]) і 32 приголосні.\nКількість букв і звуків у слові може не збігатися:\n• **я, ю, є** позначають два звуки ([йа], [йу], [йе]) на початку слова, після голосного і після апострофа: *яблуко, моя, м'ята*;\n• **ї** завжди позначає два звуки [йі]: *їжак*;\n• **щ** — два звуки [шч]: *щука*;\n• **ь** окремого звука не позначає, а лише пом'якшує попередній приголосний: *пальто*;\n• **дж, дз** — дві букви, але один звук: *джміль, дзвоник*."
+  },
+  {
+   "type": "figure",
+   "svg": "<svg viewBox=\"0 0 400 250\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"14\"><text x=\"6\" y=\"30\" text-anchor=\"start\" fill=\"currentColor\" font-size=\"14\" font-weight=\"bold\">яблуко</text><text x=\"6\" y=\"48\" text-anchor=\"start\" fill=\"#2A45B0\" font-size=\"11\">6 букв</text><text x=\"6\" y=\"76\" text-anchor=\"start\" fill=\"#D23F58\" font-size=\"11\">7 звуків</text><rect x=\"96\" y=\"10\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"108\" y=\"27\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">я</text><rect x=\"124\" y=\"10\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"136\" y=\"27\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">б</text><rect x=\"152\" y=\"10\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"164\" y=\"27\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">л</text><rect x=\"180\" y=\"10\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"192\" y=\"27\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">у</text><rect x=\"208\" y=\"10\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"220\" y=\"27\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">к</text><rect x=\"236\" y=\"10\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"248\" y=\"27\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">о</text><rect x=\"96\" y=\"56\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"108\" y=\"73\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">й</text><rect x=\"124\" y=\"56\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"136\" y=\"73\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">а</text><rect x=\"152\" y=\"56\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"164\" y=\"73\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">б</text><rect x=\"180\" y=\"56\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"192\" y=\"73\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">л</text><rect x=\"208\" y=\"56\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"220\" y=\"73\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">у</text><rect x=\"236\" y=\"56\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"248\" y=\"73\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">к</text><rect x=\"264\" y=\"56\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"276\" y=\"73\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">о</text><line x1=\"108\" y1=\"34\" x2=\"108\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"108\" y1=\"34\" x2=\"136\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"136\" y1=\"34\" x2=\"164\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"164\" y1=\"34\" x2=\"192\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"192\" y1=\"34\" x2=\"220\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"220\" y1=\"34\" x2=\"248\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"248\" y1=\"34\" x2=\"276\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"6\" y=\"112\" text-anchor=\"start\" fill=\"currentColor\" font-size=\"14\" font-weight=\"bold\">щука</text><text x=\"6\" y=\"130\" text-anchor=\"start\" fill=\"#2A45B0\" font-size=\"11\">4 букви</text><text x=\"6\" y=\"158\" text-anchor=\"start\" fill=\"#D23F58\" font-size=\"11\">5 звуків</text><rect x=\"96\" y=\"92\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"108\" y=\"109\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">щ</text><rect x=\"124\" y=\"92\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"136\" y=\"109\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">у</text><rect x=\"152\" y=\"92\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"164\" y=\"109\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">к</text><rect x=\"180\" y=\"92\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"192\" y=\"109\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">а</text><rect x=\"96\" y=\"138\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"108\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">ш</text><rect x=\"124\" y=\"138\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"136\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">ч</text><rect x=\"152\" y=\"138\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"164\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">у</text><rect x=\"180\" y=\"138\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"192\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">к</text><rect x=\"208\" y=\"138\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"220\" y=\"155\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">а</text><line x1=\"108\" y1=\"116\" x2=\"108\" y2=\"138\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"108\" y1=\"116\" x2=\"136\" y2=\"138\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"136\" y1=\"116\" x2=\"164\" y2=\"138\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"164\" y1=\"116\" x2=\"192\" y2=\"138\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"192\" y1=\"116\" x2=\"220\" y2=\"138\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"6\" y=\"194\" text-anchor=\"start\" fill=\"currentColor\" font-size=\"14\" font-weight=\"bold\">пальто</text><text x=\"6\" y=\"212\" text-anchor=\"start\" fill=\"#2A45B0\" font-size=\"11\">6 букв</text><text x=\"6\" y=\"240\" text-anchor=\"start\" fill=\"#D23F58\" font-size=\"11\">5 звуків</text><rect x=\"96\" y=\"174\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"108\" y=\"191\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">п</text><rect x=\"124\" y=\"174\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"136\" y=\"191\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">а</text><rect x=\"152\" y=\"174\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"164\" y=\"191\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">л</text><rect x=\"180\" y=\"174\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"192\" y=\"191\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">ь</text><rect x=\"208\" y=\"174\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"220\" y=\"191\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">т</text><rect x=\"236\" y=\"174\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"248\" y=\"191\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"14\">о</text><rect x=\"96\" y=\"220\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"108\" y=\"237\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">п</text><rect x=\"124\" y=\"220\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"136\" y=\"237\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">а</text><rect x=\"152\" y=\"220\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"164\" y=\"237\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">л'</text><rect x=\"180\" y=\"220\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"192\" y=\"237\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">т</text><rect x=\"208\" y=\"220\" width=\"24\" height=\"24\" rx=\"4\" fill=\"#FBE3E7\" stroke=\"#D23F58\"/><text x=\"220\" y=\"237\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">о</text><line x1=\"108\" y1=\"198\" x2=\"108\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"136\" y1=\"198\" x2=\"136\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"164\" y1=\"198\" x2=\"164\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"192\" y1=\"198\" x2=\"164\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"220\" y1=\"198\" x2=\"192\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"248\" y1=\"198\" x2=\"220\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"320\" y=\"30\" text-anchor=\"start\" fill=\"#2A45B0\" font-size=\"12\">букви</text><text x=\"320\" y=\"46\" text-anchor=\"start\" fill=\"#2A45B0\" font-size=\"11\">(пишемо)</text><text x=\"320\" y=\"76\" text-anchor=\"start\" fill=\"#D23F58\" font-size=\"12\">звуки</text><text x=\"320\" y=\"92\" text-anchor=\"start\" fill=\"#D23F58\" font-size=\"11\">(чуємо)</text></svg>",
+   "caption": "Букви і звуки в словах «яблуко», «щука», «пальто». Буква «я» на початку слова і буква «щ» дають по два звуки, а м'який знак окремого звука не має.",
+   "alt": "Три слова: угорі кожного — ряд букв у синіх квадратиках, унизу — ряд звуків у червоних, лінії показують, яка буква якому звуку відповідає."
+  },
+  {
+   "type": "rule",
+   "title": "Орфоепія: правильний наголос",
+   "text": "Наголос в українській мові **вільний** (може падати на будь-який склад) і **рухомий** (змінюється в різних формах слова: *рука́ — ру́ки*). Наголос розрізняє слова: *за́мок* (палац) і *замо́к* (на дверях).\nЗапам'ятай: одина́дцять, чотирна́дцять, ви́падок, кропива́, черго́вий, фарту́х, кіломе́тр, листопа́д, ненави́сть."
+  },
+  {
+   "type": "table",
+   "title": "Чергування звуків",
+   "head": [
+    "Чергування",
+    "Приклади"
+   ],
+   "rows": [
+    [
+     "[о], [е] — [і]",
+     "ніч — ночі, кінь — коня, піч — печі, сім — семи"
+    ],
+    [
+     "[г] — [ж] — [з]",
+     "нога — ніжка — на нозі"
+    ],
+    [
+     "[к] — [ч] — [ц]",
+     "рука — ручка — у руці"
+    ],
+    [
+     "[х] — [ш] — [с]",
+     "вухо — вушко — у вусі"
+    ]
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Апостроф",
+   "text": "Апостроф пишемо перед **я, ю, є, ї**:\n• після губних **б, п, в, м, ф**: *б'ю, п'ять, в'юн, м'ясо, верф'ю*;\n• після **р** у кінці складу: *пір'я, бур'ян, подвір'я*;\n• після префіксів на твердий приголосний: *з'їзд, від'їзд, роз'яснити*.\nНе пишемо, якщо перед губним є інший приголосний кореня (крім р): *свято, цвях, морквяний*; і після р, що не закінчує склад: *буряк, рясний*."
+  },
+  {
+   "type": "rule",
+   "title": "М'який знак",
+   "text": "Пишемо **ь** після м'яких **д, т, з, с, ц, л, н**:\n• у кінці слова і складу: *день, сіль, батько, різьба*;\n• у суфіксах *-зьк-, -ськ-, -цьк-*: *сільський, козацький*;\n• перед **о**: *сьогодні, льон*.\nНе пишемо після **р** у кінці слова чи складу (*кобзар, лікар*), після шиплячих (*ніч, плащ*) і між м'якими приголосними (*пісня, кузня*)."
+  },
+  {
+   "type": "tip",
+   "text": "Сумніваєшся в наголосі — заглянь в орфоепічний або тлумачний словник: у ньому над кожним словом стоїть знак наголосу."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "number",
+   "q": "Скільки звуків у слові «їжак»?",
+   "answer": 5,
+   "explain": "[й], [і], [ж], [а], [к] — буква ї позначає два звуки."
+  },
+  {
+   "type": "choice",
+   "q": "У якому слові букв більше, ніж звуків?",
+   "options": [
+    "пальто",
+    "яма",
+    "щит",
+    "кіт"
+   ],
+   "answer": 0,
+   "explain": "У слові «пальто» 6 букв, але 5 звуків: м'який знак звука не позначає. У «яма» і «щит» звуків більше, ніж букв, у «кіт» — порівну."
+  },
+  {
+   "type": "sort",
+   "q": "Розподіли слова: де на місці пропуску пишемо апостроф, а де — ні.",
+   "groups": {
+    "Пишемо апостроф": [
+     "м_ясо",
+     "п_ять",
+     "з_їзд",
+     "пір_я"
+    ],
+    "Не пишемо апостроф": [
+     "св_ято",
+     "цв_ях",
+     "бур_як",
+     "моркв_яний"
+    ]
+   },
+   "explain": "У словах «свято», «цвях», «морквяний» перед губним стоїть інший приголосний кореня. У слові «буряк» р не закінчує склад (бу-ряк)."
+  },
+  {
+   "type": "multi",
+   "q": "Познач слова, у яких на місці пропуску пишемо м'який знак.",
+   "options": [
+    "учител_",
+    "с_огодні",
+    "кобзар_",
+    "сіл_ський",
+    "плащ_"
+   ],
+   "answer": [
+    0,
+    1,
+    3
+   ],
+   "explain": "Учитель, сьогодні, сільський — з м'яким знаком. Кобзар (після р у кінці слова) і плащ (після шиплячого) — без нього."
+  },
+  {
+   "type": "match",
+   "q": "З'єднай приклад із чергуванням звуків.",
+   "pairs": [
+    [
+     "рука — у руці",
+     "[к] — [ц]"
+    ],
+    [
+     "нога — на нозі",
+     "[г] — [з]"
+    ],
+    [
+     "вухо — у вусі",
+     "[х] — [с]"
+    ],
+    [
+     "ніч — ночі",
+     "[і] — [о]"
+    ]
+   ],
+   "explain": "Приголосні г, к, х перед закінченням -і змінюються на з, ц, с; голосні о, е у закритому складі часто переходять в і."
+  },
+  {
+   "type": "choice",
+   "q": "У якому слові наголос поставлено правильно?",
+   "options": [
+    "одина́дцять",
+    "о́динадцять",
+    "одинадця́ть"
+   ],
+   "answer": 0,
+   "explain": "Правильно: одина́дцять, так само чотирна́дцять."
+  },
+  {
+   "type": "truefalse",
+   "q": "Так чи ні?",
+   "items": [
+    {
+     "text": "В українській мові 33 букви.",
+     "answer": true
+    },
+    {
+     "text": "Буква щ позначає два звуки [шч].",
+     "answer": true
+    },
+    {
+     "text": "М'який знак позначає окремий звук.",
+     "answer": false
+    },
+    {
+     "text": "В українській мові шість голосних звуків.",
+     "answer": true
+    }
+   ],
+   "explain": "М'який знак звука не має, він лише показує, що попередній приголосний м'який."
+  }
+ ],
+ "homework": [
+  {
+   "type": "input",
+   "q": "Утвори слово від префікса «від-» і слова «їзд». Запиши його правильно.",
+   "answer": [
+    "від'їзд",
+    "від’їзд",
+    "відʼїзд"
+   ],
+   "explain": "Після префікса на твердий приголосний перед ї пишемо апостроф: від'їзд."
+  },
+  {
+   "type": "number",
+   "q": "Скільки букв і скільки звуків у слові «м'ята»? Запиши кількість звуків.",
+   "answer": 5,
+   "explain": "Букв 4 (м, я, т, а — апостроф не буква), а звуків 5: [м], [й], [а], [т], [а]."
+  },
+  {
+   "type": "text",
+   "q": "Випиши з будь-якої книжки або придумай 5 слів з апострофом і 5 слів з м'яким знаком. Біля одного слова з кожної групи поясни, чому там стоїть апостроф чи м'який знак.",
+   "sample": "Апостроф: п'ятниця, сім'я, з'явитися, кар'єра, в'язати. П'ятниця — апостроф після губного п перед я.\nМ'який знак: кінь, сьогодні, батько, українська, учитель. Батько — ь після м'якого т у кінці складу.",
+   "min": 120
+  }
+ ],
+ "reflection": [
+  "Яке правило (апостроф чи м'який знак) тобі легше застосовувати? Чому?",
+  "У яких словах ти раніше ставив неправильний наголос?"
+ ]
+}

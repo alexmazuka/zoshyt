@@ -1,0 +1,118 @@
+{
+ "id": "alg-w02-d3",
+ "subject": "alg",
+ "title": "Повторення. Відсотки",
+ "goal": "Повторити поняття відсотка, навчитися знаходити відсоток від числа, число за його відсотком і відсоткове відношення двох чисел, розв'язувати практичні задачі на знижки й підвищення цін.",
+ "minutes": 45,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Минулого разу ми повторили дії з раціональними числами. Сьогодні — тема, яка найчастіше трапляється в житті: знижки в магазині, відсоток заряду телефона, результати опитувань, банківські вклади. Усе це — **відсотки**."
+  },
+  {
+   "type": "rule",
+   "title": "Відсоток",
+   "text": "**Відсоток** — це одна сота частина числа: 1% = 1/100 = 0,01.\nЩоб записати відсотки десятковим дробом, поділи кількість відсотків на 100: 35% = 0,35; 7% = 0,07; 120% = 1,2.\nЩоб записати дріб у відсотках, помнож його на 100%: 0,6 = 60%; 1/4 = 0,25 = 25%."
+  },
+  {
+   "type": "figure",
+   "svg": "<svg viewBox=\"0 0 420 200\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"14\"><rect x=\"20\" y=\"10\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"38\" y=\"10\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"56\" y=\"10\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"74\" y=\"10\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"92\" y=\"10\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"110\" y=\"10\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"128\" y=\"10\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"146\" y=\"10\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"164\" y=\"10\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"182\" y=\"10\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"20\" y=\"28\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"38\" y=\"28\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"56\" y=\"28\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"74\" y=\"28\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"92\" y=\"28\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"110\" y=\"28\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"128\" y=\"28\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"146\" y=\"28\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"164\" y=\"28\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"182\" y=\"28\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"20\" y=\"46\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"38\" y=\"46\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"56\" y=\"46\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"74\" y=\"46\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"92\" y=\"46\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"110\" y=\"46\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"128\" y=\"46\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"146\" y=\"46\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"164\" y=\"46\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"182\" y=\"46\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"20\" y=\"64\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"38\" y=\"64\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"56\" y=\"64\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"74\" y=\"64\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"92\" y=\"64\" width=\"18\" height=\"18\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"110\" y=\"64\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"128\" y=\"64\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"146\" y=\"64\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"164\" y=\"64\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"182\" y=\"64\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"20\" y=\"82\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"38\" y=\"82\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"56\" y=\"82\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"74\" y=\"82\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"92\" y=\"82\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"110\" y=\"82\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"128\" y=\"82\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"146\" y=\"82\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"164\" y=\"82\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"182\" y=\"82\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"20\" y=\"100\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"38\" y=\"100\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"56\" y=\"100\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"74\" y=\"100\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"92\" y=\"100\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"110\" y=\"100\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"128\" y=\"100\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"146\" y=\"100\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"164\" y=\"100\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"182\" y=\"100\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"20\" y=\"118\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"38\" y=\"118\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"56\" y=\"118\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"74\" y=\"118\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"92\" y=\"118\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"110\" y=\"118\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"128\" y=\"118\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"146\" y=\"118\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"164\" y=\"118\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"182\" y=\"118\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"20\" y=\"136\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"38\" y=\"136\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"56\" y=\"136\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"74\" y=\"136\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"92\" y=\"136\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"110\" y=\"136\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"128\" y=\"136\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"146\" y=\"136\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"164\" y=\"136\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"182\" y=\"136\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"20\" y=\"154\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"38\" y=\"154\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"56\" y=\"154\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"74\" y=\"154\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"92\" y=\"154\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"110\" y=\"154\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"128\" y=\"154\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"146\" y=\"154\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"164\" y=\"154\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"182\" y=\"154\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"20\" y=\"172\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"38\" y=\"172\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"56\" y=\"172\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"74\" y=\"172\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"92\" y=\"172\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"110\" y=\"172\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"128\" y=\"172\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"146\" y=\"172\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"164\" y=\"172\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><rect x=\"182\" y=\"172\" width=\"18\" height=\"18\" fill=\"#E4E9F9\" stroke=\"currentColor\" stroke-width=\"0.6\"/><g fill=\"currentColor\"><text x=\"215\" y=\"40\">100 \u043a\u043b\u0456\u0442\u0438\u043d\u043e\u043a \u2014 \u0446\u0456\u043b\u0435 (100%)</text><text x=\"215\" y=\"70\" fill=\"#2A45B0\">\u0437\u0430\u0444\u0430\u0440\u0431\u043e\u0432\u0430\u043d\u043e 35 \u043a\u043b\u0456\u0442\u0438\u043d\u043e\u043a</text><text x=\"215\" y=\"100\">35 : 100 = 0,35</text><text x=\"215\" y=\"130\">0,35 = 35%</text></g></svg>",
+   "alt": "Квадрат із 100 клітинок, у якому зафарбовано 35 клітинок: три повні рядки і ще п'ять клітинок",
+   "caption": "Ціле — це 100%. Зафарбовано 35 клітинок зі 100, тобто 35% квадрата."
+  },
+  {
+   "type": "table",
+   "title": "Три основні задачі на відсотки",
+   "head": ["Задача", "Як розв'язати", "Приклад"],
+   "rows": [
+    ["Знайти p% від числа a", "a · p : 100 (або a · 0,01p)", "20% від 150: 150 · 0,2 = 30"],
+    ["Знайти число, p% якого дорівнюють b", "b : p · 100 (або b : 0,01p)", "15% числа — це 45: 45 : 0,15 = 300"],
+    ["Скільки відсотків a становить від b", "a : b · 100%", "12 від 48: 12 : 48 = 0,25 = 25%"]
+   ]
+  },
+  {
+   "type": "example",
+   "title": "Задача на знижку",
+   "text": "Куртка коштувала 1200 грн. Під час розпродажу її ціну знизили на 25%. Скільки коштує куртка тепер?\nСпосіб 1. Знижка: 1200 · 0,25 = 300 (грн). Нова ціна: 1200 − 300 = 900 (грн).\nСпосіб 2. Після знижки лишається 100% − 25% = 75% ціни: 1200 · 0,75 = 900 (грн).\nВідповідь: 900 грн."
+  },
+  {
+   "type": "example",
+   "title": "Задача на підвищення",
+   "text": "Ціна квитка 80 грн, її підвищили на 15%. Нова ціна становить 100% + 15% = 115% старої: 80 · 1,15 = 92 (грн).\nВідповідь: 92 грн."
+  },
+  {
+   "type": "tip",
+   "text": "Перед розв'язуванням запитай себе: **що прийнято за 100%?** Саме від цієї величини рахують відсотки. У задачі на знижку 100% — це стара ціна, а не нова."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "fill",
+   "q": "Запиши відсотки десятковим дробом, а дроби — у відсотках.",
+   "text": "45% = {0,45|0.45}; 8% = {0,08|0.08}; 150% = {1,5|1.5}; 0,3 = {30}%; 3/4 = {75}%",
+   "explain": "Відсотки ділимо на 100, дроби множимо на 100%."
+  },
+  {
+   "type": "number",
+   "q": "Знайди 15% від числа 240.",
+   "answer": 36,
+   "explain": "240 · 0,15 = 36."
+  },
+  {
+   "type": "number",
+   "q": "30% деякого числа дорівнюють 42. Знайди це число.",
+   "answer": 140,
+   "explain": "42 : 0,3 = 140. Перевірка: 140 · 0,3 = 42.",
+   "hint": "Відоме число — це частина, а шукаємо ціле (100%)."
+  },
+  {
+   "type": "number",
+   "q": "Скільки відсотків становить число 18 від числа 72?",
+   "answer": 25,
+   "explain": "18 : 72 = 0,25 = 25%."
+  },
+  {
+   "type": "number",
+   "q": "У класі 30 учнів, дівчата становлять 40% класу. Скільки в класі хлопців?",
+   "answer": 18,
+   "explain": "Дівчат: 30 · 0,4 = 12. Хлопців: 30 − 12 = 18. Або одразу: хлопці — 60%, 30 · 0,6 = 18."
+  },
+  {
+   "type": "number",
+   "q": "Велосипед коштував 8000 грн. Його ціну знизили на 15%. Скільки гривень коштує велосипед тепер?",
+   "answer": 6800,
+   "explain": "Лишається 85% ціни: 8000 · 0,85 = 6800 грн."
+  },
+  {
+   "type": "choice",
+   "q": "Ціну товару спочатку підвищили на 10%, а потім знизили на 10%. Як змінилася ціна порівняно з початковою?",
+   "options": ["не змінилася", "зменшилася на 1%", "збільшилася на 1%", "зменшилася на 10%"],
+   "answer": 1,
+   "explain": "Нехай ціна 100 грн. Після підвищення: 100 · 1,1 = 110 грн. Після зниження: 110 · 0,9 = 99 грн. Ціна зменшилася на 1 грн, тобто на 1%. Друге зниження рахують від більшої суми."
+  }
+ ],
+ "homework": [
+  {
+   "type": "number",
+   "q": "Знайди число, 12% якого дорівнюють 9.",
+   "answer": 75,
+   "explain": "9 : 0,12 = 75."
+  },
+  {
+   "type": "number",
+   "q": "Батарея телефона заряджена на 64%, її повна ємність — 4500 мА·год. Скільки мА·год заряду в ній лишилося?",
+   "answer": 2880,
+   "explain": "4500 · 0,64 = 2880."
+  },
+  {
+   "type": "text",
+   "q": "Склади й розв'яжи власну задачу на знижку або підвищення ціни (з реальною річчю і ціною). Запиши розв'язання двома способами, як у прикладі уроку, і відповідь.",
+   "sample": "Задача. Рюкзак коштує 1500 грн, на нього діє знижка 20%. Скільки коштує рюкзак зі знижкою? Спосіб 1: знижка 1500 · 0,2 = 300 грн, нова ціна 1500 − 300 = 1200 грн. Спосіб 2: лишається 80% ціни, 1500 · 0,8 = 1200 грн. Відповідь: 1200 грн.",
+   "min": 120
+  }
+ ],
+ "reflection": [
+  "Яку з трьох задач на відсотки тобі розв'язувати найлегше, а яку — найважче?",
+  "Де ти бачив відсотки цього тижня поза уроками?"
+ ]
+}

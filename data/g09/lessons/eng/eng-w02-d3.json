@@ -1,0 +1,267 @@
+{
+ "id": "eng-w02-d3",
+ "subject": "eng",
+ "title": "Who and What We Are",
+ "goal": "Навчитися розповідати англійською про себе: інтереси, захоплення, цінності й мрії, — і побудувати зв'язний монолог за планом.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Ти вже вмієш описувати друзів (Friend Zone) і характер (Personality Types). Тепер час розповісти про себе: **хто я** (who I am) і **що для мене важливо** (what I value). Такий монолог знадобиться на співбесіді, в анкеті, у листі іноземному другові чи на уроці."
+  },
+  {
+   "type": "vocab",
+   "title": "About Me: Interests and Values",
+   "items": [
+    {
+     "en": "to be into (something)",
+     "uk": "захоплюватися чимось",
+     "ex": "I'm into robotics."
+    },
+    {
+     "en": "to be keen on (doing)",
+     "uk": "дуже любити (робити щось)",
+     "ex": "She is keen on drawing."
+    },
+    {
+     "en": "to be fond of",
+     "uk": "любити, мати прихильність до",
+     "ex": "I'm fond of old films."
+    },
+    {
+     "en": "passionate about",
+     "uk": "пристрасно захоплений чимось",
+     "ex": "He is passionate about music."
+    },
+    {
+     "en": "to value",
+     "uk": "цінувати",
+     "ex": "I value honesty in people."
+    },
+    {
+     "en": "honesty",
+     "uk": "чесність",
+     "ex": "Honesty is important to me."
+    },
+    {
+     "en": "kindness",
+     "uk": "доброта",
+     "ex": "Kindness makes the world better."
+    },
+    {
+     "en": "freedom",
+     "uk": "свобода",
+     "ex": "My country fights for freedom."
+    },
+    {
+     "en": "goal",
+     "uk": "мета, ціль",
+     "ex": "My goal is to become an engineer."
+    },
+    {
+     "en": "to dream of (doing)",
+     "uk": "мріяти про",
+     "ex": "I dream of travelling around the world."
+    },
+    {
+     "en": "hometown",
+     "uk": "рідне місто",
+     "ex": "My hometown is Poltava."
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Hilo_Students_Create_a_Mini_Robot_%2820240207_Hilo-Union_318-CC%29.jpg/960px-Hilo_Students_Create_a_Mini_Robot_%2820240207_Hilo-Union_318-CC%29.jpg",
+   "alt": "Усміхнені школярі за столом складають маленьких роботів із дротів і деталей; поруч стоїть і всміхається наставниця.",
+   "caption": "Школярі на заняттях програми «Journey Through the Universe» (Гаваї, Сполучені Штати Америки) збирають міні-роботів. Як сказати про їхнє захоплення англійською? *They are into robotics. They are keen on building things.*",
+   "credit": "International Gemini Observatory/NOIRLab/NSF/AURA/J.Pollard",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hilo_Students_Create_a_Mini_Robot_(20240207_Hilo-Union_318-CC).jpg"
+  },
+  {
+   "type": "reading",
+   "title": "This Is Me",
+   "genre": "монолог",
+   "text": "Hi! My name is Sofiia and I'm fourteen. My hometown is Poltava, a green city in the centre of Ukraine. I live with my parents and my younger brother.\n\nI'm really into robotics. Twice a week I go to a robotics club, where we build and program small robots. I'm also keen on reading fantasy books. At weekends my friends and I volunteer at an animal shelter.\n\nWhat do I value most? Honesty and kindness. I think a good person always tells the truth and helps others. My goal is to become an engineer, and I dream of building robots that can help people after disasters."
+  },
+  {
+   "type": "rule",
+   "title": "Граматика захоплень",
+   "text": "Після *be into, be keen on, be fond of, dream of* ставимо **іменник** або дієслово з **-ing**:\n*I'm into music. I'm keen on playing football. I dream of becoming a doctor.*\nТипова помилка: «I am keen on play» — так не кажуть. Правильно: *I am keen on playing.*"
+  },
+  {
+   "type": "table",
+   "title": "План монологу «Who I Am»",
+   "head": [
+    "Частина",
+    "Що сказати",
+    "Корисні фрази"
+   ],
+   "rows": [
+    [
+     "1. Intro",
+     "ім'я, вік, звідки ти",
+     "My name is … I'm … years old. I'm from …"
+    ],
+    [
+     "2. Family",
+     "з ким живеш",
+     "I live with …"
+    ],
+    [
+     "3. Interests",
+     "захоплення, гуртки",
+     "I'm into … I'm keen on …ing. In my free time I …"
+    ],
+    [
+     "4. Values",
+     "що цінуєш і чому",
+     "I value … because … What matters to me is …"
+    ],
+    [
+     "5. Dreams",
+     "мета і мрія",
+     "My goal is to … I dream of …ing."
+    ]
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Слова-зв'язки роблять монолог плавним: *first of all* (насамперед), *also* (також), *what is more* (крім того), *that's why* (ось чому), *in the future* (у майбутньому)."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай слова з перекладом.",
+   "pairs": [
+    [
+     "to value",
+     "цінувати"
+    ],
+    [
+     "honesty",
+     "чесність"
+    ],
+    [
+     "goal",
+     "мета"
+    ],
+    [
+     "hometown",
+     "рідне місто"
+    ],
+    [
+     "kindness",
+     "доброта"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Обери правильний варіант: I'm keen on ... football.",
+   "options": [
+    "playing",
+    "play",
+    "to play",
+    "played"
+   ],
+   "answer": 0,
+   "explain": "Після keen on вживаємо форму з -ing: keen on playing."
+  },
+  {
+   "type": "truefalse",
+   "q": "За текстом «This Is Me», чи правильні твердження?",
+   "items": [
+    {
+     "text": "Sofiia is from Poltava.",
+     "answer": true
+    },
+    {
+     "text": "She goes to a robotics club every day.",
+     "answer": false
+    },
+    {
+     "text": "She volunteers at an animal shelter.",
+     "answer": true
+    },
+    {
+     "text": "She values honesty and kindness.",
+     "answer": true
+    },
+    {
+     "text": "Sofiia wants to become a doctor.",
+     "answer": false
+    }
+   ]
+  },
+  {
+   "type": "fill",
+   "q": "Встав слово зі словника.",
+   "text": "I'm {into} photography. My {goal} is to win a contest. I {dream} of visiting Japan. I {value} my friends because they support me."
+  },
+  {
+   "type": "order",
+   "q": "Розстав частини монологу в логічному порядку.",
+   "items": [
+    "My name is Ivan and I'm fifteen.",
+    "I live with my mum and my grandma.",
+    "I'm into football and I'm keen on drawing comics.",
+    "I value freedom and honesty.",
+    "In the future I dream of becoming an architect."
+   ]
+  },
+  {
+   "type": "sort",
+   "q": "Розподіли слова: це інтереси (захоплення) чи цінності?",
+   "groups": {
+    "Interests": [
+     "robotics",
+     "football",
+     "drawing"
+    ],
+    "Values": [
+     "honesty",
+     "kindness",
+     "freedom"
+    ]
+   }
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай вголос перший абзац тексту, а потім розкажи те саме про себе.",
+   "text": "Hi! My name is Sofiia and I'm fourteen. My hometown is Poltava, a green city in the centre of Ukraine. I live with my parents and my younger brother.",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "choice",
+   "q": "Обери правильне речення.",
+   "options": [
+    "I dream of becoming an engineer.",
+    "I dream of become an engineer.",
+    "I dream to becoming an engineer.",
+    "I dreaming of an engineer."
+   ],
+   "answer": 0,
+   "explain": "dream of + -ing: dream of becoming."
+  },
+  {
+   "type": "fill",
+   "q": "Переклади слова англійською.",
+   "text": "свобода — {freedom}; доброта — {kindness}; рідне місто — {hometown}"
+  },
+  {
+   "type": "text",
+   "q": "Напиши англійською монолог «Who I Am» (8–10 речень) за планом з уроку: про себе, родину, інтереси, цінності й мрію. Використай щонайменше 5 слів зі словника і 2 слова-зв'язки. Потім розкажи його вголос дорослому.",
+   "sample": "My name is Andrii and I'm fourteen. I'm from Lviv, a beautiful old city in the west of Ukraine. I live with my parents and my older sister. First of all, I'm really into football: I play in a school team. I'm also keen on drawing comics. I value honesty and kindness, that's why I try to help my friends. What is more, I volunteer at a local library. My goal is to study architecture. In the future I dream of designing modern schools.",
+   "min": 300
+  }
+ ],
+ "reflection": [
+  "Що найлегше було розповісти про себе англійською, а що — найважче?",
+  "Які нові слова ти використаєш у розмові з друзями?"
+ ]
+}

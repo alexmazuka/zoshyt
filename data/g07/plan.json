@@ -1,8 +1,8 @@
 {
 "grade": "g07",
-"generated": "2026-10-03",
+"generated": "2026-10-28",
 "total": 400,
-"written": 29,
+"written": 47,
 "lessons": [
 {
 "id": "ukrlit-w01-d2",
@@ -353,7 +353,7 @@
 "title": "Козацька пісня «Ой у лузі та ще й при березі»",
 "brief": "образ козака, художні засоби, ритм і повтори",
 "file": "data/g07/lessons/ukrlit/ukrlit-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "geom-w02-d2",
@@ -366,7 +366,7 @@
 "title": "Відрізок і його довжина",
 "brief": "вимірювання відрізків, властивість довжини, рівні відрізки",
 "file": "data/g07/lessons/geom/geom-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "phys-w02-d2",
@@ -379,7 +379,7 @@
 "title": "Фізичні величини та їх вимірювання",
 "brief": "одиниці СІ, кратні й частинні одиниці, ціна поділки, похибка",
 "file": "data/g07/lessons/phys/phys-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "geo-w02-d2",
@@ -392,7 +392,7 @@
 "title": "Карта — джерело географічних знань",
 "brief": "види карт, масштаб, картографічні проєкції",
 "file": "data/g07/lessons/geo/geo-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "zarlit-w02-d2",
@@ -405,7 +405,7 @@
 "title": "«Король Лір і його дочки»: образи та мораль",
 "brief": "характери дочок, батьківська любов, фантастичне і реальне",
 "file": "data/g07/lessons/zarlit/zarlit-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d3",
@@ -418,7 +418,7 @@
 "title": "Повторення. Лексикологія і фразеологія",
 "brief": "лексичне значення, синоніми, антоніми, омоніми, фразеологізми в мовленні",
 "file": "data/g07/lessons/ukr/ukr-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "alg-w02-d3",
@@ -431,7 +431,7 @@
 "title": "Повторення. Відсотки",
 "brief": "знаходження відсотка від числа і числа за відсотком, задачі",
 "file": "data/g07/lessons/alg/alg-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d3",
@@ -444,7 +444,7 @@
 "title": "Diagnostic test",
 "brief": "діагностувальна робота: граматика, лексика, читання",
 "file": "data/g07/lessons/eng/eng-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "chem-w02-d3",
@@ -457,7 +457,7 @@
 "title": "Практична робота «Правила безпеки. Будова полум'я»",
 "brief": "нагрівання, будова полум'я, гасіння спиртівки",
 "file": "data/g07/lessons/chem/chem-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "vsist-w02-d3",
@@ -483,7 +483,7 @@
 "title": "Розвиток мовлення. Опис зовнішності козака",
 "brief": "твір-опис з цитатами з козацьких пісень, елементи розповіді",
 "file": "data/g07/lessons/ukrlit/ukrlit-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "geom-w02-d4",
@@ -496,7 +496,7 @@
 "title": "Задачі на довжину відрізка",
 "brief": "середина відрізка, задачі на обчислення довжин",
 "file": "data/g07/lessons/geom/geom-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "phys-w02-d4",
@@ -509,7 +509,7 @@
 "title": "Експериментальна робота «Вимірювання розмірів малих тіл»",
 "brief": "метод рядів, мікрометр, розрахунок похибки",
 "file": "data/g07/lessons/phys/phys-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "bio-w02-d4",
@@ -522,7 +522,7 @@
 "title": "Ознаки живого. Рівні організації життя",
 "brief": "обмін речовин, ріст, розмноження, подразливість; молекулярний — біосферний рівні",
 "file": "data/g07/lessons/bio/bio-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "zarlit-w02-d4",
@@ -535,7 +535,7 @@
 "title": "Літературна балада. Ф. Шиллер «Рукавичка»",
 "brief": "історія створення, сюжет, лицарська честь",
 "file": "data/g07/lessons/zarlit/zarlit-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d5",
@@ -548,7 +548,7 @@
 "title": "Повторення. Іменник і прикметник",
 "brief": "рід, число, відмінок іменників; розряди і ступені порівняння прикметників, правопис",
 "file": "data/g07/lessons/ukr/ukr-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "alg-w02-d5",
@@ -561,7 +561,7 @@
 "title": "Повторення. Відношення і пропорції",
 "brief": "основна властивість пропорції, пряма й обернена пропорційність",
 "file": "data/g07/lessons/alg/alg-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d5",
@@ -574,7 +574,7 @@
 "title": "Personality adjectives",
 "brief": "прикметники характеру: friendly, shy, reliable; опис друга",
 "file": "data/g07/lessons/eng/eng-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "geo-w02-d5",
@@ -587,7 +587,7 @@
 "title": "Градусна сітка. Географічні координати",
 "brief": "широта і довгота, визначення координат за картою",
 "file": "data/g07/lessons/geo/geo-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "istu-w02-d5",

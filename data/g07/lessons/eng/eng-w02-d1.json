@@ -106,6 +106,12 @@
    ]
   },
   {
+   "type": "figure",
+   "svg": "<svg viewBox=\"0 0 480 150\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"><line x1=\"20\" y1=\"80\" x2=\"460\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"2\"/><polygon points=\"460,74 472,80 460,86\" fill=\"currentColor\"/><rect x=\"20\" y=\"60\" width=\"380\" height=\"40\" fill=\"#E4E9F9\" opacity=\"0.6\"/><circle cx=\"40\" cy=\"80\" r=\"6\" fill=\"#2A45B0\"/><text x=\"40\" y=\"110\" text-anchor=\"middle\" fill=\"currentColor\">in 2024</text><circle cx=\"140\" cy=\"80\" r=\"6\" fill=\"#2A45B0\"/><text x=\"140\" y=\"110\" text-anchor=\"middle\" fill=\"currentColor\">last week</text><circle cx=\"240\" cy=\"80\" r=\"6\" fill=\"#2A45B0\"/><text x=\"240\" y=\"110\" text-anchor=\"middle\" fill=\"currentColor\">two days ago</text><circle cx=\"330\" cy=\"80\" r=\"6\" fill=\"#2A45B0\"/><text x=\"330\" y=\"110\" text-anchor=\"middle\" fill=\"currentColor\">yesterday</text><line x1=\"420\" y1=\"58\" x2=\"420\" y2=\"102\" stroke=\"#D23F58\" stroke-width=\"3\"/><text x=\"420\" y=\"122\" text-anchor=\"middle\" fill=\"#D23F58\" font-weight=\"bold\">now</text><text x=\"210\" y=\"40\" text-anchor=\"middle\" fill=\"#2A45B0\" font-weight=\"bold\">Past Simple: I watched, I went, I didn't see</text><text x=\"210\" y=\"140\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">минуле — дія завершилася</text></svg>",
+   "alt": "Стрічка часу: ліворуч минуле з позначками in 2024, last week, two days ago, yesterday, праворуч червона риска now; над минулим підпис Past Simple",
+   "caption": "Слова-маркери Past Simple позначають завершені моменти в минулому, ліворуч від «now» (зараз)."
+  },
+  {
    "type": "tip",
    "text": "Правило-страж: після did дієслово завжди в початковій формі. Якщо хочеш написати Did you went — зупинися і прибери закінчення."
   }

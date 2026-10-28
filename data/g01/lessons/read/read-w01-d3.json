@@ -34,6 +34,12 @@
    "text": "У кінці речення на письмі ставимо **крапку**, якщо ми розповідаємо. А питаємо — ставимо **знак питання**. Речення на письмі починаємо з **великої букви**."
   },
   {
+   "type": "figure",
+   "svg": "<svg viewBox='0 0 320 150' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><text x='20' y='24' font-size='15' fill='currentColor'>Кіт спить.</text><rect x='20' y='32' width='70' height='30' rx='4' fill='#E4E9F9' stroke='#2A45B0' stroke-width='2'/><line x1='28' y1='38' x2='28' y2='56' stroke='#D23F58' stroke-width='3' stroke-linecap='round'/><rect x='100' y='32' width='70' height='30' rx='4' fill='#E4E9F9' stroke='#2A45B0' stroke-width='2'/><circle cx='183' cy='58' r='4' fill='#D23F58'/><text x='210' y='52' font-size='14' fill='currentColor'>розповідаємо</text><text x='20' y='97' font-size='15' fill='currentColor'>Кіт спить?</text><rect x='20' y='105' width='70' height='30' rx='4' fill='#E4E9F9' stroke='#2A45B0' stroke-width='2'/><line x1='28' y1='111' x2='28' y2='129' stroke='#D23F58' stroke-width='3' stroke-linecap='round'/><rect x='100' y='105' width='70' height='30' rx='4' fill='#E4E9F9' stroke='#2A45B0' stroke-width='2'/><text x='178' y='135' font-size='22' font-weight='bold' fill='#D23F58'>?</text><text x='210' y='125' font-size='14' fill='currentColor'>питаємо</text></svg>",
+   "caption": "Схеми речень. Рисочка в першому прямокутнику нагадує: речення починаємо з великої букви. У кінці — крапка, коли розповідаємо, або знак питання, коли питаємо.",
+   "alt": "Дві схеми речень по два прямокутники. У першому прямокутнику — червона рисочка. Після першої схеми стоїть крапка, після другої — знак питання."
+  },
+  {
    "type": "tip",
    "text": "Говори повним реченням: не «Хліб», а «Я хочу хліба»."
   }

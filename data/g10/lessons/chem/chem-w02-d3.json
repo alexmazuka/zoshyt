@@ -41,6 +41,12 @@
       ]
     },
     {
+      "type": "figure",
+      "svg": "<svg viewBox='0 0 520 230' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif' font-size='14'><g fill='none' stroke='currentColor' stroke-dasharray='4 3'><circle cx='130' cy='115' r='35'/><circle cx='130' cy='115' r='60'/><circle cx='130' cy='115' r='85'/></g><circle cx='130' cy='115' r='16' fill='#D23F58'/><text x='130' y='120' text-anchor='middle' fill='#fff' font-weight='bold' font-size='13'>+11</text><circle cx='165.0' cy='115.0' r='5' fill='#2A45B0'/><circle cx='95.0' cy='115.0' r='5' fill='#2A45B0'/><circle cx='190.0' cy='115.0' r='5' fill='#2A45B0'/><circle cx='172.4' cy='72.6' r='5' fill='#2A45B0'/><circle cx='130.0' cy='55.0' r='5' fill='#2A45B0'/><circle cx='87.6' cy='72.6' r='5' fill='#2A45B0'/><circle cx='70.0' cy='115.0' r='5' fill='#2A45B0'/><circle cx='87.6' cy='157.4' r='5' fill='#2A45B0'/><circle cx='130.0' cy='175.0' r='5' fill='#2A45B0'/><circle cx='172.4' cy='157.4' r='5' fill='#2A45B0'/><circle cx='130.0' cy='30.0' r='5' fill='#2A45B0'/><g fill='currentColor'><text x='260' y='50' font-weight='bold' font-size='16'>Атом Натрію (Na)</text><text x='260' y='78'>порядковий номер 11: 11 протонів,</text><text x='260' y='96'>11 електронів</text><text x='260' y='126'>електрони за рівнями: 2, 8, 1</text><text x='260' y='156'>1s² 2s² 2p⁶ 3s¹</text><text x='260' y='186'>1 електрон на зовнішньому рівні —</text><text x='260' y='204'>Натрій легко його віддає (Na⁺)</text></g></svg>",
+      "alt": "Модель атома Натрію: ядро із зарядом +11 і три енергетичні рівні, на яких 2, 8 і 1 електрон; поруч електронна формула 1s2 2s2 2p6 3s1",
+      "caption": "Будова атома Натрію — приклад того, як за місцем у періодичній системі визначити кількість електронів на кожному енергетичному рівні."
+    },
+    {
       "type": "tip",
       "text": "Відповіді в числових завданнях округлюй до одного знака після коми там, де це зазначено. Урок можна проходити частинами."
     },

@@ -1,0 +1,235 @@
+{
+  "id": "eng-w02-d2",
+  "subject": "eng",
+  "title": "How are you? I'm fine",
+  "goal": "Навчитися питати англійською, як справи, і ввічливо відповідати: How are you? — I'm fine, thank you.",
+  "minutes": 20,
+  "terms": {},
+  "theory": [
+    {
+      "type": "p",
+      "text": "Дорослий читає: Ми вже вміємо вітатися (Hello!) і знайомитися (I'm Sam). Коли друзі зустрічаються, вони ще й питають: «Як справи?» Сьогодні навчимося питати це англійською і ввічливо відповідати."
+    },
+    {
+      "type": "vocab",
+      "title": "Нові слова",
+      "items": [
+        {
+          "en": "How are you?",
+          "uk": "Як справи? Як ти?",
+          "ex": "Hello, Anna! How are you?"
+        },
+        {
+          "en": "I'm fine",
+          "uk": "у мене все добре",
+          "ex": "I'm fine, thank you."
+        },
+        {
+          "en": "thank you",
+          "uk": "дякую",
+          "ex": "Thank you, Sam!"
+        },
+        {
+          "en": "thanks",
+          "uk": "дякую (коротко)",
+          "ex": "I'm OK, thanks."
+        },
+        {
+          "en": "And you?",
+          "uk": "А ти?",
+          "ex": "I'm fine. And you?"
+        },
+        {
+          "en": "I'm OK",
+          "uk": "у мене все нормально",
+          "ex": "I'm OK, thanks."
+        },
+        {
+          "en": "great",
+          "uk": "чудово",
+          "ex": "I'm great!"
+        },
+        {
+          "en": "happy",
+          "uk": "щасливий, радий",
+          "ex": "I'm happy!"
+        },
+        {
+          "en": "sad",
+          "uk": "сумний",
+          "ex": "I'm sad."
+        }
+      ]
+    },
+    {
+      "type": "rule",
+      "title": "Запам'ятай",
+      "text": "Питаємо: **How are you?**\nВідповідаємо: **I'm fine, thank you.** або **I'm OK, thanks.**\nА потім питаємо друга: **And you?**"
+    },
+    {
+      "type": "image",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Happy_Children.jpg",
+      "alt": "Два хлопчики сидять поруч і весело сміються.",
+      "caption": "Хлопчики сміються. Якщо їх запитати How are you?, вони скажуть: I'm great! I'm happy!",
+      "credit": "White77",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Happy_Children.jpg"
+    },
+    {
+      "type": "dialogue",
+      "title": "Sam і Anna зустрілися",
+      "lang": "en",
+      "lines": [
+        {
+          "who": "Sam",
+          "text": "Hello, Anna!"
+        },
+        {
+          "who": "Anna",
+          "text": "Hi, Sam! How are you?"
+        },
+        {
+          "who": "Sam",
+          "text": "I'm fine, thank you. And you?"
+        },
+        {
+          "who": "Anna",
+          "text": "I'm great, thanks!"
+        },
+        {
+          "who": "Sam",
+          "text": "Goodbye, Anna!"
+        },
+        {
+          "who": "Anna",
+          "text": "Bye, Sam!"
+        }
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "How are you? читається приблизно «гау а ю», I'm fine — «айм файн», thank you — «сенк ю» (кінчик язика легенько між зубами). Повторюй за дорослим і усміхайся!"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "speak",
+      "q": "Дорослий читає: скажи вголос питання і відповідь.",
+      "text": "How are you? I'm fine, thank you. And you?",
+      "lang": "en"
+    },
+    {
+      "type": "match",
+      "q": "З'єднай англійське з українським.",
+      "pairs": [
+        [
+          "How are you?",
+          "Як справи?"
+        ],
+        [
+          "I'm fine",
+          "у мене все добре"
+        ],
+        [
+          "thank you",
+          "дякую"
+        ],
+        [
+          "And you?",
+          "А ти?"
+        ],
+        [
+          "sad",
+          "сумний"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "q": "Тебе питають: How are you? Що відповіси?",
+      "options": [
+        "I'm fine, thank you.",
+        "What's your name?",
+        "Good night!"
+      ],
+      "answer": 0,
+      "explain": "I'm fine, thank you — «У мене все добре, дякую»."
+    },
+    {
+      "type": "choice",
+      "q": "Як англійською спитати друга, як у нього справи?",
+      "options": [
+        "Goodbye!",
+        "How are you?",
+        "I'm Sam."
+      ],
+      "answer": 1,
+      "explain": "How are you? — «Як справи?»."
+    },
+    {
+      "type": "order",
+      "q": "Розстав репліки діалогу в правильному порядку.",
+      "items": [
+        "Hello!",
+        "How are you?",
+        "I'm fine, thank you. And you?",
+        "I'm OK, thanks."
+      ]
+    },
+    {
+      "type": "fill",
+      "q": "Допиши слова з діалогу.",
+      "text": "How {are} you? I'm {fine}, thank {you}."
+    },
+    {
+      "type": "truefalse",
+      "q": "Так чи ні?",
+      "items": [
+        {
+          "text": "Thank you означає «дякую».",
+          "answer": true
+        },
+        {
+          "text": "How are you? означає «Як тебе звати?».",
+          "answer": false
+        },
+        {
+          "text": "I'm happy означає «я радий».",
+          "answer": true
+        },
+        {
+          "text": "Sad означає «чудово».",
+          "answer": false
+        }
+      ]
+    }
+  ],
+  "homework": [
+    {
+      "type": "choice",
+      "q": "Що кажемо, щоб подякувати?",
+      "options": [
+        "thank you",
+        "hello",
+        "sad"
+      ],
+      "answer": 0,
+      "explain": "Thank you — «дякую»."
+    },
+    {
+      "type": "fill",
+      "q": "Допиши слово.",
+      "text": "— How are you? — I'm {fine|OK|great}, thanks. {And} you?"
+    },
+    {
+      "type": "speak",
+      "q": "Дорослий читає: зранку спитай кожного вдома англійською, як справи, а потім розкажи про себе.",
+      "text": "Hello! How are you? I'm fine, thank you. And you?",
+      "lang": "en"
+    }
+  ],
+  "reflection": [
+    "Як англійською спитати «Як справи?»",
+    "Кого ти сьогодні спитав(-ла) How are you?"
+  ]
+}

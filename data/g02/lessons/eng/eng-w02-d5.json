@@ -1,0 +1,294 @@
+{
+ "id": "eng-w02-d5",
+ "subject": "eng",
+ "title": "The English alphabet: Aa–Mm",
+ "goal": "Вивчити назви англійських літер від Aa до Mm і слова, що починаються з кожної з них.",
+ "minutes": 25,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Дорослий читає: в англійській абетці (alphabet) 26 літер. Сьогодні вивчимо першу половину — від Aa до Mm. Кожна літера має **назву** (її співають у пісеньці-абетці) і **звук** у слові."
+  },
+  {
+   "type": "figure",
+   "svg": "<svg viewBox=\"0 0 350 112\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><circle cx=\"25\" cy=\"32\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#2A45B0\" stroke-width=\"3\"/><text x=\"25\" y=\"38\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#2A45B0\">Aa</text><circle cx=\"75\" cy=\"32\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#D23F58\" stroke-width=\"3\"/><text x=\"75\" y=\"38\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#D23F58\">Bb</text><circle cx=\"125\" cy=\"32\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#1D7449\" stroke-width=\"3\"/><text x=\"125\" y=\"38\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#1D7449\">Cc</text><circle cx=\"175\" cy=\"32\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#2A45B0\" stroke-width=\"3\"/><text x=\"175\" y=\"38\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#2A45B0\">Dd</text><circle cx=\"225\" cy=\"32\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#D23F58\" stroke-width=\"3\"/><text x=\"225\" y=\"38\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#D23F58\">Ee</text><circle cx=\"275\" cy=\"32\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#1D7449\" stroke-width=\"3\"/><text x=\"275\" y=\"38\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#1D7449\">Ff</text><circle cx=\"325\" cy=\"32\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#2A45B0\" stroke-width=\"3\"/><text x=\"325\" y=\"38\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#2A45B0\">Gg</text><circle cx=\"50\" cy=\"84\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#D23F58\" stroke-width=\"3\"/><text x=\"50\" y=\"90\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#D23F58\">Hh</text><circle cx=\"100\" cy=\"84\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#1D7449\" stroke-width=\"3\"/><text x=\"100\" y=\"90\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#1D7449\">Ii</text><circle cx=\"150\" cy=\"84\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#2A45B0\" stroke-width=\"3\"/><text x=\"150\" y=\"90\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#2A45B0\">Jj</text><circle cx=\"200\" cy=\"84\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#D23F58\" stroke-width=\"3\"/><text x=\"200\" y=\"90\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#D23F58\">Kk</text><circle cx=\"250\" cy=\"84\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#1D7449\" stroke-width=\"3\"/><text x=\"250\" y=\"90\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#1D7449\">Ll</text><circle cx=\"300\" cy=\"84\" r=\"22\" fill=\"#FFFFFF\" stroke=\"#2A45B0\" stroke-width=\"3\"/><text x=\"300\" y=\"90\" text-anchor=\"middle\" font-size=\"17\" font-weight=\"bold\" fill=\"#2A45B0\">Mm</text></svg>",
+   "caption": "Перша половина англійської абетки: від Aa до Mm.",
+   "alt": "Тринадцять кружечків із літерами: Aa, Bb, Cc, Dd, Ee, Ff, Gg у першому ряду; Hh, Ii, Jj, Kk, Ll, Mm у другому."
+  },
+  {
+   "type": "table",
+   "title": "Як називаються літери",
+   "head": [
+    "Літера",
+    "Назва",
+    "Слово"
+   ],
+   "rows": [
+    [
+     "Aa",
+     "[ей]",
+     "apple"
+    ],
+    [
+     "Bb",
+     "[бі]",
+     "ball"
+    ],
+    [
+     "Cc",
+     "[сі]",
+     "cat"
+    ],
+    [
+     "Dd",
+     "[ді]",
+     "dog"
+    ],
+    [
+     "Ee",
+     "[і]",
+     "egg"
+    ],
+    [
+     "Ff",
+     "[еф]",
+     "fish"
+    ],
+    [
+     "Gg",
+     "[джі]",
+     "goat"
+    ],
+    [
+     "Hh",
+     "[ейч]",
+     "hat"
+    ],
+    [
+     "Ii",
+     "[ай]",
+     "insect"
+    ],
+    [
+     "Jj",
+     "[джей]",
+     "jam"
+    ],
+    [
+     "Kk",
+     "[кей]",
+     "kite"
+    ],
+    [
+     "Ll",
+     "[ел]",
+     "lion"
+    ],
+    [
+     "Mm",
+     "[ем]",
+     "monkey"
+    ]
+   ]
+  },
+  {
+   "type": "vocab",
+   "title": "Слова від A до M",
+   "items": [
+    {
+     "en": "apple",
+     "uk": "яблуко",
+     "ex": "A is for apple."
+    },
+    {
+     "en": "ball",
+     "uk": "м'яч",
+     "ex": "B is for ball."
+    },
+    {
+     "en": "cat",
+     "uk": "кіт",
+     "ex": "C is for cat."
+    },
+    {
+     "en": "dog",
+     "uk": "собака",
+     "ex": "D is for dog."
+    },
+    {
+     "en": "egg",
+     "uk": "яйце",
+     "ex": "E is for egg."
+    },
+    {
+     "en": "fish",
+     "uk": "риба",
+     "ex": "F is for fish."
+    },
+    {
+     "en": "goat",
+     "uk": "коза",
+     "ex": "G is for goat."
+    },
+    {
+     "en": "hat",
+     "uk": "капелюх",
+     "ex": "H is for hat."
+    },
+    {
+     "en": "kite",
+     "uk": "повітряний змій",
+     "ex": "K is for kite."
+    },
+    {
+     "en": "lion",
+     "uk": "лев",
+     "ex": "L is for lion."
+    },
+    {
+     "en": "monkey",
+     "uk": "мавпа",
+     "ex": "M is for monkey."
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Starr-141103-5249-Malus_pumila-Red_Fuji_fruit-Maui_Lavender_Kula-Maui_%2824952897200%29.jpg/960px-Starr-141103-5249-Malus_pumila-Red_Fuji_fruit-Maui_Lavender_Kula-Maui_%2824952897200%29.jpg",
+   "alt": "Червоне яблуко лежить на долоні.",
+   "caption": "An apple — яблуко. Слово apple починається з літери Aa.",
+   "credit": "Forest and Kim Starr",
+   "license": "CC BY 3.0 us",
+   "page": "https://commons.wikimedia.org/wiki/File:Starr-141103-5249-Malus_pumila-Red_Fuji_fruit-Maui_Lavender_Kula-Maui_(24952897200).jpg"
+  },
+  {
+   "type": "rule",
+   "title": "Назва і звук — не завжди однакові",
+   "text": "Літера **Cc** називається [сі], а в слові **cat** звучить як [к].\nЛітера **Gg** називається [джі], а в слові **goat** звучить як [г].\nЛітера **Aa** називається [ей], а в слові **apple** звучить майже як [е]."
+  },
+  {
+   "type": "tip",
+   "text": "Співай пісеньку-абетку (Alphabet song) — так літери запам'ятовуються легше. Сьогодні співай до літери M."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай літеру зі словом.",
+   "pairs": [
+    [
+     "Aa",
+     "apple"
+    ],
+    [
+     "Bb",
+     "ball"
+    ],
+    [
+     "Cc",
+     "cat"
+    ],
+    [
+     "Dd",
+     "dog"
+    ],
+    [
+     "Ff",
+     "fish"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "З якої літери починається слово lion?",
+   "options": [
+    "Ll",
+    "Ii",
+    "Nn"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "order",
+   "q": "Розстав літери за абеткою.",
+   "items": [
+    "B",
+    "D",
+    "F",
+    "H",
+    "K"
+   ]
+  },
+  {
+   "type": "fill",
+   "q": "Допиши пропущені літери.",
+   "text": "A, B, {C}, D, E, {F}, G, H, I, {J}, K, L, {M}"
+  },
+  {
+   "type": "choice",
+   "q": "Як називається літера Hh?",
+   "options": [
+    "[ейч]",
+    "[аш]",
+    "[ен]"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "match",
+   "q": "З'єднай слово з перекладом.",
+   "pairs": [
+    [
+     "egg",
+     "яйце"
+    ],
+    [
+     "hat",
+     "капелюх"
+    ],
+    [
+     "kite",
+     "повітряний змій"
+    ],
+    [
+     "monkey",
+     "мавпа"
+    ]
+   ]
+  },
+  {
+   "type": "speak",
+   "q": "Проспівай або промов абетку від A до M.",
+   "text": "A, B, C, D, E, F, G, H, I, J, K, L, M",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "input",
+   "q": "Напиши англійською слово «яблуко».",
+   "answer": [
+    "apple",
+    "an apple"
+   ]
+  },
+  {
+   "type": "fill",
+   "q": "Допиши першу літеру слова.",
+   "text": "{d}og, {c}at, {f}ish, {b}all"
+  },
+  {
+   "type": "checklist",
+   "q": "Вдома.",
+   "items": [
+    "Я знайшов(ла) вдома 3 речі, англійські назви яких починаються на A–M (наприклад, apple, ball, egg).",
+    "Я назвав(ла) літери від Aa до Mm без підказки.",
+    "Я написав(ла) у зошиті великі й малі літери від Aa до Mm."
+   ]
+  }
+ ],
+ "reflection": [
+  "Яку літеру від A до M ти запам'ятав(ла) найкраще?",
+  "Яке нове англійське слово тобі сподобалося?"
+ ]
+}

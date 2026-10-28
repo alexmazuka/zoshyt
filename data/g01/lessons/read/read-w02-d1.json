@@ -25,6 +25,15 @@
    "caption": "Що робить? Біжить. Слово «біжить» — дія."
   },
   {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Running_Through_the_Grass.jpg",
+   "alt": "Світлий пес біжить зеленою травою на лузі.",
+   "caption": "Хто це? Пес (предмет). Який? Світлий (ознака). Що робить? Біжить (дія).",
+   "credit": "Melissagarcia17",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Running_Through_the_Grass.jpg"
+  },
+  {
    "type": "table",
    "title": "Три групи слів",
    "head": [

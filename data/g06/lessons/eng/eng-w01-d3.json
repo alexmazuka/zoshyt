@@ -28,6 +28,7 @@
       {"who": "Tom", "text": "Sounds nice! Do you know Kate? She is my new friend."},
       {"who": "Anna", "text": "Hi, Kate! I'm Anna. Nice to meet you."}
     ]},
+    {"type": "image", "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_%D0%91%D0%BB%D0%B8%D0%B7%D0%BD%D0%B8%D1%86%D1%96.jpg/960px-%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_%D0%91%D0%BB%D0%B8%D0%B7%D0%BD%D0%B8%D1%86%D1%96.jpg", "alt": "Зелені й золотаві гірські схили під хмарним небом, позаду — гора з пологою вершиною", "caption": "Українські Карпати, масив Близниця на Закарпатті. Так Tom розповідає про своє літо: *I was in the mountains with my family.* — Я був у горах із родиною. А де був(-ла) ти? Скажи англійською: *I was in/at …*", "credit": "Estolyarov", "license": "CC BY-SA 4.0", "page": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_%D0%91%D0%BB%D0%B8%D0%B7%D0%BD%D0%B8%D1%86%D1%96.jpg"},
     {"type": "tip", "text": "Дієслово **visit** у минулому часі має закінчення -ed: **visited**. Поки що запам'ятай цю форму як готову фразу: *I visited my grandma.* Детально минулий час ми вивчатимемо пізніше."},
     {"type": "rule", "title": "To be (бути) у теперішньому часі", "text": "I **am** (I'm) · he / she / it **is** (he's, she's, it's) · we / you / they **are** (we're, you're, they're).\nЗаперечення: I'm not, he **isn't**, we **aren't**.\nПитання: **Are** you ready? — Yes, I **am**. / No, I'm not."},
     {"type": "table", "title": "Introducing people", "head": ["Ситуація", "Що сказати"], "rows": [

@@ -1,0 +1,140 @@
+{
+ "id": "math-w02-d3",
+ "subject": "math",
+ "title": "Досліджуємо задачі: умова, запитання, розв'язання, відповідь",
+ "goal": "Розрізняти частини задачі і розв'язувати прості задачі на знаходження суми та остачі.",
+ "minutes": 25,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Дорослий читає: Задача — це маленька історія з числами, у якій треба щось дізнатися. Щоб розв'язати задачу, спершу розберемося, з яких частин вона складається."
+  },
+  {
+   "type": "rule",
+   "title": "Будова задачі",
+   "text": "**Умова** — що відомо.\n**Запитання** — що треба дізнатися.\n**Розв'язання** — дія з числами.\n**Відповідь** — що ми дізналися."
+  },
+  {
+   "type": "example",
+   "title": "Задача на суму",
+   "text": "У кошику 5 червоних яблук і 3 зелені. Скільки всього яблук у кошику?\n**Умова:** 5 червоних і 3 зелені яблука.\n**Запитання:** скільки всього яблук?\n**Розв'язання:** 5 + 3 = 8 (ябл.)\n**Відповідь:** у кошику 8 яблук."
+  },
+  {
+   "type": "figure",
+   "svg": "<svg viewBox=\"0 0 320 110\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><circle cx=\"30\" cy=\"70\" r=\"13\" fill=\"#D23F58\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"65\" cy=\"70\" r=\"13\" fill=\"#D23F58\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"100\" cy=\"70\" r=\"13\" fill=\"#D23F58\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"135\" cy=\"70\" r=\"13\" fill=\"#D23F58\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"170\" cy=\"70\" r=\"13\" fill=\"#D23F58\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"205\" cy=\"70\" r=\"13\" fill=\"#1D7449\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"240\" cy=\"70\" r=\"13\" fill=\"#1D7449\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"275\" cy=\"70\" r=\"13\" fill=\"#1D7449\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M15 44 V34 H290 V44\" fill=\"none\" stroke=\"#2A45B0\" stroke-width=\"2\"/><text x=\"152\" y=\"24\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#2A45B0\">?</text><text x=\"100\" y=\"103\" text-anchor=\"middle\" font-size=\"15\" fill=\"#D23F58\">5</text><text x=\"240\" y=\"103\" text-anchor=\"middle\" font-size=\"15\" fill=\"#1D7449\">3</text></svg>",
+   "caption": "5 червоних і 3 зелені яблука. Щоб дізнатися, скільки всього, додаємо: 5 + 3 = 8.",
+   "alt": "Вісім кружечків у ряд: п'ять червоних і три зелені. Над усіма — дужка зі знаком питання."
+  },
+  {
+   "type": "example",
+   "title": "Задача на остачу",
+   "text": "На тарілці було 9 пиріжків. Діти з'їли 4 пиріжки. Скільки пиріжків залишилося?\n**Розв'язання:** 9 − 4 = 5 (пир.)\n**Відповідь:** залишилося 5 пиріжків."
+  },
+  {
+   "type": "figure",
+   "svg": "<svg viewBox=\"0 0 320 100\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><circle cx=\"22\" cy=\"45\" r=\"13\" fill=\"#F2C200\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"56\" cy=\"45\" r=\"13\" fill=\"#F2C200\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"90\" cy=\"45\" r=\"13\" fill=\"#F2C200\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"124\" cy=\"45\" r=\"13\" fill=\"#F2C200\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"158\" cy=\"45\" r=\"13\" fill=\"#F2C200\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"192\" cy=\"45\" r=\"13\" fill=\"#F2C200\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"181\" y1=\"34\" x2=\"203\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"181\" y1=\"56\" x2=\"203\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"226\" cy=\"45\" r=\"13\" fill=\"#F2C200\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"215\" y1=\"34\" x2=\"237\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"215\" y1=\"56\" x2=\"237\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"260\" cy=\"45\" r=\"13\" fill=\"#F2C200\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"249\" y1=\"34\" x2=\"271\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"249\" y1=\"56\" x2=\"271\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"294\" cy=\"45\" r=\"13\" fill=\"#F2C200\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"283\" y1=\"34\" x2=\"305\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"283\" y1=\"56\" x2=\"305\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"80\" y=\"90\" text-anchor=\"middle\" font-size=\"14\" fill=\"currentColor\">залишилося ?</text><text x=\"239\" y=\"90\" text-anchor=\"middle\" font-size=\"14\" fill=\"#D23F58\">з'їли 4</text></svg>",
+   "caption": "Було 9 пиріжків, 4 з'їли (вони закреслені). Щоб дізнатися, скільки залишилося, віднімаємо: 9 − 4 = 5.",
+   "alt": "Дев'ять жовтих кружечків-пиріжків, чотири останні закреслено."
+  },
+  {
+   "type": "tip",
+   "text": "Слова-підказки: «усього», «разом», «стало» — часто додаємо; «залишилося», «забрали», «з'їли» — часто віднімаємо. Але завжди уяви, що відбувається в задачі."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай частину задачі з поясненням.",
+   "pairs": [
+    [
+     "умова",
+     "що відомо"
+    ],
+    [
+     "запитання",
+     "що треба дізнатися"
+    ],
+    [
+     "розв'язання",
+     "дія з числами"
+    ],
+    [
+     "відповідь",
+     "що ми дізналися"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Що в цій задачі є запитанням? «У Петрика 4 машинки. Тато подарував йому ще 2. Скільки машинок стало в Петрика?»",
+   "options": [
+    "Скільки машинок стало в Петрика?",
+    "У Петрика 4 машинки.",
+    "Тато подарував йому ще 2."
+   ],
+   "answer": 0,
+   "explain": "Запитання — це те, що треба дізнатися. Воно закінчується знаком питання."
+  },
+  {
+   "type": "number",
+   "q": "У вазі 6 троянд і 3 ромашки. Скільки всього квітів у вазі?",
+   "answer": 9,
+   "explain": "6 + 3 = 9 (кв.)"
+  },
+  {
+   "type": "number",
+   "q": "На гілці сиділо 10 горобців. 3 горобці полетіли. Скільки горобців залишилося на гілці?",
+   "answer": 7,
+   "explain": "10 − 3 = 7 (гор.)"
+  },
+  {
+   "type": "choice",
+   "q": "Яке розв'язання підходить до задачі? «На полиці 7 книжок. Мама поставила ще 2 книжки. Скільки книжок стало на полиці?»",
+   "options": [
+    "7 + 2 = 9",
+    "7 − 2 = 5",
+    "9 − 7 = 2"
+   ],
+   "answer": 0,
+   "explain": "Книжок стало більше — додаємо: 7 + 2 = 9."
+  },
+  {
+   "type": "order",
+   "q": "Розстав частини задачі по порядку.",
+   "items": [
+    "Умова",
+    "Запитання",
+    "Розв'язання",
+    "Відповідь"
+   ]
+  },
+  {
+   "type": "fill",
+   "q": "Подивись на малюнок: було 8 м'ячиків, 3 закотилися під диван (вони закреслені). Запиши розв'язання і відповідь.",
+   "figure": "<svg viewBox=\"0 0 300 80\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><circle cx=\"25\" cy=\"40\" r=\"13\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"61\" cy=\"40\" r=\"13\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"97\" cy=\"40\" r=\"13\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"133\" cy=\"40\" r=\"13\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"169\" cy=\"40\" r=\"13\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"205\" cy=\"40\" r=\"13\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"194\" y1=\"29\" x2=\"216\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"194\" y1=\"51\" x2=\"216\" y2=\"29\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"241\" cy=\"40\" r=\"13\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"230\" y1=\"29\" x2=\"252\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"230\" y1=\"51\" x2=\"252\" y2=\"29\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"277\" cy=\"40\" r=\"13\" fill=\"#2A45B0\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"266\" y1=\"29\" x2=\"288\" y2=\"51\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"266\" y1=\"51\" x2=\"288\" y2=\"29\" stroke=\"currentColor\" stroke-width=\"3\"/></svg>",
+   "text": "8 − 3 = {5}. Відповідь: залишилося {5} м'ячиків."
+  }
+ ],
+ "homework": [
+  {
+   "type": "number",
+   "q": "Бабуся спекла 4 пиріжки з вишнями і 5 пиріжків з яблуками. Скільки всього пиріжків спекла бабуся?",
+   "answer": 9,
+   "explain": "4 + 5 = 9 (пир.)"
+  },
+  {
+   "type": "fill",
+   "q": "У тата було 10 гривень. Він купив булочку за 6 гривень. Скільки гривень залишилося? Допиши розв'язання і відповідь.",
+   "text": "10 − 6 = {4} (грн). Відповідь: залишилося {4} гривні."
+  },
+  {
+   "type": "speak",
+   "q": "Придумай свою задачу про іграшки і розкажи її дорослому.",
+   "text": "Умова: … Запитання: скільки …? Розв'язання: … Відповідь: …"
+  }
+ ],
+ "reflection": [
+  "З яких частин складається задача?",
+  "Як ти зрозумів, коли треба додавати, а коли віднімати?"
+ ]
+}

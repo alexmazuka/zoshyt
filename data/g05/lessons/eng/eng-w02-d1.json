@@ -9,6 +9,7 @@
     {"type": "p", "text": "Це **вхідна діагностувальна робота**. Вона не для оцінки, а щоб побачити, що ти вже вмієш, а що варто повторити. Працюй самостійно, без підказок і словника."},
     {"type": "rule", "title": "Що треба пам'ятати перед роботою", "text": "Скорочена форма: I am = I'm, He is = He's, It is = It's, do not = don't.\nДієслово **to be**: I **am**, he/she/it **is**, we/you/they **are**.\nМножина: pen — pens, box — boxes.\nПитання про предмет: **What is this?** Про кількість: **How many …?**"},
     {"type": "reading", "title": "My new school", "genre": "Короткий текст", "text": "Hi! My name is Dan. I'm eleven. I'm from Lviv. This is my new school. It's big and beautiful. My classroom is on the second floor. There are twenty desks, a board and two windows. My best friend is Mia. She's twelve. She likes English and music. We have English on Monday, Wednesday and Friday. I like my school!"},
+    {"type": "image", "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lviv_school_11.jpg/960px-Lviv_school_11.jpg", "alt": "Велика цегляна будівля школи з високими вікнами й українським прапором над входом.", "caption": "Школа № 11 у Львові. Ден із тексту теж зі Львова і каже про свою школу: «It’s big and beautiful».", "credit": "Арсен Яковенко", "license": "CC BY-SA 3.0", "page": "https://commons.wikimedia.org/wiki/File:Lviv_school_11.jpg"},
     {"type": "tip", "text": "Спочатку прочитай текст двічі, а потім відповідай на питання. Якщо слово незнайоме, спробуй здогадатися за змістом."}
   ],
   "exercises": [

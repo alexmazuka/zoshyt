@@ -1,0 +1,309 @@
+{
+ "id": "eng-w02-d5",
+ "subject": "eng",
+ "title": "My friends. Питання і заперечення з to be",
+ "goal": "Навчитися ставити запитання з дієсловом to be, давати короткі відповіді й будувати заперечні речення, розповідаючи про друзів.",
+ "minutes": 35,
+ "terms": {},
+ "theory": [
+  {
+   "type": "p",
+   "text": "Минулого уроку ти розповідав про себе: I'm eleven. I'm from Ukraine. Сьогодні говоримо про **друзів**: як запитати про людину і як сказати, що щось **не так**."
+  },
+  {
+   "type": "vocab",
+   "title": "Friends — друзі",
+   "items": [
+    {
+     "en": "friend",
+     "uk": "друг, подруга",
+     "ex": "Max is my friend."
+    },
+    {
+     "en": "best friend",
+     "uk": "найкращий друг",
+     "ex": "Ira is my best friend."
+    },
+    {
+     "en": "classmate",
+     "uk": "однокласник, однокласниця",
+     "ex": "Tom is my classmate."
+    },
+    {
+     "en": "neighbour",
+     "uk": "сусід, сусідка",
+     "ex": "My neighbour is ten."
+    },
+    {
+     "en": "tall",
+     "uk": "високий",
+     "ex": "He is tall."
+    },
+    {
+     "en": "short",
+     "uk": "невисокий, низький",
+     "ex": "She isn't short."
+    },
+    {
+     "en": "happy",
+     "uk": "щасливий, радісний",
+     "ex": "We are happy."
+    },
+    {
+     "en": "sporty",
+     "uk": "спортивний",
+     "ex": "Is your friend sporty?"
+    },
+    {
+     "en": "ready",
+     "uk": "готовий",
+     "ex": "Are you ready?"
+    },
+    {
+     "en": "late",
+     "uk": "запізнілий; пізно",
+     "ex": "Sorry, I'm late!"
+    }
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Заперечення: not",
+   "text": "Щоб сказати «не», ставимо **not** після am / is / are:\nI am **not** = I'm not\nHe / She / It is **not** = isn't\nWe / You / They are **not** = aren't\n*Tom isn't tall. We aren't late. I'm not ready.*"
+  },
+  {
+   "type": "rule",
+   "title": "Питання і короткі відповіді",
+   "text": "У питанні **am / is / are стоїть на першому місці**, перед підметом:\nHe is sporty. → **Is he** sporty?\nКороткі відповіді:\n— Are you eleven? — Yes, I **am**. / No, I'm **not**.\n— Is she your friend? — Yes, she **is**. / No, she **isn't**.\n— Are they ready? — Yes, they **are**. / No, they **aren't**.\nУ стверджувальній короткій відповіді скорочення **не вживаємо**: Yes, I am (а не Yes, I'm)."
+  },
+  {
+   "type": "table",
+   "title": "Wh-questions — питання з питальними словами",
+   "head": [
+    "Питальне слово",
+    "Питання",
+    "Відповідь"
+   ],
+   "rows": [
+    [
+     "What",
+     "What is your friend's name?",
+     "His name is Dan."
+    ],
+    [
+     "How old",
+     "How old is he?",
+     "He's twelve."
+    ],
+    [
+     "Where … from",
+     "Where is he from?",
+     "He's from Odesa."
+    ],
+    [
+     "Who",
+     "Who is your best friend?",
+     "Ira is."
+    ],
+    [
+     "When",
+     "When is your birthday?",
+     "It's in May."
+    ]
+   ]
+  },
+  {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Friends_for_Ever.jpg/960px-Friends_for_Ever.jpg",
+   "alt": "Троє усміхнених хлопців стоять на траві поруч, двоє з них — із велосипедами.",
+   "caption": "Троє друзів із велосипедами. Опиши їх англійською: They are friends. Are they happy? — Yes, they are. Are they at school? — No, they aren't.",
+   "credit": "Hamed Saber",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Friends_for_Ever.jpg"
+  },
+  {
+   "type": "dialogue",
+   "title": "Who is your best friend?",
+   "lang": "en",
+   "lines": [
+    {
+     "who": "Kate",
+     "text": "Who is your best friend, Oleh?"
+    },
+    {
+     "who": "Oleh",
+     "text": "My best friend is Dan."
+    },
+    {
+     "who": "Kate",
+     "text": "Is he in our class?"
+    },
+    {
+     "who": "Oleh",
+     "text": "No, he isn't. He's my neighbour."
+    },
+    {
+     "who": "Kate",
+     "text": "How old is he?"
+    },
+    {
+     "who": "Oleh",
+     "text": "He's twelve."
+    },
+    {
+     "who": "Kate",
+     "text": "Is he sporty?"
+    },
+    {
+     "who": "Oleh",
+     "text": "Yes, he is! He's in the football team."
+    },
+    {
+     "who": "Kate",
+     "text": "Where is he from?"
+    },
+    {
+     "who": "Oleh",
+     "text": "He's from Odesa."
+    }
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Запам'ятай порядок слів: у розповідному реченні — **He is** tall, у питанні — **Is he** tall? Дієслово і підмет просто міняються місцями."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "speak",
+   "q": "Прочитай діалог вголос: спершу за Kate, потім за Oleh.",
+   "text": "Who is your best friend? My best friend is Dan. Is he in our class? No, he isn't. He's my neighbour. How old is he? He's twelve. Is he sporty? Yes, he is!",
+   "lang": "en"
+  },
+  {
+   "type": "fill",
+   "q": "Зроби речення заперечними: допиши isn't або aren't.",
+   "text": "Tom {isn't|is not} ten. My friends {aren't|are not} at home. It {isn't|is not} cold today. We {aren't|are not} late."
+  },
+  {
+   "type": "choice",
+   "q": "___ your brother sporty? — Yes, he is.",
+   "options": [
+    "Is",
+    "Are",
+    "Am",
+    "Be"
+   ],
+   "answer": 0,
+   "explain": "Brother = he, тому Is."
+  },
+  {
+   "type": "match",
+   "q": "З'єднай питання з короткою відповіддю.",
+   "pairs": [
+    [
+     "Are you eleven?",
+     "Yes, I am."
+    ],
+    [
+     "Is Kate your friend?",
+     "Yes, she is."
+    ],
+    [
+     "Are they from Poland?",
+     "No, they aren't."
+    ],
+    [
+     "Is it your bag?",
+     "No, it isn't."
+    ],
+    [
+     "Am I late?",
+     "No, you aren't."
+    ]
+   ]
+  },
+  {
+   "type": "order",
+   "q": "Розстав слова, щоб вийшло питання.",
+   "items": [
+    "Is",
+    "your",
+    "best",
+    "friend",
+    "tall?"
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "___ is your best friend? — My best friend is Ira.",
+   "options": [
+    "Who",
+    "What",
+    "Where",
+    "How old"
+   ],
+   "answer": 0,
+   "explain": "Питаємо про людину — Who (хто)."
+  },
+  {
+   "type": "truefalse",
+   "q": "Діалог. Так чи ні?",
+   "items": [
+    {
+     "text": "Dan is in Oleh's class.",
+     "answer": false
+    },
+    {
+     "text": "Dan is twelve.",
+     "answer": true
+    },
+    {
+     "text": "Dan is sporty.",
+     "answer": true
+    },
+    {
+     "text": "Dan is from Lviv.",
+     "answer": false
+    }
+   ],
+   "explain": "Ден — сусід Олега, а не однокласник; він з Одеси."
+  },
+  {
+   "type": "input",
+   "q": "Переклади англійською: Він не високий.",
+   "answer": [
+    "He isn't tall.",
+    "He is not tall.",
+    "He isn't tall",
+    "He is not tall",
+    "He’s not tall.",
+    "He's not tall."
+   ],
+   "explain": "Заперечення: is + not = isn't."
+  }
+ ],
+ "homework": [
+  {
+   "type": "fill",
+   "q": "Допиши Am, Is або Are на початку питання.",
+   "text": "{Are} you ready? {Is} Max at school? {Am} I late? {Are} your friends sporty?"
+  },
+  {
+   "type": "speak",
+   "q": "Дай вголос короткі відповіді про свого найкращого друга чи подругу.",
+   "text": "Is your best friend eleven? Yes, he is. / No, he isn't. Is your friend sporty? Are you classmates? Where is your friend from?",
+   "lang": "en"
+  },
+  {
+   "type": "text",
+   "q": "Напиши англійською 6 речень про свого найкращого друга або подругу: ім'я, вік, звідки, який він чи вона (tall, short, sporty, happy). Ужий хоча б одне заперечення і одне питання.",
+   "sample": "My best friend is Sofia. She is eleven. She is from Kyiv. She isn't tall, she is short. She is very sporty. Is she my classmate? Yes, she is!",
+   "min": 90
+  }
+ ],
+ "reflection": [
+  "Як утворити питання з to be?",
+  "Чим коротка відповідь Yes, I am відрізняється від I'm?"
+ ]
+}

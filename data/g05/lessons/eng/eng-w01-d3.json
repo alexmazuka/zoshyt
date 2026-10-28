@@ -20,6 +20,7 @@
       {"en": "My name is …", "uk": "Мене звати …", "ex": "My name is Oleh."},
       {"en": "Goodbye! / Bye!", "uk": "До побачення!", "ex": "Bye, see you tomorrow!"}
     ]},
+    {"type": "image", "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Waving_hello_%289468829996%29.jpg/960px-Waving_hello_%289468829996%29.jpg", "alt": "Велика група дітей і дорослих із велосипедами в парку радісно махає руками до фотографа.", "caption": "Діти махають руками й вітаються. Так англійською кажуть друзям: «Hello!» або «Hi!»", "credit": "Oregon Department of Transportation", "license": "CC BY 2.0", "page": "https://commons.wikimedia.org/wiki/File:Waving_hello_(9468829996).jpg"},
     {"type": "dialogue", "title": "Meeting a new classmate", "lang": "en", "lines": [
       {"who": "Anna", "text": "Hello! I'm Anna. What's your name?"},
       {"who": "Max", "text": "Hi, Anna! My name is Max. Nice to meet you."},

@@ -1,8 +1,8 @@
 {
 "grade": "g10",
-"generated": "2026-10-03",
+"generated": "2026-10-28",
 "total": 369,
-"written": 45,
+"written": 59,
 "lessons": [
 {
 "id": "ukrlit-w01-d2",
@@ -327,7 +327,7 @@
 "title": "Іван Нечуй-Левицький: життя і творчість",
 "brief": "біографія, естетичні погляди, «Кайдашева сім'я» — історія написання",
 "file": "data/g10/lessons/ukrlit/ukrlit-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "bio-w02-d2",
@@ -340,7 +340,7 @@
 "title": "Діагностувальна робота",
 "brief": "основні поняття біології 7–9 класів",
 "file": "data/g10/lessons/bio/bio-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "civic-w02-d2",
@@ -353,7 +353,7 @@
 "title": "Ідентичність особи: особиста і соціальна",
 "brief": "самовизначення, соціальні ролі, групи, цінності",
 "file": "data/g10/lessons/civic/civic-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "geom-w02-d2",
@@ -379,7 +379,7 @@
 "title": "Діагностувальна робота",
 "brief": "тест за курсом 5–9 класів: орфографія, пунктуація, лексика, морфологія",
 "file": "data/g10/lessons/ukr/ukr-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "phys-w02-d3",
@@ -392,7 +392,7 @@
 "title": "Механічний рух. Система відліку. Матеріальна точка",
 "brief": "тіло відліку, система координат, годинник, модель матеріальної точки",
 "file": "data/g10/lessons/phys/phys-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "chem-w02-d3",
@@ -444,7 +444,7 @@
 "title": "«Кайдашева сім'я»: сюжет і композиція",
 "brief": "соціально-побутова повість, родинний конфлікт, межа між дворами",
 "file": "data/g10/lessons/ukrlit/ukrlit-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "geo-w02-d4",
@@ -457,7 +457,7 @@
 "title": "Форми правління і державного устрою країн",
 "brief": "монархії, республіки, унітарні й федеративні держави",
 "file": "data/g10/lessons/geo/geo-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "inf-w02-d4",
@@ -470,7 +470,7 @@
 "title": "Інформаційне суспільство. Цифрова економіка",
 "brief": "роль ІТ, професії майбутнього, цифрові державні послуги («Дія»)",
 "file": "data/g10/lessons/inf/inf-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d4",
@@ -483,7 +483,7 @@
 "title": "Describing personality",
 "brief": "прикметники для опису характеру, протилежності, префікси un-, in-, dis-",
 "file": "data/g10/lessons/eng/eng-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "civic-w02-d4",
@@ -496,7 +496,7 @@
 "title": "Стереотипи, упередження, дискримінація",
 "brief": "види дискримінації, мова ворожнечі, як протидіяти",
 "file": "data/g10/lessons/civic/civic-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "zarlit-w02-d5",
@@ -522,7 +522,7 @@
 "title": "Діагностувальна робота",
 "brief": "задачі за курсом геометрії 7–9 класів",
 "file": "data/g10/lessons/geom/geom-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "phys-w02-d5",
@@ -535,7 +535,7 @@
 "title": "Траєкторія, шлях, переміщення",
 "brief": "векторні та скалярні величини, проєкції вектора",
 "file": "data/g10/lessons/phys/phys-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "bio-w02-d5",
@@ -548,7 +548,7 @@
 "title": "Елементний склад живих організмів",
 "brief": "макроелементи, мікроелементи, біологічна роль, нестача елементів",
 "file": "data/g10/lessons/bio/bio-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "chem-w02-d5",
@@ -561,7 +561,7 @@
 "title": "Предмет органічної хімії. Органічні речовини",
 "brief": "особливості органічних сполук, Карбон, природні і синтетичні речовини",
 "file": "data/g10/lessons/chem/chem-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w03-d1",
@@ -715,7 +715,7 @@
 "n": 4,
 "section": "Тема 1. Теорія будови органічних сполук",
 "title": "Теорія хімічної будови органічних сполук",
-"brief": "положення теорії О. Бутлерова, структурні формули, валентність Карбону",
+"brief": "положення теорії хімічної будови органічних сполук, структурні формули, валентність Карбону",
 "file": "data/g10/lessons/chem/chem-w03-d3.json",
 "exists": false
 },

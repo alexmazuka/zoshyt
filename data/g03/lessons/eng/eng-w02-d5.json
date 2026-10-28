@@ -1,0 +1,232 @@
+{
+ "id": "eng-w02-d5",
+ "subject": "eng",
+ "title": "What's your name? Знайомство",
+ "goal": "Навчитися знайомитися англійською: питати й називати ім'я, вік і звідки ти.",
+ "minutes": 35,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Починаємо новий розділ — «Я, моя родина та друзі». Перше, що роблять нові друзі, — знайомляться: називають ім'я, вік, розповідають, звідки вони. Сьогодні ти навчишся робити це англійською."
+  },
+  {
+   "type": "vocab",
+   "title": "Знайомство",
+   "items": [
+    {
+     "en": "name",
+     "uk": "ім'я",
+     "ex": "My name is Ann."
+    },
+    {
+     "en": "boy",
+     "uk": "хлопчик"
+    },
+    {
+     "en": "girl",
+     "uk": "дівчинка"
+    },
+    {
+     "en": "friend",
+     "uk": "друг, подруга"
+    },
+    {
+     "en": "How old…?",
+     "uk": "Скільки років…?"
+    },
+    {
+     "en": "years old",
+     "uk": "років (про вік)",
+     "ex": "I'm eight years old."
+    },
+    {
+     "en": "seven",
+     "uk": "сім"
+    },
+    {
+     "en": "eight",
+     "uk": "вісім"
+    },
+    {
+     "en": "nine",
+     "uk": "дев'ять"
+    },
+    {
+     "en": "from",
+     "uk": "з (звідки)",
+     "ex": "I'm from Ukraine."
+    },
+    {
+     "en": "Nice to meet you!",
+     "uk": "Приємно познайомитися!"
+    }
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Питаємо і відповідаємо",
+   "text": "**What's your name?** — Як тебе звати?\n— **My name is Ann.** / **I'm Ann.** — Мене звати Енн.\n**How old are you?** — Скільки тобі років?\n— **I'm eight.** / **I'm eight years old.** — Мені вісім (років).\n**Where are you from?** — Звідки ти?\n— **I'm from Ukraine.** — Я з України.\nWhat's = What is, I'm = I am."
+  },
+  {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Creative_Commons_Birthday_Cake_and_Candles_%284825652728%29.jpg/960px-Creative_Commons_Birthday_Cake_and_Candles_%284825652728%29.jpg",
+   "alt": "Святковий торт із кольоровими запаленими свічками на темному тлі",
+   "caption": "How old are you? — Скільки тобі років? На день народження на торті стільки свічок, скільки років іменинникові.",
+   "credit": "Pink Sherbet Photography from USA",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Creative_Commons_Birthday_Cake_and_Candles_(4825652728).jpg"
+  },
+  {
+   "type": "dialogue",
+   "title": "Nice to meet you!",
+   "lines": [
+    {
+     "who": "Olena",
+     "text": "Hello! What's your name?"
+    },
+    {
+     "who": "Tom",
+     "text": "Hi! My name is Tom. What's your name?"
+    },
+    {
+     "who": "Olena",
+     "text": "I'm Olena. I'm from Ukraine. How old are you?"
+    },
+    {
+     "who": "Tom",
+     "text": "I'm nine. And you?"
+    },
+    {
+     "who": "Olena",
+     "text": "I'm eight. Nice to meet you, Tom!"
+    },
+    {
+     "who": "Tom",
+     "text": "Nice to meet you too!"
+    }
+   ]
+  },
+  {
+   "type": "rule",
+   "title": "Про інших",
+   "text": "**What's his name?** — Як його звати? — **His name is Tom.**\n**What's her name?** — Як її звати? — **Her name is Kate.**\n**How old is he?** — **He is nine.**"
+  },
+  {
+   "type": "tip",
+   "text": "Імена й назви країн в англійській завжди пишемо з великої літери: Tom, Olena, Ukraine."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "match",
+   "q": "З'єднай запитання з відповіддю.",
+   "pairs": [
+    [
+     "What's your name?",
+     "My name is Ann."
+    ],
+    [
+     "How old are you?",
+     "I'm eight."
+    ],
+    [
+     "Where are you from?",
+     "I'm from Ukraine."
+    ],
+    [
+     "Nice to meet you!",
+     "Nice to meet you too!"
+    ]
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "Як сказати «Мені дев'ять років»?",
+   "options": [
+    "I'm nine.",
+    "I nine.",
+    "Nine I'm."
+   ],
+   "answer": 0
+  },
+  {
+   "type": "fill",
+   "q": "Доповни діалог.",
+   "text": "— What's your {name}? — My name is Taras. — How {old} are you? — I'm eight years {old}."
+  },
+  {
+   "type": "order",
+   "q": "Розстав репліки діалогу в правильному порядку.",
+   "items": [
+    "Hello! What's your name?",
+    "My name is Tom.",
+    "How old are you, Tom?",
+    "I'm nine.",
+    "Nice to meet you!"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "q": "Так чи ні?",
+   "items": [
+    {
+     "text": "What's = What is",
+     "answer": true
+    },
+    {
+     "text": "I'm = I am",
+     "answer": true
+    },
+    {
+     "text": "How old are you? — це запитання про ім'я.",
+     "answer": false
+    }
+   ],
+   "explain": "How old are you? — запитання про вік."
+  },
+  {
+   "type": "choice",
+   "q": "What's her name?",
+   "options": [
+    "Her name is Kate.",
+    "His name is Kate.",
+    "I'm Kate."
+   ],
+   "answer": 0,
+   "explain": "Her — про дівчинку: її ім'я."
+  },
+  {
+   "type": "speak",
+   "q": "Познайомся вголос: назви ім'я, вік і звідки ти. Можеш замінити слова на свої.",
+   "text": "Hello! My name is Olena. I'm eight years old. I'm from Ukraine. Nice to meet you!",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "fill",
+   "q": "Доповни розповідь Макса. Йому 9 років.",
+   "text": "Hello! My name {is} Max. I'm {nine|9} years old. I'm {from} Ukraine."
+  },
+  {
+   "type": "choice",
+   "q": "Як запитати хлопчика про вік?",
+   "options": [
+    "How old are you?",
+    "What's your name?",
+    "Where are you from?"
+   ],
+   "answer": 0
+  },
+  {
+   "type": "text",
+   "q": "Напиши англійською 4 речення про себе: ім'я, вік, звідки ти та як звати твого друга чи подругу.",
+   "sample": "My name is Daryna. I'm eight years old. I'm from Ukraine. My friend's name is Sofia.",
+   "min": 50
+  }
+ ],
+ "reflection": [
+  "Яке запитання для знайомства ти вже кажеш без підказки?",
+  "Як ти відповіси, коли тебе запитають про вік?"
+ ]
+}

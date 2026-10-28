@@ -44,6 +44,15 @@
    ]
   },
   {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Apples_in_basket_2018_G1.jpg/960px-Apples_in_basket_2018_G1.jpg",
+   "alt": "Плетений кошик, повний червоних яблук, стоїть на зеленій траві",
+   "caption": "Apples! I like apples. — Яблука! Я люблю яблука. (Фото зроблене на Вінниччині.)",
+   "credit": "George Chernilevsky",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Apples_in_basket_2018_G1.jpg"
+  },
+  {
    "type": "rule",
    "title": "I like… і some",
    "text": "I like apples. — Я люблю яблука.\nI like milk. — Я люблю молоко.\nI don't like fish. — Я не люблю рибу.\nDo you like cheese? — Ти любиш сир?\n**some** — трохи, декілька: some milk, some apples."

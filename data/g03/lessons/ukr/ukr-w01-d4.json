@@ -15,6 +15,12 @@
    "text": "Слова, які тісно пов'язані за змістом, утворюють **речення**. Кілька речень об'єднуємо в **текст**. Спільна думка в тексті називається **темою**."
   },
   {
+   "type": "figure",
+   "svg": "<svg viewBox=\"0 0 360 225\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"13\"> <defs><marker id=\"ar4\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0 L10 5 L0 10 z\" fill=\"currentColor\"/></marker></defs> <g fill=\"currentColor\" font-weight=\"bold\"><text x=\"8\" y=\"36\">Слова</text><text x=\"8\" y=\"100\">Речення</text><text x=\"8\" y=\"176\">Текст</text></g> <g fill=\"#E4E9F9\" stroke=\"#2A45B0\"> <rect x=\"80\" y=\"18\" width=\"58\" height=\"26\" rx=\"5\"/><rect x=\"146\" y=\"18\" width=\"34\" height=\"26\" rx=\"5\"/> <rect x=\"188\" y=\"18\" width=\"74\" height=\"26\" rx=\"5\"/><rect x=\"270\" y=\"18\" width=\"82\" height=\"26\" rx=\"5\"/> </g> <g fill=\"currentColor\"><text x=\"90\" y=\"36\">листя</text><text x=\"155\" y=\"36\">на</text><text x=\"196\" y=\"36\">деревах</text><text x=\"278\" y=\"36\">пожовкло</text></g> <line x1=\"216\" y1=\"48\" x2=\"216\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"2\" marker-end=\"url(#ar4)\"/> <rect x=\"80\" y=\"78\" width=\"272\" height=\"30\" rx=\"5\" fill=\"#E4E9F9\" stroke=\"#1D7449\"/> <text x=\"92\" y=\"98\" fill=\"currentColor\">Листя на деревах пожовкло.</text> <line x1=\"216\" y1=\"112\" x2=\"216\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"2\" marker-end=\"url(#ar4)\"/> <rect x=\"80\" y=\"142\" width=\"272\" height=\"78\" rx=\"5\" fill=\"#E4E9F9\" stroke=\"#D23F58\"/> <text x=\"216\" y=\"160\" fill=\"#D23F58\" font-weight=\"bold\" text-anchor=\"middle\">Осінь</text> <text x=\"92\" y=\"180\" fill=\"currentColor\">Настала осінь. Листя на деревах</text> <text x=\"92\" y=\"198\" fill=\"currentColor\">пожовкло. Діти пішли до школи.</text> </svg>",
+   "caption": "Зі слів складаємо речення, а з речень, об'єднаних однією темою, — текст.",
+   "alt": "Схема: окремі слова «листя», «на», «деревах», «пожовкло» стрілкою ведуть до речення «Листя на деревах пожовкло.», а воно — до тексту з заголовком «Осінь»"
+  },
+  {
    "type": "rule",
    "title": "Ознаки тексту",
    "text": "1) Усі речення розповідають про одне і те саме (одна тема).\n2) Речення йдуть у правильному порядку.\n3) Текст можна озаглавити."

@@ -50,6 +50,15 @@
    "text": "I get up at seven every day. (звичка)\nI am doing my homework now. (зараз)\nWater boils at 100 degrees. (факт)\nShe is staying with us this week. (тимчасово)"
   },
   {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Children_playing_football_01.jpg/960px-Children_playing_football_01.jpg",
+   "alt": "Хлопці грають у футбол на вулиці: один б'є по м'ячу, інші біжать за ним",
+   "caption": "Що відбувається на фото саме зараз? The boys are playing football. One boy is kicking the ball. А якщо це звичка: They play football every Saturday.",
+   "credit": "Francis ackson soko",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Children_playing_football_01.jpg"
+  },
+  {
    "type": "rule",
    "title": "Дієслова стану",
    "text": "Дієслова, що виражають стан, а не дію (know, like, love, want, need, understand, have = мати), зазвичай **не вживаються в Continuous**. Кажемо: I know the answer, а не I am knowing."

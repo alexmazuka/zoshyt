@@ -1,8 +1,8 @@
 {
 "grade": "g01",
-"generated": "2026-10-03",
+"generated": "2026-10-28",
 "total": 247,
-"written": 17,
+"written": 28,
 "lessons": [
 {
 "id": "read-w01-d2",
@@ -223,7 +223,7 @@
 "title": "Склад. Поділ слів на склади",
 "brief": "склад, кількість складів у слові, плескання, складові схеми",
 "file": "data/g01/lessons/read/read-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d2",
@@ -249,7 +249,7 @@
 "title": "Розташування предметів: між, перед, за, поруч, усередині",
 "brief": "опис розташування предметів на малюнку, ігри на орієнтування",
 "file": "data/g01/lessons/math/math-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d2",
@@ -262,7 +262,7 @@
 "title": "How are you? I'm fine",
 "brief": "запитання про справи, ввічливі відповіді, рольова гра",
 "file": "data/g01/lessons/eng/eng-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d3",
@@ -275,7 +275,7 @@
 "title": "Письмо елементів у сполученні",
 "brief": "поєднання прямих, заокруглень і петель у рядку, безвідривне письмо",
 "file": "data/g01/lessons/ukr/ukr-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "math-w02-d3",
@@ -288,7 +288,7 @@
 "title": "Лічба предметів. Кількісна і порядкова лічба",
 "brief": "скільки? котрий? лічба зліва направо, перший, другий, останній",
 "file": "data/g01/lessons/math/math-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "yds-w02-d3",
@@ -301,7 +301,7 @@
 "title": "Моє робоче місце. Шкільне приладдя",
 "brief": "порядок на парті, ранець, бережливе ставлення до речей",
 "file": "data/g01/lessons/yds/yds-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "read-w02-d4",
@@ -314,7 +314,7 @@
 "title": "Наголос. Наголошений склад",
 "brief": "наголос, наголошений склад, позначка наголосу на схемі, зміна значення слова",
 "file": "data/g01/lessons/read/read-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d4",
@@ -327,7 +327,7 @@
 "title": "Письмо елементів малих букв: овал, півовал, гачок",
 "brief": "елементи букв а, о, и, і; зразок, розмір, однаковий нахил",
 "file": "data/g01/lessons/ukr/ukr-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d4",
@@ -340,7 +340,7 @@
 "title": "Classroom commands",
 "brief": "Stand up, sit down, open, close, listen, look — TPR-ігри",
 "file": "data/g01/lessons/eng/eng-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "math-w02-d5",
@@ -353,7 +353,7 @@
 "title": "Порівняння груп предметів: більше, менше, стільки ж",
 "brief": "утворення пар, встановлення відповідності, хто більше",
 "file": "data/g01/lessons/math/math-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "yds-w02-d5",
@@ -366,7 +366,7 @@
 "title": "Друзі і дружба. Як спілкуватися ввічливо",
 "brief": "ввічливі слова, вміння домовлятися, допомога однокласникам",
 "file": "data/g01/lessons/yds/yds-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "read-w03-d1",

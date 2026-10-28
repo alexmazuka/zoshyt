@@ -1,8 +1,8 @@
 {
 "grade": "g08",
-"generated": "2026-10-03",
+"generated": "2026-10-28",
 "total": 425,
-"written": 31,
+"written": 50,
 "lessons": [
 {
 "id": "ukr-w01-d2",
@@ -379,7 +379,7 @@
 "title": "Повторення: правопис не з різними частинами мови; н і нн",
 "brief": "разом і окремо не; подвоєння н у прикметниках і дієприкметниках",
 "file": "data/g08/lessons/ukr/ukr-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "geom-w02-d2",
@@ -392,7 +392,7 @@
 "title": "Паралелограм і його властивості",
 "brief": "протилежні сторони і кути, діагоналі точкою перетину діляться навпіл",
 "file": "data/g08/lessons/geom/geom-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "chem-w02-d2",
@@ -405,7 +405,7 @@
 "title": "Відносна атомна маса та відносна молекулярна маса",
 "brief": "Ar, Mr, обчислення за формулою",
 "file": "data/g08/lessons/chem/chem-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "bio-w02-d2",
@@ -418,7 +418,7 @@
 "title": "Сучасні методи дослідження організму людини",
 "brief": "рентген, УЗД, МРТ, аналізи, ЕКГ",
 "file": "data/g08/lessons/bio/bio-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "zarlit-w02-d2",
@@ -431,7 +431,7 @@
 "title": "Античність як колиска європейської культури",
 "brief": "Давня Греція і Рим, поняття античності, вплив на світову культуру",
 "file": "data/g08/lessons/zarlit/zarlit-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "inf-w02-d2",
@@ -444,7 +444,7 @@
 "title": "Двійкова система числення. Переведення чисел",
 "brief": "переведення з десяткової в двійкову і навпаки",
 "file": "data/g08/lessons/inf/inf-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "alg-w02-d3",
@@ -457,7 +457,7 @@
 "title": "Основна властивість дробу. Скорочення дробів",
 "brief": "множення чисельника і знаменника на вираз, скорочення одночленів",
 "file": "data/g08/lessons/alg/alg-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d3",
@@ -470,7 +470,7 @@
 "title": "Describing people: appearance and character",
 "brief": "опис зовнішності й характеру, порядок прикметників",
 "file": "data/g08/lessons/eng/eng-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "geo-w02-d3",
@@ -483,7 +483,7 @@
 "title": "Сучасні картографічні твори. Класифікація карт",
 "brief": "карти за масштабом, змістом, призначенням; атласи, глобуси",
 "file": "data/g08/lessons/geo/geo-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukrlit-w02-d3",
@@ -496,7 +496,7 @@
 "title": "Іван Білик «Дарунки скіфів»",
 "brief": "історичне оповідання, скіфи і перси, символіка дарунків",
 "file": "data/g08/lessons/ukrlit/ukrlit-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "vsist-w02-d3",
@@ -535,7 +535,7 @@
 "title": "Розвиток мовлення. Текст і його ознаки; стилі мовлення",
 "brief": "тема, основна думка, мікротеми; розмовний, науковий, офіційно-діловий, публіцистичний, художній стилі",
 "file": "data/g08/lessons/ukr/ukr-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "geom-w02-d4",
@@ -548,7 +548,7 @@
 "title": "Ознаки паралелограма",
 "brief": "три ознаки паралелограма, доведення",
 "file": "data/g08/lessons/geom/geom-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "phys-w02-d4",
@@ -561,7 +561,7 @@
 "title": "Лабораторна робота № 1 «Вивчення умови рівноваги важеля»",
 "brief": "інструктаж з безпеки, вимірювання сил і плечей, висновок",
 "file": "data/g08/lessons/phys/phys-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "chem-w02-d4",
@@ -574,7 +574,7 @@
 "title": "Масова частка хімічного елемента в речовині",
 "brief": "обчислення w(E), задачі",
 "file": "data/g08/lessons/chem/chem-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "zarlit-w02-d4",
@@ -587,7 +587,7 @@
 "title": "Давньогрецька міфологія. Троянська війна: Паріс викрадає Єлену",
 "brief": "міф, яблуко розбрату, причини Троянської війни",
 "file": "data/g08/lessons/zarlit/zarlit-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "alg-w02-d5",
@@ -600,7 +600,7 @@
 "title": "Скорочення дробів за допомогою розкладання на множники",
 "brief": "винесення спільного множника, формули скороченого множення",
 "file": "data/g08/lessons/alg/alg-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d5",
@@ -613,7 +613,7 @@
 "title": "Present Simple vs Present Continuous. Stative verbs",
 "brief": "вживання часів, дієслова стану: like, know, believe",
 "file": "data/g08/lessons/eng/eng-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "bio-w02-d5",
@@ -626,7 +626,7 @@
 "title": "Організм людини як саморегульована система",
 "brief": "гомеостаз, нервова і гуморальна регуляція",
 "file": "data/g08/lessons/bio/bio-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "geo-w02-d5",
@@ -639,7 +639,7 @@
 "title": "Зображення України на картографічних творах. Національний атлас України",
 "brief": "історія картографування України, Національний атлас",
 "file": "data/g08/lessons/geo/geo-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w03-d1",

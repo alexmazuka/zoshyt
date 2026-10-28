@@ -18,6 +18,7 @@
       {"en": "playing computer games", "uk": "гра в комп'ютерні ігри", "ex": "I like playing computer games."},
       {"en": "listening to music", "uk": "слухання музики", "ex": "I like listening to music."}
     ]},
+    {"type": "image", "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kids_Testing_Cycling_Skills_-_EMW_in_Ljubljana.jpg/960px-Kids_Testing_Cycling_Skills_-_EMW_in_Ljubljana.jpg", "alt": "Дитина в жовтому жилеті їде на велосипеді між конусами на майданчику, поруч стоять дорослі.", "caption": "He likes **riding a bike**. Розкажи англійською, що любиш робити ти: I like… / I don’t like…", "credit": "City of Ljubljana", "license": "CC BY 2.0", "page": "https://commons.wikimedia.org/wiki/File:Kids_Testing_Cycling_Skills_-_EMW_in_Ljubljana.jpg"},
     {"type": "rule", "title": "like / don't like + -ing", "text": "Коли говоримо, що подобається робити, після **like** або **don't like** дієслово має закінчення **-ing**: **I like swimming.** (Мені подобається плавати.) **I don't like dancing.** (Мені не подобається танцювати.) Не кажи «I like swim» — потрібно **swimming**!"},
     {"type": "table", "title": "Як утворити -ing", "head": ["Дієслово", "Форма -ing", "Правило"], "rows": [["swim", "swimming", "подвоюємо приголосну після короткого голосного"], ["dance", "dancing", "прибираємо -e"], ["ride", "riding", "прибираємо -e"], ["play", "playing", "просто +ing"]]},
     {"type": "dialogue", "title": "Sam and Andriy talk about hobbies", "lang": "en", "lines": [

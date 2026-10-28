@@ -1,0 +1,160 @@
+{
+ "id": "math-w02-d2",
+ "subject": "math",
+ "title": "Запис багатоцифрових чисел. Сума розрядних доданків",
+ "goal": "Навчитися записувати багатоцифрові числа цифрами за їхньою назвою, розкладати число на розрядні доданки і впевнено працювати з мільйонами та мільярдами.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "На минулому уроці ти навчився читати багатоцифрові числа, розбиваючи їх на класи. Сьогодні зробимо навпаки: почуємо назву числа і запишемо його цифрами. А ще дізнаємося, як «розібрати» число на частини — розрядні доданки."
+  },
+  {
+   "type": "rule",
+   "title": "Тисяча, мільйон, мільярд",
+   "text": "**1 тисяча** = 1 000 (три нулі).\n**1 мільйон** = 1 000 тисяч = 1 000 000 (шість нулів).\n**1 мільярд** = 1 000 мільйонів = 1 000 000 000 (дев'ять нулів).\nПісля класу мільйонів іде **клас мільярдів**. Кожен клас має три розряди: сотні, десятки й одиниці."
+  },
+  {
+   "type": "figure",
+   "svg": "<svg viewBox=\"0 0 420 135\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><rect x=\"30\" y=\"14\" width=\"90\" height=\"26\" fill=\"#E4E9F9\" stroke=\"#D23F58\"/><text x=\"75\" y=\"32\" text-anchor=\"middle\" fill=\"#D23F58\" font-size=\"13\" font-weight=\"bold\">мільярди</text><rect x=\"120\" y=\"14\" width=\"90\" height=\"26\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"165\" y=\"32\" text-anchor=\"middle\" fill=\"#2A45B0\" font-size=\"13\" font-weight=\"bold\">мільйони</text><rect x=\"210\" y=\"14\" width=\"90\" height=\"26\" fill=\"#E4E9F9\" stroke=\"#1D7449\"/><text x=\"255\" y=\"32\" text-anchor=\"middle\" fill=\"#1D7449\" font-size=\"13\" font-weight=\"bold\">тисячі</text><rect x=\"300\" y=\"14\" width=\"90\" height=\"26\" fill=\"#E4E9F9\" stroke=\"#2A45B0\"/><text x=\"345\" y=\"32\" text-anchor=\"middle\" fill=\"#2A45B0\" font-size=\"13\" font-weight=\"bold\">одиниці</text><rect x=\"30\" y=\"40\" width=\"30\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"45\" y=\"57\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">с</text><rect x=\"30\" y=\"64\" width=\"30\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><rect x=\"60\" y=\"40\" width=\"30\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"75\" y=\"57\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">д</text><rect x=\"60\" y=\"64\" width=\"30\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><rect x=\"90\" y=\"40\" width=\"30\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"105\" y=\"57\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">о</text><rect x=\"90\" y=\"64\" width=\"30\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"105\" y=\"88\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"18\" font-weight=\"bold\">2</text><rect x=\"120\" y=\"40\" width=\"30\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"135\" y=\"57\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">с</text><rect x=\"120\" y=\"64\" width=\"30\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"135\" y=\"88\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"18\" font-weight=\"bold\">0</text><rect x=\"150\" y=\"40\" width=\"30\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"165\" y=\"57\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">д</text><rect x=\"150\" y=\"64\" width=\"30\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"165\" y=\"88\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"18\" font-weight=\"bold\">4</text><rect x=\"180\" y=\"40\" width=\"30\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"195\" y=\"57\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">о</text><rect x=\"180\" y=\"64\" width=\"30\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"195\" y=\"88\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"18\" font-weight=\"bold\">0</text><rect x=\"210\" y=\"40\" width=\"30\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"225\" y=\"57\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">с</text><rect x=\"210\" y=\"64\" width=\"30\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"225\" y=\"88\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"18\" font-weight=\"bold\">0</text><rect x=\"240\" y=\"40\" width=\"30\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"255\" y=\"57\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">д</text><rect x=\"240\" y=\"64\" width=\"30\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"255\" y=\"88\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"18\" font-weight=\"bold\">0</text><rect x=\"270\" y=\"40\" width=\"30\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"285\" y=\"57\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">о</text><rect x=\"270\" y=\"64\" width=\"30\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"285\" y=\"88\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"18\" font-weight=\"bold\">5</text><rect x=\"300\" y=\"40\" width=\"30\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"315\" y=\"57\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">с</text><rect x=\"300\" y=\"64\" width=\"30\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"315\" y=\"88\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"18\" font-weight=\"bold\">0</text><rect x=\"330\" y=\"40\" width=\"30\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"345\" y=\"57\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">д</text><rect x=\"330\" y=\"64\" width=\"30\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"345\" y=\"88\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"18\" font-weight=\"bold\">1</text><rect x=\"360\" y=\"40\" width=\"30\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"375\" y=\"57\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"12\">о</text><rect x=\"360\" y=\"64\" width=\"30\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"375\" y=\"88\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"18\" font-weight=\"bold\">7</text><text x=\"210\" y=\"124\" text-anchor=\"middle\" fill=\"currentColor\" font-size=\"13\">с — сотні, д — десятки, о — одиниці класу</text></svg>",
+   "caption": "Число 2 040 005 017 у розрядній таблиці: 2 мільярди, 40 мільйонів, 5 тисяч і 17 одиниць. Порожні розряди всередині числа заповнюємо нулями.",
+   "alt": "Розрядна таблиця з чотирма класами: мільярди, мільйони, тисячі, одиниці; у клітинках записано цифри числа 2 040 005 017."
+  },
+  {
+   "type": "steps",
+   "title": "Як записати число цифрами за його назвою",
+   "items": [
+    "Визнач найвищий клас, який є в назві (мільярди, мільйони чи тисячі).",
+    "Запиши число найвищого класу так, як його чуєш (1, 2 або 3 цифри).",
+    "Кожен наступний клас записуй **рівно трьома цифрами**. Якщо якогось розряду в назві немає, пиши 0.",
+    "Якщо в назві немає цілого класу, пиши в ньому 000.",
+    "Перевір: між класами залиш невеликі проміжки і порахуй цифри."
+   ]
+  },
+  {
+   "type": "example",
+   "title": "Записуємо цифрами",
+   "text": "«Два мільярди сорок мільйонів п'ять тисяч сімнадцять».\nМільярди: 2.\nМільйони: сорок → 040.\nТисячі: п'ять → 005.\nОдиниці: сімнадцять → 017.\nВідповідь: 2 040 005 017.\n\n«Сім мільйонів шістдесят» → 7 | 000 | 060 → 7 000 060 (класу тисяч у назві немає — пишемо 000)."
+  },
+  {
+   "type": "rule",
+   "title": "Сума розрядних доданків",
+   "text": "Кожне число можна записати як **суму розрядних доданків**: кожна цифра, крім нуля, дає свій доданок.\n4 725 = 4 000 + 700 + 20 + 5.\n30 508 = 30 000 + 500 + 8 (нулі доданків не дають).\nТак само можна записати через множення на 10, 100, 1 000: 4 725 = 4 · 1 000 + 7 · 100 + 2 · 10 + 5."
+  },
+  {
+   "type": "example",
+   "title": "Розкладаємо велике число",
+   "text": "2 040 005 017 = 2 000 000 000 + 40 000 000 + 5 000 + 10 + 7."
+  },
+  {
+   "type": "tip",
+   "text": "Перевір кількість цифр: число з мільйонами має від 7 до 9 цифр, а з мільярдами — від 10 до 12. Якщо цифр вийшло менше, ти, найімовірніше, пропустив нулі."
+  }
+ ],
+ "exercises": [
+  {
+   "type": "fill",
+   "q": "Розклади числа на розрядні доданки.",
+   "text": "5 307 = {5000} + {300} + {7}; 80 460 = {80000} + {400} + {60}",
+   "explain": "Нулі в записі числа доданків не дають."
+  },
+  {
+   "type": "number",
+   "q": "Запиши цифрами: три мільйони двісті тисяч сорок.",
+   "answer": 3200040,
+   "explain": "3 | 200 | 040 — у класі одиниць немає сотень і одиниць, лише 4 десятки."
+  },
+  {
+   "type": "number",
+   "q": "Запиши цифрами: п'ять мільярдів сім мільйонів.",
+   "answer": 5007000000,
+   "explain": "5 | 007 | 000 | 000 — класи тисяч і одиниць заповнюємо нулями."
+  },
+  {
+   "type": "choice",
+   "q": "Яке число дорівнює сумі 60 000 + 400 + 9?",
+   "options": [
+    "60 409",
+    "6 409",
+    "60 049",
+    "604 009"
+   ],
+   "answer": 0,
+   "explain": "6 десятків тисяч, 4 сотні і 9 одиниць: 60 409."
+  },
+  {
+   "type": "match",
+   "q": "Скільки нулів у записі числа?",
+   "pairs": [
+    [
+     "сто",
+     "2 нулі"
+    ],
+    [
+     "тисяча",
+     "3 нулі"
+    ],
+    [
+     "мільйон",
+     "6 нулів"
+    ],
+    [
+     "мільярд",
+     "9 нулів"
+    ]
+   ]
+  },
+  {
+   "type": "truefalse",
+   "q": "Так чи ні?",
+   "items": [
+    {
+     "text": "1 мільйон = 1 000 тисяч.",
+     "answer": true
+    },
+    {
+     "text": "Число 7 000 050 читають: сім мільйонів п'ятсот.",
+     "answer": false
+    },
+    {
+     "text": "40 302 = 40 000 + 300 + 2.",
+     "answer": true
+    },
+    {
+     "text": "Число 800 000 000 — це вісімсот мільярдів.",
+     "answer": false
+    }
+   ],
+   "explain": "7 000 050 — сім мільйонів п'ятдесят. 800 000 000 — вісімсот мільйонів: у ньому лише 9 цифр."
+  },
+  {
+   "type": "number",
+   "q": "Яке число записано сумою 3 · 1 000 000 + 8 · 1 000 + 6 · 10?",
+   "answer": 3008060,
+   "explain": "3 мільйони, 8 тисяч і 6 десятків: 3 008 060."
+  }
+ ],
+ "homework": [
+  {
+   "type": "number",
+   "q": "Запиши цифрами: сорок мільйонів чотириста тисяч чотири.",
+   "answer": 40400004,
+   "explain": "40 | 400 | 004."
+  },
+  {
+   "type": "fill",
+   "q": "Розклади число на розрядні доданки.",
+   "text": "2 090 600 = {2000000} + {90000} + {600}"
+  },
+  {
+   "type": "text",
+   "q": "Придумай десятицифрове число, у якому є хоча б два нулі всередині. Запиши його словами і розклади на розрядні доданки. Поясни, у яких розрядах довелося писати нулі й чому.",
+   "sample": "Число 1 305 020 400 — один мільярд триста п'ять мільйонів двадцять тисяч чотириста. 1 305 020 400 = 1 000 000 000 + 300 000 000 + 5 000 000 + 20 000 + 400. Нулі стоять у розряді десятків мільйонів, у розрядах сотень і одиниць тисяч, десятків і одиниць, бо цих розрядів у назві немає.",
+   "min": 120
+  }
+ ],
+ "reflection": [
+  "Як не загубити нулі, коли записуєш велике число цифрами?",
+  "Яке завдання здалося найскладнішим і чому?"
+ ]
+}

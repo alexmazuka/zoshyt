@@ -1,8 +1,8 @@
 {
 "grade": "g05",
-"generated": "2026-10-03",
+"generated": "2026-10-28",
 "total": 293,
-"written": 21,
+"written": 34,
 "lessons": [
 {
 "id": "ukr-w01-d2",
@@ -262,7 +262,7 @@
 "title": "Повторення: займенник, числівник, прислівник, службові частини мови",
 "brief": "розпізнавання частин мови в тексті, прийменник, сполучник, частка",
 "file": "data/g05/lessons/ukr/ukr-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "math-w02-d2",
@@ -275,7 +275,7 @@
 "title": "Запис багатоцифрових чисел. Сума розрядних доданків",
 "brief": "запис числа цифрами і словами, розкладання на розрядні доданки, мільйон, мільярд",
 "file": "data/g05/lessons/math/math-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "nature-w02-d2",
@@ -288,7 +288,7 @@
 "title": "Методи пізнання природи: спостереження та експеримент",
 "brief": "мета, гіпотеза, план досліду, висновок; щоденник спостережень",
 "file": "data/g05/lessons/nature/nature-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "zarlit-w02-d2",
@@ -301,7 +301,7 @@
 "title": "Давньогрецький міф про Прометея",
 "brief": "подвиг Прометея, вогонь для людей, самопожертва, образ титана",
 "file": "data/g05/lessons/zarlit/zarlit-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d3",
@@ -314,7 +314,7 @@
 "title": "Повторення: словосполучення і речення. Головні члени речення",
 "brief": "головне і залежне слово, підмет і присудок, види речень за метою висловлювання",
 "file": "data/g05/lessons/ukr/ukr-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "math-w02-d3",
@@ -327,7 +327,7 @@
 "title": "Відрізок. Довжина відрізка. Одиниці довжини",
 "brief": "кінці відрізка, вимірювання лінійкою, мм, см, дм, м, км, перетворення одиниць",
 "file": "data/g05/lessons/math/math-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d3",
@@ -340,7 +340,7 @@
 "title": "All about me. Дієслово to be",
 "brief": "personal information, age, country, nationality; am / is / are",
 "file": "data/g05/lessons/eng/eng-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "hist-w02-d3",
@@ -366,7 +366,7 @@
 "title": "Повторення: правопис ненаголошених голосних, апострофа, м'якого знака",
 "brief": "перевірка наголосом, вживання апострофа і м'якого знака, орфограми",
 "file": "data/g05/lessons/ukr/ukr-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "math-w02-d4",
@@ -379,7 +379,7 @@
 "title": "Ламана. Довжина ламаної",
 "brief": "ланки і вершини ламаної, замкнена ламана, обчислення довжини ламаної",
 "file": "data/g05/lessons/math/math-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukrlit-w02-d4",
@@ -392,7 +392,7 @@
 "title": "Міфи давніх українців. Уявлення про світ",
 "brief": "міф, світове дерево, боги давніх слов'ян (Перун, Даждьбог), пояснення явищ природи",
 "file": "data/g05/lessons/ukrlit/ukrlit-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "inf-w02-d4",
@@ -418,7 +418,7 @@
 "title": "My friends. Питання і заперечення з to be",
 "brief": "describing friends, questions and short answers, wh-questions",
 "file": "data/g05/lessons/eng/eng-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "zarlit-w02-d5",
@@ -431,7 +431,7 @@
 "title": "Давньогрецький міф про Дедала та Ікара",
 "brief": "мрія про політ, батько і син, необережність Ікара, крилаті вислови",
 "file": "data/g05/lessons/zarlit/zarlit-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "nature-w02-d5",
@@ -444,7 +444,7 @@
 "title": "Вимірювання. Вимірювальні прилади",
 "brief": "лінійка, термометр, терези, мензурка; ціна поділки, одиниці вимірювання",
 "file": "data/g05/lessons/nature/nature-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w03-d1",

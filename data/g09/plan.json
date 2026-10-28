@@ -1,8 +1,8 @@
 {
 "grade": "g09",
-"generated": "2026-10-03",
+"generated": "2026-10-28",
 "total": 385,
-"written": 34,
+"written": 47,
 "lessons": [
 {
 "id": "ukrlit-w01-d2",
@@ -366,7 +366,7 @@
 "title": "Дослідження розчинності речовин у різних розчинниках",
 "brief": "розчинник і розчинена речовина, полярні та неполярні розчинники",
 "file": "data/g09/lessons/chem/chem-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "istu-w02-d2",
@@ -379,7 +379,7 @@
 "title": "Українські землі у війнах Російської імперії. Доля козацтва",
 "brief": "Задунайська Січ, Чорноморське і Азовське військо, війна 1812 р., козацькі полки",
 "file": "data/g09/lessons/istu/istu-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "inf-w02-d2",
@@ -405,7 +405,7 @@
 "title": "Повні та неповні речення. Односкладні речення",
 "brief": "неповні речення в діалозі, тире в неповних реченнях; означено-особові, безособові, називні",
 "file": "data/g09/lessons/ukr/ukr-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "alg-w02-d3",
@@ -418,7 +418,7 @@
 "title": "Числові нерівності. Порівняння чисел",
 "brief": "означення a > b через різницю, порівняння виразів",
 "file": "data/g09/lessons/alg/alg-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "phys-w02-d3",
@@ -431,7 +431,7 @@
 "title": "Лабораторна робота № 1. Дослідження електричного опору провідника",
 "brief": "вимірювання опору амперметром і вольтметром, обчислення похибок",
 "file": "data/g09/lessons/phys/phys-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d3",
@@ -444,7 +444,7 @@
 "title": "Who and What We Are",
 "brief": "розповідь про себе, інтереси, цінності; монологічне мовлення",
 "file": "data/g09/lessons/eng/eng-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "geo-w02-d3",
@@ -483,7 +483,7 @@
 "title": "Синус, косинус, тангенс кутів від 0° до 180°",
 "brief": "означення через одиничне півколо, знаки, значення для 0°, 90°, 180°",
 "file": "data/g09/lessons/geom/geom-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "chem-w02-d4",
@@ -496,7 +496,7 @@
 "title": "Вода як полярний розчинник",
 "brief": "будова молекули води, диполь, гідратація йонів",
 "file": "data/g09/lessons/chem/chem-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "vsist-w02-d4",
@@ -522,7 +522,7 @@
 "title": "Хімічні елементи в організмах",
 "brief": "макро-, мікро- та ультрамікроелементи; органогенні елементи, роль у життєдіяльності",
 "file": "data/g09/lessons/bio/bio-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d5",
@@ -535,7 +535,7 @@
 "title": "Створення діалогів",
 "brief": "діалог на суспільно значущу тему, репліки, етикетні формули, розділові знаки при прямій мові",
 "file": "data/g09/lessons/ukr/ukr-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "phys-w02-d5",
@@ -548,7 +548,7 @@
 "title": "Електричний струм в електролітах. Електроліз",
 "brief": "електролітична дисоціація, йонна провідність, закон Фарадея для електролізу",
 "file": "data/g09/lessons/phys/phys-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d5",
@@ -561,7 +561,7 @@
 "title": "Revision of Present Tenses",
 "brief": "Present Simple, Continuous, Perfect, Perfect Continuous: вживання і порівняння",
 "file": "data/g09/lessons/eng/eng-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "inf-w02-d5",
@@ -574,7 +574,7 @@
 "title": "Ліцензії на програмне забезпечення",
 "brief": "пропрієтарне, вільне, умовно-безкоштовне ПЗ; Creative Commons; інтелектуальна власність",
 "file": "data/g09/lessons/inf/inf-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "pravo-w02-d5",
@@ -2002,7 +2002,7 @@
 "n": 10,
 "section": "Розділ І. Українські землі у складі Російської імперії наприкінці XVIII — у першій половині ХІХ ст.",
 "title": "Розвиток театру, музики, образотворчого мистецтва та архітектури",
-"brief": "кріпацькі театри, Щепкін, класицизм в архітектурі, Боровиковський, Тропінін",
+"brief": "кріпацькі театри, Щепкін, класицизм в архітектурі, Боровиковський, Сошенко",
 "file": "data/g09/lessons/istu/istu-w07-d2.json",
 "exists": false
 },

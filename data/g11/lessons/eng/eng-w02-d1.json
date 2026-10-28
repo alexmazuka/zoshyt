@@ -66,6 +66,15 @@
    ]
   },
   {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Sias_Library_-_Students_Studying_2017.jpg/960px-Sias_Library_-_Students_Studying_2017.jpg",
+   "alt": "Велика світла читальна зала бібліотеки: за довгими столами студенти пишуть конспекти, позаду стелажі з книжками.",
+   "caption": "Студенти навчаються в університетській бібліотеці. Опиши фото англійською, використовуючи слова уроку: What strategies are these students using? What are their goals, do you think?",
+   "credit": "Gary Todd",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sias_Library_-_Students_Studying_2017.jpg"
+  },
+  {
    "type": "dialogue",
    "title": "What are your goals?",
    "lines": [

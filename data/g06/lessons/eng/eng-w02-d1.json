@@ -13,6 +13,7 @@
       ["She always drinks tea.", "She is drinking tea at the moment."],
       ["We play football on Sundays.", "We are playing football now."]
     ]},
+    {"type": "image", "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Soccer_at_the_Park_05.png/960px-Soccer_at_the_Park_05.png", "alt": "Діти грають у футбол на піщаному майданчику біля бетонної стіни", "caption": "Що відбувається на фото просто зараз? — *The children are playing football.* (Present Continuous). А якщо говоримо про звичку, вживаємо Present Simple: *They play football after school.*", "credit": "Chulu sakaz", "license": "CC BY-SA 4.0", "page": "https://commons.wikimedia.org/wiki/File:Soccer_at_the_Park_05.png"},
     {"type": "tip", "text": "Правопис -ing: **read → reading**; **run → running** (подвоюємо останню приголосну); **write → writing** (відкидаємо e); **play → playing**."},
     {"type": "example", "title": "Який час обрати?", "text": "Мама **завжди готує** сніданок о сьомій → Present Simple (регулярно): *Mum always cooks breakfast at seven.*\nЗараз мама **готує** сніданок → Present Continuous (зараз): *Mum is cooking breakfast now.*"},
     {"type": "dialogue", "title": "A phone call", "lines": [

@@ -1,8 +1,8 @@
 {
 "grade": "g06",
-"generated": "2026-10-03",
+"generated": "2026-10-28",
 "total": 301,
-"written": 21,
+"written": 35,
 "lessons": [
 {
 "id": "math-w01-d2",
@@ -275,7 +275,7 @@
 "title": "Дільники і кратні: розв'язування вправ",
 "brief": "властивості подільності суми й добутку; задачі на поділ без остачі",
 "file": "data/g06/lessons/math/math-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d2",
@@ -288,7 +288,7 @@
 "title": "Складне речення. Пряма мова. Діалог",
 "brief": "кома між частинами складного речення; розділові знаки при прямій мові й діалозі",
 "file": "data/g06/lessons/ukr/ukr-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "nature-w02-d2",
@@ -301,7 +301,7 @@
 "title": "Всесвіт і Сонячна система",
 "brief": "зорі, галактики, Чумацький Шлях; Сонце і планети; планети земної групи і планети-гіганти",
 "file": "data/g06/lessons/nature/nature-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "zarlit-w02-d2",
@@ -314,7 +314,7 @@
 "title": "Поняття про міф. Давньогрецька міфологія",
 "brief": "міф, міфологія; боги Олімпу: Зевс, Гера, Афіна, Аполлон; міфи про створення світу",
 "file": "data/g06/lessons/zarlit/zarlit-w02-d2.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w02-d3",
@@ -327,7 +327,7 @@
 "title": "Фонетика. Орфоепія. Орфографія",
 "brief": "звуки і букви, наголос; чергування голосних і приголосних; апостроф, м'який знак",
 "file": "data/g06/lessons/ukr/ukr-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "math-w02-d3",
@@ -340,7 +340,7 @@
 "title": "Ознаки подільності на 10, на 5 і на 2",
 "brief": "парні й непарні числа; остання цифра числа",
 "file": "data/g06/lessons/math/math-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d3",
@@ -353,7 +353,7 @@
 "title": "Diagnostic test: Starter review",
 "brief": "vocabulary and grammar of grade 5: to be, have got, Present Simple, can",
 "file": "data/g06/lessons/eng/eng-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "hist-w02-d3",
@@ -366,7 +366,7 @@
 "title": "Історичний час і простір. Хронологія та історична карта",
 "brief": "рахунок років до н. е. і н. е., століття, тисячоліття; лінія часу; умовні знаки карти",
 "file": "data/g06/lessons/hist/hist-w02-d3.json",
-"exists": false
+"exists": true
 },
 {
 "id": "math-w02-d4",
@@ -379,7 +379,7 @@
 "title": "Ознаки подільності на 9 і на 3",
 "brief": "сума цифр числа; перевірка подільності; задачі",
 "file": "data/g06/lessons/math/math-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukrlit-w02-d4",
@@ -392,7 +392,7 @@
 "title": "Антропогонічні міфи. Сергій Плачинда «Дажбог і Жива»",
 "brief": "антропогонічні міфи про походження людей; образи Дажбога і Живи; символіка сонця і життя",
 "file": "data/g06/lessons/ukrlit/ukrlit-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "eng-w02-d4",
@@ -405,7 +405,7 @@
 "title": "Family members and relatives",
 "brief": "aunt, uncle, cousin, grandparents, nephew, niece; possessive 's",
 "file": "data/g06/lessons/eng/eng-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "nature-w02-d4",
@@ -418,7 +418,7 @@
 "title": "Земля — планета Сонячної системи. Місяць",
 "brief": "форма і розміри Землі; Місяць — природний супутник; фази Місяця",
 "file": "data/g06/lessons/nature/nature-w02-d4.json",
-"exists": false
+"exists": true
 },
 {
 "id": "inf-w02-d4",
@@ -444,7 +444,7 @@
 "title": "Міф про Прометея",
 "brief": "Прометей — захисник людей, вогонь як дар; подвиг і покарання; «прометеївський» вогонь",
 "file": "data/g06/lessons/zarlit/zarlit-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "hist-w02-d5",
@@ -457,7 +457,7 @@
 "title": "Поява людини. Найдавніші люди на Землі",
 "brief": "антропогенез; людина вміла, людина прямоходяча; прабатьківщина людства — Африка",
 "file": "data/g06/lessons/hist/hist-w02-d5.json",
-"exists": false
+"exists": true
 },
 {
 "id": "ukr-w03-d1",

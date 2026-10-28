@@ -1,0 +1,244 @@
+{
+  "id": "eng-w02-d4",
+  "subject": "eng",
+  "title": "Classroom commands",
+  "goal": "Зрозуміти і виконувати прості команди на уроці англійської: Stand up, Sit down, Open your book, Close your book, Listen, Look.",
+  "minutes": 20,
+  "terms": {},
+  "theory": [
+    {
+      "type": "p",
+      "text": "Дорослий читає: На уроці англійської вчитель часто дає команди англійською: встаньте, сядьте, відкрийте книжки. Сьогодні вивчимо ці команди і будемо їх виконувати — рухатися разом зі словами!"
+    },
+    {
+      "type": "vocab",
+      "title": "Нові слова",
+      "items": [
+        {
+          "en": "Stand up!",
+          "uk": "Встань! Встаньте!",
+          "ex": "Stand up, please!"
+        },
+        {
+          "en": "Sit down!",
+          "uk": "Сідай! Сядьте!",
+          "ex": "Sit down, please!"
+        },
+        {
+          "en": "Open your book!",
+          "uk": "Відкрий книжку!",
+          "ex": "Open your book, Sam!"
+        },
+        {
+          "en": "Close your book!",
+          "uk": "Закрий книжку!",
+          "ex": "Close your book, Anna!"
+        },
+        {
+          "en": "Listen!",
+          "uk": "Слухай! Послухайте!",
+          "ex": "Listen to the song!"
+        },
+        {
+          "en": "Look!",
+          "uk": "Дивись! Подивіться!",
+          "ex": "Look at the picture!"
+        },
+        {
+          "en": "Hands up!",
+          "uk": "Руки вгору!",
+          "ex": "Hands up, children!"
+        },
+        {
+          "en": "Hands down!",
+          "uk": "Руки вниз!",
+          "ex": "Hands down, please."
+        },
+        {
+          "en": "Clap your hands!",
+          "uk": "Поплескай у долоні!",
+          "ex": "Clap your hands! One, two, three!"
+        },
+        {
+          "en": "please",
+          "uk": "будь ласка",
+          "ex": "Sit down, please."
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/A_pupil_answering_a_question_in_class.jpg/960px-A_pupil_answering_a_question_in_class.jpg",
+      "alt": "Учень у класі високо піднімає руку, поруч за партами сидять інші діти.",
+      "caption": "Hands up! Учень піднімає руку, щоб відповісти на запитання вчителя.",
+      "credit": "Kwameghana(Bright Kwame Ayisi)",
+      "license": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:A_pupil_answering_a_question_in_class.jpg"
+    },
+    {
+      "type": "rule",
+      "title": "Запам'ятай",
+      "text": "Команди короткі: **Stand up!** — встаємо, **Sit down!** — сідаємо.\n**Open** — відкриваємо, **close** — закриваємо.\nСлово **please** робить команду ввічливою: **Sit down, please.**"
+    },
+    {
+      "type": "dialogue",
+      "title": "Початок уроку",
+      "lang": "en",
+      "lines": [
+        {
+          "who": "Teacher",
+          "text": "Hello, children! Stand up, please."
+        },
+        {
+          "who": "Children",
+          "text": "Hello!"
+        },
+        {
+          "who": "Teacher",
+          "text": "Sit down, please. Open your books."
+        },
+        {
+          "who": "Teacher",
+          "text": "Look! Listen!"
+        },
+        {
+          "who": "Sam",
+          "text": "Hands up!"
+        }
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "Гра «Sam says» («Сем каже»). Дорослий дає команди. Якщо команда починається словами Sam says — виконуй: «Sam says: stand up!». Якщо цих слів немає — стій і не рухайся! Хто помилився, той ведучий."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "speak",
+      "q": "Дорослий читає: скажи команду вголос і виконай її.",
+      "text": "Stand up! Sit down! Hands up! Hands down! Clap your hands!",
+      "lang": "en"
+    },
+    {
+      "type": "match",
+      "q": "З'єднай команду з перекладом.",
+      "pairs": [
+        [
+          "Stand up!",
+          "Встань!"
+        ],
+        [
+          "Sit down!",
+          "Сідай!"
+        ],
+        [
+          "Listen!",
+          "Слухай!"
+        ],
+        [
+          "Look!",
+          "Дивись!"
+        ],
+        [
+          "Open your book!",
+          "Відкрий книжку!"
+        ]
+      ]
+    },
+    {
+      "type": "choice",
+      "q": "Учитель каже: Close your book! Що робимо?",
+      "options": [
+        "закриваємо книжку",
+        "відкриваємо книжку",
+        "встаємо"
+      ],
+      "answer": 0,
+      "explain": "Close — закрити."
+    },
+    {
+      "type": "choice",
+      "q": "Як попросити всіх сісти англійською?",
+      "options": [
+        "Stand up!",
+        "Sit down, please!",
+        "Look!"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "sort",
+      "q": "Розклади команди: що робимо з книжкою, а що — руками чи тілом?",
+      "groups": {
+        "З книжкою": [
+          "Open your book!",
+          "Close your book!"
+        ],
+        "Руками або тілом": [
+          "Stand up!",
+          "Sit down!",
+          "Hands up!",
+          "Clap your hands!"
+        ]
+      }
+    },
+    {
+      "type": "fill",
+      "q": "Допиши слово-протилежність.",
+      "text": "Stand up! — Sit {down}! Open your book! — {Close} your book! Hands up! — Hands {down}!"
+    },
+    {
+      "type": "truefalse",
+      "q": "Так чи ні?",
+      "items": [
+        {
+          "text": "Listen! означає «Слухай!».",
+          "answer": true
+        },
+        {
+          "text": "Stand up! означає «Сідай!».",
+          "answer": false
+        },
+        {
+          "text": "Please означає «будь ласка».",
+          "answer": true
+        },
+        {
+          "text": "Look! означає «Поплескай у долоні!».",
+          "answer": false
+        }
+      ]
+    }
+  ],
+  "homework": [
+    {
+      "type": "choice",
+      "q": "Яка команда означає «Руки вгору!»?",
+      "options": [
+        "Hands down!",
+        "Hands up!",
+        "Sit down!"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "speak",
+      "q": "Дорослий читає: стань «учителем» і дай команди англійською іграшкам або комусь із родини.",
+      "text": "Stand up, please! Sit down! Open your book! Look! Listen!",
+      "lang": "en"
+    },
+    {
+      "type": "checklist",
+      "q": "Пограйте вдома в гру «Sam says».",
+      "items": [
+        "Я виконував(-ла) команди, коли чув(-ла) Sam says.",
+        "Я не рухався(-лася), коли слів Sam says не було.",
+        "Я сам(-а) був(-ла) ведучим і давав(-ла) команди англійською."
+      ]
+    }
+  ],
+  "reflection": [
+    "Яку команду англійською ти запам'ятав(-ла) найкраще?",
+    "Що тобі сподобалося в грі «Sam says»?"
+  ]
+}

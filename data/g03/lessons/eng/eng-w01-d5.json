@@ -10,6 +10,15 @@
    "text": "Щоб розповісти, що ти вмієш, англійською використовуємо слово **can**. Воно не змінюється за особами й після нього дієслово стоїть без змін."
   },
   {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/6/66/Child_in_swimming_pool.jpg",
+   "alt": "Усміхнений хлопчик плаває в басейні з блакитною водою",
+   "caption": "He can swim! — Він уміє плавати! А ти можеш сказати англійською, що вмієш ти?",
+   "credit": "Flickr.com user \"brokenchopstick\"",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Child_in_swimming_pool.jpg"
+  },
+  {
    "type": "rule",
    "title": "can / can't",
    "text": "I can swim. — Я вмію плавати.\nI can't swim. — Я не вмію плавати.\nCan you swim? — Ти вмієш плавати?\nYes, I can. / No, I can't."

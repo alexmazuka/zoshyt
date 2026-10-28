@@ -1,0 +1,270 @@
+{
+ "id": "eng-w02-d3",
+ "subject": "eng",
+ "title": "Diagnostic test: Starter review",
+ "goal": "Перевірити, як ти пам'ятаєш граматику і слова 5 класу: to be, have got, Present Simple і can, — і з'ясувати, що варто повторити.",
+ "minutes": 40,
+ "theory": [
+  {
+   "type": "p",
+   "text": "Сьогодні — **діагностувальний тест**. Це не контрольна на оцінку, а перевірка: що ти добре пам'ятаєш з 5 класу, а що треба повторити. Спершу переглянь коротку пам'ятку, а потім виконуй завдання **самостійно**, без підглядання. Після кожної вправи прочитай пояснення — так ти побачиш свої помилки."
+  },
+  {
+   "type": "table",
+   "title": "Пам'ятка: чотири головні теми",
+   "head": [
+    "Тема",
+    "Стверджувальне",
+    "Заперечення",
+    "Питання"
+   ],
+   "rows": [
+    [
+     "to be",
+     "I **am** / he **is** / we **are** happy.",
+     "She **isn't** tired.",
+     "**Are** you ready?"
+    ],
+    [
+     "have got",
+     "I **have got** a cat. He **has got** a dog.",
+     "We **haven't got** a car.",
+     "**Has** she **got** a brother?"
+    ],
+    [
+     "Present Simple",
+     "I **play**. She **plays**.",
+     "I **don't** play. He **doesn't** play.",
+     "**Do** you play? **Does** he play?"
+    ],
+    [
+     "can",
+     "I **can** swim.",
+     "He **can't** dance.",
+     "**Can** you ski?"
+    ]
+   ]
+  },
+  {
+   "type": "tip",
+   "text": "Найчастіші помилки: забуте закінчення **-s** у Present Simple з he / she / it (правильно: *She plays*); have got замість **has got** з he / she / it; зайве -s після does і can (правильно: *Does he play?*, *He can run*)."
+  },
+  {
+   "type": "vocab",
+   "title": "Review words",
+   "items": [
+    {
+     "en": "get up",
+     "uk": "вставати",
+     "ex": "I get up at seven."
+    },
+    {
+     "en": "have breakfast",
+     "uk": "снідати",
+     "ex": "We have breakfast at half past seven."
+    },
+    {
+     "en": "favourite",
+     "uk": "улюблений",
+     "ex": "My favourite subject is Maths."
+    },
+    {
+     "en": "pet",
+     "uk": "домашній улюбленець",
+     "ex": "Have you got a pet?"
+    },
+    {
+     "en": "funny",
+     "uk": "кумедний",
+     "ex": "My dog is very funny."
+    },
+    {
+     "en": "fast",
+     "uk": "швидко",
+     "ex": "He can run fast."
+    },
+    {
+     "en": "draw",
+     "uk": "малювати",
+     "ex": "She likes to draw animals."
+    },
+    {
+     "en": "visit",
+     "uk": "відвідувати",
+     "ex": "We visit our grandparents on Sundays."
+    },
+    {
+     "en": "after school",
+     "uk": "після уроків",
+     "ex": "I play football after school."
+    },
+    {
+     "en": "every day",
+     "uk": "щодня",
+     "ex": "I read every day."
+    }
+   ]
+  },
+  {
+   "type": "reading",
+   "title": "Meet Max",
+   "text": "Hi! My name is Max. I'm eleven and I'm from Poltava. I've got a sister, Ira. She is eight. We have got a pet — a funny dog called Bim. Bim can run very fast, but he can't swim.\n\nEvery morning I get up at seven o'clock. I have breakfast and go to school. My favourite subject is Maths. After school I play football with my friends. Ira doesn't play football — she likes drawing. On Sundays we visit our grandparents."
+  },
+  {
+   "type": "image",
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/A_boy_and_a_dog.jpg/960px-A_boy_and_a_dog.jpg",
+   "alt": "Хлопчик у блакитній сорочці біжить сільською дорогою, поруч із ним біжить руда з чорним собака",
+   "caption": "Опиши фото англійською, використовуючи всі чотири теми: *The boy **has got** a dog. The dog **is** happy. They **can** run fast. They **play** together every day.*",
+   "credit": "Anton Croos",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_boy_and_a_dog.jpg"
+  }
+ ],
+ "exercises": [
+  {
+   "type": "fill",
+   "q": "To be. Встав am, is або are.",
+   "text": "I {am} a pupil. My sister {is} eight. My parents {are} at work. {Are} you from Kyiv?",
+   "explain": "I — am; he / she / it — is; we / you / they — are."
+  },
+  {
+   "type": "choice",
+   "q": "Have got. Обери правильний варіант: «Max ___ a sister.»",
+   "options": [
+    "has got",
+    "have got",
+    "is got",
+    "got has"
+   ],
+   "answer": 0,
+   "explain": "З he / she / it (тут Max = he) вживаємо has got."
+  },
+  {
+   "type": "fill",
+   "q": "Present Simple. Встав дієслово в правильній формі.",
+   "text": "Ira {likes} (like) drawing. We {go} (go) to school every day. My brother {doesn't|does not} (not / play) chess. {Does} your mum work on Saturdays?",
+   "explain": "З he / she / it додаємо -s (likes); заперечення — doesn't + дієслово без -s; питання з he / she / it — Does."
+  },
+  {
+   "type": "choice",
+   "q": "Can. Яке речення правильне?",
+   "options": [
+    "Bim can run very fast.",
+    "Bim cans run very fast.",
+    "Bim can runs very fast.",
+    "Bim can to run very fast."
+   ],
+   "answer": 0,
+   "explain": "Після can дієслово стоїть без -s і без to: can run."
+  },
+  {
+   "type": "truefalse",
+   "q": "Прочитай текст «Meet Max». Правда чи ні?",
+   "items": [
+    {
+     "text": "Max is twelve.",
+     "answer": false
+    },
+    {
+     "text": "Max has got a sister.",
+     "answer": true
+    },
+    {
+     "text": "Bim can swim.",
+     "answer": false
+    },
+    {
+     "text": "Max plays football after school.",
+     "answer": true
+    },
+    {
+     "text": "Ira likes drawing.",
+     "answer": true
+    }
+   ],
+   "explain": "Max is eleven; Bim can run fast, but he can't swim."
+  },
+  {
+   "type": "match",
+   "q": "З'єднай питання з короткою відповіддю.",
+   "pairs": [
+    [
+     "Can you swim?",
+     "Yes, I can."
+    ],
+    [
+     "Has she got a cat?",
+     "No, she hasn't."
+    ],
+    [
+     "Do they live in Kyiv?",
+     "Yes, they do."
+    ],
+    [
+     "Is he your brother?",
+     "Yes, he is."
+    ],
+    [
+     "Does your mum work?",
+     "No, she doesn't."
+    ]
+   ],
+   "explain": "Коротка відповідь повторює допоміжне слово з питання: can — can, has — hasn't, do — do, is — is, does — doesn't."
+  },
+  {
+   "type": "order",
+   "q": "Склади речення зі слів.",
+   "items": [
+    "My",
+    "favourite",
+    "subject",
+    "is",
+    "Maths"
+   ],
+   "explain": "My favourite subject is Maths. — Мій улюблений предмет — математика."
+  },
+  {
+   "type": "speak",
+   "q": "Прочитай уголос і продовж кожне речення про себе.",
+   "text": "My name is … I'm … years old. I've got … I can … but I can't … Every morning I … My favourite subject is …",
+   "lang": "en"
+  }
+ ],
+ "homework": [
+  {
+   "type": "input",
+   "q": "Переклади англійською: «У мене є молодший брат.» (Використай have got.)",
+   "answer": [
+    "I have got a younger brother.",
+    "I've got a younger brother.",
+    "I have got a younger brother",
+    "I've got a younger brother",
+    "I have got a little brother.",
+    "I've got a little brother."
+   ],
+   "explain": "I have got (I've got) a younger brother."
+  },
+  {
+   "type": "choice",
+   "q": "Обери правильне питання до речення «She gets up at seven.»",
+   "options": [
+    "When does she get up?",
+    "When does she gets up?",
+    "When do she get up?",
+    "When she gets up?"
+   ],
+   "answer": 0,
+   "explain": "Питання з he / she / it: does + дієслово без -s."
+  },
+  {
+   "type": "text",
+   "q": "Напиши англійською 6–8 речень про себе за зразком тексту «Meet Max». Використай to be, have got, can і Present Simple (хоча б по одному реченню на кожну тему).",
+   "sample": "Hi! My name is Olia. I'm eleven and I'm from Lviv. I've got a brother, Andrii. He is fourteen. I can ride a bike, but I can't swim. Every day I get up at half past seven. My favourite subject is English. After school I read books and draw.",
+   "min": 150
+  }
+ ],
+ "reflection": [
+  "Яка з чотирьох тем далася тобі найлегше, а яку варто повторити?",
+  "Які помилки ти зробив(-ла) і чому?"
+ ]
+}

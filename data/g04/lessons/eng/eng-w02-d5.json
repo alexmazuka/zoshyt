@@ -17,6 +17,7 @@
       {"en": "team", "uk": "команда", "ex": "Our team is the best!"},
       {"en": "player", "uk": "гравець", "ex": "He is a good player."}
     ]},
+    {"type": "image", "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Children_playing_chess.JPG/960px-Children_playing_chess.JPG", "alt": "Двоє хлопчиків стоять на великій шаховій дошці, розкладеній на траві, серед великих білих і чорних фігур.", "caption": "Children are playing **chess**. Their favourite game is chess. — Діти грають у шахи. Їхня улюблена гра — шахи.", "credit": "Snbehnke", "license": "CC BY-SA 3.0", "page": "https://commons.wikimedia.org/wiki/File:Children_playing_chess.JPG"},
     {"type": "rule", "title": "our, their", "text": "Присвійні займенники показують, кому щось належить: **my** (мій), **your** (твій), **his** (його), **her** (її), **our** (наш), **their** (їхній). We play chess. **Our** favourite game is chess. They like hide-and-seek. **Their** favourite game is hide-and-seek."},
     {"type": "table", "title": "Займенник і присвійна форма", "head": ["Займенник", "Присвійний", "Приклад"], "rows": [["I", "my", "my ball"], ["you", "your", "your dice"], ["he", "his", "his team"], ["she", "her", "her puzzle"], ["we", "our", "our board game"], ["they", "their", "their cards"]]},
     {"type": "dialogue", "title": "Favourite games", "lang": "en", "lines": [
